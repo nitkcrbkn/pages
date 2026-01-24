@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - coverage_filtered.info - ProtoCAN/common/frame_field.hpp</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="title">LCOV - code coverage report</td></tr>
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+            <tr>
+              <td width="100%">
+                <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="10%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">ProtoCAN/common</a> - frame_field.hpp<span style="font-size: 80%;"> (source / <a href="frame_field.hpp.func-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="5%"></td>
+            <td width="5%" class="headerCovTableHead">Coverage</td>
+            <td width="5%" class="headerCovTableHead" title="Covered + Uncovered code">Total</td>
+            <td width="5%" class="headerCovTableHead" title="Exercised code only">Hit</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">coverage_filtered.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test Date:</td>
+            <td class="headerValue">2026-01-24 13:30:47</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">1</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Legend:</td>
+            <td class="headerValueLeg">            Lines:
+            <span class="coverLegendCov">hit</span>
+            <span class="coverLegendNoCov">not hit</span>
+            | Branches:
+            <span class="coverLegendCov">+</span> taken
+            <span class="coverLegendNoCov">-</span> not taken
+            <span class="coverLegendNoCov">#</span> not executed
+</td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntryHi">-</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+          </tr>
+                  <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+          </table>
+
+          <table cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+<pre class="sourceHeading">             Branch data     Line data    Source code</pre>
+<pre class="source">
+<span id="L1"><span class="lineNum">       1</span>                 :             : #pragma once</span>
+<span id="L2"><span class="lineNum">       2</span>                 :             : #include &lt;cstdint&gt;</span>
+<span id="L3"><span class="lineNum">       3</span>                 :             : #include &lt;array&gt;</span>
+<span id="L4"><span class="lineNum">       4</span>                 :             : #include &lt;cstddef&gt;</span>
+<span id="L5"><span class="lineNum">       5</span>                 :             : #include &quot;../common/bitwise_ops.hpp&quot;</span>
+<span id="L6"><span class="lineNum">       6</span>                 :             : </span>
+<span id="L7"><span class="lineNum">       7</span>                 :             : namespace proto_can {</span>
+<span id="L8"><span class="lineNum">       8</span>                 :             : </span>
+<span id="L9"><span class="lineNum">       9</span>                 :             : enum class Field : uint8_t {</span>
+<span id="L10"><span class="lineNum">      10</span>                 :             :     VERSION = 0,</span>
+<span id="L11"><span class="lineNum">      11</span>                 :             :     DEVICE_TYPE,</span>
+<span id="L12"><span class="lineNum">      12</span>                 :             :     DEVICE_NUMBER,</span>
+<span id="L13"><span class="lineNum">      13</span>                 :             :     MESSAGE_TYPE,</span>
+<span id="L14"><span class="lineNum">      14</span>                 :             :     FLAGS,</span>
+<span id="L15"><span class="lineNum">      15</span>                 :             :     SIZE,</span>
+<span id="L16"><span class="lineNum">      16</span>                 :             :     COUNT</span>
+<span id="L17"><span class="lineNum">      17</span>                 :             : };</span>
+<span id="L18"><span class="lineNum">      18</span>                 :             : </span>
+<span id="L19"><span class="lineNum">      19</span>                 :             : // フィールドのビット範囲定義（constexpr配列）</span>
+<span id="L20"><span class="lineNum">      20</span>                 :             : static constexpr std::array&lt;BitRange, static_cast&lt;size_t&gt;(Field::COUNT)&gt;</span>
+<span id="L21"><span class="lineNum">      21</span>                 :             :     fieldRanges = {</span>
+<span id="L22"><span class="lineNum">      22</span>                 :             :         {</span>
+<span id="L23"><span class="lineNum">      23</span>                 :             :          {0, 2},   // VERSION</span>
+<span id="L24"><span class="lineNum">      24</span>                 :             :             {2, 5},   // DEVICE_TYPE</span>
+<span id="L25"><span class="lineNum">      25</span>                 :             :             {7, 4},   // DEVICE_NUMBER</span>
+<span id="L26"><span class="lineNum">      26</span>                 :             :             {11, 4},  // MESSAGE_TYPE</span>
+<span id="L27"><span class="lineNum">      27</span>                 :             :             {15, 4},  // FLAGS</span>
+<span id="L28"><span class="lineNum">      28</span>                 :             :             {19, 10}  // SIZE</span>
+<span id="L29"><span class="lineNum">      29</span>                 :             :         }</span>
+<span id="L30"><span class="lineNum">      30</span>                 :             : };</span>
+<span id="L31"><span class="lineNum">      31</span>                 :             : </span>
+<span id="L32"><span class="lineNum">      32</span>                 :             : // フィールドのビット範囲を取得</span>
+<span id="L33"><span class="lineNum">      33</span>                 :<span class="tlaGNC tlaBgGNC">         231 : constexpr BitRange FieldRange(Field field) {</span></span>
+<span id="L34"><span class="lineNum">      34</span>                 :<span class="tlaGNC">         231 :     return fieldRanges[static_cast&lt;size_t&gt;(field)];</span></span>
+<span id="L35"><span class="lineNum">      35</span>                 :             : }</span>
+<span id="L36"><span class="lineNum">      36</span>                 :             : </span>
+<span id="L37"><span class="lineNum">      37</span>                 :             : enum class FlagType : uint8_t {</span>
+<span id="L38"><span class="lineNum">      38</span>                 :             :     HEADER = 0,</span>
+<span id="L39"><span class="lineNum">      39</span>                 :             :     SECOND = 1,</span>
+<span id="L40"><span class="lineNum">      40</span>                 :             :     // その他のフラグ</span>
+<span id="L41"><span class="lineNum">      41</span>                 :             : };</span>
+<span id="L42"><span class="lineNum">      42</span>                 :             : </span>
+<span id="L43"><span class="lineNum">      43</span>                 :             : }  // namespace proto_can</span>
+        </pre>
+              </td>
+            </tr>
+          </table>
+          <br>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+            <tr><td class="versionInfo">Generated by: <a href="https://github.com//linux-test-project/lcov" target="_parent">LCOV version 2.0-1</a></td></tr>
+          </table>
+          <br>
+
+</body>
+</html>

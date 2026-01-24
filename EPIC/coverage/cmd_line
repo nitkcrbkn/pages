@@ -1,0 +1,1 @@
+genhtml build/coverage/coverage_filtered.info --output-directory build/coverage/html --branch-coverage --legend --ignore-errors mismatch --ignore-errors inconsistent --ignore-errors deprecated
