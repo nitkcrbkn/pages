@@ -1,3 +1,6 @@
+# github pages
+
+[Index Page](https://nitkcrbkn.github.io/pages/index.html#/)
 
 ![Coverage](https://img.shields.io/endpoint?url=https://nitkcrbkn.github.io/pages/main/badges/coverage.json)
 ![Coverage](https://img.shields.io/endpoint?url=https://nitkcrbkn.github.io/pages/develop/badges/coverage.json)
