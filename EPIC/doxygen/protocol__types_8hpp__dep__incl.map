@@ -1,0 +1,13 @@
+<map id="app/modules/ProtoCAN/common/protocol_types.hpp" name="app/modules/ProtoCAN/common/protocol_types.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="63,5,251,45"/>
+<area shape="rect" id="node2" href="$device__api_8hpp.html" title=" " alt="" coords="94,357,253,397"/>
+<area shape="rect" id="node3" href="$proto__can_8hpp.html" title=" " alt="" coords="94,445,253,485"/>
+<area shape="rect" id="node7" href="$master__api_8hpp.html" title=" " alt="" coords="285,357,443,397"/>
+<area shape="rect" id="node8" href="$device__catalog_8hpp.html" title=" " alt="" coords="277,269,467,309"/>
+<area shape="rect" id="node9" href="$frame__builder_8hpp.html" title=" " alt="" coords="145,181,303,221"/>
+<area shape="rect" id="node10" href="$messenger_8hpp.html" title=" " alt="" coords="94,269,253,309"/>
+<area shape="rect" id="node11" href="$frame__header_8hpp.html" title=" " alt="" coords="195,93,354,133"/>
+<area shape="rect" id="node4" href="$appMain_8h.html" title=" " alt="" coords="45,541,152,566"/>
+<area shape="rect" id="node6" href="$test__proto__can_8cpp.html" title=" " alt="" coords="176,533,320,573"/>
+<area shape="rect" id="node5" href="$appMain_8cpp.html" title=" " alt="" coords="39,621,159,647"/>
+</map>

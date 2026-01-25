@@ -1,0 +1,2130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::robomas::TrajectoryProfile クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1robomas_1_1TrajectoryProfile.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1robomas_1_1TrajectoryProfile-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::robomas::TrajectoryProfile クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;robomas.h&gt;</code></p>
+<div class="dynheader">
+devices::robomas::TrajectoryProfile の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile__inherit__graph.png" border="0" usemap="#adevices_1_1robomas_1_1TrajectoryProfile_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1robomas_1_1TrajectoryProfile_inherit__map" id="adevices_1_1robomas_1_1TrajectoryProfile_inherit__map">
+<area shape="rect" title=" " alt="" coords="24,79,211,119"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::robomas::TrajectoryProfile 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile__coll__graph.png" border="0" usemap="#adevices_1_1robomas_1_1TrajectoryProfile_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1robomas_1_1TrajectoryProfile_coll__map" id="adevices_1_1robomas_1_1TrajectoryProfile_coll__map">
+<area shape="rect" title=" " alt="" coords="24,79,211,119"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:afbd3cfb0052d609ed4f8838be5455226"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">FieldNumber</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226a1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226ac610fa61585b55f9b7a0c6ff2f407010">TOTAL_DISTANCE</a> = 2
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226a95e2919bcbc8cb5e55e9f9c935192cb2">TOTAL_TIME</a> = 3
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226a99ba468b718e311cba4f32177f6c3bee">INITIAL_SPEED</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226aae78f776ba7fb088b66b27769217e7b9">END_SPEED</a> = 5
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226adc777de5cdf86097bc25996349478fa0">MAX_SPEED</a> = 6
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226aee49d439f92c07271c132560998b73e1">ACCELERATION</a> = 7
+, <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226a681aba947e08c7f9681c447003fff9d8">JERK</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:afbd3cfb0052d609ed4f8838be5455226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a17cf91ba1cb65982d1550319cdbb214d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a17cf91ba1cb65982d1550319cdbb214d">TrajectoryProfile</a> ()=default</td></tr>
+<tr class="separator:a17cf91ba1cb65982d1550319cdbb214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b157508faa3f90ea339f764e1a2389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389">TrajectoryProfile</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;rhs)</td></tr>
+<tr class="separator:a30b157508faa3f90ea339f764e1a2389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38deb2054ec82ecc70025112357e1d90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a38deb2054ec82ecc70025112357e1d90">TrajectoryProfile</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a38deb2054ec82ecc70025112357e1d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff6e73de56b0205226b56943f8819cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5ff6e73de56b0205226b56943f8819cf">~TrajectoryProfile</a> () override=default</td></tr>
+<tr class="separator:a5ff6e73de56b0205226b56943f8819cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34726783b411fb7ca5e0f723fd7761c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;rhs)</td></tr>
+<tr class="separator:a34726783b411fb7ca5e0f723fd7761c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7ce299c645c0e11fe05c09ec8a4a52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5c7ce299c645c0e11fe05c09ec8a4a52">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a5c7ce299c645c0e11fe05c09ec8a4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fa7b733f18dfa0441f7c1c0590320a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a42fa7b733f18dfa0441f7c1c0590320a">clear_initial_speed</a> ()</td></tr>
+<tr class="separator:a42fa7b733f18dfa0441f7c1c0590320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c61d0688206eff34b53e34531591ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a4c61d0688206eff34b53e34531591ae2">set_initial_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a4c61d0688206eff34b53e34531591ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474c636e653675c563347dc578de9ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a474c636e653675c563347dc578de9ddd">set_initial_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a474c636e653675c563347dc578de9ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b0c8b41368c4de6e88b17479969e7a"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aa4b0c8b41368c4de6e88b17479969e7a">mutable_initial_speed</a> ()</td></tr>
+<tr class="separator:aa4b0c8b41368c4de6e88b17479969e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3f3f44ffad8fddd55b4e29bf938ece"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a1e3f3f44ffad8fddd55b4e29bf938ece">get_initial_speed</a> () const</td></tr>
+<tr class="separator:a1e3f3f44ffad8fddd55b4e29bf938ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ea62d46cdc6be60ec98bbf9d9a8ab0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a39ea62d46cdc6be60ec98bbf9d9a8ab0">initial_speed</a> () const</td></tr>
+<tr class="separator:a39ea62d46cdc6be60ec98bbf9d9a8ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18adc6191f80690b053505720ae5347e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a18adc6191f80690b053505720ae5347e">clear_end_speed</a> ()</td></tr>
+<tr class="separator:a18adc6191f80690b053505720ae5347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7f5c1091973cf7128dc1e06a30e5b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d7f5c1091973cf7128dc1e06a30e5b1">set_end_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a9d7f5c1091973cf7128dc1e06a30e5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2168497d2e0eb94de5ab2faf6620d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#af2168497d2e0eb94de5ab2faf6620d3d">set_end_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:af2168497d2e0eb94de5ab2faf6620d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aec3ed601a68bdd579244eac869b0b5"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a1aec3ed601a68bdd579244eac869b0b5">mutable_end_speed</a> ()</td></tr>
+<tr class="separator:a1aec3ed601a68bdd579244eac869b0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cd67c5b88723d02f2bcad21d8052fd"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a42cd67c5b88723d02f2bcad21d8052fd">get_end_speed</a> () const</td></tr>
+<tr class="separator:a42cd67c5b88723d02f2bcad21d8052fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804bfa0959f700171fa48767baeaeeeb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a804bfa0959f700171fa48767baeaeeeb">end_speed</a> () const</td></tr>
+<tr class="separator:a804bfa0959f700171fa48767baeaeeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11df47bc6350d6c3c8edc95370f0985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ab11df47bc6350d6c3c8edc95370f0985">clear_max_speed</a> ()</td></tr>
+<tr class="separator:ab11df47bc6350d6c3c8edc95370f0985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328e59c4908f1eb71c8be3a0f8588df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a328e59c4908f1eb71c8be3a0f8588df4">set_max_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a328e59c4908f1eb71c8be3a0f8588df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5cd51d2062705ab5609ad47c98a29ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ae5cd51d2062705ab5609ad47c98a29ae">set_max_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:ae5cd51d2062705ab5609ad47c98a29ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc49a7e8d3f834e6579b1f4b17949e4"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afdc49a7e8d3f834e6579b1f4b17949e4">mutable_max_speed</a> ()</td></tr>
+<tr class="separator:afdc49a7e8d3f834e6579b1f4b17949e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47459c3a88ac161d1d72ce55004eae9c"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a47459c3a88ac161d1d72ce55004eae9c">get_max_speed</a> () const</td></tr>
+<tr class="separator:a47459c3a88ac161d1d72ce55004eae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0425a1184bcae39c23fe4b6b0fbc42cc"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0425a1184bcae39c23fe4b6b0fbc42cc">max_speed</a> () const</td></tr>
+<tr class="separator:a0425a1184bcae39c23fe4b6b0fbc42cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5138d2ed0a33be5f06d6b98dd3f3e62f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5138d2ed0a33be5f06d6b98dd3f3e62f">clear_acceleration</a> ()</td></tr>
+<tr class="separator:a5138d2ed0a33be5f06d6b98dd3f3e62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa54a122fe107ea44ec02133558a447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afaa54a122fe107ea44ec02133558a447">set_acceleration</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:afaa54a122fe107ea44ec02133558a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972ca46e4ee9baea61fb07760b3ee8d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a972ca46e4ee9baea61fb07760b3ee8d6">set_acceleration</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a972ca46e4ee9baea61fb07760b3ee8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb40ee347537775e32c087c300d56cf"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#abeb40ee347537775e32c087c300d56cf">mutable_acceleration</a> ()</td></tr>
+<tr class="separator:abeb40ee347537775e32c087c300d56cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fa26e8413f1b61d669782dec70da09"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ae1fa26e8413f1b61d669782dec70da09">get_acceleration</a> () const</td></tr>
+<tr class="separator:ae1fa26e8413f1b61d669782dec70da09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1424f812fb4aa94d98a6baf5fb38724"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac1424f812fb4aa94d98a6baf5fb38724">acceleration</a> () const</td></tr>
+<tr class="separator:ac1424f812fb4aa94d98a6baf5fb38724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713a3549fa1ddb27ac5a277ae88cacd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a713a3549fa1ddb27ac5a277ae88cacd4">clear_jerk</a> ()</td></tr>
+<tr class="separator:a713a3549fa1ddb27ac5a277ae88cacd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed8893f386611267de5d2731561f880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aeed8893f386611267de5d2731561f880">set_jerk</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:aeed8893f386611267de5d2731561f880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107dd53ed9989e5701843f84ca85caf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a107dd53ed9989e5701843f84ca85caf7">set_jerk</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a107dd53ed9989e5701843f84ca85caf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13a343cf9b71c684396859d0c1f866"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0e13a343cf9b71c684396859d0c1f866">mutable_jerk</a> ()</td></tr>
+<tr class="separator:a0e13a343cf9b71c684396859d0c1f866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b58091eece89ef0bb42d56788794c1"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a07b58091eece89ef0bb42d56788794c1">get_jerk</a> () const</td></tr>
+<tr class="separator:a07b58091eece89ef0bb42d56788794c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb8ceb7c9593b48e1556bad3c0d318e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5fb8ceb7c9593b48e1556bad3c0d318e">jerk</a> () const</td></tr>
+<tr class="separator:a5fb8ceb7c9593b48e1556bad3c0d318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cb8e25338be76ffff5add9d5cf0293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">FieldNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a19cb8e25338be76ffff5add9d5cf0293">get_which_end_condition</a> () const</td></tr>
+<tr class="separator:a19cb8e25338be76ffff5add9d5cf0293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fda191a52106d7bf13a004032e2b95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac5fda191a52106d7bf13a004032e2b95">has_total_distance</a> () const</td></tr>
+<tr class="separator:ac5fda191a52106d7bf13a004032e2b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1655374603e97674a2d4f26c61d51bdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a1655374603e97674a2d4f26c61d51bdc">clear_total_distance</a> ()</td></tr>
+<tr class="separator:a1655374603e97674a2d4f26c61d51bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0b5cf2e2cdcad69e2cf17cd715ade5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#acf0b5cf2e2cdcad69e2cf17cd715ade5">set_total_distance</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:acf0b5cf2e2cdcad69e2cf17cd715ade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d6446cb2263c95b7dee95bb85c9e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a90d6446cb2263c95b7dee95bb85c9e03">set_total_distance</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a90d6446cb2263c95b7dee95bb85c9e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307075b5ec278d4cf92a9f05e3f1a778"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a307075b5ec278d4cf92a9f05e3f1a778">get_total_distance</a> () const</td></tr>
+<tr class="separator:a307075b5ec278d4cf92a9f05e3f1a778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b30b3e43f19ec32a876d9e64ddd369"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b30b3e43f19ec32a876d9e64ddd369">total_distance</a> () const</td></tr>
+<tr class="separator:a30b30b3e43f19ec32a876d9e64ddd369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7de4759fc384c2afeb3fb392d6aca8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0c7de4759fc384c2afeb3fb392d6aca8">has_total_time</a> () const</td></tr>
+<tr class="separator:a0c7de4759fc384c2afeb3fb392d6aca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de3522da91ebb805836f50ea17b161e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a3de3522da91ebb805836f50ea17b161e">clear_total_time</a> ()</td></tr>
+<tr class="separator:a3de3522da91ebb805836f50ea17b161e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8859d0e7a460f997b5cae4e5fdea905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac8859d0e7a460f997b5cae4e5fdea905">set_total_time</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:ac8859d0e7a460f997b5cae4e5fdea905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd3a1cf0d00253b76109c1a65dec064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a3cd3a1cf0d00253b76109c1a65dec064">set_total_time</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a3cd3a1cf0d00253b76109c1a65dec064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0764ca8d5d7c7c291462664baccfd6a9"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0764ca8d5d7c7c291462664baccfd6a9">get_total_time</a> () const</td></tr>
+<tr class="separator:a0764ca8d5d7c7c291462664baccfd6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55b87a364e81a0b4c95473b4cec7e61"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aa55b87a364e81a0b4c95473b4cec7e61">total_time</a> () const</td></tr>
+<tr class="separator:aa55b87a364e81a0b4c95473b4cec7e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc0961fcf4e576826b26955da50ffee"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5dc0961fcf4e576826b26955da50ffee">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a5dc0961fcf4e576826b26955da50ffee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24ea0f9aa97e767f664d0df6db88e0b"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac24ea0f9aa97e767f664d0df6db88e0b">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:ac24ea0f9aa97e767f664d0df6db88e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a888294e9a386ed30821afbd7569ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6">clear</a> () override</td></tr>
+<tr class="separator:a0a888294e9a386ed30821afbd7569ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7649010811334ace11e402ce08bc361e"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a7649010811334ace11e402ce08bc361e">field_number_to_name</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a7649010811334ace11e402ce08bc361e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a46eecfba98207de5db56ad12dd1a1eee"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a46eecfba98207de5db56ad12dd1a1eee">INITIAL_SPEED_NAME</a> = &quot;initial_speed&quot;</td></tr>
+<tr class="separator:a46eecfba98207de5db56ad12dd1a1eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800061b2dcd3635f362015cdb6d8ba3b"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a800061b2dcd3635f362015cdb6d8ba3b">END_SPEED_NAME</a> = &quot;end_speed&quot;</td></tr>
+<tr class="separator:a800061b2dcd3635f362015cdb6d8ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadded6856317aabf3cc4097e415316e0"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aadded6856317aabf3cc4097e415316e0">MAX_SPEED_NAME</a> = &quot;max_speed&quot;</td></tr>
+<tr class="separator:aadded6856317aabf3cc4097e415316e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d93c512a084c128d26d3678c9240af1"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d93c512a084c128d26d3678c9240af1">ACCELERATION_NAME</a> = &quot;acceleration&quot;</td></tr>
+<tr class="separator:a9d93c512a084c128d26d3678c9240af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af593c9c704987bfb3da0030398f7a444"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#af593c9c704987bfb3da0030398f7a444">JERK_NAME</a> = &quot;jerk&quot;</td></tr>
+<tr class="separator:af593c9c704987bfb3da0030398f7a444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c70aea806a07cdf2c6c3a40080b222c"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a7c70aea806a07cdf2c6c3a40080b222c">TOTAL_DISTANCE_NAME</a> = &quot;total_distance&quot;</td></tr>
+<tr class="separator:a7c70aea806a07cdf2c6c3a40080b222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70cc596d5833cb27269463723476119"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aa70cc596d5833cb27269463723476119">TOTAL_TIME_NAME</a> = &quot;total_time&quot;</td></tr>
+<tr class="separator:aa70cc596d5833cb27269463723476119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="afbd3cfb0052d609ed4f8838be5455226" name="afbd3cfb0052d609ed4f8838be5455226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd3cfb0052d609ed4f8838be5455226">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">devices::robomas::TrajectoryProfile::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226a1c250a21210b7b88a14db9a0cbe71162" name="afbd3cfb0052d609ed4f8838be5455226a1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226ac610fa61585b55f9b7a0c6ff2f407010" name="afbd3cfb0052d609ed4f8838be5455226ac610fa61585b55f9b7a0c6ff2f407010"></a>TOTAL_DISTANCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226a95e2919bcbc8cb5e55e9f9c935192cb2" name="afbd3cfb0052d609ed4f8838be5455226a95e2919bcbc8cb5e55e9f9c935192cb2"></a>TOTAL_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226a99ba468b718e311cba4f32177f6c3bee" name="afbd3cfb0052d609ed4f8838be5455226a99ba468b718e311cba4f32177f6c3bee"></a>INITIAL_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226aae78f776ba7fb088b66b27769217e7b9" name="afbd3cfb0052d609ed4f8838be5455226aae78f776ba7fb088b66b27769217e7b9"></a>END_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226adc777de5cdf86097bc25996349478fa0" name="afbd3cfb0052d609ed4f8838be5455226adc777de5cdf86097bc25996349478fa0"></a>MAX_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226aee49d439f92c07271c132560998b73e1" name="afbd3cfb0052d609ed4f8838be5455226aee49d439f92c07271c132560998b73e1"></a>ACCELERATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afbd3cfb0052d609ed4f8838be5455226a681aba947e08c7f9681c447003fff9d8" name="afbd3cfb0052d609ed4f8838be5455226a681aba947e08c7f9681c447003fff9d8"></a>JERK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a17cf91ba1cb65982d1550319cdbb214d" name="a17cf91ba1cb65982d1550319cdbb214d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cf91ba1cb65982d1550319cdbb214d">&#9670;&#160;</a></span>TrajectoryProfile() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::TrajectoryProfile::TrajectoryProfile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30b157508faa3f90ea339f764e1a2389" name="a30b157508faa3f90ea339f764e1a2389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b157508faa3f90ea339f764e1a2389">&#9670;&#160;</a></span>TrajectoryProfile() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::TrajectoryProfile::TrajectoryProfile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a30b157508faa3f90ea339f764e1a2389_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a30b157508faa3f90ea339f764e1a2389_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a30b157508faa3f90ea339f764e1a2389_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a30b157508faa3f90ea339f764e1a2389_cgraph">
+<area shape="rect" title=" " alt="" coords="5,453,192,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ae1fa26e8413f1b61d669782dec70da09" title=" " alt="" coords="252,5,439,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a42cd67c5b88723d02f2bcad21d8052fd" title=" " alt="" coords="252,69,439,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a1e3f3f44ffad8fddd55b4e29bf938ece" title=" " alt="" coords="252,133,439,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a07b58091eece89ef0bb42d56788794c1" title=" " alt="" coords="252,197,439,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a47459c3a88ac161d1d72ce55004eae9c" title=" " alt="" coords="252,261,439,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a307075b5ec278d4cf92a9f05e3f1a778" title=" " alt="" coords="252,325,439,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0764ca8d5d7c7c291462664baccfd6a9" title=" " alt="" coords="252,389,439,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a19cb8e25338be76ffff5add9d5cf0293" title=" " alt="" coords="240,453,451,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afaa54a122fe107ea44ec02133558a447" title=" " alt="" coords="252,517,439,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d7f5c1091973cf7128dc1e06a30e5b1" title=" " alt="" coords="252,581,439,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a4c61d0688206eff34b53e34531591ae2" title=" " alt="" coords="252,645,439,685"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aeed8893f386611267de5d2731561f880" title=" " alt="" coords="252,709,439,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a328e59c4908f1eb71c8be3a0f8588df4" title=" " alt="" coords="252,773,439,813"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#acf0b5cf2e2cdcad69e2cf17cd715ade5" title=" " alt="" coords="252,837,439,877"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac8859d0e7a460f997b5cae4e5fdea905" title=" " alt="" coords="252,901,439,941"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38deb2054ec82ecc70025112357e1d90" name="a38deb2054ec82ecc70025112357e1d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38deb2054ec82ecc70025112357e1d90">&#9670;&#160;</a></span>TrajectoryProfile() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::TrajectoryProfile::TrajectoryProfile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a38deb2054ec82ecc70025112357e1d90_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a38deb2054ec82ecc70025112357e1d90_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a38deb2054ec82ecc70025112357e1d90_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a38deb2054ec82ecc70025112357e1d90_cgraph">
+<area shape="rect" title=" " alt="" coords="5,197,192,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afaa54a122fe107ea44ec02133558a447" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d7f5c1091973cf7128dc1e06a30e5b1" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a4c61d0688206eff34b53e34531591ae2" title=" " alt="" coords="240,133,427,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aeed8893f386611267de5d2731561f880" title=" " alt="" coords="240,197,427,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a328e59c4908f1eb71c8be3a0f8588df4" title=" " alt="" coords="240,261,427,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#acf0b5cf2e2cdcad69e2cf17cd715ade5" title=" " alt="" coords="240,325,427,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac8859d0e7a460f997b5cae4e5fdea905" title=" " alt="" coords="240,389,427,429"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ff6e73de56b0205226b56943f8819cf" name="a5ff6e73de56b0205226b56943f8819cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff6e73de56b0205226b56943f8819cf">&#9670;&#160;</a></span>~TrajectoryProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::TrajectoryProfile::~TrajectoryProfile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ac1424f812fb4aa94d98a6baf5fb38724" name="ac1424f812fb4aa94d98a6baf5fb38724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1424f812fb4aa94d98a6baf5fb38724">&#9670;&#160;</a></span>acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::acceleration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a888294e9a386ed30821afbd7569ae6" name="a0a888294e9a386ed30821afbd7569ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a888294e9a386ed30821afbd7569ae6">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a0a888294e9a386ed30821afbd7569ae6_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a0a888294e9a386ed30821afbd7569ae6_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0a888294e9a386ed30821afbd7569ae6_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0a888294e9a386ed30821afbd7569ae6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,133,192,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5138d2ed0a33be5f06d6b98dd3f3e62f" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a18adc6191f80690b053505720ae5347e" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a42fa7b733f18dfa0441f7c1c0590320a" title=" " alt="" coords="240,133,427,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a713a3549fa1ddb27ac5a277ae88cacd4" title=" " alt="" coords="240,197,427,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ab11df47bc6350d6c3c8edc95370f0985" title=" " alt="" coords="240,261,427,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5138d2ed0a33be5f06d6b98dd3f3e62f" name="a5138d2ed0a33be5f06d6b98dd3f3e62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5138d2ed0a33be5f06d6b98dd3f3e62f">&#9670;&#160;</a></span>clear_acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_acceleration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a5138d2ed0a33be5f06d6b98dd3f3e62f_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a5138d2ed0a33be5f06d6b98dd3f3e62f_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5138d2ed0a33be5f06d6b98dd3f3e62f_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5138d2ed0a33be5f06d6b98dd3f3e62f_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18adc6191f80690b053505720ae5347e" name="a18adc6191f80690b053505720ae5347e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18adc6191f80690b053505720ae5347e">&#9670;&#160;</a></span>clear_end_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_end_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a18adc6191f80690b053505720ae5347e_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a18adc6191f80690b053505720ae5347e_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a18adc6191f80690b053505720ae5347e_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a18adc6191f80690b053505720ae5347e_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42fa7b733f18dfa0441f7c1c0590320a" name="a42fa7b733f18dfa0441f7c1c0590320a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fa7b733f18dfa0441f7c1c0590320a">&#9670;&#160;</a></span>clear_initial_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_initial_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a42fa7b733f18dfa0441f7c1c0590320a_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a42fa7b733f18dfa0441f7c1c0590320a_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a42fa7b733f18dfa0441f7c1c0590320a_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a42fa7b733f18dfa0441f7c1c0590320a_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a713a3549fa1ddb27ac5a277ae88cacd4" name="a713a3549fa1ddb27ac5a277ae88cacd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713a3549fa1ddb27ac5a277ae88cacd4">&#9670;&#160;</a></span>clear_jerk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_jerk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a713a3549fa1ddb27ac5a277ae88cacd4_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a713a3549fa1ddb27ac5a277ae88cacd4_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a713a3549fa1ddb27ac5a277ae88cacd4_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a713a3549fa1ddb27ac5a277ae88cacd4_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab11df47bc6350d6c3c8edc95370f0985" name="ab11df47bc6350d6c3c8edc95370f0985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11df47bc6350d6c3c8edc95370f0985">&#9670;&#160;</a></span>clear_max_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_max_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_ab11df47bc6350d6c3c8edc95370f0985_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_ab11df47bc6350d6c3c8edc95370f0985_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_ab11df47bc6350d6c3c8edc95370f0985_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_ab11df47bc6350d6c3c8edc95370f0985_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0a888294e9a386ed30821afbd7569ae6" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1655374603e97674a2d4f26c61d51bdc" name="a1655374603e97674a2d4f26c61d51bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1655374603e97674a2d4f26c61d51bdc">&#9670;&#160;</a></span>clear_total_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_total_distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3de3522da91ebb805836f50ea17b161e" name="a3de3522da91ebb805836f50ea17b161e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de3522da91ebb805836f50ea17b161e">&#9670;&#160;</a></span>clear_total_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::clear_total_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac24ea0f9aa97e767f664d0df6db88e0b" name="ac24ea0f9aa97e767f664d0df6db88e0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24ea0f9aa97e767f664d0df6db88e0b">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::TrajectoryProfile::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a804bfa0959f700171fa48767baeaeeeb" name="a804bfa0959f700171fa48767baeaeeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804bfa0959f700171fa48767baeaeeeb">&#9670;&#160;</a></span>end_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::end_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7649010811334ace11e402ce08bc361e" name="a7649010811334ace11e402ce08bc361e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7649010811334ace11e402ce08bc361e">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::robomas::TrajectoryProfile::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1fa26e8413f1b61d669782dec70da09" name="ae1fa26e8413f1b61d669782dec70da09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1fa26e8413f1b61d669782dec70da09">&#9670;&#160;</a></span>get_acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_acceleration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_ae1fa26e8413f1b61d669782dec70da09_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_ae1fa26e8413f1b61d669782dec70da09_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_ae1fa26e8413f1b61d669782dec70da09_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_ae1fa26e8413f1b61d669782dec70da09_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42cd67c5b88723d02f2bcad21d8052fd" name="a42cd67c5b88723d02f2bcad21d8052fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42cd67c5b88723d02f2bcad21d8052fd">&#9670;&#160;</a></span>get_end_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_end_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a42cd67c5b88723d02f2bcad21d8052fd_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a42cd67c5b88723d02f2bcad21d8052fd_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a42cd67c5b88723d02f2bcad21d8052fd_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a42cd67c5b88723d02f2bcad21d8052fd_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e3f3f44ffad8fddd55b4e29bf938ece" name="a1e3f3f44ffad8fddd55b4e29bf938ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3f3f44ffad8fddd55b4e29bf938ece">&#9670;&#160;</a></span>get_initial_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_initial_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a1e3f3f44ffad8fddd55b4e29bf938ece_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a1e3f3f44ffad8fddd55b4e29bf938ece_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a1e3f3f44ffad8fddd55b4e29bf938ece_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a1e3f3f44ffad8fddd55b4e29bf938ece_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a07b58091eece89ef0bb42d56788794c1" name="a07b58091eece89ef0bb42d56788794c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b58091eece89ef0bb42d56788794c1">&#9670;&#160;</a></span>get_jerk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_jerk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a07b58091eece89ef0bb42d56788794c1_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a07b58091eece89ef0bb42d56788794c1_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a07b58091eece89ef0bb42d56788794c1_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a07b58091eece89ef0bb42d56788794c1_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47459c3a88ac161d1d72ce55004eae9c" name="a47459c3a88ac161d1d72ce55004eae9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47459c3a88ac161d1d72ce55004eae9c">&#9670;&#160;</a></span>get_max_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_max_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a47459c3a88ac161d1d72ce55004eae9c_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a47459c3a88ac161d1d72ce55004eae9c_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a47459c3a88ac161d1d72ce55004eae9c_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a47459c3a88ac161d1d72ce55004eae9c_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a307075b5ec278d4cf92a9f05e3f1a778" name="a307075b5ec278d4cf92a9f05e3f1a778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307075b5ec278d4cf92a9f05e3f1a778">&#9670;&#160;</a></span>get_total_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_total_distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a307075b5ec278d4cf92a9f05e3f1a778_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a307075b5ec278d4cf92a9f05e3f1a778_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a307075b5ec278d4cf92a9f05e3f1a778_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a307075b5ec278d4cf92a9f05e3f1a778_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0764ca8d5d7c7c291462664baccfd6a9" name="a0764ca8d5d7c7c291462664baccfd6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0764ca8d5d7c7c291462664baccfd6a9">&#9670;&#160;</a></span>get_total_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::TrajectoryProfile::get_total_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a0764ca8d5d7c7c291462664baccfd6a9_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a0764ca8d5d7c7c291462664baccfd6a9_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0764ca8d5d7c7c291462664baccfd6a9_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0764ca8d5d7c7c291462664baccfd6a9_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19cb8e25338be76ffff5add9d5cf0293" name="a19cb8e25338be76ffff5add9d5cf0293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cb8e25338be76ffff5add9d5cf0293">&#9670;&#160;</a></span>get_which_end_condition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226">FieldNumber</a> devices::robomas::TrajectoryProfile::get_which_end_condition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a19cb8e25338be76ffff5add9d5cf0293_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a19cb8e25338be76ffff5add9d5cf0293_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a19cb8e25338be76ffff5add9d5cf0293_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a19cb8e25338be76ffff5add9d5cf0293_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,451,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac5fda191a52106d7bf13a004032e2b95" name="ac5fda191a52106d7bf13a004032e2b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fda191a52106d7bf13a004032e2b95">&#9670;&#160;</a></span>has_total_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::TrajectoryProfile::has_total_distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_ac5fda191a52106d7bf13a004032e2b95_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_ac5fda191a52106d7bf13a004032e2b95_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_ac5fda191a52106d7bf13a004032e2b95_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_ac5fda191a52106d7bf13a004032e2b95_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5dc0961fcf4e576826b26955da50ffee" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0c7de4759fc384c2afeb3fb392d6aca8" name="a0c7de4759fc384c2afeb3fb392d6aca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c7de4759fc384c2afeb3fb392d6aca8">&#9670;&#160;</a></span>has_total_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::TrajectoryProfile::has_total_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a0c7de4759fc384c2afeb3fb392d6aca8_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a0c7de4759fc384c2afeb3fb392d6aca8_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0c7de4759fc384c2afeb3fb392d6aca8_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a0c7de4759fc384c2afeb3fb392d6aca8_icgraph">
+<area shape="rect" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a5dc0961fcf4e576826b26955da50ffee" title=" " alt="" coords="5,5,192,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39ea62d46cdc6be60ec98bbf9d9a8ab0" name="a39ea62d46cdc6be60ec98bbf9d9a8ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ea62d46cdc6be60ec98bbf9d9a8ab0">&#9670;&#160;</a></span>initial_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::initial_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fb8ceb7c9593b48e1556bad3c0d318e" name="a5fb8ceb7c9593b48e1556bad3c0d318e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb8ceb7c9593b48e1556bad3c0d318e">&#9670;&#160;</a></span>jerk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::jerk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0425a1184bcae39c23fe4b6b0fbc42cc" name="a0425a1184bcae39c23fe4b6b0fbc42cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0425a1184bcae39c23fe4b6b0fbc42cc">&#9670;&#160;</a></span>max_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::max_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abeb40ee347537775e32c087c300d56cf" name="abeb40ee347537775e32c087c300d56cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb40ee347537775e32c087c300d56cf">&#9670;&#160;</a></span>mutable_acceleration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::TrajectoryProfile::mutable_acceleration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1aec3ed601a68bdd579244eac869b0b5" name="a1aec3ed601a68bdd579244eac869b0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aec3ed601a68bdd579244eac869b0b5">&#9670;&#160;</a></span>mutable_end_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::TrajectoryProfile::mutable_end_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4b0c8b41368c4de6e88b17479969e7a" name="aa4b0c8b41368c4de6e88b17479969e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b0c8b41368c4de6e88b17479969e7a">&#9670;&#160;</a></span>mutable_initial_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::TrajectoryProfile::mutable_initial_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e13a343cf9b71c684396859d0c1f866" name="a0e13a343cf9b71c684396859d0c1f866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e13a343cf9b71c684396859d0c1f866">&#9670;&#160;</a></span>mutable_jerk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::TrajectoryProfile::mutable_jerk </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdc49a7e8d3f834e6579b1f4b17949e4" name="afdc49a7e8d3f834e6579b1f4b17949e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc49a7e8d3f834e6579b1f4b17949e4">&#9670;&#160;</a></span>mutable_max_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::TrajectoryProfile::mutable_max_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c7ce299c645c0e11fe05c09ec8a4a52" name="a5c7ce299c645c0e11fe05c09ec8a4a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7ce299c645c0e11fe05c09ec8a4a52">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp; devices::robomas::TrajectoryProfile::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a5c7ce299c645c0e11fe05c09ec8a4a52_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a5c7ce299c645c0e11fe05c09ec8a4a52_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5c7ce299c645c0e11fe05c09ec8a4a52_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5c7ce299c645c0e11fe05c09ec8a4a52_cgraph">
+<area shape="rect" title=" " alt="" coords="5,197,192,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afaa54a122fe107ea44ec02133558a447" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d7f5c1091973cf7128dc1e06a30e5b1" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a4c61d0688206eff34b53e34531591ae2" title=" " alt="" coords="240,133,427,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aeed8893f386611267de5d2731561f880" title=" " alt="" coords="240,197,427,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a328e59c4908f1eb71c8be3a0f8588df4" title=" " alt="" coords="240,261,427,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#acf0b5cf2e2cdcad69e2cf17cd715ade5" title=" " alt="" coords="240,325,427,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac8859d0e7a460f997b5cae4e5fdea905" title=" " alt="" coords="240,389,427,429"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a34726783b411fb7ca5e0f723fd7761c2" name="a34726783b411fb7ca5e0f723fd7761c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34726783b411fb7ca5e0f723fd7761c2">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp; devices::robomas::TrajectoryProfile::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a34726783b411fb7ca5e0f723fd7761c2_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a34726783b411fb7ca5e0f723fd7761c2_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a34726783b411fb7ca5e0f723fd7761c2_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a34726783b411fb7ca5e0f723fd7761c2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,453,192,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ae1fa26e8413f1b61d669782dec70da09" title=" " alt="" coords="252,5,439,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a42cd67c5b88723d02f2bcad21d8052fd" title=" " alt="" coords="252,69,439,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a1e3f3f44ffad8fddd55b4e29bf938ece" title=" " alt="" coords="252,133,439,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a07b58091eece89ef0bb42d56788794c1" title=" " alt="" coords="252,197,439,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a47459c3a88ac161d1d72ce55004eae9c" title=" " alt="" coords="252,261,439,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a307075b5ec278d4cf92a9f05e3f1a778" title=" " alt="" coords="252,325,439,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0764ca8d5d7c7c291462664baccfd6a9" title=" " alt="" coords="252,389,439,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a19cb8e25338be76ffff5add9d5cf0293" title=" " alt="" coords="240,453,451,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#afaa54a122fe107ea44ec02133558a447" title=" " alt="" coords="252,517,439,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a9d7f5c1091973cf7128dc1e06a30e5b1" title=" " alt="" coords="252,581,439,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a4c61d0688206eff34b53e34531591ae2" title=" " alt="" coords="252,645,439,685"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#aeed8893f386611267de5d2731561f880" title=" " alt="" coords="252,709,439,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a328e59c4908f1eb71c8be3a0f8588df4" title=" " alt="" coords="252,773,439,813"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#acf0b5cf2e2cdcad69e2cf17cd715ade5" title=" " alt="" coords="252,837,439,877"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac8859d0e7a460f997b5cae4e5fdea905" title=" " alt="" coords="252,901,439,941"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5dc0961fcf4e576826b26955da50ffee" name="a5dc0961fcf4e576826b26955da50ffee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc0961fcf4e576826b26955da50ffee">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::TrajectoryProfile::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a5dc0961fcf4e576826b26955da50ffee_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a5dc0961fcf4e576826b26955da50ffee_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5dc0961fcf4e576826b26955da50ffee_cgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a5dc0961fcf4e576826b26955da50ffee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,192,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#ac5fda191a52106d7bf13a004032e2b95" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a0c7de4759fc384c2afeb3fb392d6aca8" title=" " alt="" coords="240,69,427,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a972ca46e4ee9baea61fb07760b3ee8d6" name="a972ca46e4ee9baea61fb07760b3ee8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972ca46e4ee9baea61fb07760b3ee8d6">&#9670;&#160;</a></span>set_acceleration() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa54a122fe107ea44ec02133558a447" name="afaa54a122fe107ea44ec02133558a447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa54a122fe107ea44ec02133558a447">&#9670;&#160;</a></span>set_acceleration() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_acceleration </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_afaa54a122fe107ea44ec02133558a447_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_afaa54a122fe107ea44ec02133558a447_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_afaa54a122fe107ea44ec02133558a447_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_afaa54a122fe107ea44ec02133558a447_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2168497d2e0eb94de5ab2faf6620d3d" name="af2168497d2e0eb94de5ab2faf6620d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2168497d2e0eb94de5ab2faf6620d3d">&#9670;&#160;</a></span>set_end_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_end_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d7f5c1091973cf7128dc1e06a30e5b1" name="a9d7f5c1091973cf7128dc1e06a30e5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7f5c1091973cf7128dc1e06a30e5b1">&#9670;&#160;</a></span>set_end_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_end_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a9d7f5c1091973cf7128dc1e06a30e5b1_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a9d7f5c1091973cf7128dc1e06a30e5b1_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a9d7f5c1091973cf7128dc1e06a30e5b1_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a9d7f5c1091973cf7128dc1e06a30e5b1_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a474c636e653675c563347dc578de9ddd" name="a474c636e653675c563347dc578de9ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474c636e653675c563347dc578de9ddd">&#9670;&#160;</a></span>set_initial_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_initial_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c61d0688206eff34b53e34531591ae2" name="a4c61d0688206eff34b53e34531591ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c61d0688206eff34b53e34531591ae2">&#9670;&#160;</a></span>set_initial_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_initial_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a4c61d0688206eff34b53e34531591ae2_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a4c61d0688206eff34b53e34531591ae2_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a4c61d0688206eff34b53e34531591ae2_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a4c61d0688206eff34b53e34531591ae2_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a107dd53ed9989e5701843f84ca85caf7" name="a107dd53ed9989e5701843f84ca85caf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107dd53ed9989e5701843f84ca85caf7">&#9670;&#160;</a></span>set_jerk() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_jerk </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeed8893f386611267de5d2731561f880" name="aeed8893f386611267de5d2731561f880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed8893f386611267de5d2731561f880">&#9670;&#160;</a></span>set_jerk() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_jerk </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_aeed8893f386611267de5d2731561f880_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_aeed8893f386611267de5d2731561f880_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_aeed8893f386611267de5d2731561f880_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_aeed8893f386611267de5d2731561f880_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae5cd51d2062705ab5609ad47c98a29ae" name="ae5cd51d2062705ab5609ad47c98a29ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cd51d2062705ab5609ad47c98a29ae">&#9670;&#160;</a></span>set_max_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_max_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a328e59c4908f1eb71c8be3a0f8588df4" name="a328e59c4908f1eb71c8be3a0f8588df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328e59c4908f1eb71c8be3a0f8588df4">&#9670;&#160;</a></span>set_max_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_max_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_a328e59c4908f1eb71c8be3a0f8588df4_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_a328e59c4908f1eb71c8be3a0f8588df4_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_a328e59c4908f1eb71c8be3a0f8588df4_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_a328e59c4908f1eb71c8be3a0f8588df4_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a90d6446cb2263c95b7dee95bb85c9e03" name="a90d6446cb2263c95b7dee95bb85c9e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d6446cb2263c95b7dee95bb85c9e03">&#9670;&#160;</a></span>set_total_distance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_total_distance </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf0b5cf2e2cdcad69e2cf17cd715ade5" name="acf0b5cf2e2cdcad69e2cf17cd715ade5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0b5cf2e2cdcad69e2cf17cd715ade5">&#9670;&#160;</a></span>set_total_distance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_total_distance </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_acf0b5cf2e2cdcad69e2cf17cd715ade5_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_acf0b5cf2e2cdcad69e2cf17cd715ade5_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_acf0b5cf2e2cdcad69e2cf17cd715ade5_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_acf0b5cf2e2cdcad69e2cf17cd715ade5_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3cd3a1cf0d00253b76109c1a65dec064" name="a3cd3a1cf0d00253b76109c1a65dec064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd3a1cf0d00253b76109c1a65dec064">&#9670;&#160;</a></span>set_total_time() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_total_time </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8859d0e7a460f997b5cae4e5fdea905" name="ac8859d0e7a460f997b5cae4e5fdea905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8859d0e7a460f997b5cae4e5fdea905">&#9670;&#160;</a></span>set_total_time() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::TrajectoryProfile::set_total_time </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1TrajectoryProfile_ac8859d0e7a460f997b5cae4e5fdea905_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1TrajectoryProfile_ac8859d0e7a460f997b5cae4e5fdea905_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1TrajectoryProfile_ac8859d0e7a460f997b5cae4e5fdea905_icgraph" id="aclassdevices_1_1robomas_1_1TrajectoryProfile_ac8859d0e7a460f997b5cae4e5fdea905_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a34726783b411fb7ca5e0f723fd7761c2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1TrajectoryProfile.html#a30b157508faa3f90ea339f764e1a2389" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30b30b3e43f19ec32a876d9e64ddd369" name="a30b30b3e43f19ec32a876d9e64ddd369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b30b3e43f19ec32a876d9e64ddd369">&#9670;&#160;</a></span>total_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::total_distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa55b87a364e81a0b4c95473b4cec7e61" name="aa55b87a364e81a0b4c95473b4cec7e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55b87a364e81a0b4c95473b4cec7e61">&#9670;&#160;</a></span>total_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::TrajectoryProfile::total_time </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9d93c512a084c128d26d3678c9240af1" name="a9d93c512a084c128d26d3678c9240af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d93c512a084c128d26d3678c9240af1">&#9670;&#160;</a></span>ACCELERATION_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::ACCELERATION_NAME = &quot;acceleration&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a800061b2dcd3635f362015cdb6d8ba3b" name="a800061b2dcd3635f362015cdb6d8ba3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800061b2dcd3635f362015cdb6d8ba3b">&#9670;&#160;</a></span>END_SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::END_SPEED_NAME = &quot;end_speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46eecfba98207de5db56ad12dd1a1eee" name="a46eecfba98207de5db56ad12dd1a1eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46eecfba98207de5db56ad12dd1a1eee">&#9670;&#160;</a></span>INITIAL_SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::INITIAL_SPEED_NAME = &quot;initial_speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af593c9c704987bfb3da0030398f7a444" name="af593c9c704987bfb3da0030398f7a444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af593c9c704987bfb3da0030398f7a444">&#9670;&#160;</a></span>JERK_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::JERK_NAME = &quot;jerk&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadded6856317aabf3cc4097e415316e0" name="aadded6856317aabf3cc4097e415316e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadded6856317aabf3cc4097e415316e0">&#9670;&#160;</a></span>MAX_SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::MAX_SPEED_NAME = &quot;max_speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c70aea806a07cdf2c6c3a40080b222c" name="a7c70aea806a07cdf2c6c3a40080b222c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c70aea806a07cdf2c6c3a40080b222c">&#9670;&#160;</a></span>TOTAL_DISTANCE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::TOTAL_DISTANCE_NAME = &quot;total_distance&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa70cc596d5833cb27269463723476119" name="aa70cc596d5833cb27269463723476119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70cc596d5833cb27269463723476119">&#9670;&#160;</a></span>TOTAL_TIME_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::TrajectoryProfile::TOTAL_TIME_NAME = &quot;total_time&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="robomas_8h.html">robomas.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="namespacedevices_1_1robomas.html">robomas</a></li><li class="navelem"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="PS5::DualSense::get" name="PS5::DualSense::get">
+<area shape="rect" id="node1" title="現在のコントローラーの入力情報をButton構造体で返します。" alt="" coords="373,5,513,31"/>
+<area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,31,84,56"/>
+<area shape="rect" id="node3" href="$appMain_8cpp.html#a5e23da4d726d1819d095202820d64009" title=" " alt="" coords="251,31,325,56"/>
+<area shape="rect" id="node4" href="$appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,81,203,107"/>
+</map>

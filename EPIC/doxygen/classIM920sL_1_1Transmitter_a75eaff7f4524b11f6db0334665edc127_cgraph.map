@@ -1,0 +1,4 @@
+<map id="IM920sL::Transmitter::send" name="IM920sL::Transmitter::send">
+<area shape="rect" id="node1" title="dataを送信する。 完了まで50ms以上かかる。" alt="" coords="5,5,151,45"/>
+<area shape="rect" id="node2" href="$classIM920sL_1_1BaseIM920sL.html#a31089988da53b83722bf6db8715250ee" title=" " alt="" coords="199,5,359,45"/>
+</map>

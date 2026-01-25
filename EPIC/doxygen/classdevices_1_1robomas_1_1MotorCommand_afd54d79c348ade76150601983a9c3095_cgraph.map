@@ -1,0 +1,7 @@
+<map id="devices::robomas::MotorCommand::clear_low_speed_pid" name="devices::robomas::MotorCommand::clear_low_speed_pid">
+<area shape="rect" id="node1" title=" " alt="" coords="5,69,227,109"/>
+<area shape="rect" id="node2" href="$classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="275,69,461,109"/>
+<area shape="rect" id="node3" href="$classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="509,5,696,45"/>
+<area shape="rect" id="node4" href="$classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="509,69,696,109"/>
+<area shape="rect" id="node5" href="$classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="509,133,696,173"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CanSystem::ErrorCounters::get_bus_state" name="CanSystem::ErrorCounters::get_bus_state">
+<area shape="rect" id="node1" title=" " alt="" coords="661,39,836,79"/>
+<area shape="rect" id="node2" href="$structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f" title=" " alt="" coords="243,5,404,45"/>
+<area shape="rect" id="node4" href="$structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="452,67,613,107"/>
+<area shape="rect" id="node3" href="$classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" id="node5" href="$structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,69,404,109"/>
+<area shape="rect" id="node6" href="$classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="5,69,195,109"/>
+<area shape="rect" id="node7" href="$classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="5,133,195,173"/>
+</map>

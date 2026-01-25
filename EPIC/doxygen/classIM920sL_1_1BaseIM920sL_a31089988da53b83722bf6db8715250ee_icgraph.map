@@ -1,0 +1,8 @@
+<map id="IM920sL::BaseIM920sL::sendIM920" name="IM920sL::BaseIM920sL::sendIM920">
+<area shape="rect" id="node1" title=" " alt="" coords="407,35,567,75"/>
+<area shape="rect" id="node2" href="$classIM920sL_1_1Transmitter.html#a35fafb3505be6d6a54207d052fb2e40f" title="IM920sLの設定 完了まで2.5秒以上かかる。" alt="" coords="5,5,151,45"/>
+<area shape="rect" id="node3" href="$classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff" title="IM920sLをペアリングするための信号を出す。" alt="" coords="199,99,359,139"/>
+<area shape="rect" id="node6" href="$classIM920sL_1_1Transmitter.html#a75eaff7f4524b11f6db0334665edc127" title="dataを送信する。 完了まで50ms以上かかる。" alt="" coords="206,35,351,75"/>
+<area shape="rect" id="node4" href="$classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,84,151,124"/>
+<area shape="rect" id="node5" href="$classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="10,148,146,188"/>
+</map>

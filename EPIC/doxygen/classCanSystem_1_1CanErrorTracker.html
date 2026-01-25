@@ -1,0 +1,692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: CanSystem::CanErrorTracker クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classCanSystem_1_1CanErrorTracker.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classCanSystem_1_1CanErrorTracker-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">CanSystem::CanErrorTracker クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CanErrorTracker.hpp&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af77f922989c606967f141348e4a0faf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6">updateStatus</a> ()</td></tr>
+<tr class="separator:af77f922989c606967f141348e4a0faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7ba88282f83efe46f631b366ef4a27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27">is_error_state</a> ()</td></tr>
+<tr class="separator:abf7ba88282f83efe46f631b366ef4a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936315fb72908b5f0455cb0fcdfb62dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a936315fb72908b5f0455cb0fcdfb62dc">addIdReceived</a> (int id)</td></tr>
+<tr class="separator:a936315fb72908b5f0455cb0fcdfb62dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43499956d51725021b59f53a54b2054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#ae43499956d51725021b59f53a54b2054">addIdSend</a> (int id)</td></tr>
+<tr class="separator:ae43499956d51725021b59f53a54b2054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588fa9f1eaa89a4b5168171cdaee0504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a588fa9f1eaa89a4b5168171cdaee0504">addReset</a> ()</td></tr>
+<tr class="separator:a588fa9f1eaa89a4b5168171cdaee0504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ed447de3fa5d443def6da2717da09c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structCanSystem_1_1CANStatus.html">CANStatus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a03ed447de3fa5d443def6da2717da09c">getStatus</a> () const</td></tr>
+<tr class="separator:a03ed447de3fa5d443def6da2717da09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e15b9529d1bf63f9493c6e54649f3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90e">CanType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a83e15b9529d1bf63f9493c6e54649f3c">getCanType</a> () const</td></tr>
+<tr class="separator:a83e15b9529d1bf63f9493c6e54649f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321deb52ded7bf434e147837ef1334e9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a321deb52ded7bf434e147837ef1334e9">getTotalUpdates</a> () const</td></tr>
+<tr class="separator:a321deb52ded7bf434e147837ef1334e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae653a9917a85fdd6c5396b7962a54b41"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#ae653a9917a85fdd6c5396b7962a54b41">getErrorStateCount</a> () const</td></tr>
+<tr class="separator:ae653a9917a85fdd6c5396b7962a54b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4f593c4c77b131308e231ecc72db75"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a1c4f593c4c77b131308e231ecc72db75">getMaxTEC</a> () const</td></tr>
+<tr class="separator:a1c4f593c4c77b131308e231ecc72db75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee6900218a6161bb83eef415d91e2e3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a5ee6900218a6161bb83eef415d91e2e3">getMaxREC</a> () const</td></tr>
+<tr class="separator:a5ee6900218a6161bb83eef415d91e2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13bf515f57d578ec2da03daf5794ccc4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a13bf515f57d578ec2da03daf5794ccc4">getSendIdCount</a> () const</td></tr>
+<tr class="separator:a13bf515f57d578ec2da03daf5794ccc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41711e79ffb9c299d71f0f93ffe40a3f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a41711e79ffb9c299d71f0f93ffe40a3f">getReceivedIdCount</a> () const</td></tr>
+<tr class="separator:a41711e79ffb9c299d71f0f93ffe40a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54bff0cb284e1b7cb4ad689fe295052"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#ad54bff0cb284e1b7cb4ad689fe295052">getIdSendCount</a> (uint32_t id) const</td></tr>
+<tr class="separator:ad54bff0cb284e1b7cb4ad689fe295052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf16da81dfd8d17e43734c5a61ee63e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a8cf16da81dfd8d17e43734c5a61ee63e">getIdReceivedCount</a> (uint32_t id) const</td></tr>
+<tr class="separator:a8cf16da81dfd8d17e43734c5a61ee63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba238e148d013c9b8b68badb2915c82"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82">streamTxRxStats</a> (const char *name)</td></tr>
+<tr class="separator:a6ba238e148d013c9b8b68badb2915c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fbbffa33ed077b78f38060da0c9932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a18fbbffa33ed077b78f38060da0c9932">clearStatistics</a> ()</td></tr>
+<tr class="separator:a18fbbffa33ed077b78f38060da0c9932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b21c062dd3d0b49312ccc4d3955853"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#a83b21c062dd3d0b49312ccc4d3955853">getConfig</a> (const char *name)</td></tr>
+<tr class="separator:a83b21c062dd3d0b49312ccc4d3955853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae443ebaa8a3c205781a9f826f9834f43"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43">getQuickStats</a> (const char *name)</td></tr>
+<tr class="separator:ae443ebaa8a3c205781a9f826f9834f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a936315fb72908b5f0455cb0fcdfb62dc" name="a936315fb72908b5f0455cb0fcdfb62dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936315fb72908b5f0455cb0fcdfb62dc">&#9670;&#160;</a></span>addIdReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanSystem::CanErrorTracker::addIdReceived </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae43499956d51725021b59f53a54b2054" name="ae43499956d51725021b59f53a54b2054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43499956d51725021b59f53a54b2054">&#9670;&#160;</a></span>addIdSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanSystem::CanErrorTracker::addIdSend </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a588fa9f1eaa89a4b5168171cdaee0504" name="a588fa9f1eaa89a4b5168171cdaee0504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588fa9f1eaa89a4b5168171cdaee0504">&#9670;&#160;</a></span>addReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanSystem::CanErrorTracker::addReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18fbbffa33ed077b78f38060da0c9932" name="a18fbbffa33ed077b78f38060da0c9932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fbbffa33ed077b78f38060da0c9932">&#9670;&#160;</a></span>clearStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanSystem::CanErrorTracker::clearStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83e15b9529d1bf63f9493c6e54649f3c" name="a83e15b9529d1bf63f9493c6e54649f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e15b9529d1bf63f9493c6e54649f3c">&#9670;&#160;</a></span>getCanType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90e">CanType</a> CanSystem::CanErrorTracker::getCanType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83b21c062dd3d0b49312ccc4d3955853" name="a83b21c062dd3d0b49312ccc4d3955853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b21c062dd3d0b49312ccc4d3955853">&#9670;&#160;</a></span>getConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CanSystem::CanErrorTracker::getConfig </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCanSystem_1_1CanErrorTracker_a83b21c062dd3d0b49312ccc4d3955853_cgraph.png" border="0" usemap="#aclassCanSystem_1_1CanErrorTracker_a83b21c062dd3d0b49312ccc4d3955853_cgraph" alt=""/></div>
+<map name="aclassCanSystem_1_1CanErrorTracker_a83b21c062dd3d0b49312ccc4d3955853_cgraph" id="aclassCanSystem_1_1CanErrorTracker_a83b21c062dd3d0b49312ccc4d3955853_cgraph">
+<area shape="rect" title=" " alt="" coords="5,63,195,103"/>
+<area shape="rect" href="structCanSystem_1_1TimingConfig.html#abd30d5d1b68657efcdd9c0a33531ce8b" title=" " alt="" coords="253,5,423,45"/>
+<area shape="rect" href="structCanSystem_1_1TimingConfig.html#a5f7eaf231181aedbe85f9556cda4cf42" title=" " alt="" coords="481,63,652,103"/>
+<area shape="rect" href="structCanSystem_1_1TimingConfig.html#a9058d934691285421b11be390678f68a" title=" " alt="" coords="243,120,433,160"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae653a9917a85fdd6c5396b7962a54b41" name="ae653a9917a85fdd6c5396b7962a54b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae653a9917a85fdd6c5396b7962a54b41">&#9670;&#160;</a></span>getErrorStateCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CanSystem::CanErrorTracker::getErrorStateCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cf16da81dfd8d17e43734c5a61ee63e" name="a8cf16da81dfd8d17e43734c5a61ee63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf16da81dfd8d17e43734c5a61ee63e">&#9670;&#160;</a></span>getIdReceivedCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CanErrorTracker::getIdReceivedCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad54bff0cb284e1b7cb4ad689fe295052" name="ad54bff0cb284e1b7cb4ad689fe295052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54bff0cb284e1b7cb4ad689fe295052">&#9670;&#160;</a></span>getIdSendCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CanErrorTracker::getIdSendCount </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ee6900218a6161bb83eef415d91e2e3" name="a5ee6900218a6161bb83eef415d91e2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee6900218a6161bb83eef415d91e2e3">&#9670;&#160;</a></span>getMaxREC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CanErrorTracker::getMaxREC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c4f593c4c77b131308e231ecc72db75" name="a1c4f593c4c77b131308e231ecc72db75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4f593c4c77b131308e231ecc72db75">&#9670;&#160;</a></span>getMaxTEC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CanErrorTracker::getMaxTEC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae443ebaa8a3c205781a9f826f9834f43" name="ae443ebaa8a3c205781a9f826f9834f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae443ebaa8a3c205781a9f826f9834f43">&#9670;&#160;</a></span>getQuickStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CanSystem::CanErrorTracker::getQuickStats </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCanSystem_1_1CanErrorTracker_ae443ebaa8a3c205781a9f826f9834f43_cgraph.png" border="0" usemap="#aclassCanSystem_1_1CanErrorTracker_ae443ebaa8a3c205781a9f826f9834f43_cgraph" alt=""/></div>
+<map name="aclassCanSystem_1_1CanErrorTracker_ae443ebaa8a3c205781a9f826f9834f43_cgraph" id="aclassCanSystem_1_1CanErrorTracker_ae443ebaa8a3c205781a9f826f9834f43_cgraph">
+<area shape="rect" title=" " alt="" coords="5,97,195,137"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f" title=" " alt="" coords="243,5,404,45"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,97,404,137"/>
+<area shape="rect" href="namespaceCanSystem.html#a717f07a6582dbbbdd0dfed404e4f054a" title=" " alt="" coords="251,162,396,187"/>
+<area shape="rect" href="structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="675,84,849,124"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="459,48,620,88"/>
+<area shape="rect" href="structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="452,112,627,152"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="459,176,620,216"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41711e79ffb9c299d71f0f93ffe40a3f" name="a41711e79ffb9c299d71f0f93ffe40a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41711e79ffb9c299d71f0f93ffe40a3f">&#9670;&#160;</a></span>getReceivedIdCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CanSystem::CanErrorTracker::getReceivedIdCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13bf515f57d578ec2da03daf5794ccc4" name="a13bf515f57d578ec2da03daf5794ccc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13bf515f57d578ec2da03daf5794ccc4">&#9670;&#160;</a></span>getSendIdCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CanSystem::CanErrorTracker::getSendIdCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03ed447de3fa5d443def6da2717da09c" name="a03ed447de3fa5d443def6da2717da09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ed447de3fa5d443def6da2717da09c">&#9670;&#160;</a></span>getStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structCanSystem_1_1CANStatus.html">CANStatus</a> &amp; CanSystem::CanErrorTracker::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a321deb52ded7bf434e147837ef1334e9" name="a321deb52ded7bf434e147837ef1334e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321deb52ded7bf434e147837ef1334e9">&#9670;&#160;</a></span>getTotalUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t CanSystem::CanErrorTracker::getTotalUpdates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf7ba88282f83efe46f631b366ef4a27" name="abf7ba88282f83efe46f631b366ef4a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7ba88282f83efe46f631b366ef4a27">&#9670;&#160;</a></span>is_error_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CanErrorTracker::is_error_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCanSystem_1_1CanErrorTracker_abf7ba88282f83efe46f631b366ef4a27_cgraph.png" border="0" usemap="#aclassCanSystem_1_1CanErrorTracker_abf7ba88282f83efe46f631b366ef4a27_cgraph" alt=""/></div>
+<map name="aclassCanSystem_1_1CanErrorTracker_abf7ba88282f83efe46f631b366ef4a27_cgraph" id="aclassCanSystem_1_1CanErrorTracker_abf7ba88282f83efe46f631b366ef4a27_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,195,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,69,404,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="459,5,620,45"/>
+<area shape="rect" href="structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="452,69,627,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="459,133,620,173"/>
+<area shape="rect" href="structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="675,133,849,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6ba238e148d013c9b8b68badb2915c82" name="a6ba238e148d013c9b8b68badb2915c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba238e148d013c9b8b68badb2915c82">&#9670;&#160;</a></span>streamTxRxStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string CanSystem::CanErrorTracker::streamTxRxStats </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af77f922989c606967f141348e4a0faf6" name="af77f922989c606967f141348e4a0faf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77f922989c606967f141348e4a0faf6">&#9670;&#160;</a></span>updateStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CanSystem::CanErrorTracker::updateStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCanSystem_1_1CanErrorTracker_af77f922989c606967f141348e4a0faf6_cgraph.png" border="0" usemap="#aclassCanSystem_1_1CanErrorTracker_af77f922989c606967f141348e4a0faf6_cgraph" alt=""/></div>
+<map name="aclassCanSystem_1_1CanErrorTracker_af77f922989c606967f141348e4a0faf6_cgraph" id="aclassCanSystem_1_1CanErrorTracker_af77f922989c606967f141348e4a0faf6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,195,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,69,404,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="459,5,620,45"/>
+<area shape="rect" href="structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="452,69,627,109"/>
+<area shape="rect" href="structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="459,133,620,173"/>
+<area shape="rect" href="structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="675,133,849,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/CanSystem/support/<a class="el" href="CanErrorTracker_8hpp.html">CanErrorTracker.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceCanSystem.html">CanSystem</a></li><li class="navelem"><a class="el" href="classCanSystem_1_1CanErrorTracker.html">CanErrorTracker</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

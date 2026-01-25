@@ -1,0 +1,36 @@
+var classrobot_1_1xyz__i =
+[
+    [ "FieldNumber", "classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3d", [
+      [ "NOT_SET", "classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3da1c250a21210b7b88a14db9a0cbe71162", null ],
+      [ "X", "classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3da02129bb861061d1a052c592e2dc6b383", null ],
+      [ "Y", "classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3da57cec4137b614c87cb4e24a3d003a3e0", null ],
+      [ "Z", "classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3da21c2e59531c8710156d34a3c30ac81d5", null ]
+    ] ],
+    [ "xyz_i", "classrobot_1_1xyz__i.html#ab9cb85fa6de38ccdbb23fa808b06ed24", null ],
+    [ "xyz_i", "classrobot_1_1xyz__i.html#af41f6ebc4949ee99f60ea3f99aaacfab", null ],
+    [ "xyz_i", "classrobot_1_1xyz__i.html#a3d1079a1f11246e6635c5d00c7f5c62b", null ],
+    [ "~xyz_i", "classrobot_1_1xyz__i.html#aacea40e1cdfcfccf775764b968709a5f", null ],
+    [ "clear", "classrobot_1_1xyz__i.html#a36bd1b16e1e661d94ac486f3de3663b3", null ],
+    [ "clear_x", "classrobot_1_1xyz__i.html#ac01bd2cfe74282c9dd9c048727d00929", null ],
+    [ "clear_y", "classrobot_1_1xyz__i.html#ac361c3da947c0eb51a63ded6cc8a4799", null ],
+    [ "clear_z", "classrobot_1_1xyz__i.html#a60e599ac641f90a4e858048e06b0cdf6", null ],
+    [ "deserialize", "classrobot_1_1xyz__i.html#aa306fe48a51b11b158fc189306a304b7", null ],
+    [ "get_x", "classrobot_1_1xyz__i.html#a61912cdba1e47624f50cba9c2ce2d063", null ],
+    [ "get_y", "classrobot_1_1xyz__i.html#a8e6506df1484eada8a7f3f1a71f9a0fe", null ],
+    [ "get_z", "classrobot_1_1xyz__i.html#a21bceb070c833ba84b37bde44189a53b", null ],
+    [ "mutable_x", "classrobot_1_1xyz__i.html#a60c0a85f007f7f2f68e445aa565c75c4", null ],
+    [ "mutable_y", "classrobot_1_1xyz__i.html#a6fbab1e395c1cf8ac6e8afd02fcbb9f1", null ],
+    [ "mutable_z", "classrobot_1_1xyz__i.html#ab4fb089ca70b67c63e589c319f2bb276", null ],
+    [ "operator=", "classrobot_1_1xyz__i.html#a33024e5ef3b78a64b1688b4a0922c2f0", null ],
+    [ "operator=", "classrobot_1_1xyz__i.html#aed55be0b1c17dda1e1b13307bf93d0ae", null ],
+    [ "serialize", "classrobot_1_1xyz__i.html#aee921f422c6c0645cde6a1fe30270561", null ],
+    [ "set_x", "classrobot_1_1xyz__i.html#a2f121a8c0b76ef5efdfe200a5d1ebbaf", null ],
+    [ "set_x", "classrobot_1_1xyz__i.html#a75f85a75725d8ef5c7221a519006af69", null ],
+    [ "set_y", "classrobot_1_1xyz__i.html#a8e24893a430f4635d999dc14ee8e88c8", null ],
+    [ "set_y", "classrobot_1_1xyz__i.html#af67f7c727719363eb37a81ca2a9652a7", null ],
+    [ "set_z", "classrobot_1_1xyz__i.html#a1c95b0cdfb3fa8c4b0ad6de31d3e2afc", null ],
+    [ "set_z", "classrobot_1_1xyz__i.html#a38563b63b29d8834fe9d4dce26010dd1", null ],
+    [ "x", "classrobot_1_1xyz__i.html#a4777ce9ba32c55c3479ad44626dc936e", null ],
+    [ "y", "classrobot_1_1xyz__i.html#a1c443634e65666c6410263d1333ac0ac", null ],
+    [ "z", "classrobot_1_1xyz__i.html#a39b6402932e53b3c03734bb2848e9850", null ]
+];

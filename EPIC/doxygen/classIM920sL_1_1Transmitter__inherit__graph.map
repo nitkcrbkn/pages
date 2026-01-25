@@ -1,0 +1,4 @@
+<map id="IM920sL::Transmitter" name="IM920sL::Transmitter">
+<area shape="rect" id="node1" title="IM920sLで送信するための親機クラスです。" alt="" coords="13,79,158,104"/>
+<area shape="rect" id="node2" href="$classIM920sL_1_1BaseIM920sL.html" title="IM920sLで受信するためのクラスです。" alt="" coords="5,5,165,31"/>
+</map>

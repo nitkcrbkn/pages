@@ -1,0 +1,5 @@
+<map id="Motoron::Master::init" name="Motoron::Master::init">
+<area shape="rect" id="node1" title="制御システムをモーター数で初期化する" alt="" coords="251,5,389,31"/>
+<area shape="rect" id="node2" href="$appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
+<area shape="rect" id="node3" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+</map>

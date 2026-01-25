@@ -1,0 +1,1199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::robomas::PIDConfig クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1robomas_1_1PIDConfig.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1robomas_1_1PIDConfig-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::robomas::PIDConfig クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;robomas.h&gt;</code></p>
+<div class="dynheader">
+devices::robomas::PIDConfig の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig__inherit__graph.png" border="0" usemap="#adevices_1_1robomas_1_1PIDConfig_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1robomas_1_1PIDConfig_inherit__map" id="adevices_1_1robomas_1_1PIDConfig_inherit__map">
+<area shape="rect" title=" " alt="" coords="24,79,211,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::robomas::PIDConfig 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig__coll__graph.png" border="0" usemap="#adevices_1_1robomas_1_1PIDConfig_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1robomas_1_1PIDConfig_coll__map" id="adevices_1_1robomas_1_1PIDConfig_coll__map">
+<area shape="rect" title=" " alt="" coords="24,79,211,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a9ba1ff31b37033ebea3b93fa5a5190cb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cb">FieldNumber</a> : uint32_t { <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cba1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cbada2be3f8b1640de6534fea0e9744cccb">KP</a> = 1
+, <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cba609caf44b732b054dda5860569e7e92e">KI</a> = 2
+, <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cbaa46be189b8246f0f9657170a0b127665">KD</a> = 3
+ }</td></tr>
+<tr class="separator:a9ba1ff31b37033ebea3b93fa5a5190cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2646e2fc247af1c13efc513a0c98e927"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a2646e2fc247af1c13efc513a0c98e927">PIDConfig</a> ()=default</td></tr>
+<tr class="separator:a2646e2fc247af1c13efc513a0c98e927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a6cae4354293d9e87ce2fb1c6130b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2">PIDConfig</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;rhs)</td></tr>
+<tr class="separator:a32a6cae4354293d9e87ce2fb1c6130b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2c20e896e0cc7214f9da33082e9c66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a8d2c20e896e0cc7214f9da33082e9c66">PIDConfig</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a8d2c20e896e0cc7214f9da33082e9c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5b8471bb16e4daa7c1b5194018e26c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#aec5b8471bb16e4daa7c1b5194018e26c">~PIDConfig</a> () override=default</td></tr>
+<tr class="separator:aec5b8471bb16e4daa7c1b5194018e26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1478cd50cd2914340502baefe88cf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;rhs)</td></tr>
+<tr class="separator:a1f1478cd50cd2914340502baefe88cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c608e72a5444b9a150f6ea6c4c5f5d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a6c608e72a5444b9a150f6ea6c4c5f5d0">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a6c608e72a5444b9a150f6ea6c4c5f5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cfab6e8fcad067a71bf07ed744cc44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44">clear_kp</a> ()</td></tr>
+<tr class="separator:af2cfab6e8fcad067a71bf07ed744cc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151f97465c2e128d154c8d379df4d9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a151f97465c2e128d154c8d379df4d9bc">set_kp</a> (const float &amp;value)</td></tr>
+<tr class="separator:a151f97465c2e128d154c8d379df4d9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e1b4eb565904bb0bf47296a800a2ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a41e1b4eb565904bb0bf47296a800a2ea">set_kp</a> (const float &amp;&amp;value)</td></tr>
+<tr class="separator:a41e1b4eb565904bb0bf47296a800a2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2638b82949d270e8217a860a63580e61"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a2638b82949d270e8217a860a63580e61">mutable_kp</a> ()</td></tr>
+<tr class="separator:a2638b82949d270e8217a860a63580e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae964ba029eff97866f47bbac27a06ed4"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#ae964ba029eff97866f47bbac27a06ed4">get_kp</a> () const</td></tr>
+<tr class="separator:ae964ba029eff97866f47bbac27a06ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a2e7aacc1dab115d519d6e3511f054"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#af4a2e7aacc1dab115d519d6e3511f054">kp</a> () const</td></tr>
+<tr class="separator:af4a2e7aacc1dab115d519d6e3511f054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d09bab313186d1417085fd76004ba1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d">clear_ki</a> ()</td></tr>
+<tr class="separator:a3d09bab313186d1417085fd76004ba1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3882d638b9aee3dc5895d95552dbda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#aaf3882d638b9aee3dc5895d95552dbda">set_ki</a> (const float &amp;value)</td></tr>
+<tr class="separator:aaf3882d638b9aee3dc5895d95552dbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625e161fba2c222f3d8fa49dcd8f7821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a625e161fba2c222f3d8fa49dcd8f7821">set_ki</a> (const float &amp;&amp;value)</td></tr>
+<tr class="separator:a625e161fba2c222f3d8fa49dcd8f7821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e2b61e29d4310a8e4c7a7eea401882"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a98e2b61e29d4310a8e4c7a7eea401882">mutable_ki</a> ()</td></tr>
+<tr class="separator:a98e2b61e29d4310a8e4c7a7eea401882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91405f87bf213f89b08076aff79210e"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#ab91405f87bf213f89b08076aff79210e">get_ki</a> () const</td></tr>
+<tr class="separator:ab91405f87bf213f89b08076aff79210e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a464ba873cee30f757a8aac56f31fb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a92a464ba873cee30f757a8aac56f31fb">ki</a> () const</td></tr>
+<tr class="separator:a92a464ba873cee30f757a8aac56f31fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b2ffa0b4745f31ca7382afb6147880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880">clear_kd</a> ()</td></tr>
+<tr class="separator:ad8b2ffa0b4745f31ca7382afb6147880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac633c9b330c3ae3a9bb19f5ede56b5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#ac633c9b330c3ae3a9bb19f5ede56b5aa">set_kd</a> (const float &amp;value)</td></tr>
+<tr class="separator:ac633c9b330c3ae3a9bb19f5ede56b5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2eedd6fb809ed8172bb58147cca1d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#aa2eedd6fb809ed8172bb58147cca1d71">set_kd</a> (const float &amp;&amp;value)</td></tr>
+<tr class="separator:aa2eedd6fb809ed8172bb58147cca1d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7e0d4dc5afb55fd2fd200b8a086bcb"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a4d7e0d4dc5afb55fd2fd200b8a086bcb">mutable_kd</a> ()</td></tr>
+<tr class="separator:a4d7e0d4dc5afb55fd2fd200b8a086bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee9b0f05fa4a48eac8ff42c5c770908"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ee9b0f05fa4a48eac8ff42c5c770908">get_kd</a> () const</td></tr>
+<tr class="separator:a9ee9b0f05fa4a48eac8ff42c5c770908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e58496aa6e50283a1d1e8e9ca0d9ae2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9e58496aa6e50283a1d1e8e9ca0d9ae2">kd</a> () const</td></tr>
+<tr class="separator:a9e58496aa6e50283a1d1e8e9ca0d9ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279128c1f918a7b3cc9c88ec4e52cca2"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a279128c1f918a7b3cc9c88ec4e52cca2">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a279128c1f918a7b3cc9c88ec4e52cca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453bf81e18d03d1d9cb9b0f73417aa21"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a453bf81e18d03d1d9cb9b0f73417aa21">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:a453bf81e18d03d1d9cb9b0f73417aa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4400f9965f3853baddfaa8f1fd1006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006">clear</a> () override</td></tr>
+<tr class="separator:a9f4400f9965f3853baddfaa8f1fd1006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8f60e26503569fefae698d8b05082173"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a8f60e26503569fefae698d8b05082173">field_number_to_name</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cb">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a8f60e26503569fefae698d8b05082173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a67f6882d2191c0ce4dd4b92f3a7e0d4f"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a67f6882d2191c0ce4dd4b92f3a7e0d4f">KP_NAME</a> = &quot;kp&quot;</td></tr>
+<tr class="separator:a67f6882d2191c0ce4dd4b92f3a7e0d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04132fd316a44c1dd5c6ee14d4a4c67c"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a04132fd316a44c1dd5c6ee14d4a4c67c">KI_NAME</a> = &quot;ki&quot;</td></tr>
+<tr class="separator:a04132fd316a44c1dd5c6ee14d4a4c67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3111c0f69d014c0cca5335a49f440a03"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a3111c0f69d014c0cca5335a49f440a03">KD_NAME</a> = &quot;kd&quot;</td></tr>
+<tr class="separator:a3111c0f69d014c0cca5335a49f440a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a9ba1ff31b37033ebea3b93fa5a5190cb" name="a9ba1ff31b37033ebea3b93fa5a5190cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba1ff31b37033ebea3b93fa5a5190cb">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cb">devices::robomas::PIDConfig::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9ba1ff31b37033ebea3b93fa5a5190cba1c250a21210b7b88a14db9a0cbe71162" name="a9ba1ff31b37033ebea3b93fa5a5190cba1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ba1ff31b37033ebea3b93fa5a5190cbada2be3f8b1640de6534fea0e9744cccb" name="a9ba1ff31b37033ebea3b93fa5a5190cbada2be3f8b1640de6534fea0e9744cccb"></a>KP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ba1ff31b37033ebea3b93fa5a5190cba609caf44b732b054dda5860569e7e92e" name="a9ba1ff31b37033ebea3b93fa5a5190cba609caf44b732b054dda5860569e7e92e"></a>KI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ba1ff31b37033ebea3b93fa5a5190cbaa46be189b8246f0f9657170a0b127665" name="a9ba1ff31b37033ebea3b93fa5a5190cbaa46be189b8246f0f9657170a0b127665"></a>KD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a2646e2fc247af1c13efc513a0c98e927" name="a2646e2fc247af1c13efc513a0c98e927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2646e2fc247af1c13efc513a0c98e927">&#9670;&#160;</a></span>PIDConfig() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::PIDConfig::PIDConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32a6cae4354293d9e87ce2fb1c6130b2" name="a32a6cae4354293d9e87ce2fb1c6130b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a6cae4354293d9e87ce2fb1c6130b2">&#9670;&#160;</a></span>PIDConfig() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::PIDConfig::PIDConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a32a6cae4354293d9e87ce2fb1c6130b2_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a32a6cae4354293d9e87ce2fb1c6130b2_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a32a6cae4354293d9e87ce2fb1c6130b2_cgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a32a6cae4354293d9e87ce2fb1c6130b2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,165,192,205"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ee9b0f05fa4a48eac8ff42c5c770908" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ab91405f87bf213f89b08076aff79210e" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ae964ba029eff97866f47bbac27a06ed4" title=" " alt="" coords="240,133,427,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ac633c9b330c3ae3a9bb19f5ede56b5aa" title=" " alt="" coords="240,197,427,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#aaf3882d638b9aee3dc5895d95552dbda" title=" " alt="" coords="240,261,427,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a151f97465c2e128d154c8d379df4d9bc" title=" " alt="" coords="240,325,427,365"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8d2c20e896e0cc7214f9da33082e9c66" name="a8d2c20e896e0cc7214f9da33082e9c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2c20e896e0cc7214f9da33082e9c66">&#9670;&#160;</a></span>PIDConfig() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::PIDConfig::PIDConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a8d2c20e896e0cc7214f9da33082e9c66_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a8d2c20e896e0cc7214f9da33082e9c66_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a8d2c20e896e0cc7214f9da33082e9c66_cgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a8d2c20e896e0cc7214f9da33082e9c66_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,192,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ac633c9b330c3ae3a9bb19f5ede56b5aa" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#aaf3882d638b9aee3dc5895d95552dbda" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a151f97465c2e128d154c8d379df4d9bc" title=" " alt="" coords="240,133,427,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec5b8471bb16e4daa7c1b5194018e26c" name="aec5b8471bb16e4daa7c1b5194018e26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5b8471bb16e4daa7c1b5194018e26c">&#9670;&#160;</a></span>~PIDConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::PIDConfig::~PIDConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a9f4400f9965f3853baddfaa8f1fd1006" name="a9f4400f9965f3853baddfaa8f1fd1006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4400f9965f3853baddfaa8f1fd1006">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_cgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,192,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="240,133,427,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a9f4400f9965f3853baddfaa8f1fd1006_icgraph">
+<area shape="rect" title=" " alt="" coords="544,69,731,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8b2ffa0b4745f31ca7382afb6147880" name="ad8b2ffa0b4745f31ca7382afb6147880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b2ffa0b4745f31ca7382afb6147880">&#9670;&#160;</a></span>clear_kd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::clear_kd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_ad8b2ffa0b4745f31ca7382afb6147880_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_ad8b2ffa0b4745f31ca7382afb6147880_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_ad8b2ffa0b4745f31ca7382afb6147880_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_ad8b2ffa0b4745f31ca7382afb6147880_icgraph">
+<area shape="rect" title=" " alt="" coords="779,69,965,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="544,69,731,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d09bab313186d1417085fd76004ba1d" name="a3d09bab313186d1417085fd76004ba1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d09bab313186d1417085fd76004ba1d">&#9670;&#160;</a></span>clear_ki()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::clear_ki </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a3d09bab313186d1417085fd76004ba1d_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a3d09bab313186d1417085fd76004ba1d_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a3d09bab313186d1417085fd76004ba1d_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a3d09bab313186d1417085fd76004ba1d_icgraph">
+<area shape="rect" title=" " alt="" coords="779,69,965,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="544,69,731,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2cfab6e8fcad067a71bf07ed744cc44" name="af2cfab6e8fcad067a71bf07ed744cc44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cfab6e8fcad067a71bf07ed744cc44">&#9670;&#160;</a></span>clear_kp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::clear_kp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_af2cfab6e8fcad067a71bf07ed744cc44_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_af2cfab6e8fcad067a71bf07ed744cc44_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_af2cfab6e8fcad067a71bf07ed744cc44_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_af2cfab6e8fcad067a71bf07ed744cc44_icgraph">
+<area shape="rect" title=" " alt="" coords="779,69,965,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="544,69,731,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a453bf81e18d03d1d9cb9b0f73417aa21" name="a453bf81e18d03d1d9cb9b0f73417aa21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453bf81e18d03d1d9cb9b0f73417aa21">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::PIDConfig::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f60e26503569fefae698d8b05082173" name="a8f60e26503569fefae698d8b05082173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f60e26503569fefae698d8b05082173">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::robomas::PIDConfig::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ba1ff31b37033ebea3b93fa5a5190cb">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ee9b0f05fa4a48eac8ff42c5c770908" name="a9ee9b0f05fa4a48eac8ff42c5c770908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee9b0f05fa4a48eac8ff42c5c770908">&#9670;&#160;</a></span>get_kd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; devices::robomas::PIDConfig::get_kd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a9ee9b0f05fa4a48eac8ff42c5c770908_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a9ee9b0f05fa4a48eac8ff42c5c770908_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a9ee9b0f05fa4a48eac8ff42c5c770908_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a9ee9b0f05fa4a48eac8ff42c5c770908_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab91405f87bf213f89b08076aff79210e" name="ab91405f87bf213f89b08076aff79210e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91405f87bf213f89b08076aff79210e">&#9670;&#160;</a></span>get_ki()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; devices::robomas::PIDConfig::get_ki </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_ab91405f87bf213f89b08076aff79210e_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_ab91405f87bf213f89b08076aff79210e_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_ab91405f87bf213f89b08076aff79210e_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_ab91405f87bf213f89b08076aff79210e_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae964ba029eff97866f47bbac27a06ed4" name="ae964ba029eff97866f47bbac27a06ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae964ba029eff97866f47bbac27a06ed4">&#9670;&#160;</a></span>get_kp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float &amp; devices::robomas::PIDConfig::get_kp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_ae964ba029eff97866f47bbac27a06ed4_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_ae964ba029eff97866f47bbac27a06ed4_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_ae964ba029eff97866f47bbac27a06ed4_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_ae964ba029eff97866f47bbac27a06ed4_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9e58496aa6e50283a1d1e8e9ca0d9ae2" name="a9e58496aa6e50283a1d1e8e9ca0d9ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e58496aa6e50283a1d1e8e9ca0d9ae2">&#9670;&#160;</a></span>kd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float devices::robomas::PIDConfig::kd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92a464ba873cee30f757a8aac56f31fb" name="a92a464ba873cee30f757a8aac56f31fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a464ba873cee30f757a8aac56f31fb">&#9670;&#160;</a></span>ki()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float devices::robomas::PIDConfig::ki </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4a2e7aacc1dab115d519d6e3511f054" name="af4a2e7aacc1dab115d519d6e3511f054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a2e7aacc1dab115d519d6e3511f054">&#9670;&#160;</a></span>kp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float devices::robomas::PIDConfig::kp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d7e0d4dc5afb55fd2fd200b8a086bcb" name="a4d7e0d4dc5afb55fd2fd200b8a086bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7e0d4dc5afb55fd2fd200b8a086bcb">&#9670;&#160;</a></span>mutable_kd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float &amp; devices::robomas::PIDConfig::mutable_kd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98e2b61e29d4310a8e4c7a7eea401882" name="a98e2b61e29d4310a8e4c7a7eea401882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e2b61e29d4310a8e4c7a7eea401882">&#9670;&#160;</a></span>mutable_ki()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float &amp; devices::robomas::PIDConfig::mutable_ki </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2638b82949d270e8217a860a63580e61" name="a2638b82949d270e8217a860a63580e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2638b82949d270e8217a860a63580e61">&#9670;&#160;</a></span>mutable_kp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float &amp; devices::robomas::PIDConfig::mutable_kp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c608e72a5444b9a150f6ea6c4c5f5d0" name="a6c608e72a5444b9a150f6ea6c4c5f5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c608e72a5444b9a150f6ea6c4c5f5d0">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::PIDConfig::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a6c608e72a5444b9a150f6ea6c4c5f5d0_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a6c608e72a5444b9a150f6ea6c4c5f5d0_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a6c608e72a5444b9a150f6ea6c4c5f5d0_cgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a6c608e72a5444b9a150f6ea6c4c5f5d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,192,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ac633c9b330c3ae3a9bb19f5ede56b5aa" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#aaf3882d638b9aee3dc5895d95552dbda" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a151f97465c2e128d154c8d379df4d9bc" title=" " alt="" coords="240,133,427,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1f1478cd50cd2914340502baefe88cf2" name="a1f1478cd50cd2914340502baefe88cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1478cd50cd2914340502baefe88cf2">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::PIDConfig::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a1f1478cd50cd2914340502baefe88cf2_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a1f1478cd50cd2914340502baefe88cf2_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a1f1478cd50cd2914340502baefe88cf2_cgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a1f1478cd50cd2914340502baefe88cf2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,165,192,205"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9ee9b0f05fa4a48eac8ff42c5c770908" title=" " alt="" coords="240,5,427,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ab91405f87bf213f89b08076aff79210e" title=" " alt="" coords="240,69,427,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ae964ba029eff97866f47bbac27a06ed4" title=" " alt="" coords="240,133,427,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ac633c9b330c3ae3a9bb19f5ede56b5aa" title=" " alt="" coords="240,197,427,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#aaf3882d638b9aee3dc5895d95552dbda" title=" " alt="" coords="240,261,427,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a151f97465c2e128d154c8d379df4d9bc" title=" " alt="" coords="240,325,427,365"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a279128c1f918a7b3cc9c88ec4e52cca2" name="a279128c1f918a7b3cc9c88ec4e52cca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279128c1f918a7b3cc9c88ec4e52cca2">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::PIDConfig::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2eedd6fb809ed8172bb58147cca1d71" name="aa2eedd6fb809ed8172bb58147cca1d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2eedd6fb809ed8172bb58147cca1d71">&#9670;&#160;</a></span>set_kd() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_kd </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac633c9b330c3ae3a9bb19f5ede56b5aa" name="ac633c9b330c3ae3a9bb19f5ede56b5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac633c9b330c3ae3a9bb19f5ede56b5aa">&#9670;&#160;</a></span>set_kd() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_kd </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_ac633c9b330c3ae3a9bb19f5ede56b5aa_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_ac633c9b330c3ae3a9bb19f5ede56b5aa_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_ac633c9b330c3ae3a9bb19f5ede56b5aa_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_ac633c9b330c3ae3a9bb19f5ede56b5aa_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a625e161fba2c222f3d8fa49dcd8f7821" name="a625e161fba2c222f3d8fa49dcd8f7821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625e161fba2c222f3d8fa49dcd8f7821">&#9670;&#160;</a></span>set_ki() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_ki </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf3882d638b9aee3dc5895d95552dbda" name="aaf3882d638b9aee3dc5895d95552dbda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3882d638b9aee3dc5895d95552dbda">&#9670;&#160;</a></span>set_ki() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_ki </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_aaf3882d638b9aee3dc5895d95552dbda_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_aaf3882d638b9aee3dc5895d95552dbda_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_aaf3882d638b9aee3dc5895d95552dbda_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_aaf3882d638b9aee3dc5895d95552dbda_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41e1b4eb565904bb0bf47296a800a2ea" name="a41e1b4eb565904bb0bf47296a800a2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e1b4eb565904bb0bf47296a800a2ea">&#9670;&#160;</a></span>set_kp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_kp </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a151f97465c2e128d154c8d379df4d9bc" name="a151f97465c2e128d154c8d379df4d9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151f97465c2e128d154c8d379df4d9bc">&#9670;&#160;</a></span>set_kp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::PIDConfig::set_kp </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1PIDConfig_a151f97465c2e128d154c8d379df4d9bc_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1PIDConfig_a151f97465c2e128d154c8d379df4d9bc_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1PIDConfig_a151f97465c2e128d154c8d379df4d9bc_icgraph" id="aclassdevices_1_1robomas_1_1PIDConfig_a151f97465c2e128d154c8d379df4d9bc_icgraph">
+<area shape="rect" title=" " alt="" coords="240,37,427,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a1f1478cd50cd2914340502baefe88cf2" title=" " alt="" coords="5,5,192,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a32a6cae4354293d9e87ce2fb1c6130b2" title=" " alt="" coords="5,69,192,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a3111c0f69d014c0cca5335a49f440a03" name="a3111c0f69d014c0cca5335a49f440a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3111c0f69d014c0cca5335a49f440a03">&#9670;&#160;</a></span>KD_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::PIDConfig::KD_NAME = &quot;kd&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04132fd316a44c1dd5c6ee14d4a4c67c" name="a04132fd316a44c1dd5c6ee14d4a4c67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04132fd316a44c1dd5c6ee14d4a4c67c">&#9670;&#160;</a></span>KI_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::PIDConfig::KI_NAME = &quot;ki&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67f6882d2191c0ce4dd4b92f3a7e0d4f" name="a67f6882d2191c0ce4dd4b92f3a7e0d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f6882d2191c0ce4dd4b92f3a7e0d4f">&#9670;&#160;</a></span>KP_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::PIDConfig::KP_NAME = &quot;kp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="robomas_8h.html">robomas.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="namespacedevices_1_1robomas.html">robomas</a></li><li class="navelem"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

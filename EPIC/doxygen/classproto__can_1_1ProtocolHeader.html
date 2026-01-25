@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: proto_can::ProtocolHeader クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classproto__can_1_1ProtocolHeader.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classproto__can_1_1ProtocolHeader-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">proto_can::ProtocolHeader クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;frame_header.hpp&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1a71ff4f819f26f30c12f9d82efb7208"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a1a71ff4f819f26f30c12f9d82efb7208">ProtocolHeader</a> ()</td></tr>
+<tr class="separator:a1a71ff4f819f26f30c12f9d82efb7208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6a018a208a63a2bef250c705c016f1"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a8f6a018a208a63a2bef250c705c016f1">ProtocolHeader</a> (uint8_t version, <a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a> deviceType, uint8_t deviceNumber, <a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a> messageType, uint8_t flags, uint16_t size)</td></tr>
+<tr class="separator:a8f6a018a208a63a2bef250c705c016f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f02bea49a7e01fb191e37f635118652"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a3f02bea49a7e01fb191e37f635118652">parseFrom</a> (uint32_t <a class="el" href="appMain_8cpp.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)</td></tr>
+<tr class="separator:a3f02bea49a7e01fb191e37f635118652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac890ac50b7d8dda0d82af01a3ec629e4"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#ac890ac50b7d8dda0d82af01a3ec629e4">toRaw</a> () const</td></tr>
+<tr class="separator:ac890ac50b7d8dda0d82af01a3ec629e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b32acb2310d563695f00d2d025ba624"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624">setField</a> (<a class="el" href="namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0">Field</a> field, uint32_t value)</td></tr>
+<tr class="separator:a7b32acb2310d563695f00d2d025ba624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc7e5a9c66d59abae7e425614d42d96"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96">getField</a> (<a class="el" href="namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0">Field</a> field) const</td></tr>
+<tr class="separator:aecc7e5a9c66d59abae7e425614d42d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9369f977263ee8e6eb14e5c118821ab"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab">setFlag</a> (<a class="el" href="namespaceproto__can.html#a294eb959cdcd1d2626a32ade4184e698">FlagType</a> <a class="el" href="appMain_8cpp.html#a8b3ab54ed3e81c69863d65e4e6c424a0">flag</a>, bool value)</td></tr>
+<tr class="separator:ad9369f977263ee8e6eb14e5c118821ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac1d303a79c2ea98c404dfa97aa2dc2"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a4ac1d303a79c2ea98c404dfa97aa2dc2">getFlag</a> (<a class="el" href="namespaceproto__can.html#a294eb959cdcd1d2626a32ade4184e698">FlagType</a> <a class="el" href="appMain_8cpp.html#a8b3ab54ed3e81c69863d65e4e6c424a0">flag</a>) const</td></tr>
+<tr class="separator:a4ac1d303a79c2ea98c404dfa97aa2dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae014f84485e8e0e184a25813feb3b45f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#ae014f84485e8e0e184a25813feb3b45f">setDeviceType</a> (<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a> type)</td></tr>
+<tr class="separator:ae014f84485e8e0e184a25813feb3b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3966d9be162680f5aeaa23531a5687c1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a3966d9be162680f5aeaa23531a5687c1">getDeviceType</a> () const</td></tr>
+<tr class="separator:a3966d9be162680f5aeaa23531a5687c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c4aa2535ba587b1ba63b42ee6c3f91"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#aa0c4aa2535ba587b1ba63b42ee6c3f91">isValidDeviceType</a> () const</td></tr>
+<tr class="separator:aa0c4aa2535ba587b1ba63b42ee6c3f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af169e5345ff433d5acbd626081eb7587"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#af169e5345ff433d5acbd626081eb7587">setMessageType</a> (<a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a> type)</td></tr>
+<tr class="separator:af169e5345ff433d5acbd626081eb7587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1641e63ed89b4eecad4e62414298f163"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a1641e63ed89b4eecad4e62414298f163">getMessageType</a> () const</td></tr>
+<tr class="separator:a1641e63ed89b4eecad4e62414298f163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f7cf1fed52a95cd439a3b2c48d244d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#a80f7cf1fed52a95cd439a3b2c48d244d">isValidMessageType</a> () const</td></tr>
+<tr class="separator:a80f7cf1fed52a95cd439a3b2c48d244d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed0344ef4b1fe42a38b2f0dd54f7795"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#abed0344ef4b1fe42a38b2f0dd54f7795">isValid</a> () const</td></tr>
+<tr class="separator:abed0344ef4b1fe42a38b2f0dd54f7795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:ab70bdd4f0c032b1249104825666319e0"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1ProtocolHeader.html#ab70bdd4f0c032b1249104825666319e0">HEADER_SIZE</a> = 29</td></tr>
+<tr class="separator:ab70bdd4f0c032b1249104825666319e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a1a71ff4f819f26f30c12f9d82efb7208" name="a1a71ff4f819f26f30c12f9d82efb7208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a71ff4f819f26f30c12f9d82efb7208">&#9670;&#160;</a></span>ProtocolHeader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr proto_can::ProtocolHeader::ProtocolHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f6a018a208a63a2bef250c705c016f1" name="a8f6a018a208a63a2bef250c705c016f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6a018a208a63a2bef250c705c016f1">&#9670;&#160;</a></span>ProtocolHeader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr proto_can::ProtocolHeader::ProtocolHeader </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a>&#160;</td>
+          <td class="paramname"><em>deviceType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>deviceNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a>&#160;</td>
+          <td class="paramname"><em>messageType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a8f6a018a208a63a2bef250c705c016f1_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a8f6a018a208a63a2bef250c705c016f1_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a8f6a018a208a63a2bef250c705c016f1_cgraph" id="aclassproto__can_1_1ProtocolHeader_a8f6a018a208a63a2bef250c705c016f1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a3966d9be162680f5aeaa23531a5687c1" name="a3966d9be162680f5aeaa23531a5687c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3966d9be162680f5aeaa23531a5687c1">&#9670;&#160;</a></span>getDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a> proto_can::ProtocolHeader::getDeviceType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_cgraph" id="aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_icgraph" id="aclassproto__can_1_1ProtocolHeader_a3966d9be162680f5aeaa23531a5687c1_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aecc7e5a9c66d59abae7e425614d42d96" name="aecc7e5a9c66d59abae7e425614d42d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecc7e5a9c66d59abae7e425614d42d96">&#9670;&#160;</a></span>getField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t proto_can::ProtocolHeader::getField </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0">Field</a>&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_cgraph" id="aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="228,13,379,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_icgraph" id="aclassproto__can_1_1ProtocolHeader_aecc7e5a9c66d59abae7e425614d42d96_icgraph">
+<area shape="rect" title=" " alt="" coords="997,177,1172,217"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a3966d9be162680f5aeaa23531a5687c1" title=" " alt="" coords="552,5,727,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="167,181,265,206"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a4ac1d303a79c2ea98c404dfa97aa2dc2" title=" " alt="" coords="552,120,727,160"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a1641e63ed89b4eecad4e62414298f163" title=" " alt="" coords="329,173,504,213"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aa0c4aa2535ba587b1ba63b42ee6c3f91" title=" " alt="" coords="775,235,949,275"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a80f7cf1fed52a95cd439a3b2c48d244d" title=" " alt="" coords="775,299,949,339"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab" title=" " alt="" coords="775,363,949,403"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#abed0344ef4b1fe42a38b2f0dd54f7795" title=" " alt="" coords="552,260,727,300"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a3f02bea49a7e01fb191e37f635118652" title=" " alt="" coords="329,288,504,328"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="562,403,717,443"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="342,403,491,443"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="151,307,281,347"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="151,371,281,411"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="151,435,281,475"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="151,499,281,539"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,410,103,435"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,506,93,531"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4ac1d303a79c2ea98c404dfa97aa2dc2" name="a4ac1d303a79c2ea98c404dfa97aa2dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac1d303a79c2ea98c404dfa97aa2dc2">&#9670;&#160;</a></span>getFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::getFlag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a294eb959cdcd1d2626a32ade4184e698">FlagType</a>&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_cgraph" id="aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_icgraph" id="aclassproto__can_1_1ProtocolHeader_a4ac1d303a79c2ea98c404dfa97aa2dc2_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1641e63ed89b4eecad4e62414298f163" name="a1641e63ed89b4eecad4e62414298f163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1641e63ed89b4eecad4e62414298f163">&#9670;&#160;</a></span>getMessageType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a> proto_can::ProtocolHeader::getMessageType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_cgraph" id="aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_icgraph" id="aclassproto__can_1_1ProtocolHeader_a1641e63ed89b4eecad4e62414298f163_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abed0344ef4b1fe42a38b2f0dd54f7795" name="abed0344ef4b1fe42a38b2f0dd54f7795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed0344ef4b1fe42a38b2f0dd54f7795">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_cgraph" id="aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,180,77"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aa0c4aa2535ba587b1ba63b42ee6c3f91" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a80f7cf1fed52a95cd439a3b2c48d244d" title=" " alt="" coords="228,69,403,109"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="451,37,625,77"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="673,45,824,70"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_icgraph" id="aclassproto__can_1_1ProtocolHeader_abed0344ef4b1fe42a38b2f0dd54f7795_icgraph">
+<area shape="rect" title=" " alt="" coords="373,35,548,75"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a3f02bea49a7e01fb191e37f635118652" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,42,103,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa0c4aa2535ba587b1ba63b42ee6c3f91" name="aa0c4aa2535ba587b1ba63b42ee6c3f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c4aa2535ba587b1ba63b42ee6c3f91">&#9670;&#160;</a></span>isValidDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::isValidDeviceType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_cgraph" id="aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_icgraph" id="aclassproto__can_1_1ProtocolHeader_aa0c4aa2535ba587b1ba63b42ee6c3f91_icgraph">
+<area shape="rect" title=" " alt="" coords="596,35,771,75"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#abed0344ef4b1fe42a38b2f0dd54f7795" title=" " alt="" coords="373,35,548,75"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a3f02bea49a7e01fb191e37f635118652" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,42,103,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80f7cf1fed52a95cd439a3b2c48d244d" name="a80f7cf1fed52a95cd439a3b2c48d244d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f7cf1fed52a95cd439a3b2c48d244d">&#9670;&#160;</a></span>isValidMessageType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::isValidMessageType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_cgraph" id="aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_icgraph" id="aclassproto__can_1_1ProtocolHeader_a80f7cf1fed52a95cd439a3b2c48d244d_icgraph">
+<area shape="rect" title=" " alt="" coords="596,35,771,75"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#abed0344ef4b1fe42a38b2f0dd54f7795" title=" " alt="" coords="373,35,548,75"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a3f02bea49a7e01fb191e37f635118652" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,42,103,67"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f02bea49a7e01fb191e37f635118652" name="a3f02bea49a7e01fb191e37f635118652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f02bea49a7e01fb191e37f635118652">&#9670;&#160;</a></span>parseFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::parseFrom </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_cgraph" id="aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,180,77"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#abed0344ef4b1fe42a38b2f0dd54f7795" title=" " alt="" coords="228,37,403,77"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aa0c4aa2535ba587b1ba63b42ee6c3f91" title=" " alt="" coords="451,5,625,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a80f7cf1fed52a95cd439a3b2c48d244d" title=" " alt="" coords="451,69,625,109"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="673,37,848,77"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="896,45,1047,70"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_icgraph" id="aclassproto__can_1_1ProtocolHeader_a3f02bea49a7e01fb191e37f635118652_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae014f84485e8e0e184a25813feb3b45f" name="ae014f84485e8e0e184a25813feb3b45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae014f84485e8e0e184a25813feb3b45f">&#9670;&#160;</a></span>setDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::setDeviceType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_cgraph" id="aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_icgraph" id="aclassproto__can_1_1ProtocolHeader_ae014f84485e8e0e184a25813feb3b45f_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b32acb2310d563695f00d2d025ba624" name="a7b32acb2310d563695f00d2d025ba624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b32acb2310d563695f00d2d025ba624">&#9670;&#160;</a></span>setField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::setField </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0">Field</a>&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_cgraph" id="aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="228,13,379,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_icgraph" id="aclassproto__can_1_1ProtocolHeader_a7b32acb2310d563695f00d2d025ba624_icgraph">
+<area shape="rect" title=" " alt="" coords="952,127,1127,167"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a8f6a018a208a63a2bef250c705c016f1" title=" " alt="" coords="729,5,904,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ae014f84485e8e0e184a25813feb3b45f" title=" " alt="" coords="729,69,904,109"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="555,163,653,189"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab" title=" " alt="" coords="729,248,904,288"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#af169e5345ff433d5acbd626081eb7587" title=" " alt="" coords="729,184,904,224"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="527,248,681,288"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="329,248,479,288"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="151,152,281,192"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="151,216,281,256"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="151,280,281,320"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="151,344,281,384"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,255,103,281"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,351,93,377"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad9369f977263ee8e6eb14e5c118821ab" name="ad9369f977263ee8e6eb14e5c118821ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9369f977263ee8e6eb14e5c118821ab">&#9670;&#160;</a></span>setFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::setFlag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a294eb959cdcd1d2626a32ade4184e698">FlagType</a>&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_cgraph" id="aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,180,77"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="228,69,403,109"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,45,601,70"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_icgraph" id="aclassproto__can_1_1ProtocolHeader_ad9369f977263ee8e6eb14e5c118821ab_icgraph">
+<area shape="rect" title=" " alt="" coords="729,131,904,171"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="527,101,681,141"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="555,166,653,191"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="329,101,479,141"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="151,5,281,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="151,69,281,109"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="151,133,281,173"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="151,197,281,237"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,109,103,134"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,205,93,230"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af169e5345ff433d5acbd626081eb7587" name="af169e5345ff433d5acbd626081eb7587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af169e5345ff433d5acbd626081eb7587">&#9670;&#160;</a></span>setMessageType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool proto_can::ProtocolHeader::setMessageType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216">MessageType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_cgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_cgraph" id="aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="228,5,403,45"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="451,13,601,38"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_icgraph" id="aclassproto__can_1_1ProtocolHeader_af169e5345ff433d5acbd626081eb7587_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,325,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac890ac50b7d8dda0d82af01a3ec629e4" name="ac890ac50b7d8dda0d82af01a3ec629e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac890ac50b7d8dda0d82af01a3ec629e4">&#9670;&#160;</a></span>toRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t proto_can::ProtocolHeader::toRaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1ProtocolHeader_ac890ac50b7d8dda0d82af01a3ec629e4_icgraph.png" border="0" usemap="#aclassproto__can_1_1ProtocolHeader_ac890ac50b7d8dda0d82af01a3ec629e4_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1ProtocolHeader_ac890ac50b7d8dda0d82af01a3ec629e4_icgraph" id="aclassproto__can_1_1ProtocolHeader_ac890ac50b7d8dda0d82af01a3ec629e4_icgraph">
+<area shape="rect" title=" " alt="" coords="729,131,904,171"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="527,101,681,141"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a46781c37cd6a75f392508bd4e543aa79" title=" " alt="" coords="555,166,653,191"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="329,101,479,141"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="151,5,281,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="151,69,281,109"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="151,133,281,173"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="151,197,281,237"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,109,103,134"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,205,93,230"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab70bdd4f0c032b1249104825666319e0" name="ab70bdd4f0c032b1249104825666319e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70bdd4f0c032b1249104825666319e0">&#9670;&#160;</a></span>HEADER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t proto_can::ProtocolHeader::HEADER_SIZE = 29</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/ProtoCAN/core/<a class="el" href="frame__header_8hpp.html">frame_header.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceproto__can.html">proto_can</a></li><li class="navelem"><a class="el" href="classproto__can_1_1ProtocolHeader.html">ProtocolHeader</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

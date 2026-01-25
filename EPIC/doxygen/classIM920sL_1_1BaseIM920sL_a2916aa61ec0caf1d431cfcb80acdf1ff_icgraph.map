@@ -1,0 +1,5 @@
+<map id="IM920sL::BaseIM920sL::initPairing" name="IM920sL::BaseIM920sL::initPairing">
+<area shape="rect" id="node1" title="IM920sLをペアリングするための信号を出す。" alt="" coords="199,37,359,77"/>
+<area shape="rect" id="node2" href="$classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,5,151,45"/>
+<area shape="rect" id="node3" href="$classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="10,69,146,109"/>
+</map>

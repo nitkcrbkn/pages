@@ -1,0 +1,735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: robot::SystemCommand クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classrobot_1_1SystemCommand.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classrobot_1_1SystemCommand-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">robot::SystemCommand クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;command.h&gt;</code></p>
+<div class="dynheader">
+robot::SystemCommand の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand__inherit__graph.png" border="0" usemap="#arobot_1_1SystemCommand_inherit__map" alt="Inheritance graph"/></div>
+<map name="arobot_1_1SystemCommand_inherit__map" id="arobot_1_1SystemCommand_inherit__map">
+<area shape="rect" title=" " alt="" coords="37,79,197,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+robot::SystemCommand 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand__coll__graph.png" border="0" usemap="#arobot_1_1SystemCommand_coll__map" alt="Collaboration graph"/></div>
+<map name="arobot_1_1SystemCommand_coll__map" id="arobot_1_1SystemCommand_coll__map">
+<area shape="rect" title=" " alt="" coords="37,79,197,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a036c54b9b6f237a920bc323530f57287"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287a1ec37b35d5440d4a53d012d7f00a0b4c">SYSTEM_UNKNOWN</a> = 0
+, <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287a2595dbda4884d50ad0d683a49685949b">UPDATE_TIME</a> = 1
+, <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287a1104c54a9ec6549e4ef9562b687596fb">RESTART</a> = 2
+, <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287ab078ffd28db767c502ac367053f6e0ac">START</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287a615a46af313786fc4e349f34118be111">STOP</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a036c54b9b6f237a920bc323530f57287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a625ef3dcd915a2cb1c05a522741c46a4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4">FieldNumber</a> : uint32_t { <a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4a1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4ae58a1b00942e66d8b4abc960da7877ab">ACTION</a> = 1
+ }</td></tr>
+<tr class="separator:a625ef3dcd915a2cb1c05a522741c46a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a95273b9f09fd5a8c29ff0824f24b5111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a95273b9f09fd5a8c29ff0824f24b5111">SystemCommand</a> ()=default</td></tr>
+<tr class="separator:a95273b9f09fd5a8c29ff0824f24b5111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e2175b1928c0a56d79d9391e08b958"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#ae0e2175b1928c0a56d79d9391e08b958">SystemCommand</a> (const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:ae0e2175b1928c0a56d79d9391e08b958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c4f6d0d958a9a125fb7227a555ce27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a80c4f6d0d958a9a125fb7227a555ce27">SystemCommand</a> (const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a80c4f6d0d958a9a125fb7227a555ce27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f20d146c06f7fa97d1abaec573af9b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a7f20d146c06f7fa97d1abaec573af9b2">~SystemCommand</a> () override=default</td></tr>
+<tr class="separator:a7f20d146c06f7fa97d1abaec573af9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1101d8d064141ab20f6e256a3d35361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#ab1101d8d064141ab20f6e256a3d35361">operator=</a> (const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:ab1101d8d064141ab20f6e256a3d35361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ae9903886609e4df1be153ec068e7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a14ae9903886609e4df1be153ec068e7a">operator=</a> (const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a14ae9903886609e4df1be153ec068e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8266dad93b31f02aab702c2183a87c69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a8266dad93b31f02aab702c2183a87c69">clear_action</a> ()</td></tr>
+<tr class="separator:a8266dad93b31f02aab702c2183a87c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2d0b6235360d81400e661083909f36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#abc2d0b6235360d81400e661083909f36">set_action</a> (const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp;value)</td></tr>
+<tr class="separator:abc2d0b6235360d81400e661083909f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cadfc35db1c19e87b524c8bdd6366a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a6cadfc35db1c19e87b524c8bdd6366a6">set_action</a> (const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp;&amp;value)</td></tr>
+<tr class="separator:a6cadfc35db1c19e87b524c8bdd6366a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a515dc86e43e028fb4e908f164a986"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a14a515dc86e43e028fb4e908f164a986">get_action</a> () const</td></tr>
+<tr class="separator:a14a515dc86e43e028fb4e908f164a986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabd6b336911ae381ea0cf0f3f5a19bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#afabd6b336911ae381ea0cf0f3f5a19bb">action</a> () const</td></tr>
+<tr class="separator:afabd6b336911ae381ea0cf0f3f5a19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947cf12d308ad9b31a00c07d36e3d8e9"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a947cf12d308ad9b31a00c07d36e3d8e9">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a947cf12d308ad9b31a00c07d36e3d8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f46f8f702dcd8e4fbac9d25b71c587"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#ab9f46f8f702dcd8e4fbac9d25b71c587">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:ab9f46f8f702dcd8e4fbac9d25b71c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa908880ffa83be255afd6fd793be97a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#aa908880ffa83be255afd6fd793be97a0">clear</a> () override</td></tr>
+<tr class="separator:aa908880ffa83be255afd6fd793be97a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7858cfc3b719b276caed72d0dc432a2a"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#a7858cfc3b719b276caed72d0dc432a2a">field_number_to_name</a> (const <a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a7858cfc3b719b276caed72d0dc432a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:acad07a84b76ade8b30edff655055a687"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1SystemCommand.html#acad07a84b76ade8b30edff655055a687">ACTION_NAME</a> = &quot;action&quot;</td></tr>
+<tr class="separator:acad07a84b76ade8b30edff655055a687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a625ef3dcd915a2cb1c05a522741c46a4" name="a625ef3dcd915a2cb1c05a522741c46a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625ef3dcd915a2cb1c05a522741c46a4">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4">robot::SystemCommand::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a625ef3dcd915a2cb1c05a522741c46a4a1c250a21210b7b88a14db9a0cbe71162" name="a625ef3dcd915a2cb1c05a522741c46a4a1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a625ef3dcd915a2cb1c05a522741c46a4ae58a1b00942e66d8b4abc960da7877ab" name="a625ef3dcd915a2cb1c05a522741c46a4ae58a1b00942e66d8b4abc960da7877ab"></a>ACTION&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a036c54b9b6f237a920bc323530f57287" name="a036c54b9b6f237a920bc323530f57287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036c54b9b6f237a920bc323530f57287">&#9670;&#160;</a></span>SystemAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">robot::SystemCommand::SystemAction</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a036c54b9b6f237a920bc323530f57287a1ec37b35d5440d4a53d012d7f00a0b4c" name="a036c54b9b6f237a920bc323530f57287a1ec37b35d5440d4a53d012d7f00a0b4c"></a>SYSTEM_UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a036c54b9b6f237a920bc323530f57287a2595dbda4884d50ad0d683a49685949b" name="a036c54b9b6f237a920bc323530f57287a2595dbda4884d50ad0d683a49685949b"></a>UPDATE_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a036c54b9b6f237a920bc323530f57287a1104c54a9ec6549e4ef9562b687596fb" name="a036c54b9b6f237a920bc323530f57287a1104c54a9ec6549e4ef9562b687596fb"></a>RESTART&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a036c54b9b6f237a920bc323530f57287ab078ffd28db767c502ac367053f6e0ac" name="a036c54b9b6f237a920bc323530f57287ab078ffd28db767c502ac367053f6e0ac"></a>START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a036c54b9b6f237a920bc323530f57287a615a46af313786fc4e349f34118be111" name="a036c54b9b6f237a920bc323530f57287a615a46af313786fc4e349f34118be111"></a>STOP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a95273b9f09fd5a8c29ff0824f24b5111" name="a95273b9f09fd5a8c29ff0824f24b5111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95273b9f09fd5a8c29ff0824f24b5111">&#9670;&#160;</a></span>SystemCommand() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::SystemCommand::SystemCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0e2175b1928c0a56d79d9391e08b958" name="ae0e2175b1928c0a56d79d9391e08b958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e2175b1928c0a56d79d9391e08b958">&#9670;&#160;</a></span>SystemCommand() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::SystemCommand::SystemCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_ae0e2175b1928c0a56d79d9391e08b958_cgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_ae0e2175b1928c0a56d79d9391e08b958_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_ae0e2175b1928c0a56d79d9391e08b958_cgraph" id="aclassrobot_1_1SystemCommand_ae0e2175b1928c0a56d79d9391e08b958_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,165,77"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#a14a515dc86e43e028fb4e908f164a986" title=" " alt="" coords="213,5,373,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#abc2d0b6235360d81400e661083909f36" title=" " alt="" coords="213,69,373,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80c4f6d0d958a9a125fb7227a555ce27" name="a80c4f6d0d958a9a125fb7227a555ce27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c4f6d0d958a9a125fb7227a555ce27">&#9670;&#160;</a></span>SystemCommand() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::SystemCommand::SystemCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_a80c4f6d0d958a9a125fb7227a555ce27_cgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_a80c4f6d0d958a9a125fb7227a555ce27_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_a80c4f6d0d958a9a125fb7227a555ce27_cgraph" id="aclassrobot_1_1SystemCommand_a80c4f6d0d958a9a125fb7227a555ce27_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#abc2d0b6235360d81400e661083909f36" title=" " alt="" coords="213,5,373,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f20d146c06f7fa97d1abaec573af9b2" name="a7f20d146c06f7fa97d1abaec573af9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f20d146c06f7fa97d1abaec573af9b2">&#9670;&#160;</a></span>~SystemCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::SystemCommand::~SystemCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afabd6b336911ae381ea0cf0f3f5a19bb" name="afabd6b336911ae381ea0cf0f3f5a19bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afabd6b336911ae381ea0cf0f3f5a19bb">&#9670;&#160;</a></span>action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> robot::SystemCommand::action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa908880ffa83be255afd6fd793be97a0" name="aa908880ffa83be255afd6fd793be97a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa908880ffa83be255afd6fd793be97a0">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::SystemCommand::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_aa908880ffa83be255afd6fd793be97a0_cgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_aa908880ffa83be255afd6fd793be97a0_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_aa908880ffa83be255afd6fd793be97a0_cgraph" id="aclassrobot_1_1SystemCommand_aa908880ffa83be255afd6fd793be97a0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#a8266dad93b31f02aab702c2183a87c69" title=" " alt="" coords="213,5,373,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8266dad93b31f02aab702c2183a87c69" name="a8266dad93b31f02aab702c2183a87c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8266dad93b31f02aab702c2183a87c69">&#9670;&#160;</a></span>clear_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::SystemCommand::clear_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_a8266dad93b31f02aab702c2183a87c69_icgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_a8266dad93b31f02aab702c2183a87c69_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_a8266dad93b31f02aab702c2183a87c69_icgraph" id="aclassrobot_1_1SystemCommand_a8266dad93b31f02aab702c2183a87c69_icgraph">
+<area shape="rect" title=" " alt="" coords="213,5,373,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#aa908880ffa83be255afd6fd793be97a0" title=" " alt="" coords="5,5,165,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9f46f8f702dcd8e4fbac9d25b71c587" name="ab9f46f8f702dcd8e4fbac9d25b71c587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f46f8f702dcd8e4fbac9d25b71c587">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error robot::SystemCommand::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7858cfc3b719b276caed72d0dc432a2a" name="a7858cfc3b719b276caed72d0dc432a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7858cfc3b719b276caed72d0dc432a2a">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * robot::SystemCommand::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html#a625ef3dcd915a2cb1c05a522741c46a4">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14a515dc86e43e028fb4e908f164a986" name="a14a515dc86e43e028fb4e908f164a986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a515dc86e43e028fb4e908f164a986">&#9670;&#160;</a></span>get_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp; robot::SystemCommand::get_action </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_a14a515dc86e43e028fb4e908f164a986_icgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_a14a515dc86e43e028fb4e908f164a986_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_a14a515dc86e43e028fb4e908f164a986_icgraph" id="aclassrobot_1_1SystemCommand_a14a515dc86e43e028fb4e908f164a986_icgraph">
+<area shape="rect" title=" " alt="" coords="213,37,373,77"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#ab1101d8d064141ab20f6e256a3d35361" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#ae0e2175b1928c0a56d79d9391e08b958" title=" " alt="" coords="5,69,165,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14ae9903886609e4df1be153ec068e7a" name="a14ae9903886609e4df1be153ec068e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ae9903886609e4df1be153ec068e7a">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp; robot::SystemCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_a14ae9903886609e4df1be153ec068e7a_cgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_a14ae9903886609e4df1be153ec068e7a_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_a14ae9903886609e4df1be153ec068e7a_cgraph" id="aclassrobot_1_1SystemCommand_a14ae9903886609e4df1be153ec068e7a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#abc2d0b6235360d81400e661083909f36" title=" " alt="" coords="213,5,373,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1101d8d064141ab20f6e256a3d35361" name="ab1101d8d064141ab20f6e256a3d35361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1101d8d064141ab20f6e256a3d35361">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp; robot::SystemCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_ab1101d8d064141ab20f6e256a3d35361_cgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_ab1101d8d064141ab20f6e256a3d35361_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_ab1101d8d064141ab20f6e256a3d35361_cgraph" id="aclassrobot_1_1SystemCommand_ab1101d8d064141ab20f6e256a3d35361_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,165,77"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#a14a515dc86e43e028fb4e908f164a986" title=" " alt="" coords="213,5,373,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#abc2d0b6235360d81400e661083909f36" title=" " alt="" coords="213,69,373,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a947cf12d308ad9b31a00c07d36e3d8e9" name="a947cf12d308ad9b31a00c07d36e3d8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947cf12d308ad9b31a00c07d36e3d8e9">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error robot::SystemCommand::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cadfc35db1c19e87b524c8bdd6366a6" name="a6cadfc35db1c19e87b524c8bdd6366a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cadfc35db1c19e87b524c8bdd6366a6">&#9670;&#160;</a></span>set_action() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::SystemCommand::set_action </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc2d0b6235360d81400e661083909f36" name="abc2d0b6235360d81400e661083909f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2d0b6235360d81400e661083909f36">&#9670;&#160;</a></span>set_action() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::SystemCommand::set_action </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287">SystemAction</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1SystemCommand_abc2d0b6235360d81400e661083909f36_icgraph.png" border="0" usemap="#aclassrobot_1_1SystemCommand_abc2d0b6235360d81400e661083909f36_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1SystemCommand_abc2d0b6235360d81400e661083909f36_icgraph" id="aclassrobot_1_1SystemCommand_abc2d0b6235360d81400e661083909f36_icgraph">
+<area shape="rect" title=" " alt="" coords="213,37,373,77"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#ab1101d8d064141ab20f6e256a3d35361" title=" " alt="" coords="5,5,165,45"/>
+<area shape="rect" href="classrobot_1_1SystemCommand.html#ae0e2175b1928c0a56d79d9391e08b958" title=" " alt="" coords="5,69,165,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="acad07a84b76ade8b30edff655055a687" name="acad07a84b76ade8b30edff655055a687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad07a84b76ade8b30edff655055a687">&#9670;&#160;</a></span>ACTION_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::SystemCommand::ACTION_NAME = &quot;action&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/<a class="el" href="command_8h.html">command.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerobot.html">robot</a></li><li class="navelem"><a class="el" href="classrobot_1_1SystemCommand.html">SystemCommand</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: app/modules/ProtoCAN/api/master_api.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('master__api_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a>  </div>
+  <div class="headertitle"><div class="title">master_api.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;WriteBufferFixedSize.h&gt;</code><br />
+<code>#include &lt;ReadBufferFixedSize.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="bitwise__ops_8hpp.html">../common/bitwise_ops.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="device__catalog_8hpp.html">../common/device_catalog.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="protocol__types_8hpp.html">../common/protocol_types.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="messenger_8hpp.html">../core/messenger.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="utils_8h.html">platform/utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="request_8h.html">proto/devices/request.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="responce_8h.html">proto/devices/responce.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+master_api.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="master__api_8hpp__incl.png" border="0" usemap="#aapp_2modules_2ProtoCAN_2api_2master__api_8hpp" alt=""/></div>
+<map name="aapp_2modules_2ProtoCAN_2api_2master__api_8hpp" id="aapp_2modules_2ProtoCAN_2api_2master__api_8hpp">
+<area shape="rect" title=" " alt="" coords="903,5,1062,45"/>
+<area shape="rect" title=" " alt="" coords="45,401,102,427"/>
+<area shape="rect" title=" " alt="" coords="687,401,748,427"/>
+<area shape="rect" title=" " alt="" coords="1573,93,1640,119"/>
+<area shape="rect" title=" " alt="" coords="234,401,313,427"/>
+<area shape="rect" title=" " alt="" coords="734,167,773,192"/>
+<area shape="rect" title=" " alt="" coords="797,167,949,192"/>
+<area shape="rect" title=" " alt="" coords="973,167,1125,192"/>
+<area shape="rect" href="bitwise__ops_8hpp.html" title=" " alt="" coords="241,475,420,500"/>
+<area shape="rect" href="device__catalog_8hpp.html" title=" " alt="" coords="1251,240,1448,265"/>
+<area shape="rect" href="protocol__types_8hpp.html" title=" " alt="" coords="263,313,395,353"/>
+<area shape="rect" href="messenger_8hpp.html" title=" " alt="" coords="563,93,712,119"/>
+<area shape="rect" href="utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="1059,240,1165,265"/>
+<area shape="rect" href="request_8h.html" title=" " alt="" coords="1945,321,2103,346"/>
+<area shape="rect" href="responce_8h.html" title=" " alt="" coords="1754,321,1921,346"/>
+<area shape="rect" title=" " alt="" coords="881,548,943,573"/>
+<area shape="rect" href="motor_8h.html" title=" " alt="" coords="1583,321,1729,346"/>
+<area shape="rect" title=" " alt="" coords="2239,401,2375,427"/>
+<area shape="rect" title=" " alt="" coords="2399,401,2513,427"/>
+<area shape="rect" title=" " alt="" coords="1127,401,1193,427"/>
+<area shape="rect" title=" " alt="" coords="1217,401,1385,427"/>
+<area shape="rect" title=" " alt="" coords="1410,401,1550,427"/>
+<area shape="rect" title=" " alt="" coords="1575,401,1745,427"/>
+<area shape="rect" title=" " alt="" coords="1770,401,1897,427"/>
+<area shape="rect" title=" " alt="" coords="1921,401,1988,427"/>
+<area shape="rect" title=" " alt="" coords="2063,401,2137,427"/>
+<area shape="rect" title=" " alt="" coords="2161,401,2215,427"/>
+<area shape="rect" href="frame__field_8hpp.html" title=" " alt="" coords="388,401,561,427"/>
+<area shape="rect" title=" " alt="" coords="873,475,924,500"/>
+<area shape="rect" title=" " alt="" coords="495,475,561,500"/>
+<area shape="rect" href="CanInterfaces_8hpp.html" title=" " alt="" coords="471,321,697,346"/>
+<area shape="rect" href="frame__builder_8hpp.html" title=" " alt="" coords="496,167,659,192"/>
+<area shape="rect" title=" " alt="" coords="1115,321,1175,346"/>
+<area shape="rect" title=" " alt="" coords="1026,321,1091,346"/>
+<area shape="rect" title=" " alt="" coords="987,240,1034,265"/>
+<area shape="rect" title=" " alt="" coords="547,240,621,265"/>
+<area shape="rect" href="frame__header_8hpp.html" title=" " alt="" coords="747,240,911,265"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="master__api_8hpp__dep__incl.png" border="0" usemap="#aapp_2modules_2ProtoCAN_2api_2master__api_8hppdep" alt=""/></div>
+<map name="aapp_2modules_2ProtoCAN_2api_2master__api_8hppdep" id="aapp_2modules_2ProtoCAN_2api_2master__api_8hppdep">
+<area shape="rect" title=" " alt="" coords="61,5,219,45"/>
+<area shape="rect" href="proto__can_8hpp.html" title=" " alt="" coords="61,93,219,133"/>
+<area shape="rect" href="appMain_8h.html" title=" " alt="" coords="12,189,119,214"/>
+<area shape="rect" href="test__proto__can_8cpp.html" title=" " alt="" coords="143,181,287,221"/>
+<area shape="rect" href="appMain_8cpp.html" title=" " alt="" coords="5,269,125,295"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Master.html">proto_can::Master</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceproto__can"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceproto__can.html">proto_can</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="dir_5271bff3c5a06a3249a041c6437a62cf.html">modules</a></li><li class="navelem"><a class="el" href="dir_d724780e740b591cc26fbfdff8a1d17c.html">ProtoCAN</a></li><li class="navelem"><a class="el" href="dir_edefe8286424815030d89b4c1571ba40.html">api</a></li><li class="navelem"><a class="el" href="master__api_8hpp.html">master_api.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="CanSystem::CANStatus::hardware_error" name="CanSystem::CANStatus::hardware_error">
+<area shape="rect" id="node1" title=" " alt="" coords="452,69,613,109"/>
+<area shape="rect" id="node2" href="$structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,69,404,109"/>
+<area shape="rect" id="node3" href="$classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="5,5,195,45"/>
+<area shape="rect" id="node4" href="$classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="5,69,195,109"/>
+<area shape="rect" id="node5" href="$classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="5,133,195,173"/>
+</map>
