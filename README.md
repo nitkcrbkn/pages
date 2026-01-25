@@ -1,6 +1,7 @@
 # 木更津高専ロボット研究同好会 CI/CD Reports
+<img src="https://img.shields.io/github/last-commit/nitkcrbkn/pages?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 
-https://nitkcrbkn.github.io/pages/#/
+[index page](https://nitkcrbkn.github.io/pages/#/)
 
 各種プロジェクトにおける、CI/CDパイプラインで自動生成されたレポート類を公開するサイトです。  
 テストカバー、Doxygenのドキュメント、APIドキュメント等が含まれます。

@@ -1,6 +1,9 @@
+<img src="https://img.shields.io/github/last-commit/nitkcrbkn/pages?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+
 各種プロジェクトにおける、CI/CDパイプラインで自動生成されたレポート類を公開するサイトです。  
 このサイト内のレポートコードはプロジェクトに関わらず全て[pages](https://github.com/nitkcrbkn/pages) repoにあります。  
-テストカバー、Doxygenのドキュメント、APIドキュメント等が含まれます。
+テストカバー、Doxygenのドキュメント、APIドキュメント等が含まれます。  
+
 
 ## [STM32 System](https://github.com/nitkcrbkn/STM32System)
 
