@@ -1,4 +1,5 @@
 # 木更津高専ロボット研究同好会 CI/CD Reports
+index md
 
 各種プロジェクトにおける、CI/CDパイプラインで自動生成されたレポート類を公開するサイトです。  
 このサイト内のレポートコードはプロジェクトに関わらず全て[pages](https://github.com/nitkcrbkn/pages) repoにあります。  
