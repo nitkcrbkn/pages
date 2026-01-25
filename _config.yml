@@ -1,2 +1,18 @@
-markdown: kramdown
-theme: jekyll-theme-minimal
+remote_theme: "jekyll/minima"
+encoding: utf-8
+title: 木更津高専ロボット研究同好会 CI/CD Reports
+description: CI/CDパイプラインで自動生成されたレポート類
+
+plugins:
+  - jekyll-github-metadata
+
+github: [metadata]
+repository: nitkcrbkn/pages
+
+# ヘッダーのナビゲーション
+header_pages:
+  - about.md
+
+# SNSリンク（フッター用）
+social_links:
+  github: nitkcrbkn
