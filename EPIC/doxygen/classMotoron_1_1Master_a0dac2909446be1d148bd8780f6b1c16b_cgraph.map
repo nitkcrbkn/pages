@@ -1,0 +1,4 @@
+<map id="Motoron::Master::sendSpeed" name="Motoron::Master::sendSpeed">
+<area shape="rect" id="node1" title="CANデータの送信を行う" alt="" coords="5,13,192,38"/>
+<area shape="rect" id="node2" href="$classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="240,5,417,45"/>
+</map>

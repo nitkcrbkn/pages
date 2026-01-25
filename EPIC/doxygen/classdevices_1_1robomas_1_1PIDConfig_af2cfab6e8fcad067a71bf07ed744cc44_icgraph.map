@@ -1,0 +1,8 @@
+<map id="devices::robomas::PIDConfig::clear_kp" name="devices::robomas::PIDConfig::clear_kp">
+<area shape="rect" id="node1" title=" " alt="" coords="779,69,965,109"/>
+<area shape="rect" id="node2" href="$classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="544,69,731,109"/>
+<area shape="rect" id="node3" href="$classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" id="node5" href="$classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" id="node6" href="$classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" id="node4" href="$classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,69,227,109"/>
+</map>

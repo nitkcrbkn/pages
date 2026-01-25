@@ -1,0 +1,5 @@
+<map id="TelemController::send" name="TelemController::send">
+<area shape="rect" id="node1" title="内部のテレメトリーデータをシリアライズしてUART経由で送信 [マジックナンバー(2B:0xFADE)] + [データ長(2B)] + [データ本体]" alt="" coords="5,31,152,56"/>
+<area shape="rect" id="node2" href="$classrobot_1_1Telemetry.html#a7a0cb412753f0b77391755c3dab1c59c" title=" " alt="" coords="200,5,367,31"/>
+<area shape="rect" id="node3" href="$utils_8h.html#ac7748b80b513f3becddbca64d613ee74" title="UART 送信（1バイトずつ）" alt="" coords="219,55,347,80"/>
+</map>

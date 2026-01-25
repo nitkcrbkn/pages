@@ -1,0 +1,4 @@
+<map id="CanSystem::MockCanProfile::TxRecord" name="CanSystem::MockCanProfile::TxRecord">
+<area shape="rect" id="node1" title="送信データ構造体" alt="" coords="5,93,192,133"/>
+<area shape="rect" id="node2" href="$structCanSystem_1_1CANMessage.html" title=" " alt="" coords="11,5,187,31"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="proto_can::FrameLayer::send" name="proto_can::FrameLayer::send">
+<area shape="rect" id="node1" title=" " alt="" coords="5,118,160,158"/>
+<area shape="rect" id="node2" href="$classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="221,22,372,62"/>
+<area shape="rect" id="node5" href="$classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="208,86,385,126"/>
+<area shape="rect" id="node6" href="$classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab" title=" " alt="" coords="209,150,384,190"/>
+<area shape="rect" id="node10" href="$classproto__can_1_1ProtocolHeader.html#ac890ac50b7d8dda0d82af01a3ec629e4" title=" " alt="" coords="209,214,384,254"/>
+<area shape="rect" id="node3" href="$utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="495,5,546,31"/>
+<area shape="rect" id="node4" href="$namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="453,55,588,80"/>
+<area shape="rect" id="node7" href="$classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="433,139,608,179"/>
+<area shape="rect" id="node9" href="$classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="433,203,608,243"/>
+<area shape="rect" id="node8" href="$namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="656,179,807,204"/>
+</map>

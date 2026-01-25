@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: app/modules/platform/utils.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('utils_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">utils.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Arduino互換関数 + HALラッパー / g++対応  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &quot;main.h&quot;</code><br />
+<code>#include &lt;cstdarg&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+utils.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h__incl.png" border="0" usemap="#aapp_2modules_2platform_2utils_8h" alt=""/></div>
+<map name="aapp_2modules_2platform_2utils_8h" id="aapp_2modules_2platform_2utils_8h">
+<area shape="rect" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="48,5,195,45"/>
+<area shape="rect" title=" " alt="" coords="5,93,67,119"/>
+<area shape="rect" title=" " alt="" coords="91,93,151,119"/>
+<area shape="rect" title=" " alt="" coords="175,93,241,119"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h__dep__incl.png" border="0" usemap="#aapp_2modules_2platform_2utils_8hdep" alt=""/></div>
+<map name="aapp_2modules_2platform_2utils_8hdep" id="aapp_2modules_2platform_2utils_8hdep">
+<area shape="rect" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="152,5,299,45"/>
+<area shape="rect" href="appMain_8h.html" title=" " alt="" coords="12,453,119,478"/>
+<area shape="rect" href="device__api_8hpp.html" title=" " alt="" coords="294,269,453,309"/>
+<area shape="rect" href="master__api_8hpp.html" title=" " alt="" coords="111,269,270,309"/>
+<area shape="rect" href="frame__builder_8hpp.html" title=" " alt="" coords="205,93,363,133"/>
+<area shape="rect" href="messenger_8hpp.html" title=" " alt="" coords="179,181,338,221"/>
+<area shape="rect" href="test__DJI_8cpp.html" title=" " alt="" coords="439,93,583,133"/>
+<area shape="rect" href="appMain_8cpp.html" title=" " alt="" coords="5,533,125,559"/>
+<area shape="rect" href="proto__can_8hpp.html" title=" " alt="" coords="127,357,286,397"/>
+<area shape="rect" href="test__proto__can_8cpp.html" title=" " alt="" coords="143,445,287,485"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af51f77ee2a344560d736adf48c3a0c55"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af51f77ee2a344560d736adf48c3a0c55"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="utils_8h.html#af51f77ee2a344560d736adf48c3a0c55">constrain</a> (T x, T a, T b)</td></tr>
+<tr class="memdesc:af51f77ee2a344560d736adf48c3a0c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino互換 constrain  <a href="utils_8h.html#af51f77ee2a344560d736adf48c3a0c55">[詳解]</a><br /></td></tr>
+<tr class="separator:af51f77ee2a344560d736adf48c3a0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb94fbd930038e1510574dd4bcf07fe1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis</a> ()</td></tr>
+<tr class="memdesc:adb94fbd930038e1510574dd4bcf07fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arduino互換 <a class="el" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()">millis()</a>  <a href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">[詳解]</a><br /></td></tr>
+<tr class="separator:adb94fbd930038e1510574dd4bcf07fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7748b80b513f3becddbca64d613ee74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ac7748b80b513f3becddbca64d613ee74">UART_SendBytes</a> (const uint8_t *<a class="el" href="appMain_8cpp.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>, uint16_t len)</td></tr>
+<tr class="memdesc:ac7748b80b513f3becddbca64d613ee74"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART 送信（1バイトずつ）  <a href="utils_8h.html#ac7748b80b513f3becddbca64d613ee74">[詳解]</a><br /></td></tr>
+<tr class="separator:ac7748b80b513f3becddbca64d613ee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98631211a4a8aee62f572375d5b637be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be">printf</a> (const char *format,...)</td></tr>
+<tr class="separator:a98631211a4a8aee62f572375d5b637be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >Arduino互換関数 + HALラッパー / g++対応 </p>
+<dl class="section author"><dt>著者</dt><dd>ren toda </dd></dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="af51f77ee2a344560d736adf48c3a0c55" name="af51f77ee2a344560d736adf48c3a0c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51f77ee2a344560d736adf48c3a0c55">&#9670;&#160;</a></span>constrain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T constrain </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Arduino互換 constrain </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h_af51f77ee2a344560d736adf48c3a0c55_icgraph.png" border="0" usemap="#autils_8h_af51f77ee2a344560d736adf48c3a0c55_icgraph" alt=""/></div>
+<map name="autils_8h_af51f77ee2a344560d736adf48c3a0c55_icgraph" id="autils_8h_af51f77ee2a344560d736adf48c3a0c55_icgraph">
+<area shape="rect" title="Arduino互換 constrain" alt="" coords="149,5,224,31"/>
+<area shape="rect" href="classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="5,5,101,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb94fbd930038e1510574dd4bcf07fe1" name="adb94fbd930038e1510574dd4bcf07fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb94fbd930038e1510574dd4bcf07fe1">&#9670;&#160;</a></span>millis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t millis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Arduino互換 <a class="el" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()">millis()</a> </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h_adb94fbd930038e1510574dd4bcf07fe1_icgraph.png" border="0" usemap="#autils_8h_adb94fbd930038e1510574dd4bcf07fe1_icgraph" alt=""/></div>
+<map name="autils_8h_adb94fbd930038e1510574dd4bcf07fe1_icgraph" id="autils_8h_adb94fbd930038e1510574dd4bcf07fe1_icgraph">
+<area shape="rect" title="Arduino互換 millis()" alt="" coords="556,156,608,181"/>
+<area shape="rect" href="classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="132,8,311,33"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323" title=" " alt="" coords="366,55,501,95"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="359,119,508,159"/>
+<area shape="rect" href="classstdr_1_1PID.html#a420dc94f002e0f7381f3775e0b609f7d" title=" " alt="" coords="380,184,487,209"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="359,233,507,258"/>
+<area shape="rect" href="classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="385,282,481,308"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,61,84,86"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="186,61,257,86"/>
+<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="173,110,270,136"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="146,192,297,232"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a98631211a4a8aee62f572375d5b637be" name="a98631211a4a8aee62f572375d5b637be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98631211a4a8aee62f572375d5b637be">&#9670;&#160;</a></span>printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int printf </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h_a98631211a4a8aee62f572375d5b637be_icgraph.png" border="0" usemap="#autils_8h_a98631211a4a8aee62f572375d5b637be_icgraph" alt=""/></div>
+<map name="autils_8h_a98631211a4a8aee62f572375d5b637be_icgraph" id="autils_8h_a98631211a4a8aee62f572375d5b637be_icgraph">
+<area shape="rect" title=" " alt="" coords="1011,393,1061,418"/>
+<area shape="rect" href="classIM920sL_1_1Transmitter.html#a35fafb3505be6d6a54207d052fb2e40f" title="IM920sLの設定 完了まで2.5秒以上かかる。" alt="" coords="797,5,942,45"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#ac8d3cfe6f08bae990e1e46aea582a809" title=" " alt="" coords="789,69,949,109"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff" title="IM920sLをペアリングするための信号を出す。" alt="" coords="789,133,949,173"/>
+<area shape="rect" href="modules_2CanSystem_2test_8cpp.html#a810d09cc516a385de58d85c2b6707226" title=" " alt="" coords="844,198,895,223"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="794,413,945,453"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a19183173ecbdb5bfb9556602aa2fef47" title=" " alt="" coords="348,191,497,231"/>
+<area shape="rect" href="classCanSystem_1_1MockCanProfile.html#a053624d059da405b53696553494556e0" title=" " alt="" coords="329,608,516,648"/>
+<area shape="rect" href="structCanSystem_1_1CANMessage.html#acbeac53465dce1d757def3f131ef6c3c" title=" " alt="" coords="781,528,957,568"/>
+<area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="564,349,728,389"/>
+<area shape="rect" href="classCanSystem_1_1MockCanProfile.html#a04d4b4c7e3e9ba993547398beeebb2f2" title="データ送信" alt="" coords="776,248,963,288"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a931f5a25720a155c474e56a642fe404c" title=" " alt="" coords="794,592,945,632"/>
+<area shape="rect" href="classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef" title=" " alt="" coords="800,656,939,696"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#aad87e89c87a98ae1c2450cebab655853" title=" " alt="" coords="794,720,945,760"/>
+<area shape="rect" href="logger_8hpp.html#a72aea7eecd5e6db25d9dc152cf1b8f3f" title=" " alt="" coords="819,785,919,810"/>
+<area shape="rect" href="classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="573,133,719,173"/>
+<area shape="rect" href="classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="578,69,714,109"/>
+<area shape="rect" href="modules_2CanSystem_2test_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="621,198,671,223"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb" title=" " alt="" coords="571,413,721,453"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="569,477,723,517"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="348,516,497,556"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="348,443,497,483"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,203,93,229"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,395,103,421"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="151,580,281,620"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="151,452,281,492"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="151,516,281,556"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="151,260,281,300"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="348,379,497,419"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="348,315,497,355"/>
+<area shape="rect" href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="Get the command object" alt="" coords="151,388,281,428"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title=" " alt="" coords="151,196,281,236"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title=" " alt="" coords="151,324,281,364"/>
+<area shape="rect" href="classproto__can_1_1DeviceID.html#aad2d7549399be5c0ad93c266a953a22b" title=" " alt="" coords="577,656,715,696"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a825c6f7d7fe01c4927733ecec9aab939" title=" " alt="" coords="571,720,721,760"/>
+<area shape="rect" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551" title=" " alt="" coords="613,785,679,810"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac7748b80b513f3becddbca64d613ee74" name="ac7748b80b513f3becddbca64d613ee74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7748b80b513f3becddbca64d613ee74">&#9670;&#160;</a></span>UART_SendBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int UART_SendBytes </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>UART 送信（1バイトずつ） </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="utils_8h_ac7748b80b513f3becddbca64d613ee74_icgraph.png" border="0" usemap="#autils_8h_ac7748b80b513f3becddbca64d613ee74_icgraph" alt=""/></div>
+<map name="autils_8h_ac7748b80b513f3becddbca64d613ee74_icgraph" id="autils_8h_ac7748b80b513f3becddbca64d613ee74_icgraph">
+<area shape="rect" title="UART 送信（1バイトずつ）" alt="" coords="525,13,653,38"/>
+<area shape="rect" href="classTelemController.html#afc1f3386e69d9968990e88a702f7baf1" title="内部のテレメトリーデータをシリアライズしてUART経由で送信 [マジックナンバー(2B:0xFADE)] + [データ長(2B)] + [データ本体]" alt="" coords="331,13,477,38"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,5,283,45"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,13,84,38"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="dir_5271bff3c5a06a3249a041c6437a62cf.html">modules</a></li><li class="navelem"><a class="el" href="dir_33559e465ca79c98d2164a4e8e6e4f66.html">platform</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

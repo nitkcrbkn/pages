@@ -1,0 +1,4 @@
+<map id="Motoron::Master::sendSpeed" name="Motoron::Master::sendSpeed">
+<area shape="rect" id="node1" title="CANデータの送信を行う" alt="" coords="132,5,319,31"/>
+<area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+</map>

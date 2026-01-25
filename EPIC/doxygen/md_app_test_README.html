@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: TEST</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_app_test_README.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">TEST </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >Catch2（amalgamated版）を使用したユニットテストフレームワーク</p>
+<h1><a class="anchor" id="autotoc_md39"></a>
+実行コマンド</h1>
+<h2><a class="anchor" id="autotoc_md40"></a>
+コンパイル</h2>
+<p >初回は20sほど、2回目からは数秒で完了しそのまま全src/に含まれる全testが実行される</p>
+<div class="fragment"><div class="line">cd test</div>
+<div class="line">make test</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md41"></a>
+clean</h2>
+<p >build/ を消す </p><div class="fragment"><div class="line">make clean</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+コマンドオプション</h2>
+<p ><code>make test</code>のあと全てのテストが<code>./build/test_runner</code>にコンパイルされる。 オプションを使うときはこのファイルを実行する</p>
+<p >help </p><div class="fragment"><div class="line"># テスト名で絞り込み</div>
+<div class="line">./build/test_runner --help</div>
+</div><!-- fragment --><div class="fragment"><div class="line"># テスト名で絞り込み</div>
+<div class="line">./build/test_runner &quot;TEST_CASE_pattern&quot;</div>
+</div><!-- fragment --><p> 色々使えるが主なものは: tag検索: 連続して書くとAND<code>[math][can]</code>、カンマを挟めばOR<code>[can],[math]</code> name検索: *でワイルドカードを使い検索可能 <code>*operations</code></p>
+<h1><a class="anchor" id="autotoc_md43"></a>
+ディレクトリ構造</h1>
+<div class="fragment"><div class="line">test/</div>
+<div class="line">├── Makefile                    # ビルド設定</div>
+<div class="line">├── README.md                   # このファイル</div>
+<div class="line">├── src/                        # テストコード</div>
+<div class="line">│   ├── example_test.cpp       # サンプルテスト</div>
+<div class="line">│   └── subdirectory/          # サブディレクトリも自動検出</div>
+<div class="line">│       └── another_test.cpp</div>
+<div class="line">└── build/                      # ビルド成果物（自動生成）</div>
+<div class="line">    ├── obj/                    # オブジェクトファイル</div>
+<div class="line">    ├── libcatch2.a             # Catch2ライブラリ</div>
+<div class="line">    └── test_runner             # テスト実行ファイル</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md44"></a>
+テストの書き方</h1>
+<h2><a class="anchor" id="autotoc_md45"></a>
+基本的なテストケース</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;catch_amalgamated.hpp&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_function" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892">TEST_CASE</a>(<span class="stringliteral">&quot;Basic arithmetic&quot;</span>, <span class="stringliteral">&quot;[math]&quot;</span>) {</div>
+<div class="line">    REQUIRE(1 + 1 == 2);</div>
+<div class="line">    CHECK(2 * 3 == 6);</div>
+<div class="line">}</div>
+<div class="ttc" id="atest__DJI_8cpp_html_a20883bef468435a3676122fd27c4b892"><div class="ttname"><a href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892">TEST_CASE</a></div><div class="ttdeci">TEST_CASE(&quot;DJI ESC tests&quot;, &quot;[dji]&quot;)</div><div class="ttdef"><b>Definition:</b> test_DJI.cpp:9</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md46"></a>
+セクションを使った構造化</h2>
+<div class="fragment"><div class="line"><a class="code hl_function" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892">TEST_CASE</a>(<span class="stringliteral">&quot;Vector operations&quot;</span>, <span class="stringliteral">&quot;[container]&quot;</span>) {</div>
+<div class="line">    std::vector&lt;int&gt; v;</div>
+<div class="line">    </div>
+<div class="line">    SECTION(<span class="stringliteral">&quot;push_back adds elements&quot;</span>) {</div>
+<div class="line">        v.push_back(1);</div>
+<div class="line">        REQUIRE(v.size() == 1);</div>
+<div class="line">        REQUIRE(v[0] == 1);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    SECTION(<span class="stringliteral">&quot;clear removes all elements&quot;</span>) {</div>
+<div class="line">        v.push_back(1);</div>
+<div class="line">        v.push_back(2);</div>
+<div class="line">        v.clear();</div>
+<div class="line">        REQUIRE(v.empty());</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md47"></a>
+テストフィクスチャ</h2>
+<div class="fragment"><div class="line"><span class="keyword">struct </span>DatabaseFixture {</div>
+<div class="line">    DatabaseFixture() {</div>
+<div class="line">        <span class="comment">// セットアップ処理</span></div>
+<div class="line">        db.connect();</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    ~DatabaseFixture() {</div>
+<div class="line">        <span class="comment">// クリーンアップ処理</span></div>
+<div class="line">        db.disconnect();</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    Database db;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">TEST_CASE_METHOD(DatabaseFixture, <span class="stringliteral">&quot;Database queries&quot;</span>, <span class="stringliteral">&quot;[db]&quot;</span>) {</div>
+<div class="line">    REQUIRE(db.isConnected());</div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md48"></a>
+パラメータ化テスト</h2>
+<div class="fragment"><div class="line">TEMPLATE_TEST_CASE(<span class="stringliteral">&quot;Container size&quot;</span>, <span class="stringliteral">&quot;[container]&quot;</span>, </div>
+<div class="line">                   std::vector&lt;int&gt;, std::list&lt;int&gt;) {</div>
+<div class="line">    TestType container;</div>
+<div class="line">    container.push_back(1);</div>
+<div class="line">    REQUIRE(container.size() == 1);</div>
+<div class="line">}</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md49"></a>
+ビルドシステム</h1>
+<h2><a class="anchor" id="autotoc_md50"></a>
+Makefileの主要機能</h2>
+<ul>
+<li><b>自動依存関係解決</b>: <code>src/</code>以下のすべての&lt;tt&gt;.cppファイルを自動検出</li>
+<li><b>サブディレクトリ対応</b>: 任意の階層のテストファイルに対応</li>
+<li><b>インクリメンタルビルド</b>: 変更されたファイルのみ再コンパイル</li>
+<li><b>Catch2統合</b>: amalgamated版(Catch2の全て)を初回のみビルド</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md51"></a>
+インクルードパスの設定</h2>
+<p >Makefileで以下のパスが自動的に設定されます:</p>
+<ul>
+<li><code>../modules</code>: プロジェクトのモジュール</li>
+<li><code>../lib</code>: 外部ライブラリ</li>
+<li><code>../lib/embeddedproto/src</code>: EmbeddedProtoライブラリ</li>
+<li><code>../modules/protocol</code>: プロトコル定義</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md52"></a>
+新しいテストの追加</h2>
+<ol type="1">
+<li><code>src/</code>またはそのサブディレクトリに&lt;tt&gt;.cppファイルを作成</li>
+<li>Catch2のヘッダーをインクルード</li>
+<li><code>make</code>でビルド（自動検出されます）</li>
+</ol>
+<div class="fragment"><div class="line"><span class="comment">// src/my_new_test.cpp</span></div>
+<div class="line"><span class="preprocessor">#include &lt;catch_amalgamated.hpp&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_function" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892">TEST_CASE</a>(<span class="stringliteral">&quot;My new feature&quot;</span>, <span class="stringliteral">&quot;[feature]&quot;</span>) {</div>
+<div class="line">    <span class="comment">// テストコード</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md53"></a>
+ビルドのカスタマイズ</h2>
+<p >コンパイラフラグを変更する場合は、Makefileの<code>CXXFLAGS</code>を編集:</p>
+<div class="fragment"><div class="line">CXXFLAGS = -std=c++17 -Wall -Wextra -g -O2  # 最適化を追加</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md54"></a>
+トラブルシューティング</h1>
+<h2><a class="anchor" id="autotoc_md55"></a>
+ビルドエラー</h2>
+<div class="fragment"><div class="line"># クリーンビルドを試す</div>
+<div class="line">make clean</div>
+<div class="line">make</div>
+<div class="line"> </div>
+<div class="line"># Catch2ライブラリを再ビルド</div>
+<div class="line">rm -rf build/libcatch2.a build/obj/catch2_main.o</div>
+<div class="line">make</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md56"></a>
+参考リンク</h1>
+<ul>
+<li><a href="https://github.com/catchorg/Catch2/tree/devel/docs">Catch2 Documentation</a></li>
+<li><a href="https://github.com/catchorg/Catch2/blob/devel/docs/tutorial.md">Catch2 Tutorial</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: main</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_app_document_manual_dev_manual.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">main </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="autotoc_md3"></a>
+folder 構造　アーキテクチャ</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone">役割   </th><th class="markdownTableHeadNone">備考    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app   </td><td class="markdownTableBodyNone"><a class="el" href="appMain_8cpp.html">appMain.cpp</a>   </td><td class="markdownTableBodyNone">ロボット制御コード。初期化処理とメインループ。   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="appMain_8h.html">appMain.h</a>   </td><td class="markdownTableBodyNone"><code><a class="el" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ">app_main()</a></code>プロトタイプ宣言／C/C++リンク保証   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="config_8h.html">config.h</a>   </td><td class="markdownTableBodyNone">汎用定数・設定値定義   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">app/lib   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">git submodule を配置する   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/module   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">複数ファイルの大きなライブラリ   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">logic/   </td><td class="markdownTableBodyNone">ビジネスロジック層   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">platform/   </td><td class="markdownTableBodyNone">HAL 依存インターフェースアダプタ層   </td><td class="markdownTableBodyNone">HAL 依存    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応">platform/utils.h</a>   </td><td class="markdownTableBodyNone">Arduino 互換関数提供／HAL ラッパー   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">CanSystem/   </td><td class="markdownTableBodyNone">HAL CAN の C++ ラッパーライブラリ   </td><td class="markdownTableBodyNone">HAL 依存    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">app/test   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">test 用コード HAL 依存はテストできない   </td><td class="markdownTableBodyNone">HAL 依存無し   </td></tr>
+</table>
+<p >module, lib は include に含まれるため &lt;logic&gt;などを使い include する。 もし追加の include が必要であれば <code>Project -&gt; Propatie -&gt; C/C++ build -&gt; setting -&gt; MCU/MPU GCC compier -&gt; include paths</code> へ Debug/folder からの相対パスで追加する.例<code>../app/lib/etl/include/</code></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Clog</h1>
+<p >各 project ごとに Logger.hpp を logic/へ配置する。ここでマクロ API の生成と設定を行う。 <code>CLog::LogDirector&amp; <a class="el" href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e" title="複数出力対応Logger取得関数">get_logger()</a></code>で表示する最低の loglvl と出力の設定(復数可)が可能 現状自由度が高すぎるので変更予定</p>
+<p >詳細はこちら:s</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+マクロ API:</h2>
+<h3><a class="anchor" id="autotoc_md6"></a>
+logging</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">マクロ   </th><th class="markdownTableHeadNone">log lvl    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOGD   </td><td class="markdownTableBodyNone">debug    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOGI   </td><td class="markdownTableBodyNone">info    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOGW   </td><td class="markdownTableBodyNone">warning    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOGE   </td><td class="markdownTableBodyNone">error   </td></tr>
+</table>
+<p >LOG_(const char* format, ...) マクロ内で cTag のコンパイル時検証と cformat を行ったあと出力関数に渡している logging は printf のように c 言語 format が可能。</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+STREAM</h3>
+<ul>
+<li><a class="el" href="logger_8hpp.html#a9e9df2eb9c1db40885bed18155943a01">STREAM_SETUP(int count)</a> 起動時のはじめにこれを呼び出し使用チャンネル数を渡すこと。 これは <a class="el" href="config_8h.html">config.h</a> の C 言語 enum LogChannel の CH_COUNT を渡すことで行う。 この時に split screen の format がされるため再接続のたびに break signal を送るなどし再起動が必要</li>
+<li><a class="el" href="logger_8hpp.html#a63880d1a97e6873be7b40d8c4936b301">STREAM(CH_index,const char* format, ...)</a> <a class="el" href="config_8h.html">config.h</a> の LogChannel を渡すため index ベースの指定方法にしてある こちらも c 言語の format が可能</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md8"></a>
+色</h1>
+<p >パイプ(|)と Color Tag 、短縮系 cTag と呼ばれる char により文字の色を指定する方法 <code>log_type.hpp</code>の<code>ASCII_COLORS</code>に使用可能な色が書かれている。 ~色 + 赤 ~ 青の 0~9 のグラデーションの合計~色</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
+　使用方法</h1>
+<p >cTag|対象色文字|通所文字 cTag|対象色文字|通所文字 g|green| normal y|yellow|</p>
+<p >これは cFormat との共用が可能である。また 2 回のバリデーションが入る。</p>
+<ul>
+<li>コンパイル時検証(変更予定) <br  />
+ 渡された const char* format(cFormat 前のもの)に対して:<ul>
+<li>パイプが偶数個あるか</li>
+<li>cTag が 0~1 または a-z であるかを確認 当てはまらない場合:<code>Invalid color tags or pipes</code>コンパイルエラーが発生</li>
+</ul>
+</li>
+<li>ランタイム時検証 <br  />
+ cFormat された sting に対して:<ul>
+<li>パイプが偶数個あるか</li>
+<li>cTag が<code>ASCII_COLORS</code>にふくまれるか 当てはまらない場合:&lsquo;Invalid color tags or pipes. log: &rsquo;s'`が log lvl=error print される</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+CanSystem</h1>
+<h2><a class="anchor" id="autotoc_md11"></a>
+構造</h2>
+<p ><code><a class="el" href="CanInterfaces_8hpp.html">CanInterfaces.hpp</a></code>での FDCAN <code>IFdcanMgr</code> と CAN <code>ICanMgr</code>はどちらも<code>ICanController</code>を継承した interface である。 ここに使用時の profile インスタンスに含まれるすべての関数のプロトタイプがある</p>
+<p >その後<code>abstract/</code>にて実装が <br  />
+ <code>impl/</code>には profile が書かれる.ここでは can の割り込み設定と TxHeader また sFilterConfig の設定が config 行われる <br  />
+ abstract-&gt;実装、impl-&gt;profile など命名変更予定 基本の profile は can/fdcan のものまた can 互換 fdcan がそれぞれ全 id パスで設定されている カスタムの設定を行う場合は新しい profile を書くか profile の一つを生成して config を取得、編集して適用しなおす。取得と適用の関数がある</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+使用</h2>
+<p >使用時は profile に対応した can hanler stract を渡してインスタンスを生成する ライブラリ内でこのインスタンスは ICanController&amp; can/can Mgr&amp; のどちらかで受け取れる 基本的に<code>ICanController</code> で受け取ることで can/fdcan に関わらずに動くライブラリになる ただし各 mgr 特有のものは使用不可になる</p>
+<p ><b>インスタンス生成と profile 設定:</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">- FdCanCompatImpl(FDCAN_HandleTypeDef &amp;hfdcan, uint32_t stdid = 0)</div>
+<div class="line">stdidは削除予定</div>
+<div class="line"> </div>
+<div class="line">- bool initCan(const char *_name, int _stream_pos, bool _restart_on_error = false, bool _show_config = false)</div>
+</div><!-- fragment --><p >他の関数も含め使用方法は doxygen コメントを確認すること(まだしっかり書いていない)</p>
+<h1><a class="anchor" id="autotoc_md13"></a>
+STREAM</h1>
+<p >注意点</p>
+<ul>
+<li><b>接続するたびに再起動すること。</b> 起動時にしか STREAM の console format ASCII が送信されないため</li>
+<li><b>割り込み中に printf は使用しない</b> CAN の送受信の妨げになったり、console format が崩れてしまうためだ 現状 LOGE と LOGW しか割り込み内で使われないが、これは電流制限なども含まれるためもし修正する気がなければ<code>NO_LOG</code>を define して STREAM のみにすること</li>
+<li><b>F0 では Cansystem と Clog 等を使わない</b> 32kb の FLASH RAM しか無いためである。かわりに lite module にあるものを使う。(can interface を継承したものにする予定) また lite を使っていても色々付け足すと 32kb ギリギリになることがあり意味がわからないエラー(HardFault による強制停止)が発生するため std でなく etl を使う </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

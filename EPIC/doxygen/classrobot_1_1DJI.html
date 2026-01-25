@@ -1,0 +1,1698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: robot::DJI クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classrobot_1_1DJI.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classrobot_1_1DJI-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">robot::DJI クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;telemetry.h&gt;</code></p>
+<div class="dynheader">
+robot::DJI の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI__inherit__graph.png" border="0" usemap="#arobot_1_1DJI_inherit__map" alt="Inheritance graph"/></div>
+<map name="arobot_1_1DJI_inherit__map" id="arobot_1_1DJI_inherit__map">
+<area shape="rect" title=" " alt="" coords="79,79,156,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+robot::DJI 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI__coll__graph.png" border="0" usemap="#arobot_1_1DJI_coll__map" alt="Collaboration graph"/></div>
+<map name="arobot_1_1DJI_coll__map" id="arobot_1_1DJI_coll__map">
+<area shape="rect" title=" " alt="" coords="79,79,156,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a12fa7916ae9353e2f636a26c8bf7961e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961e">FieldNumber</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961ea1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961eaa2770969c827f0f2910f6179418462df">CURRENT</a> = 1
+, <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961ea65a59338b99aee6a451e86b17b462b5a">SPEED</a> = 2
+, <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961eac03211b47bf5b5f35eba61e0fcb5e7bf">ANGLE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961ea8c293cda5e597c503f2e9c61c2745403">TORQUE_CURRENT</a> = 4
+, <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961eaa972681b318c92911a4020c18acf78b6">TEMP</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a12fa7916ae9353e2f636a26c8bf7961e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a96e6c8f4de24cb876e52f7e01d2ce089"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a96e6c8f4de24cb876e52f7e01d2ce089">DJI</a> ()=default</td></tr>
+<tr class="separator:a96e6c8f4de24cb876e52f7e01d2ce089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5476b562be02b6d32d1dc906493fd28f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f">DJI</a> (const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;rhs)</td></tr>
+<tr class="separator:a5476b562be02b6d32d1dc906493fd28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ac6d1e16a3118aadeed68d2b4a3124"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ad2ac6d1e16a3118aadeed68d2b4a3124">DJI</a> (const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:ad2ac6d1e16a3118aadeed68d2b4a3124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdba0229dd4fe97b78f5061a8ba27d9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#afdba0229dd4fe97b78f5061a8ba27d9f">~DJI</a> () override=default</td></tr>
+<tr class="separator:afdba0229dd4fe97b78f5061a8ba27d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81df786031764256688b4ef78683979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979">operator=</a> (const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;rhs)</td></tr>
+<tr class="separator:ae81df786031764256688b4ef78683979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5f036a6ce70331372a2f23f7edc4bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a9b5f036a6ce70331372a2f23f7edc4bf">operator=</a> (const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a9b5f036a6ce70331372a2f23f7edc4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de073717f1947d37ee8dd36cf2f58dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a1de073717f1947d37ee8dd36cf2f58dc">clear_current</a> ()</td></tr>
+<tr class="separator:a1de073717f1947d37ee8dd36cf2f58dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb78add41679d8b266ad3cf29c0991b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#afb78add41679d8b266ad3cf29c0991b7">set_current</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:afb78add41679d8b266ad3cf29c0991b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8693d2fb5774d6ec7de591476ae7c0de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a8693d2fb5774d6ec7de591476ae7c0de">set_current</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a8693d2fb5774d6ec7de591476ae7c0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d07cb464c8b3cb823d0058afc5c706"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a86d07cb464c8b3cb823d0058afc5c706">mutable_current</a> ()</td></tr>
+<tr class="separator:a86d07cb464c8b3cb823d0058afc5c706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed4d0abfe64a65ff493e300bcee8262"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#aaed4d0abfe64a65ff493e300bcee8262">get_current</a> () const</td></tr>
+<tr class="separator:aaed4d0abfe64a65ff493e300bcee8262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086f746837ad4c11d397bfbd1a8cc7f9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a086f746837ad4c11d397bfbd1a8cc7f9">current</a> () const</td></tr>
+<tr class="separator:a086f746837ad4c11d397bfbd1a8cc7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185c53a80fa68eb4e6ff78d00312d5ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a185c53a80fa68eb4e6ff78d00312d5ca">clear_speed</a> ()</td></tr>
+<tr class="separator:a185c53a80fa68eb4e6ff78d00312d5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae829d3d2875736ab38d76c597f327e5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ae829d3d2875736ab38d76c597f327e5a">set_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:ae829d3d2875736ab38d76c597f327e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecd592add3faeb455840a7cb98b500f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#aaecd592add3faeb455840a7cb98b500f">set_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:aaecd592add3faeb455840a7cb98b500f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699b425a4ba5360b51a1786f25d3c4e7"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a699b425a4ba5360b51a1786f25d3c4e7">mutable_speed</a> ()</td></tr>
+<tr class="separator:a699b425a4ba5360b51a1786f25d3c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7071671e63692843c85294b92aec211"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ae7071671e63692843c85294b92aec211">get_speed</a> () const</td></tr>
+<tr class="separator:ae7071671e63692843c85294b92aec211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785859be537463b254279354092a0abd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a785859be537463b254279354092a0abd">speed</a> () const</td></tr>
+<tr class="separator:a785859be537463b254279354092a0abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dce74fca1cef17b6945d0dc99e1305f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a7dce74fca1cef17b6945d0dc99e1305f">clear_angle</a> ()</td></tr>
+<tr class="separator:a7dce74fca1cef17b6945d0dc99e1305f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd59d956abf68f31b96759b6238dc394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#abd59d956abf68f31b96759b6238dc394">set_angle</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:abd59d956abf68f31b96759b6238dc394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac561cb8d44fcc6896f6420e81761bfcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ac561cb8d44fcc6896f6420e81761bfcb">set_angle</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:ac561cb8d44fcc6896f6420e81761bfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac988ac72d88156075513ce80c5b4ae0a"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ac988ac72d88156075513ce80c5b4ae0a">mutable_angle</a> ()</td></tr>
+<tr class="separator:ac988ac72d88156075513ce80c5b4ae0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa79ec99829084bb0a35b2e0e2d5d31"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#aaaa79ec99829084bb0a35b2e0e2d5d31">get_angle</a> () const</td></tr>
+<tr class="separator:aaaa79ec99829084bb0a35b2e0e2d5d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66641d15f8056d5e4ff572c896c4c85e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a66641d15f8056d5e4ff572c896c4c85e">angle</a> () const</td></tr>
+<tr class="separator:a66641d15f8056d5e4ff572c896c4c85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbd7ea9afd35eca38570aa6fe7cc46d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a0cbd7ea9afd35eca38570aa6fe7cc46d">clear_torque_current</a> ()</td></tr>
+<tr class="separator:a0cbd7ea9afd35eca38570aa6fe7cc46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f680754bb9db8ed685bf7161de8724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#af1f680754bb9db8ed685bf7161de8724">set_torque_current</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:af1f680754bb9db8ed685bf7161de8724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a97197803d11aa1c2d6fa2d3462d5df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a8a97197803d11aa1c2d6fa2d3462d5df">set_torque_current</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a8a97197803d11aa1c2d6fa2d3462d5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61dbe7abadd0e533235cd5b565978fcc"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a61dbe7abadd0e533235cd5b565978fcc">mutable_torque_current</a> ()</td></tr>
+<tr class="separator:a61dbe7abadd0e533235cd5b565978fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df09a57a0631ca89fdde092ccf475b1"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a7df09a57a0631ca89fdde092ccf475b1">get_torque_current</a> () const</td></tr>
+<tr class="separator:a7df09a57a0631ca89fdde092ccf475b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e8bc8205525caa5aebbbaa517a1e8a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a21e8bc8205525caa5aebbbaa517a1e8a">torque_current</a> () const</td></tr>
+<tr class="separator:a21e8bc8205525caa5aebbbaa517a1e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e6059eba4bfe298fe218ff5ae3adb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a01e6059eba4bfe298fe218ff5ae3adb9">clear_temp</a> ()</td></tr>
+<tr class="separator:a01e6059eba4bfe298fe218ff5ae3adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4c83828df03ef6aa337a115c035f65a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#af4c83828df03ef6aa337a115c035f65a">set_temp</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:af4c83828df03ef6aa337a115c035f65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544ed904d4839b1bc481899de481e8a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a544ed904d4839b1bc481899de481e8a9">set_temp</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a544ed904d4839b1bc481899de481e8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac256a721365a69ae51abd4981a8d75de"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ac256a721365a69ae51abd4981a8d75de">mutable_temp</a> ()</td></tr>
+<tr class="separator:ac256a721365a69ae51abd4981a8d75de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbc06296231875ccd55b7c28cf50e37"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#aedbc06296231875ccd55b7c28cf50e37">get_temp</a> () const</td></tr>
+<tr class="separator:aedbc06296231875ccd55b7c28cf50e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab845292cedd7cd2d7805adf65f00a7e2"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#ab845292cedd7cd2d7805adf65f00a7e2">temp</a> () const</td></tr>
+<tr class="separator:ab845292cedd7cd2d7805adf65f00a7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b4020a26e5392c93eddce1a90c1302"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a97b4020a26e5392c93eddce1a90c1302">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a97b4020a26e5392c93eddce1a90c1302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aeaabde0a4ba3fb830ea5ae5adbee9f"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a8aeaabde0a4ba3fb830ea5ae5adbee9f">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:a8aeaabde0a4ba3fb830ea5ae5adbee9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c06f0c79dbf1977adbb66415c536f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9">clear</a> () override</td></tr>
+<tr class="separator:af1c06f0c79dbf1977adbb66415c536f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1d1d0dcbdcc0dbf680999533e62e6208"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a1d1d0dcbdcc0dbf680999533e62e6208">field_number_to_name</a> (const <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961e">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a1d1d0dcbdcc0dbf680999533e62e6208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:af3d2a663c3e06af48f5223ec3f43c3ae"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#af3d2a663c3e06af48f5223ec3f43c3ae">CURRENT_NAME</a> = &quot;current&quot;</td></tr>
+<tr class="separator:af3d2a663c3e06af48f5223ec3f43c3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cb9f0d28bef97bf1fea5940112805f"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a74cb9f0d28bef97bf1fea5940112805f">SPEED_NAME</a> = &quot;speed&quot;</td></tr>
+<tr class="separator:a74cb9f0d28bef97bf1fea5940112805f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e790a51545a601e73642d67861cce1a"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a6e790a51545a601e73642d67861cce1a">ANGLE_NAME</a> = &quot;angle&quot;</td></tr>
+<tr class="separator:a6e790a51545a601e73642d67861cce1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928bdf525386bb538b9f8b29b9dad7fd"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a928bdf525386bb538b9f8b29b9dad7fd">TORQUE_CURRENT_NAME</a> = &quot;torque_current&quot;</td></tr>
+<tr class="separator:a928bdf525386bb538b9f8b29b9dad7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f11552c70aaf89a3497f31640a559b"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrobot_1_1DJI.html#a13f11552c70aaf89a3497f31640a559b">TEMP_NAME</a> = &quot;temp&quot;</td></tr>
+<tr class="separator:a13f11552c70aaf89a3497f31640a559b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a12fa7916ae9353e2f636a26c8bf7961e" name="a12fa7916ae9353e2f636a26c8bf7961e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fa7916ae9353e2f636a26c8bf7961e">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961e">robot::DJI::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961ea1c250a21210b7b88a14db9a0cbe71162" name="a12fa7916ae9353e2f636a26c8bf7961ea1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961eaa2770969c827f0f2910f6179418462df" name="a12fa7916ae9353e2f636a26c8bf7961eaa2770969c827f0f2910f6179418462df"></a>CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961ea65a59338b99aee6a451e86b17b462b5a" name="a12fa7916ae9353e2f636a26c8bf7961ea65a59338b99aee6a451e86b17b462b5a"></a>SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961eac03211b47bf5b5f35eba61e0fcb5e7bf" name="a12fa7916ae9353e2f636a26c8bf7961eac03211b47bf5b5f35eba61e0fcb5e7bf"></a>ANGLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961ea8c293cda5e597c503f2e9c61c2745403" name="a12fa7916ae9353e2f636a26c8bf7961ea8c293cda5e597c503f2e9c61c2745403"></a>TORQUE_CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a12fa7916ae9353e2f636a26c8bf7961eaa972681b318c92911a4020c18acf78b6" name="a12fa7916ae9353e2f636a26c8bf7961eaa972681b318c92911a4020c18acf78b6"></a>TEMP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a96e6c8f4de24cb876e52f7e01d2ce089" name="a96e6c8f4de24cb876e52f7e01d2ce089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e6c8f4de24cb876e52f7e01d2ce089">&#9670;&#160;</a></span>DJI() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::DJI::DJI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5476b562be02b6d32d1dc906493fd28f" name="a5476b562be02b6d32d1dc906493fd28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5476b562be02b6d32d1dc906493fd28f">&#9670;&#160;</a></span>DJI() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::DJI::DJI </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a5476b562be02b6d32d1dc906493fd28f_cgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a5476b562be02b6d32d1dc906493fd28f_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a5476b562be02b6d32d1dc906493fd28f_cgraph" id="aclassrobot_1_1DJI_a5476b562be02b6d32d1dc906493fd28f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,240,108,265"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aaaa79ec99829084bb0a35b2e0e2d5d31" title=" " alt="" coords="161,5,299,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aaed4d0abfe64a65ff493e300bcee8262" title=" " alt="" coords="156,55,304,80"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae7071671e63692843c85294b92aec211" title=" " alt="" coords="159,104,301,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aedbc06296231875ccd55b7c28cf50e37" title=" " alt="" coords="161,153,299,179"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a7df09a57a0631ca89fdde092ccf475b1" title=" " alt="" coords="158,203,302,243"/>
+<area shape="rect" href="classrobot_1_1DJI.html#abd59d956abf68f31b96759b6238dc394" title=" " alt="" coords="161,268,299,293"/>
+<area shape="rect" href="classrobot_1_1DJI.html#afb78add41679d8b266ad3cf29c0991b7" title=" " alt="" coords="156,317,304,343"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae829d3d2875736ab38d76c597f327e5a" title=" " alt="" coords="159,367,301,392"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af4c83828df03ef6aa337a115c035f65a" title=" " alt="" coords="161,416,299,441"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1f680754bb9db8ed685bf7161de8724" title=" " alt="" coords="158,466,302,506"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2ac6d1e16a3118aadeed68d2b4a3124" name="ad2ac6d1e16a3118aadeed68d2b4a3124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ac6d1e16a3118aadeed68d2b4a3124">&#9670;&#160;</a></span>DJI() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::DJI::DJI </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_ad2ac6d1e16a3118aadeed68d2b4a3124_cgraph.png" border="0" usemap="#aclassrobot_1_1DJI_ad2ac6d1e16a3118aadeed68d2b4a3124_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_ad2ac6d1e16a3118aadeed68d2b4a3124_cgraph" id="aclassrobot_1_1DJI_ad2ac6d1e16a3118aadeed68d2b4a3124_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,108,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#abd59d956abf68f31b96759b6238dc394" title=" " alt="" coords="161,5,299,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#afb78add41679d8b266ad3cf29c0991b7" title=" " alt="" coords="156,55,304,80"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae829d3d2875736ab38d76c597f327e5a" title=" " alt="" coords="159,104,301,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af4c83828df03ef6aa337a115c035f65a" title=" " alt="" coords="161,153,299,179"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1f680754bb9db8ed685bf7161de8724" title=" " alt="" coords="158,203,302,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdba0229dd4fe97b78f5061a8ba27d9f" name="afdba0229dd4fe97b78f5061a8ba27d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdba0229dd4fe97b78f5061a8ba27d9f">&#9670;&#160;</a></span>~DJI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">robot::DJI::~DJI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a66641d15f8056d5e4ff572c896c4c85e" name="a66641d15f8056d5e4ff572c896c4c85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66641d15f8056d5e4ff572c896c4c85e">&#9670;&#160;</a></span>angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t robot::DJI::angle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1c06f0c79dbf1977adbb66415c536f9" name="af1c06f0c79dbf1977adbb66415c536f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c06f0c79dbf1977adbb66415c536f9">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_cgraph.png" border="0" usemap="#aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_cgraph" id="aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,116,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a7dce74fca1cef17b6945d0dc99e1305f" title=" " alt="" coords="169,5,318,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a1de073717f1947d37ee8dd36cf2f58dc" title=" " alt="" coords="164,55,323,80"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a185c53a80fa68eb4e6ff78d00312d5ca" title=" " alt="" coords="167,104,320,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a01e6059eba4bfe298fe218ff5ae3adb9" title=" " alt="" coords="170,153,317,179"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a0cbd7ea9afd35eca38570aa6fe7cc46d" title=" " alt="" coords="166,203,321,243"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_icgraph" id="aclassrobot_1_1DJI_af1c06f0c79dbf1977adbb66415c536f9_icgraph">
+<area shape="rect" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7dce74fca1cef17b6945d0dc99e1305f" name="a7dce74fca1cef17b6945d0dc99e1305f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dce74fca1cef17b6945d0dc99e1305f">&#9670;&#160;</a></span>clear_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear_angle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a7dce74fca1cef17b6945d0dc99e1305f_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a7dce74fca1cef17b6945d0dc99e1305f_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a7dce74fca1cef17b6945d0dc99e1305f_icgraph" id="aclassrobot_1_1DJI_a7dce74fca1cef17b6945d0dc99e1305f_icgraph">
+<area shape="rect" title=" " alt="" coords="1435,109,1584,134"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1de073717f1947d37ee8dd36cf2f58dc" name="a1de073717f1947d37ee8dd36cf2f58dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de073717f1947d37ee8dd36cf2f58dc">&#9670;&#160;</a></span>clear_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a1de073717f1947d37ee8dd36cf2f58dc_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a1de073717f1947d37ee8dd36cf2f58dc_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a1de073717f1947d37ee8dd36cf2f58dc_icgraph" id="aclassrobot_1_1DJI_a1de073717f1947d37ee8dd36cf2f58dc_icgraph">
+<area shape="rect" title=" " alt="" coords="1435,109,1593,134"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a185c53a80fa68eb4e6ff78d00312d5ca" name="a185c53a80fa68eb4e6ff78d00312d5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185c53a80fa68eb4e6ff78d00312d5ca">&#9670;&#160;</a></span>clear_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a185c53a80fa68eb4e6ff78d00312d5ca_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a185c53a80fa68eb4e6ff78d00312d5ca_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a185c53a80fa68eb4e6ff78d00312d5ca_icgraph" id="aclassrobot_1_1DJI_a185c53a80fa68eb4e6ff78d00312d5ca_icgraph">
+<area shape="rect" title=" " alt="" coords="1435,109,1588,134"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a01e6059eba4bfe298fe218ff5ae3adb9" name="a01e6059eba4bfe298fe218ff5ae3adb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e6059eba4bfe298fe218ff5ae3adb9">&#9670;&#160;</a></span>clear_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear_temp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a01e6059eba4bfe298fe218ff5ae3adb9_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a01e6059eba4bfe298fe218ff5ae3adb9_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a01e6059eba4bfe298fe218ff5ae3adb9_icgraph" id="aclassrobot_1_1DJI_a01e6059eba4bfe298fe218ff5ae3adb9_icgraph">
+<area shape="rect" title=" " alt="" coords="1435,109,1581,134"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0cbd7ea9afd35eca38570aa6fe7cc46d" name="a0cbd7ea9afd35eca38570aa6fe7cc46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbd7ea9afd35eca38570aa6fe7cc46d">&#9670;&#160;</a></span>clear_torque_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::clear_torque_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a0cbd7ea9afd35eca38570aa6fe7cc46d_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a0cbd7ea9afd35eca38570aa6fe7cc46d_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a0cbd7ea9afd35eca38570aa6fe7cc46d_icgraph" id="aclassrobot_1_1DJI_a0cbd7ea9afd35eca38570aa6fe7cc46d_icgraph">
+<area shape="rect" title=" " alt="" coords="1435,101,1589,141"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1276,109,1387,134"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="1097,5,1228,45"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="1097,69,1228,109"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="1097,133,1228,173"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="1097,197,1228,237"/>
+<area shape="rect" href="classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="919,101,1049,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="723,101,871,141"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="527,109,675,134"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="331,109,479,134"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,101,283,141"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,109,84,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a086f746837ad4c11d397bfbd1a8cc7f9" name="a086f746837ad4c11d397bfbd1a8cc7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086f746837ad4c11d397bfbd1a8cc7f9">&#9670;&#160;</a></span>current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t robot::DJI::current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aeaabde0a4ba3fb830ea5ae5adbee9f" name="a8aeaabde0a4ba3fb830ea5ae5adbee9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aeaabde0a4ba3fb830ea5ae5adbee9f">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error robot::DJI::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d1d0dcbdcc0dbf680999533e62e6208" name="a1d1d0dcbdcc0dbf680999533e62e6208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1d0dcbdcc0dbf680999533e62e6208">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * robot::DJI::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1DJI.html#a12fa7916ae9353e2f636a26c8bf7961e">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaa79ec99829084bb0a35b2e0e2d5d31" name="aaaa79ec99829084bb0a35b2e0e2d5d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa79ec99829084bb0a35b2e0e2d5d31">&#9670;&#160;</a></span>get_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; robot::DJI::get_angle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_aaaa79ec99829084bb0a35b2e0e2d5d31_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_aaaa79ec99829084bb0a35b2e0e2d5d31_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_aaaa79ec99829084bb0a35b2e0e2d5d31_icgraph" id="aclassrobot_1_1DJI_aaaa79ec99829084bb0a35b2e0e2d5d31_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,331,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaed4d0abfe64a65ff493e300bcee8262" name="aaed4d0abfe64a65ff493e300bcee8262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed4d0abfe64a65ff493e300bcee8262">&#9670;&#160;</a></span>get_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; robot::DJI::get_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_aaed4d0abfe64a65ff493e300bcee8262_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_aaed4d0abfe64a65ff493e300bcee8262_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_aaed4d0abfe64a65ff493e300bcee8262_icgraph" id="aclassrobot_1_1DJI_aaed4d0abfe64a65ff493e300bcee8262_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,340,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae7071671e63692843c85294b92aec211" name="ae7071671e63692843c85294b92aec211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7071671e63692843c85294b92aec211">&#9670;&#160;</a></span>get_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; robot::DJI::get_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_ae7071671e63692843c85294b92aec211_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_ae7071671e63692843c85294b92aec211_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_ae7071671e63692843c85294b92aec211_icgraph" id="aclassrobot_1_1DJI_ae7071671e63692843c85294b92aec211_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,335,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aedbc06296231875ccd55b7c28cf50e37" name="aedbc06296231875ccd55b7c28cf50e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbc06296231875ccd55b7c28cf50e37">&#9670;&#160;</a></span>get_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; robot::DJI::get_temp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_aedbc06296231875ccd55b7c28cf50e37_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_aedbc06296231875ccd55b7c28cf50e37_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_aedbc06296231875ccd55b7c28cf50e37_icgraph" id="aclassrobot_1_1DJI_aedbc06296231875ccd55b7c28cf50e37_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,329,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7df09a57a0631ca89fdde092ccf475b1" name="a7df09a57a0631ca89fdde092ccf475b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df09a57a0631ca89fdde092ccf475b1">&#9670;&#160;</a></span>get_torque_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; robot::DJI::get_torque_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a7df09a57a0631ca89fdde092ccf475b1_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a7df09a57a0631ca89fdde092ccf475b1_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a7df09a57a0631ca89fdde092ccf475b1_icgraph" id="aclassrobot_1_1DJI_a7df09a57a0631ca89fdde092ccf475b1_icgraph">
+<area shape="rect" title=" " alt="" coords="192,23,336,63"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac988ac72d88156075513ce80c5b4ae0a" name="ac988ac72d88156075513ce80c5b4ae0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac988ac72d88156075513ce80c5b4ae0a">&#9670;&#160;</a></span>mutable_angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; robot::DJI::mutable_angle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86d07cb464c8b3cb823d0058afc5c706" name="a86d07cb464c8b3cb823d0058afc5c706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d07cb464c8b3cb823d0058afc5c706">&#9670;&#160;</a></span>mutable_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; robot::DJI::mutable_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699b425a4ba5360b51a1786f25d3c4e7" name="a699b425a4ba5360b51a1786f25d3c4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699b425a4ba5360b51a1786f25d3c4e7">&#9670;&#160;</a></span>mutable_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; robot::DJI::mutable_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac256a721365a69ae51abd4981a8d75de" name="ac256a721365a69ae51abd4981a8d75de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac256a721365a69ae51abd4981a8d75de">&#9670;&#160;</a></span>mutable_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; robot::DJI::mutable_temp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61dbe7abadd0e533235cd5b565978fcc" name="a61dbe7abadd0e533235cd5b565978fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dbe7abadd0e533235cd5b565978fcc">&#9670;&#160;</a></span>mutable_torque_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; robot::DJI::mutable_torque_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b5f036a6ce70331372a2f23f7edc4bf" name="a9b5f036a6ce70331372a2f23f7edc4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5f036a6ce70331372a2f23f7edc4bf">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp; robot::DJI::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_a9b5f036a6ce70331372a2f23f7edc4bf_cgraph.png" border="0" usemap="#aclassrobot_1_1DJI_a9b5f036a6ce70331372a2f23f7edc4bf_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_a9b5f036a6ce70331372a2f23f7edc4bf_cgraph" id="aclassrobot_1_1DJI_a9b5f036a6ce70331372a2f23f7edc4bf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,144,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#abd59d956abf68f31b96759b6238dc394" title=" " alt="" coords="197,5,335,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#afb78add41679d8b266ad3cf29c0991b7" title=" " alt="" coords="192,55,340,80"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae829d3d2875736ab38d76c597f327e5a" title=" " alt="" coords="195,104,337,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af4c83828df03ef6aa337a115c035f65a" title=" " alt="" coords="197,153,335,179"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1f680754bb9db8ed685bf7161de8724" title=" " alt="" coords="194,203,338,243"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae81df786031764256688b4ef78683979" name="ae81df786031764256688b4ef78683979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81df786031764256688b4ef78683979">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp; robot::DJI::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classrobot_1_1DJI.html">DJI</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_ae81df786031764256688b4ef78683979_cgraph.png" border="0" usemap="#aclassrobot_1_1DJI_ae81df786031764256688b4ef78683979_cgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_ae81df786031764256688b4ef78683979_cgraph" id="aclassrobot_1_1DJI_ae81df786031764256688b4ef78683979_cgraph">
+<area shape="rect" title=" " alt="" coords="5,240,144,265"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aaaa79ec99829084bb0a35b2e0e2d5d31" title=" " alt="" coords="197,5,335,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aaed4d0abfe64a65ff493e300bcee8262" title=" " alt="" coords="192,55,340,80"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae7071671e63692843c85294b92aec211" title=" " alt="" coords="195,104,337,129"/>
+<area shape="rect" href="classrobot_1_1DJI.html#aedbc06296231875ccd55b7c28cf50e37" title=" " alt="" coords="197,153,335,179"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a7df09a57a0631ca89fdde092ccf475b1" title=" " alt="" coords="194,203,338,243"/>
+<area shape="rect" href="classrobot_1_1DJI.html#abd59d956abf68f31b96759b6238dc394" title=" " alt="" coords="197,268,335,293"/>
+<area shape="rect" href="classrobot_1_1DJI.html#afb78add41679d8b266ad3cf29c0991b7" title=" " alt="" coords="192,317,340,343"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae829d3d2875736ab38d76c597f327e5a" title=" " alt="" coords="195,367,337,392"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af4c83828df03ef6aa337a115c035f65a" title=" " alt="" coords="197,416,335,441"/>
+<area shape="rect" href="classrobot_1_1DJI.html#af1f680754bb9db8ed685bf7161de8724" title=" " alt="" coords="194,466,338,506"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a97b4020a26e5392c93eddce1a90c1302" name="a97b4020a26e5392c93eddce1a90c1302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97b4020a26e5392c93eddce1a90c1302">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error robot::DJI::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac561cb8d44fcc6896f6420e81761bfcb" name="ac561cb8d44fcc6896f6420e81761bfcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac561cb8d44fcc6896f6420e81761bfcb">&#9670;&#160;</a></span>set_angle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_angle </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd59d956abf68f31b96759b6238dc394" name="abd59d956abf68f31b96759b6238dc394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd59d956abf68f31b96759b6238dc394">&#9670;&#160;</a></span>set_angle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_angle </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_abd59d956abf68f31b96759b6238dc394_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_abd59d956abf68f31b96759b6238dc394_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_abd59d956abf68f31b96759b6238dc394_icgraph" id="aclassrobot_1_1DJI_abd59d956abf68f31b96759b6238dc394_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,331,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8693d2fb5774d6ec7de591476ae7c0de" name="a8693d2fb5774d6ec7de591476ae7c0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8693d2fb5774d6ec7de591476ae7c0de">&#9670;&#160;</a></span>set_current() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb78add41679d8b266ad3cf29c0991b7" name="afb78add41679d8b266ad3cf29c0991b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb78add41679d8b266ad3cf29c0991b7">&#9670;&#160;</a></span>set_current() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_afb78add41679d8b266ad3cf29c0991b7_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_afb78add41679d8b266ad3cf29c0991b7_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_afb78add41679d8b266ad3cf29c0991b7_icgraph" id="aclassrobot_1_1DJI_afb78add41679d8b266ad3cf29c0991b7_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,340,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaecd592add3faeb455840a7cb98b500f" name="aaecd592add3faeb455840a7cb98b500f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecd592add3faeb455840a7cb98b500f">&#9670;&#160;</a></span>set_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae829d3d2875736ab38d76c597f327e5a" name="ae829d3d2875736ab38d76c597f327e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae829d3d2875736ab38d76c597f327e5a">&#9670;&#160;</a></span>set_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_ae829d3d2875736ab38d76c597f327e5a_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_ae829d3d2875736ab38d76c597f327e5a_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_ae829d3d2875736ab38d76c597f327e5a_icgraph" id="aclassrobot_1_1DJI_ae829d3d2875736ab38d76c597f327e5a_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,335,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a544ed904d4839b1bc481899de481e8a9" name="a544ed904d4839b1bc481899de481e8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a544ed904d4839b1bc481899de481e8a9">&#9670;&#160;</a></span>set_temp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_temp </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4c83828df03ef6aa337a115c035f65a" name="af4c83828df03ef6aa337a115c035f65a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4c83828df03ef6aa337a115c035f65a">&#9670;&#160;</a></span>set_temp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_temp </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_af4c83828df03ef6aa337a115c035f65a_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_af4c83828df03ef6aa337a115c035f65a_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_af4c83828df03ef6aa337a115c035f65a_icgraph" id="aclassrobot_1_1DJI_af4c83828df03ef6aa337a115c035f65a_icgraph">
+<area shape="rect" title=" " alt="" coords="192,31,329,56"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a97197803d11aa1c2d6fa2d3462d5df" name="a8a97197803d11aa1c2d6fa2d3462d5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a97197803d11aa1c2d6fa2d3462d5df">&#9670;&#160;</a></span>set_torque_current() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_torque_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1f680754bb9db8ed685bf7161de8724" name="af1f680754bb9db8ed685bf7161de8724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f680754bb9db8ed685bf7161de8724">&#9670;&#160;</a></span>set_torque_current() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robot::DJI::set_torque_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classrobot_1_1DJI_af1f680754bb9db8ed685bf7161de8724_icgraph.png" border="0" usemap="#aclassrobot_1_1DJI_af1f680754bb9db8ed685bf7161de8724_icgraph" alt=""/></div>
+<map name="aclassrobot_1_1DJI_af1f680754bb9db8ed685bf7161de8724_icgraph" id="aclassrobot_1_1DJI_af1f680754bb9db8ed685bf7161de8724_icgraph">
+<area shape="rect" title=" " alt="" coords="192,23,336,63"/>
+<area shape="rect" href="classrobot_1_1DJI.html#a5476b562be02b6d32d1dc906493fd28f" title=" " alt="" coords="23,5,126,31"/>
+<area shape="rect" href="classrobot_1_1DJI.html#ae81df786031764256688b4ef78683979" title=" " alt="" coords="5,55,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a785859be537463b254279354092a0abd" name="a785859be537463b254279354092a0abd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785859be537463b254279354092a0abd">&#9670;&#160;</a></span>speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t robot::DJI::speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab845292cedd7cd2d7805adf65f00a7e2" name="ab845292cedd7cd2d7805adf65f00a7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab845292cedd7cd2d7805adf65f00a7e2">&#9670;&#160;</a></span>temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t robot::DJI::temp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21e8bc8205525caa5aebbbaa517a1e8a" name="a21e8bc8205525caa5aebbbaa517a1e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e8bc8205525caa5aebbbaa517a1e8a">&#9670;&#160;</a></span>torque_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t robot::DJI::torque_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6e790a51545a601e73642d67861cce1a" name="a6e790a51545a601e73642d67861cce1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e790a51545a601e73642d67861cce1a">&#9670;&#160;</a></span>ANGLE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::DJI::ANGLE_NAME = &quot;angle&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3d2a663c3e06af48f5223ec3f43c3ae" name="af3d2a663c3e06af48f5223ec3f43c3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d2a663c3e06af48f5223ec3f43c3ae">&#9670;&#160;</a></span>CURRENT_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::DJI::CURRENT_NAME = &quot;current&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74cb9f0d28bef97bf1fea5940112805f" name="a74cb9f0d28bef97bf1fea5940112805f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cb9f0d28bef97bf1fea5940112805f">&#9670;&#160;</a></span>SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::DJI::SPEED_NAME = &quot;speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13f11552c70aaf89a3497f31640a559b" name="a13f11552c70aaf89a3497f31640a559b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f11552c70aaf89a3497f31640a559b">&#9670;&#160;</a></span>TEMP_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::DJI::TEMP_NAME = &quot;temp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a928bdf525386bb538b9f8b29b9dad7fd" name="a928bdf525386bb538b9f8b29b9dad7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a928bdf525386bb538b9f8b29b9dad7fd">&#9670;&#160;</a></span>TORQUE_CURRENT_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* robot::DJI::TORQUE_CURRENT_NAME = &quot;torque_current&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/<a class="el" href="telemetry_8h.html">telemetry.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacerobot.html">robot</a></li><li class="navelem"><a class="el" href="classrobot_1_1DJI.html">DJI</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

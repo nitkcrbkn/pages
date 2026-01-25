@@ -1,0 +1,730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::ResetCommand クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1ResetCommand.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1ResetCommand-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::ResetCommand クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;request.h&gt;</code></p>
+<div class="dynheader">
+devices::ResetCommand の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand__inherit__graph.png" border="0" usemap="#adevices_1_1ResetCommand_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1ResetCommand_inherit__map" id="adevices_1_1ResetCommand_inherit__map">
+<area shape="rect" title=" " alt="" coords="34,79,201,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::ResetCommand 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand__coll__graph.png" border="0" usemap="#adevices_1_1ResetCommand_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1ResetCommand_coll__map" id="adevices_1_1ResetCommand_coll__map">
+<area shape="rect" title=" " alt="" coords="34,79,201,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a8b354490e6382869d13144a3ba5ca344"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> : uint32_t { <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344afea1117fa1ab6be6c3b43d3df783cce0">SOFT_RESET</a> = 0
+, <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344a24e019738f8302e7dfe5057eafca45fe">HARD_RESET</a> = 1
+, <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344a3f0b348759c5d8804a885227fec0b93b">FACTORY_RESET</a> = 2
+ }</td></tr>
+<tr class="separator:a8b354490e6382869d13144a3ba5ca344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66fa5f9d2c624425455a65f586f18c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18c">FieldNumber</a> : uint32_t { <a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18ca1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18caaf1c26a0063c7385334cae17aa76aa01">RESET_TYPE</a> = 1
+ }</td></tr>
+<tr class="separator:a9e66fa5f9d2c624425455a65f586f18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a09acec84f4dfb86b0ea4e7b5cd0109a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a09acec84f4dfb86b0ea4e7b5cd0109a6">ResetCommand</a> ()=default</td></tr>
+<tr class="separator:a09acec84f4dfb86b0ea4e7b5cd0109a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0de70a67cf664133d0b2605094295ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#af0de70a67cf664133d0b2605094295ef">ResetCommand</a> (const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:af0de70a67cf664133d0b2605094295ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0282471e10e5fca1df71e37b54d8698d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a0282471e10e5fca1df71e37b54d8698d">ResetCommand</a> (const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a0282471e10e5fca1df71e37b54d8698d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af537ca6feb090dcc0f5dc66e755fea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a4af537ca6feb090dcc0f5dc66e755fea">~ResetCommand</a> () override=default</td></tr>
+<tr class="separator:a4af537ca6feb090dcc0f5dc66e755fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d732a7d4b471bca8089ed15616fb55e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a3d732a7d4b471bca8089ed15616fb55e">operator=</a> (const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:a3d732a7d4b471bca8089ed15616fb55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3882bb0f1ad14280e4f449b87b933383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a3882bb0f1ad14280e4f449b87b933383">operator=</a> (const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a3882bb0f1ad14280e4f449b87b933383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932d7aa8059c624bc206cccc586793cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a932d7aa8059c624bc206cccc586793cc">clear_reset_type</a> ()</td></tr>
+<tr class="separator:a932d7aa8059c624bc206cccc586793cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65be64d323430a7f2439a26125301895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a65be64d323430a7f2439a26125301895">set_reset_type</a> (const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp;value)</td></tr>
+<tr class="separator:a65be64d323430a7f2439a26125301895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c9758dad6f9ea5a631df6219dd4eab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a11c9758dad6f9ea5a631df6219dd4eab">set_reset_type</a> (const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp;&amp;value)</td></tr>
+<tr class="separator:a11c9758dad6f9ea5a631df6219dd4eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcde2f28aaea9f721ea7ac2c6306877a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#afcde2f28aaea9f721ea7ac2c6306877a">get_reset_type</a> () const</td></tr>
+<tr class="separator:afcde2f28aaea9f721ea7ac2c6306877a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c822a06d9b64809bd181b381ba1838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#ae2c822a06d9b64809bd181b381ba1838">reset_type</a> () const</td></tr>
+<tr class="separator:ae2c822a06d9b64809bd181b381ba1838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296c9dd1306163db4b3e6625bfd9dc75"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a296c9dd1306163db4b3e6625bfd9dc75">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a296c9dd1306163db4b3e6625bfd9dc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4190586d068db7f8cf3f0d67cadc0f"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a2f4190586d068db7f8cf3f0d67cadc0f">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:a2f4190586d068db7f8cf3f0d67cadc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade840f5294d1a18e98c85f57f2e0c89e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#ade840f5294d1a18e98c85f57f2e0c89e">clear</a> () override</td></tr>
+<tr class="separator:ade840f5294d1a18e98c85f57f2e0c89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8c8e3c46a1c6149ff3ccba04b3298c17"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a8c8e3c46a1c6149ff3ccba04b3298c17">field_number_to_name</a> (const <a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18c">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a8c8e3c46a1c6149ff3ccba04b3298c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a6c439949a2a3a67640610ef8f6ef73f8"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1ResetCommand.html#a6c439949a2a3a67640610ef8f6ef73f8">RESET_TYPE_NAME</a> = &quot;reset_type&quot;</td></tr>
+<tr class="separator:a6c439949a2a3a67640610ef8f6ef73f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a9e66fa5f9d2c624425455a65f586f18c" name="a9e66fa5f9d2c624425455a65f586f18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e66fa5f9d2c624425455a65f586f18c">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18c">devices::ResetCommand::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9e66fa5f9d2c624425455a65f586f18ca1c250a21210b7b88a14db9a0cbe71162" name="a9e66fa5f9d2c624425455a65f586f18ca1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e66fa5f9d2c624425455a65f586f18caaf1c26a0063c7385334cae17aa76aa01" name="a9e66fa5f9d2c624425455a65f586f18caaf1c26a0063c7385334cae17aa76aa01"></a>RESET_TYPE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8b354490e6382869d13144a3ba5ca344" name="a8b354490e6382869d13144a3ba5ca344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b354490e6382869d13144a3ba5ca344">&#9670;&#160;</a></span>ResetType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">devices::ResetCommand::ResetType</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8b354490e6382869d13144a3ba5ca344afea1117fa1ab6be6c3b43d3df783cce0" name="a8b354490e6382869d13144a3ba5ca344afea1117fa1ab6be6c3b43d3df783cce0"></a>SOFT_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b354490e6382869d13144a3ba5ca344a24e019738f8302e7dfe5057eafca45fe" name="a8b354490e6382869d13144a3ba5ca344a24e019738f8302e7dfe5057eafca45fe"></a>HARD_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b354490e6382869d13144a3ba5ca344a3f0b348759c5d8804a885227fec0b93b" name="a8b354490e6382869d13144a3ba5ca344a3f0b348759c5d8804a885227fec0b93b"></a>FACTORY_RESET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a09acec84f4dfb86b0ea4e7b5cd0109a6" name="a09acec84f4dfb86b0ea4e7b5cd0109a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09acec84f4dfb86b0ea4e7b5cd0109a6">&#9670;&#160;</a></span>ResetCommand() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::ResetCommand::ResetCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0de70a67cf664133d0b2605094295ef" name="af0de70a67cf664133d0b2605094295ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0de70a67cf664133d0b2605094295ef">&#9670;&#160;</a></span>ResetCommand() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::ResetCommand::ResetCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_af0de70a67cf664133d0b2605094295ef_cgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_af0de70a67cf664133d0b2605094295ef_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_af0de70a67cf664133d0b2605094295ef_cgraph" id="aclassdevices_1_1ResetCommand_af0de70a67cf664133d0b2605094295ef_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,172,77"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#afcde2f28aaea9f721ea7ac2c6306877a" title=" " alt="" coords="220,5,387,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a65be64d323430a7f2439a26125301895" title=" " alt="" coords="220,69,387,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0282471e10e5fca1df71e37b54d8698d" name="a0282471e10e5fca1df71e37b54d8698d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0282471e10e5fca1df71e37b54d8698d">&#9670;&#160;</a></span>ResetCommand() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::ResetCommand::ResetCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_a0282471e10e5fca1df71e37b54d8698d_cgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_a0282471e10e5fca1df71e37b54d8698d_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_a0282471e10e5fca1df71e37b54d8698d_cgraph" id="aclassdevices_1_1ResetCommand_a0282471e10e5fca1df71e37b54d8698d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a65be64d323430a7f2439a26125301895" title=" " alt="" coords="220,5,387,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4af537ca6feb090dcc0f5dc66e755fea" name="a4af537ca6feb090dcc0f5dc66e755fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af537ca6feb090dcc0f5dc66e755fea">&#9670;&#160;</a></span>~ResetCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::ResetCommand::~ResetCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ade840f5294d1a18e98c85f57f2e0c89e" name="ade840f5294d1a18e98c85f57f2e0c89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade840f5294d1a18e98c85f57f2e0c89e">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::ResetCommand::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_ade840f5294d1a18e98c85f57f2e0c89e_cgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_ade840f5294d1a18e98c85f57f2e0c89e_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_ade840f5294d1a18e98c85f57f2e0c89e_cgraph" id="aclassdevices_1_1ResetCommand_ade840f5294d1a18e98c85f57f2e0c89e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a932d7aa8059c624bc206cccc586793cc" title=" " alt="" coords="220,5,387,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a932d7aa8059c624bc206cccc586793cc" name="a932d7aa8059c624bc206cccc586793cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932d7aa8059c624bc206cccc586793cc">&#9670;&#160;</a></span>clear_reset_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::ResetCommand::clear_reset_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_a932d7aa8059c624bc206cccc586793cc_icgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_a932d7aa8059c624bc206cccc586793cc_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_a932d7aa8059c624bc206cccc586793cc_icgraph" id="aclassdevices_1_1ResetCommand_a932d7aa8059c624bc206cccc586793cc_icgraph">
+<area shape="rect" title=" " alt="" coords="220,5,387,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#ade840f5294d1a18e98c85f57f2e0c89e" title=" " alt="" coords="5,5,172,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f4190586d068db7f8cf3f0d67cadc0f" name="a2f4190586d068db7f8cf3f0d67cadc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4190586d068db7f8cf3f0d67cadc0f">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::ResetCommand::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c8e3c46a1c6149ff3ccba04b3298c17" name="a8c8e3c46a1c6149ff3ccba04b3298c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c8e3c46a1c6149ff3ccba04b3298c17">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::ResetCommand::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18c">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcde2f28aaea9f721ea7ac2c6306877a" name="afcde2f28aaea9f721ea7ac2c6306877a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcde2f28aaea9f721ea7ac2c6306877a">&#9670;&#160;</a></span>get_reset_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp; devices::ResetCommand::get_reset_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_afcde2f28aaea9f721ea7ac2c6306877a_icgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_afcde2f28aaea9f721ea7ac2c6306877a_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_afcde2f28aaea9f721ea7ac2c6306877a_icgraph" id="aclassdevices_1_1ResetCommand_afcde2f28aaea9f721ea7ac2c6306877a_icgraph">
+<area shape="rect" title=" " alt="" coords="220,37,387,77"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a3d732a7d4b471bca8089ed15616fb55e" title=" " alt="" coords="5,5,172,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#af0de70a67cf664133d0b2605094295ef" title=" " alt="" coords="5,69,172,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3882bb0f1ad14280e4f449b87b933383" name="a3882bb0f1ad14280e4f449b87b933383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3882bb0f1ad14280e4f449b87b933383">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp; devices::ResetCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_a3882bb0f1ad14280e4f449b87b933383_cgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_a3882bb0f1ad14280e4f449b87b933383_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_a3882bb0f1ad14280e4f449b87b933383_cgraph" id="aclassdevices_1_1ResetCommand_a3882bb0f1ad14280e4f449b87b933383_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a65be64d323430a7f2439a26125301895" title=" " alt="" coords="220,5,387,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3d732a7d4b471bca8089ed15616fb55e" name="a3d732a7d4b471bca8089ed15616fb55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d732a7d4b471bca8089ed15616fb55e">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp; devices::ResetCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_a3d732a7d4b471bca8089ed15616fb55e_cgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_a3d732a7d4b471bca8089ed15616fb55e_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_a3d732a7d4b471bca8089ed15616fb55e_cgraph" id="aclassdevices_1_1ResetCommand_a3d732a7d4b471bca8089ed15616fb55e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,172,77"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#afcde2f28aaea9f721ea7ac2c6306877a" title=" " alt="" coords="220,5,387,45"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a65be64d323430a7f2439a26125301895" title=" " alt="" coords="220,69,387,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2c822a06d9b64809bd181b381ba1838" name="ae2c822a06d9b64809bd181b381ba1838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c822a06d9b64809bd181b381ba1838">&#9670;&#160;</a></span>reset_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> devices::ResetCommand::reset_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a296c9dd1306163db4b3e6625bfd9dc75" name="a296c9dd1306163db4b3e6625bfd9dc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296c9dd1306163db4b3e6625bfd9dc75">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::ResetCommand::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11c9758dad6f9ea5a631df6219dd4eab" name="a11c9758dad6f9ea5a631df6219dd4eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c9758dad6f9ea5a631df6219dd4eab">&#9670;&#160;</a></span>set_reset_type() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::ResetCommand::set_reset_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65be64d323430a7f2439a26125301895" name="a65be64d323430a7f2439a26125301895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65be64d323430a7f2439a26125301895">&#9670;&#160;</a></span>set_reset_type() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::ResetCommand::set_reset_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344">ResetType</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1ResetCommand_a65be64d323430a7f2439a26125301895_icgraph.png" border="0" usemap="#aclassdevices_1_1ResetCommand_a65be64d323430a7f2439a26125301895_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1ResetCommand_a65be64d323430a7f2439a26125301895_icgraph" id="aclassdevices_1_1ResetCommand_a65be64d323430a7f2439a26125301895_icgraph">
+<area shape="rect" title=" " alt="" coords="365,69,532,109"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#a3d732a7d4b471bca8089ed15616fb55e" title=" " alt="" coords="151,5,317,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="169,69,299,109"/>
+<area shape="rect" href="classdevices_1_1ResetCommand.html#af0de70a67cf664133d0b2605094295ef" title=" " alt="" coords="151,133,317,173"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,77,103,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6c439949a2a3a67640610ef8f6ef73f8" name="a6c439949a2a3a67640610ef8f6ef73f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c439949a2a3a67640610ef8f6ef73f8">&#9670;&#160;</a></span>RESET_TYPE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::ResetCommand::RESET_TYPE_NAME = &quot;reset_type&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="request_8h.html">request.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="classdevices_1_1ResetCommand.html">ResetCommand</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

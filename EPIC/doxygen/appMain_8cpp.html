@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: app/appMain.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('appMain_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">appMain.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="appMain_8h.html">appMain.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="Callbacks_8h.html">platform/Callbacks.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+appMain.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp__incl.png" border="0" usemap="#aapp_2appMain_8cpp" alt=""/></div>
+<map name="aapp_2appMain_8cpp" id="aapp_2appMain_8cpp">
+<area shape="rect" title=" " alt="" coords="1168,5,1288,31"/>
+<area shape="rect" href="appMain_8h.html" title=" " alt="" coords="1121,79,1202,104"/>
+<area shape="rect" href="Callbacks_8h.html" title="systemにより呼びだされる関数" alt="" coords="1929,79,2069,104"/>
+<area shape="rect" title=" " alt="" coords="2614,401,2674,427"/>
+<area shape="rect" title=" " alt="" coords="501,159,561,185"/>
+<area shape="rect" title=" " alt="" coords="1447,401,1508,427"/>
+<area shape="rect" title=" " alt="" coords="636,159,700,185"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="724,159,791,185"/>
+<area shape="rect" href="utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="1484,328,1591,353"/>
+<area shape="rect" href="proto__uril_8h.html" title=" " alt="" coords="1751,247,1836,273"/>
+<area shape="rect" href="logger_8hpp.html" title="C++用高機能ログライブラリ &#45; カスタムインターフェース" alt="" coords="815,159,927,185"/>
+<area shape="rect" href="FdCanCompatProfile_8hpp.html" title=" " alt="" coords="1054,152,1269,192"/>
+<area shape="rect" href="FdCanCompatExtProfile_8hpp.html" title=" " alt="" coords="1293,152,1507,192"/>
+<area shape="rect" href="DJI_8h.html" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="147,247,229,273"/>
+<area shape="rect" href="Motron_8h.html" title=" " alt="" coords="965,247,1067,273"/>
+<area shape="rect" href="Dualsense_8h.html" title=" " alt="" coords="1532,159,1676,185"/>
+<area shape="rect" href="proto__can_8hpp.html" title=" " alt="" coords="2062,159,2229,185"/>
+<area shape="rect" title=" " alt="" coords="1533,401,1598,427"/>
+<area shape="rect" title=" " alt="" coords="1393,328,1460,353"/>
+<area shape="rect" href="telemetry_8h.html" title=" " alt="" coords="898,328,1017,353"/>
+<area shape="rect" title=" " alt="" coords="1892,328,2044,353"/>
+<area shape="rect" title=" " alt="" coords="1665,328,1817,353"/>
+<area shape="rect" title=" " alt="" coords="1148,401,1284,427"/>
+<area shape="rect" title=" " alt="" coords="1308,401,1423,427"/>
+<area shape="rect" title=" " alt="" coords="88,401,155,427"/>
+<area shape="rect" title=" " alt="" coords="179,401,347,427"/>
+<area shape="rect" title=" " alt="" coords="371,401,511,427"/>
+<area shape="rect" title=" " alt="" coords="687,401,857,427"/>
+<area shape="rect" title=" " alt="" coords="535,401,662,427"/>
+<area shape="rect" title=" " alt="" coords="881,401,948,427"/>
+<area shape="rect" title=" " alt="" coords="972,401,1047,427"/>
+<area shape="rect" title=" " alt="" coords="1071,401,1124,427"/>
+<area shape="rect" title=" " alt="" coords="695,247,761,273"/>
+<area shape="rect" title=" " alt="" coords="785,247,941,273"/>
+<area shape="rect" title=" " alt="" coords="253,240,456,280"/>
+<area shape="rect" title=" " alt="" coords="481,247,671,273"/>
+<area shape="rect" title=" " alt="" coords="242,328,302,353"/>
+<area shape="rect" title=" " alt="" coords="159,328,217,353"/>
+<area shape="rect" title=" " alt="" coords="1833,401,1911,427"/>
+<area shape="rect" title=" " alt="" coords="84,328,135,353"/>
+<area shape="rect" href="stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="326,328,445,353"/>
+<area shape="rect" href="CanInterfaces_8hpp.html" title=" " alt="" coords="1143,328,1369,353"/>
+<area shape="rect" title=" " alt="" coords="5,401,64,427"/>
+<area shape="rect" title=" " alt="" coords="2180,401,2241,427"/>
+<area shape="rect" href="IM920sL_8h.html" title="IM920sLを操作するためのクラス" alt="" coords="1490,247,1625,273"/>
+<area shape="rect" title=" " alt="" coords="2463,401,2521,427"/>
+<area shape="rect" href="motor_8h.html" title=" " alt="" coords="727,328,873,353"/>
+<area shape="rect" href="protocol__types_8hpp.html" title=" " alt="" coords="2119,328,2303,353"/>
+<area shape="rect" href="master__api_8hpp.html" title=" " alt="" coords="2023,247,2153,273"/>
+<area shape="rect" href="device__api_8hpp.html" title=" " alt="" coords="1866,247,1995,273"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a63d09c55ffbb7265bf24d4fdbc2caa54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54">robomas_PID_rxcb</a> (const uint32_t index, const <a class="el" href="structDJI_1_1ESCData.html">DJI::ESCData</a> &amp;escata)</td></tr>
+<tr class="memdesc:a63d09c55ffbb7265bf24d4fdbc2caa54"><td class="mdescLeft">&#160;</td><td class="mdescRight">robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す  <a href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54">[詳解]</a><br /></td></tr>
+<tr class="separator:a63d09c55ffbb7265bf24d4fdbc2caa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae494a9643f29b87d6d81e5264e60e57b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#ae494a9643f29b87d6d81e5264e60e57b">HAL_UART_RxCpltCallback</a> (UART_HandleTypeDef *huart)</td></tr>
+<tr class="memdesc:ae494a9643f29b87d6d81e5264e60e57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">UARTの受信割り込み時に呼び出される関数  <a href="appMain_8cpp.html#ae494a9643f29b87d6d81e5264e60e57b">[詳解]</a><br /></td></tr>
+<tr class="separator:ae494a9643f29b87d6d81e5264e60e57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e23da4d726d1819d095202820d64009"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a5e23da4d726d1819d095202820d64009">ps5_rxcb</a> (const int &amp;reserved)</td></tr>
+<tr class="separator:a5e23da4d726d1819d095202820d64009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251305881b58cc833042e857d5340c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b">mysetup</a> ()</td></tr>
+<tr class="separator:a251305881b58cc833042e857d5340c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26671d28c460337c995e36f27a941bc"><td class="memItemLeft" align="right" valign="top">CanSystem::FdCanCompatExtProfile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc">fdcanMgr1</a> (<a class="el" href="appMain_8h.html#a7e870132380038c7b0e226a8c78d3461">hfdcan1</a>)</td></tr>
+<tr class="separator:af26671d28c460337c995e36f27a941bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f53d2d7880959f2519f94e223e5bb8"><td class="memItemLeft" align="right" valign="top">CanSystem::FdCanCompatProfile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a> (<a class="el" href="appMain_8h.html#af71d0ea733e88dc84fb4506e3bb5d8ce">hfdcan2</a>)</td></tr>
+<tr class="separator:a41f53d2d7880959f2519f94e223e5bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce06be17fc37d675118a678a8100a36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a> ()</td></tr>
+<tr class="memdesc:abce06be17fc37d675118a678a8100a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">スーパーループを持つ  <a href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36">[詳解]</a><br /></td></tr>
+<tr class="separator:abce06be17fc37d675118a678a8100a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ac6c3732fd6178282d1c2a2534e551c84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1ESC.html">DJI::ESC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#ac6c3732fd6178282d1c2a2534e551c84">RoboMaster</a> (<a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>)</td></tr>
+<tr class="separator:ac6c3732fd6178282d1c2a2534e551c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e5625b1f47e4f1be5672c527c223a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMotoron_1_1Master.html">Motoron::Master</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a28e5625b1f47e4f1be5672c527c223a1">M2S18v18</a> (<a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>)</td></tr>
+<tr class="separator:a28e5625b1f47e4f1be5672c527c223a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7795bc88223cf0bf68ce3d07df0cb15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproto__can_1_1Messenger.html">PC::Messenger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a> (<a class="el" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc">fdcanMgr1</a>)</td></tr>
+<tr class="separator:a7795bc88223cf0bf68ce3d07df0cb15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9127076bc8ef59739bf7de9b088f7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproto__can_1_1DeviceID.html">PC::DeviceID</a>&lt; <a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a">PC::DeviceType::MOTOR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e">motor_id</a> (15)</td></tr>
+<tr class="separator:abf9127076bc8ef59739bf7de9b088f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b63389744cb03872712ed421b3d238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproto__can_1_1Master.html">PC::Master</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a26b63389744cb03872712ed421b3d238">master</a> (<a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>)</td></tr>
+<tr class="separator:a26b63389744cb03872712ed421b3d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1e005a324a17615d5d47e220a107d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classproto__can_1_1Device.html">PC::Device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#acb1e005a324a17615d5d47e220a107d9">motor</a> (<a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>, <a class="el" href="appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e">motor_id</a>)</td></tr>
+<tr class="separator:acb1e005a324a17615d5d47e220a107d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a08ea8c51fa0597cb8f8453e34e4a95"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classstdr_1_1PID.html">stdr::PID</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a7a08ea8c51fa0597cb8f8453e34e4a95">PIDs</a></td></tr>
+<tr class="separator:a7a08ea8c51fa0597cb8f8453e34e4a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af472f4980e3089f2537359f6fcfa1ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIM920sL_1_1BaseIM920sL.html">IM920sL::BaseIM920sL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#af472f4980e3089f2537359f6fcfa1ad3">im920sl</a> (<a class="el" href="appMain_8h.html#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a>)</td></tr>
+<tr class="separator:af472f4980e3089f2537359f6fcfa1ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efc8dbf3c040f9b27c4a667dff96caf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPS5_1_1DualSense.html">PS5::DualSense</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a8efc8dbf3c040f9b27c4a667dff96caf">ps5</a></td></tr>
+<tr class="separator:a8efc8dbf3c040f9b27c4a667dff96caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3ab54ed3e81c69863d65e4e6c424a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a8b3ab54ed3e81c69863d65e4e6c424a0">flag</a> = false</td></tr>
+<tr class="separator:a8b3ab54ed3e81c69863d65e4e6c424a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383cf5b814c5207cd3dc8c888a5b2a22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a383cf5b814c5207cd3dc8c888a5b2a22">ctn</a> = 0</td></tr>
+<tr class="separator:a383cf5b814c5207cd3dc8c888a5b2a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6ebfb88b1a5fec926ccc7832cda6e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#afd6ebfb88b1a5fec926ccc7832cda6e2">target_speed</a> [8] = {-1, -1, -1, -1, -1, -1, -1}</td></tr>
+<tr class="separator:afd6ebfb88b1a5fec926ccc7832cda6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb87d045bbf32b236fc425efe02bdc7b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#afb87d045bbf32b236fc425efe02bdc7b">data</a> [8] = {0, 0, 0, 255, 0, 0, 0}</td></tr>
+<tr class="separator:afb87d045bbf32b236fc425efe02bdc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac911b47e1a48ff5d67889cc766d9dd89"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#ac911b47e1a48ff5d67889cc766d9dd89">dummy</a> [8] = {31, 58, 11, 255, 201, 94, 134}</td></tr>
+<tr class="separator:ac911b47e1a48ff5d67889cc766d9dd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257aeaa8a8c55a5fa30f04c5c89d7b14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTelemController.html">TelemController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8cpp.html#a257aeaa8a8c55a5fa30f04c5c89d7b14">telem_Mctrl</a></td></tr>
+<tr class="separator:a257aeaa8a8c55a5fa30f04c5c89d7b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><dl class="section author"><dt>著者</dt><dd>ren toda </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2025-04-25 </dd></dl>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="abce06be17fc37d675118a678a8100a36" name="abce06be17fc37d675118a678a8100a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce06be17fc37d675118a678a8100a36">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スーパーループを持つ </p>
+<p >&lt; uint8_t, uint32_tのインクルード </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_abce06be17fc37d675118a678a8100a36_cgraph.png" border="0" usemap="#aappMain_8cpp_abce06be17fc37d675118a678a8100a36_cgraph" alt=""/></div>
+<map name="aappMain_8cpp_abce06be17fc37d675118a678a8100a36_cgraph" id="aappMain_8cpp_abce06be17fc37d675118a678a8100a36_cgraph">
+<area shape="rect" title="スーパーループを持つ" alt="" coords="5,727,84,753"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a01c0ef79500d1b0e53b75fc43abf69ef" title="現在のボタンの状況をprintfで出力する" alt="" coords="147,140,304,180"/>
+<area shape="rect" href="classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="136,845,315,870"/>
+<area shape="rect" href="classMotoron_1_1Master.html#afa69381d195401cb3e4e993f304f8efc" title="全チャンネルのデバッグ情報を表示する関数" alt="" coords="145,1191,306,1231"/>
+<area shape="rect" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc" title=" " alt="" coords="419,397,502,422"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286" title="現在のコントローラーの入力情報をButton構造体で返します。" alt="" coords="634,1103,774,1129"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title=" " alt="" coords="160,204,291,244"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="190,639,261,665"/>
+<area shape="rect" href="appMain_8cpp.html#a5e23da4d726d1819d095202820d64009" title=" " alt="" coords="423,1005,498,1030"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a19183173ecbdb5bfb9556602aa2fef47" title=" " alt="" coords="151,332,300,372"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="160,268,291,308"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="150,1127,301,1167"/>
+<area shape="rect" href="classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b" title="CANデータの送信を行う" alt="" coords="132,894,319,919"/>
+<area shape="rect" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()" alt="" coords="678,854,730,879"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="386,49,535,89"/>
+<area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="860,77,1024,117"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="629,5,779,45"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="1121,190,1171,215"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="883,13,1001,38"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a8f11fc8e1cda0adf423c4ae880d84afa" title=" " alt="" coords="385,332,536,372"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323" title=" " alt="" coords="393,788,528,828"/>
+<area shape="rect" href="classMotoron_1_1Master.html#ae6197d255620ec7fe819d3c692f4f5ac" title="制御システムをモーター数で初期化する" alt="" coords="391,853,530,878"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a21fdfa4163b6b848bfe2955a44dd86ef" title=" " alt="" coords="412,495,509,521"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c" title=" " alt="" coords="386,545,535,585"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a75e6bcd646ef225b4b4a40feb013b341" title=" " alt="" coords="367,610,555,635"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a8d951406bee99096df4b9aa8a3176b61" title=" " alt="" coords="381,660,541,700"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f" title=" " alt="" coords="381,724,541,764"/>
+<area shape="rect" href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="395,446,527,471"/>
+<area shape="rect" href="namespaceBitUtil.html#a8f4765916b99aace6d247993a64ec6ad" title=" " alt="" coords="641,339,767,365"/>
+<area shape="rect" href="namespacestdr.html#a0474c2959329b069841274dd19565777" title="移動を8方向に限定して操縦しやすさを上げたメカナムホイールの制御関数" alt="" coords="633,1054,775,1079"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a9ab094ac26db85dbfbc39fea01c4d618" title="UART受信割り込み時のIM920sLの処理と同時に使用します" alt="" coords="603,1005,805,1030"/>
+<area shape="rect" href="classMotoron_1_1Master.html#a3b62b56fd67f7b5fc1d1f77603850969" title="指定したモーター番号のモーターに速度を設定します" alt="" coords="616,955,792,981"/>
+<area shape="rect" href="namespacestdr.html#a2804dca1e6d9ef8e961abb95f0565a31" title="メカナムホイールの制御関数" alt="" coords="889,1054,995,1079"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="629,421,779,446"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="634,470,774,495"/>
+<area shape="rect" href="classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="853,413,1031,453"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="867,157,1017,197"/>
+<area shape="rect" href="namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="1079,141,1213,166"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="386,113,535,153"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="627,221,781,261"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab" title=" " alt="" coords="855,221,1029,261"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a43ee8590457455bb26191a6bf4c31e28" title=" " alt="" coords="377,1205,544,1245"/>
+<area shape="rect" href="classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="387,1155,535,1181"/>
+<area shape="rect" href="classTelemController.html#afc1f3386e69d9968990e88a702f7baf1" title="内部のテレメトリーデータをシリアライズしてUART経由で送信 [マジックナンバー(2B:0xFADE)] + [データ長(2B)] + [データ本体]" alt="" coords="387,1331,534,1357"/>
+<area shape="rect" href="classTelemController.html#a4c9a832c3d81b76119bfac34d799b2af" title="テレメトリーデータへの参照を取得（編集可能）" alt="" coords="385,1106,536,1131"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="630,1153,778,1178"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a0a8b1539bb05ee82938336b460507e76" title=" " alt="" coords="635,1203,773,1243"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#aa4e96c02a93b9399aa0df22993597584" title=" " alt="" coords="635,1267,773,1307"/>
+<area shape="rect" href="classrobot_1_1Telemetry.html#a7a0cb412753f0b77391755c3dab1c59c" title=" " alt="" coords="621,1381,787,1406"/>
+<area shape="rect" href="utils_8h.html#ac7748b80b513f3becddbca64d613ee74" title="UART 送信（1バイトずつ）" alt="" coords="640,1331,768,1357"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af26671d28c460337c995e36f27a941bc" name="af26671d28c460337c995e36f27a941bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26671d28c460337c995e36f27a941bc">&#9670;&#160;</a></span>fdcanMgr1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CanSystem::FdCanCompatExtProfile fdcanMgr1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8h.html#a7e870132380038c7b0e226a8c78d3461">hfdcan1</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_af26671d28c460337c995e36f27a941bc_icgraph.png" border="0" usemap="#aappMain_8cpp_af26671d28c460337c995e36f27a941bc_icgraph" alt=""/></div>
+<map name="aappMain_8cpp_af26671d28c460337c995e36f27a941bc_icgraph" id="aappMain_8cpp_af26671d28c460337c995e36f27a941bc_icgraph">
+<area shape="rect" title=" " alt="" coords="251,5,333,31"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,31,203,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41f53d2d7880959f2519f94e223e5bb8" name="a41f53d2d7880959f2519f94e223e5bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f53d2d7880959f2519f94e223e5bb8">&#9670;&#160;</a></span>fdcanMgr2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CanSystem::FdCanCompatProfile fdcanMgr2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8h.html#af71d0ea733e88dc84fb4506e3bb5d8ce">hfdcan2</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae494a9643f29b87d6d81e5264e60e57b" name="ae494a9643f29b87d6d81e5264e60e57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae494a9643f29b87d6d81e5264e60e57b">&#9670;&#160;</a></span>HAL_UART_RxCpltCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_UART_RxCpltCallback </td>
+          <td>(</td>
+          <td class="paramtype">UART_HandleTypeDef *&#160;</td>
+          <td class="paramname"><em>huart</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UARTの受信割り込み時に呼び出される関数 </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">todo:</a></b></dt><dd>UART管理のclassを作り分割する </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_ae494a9643f29b87d6d81e5264e60e57b_cgraph.png" border="0" usemap="#aappMain_8cpp_ae494a9643f29b87d6d81e5264e60e57b_cgraph" alt=""/></div>
+<map name="aappMain_8cpp_ae494a9643f29b87d6d81e5264e60e57b_cgraph" id="aappMain_8cpp_ae494a9643f29b87d6d81e5264e60e57b_cgraph">
+<area shape="rect" title="UARTの受信割り込み時に呼び出される関数" alt="" coords="5,45,192,70"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f" title=" " alt="" coords="240,5,400,45"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a3fd94b72f8cf7f40a1aab7680ea5a1cd" title="割り込み用コールバック関数" alt="" coords="240,69,400,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a251305881b58cc833042e857d5340c5b" name="a251305881b58cc833042e857d5340c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251305881b58cc833042e857d5340c5b">&#9670;&#160;</a></span>mysetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mysetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a251305881b58cc833042e857d5340c5b_cgraph.png" border="0" usemap="#aappMain_8cpp_a251305881b58cc833042e857d5340c5b_cgraph" alt=""/></div>
+<map name="aappMain_8cpp_a251305881b58cc833042e857d5340c5b_cgraph" id="aappMain_8cpp_a251305881b58cc833042e857d5340c5b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,291,76,316"/>
+<area shape="rect" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc" title=" " alt="" coords="177,5,259,31"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a8f11fc8e1cda0adf423c4ae880d84afa" title=" " alt="" coords="143,55,293,95"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323" title=" " alt="" coords="151,119,285,159"/>
+<area shape="rect" href="classMotoron_1_1Master.html#ae6197d255620ec7fe819d3c692f4f5ac" title="制御システムをモーター数で初期化する" alt="" coords="149,184,287,209"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a21fdfa4163b6b848bfe2955a44dd86ef" title=" " alt="" coords="169,233,267,259"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c" title=" " alt="" coords="143,283,293,323"/>
+<area shape="rect" href="appMain_8cpp.html#a5e23da4d726d1819d095202820d64009" title=" " alt="" coords="181,348,255,373"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a75e6bcd646ef225b4b4a40feb013b341" title=" " alt="" coords="124,397,312,423"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a8d951406bee99096df4b9aa8a3176b61" title=" " alt="" coords="138,447,298,487"/>
+<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f" title=" " alt="" coords="138,511,298,551"/>
+<area shape="rect" href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="152,576,284,601"/>
+<area shape="rect" href="namespaceBitUtil.html#a8f4765916b99aace6d247993a64ec6ad" title=" " alt="" coords="398,63,525,88"/>
+<area shape="rect" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()" alt="" coords="435,127,487,152"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286" title="現在のコントローラーの入力情報をButton構造体で返します。" alt="" coords="391,275,531,300"/>
+<area shape="rect" href="namespacestdr.html#a0474c2959329b069841274dd19565777" title="移動を8方向に限定して操縦しやすさを上げたメカナムホイールの制御関数" alt="" coords="391,324,532,349"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a9ab094ac26db85dbfbc39fea01c4d618" title="UART受信割り込み時のIM920sLの処理と同時に使用します" alt="" coords="360,373,563,399"/>
+<area shape="rect" href="classMotoron_1_1Master.html#a3b62b56fd67f7b5fc1d1f77603850969" title="指定したモーター番号のモーターに速度を設定します" alt="" coords="373,423,549,448"/>
+<area shape="rect" href="namespacestdr.html#a2804dca1e6d9ef8e961abb95f0565a31" title="メカナムホイールの制御関数" alt="" coords="646,324,753,349"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="386,551,537,576"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="391,600,531,625"/>
+<area shape="rect" href="classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="611,543,788,583"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a251305881b58cc833042e857d5340c5b_icgraph.png" border="0" usemap="#aappMain_8cpp_a251305881b58cc833042e857d5340c5b_icgraph" alt=""/></div>
+<map name="aappMain_8cpp_a251305881b58cc833042e857d5340c5b_icgraph" id="aappMain_8cpp_a251305881b58cc833042e857d5340c5b_icgraph">
+<area shape="rect" title=" " alt="" coords="132,5,203,31"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5e23da4d726d1819d095202820d64009" name="a5e23da4d726d1819d095202820d64009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e23da4d726d1819d095202820d64009">&#9670;&#160;</a></span>ps5_rxcb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ps5_rxcb </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>reserved</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a5e23da4d726d1819d095202820d64009_cgraph.png" border="0" usemap="#aappMain_8cpp_a5e23da4d726d1819d095202820d64009_cgraph" alt=""/></div>
+<map name="aappMain_8cpp_a5e23da4d726d1819d095202820d64009_cgraph" id="aappMain_8cpp_a5e23da4d726d1819d095202820d64009_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,80,105"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286" title="現在のコントローラーの入力情報をButton構造体で返します。" alt="" coords="159,5,299,31"/>
+<area shape="rect" href="namespacestdr.html#a0474c2959329b069841274dd19565777" title="移動を8方向に限定して操縦しやすさを上げたメカナムホイールの制御関数" alt="" coords="159,55,300,80"/>
+<area shape="rect" href="classPS5_1_1DualSense.html#a9ab094ac26db85dbfbc39fea01c4d618" title="UART受信割り込み時のIM920sLの処理と同時に使用します" alt="" coords="128,104,331,129"/>
+<area shape="rect" href="classMotoron_1_1Master.html#a3b62b56fd67f7b5fc1d1f77603850969" title="指定したモーター番号のモーターに速度を設定します" alt="" coords="141,153,317,179"/>
+<area shape="rect" href="namespacestdr.html#a2804dca1e6d9ef8e961abb95f0565a31" title="メカナムホイールの制御関数" alt="" coords="379,55,485,80"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a5e23da4d726d1819d095202820d64009_icgraph.png" border="0" usemap="#aappMain_8cpp_a5e23da4d726d1819d095202820d64009_icgraph" alt=""/></div>
+<map name="aappMain_8cpp_a5e23da4d726d1819d095202820d64009_icgraph" id="aappMain_8cpp_a5e23da4d726d1819d095202820d64009_icgraph">
+<area shape="rect" title=" " alt="" coords="251,5,325,31"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,31,203,56"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63d09c55ffbb7265bf24d4fdbc2caa54" name="a63d09c55ffbb7265bf24d4fdbc2caa54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d09c55ffbb7265bf24d4fdbc2caa54">&#9670;&#160;</a></span>robomas_PID_rxcb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void robomas_PID_rxcb </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDJI_1_1ESCData.html">DJI::ESCData</a> &amp;&#160;</td>
+          <td class="paramname"><em>escata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>割り込みの発生したmotorのindex </td></tr>
+    <tr><td class="paramname">motors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_cgraph.png" border="0" usemap="#aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_cgraph" alt=""/></div>
+<map name="aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_cgraph" id="aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_cgraph">
+<area shape="rect" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="5,38,137,63"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="185,13,336,38"/>
+<area shape="rect" href="classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="191,62,331,87"/>
+<area shape="rect" href="classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="384,5,561,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_icgraph.png" border="0" usemap="#aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_icgraph" alt=""/></div>
+<map name="aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_icgraph" id="aappMain_8cpp_a63d09c55ffbb7265bf24d4fdbc2caa54_icgraph">
+<area shape="rect" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="251,5,383,31"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="a383cf5b814c5207cd3dc8c888a5b2a22" name="a383cf5b814c5207cd3dc8c888a5b2a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383cf5b814c5207cd3dc8c888a5b2a22">&#9670;&#160;</a></span>ctn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ctn = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb87d045bbf32b236fc425efe02bdc7b" name="afb87d045bbf32b236fc425efe02bdc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb87d045bbf32b236fc425efe02bdc7b">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t data[8] = {0, 0, 0, 255, 0, 0, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac911b47e1a48ff5d67889cc766d9dd89" name="ac911b47e1a48ff5d67889cc766d9dd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac911b47e1a48ff5d67889cc766d9dd89">&#9670;&#160;</a></span>dummy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t dummy[8] = {31, 58, 11, 255, 201, 94, 134}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b3ab54ed3e81c69863d65e4e6c424a0" name="a8b3ab54ed3e81c69863d65e4e6c424a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3ab54ed3e81c69863d65e4e6c424a0">&#9670;&#160;</a></span>flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool flag = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af472f4980e3089f2537359f6fcfa1ad3" name="af472f4980e3089f2537359f6fcfa1ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af472f4980e3089f2537359f6fcfa1ad3">&#9670;&#160;</a></span>im920sl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIM920sL_1_1BaseIM920sL.html">IM920sL::BaseIM920sL</a> im920sl(<a class="el" href="appMain_8h.html#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8h.html#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28e5625b1f47e4f1be5672c527c223a1" name="a28e5625b1f47e4f1be5672c527c223a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e5625b1f47e4f1be5672c527c223a1">&#9670;&#160;</a></span>M2S18v18</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMotoron_1_1Master.html">Motoron::Master</a> M2S18v18(<a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26b63389744cb03872712ed421b3d238" name="a26b63389744cb03872712ed421b3d238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b63389744cb03872712ed421b3d238">&#9670;&#160;</a></span>master</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproto__can_1_1Master.html">PC::Master</a> master(<a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7795bc88223cf0bf68ce3d07df0cb15a" name="a7795bc88223cf0bf68ce3d07df0cb15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7795bc88223cf0bf68ce3d07df0cb15a">&#9670;&#160;</a></span>messenger</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproto__can_1_1Messenger.html">PC::Messenger</a> messenger(<a class="el" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc">fdcanMgr1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc">fdcanMgr1</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb1e005a324a17615d5d47e220a107d9" name="acb1e005a324a17615d5d47e220a107d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb1e005a324a17615d5d47e220a107d9">&#9670;&#160;</a></span>motor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproto__can_1_1Device.html">PC::Device</a> motor(<a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>, <a class="el" href="appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e">motor_id</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a">messenger</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e">motor_id</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf9127076bc8ef59739bf7de9b088f7e" name="abf9127076bc8ef59739bf7de9b088f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9127076bc8ef59739bf7de9b088f7e">&#9670;&#160;</a></span>motor_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classproto__can_1_1DeviceID.html">PC::DeviceID</a>&lt; <a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a">PC::DeviceType::MOTOR</a> &gt; motor_id(15) </td>
+          <td>(</td>
+          <td class="paramtype">15&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a08ea8c51fa0597cb8f8453e34e4a95" name="a7a08ea8c51fa0597cb8f8453e34e4a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a08ea8c51fa0597cb8f8453e34e4a95">&#9670;&#160;</a></span>PIDs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classstdr_1_1PID.html">stdr::PID</a>&gt; PIDs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">= {<a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -8000, 8000, 2000),</div>
+<div class="line">                               <a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -8000, 8000, 2000),</div>
+<div class="line">                               <a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -8000, 8000, 2000),</div>
+<div class="line">                               <a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -8000, 8000, 2000),</div>
+<div class="line">                               <a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -10000, 10000, 2000),</div>
+<div class="line">                               <a class="code hl_class" href="classstdr_1_1PID.html">stdr::PID</a>(12, 1.80722, 27, -10000, 10000, 2000)}</div>
+<div class="ttc" id="aclassstdr_1_1PID_html"><div class="ttname"><a href="classstdr_1_1PID.html">stdr::PID</a></div><div class="ttdoc">PID制御アルゴリズムを実装するため</div><div class="ttdef"><b>Definition:</b> stdRBKN.h:177</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8efc8dbf3c040f9b27c4a667dff96caf" name="a8efc8dbf3c040f9b27c4a667dff96caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efc8dbf3c040f9b27c4a667dff96caf">&#9670;&#160;</a></span>ps5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPS5_1_1DualSense.html">PS5::DualSense</a> ps5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6c3732fd6178282d1c2a2534e551c84" name="ac6c3732fd6178282d1c2a2534e551c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c3732fd6178282d1c2a2534e551c84">&#9670;&#160;</a></span>RoboMaster</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1ESC.html">DJI::ESC</a> RoboMaster(<a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8">fdcanMgr2</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd6ebfb88b1a5fec926ccc7832cda6e2" name="afd6ebfb88b1a5fec926ccc7832cda6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6ebfb88b1a5fec926ccc7832cda6e2">&#9670;&#160;</a></span>target_speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int target_speed[8] = {-1, -1, -1, -1, -1, -1, -1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a257aeaa8a8c55a5fa30f04c5c89d7b14" name="a257aeaa8a8c55a5fa30f04c5c89d7b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257aeaa8a8c55a5fa30f04c5c89d7b14">&#9670;&#160;</a></span>telem_Mctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTelemController.html">TelemController</a> telem_Mctrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="appMain_8cpp.html">appMain.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

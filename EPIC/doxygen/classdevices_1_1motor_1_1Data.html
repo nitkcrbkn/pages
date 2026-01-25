@@ -1,0 +1,723 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::motor::Data クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1motor_1_1Data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1motor_1_1Data-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::motor::Data クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;motor.h&gt;</code></p>
+<div class="dynheader">
+devices::motor::Data の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data__inherit__graph.png" border="0" usemap="#adevices_1_1motor_1_1Data_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1motor_1_1Data_inherit__map" id="adevices_1_1motor_1_1Data_inherit__map">
+<area shape="rect" title=" " alt="" coords="48,79,187,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::motor::Data 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data__coll__graph.png" border="0" usemap="#adevices_1_1motor_1_1Data_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1motor_1_1Data_coll__map" id="adevices_1_1motor_1_1Data_coll__map">
+<area shape="rect" title=" " alt="" coords="48,79,187,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a1014971f30351ef6de1c3c89ad05c504"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504">FieldNumber</a> : uint32_t { <a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504a1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504a65a59338b99aee6a451e86b17b462b5a">SPEED</a> = 1
+ }</td></tr>
+<tr class="separator:a1014971f30351ef6de1c3c89ad05c504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a188bf6b9a32e970b0fe4aecc28736d1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a188bf6b9a32e970b0fe4aecc28736d1d">Data</a> ()=default</td></tr>
+<tr class="separator:a188bf6b9a32e970b0fe4aecc28736d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf353a438f1ec59411ff3e178030c403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#acf353a438f1ec59411ff3e178030c403">Data</a> (const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;rhs)</td></tr>
+<tr class="separator:acf353a438f1ec59411ff3e178030c403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a44c9b32c44ed61c4f24661b45b9a58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a0a44c9b32c44ed61c4f24661b45b9a58">Data</a> (const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a0a44c9b32c44ed61c4f24661b45b9a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b2fcf60db16bace9c089a9e01adb8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a26b2fcf60db16bace9c089a9e01adb8a">~Data</a> () override=default</td></tr>
+<tr class="separator:a26b2fcf60db16bace9c089a9e01adb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9fcc341005e246c21d821323963ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a2c9fcc341005e246c21d821323963ff7">operator=</a> (const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;rhs)</td></tr>
+<tr class="separator:a2c9fcc341005e246c21d821323963ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f88b871dc52c3ec313c930dc2903ff3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a0f88b871dc52c3ec313c930dc2903ff3">operator=</a> (const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a0f88b871dc52c3ec313c930dc2903ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224bec081e47fe576391cf0c5fef24d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a224bec081e47fe576391cf0c5fef24d0">clear_speed</a> ()</td></tr>
+<tr class="separator:a224bec081e47fe576391cf0c5fef24d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6aeb74836d44be8e97bf32053e4ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4">set_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a5e6aeb74836d44be8e97bf32053e4ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae5bf1bd228a8f385dca10fec764d2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a5ae5bf1bd228a8f385dca10fec764d2a">set_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a5ae5bf1bd228a8f385dca10fec764d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd53468ce26459e01c654c700b9638a"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a4fd53468ce26459e01c654c700b9638a">mutable_speed</a> ()</td></tr>
+<tr class="separator:a4fd53468ce26459e01c654c700b9638a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756a85651683367ec2fc10a2b2f51053"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a756a85651683367ec2fc10a2b2f51053">get_speed</a> () const</td></tr>
+<tr class="separator:a756a85651683367ec2fc10a2b2f51053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0310ebcf963d09c46ada99303b4d9b1f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a0310ebcf963d09c46ada99303b4d9b1f">speed</a> () const</td></tr>
+<tr class="separator:a0310ebcf963d09c46ada99303b4d9b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db2ec1cc539c232f2d247c2552a634a"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a2db2ec1cc539c232f2d247c2552a634a">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a2db2ec1cc539c232f2d247c2552a634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5349baaca4b31212c7321affce950f"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#aed5349baaca4b31212c7321affce950f">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:aed5349baaca4b31212c7321affce950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303986a28948a69490260f6c1d8feb65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a303986a28948a69490260f6c1d8feb65">clear</a> () override</td></tr>
+<tr class="separator:a303986a28948a69490260f6c1d8feb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a73bfde94a78ff2d67e535e17cac386ae"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#a73bfde94a78ff2d67e535e17cac386ae">field_number_to_name</a> (const <a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a73bfde94a78ff2d67e535e17cac386ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:ab955d3c76fd93743bc853953f9724e03"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1motor_1_1Data.html#ab955d3c76fd93743bc853953f9724e03">SPEED_NAME</a> = &quot;speed&quot;</td></tr>
+<tr class="separator:ab955d3c76fd93743bc853953f9724e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a1014971f30351ef6de1c3c89ad05c504" name="a1014971f30351ef6de1c3c89ad05c504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1014971f30351ef6de1c3c89ad05c504">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504">devices::motor::Data::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a1014971f30351ef6de1c3c89ad05c504a1c250a21210b7b88a14db9a0cbe71162" name="a1014971f30351ef6de1c3c89ad05c504a1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1014971f30351ef6de1c3c89ad05c504a65a59338b99aee6a451e86b17b462b5a" name="a1014971f30351ef6de1c3c89ad05c504a65a59338b99aee6a451e86b17b462b5a"></a>SPEED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a188bf6b9a32e970b0fe4aecc28736d1d" name="a188bf6b9a32e970b0fe4aecc28736d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a188bf6b9a32e970b0fe4aecc28736d1d">&#9670;&#160;</a></span>Data() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::motor::Data::Data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf353a438f1ec59411ff3e178030c403" name="acf353a438f1ec59411ff3e178030c403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf353a438f1ec59411ff3e178030c403">&#9670;&#160;</a></span>Data() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::motor::Data::Data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_acf353a438f1ec59411ff3e178030c403_cgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_acf353a438f1ec59411ff3e178030c403_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_acf353a438f1ec59411ff3e178030c403_cgraph" id="aclassdevices_1_1motor_1_1Data_acf353a438f1ec59411ff3e178030c403_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,144,77"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a756a85651683367ec2fc10a2b2f51053" title=" " alt="" coords="192,5,331,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4" title=" " alt="" coords="192,69,331,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a44c9b32c44ed61c4f24661b45b9a58" name="a0a44c9b32c44ed61c4f24661b45b9a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a44c9b32c44ed61c4f24661b45b9a58">&#9670;&#160;</a></span>Data() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::motor::Data::Data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a0a44c9b32c44ed61c4f24661b45b9a58_cgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a0a44c9b32c44ed61c4f24661b45b9a58_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a0a44c9b32c44ed61c4f24661b45b9a58_cgraph" id="aclassdevices_1_1motor_1_1Data_a0a44c9b32c44ed61c4f24661b45b9a58_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4" title=" " alt="" coords="192,5,331,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26b2fcf60db16bace9c089a9e01adb8a" name="a26b2fcf60db16bace9c089a9e01adb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b2fcf60db16bace9c089a9e01adb8a">&#9670;&#160;</a></span>~Data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::motor::Data::~Data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a303986a28948a69490260f6c1d8feb65" name="a303986a28948a69490260f6c1d8feb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303986a28948a69490260f6c1d8feb65">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::motor::Data::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a303986a28948a69490260f6c1d8feb65_cgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a303986a28948a69490260f6c1d8feb65_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a303986a28948a69490260f6c1d8feb65_cgraph" id="aclassdevices_1_1motor_1_1Data_a303986a28948a69490260f6c1d8feb65_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a224bec081e47fe576391cf0c5fef24d0" title=" " alt="" coords="192,5,331,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a224bec081e47fe576391cf0c5fef24d0" name="a224bec081e47fe576391cf0c5fef24d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224bec081e47fe576391cf0c5fef24d0">&#9670;&#160;</a></span>clear_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::motor::Data::clear_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a224bec081e47fe576391cf0c5fef24d0_icgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a224bec081e47fe576391cf0c5fef24d0_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a224bec081e47fe576391cf0c5fef24d0_icgraph" id="aclassdevices_1_1motor_1_1Data_a224bec081e47fe576391cf0c5fef24d0_icgraph">
+<area shape="rect" title=" " alt="" coords="192,5,331,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a303986a28948a69490260f6c1d8feb65" title=" " alt="" coords="5,5,144,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed5349baaca4b31212c7321affce950f" name="aed5349baaca4b31212c7321affce950f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5349baaca4b31212c7321affce950f">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::motor::Data::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73bfde94a78ff2d67e535e17cac386ae" name="a73bfde94a78ff2d67e535e17cac386ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73bfde94a78ff2d67e535e17cac386ae">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::motor::Data::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1motor_1_1Data.html#a1014971f30351ef6de1c3c89ad05c504">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a756a85651683367ec2fc10a2b2f51053" name="a756a85651683367ec2fc10a2b2f51053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756a85651683367ec2fc10a2b2f51053">&#9670;&#160;</a></span>get_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::motor::Data::get_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a756a85651683367ec2fc10a2b2f51053_icgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a756a85651683367ec2fc10a2b2f51053_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a756a85651683367ec2fc10a2b2f51053_icgraph" id="aclassdevices_1_1motor_1_1Data_a756a85651683367ec2fc10a2b2f51053_icgraph">
+<area shape="rect" title=" " alt="" coords="192,37,331,77"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#acf353a438f1ec59411ff3e178030c403" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a2c9fcc341005e246c21d821323963ff7" title=" " alt="" coords="5,69,144,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4fd53468ce26459e01c654c700b9638a" name="a4fd53468ce26459e01c654c700b9638a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd53468ce26459e01c654c700b9638a">&#9670;&#160;</a></span>mutable_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::motor::Data::mutable_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f88b871dc52c3ec313c930dc2903ff3" name="a0f88b871dc52c3ec313c930dc2903ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f88b871dc52c3ec313c930dc2903ff3">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp; devices::motor::Data::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a0f88b871dc52c3ec313c930dc2903ff3_cgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a0f88b871dc52c3ec313c930dc2903ff3_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a0f88b871dc52c3ec313c930dc2903ff3_cgraph" id="aclassdevices_1_1motor_1_1Data_a0f88b871dc52c3ec313c930dc2903ff3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4" title=" " alt="" coords="192,5,331,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c9fcc341005e246c21d821323963ff7" name="a2c9fcc341005e246c21d821323963ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9fcc341005e246c21d821323963ff7">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp; devices::motor::Data::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a2c9fcc341005e246c21d821323963ff7_cgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a2c9fcc341005e246c21d821323963ff7_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a2c9fcc341005e246c21d821323963ff7_cgraph" id="aclassdevices_1_1motor_1_1Data_a2c9fcc341005e246c21d821323963ff7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,144,77"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a756a85651683367ec2fc10a2b2f51053" title=" " alt="" coords="192,5,331,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4" title=" " alt="" coords="192,69,331,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2db2ec1cc539c232f2d247c2552a634a" name="a2db2ec1cc539c232f2d247c2552a634a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db2ec1cc539c232f2d247c2552a634a">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::motor::Data::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ae5bf1bd228a8f385dca10fec764d2a" name="a5ae5bf1bd228a8f385dca10fec764d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae5bf1bd228a8f385dca10fec764d2a">&#9670;&#160;</a></span>set_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::motor::Data::set_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e6aeb74836d44be8e97bf32053e4ed4" name="a5e6aeb74836d44be8e97bf32053e4ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6aeb74836d44be8e97bf32053e4ed4">&#9670;&#160;</a></span>set_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::motor::Data::set_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1motor_1_1Data_a5e6aeb74836d44be8e97bf32053e4ed4_icgraph.png" border="0" usemap="#aclassdevices_1_1motor_1_1Data_a5e6aeb74836d44be8e97bf32053e4ed4_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1motor_1_1Data_a5e6aeb74836d44be8e97bf32053e4ed4_icgraph" id="aclassdevices_1_1motor_1_1Data_a5e6aeb74836d44be8e97bf32053e4ed4_icgraph">
+<area shape="rect" title=" " alt="" coords="192,37,331,77"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#acf353a438f1ec59411ff3e178030c403" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" href="classdevices_1_1motor_1_1Data.html#a2c9fcc341005e246c21d821323963ff7" title=" " alt="" coords="5,69,144,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0310ebcf963d09c46ada99303b4d9b1f" name="a0310ebcf963d09c46ada99303b4d9b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0310ebcf963d09c46ada99303b4d9b1f">&#9670;&#160;</a></span>speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::motor::Data::speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab955d3c76fd93743bc853953f9724e03" name="ab955d3c76fd93743bc853953f9724e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab955d3c76fd93743bc853953f9724e03">&#9670;&#160;</a></span>SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::motor::Data::SPEED_NAME = &quot;speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="motor_8h.html">motor.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="namespacedevices_1_1motor.html">motor</a></li><li class="navelem"><a class="el" href="classdevices_1_1motor_1_1Data.html">Data</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>
