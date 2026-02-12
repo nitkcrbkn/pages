@@ -18,7 +18,6 @@ var searchData=
   ['rightx_5fname_15',['RIGHTX_NAME',['../classrobot_1_1Controller.html#abdccedada04a37579f912831046c9ddb',1,'robot::Controller']]],
   ['righty_16',['RightY',['../structPS5_1_1Button.html#a2e4ac18133191e0931563685cfbf93a3',1,'PS5::Button']]],
   ['righty_5fname_17',['RIGHTY_NAME',['../classrobot_1_1Controller.html#a88f1868f1871e8260129997bba541875',1,'robot::Controller']]],
-  ['robomaster_18',['RoboMaster',['../appMain_8cpp.html#ac6c3732fd6178282d1c2a2534e551c84',1,'appMain.cpp']]],
-  ['roll_19',['Roll',['../structPS5_1_1Button.html#a8c0113792b16a69c0f1c053622959631',1,'PS5::Button']]],
-  ['roll_5fname_20',['ROLL_NAME',['../classrobot_1_1Controller.html#a6965a19dae50d8ba8df1e2d47d9ae4a8',1,'robot::Controller']]]
+  ['roll_18',['Roll',['../structPS5_1_1Button.html#a8c0113792b16a69c0f1c053622959631',1,'PS5::Button']]],
+  ['roll_5fname_19',['ROLL_NAME',['../classrobot_1_1Controller.html#a6965a19dae50d8ba8df1e2d47d9ae4a8',1,'robot::Controller']]]
 ];

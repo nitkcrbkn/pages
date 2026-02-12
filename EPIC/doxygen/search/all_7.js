@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hal_5ferror_5fcode_0',['hal_error_code',['../structCanSystem_1_1CANStatus.html#a9ee650ce37275f7791836a11a74051f5',1,'CanSystem::CANStatus']]],
-  ['hal_5fuart_5frxcpltcallback_1',['HAL_UART_RxCpltCallback',['../Callbacks_8h.html#ae494a9643f29b87d6d81e5264e60e57b',1,'HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart):&#160;Callbacks.h'],['../appMain_8cpp.html#ae494a9643f29b87d6d81e5264e60e57b',1,'HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart):&#160;Callbacks.h']]],
+  ['hal_5fuart_5frxcpltcallback_1',['HAL_UART_RxCpltCallback',['../Callbacks_8h.html#ae494a9643f29b87d6d81e5264e60e57b',1,'Callbacks.h']]],
   ['handle_5frx_5fcallback_2',['handle_rx_callback',['../classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323',1,'DJI::ESC']]],
   ['hard_5freset_3',['HARD_RESET',['../classdevices_1_1ResetCommand.html#a8b354490e6382869d13144a3ba5ca344a24e019738f8302e7dfe5057eafca45fe',1,'devices::ResetCommand']]],
   ['hardware_5ferror_4',['hardware_error',['../structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f',1,'CanSystem::CANStatus']]],

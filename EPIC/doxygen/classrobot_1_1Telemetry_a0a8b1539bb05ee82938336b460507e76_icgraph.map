@@ -1,8 +1,7 @@
 <map id="robot::Telemetry::set_time_stamp" name="robot::Telemetry::set_time_stamp">
-<area shape="rect" id="node1" title=" " alt="" coords="556,47,695,87"/>
-<area shape="rect" id="node2" href="$classrobot_1_1Telemetry.html#a3a2909d66b4464dc72789a17b67d55a4" title=" " alt="" coords="332,5,507,31"/>
-<area shape="rect" id="node3" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="345,55,493,80"/>
-<area shape="rect" id="node6" href="$classrobot_1_1Telemetry.html#a7fecac5266fab08713cbb14fc1f0de6e" title=" " alt="" coords="331,104,508,129"/>
-<area shape="rect" id="node4" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,47,283,87"/>
-<area shape="rect" id="node5" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,55,84,80"/>
+<area shape="rect" id="node1" title=" " alt="" coords="429,47,568,87"/>
+<area shape="rect" id="node2" href="$classrobot_1_1Telemetry.html#a3a2909d66b4464dc72789a17b67d55a4" title=" " alt="" coords="205,5,380,31"/>
+<area shape="rect" id="node3" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="219,55,367,80"/>
+<area shape="rect" id="node5" href="$classrobot_1_1Telemetry.html#a7fecac5266fab08713cbb14fc1f0de6e" title=" " alt="" coords="204,104,381,129"/>
+<area shape="rect" id="node4" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,47,156,87"/>
 </map>

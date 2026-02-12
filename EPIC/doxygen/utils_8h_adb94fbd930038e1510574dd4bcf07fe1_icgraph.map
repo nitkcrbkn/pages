@@ -1,13 +1,12 @@
 <map id="millis" name="millis">
-<area shape="rect" id="node1" title="Arduino互換 millis()" alt="" coords="556,156,608,181"/>
-<area shape="rect" id="node2" href="$classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="132,8,311,33"/>
-<area shape="rect" id="node4" href="$classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323" title=" " alt="" coords="366,55,501,95"/>
-<area shape="rect" id="node7" href="$classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="359,119,508,159"/>
-<area shape="rect" id="node8" href="$classstdr_1_1PID.html#a420dc94f002e0f7381f3775e0b609f7d" title=" " alt="" coords="380,184,487,209"/>
-<area shape="rect" id="node9" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="359,233,507,258"/>
-<area shape="rect" id="node11" href="$classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="385,282,481,308"/>
-<area shape="rect" id="node3" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,61,84,86"/>
-<area shape="rect" id="node5" href="$appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="186,61,257,86"/>
-<area shape="rect" id="node6" href="$test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="173,110,270,136"/>
-<area shape="rect" id="node10" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="146,192,297,232"/>
+<area shape="rect" id="node1" title="Arduino互換 millis()" alt="" coords="431,176,483,201"/>
+<area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="254,5,333,31"/>
+<area shape="rect" id="node3" href="$classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="204,55,383,80"/>
+<area shape="rect" id="node4" href="$classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323" title=" " alt="" coords="226,105,361,145"/>
+<area shape="rect" id="node6" href="$classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="219,169,368,209"/>
+<area shape="rect" id="node7" href="$classstdr_1_1PID.html#a420dc94f002e0f7381f3775e0b609f7d" title=" " alt="" coords="240,233,347,259"/>
+<area shape="rect" id="node8" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="219,283,367,308"/>
+<area shape="rect" id="node10" href="$classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="245,332,341,357"/>
+<area shape="rect" id="node5" href="$test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="32,112,129,137"/>
+<area shape="rect" id="node9" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,275,156,315"/>
 </map>

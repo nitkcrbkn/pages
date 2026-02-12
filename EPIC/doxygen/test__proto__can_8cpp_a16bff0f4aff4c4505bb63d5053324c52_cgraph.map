@@ -1,9 +1,9 @@
 <map id="TEST_CASE" name="TEST_CASE">
-<area shape="rect" id="node1" title=" " alt="" coords="5,313,103,338"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,342,103,367"/>
 <area shape="rect" id="node2" href="$classCanSystem_1_1MockCanProfile.html#aeb424593781756c2edef6c2a7e22a146" title="ループバック有効化" alt="" coords="151,5,337,45"/>
-<area shape="rect" id="node3" href="$classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="Get the command object" alt="" coords="179,120,309,160"/>
-<area shape="rect" id="node9" href="$classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title=" " alt="" coords="179,184,309,224"/>
-<area shape="rect" id="node10" href="$classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title=" " alt="" coords="179,248,309,288"/>
+<area shape="rect" id="node3" href="$classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="Get the command object" alt="" coords="179,248,309,288"/>
+<area shape="rect" id="node9" href="$classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title=" " alt="" coords="179,120,309,160"/>
+<area shape="rect" id="node10" href="$classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title=" " alt="" coords="179,184,309,224"/>
 <area shape="rect" id="node11" href="$classproto__can_1_1Messenger.html#a19183173ecbdb5bfb9556602aa2fef47" title=" " alt="" coords="627,304,777,344"/>
 <area shape="rect" id="node16" href="$classCanSystem_1_1MockCanProfile.html#a053624d059da405b53696553494556e0" title=" " alt="" coords="385,64,572,104"/>
 <area shape="rect" id="node17" href="$classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title=" " alt="" coords="179,363,309,403"/>
@@ -11,6 +11,7 @@
 <area shape="rect" id="node29" href="$classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title=" " alt="" coords="179,427,309,467"/>
 <area shape="rect" id="node30" href="$classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title=" " alt="" coords="179,491,309,531"/>
 <area shape="rect" id="node31" href="$classdevices_1_1motor_1_1Command.html#a68eee9c5200e600406fc01f6b047a00b" title=" " alt="" coords="159,619,329,659"/>
+<area shape="rect" id="node32" href="$classdevices_1_1motor_1_1Data.html#a5e6aeb74836d44be8e97bf32053e4ed4" title=" " alt="" coords="175,683,313,723"/>
 <area shape="rect" id="node4" href="$classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="404,184,553,224"/>
 <area shape="rect" id="node5" href="$structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="620,195,784,235"/>
 <area shape="rect" id="node7" href="$classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="627,131,777,171"/>

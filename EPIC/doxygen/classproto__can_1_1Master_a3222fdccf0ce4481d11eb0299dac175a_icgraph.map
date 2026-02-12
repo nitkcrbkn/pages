@@ -1,5 +1,5 @@
 <map id="proto_can::Master::get_data" name="proto_can::Master::get_data">
 <area shape="rect" id="node1" title=" " alt="" coords="151,23,281,63"/>
-<area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="15,5,93,31"/>
+<area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,5,93,31"/>
 <area shape="rect" id="node3" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,55,103,80"/>
 </map>

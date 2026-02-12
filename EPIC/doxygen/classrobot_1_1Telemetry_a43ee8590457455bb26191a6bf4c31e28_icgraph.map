@@ -1,5 +1,4 @@
 <map id="robot::Telemetry::mutable_controller" name="robot::Telemetry::mutable_controller">
-<area shape="rect" id="node1" title=" " alt="" coords="331,5,497,45"/>
-<area shape="rect" id="node2" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="132,5,283,45"/>
-<area shape="rect" id="node3" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,13,84,38"/>
+<area shape="rect" id="node1" title=" " alt="" coords="204,5,371,45"/>
+<area shape="rect" id="node2" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,5,156,45"/>
 </map>

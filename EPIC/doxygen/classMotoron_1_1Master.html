@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('classMotoron_1_1Master.html',''); init
 <tr class="memitem:acfef2f1c7a4a3b56bae838a10d08b065"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotoron_1_1Master.html#acfef2f1c7a4a3b56bae838a10d08b065">Master</a> (<a class="el" href="classCanSystem_1_1ICanController.html">CanSystem::ICanController</a> &amp;canmgr)</td></tr>
 <tr class="memdesc:acfef2f1c7a4a3b56bae838a10d08b065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classMotoron_1_1Master.html" title="同一CAN Bus内に接続されたArduino&amp;Motoron製MDを制御するためのクラス">Master</a> object  <a href="classMotoron_1_1Master.html#acfef2f1c7a4a3b56bae838a10d08b065">[詳解]</a><br /></td></tr>
 <tr class="separator:acfef2f1c7a4a3b56bae838a10d08b065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6197d255620ec7fe819d3c692f4f5ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotoron_1_1Master.html#ae6197d255620ec7fe819d3c692f4f5ac">init</a> (int <a class="el" href="appMain_8cpp.html#acb1e005a324a17615d5d47e220a107d9">motor</a>)</td></tr>
+<tr class="memitem:ae6197d255620ec7fe819d3c692f4f5ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotoron_1_1Master.html#ae6197d255620ec7fe819d3c692f4f5ac">init</a> (int motor)</td></tr>
 <tr class="memdesc:ae6197d255620ec7fe819d3c692f4f5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御システムをモーター数で初期化する  <a href="classMotoron_1_1Master.html#ae6197d255620ec7fe819d3c692f4f5ac">[詳解]</a><br /></td></tr>
 <tr class="separator:ae6197d255620ec7fe819d3c692f4f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dac2909446be1d148bd8780f6b1c16b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b">sendSpeed</a> ()</td></tr>
@@ -184,15 +184,6 @@ $(document).ready(function(){initNavTree('classMotoron_1_1Master.html',''); init
 
 <p>全チャンネルのデバッグ情報を表示する関数 </p>
 <p >CH_MOTORON: 速度設定値を表示 </p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMotoron_1_1Master_afa69381d195401cb3e4e993f304f8efc_icgraph.png" border="0" usemap="#aclassMotoron_1_1Master_afa69381d195401cb3e4e993f304f8efc_icgraph" alt=""/></div>
-<map name="aclassMotoron_1_1Master_afa69381d195401cb3e4e993f304f8efc_icgraph" id="aclassMotoron_1_1Master_afa69381d195401cb3e4e993f304f8efc_icgraph">
-<area shape="rect" title="全チャンネルのデバッグ情報を表示する関数" alt="" coords="132,5,293,45"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,13,84,38"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -228,16 +219,6 @@ $(document).ready(function(){initNavTree('classMotoron_1_1Master.html',''); init
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>bool true / false </dd></dl>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMotoron_1_1Master_ae6197d255620ec7fe819d3c692f4f5ac_icgraph.png" border="0" usemap="#aclassMotoron_1_1Master_ae6197d255620ec7fe819d3c692f4f5ac_icgraph" alt=""/></div>
-<map name="aclassMotoron_1_1Master_ae6197d255620ec7fe819d3c692f4f5ac_icgraph" id="aclassMotoron_1_1Master_ae6197d255620ec7fe819d3c692f4f5ac_icgraph">
-<area shape="rect" title="制御システムをモーター数で初期化する" alt="" coords="251,5,389,31"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -274,15 +255,6 @@ $(document).ready(function(){initNavTree('classMotoron_1_1Master.html',''); init
 <map name="aclassMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_cgraph" id="aclassMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_cgraph">
 <area shape="rect" title="CANデータの送信を行う" alt="" coords="5,13,192,38"/>
 <area shape="rect" href="classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="240,5,417,45"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_icgraph.png" border="0" usemap="#aclassMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_icgraph" alt=""/></div>
-<map name="aclassMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_icgraph" id="aclassMotoron_1_1Master_a0dac2909446be1d148bd8780f6b1c16b_icgraph">
-<area shape="rect" title="CANデータの送信を行う" alt="" coords="132,5,319,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
 </map>
 </div>
 
@@ -332,17 +304,6 @@ $(document).ready(function(){initNavTree('classMotoron_1_1Master.html',''); init
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>bool true / false</dd></dl>
 <p><code>MOTORON_MIN_SPEED</code>から<code>MOTORON_MAX_SPEED</code>までの値のみ許容されます。 </p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMotoron_1_1Master_a3b62b56fd67f7b5fc1d1f77603850969_icgraph.png" border="0" usemap="#aclassMotoron_1_1Master_a3b62b56fd67f7b5fc1d1f77603850969_icgraph" alt=""/></div>
-<map name="aclassMotoron_1_1Master_a3b62b56fd67f7b5fc1d1f77603850969_icgraph" id="aclassMotoron_1_1Master_a3b62b56fd67f7b5fc1d1f77603850969_icgraph">
-<area shape="rect" title="指定したモーター番号のモーターに速度を設定します" alt="" coords="373,5,549,31"/>
-<area shape="rect" href="appMain_8cpp.html#a5e23da4d726d1819d095202820d64009" title=" " alt="" coords="251,5,325,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,31,203,56"/>
-</map>
-</div>
 
 </div>
 </div>

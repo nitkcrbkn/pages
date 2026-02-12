@@ -107,13 +107,13 @@ $(document).ready(function(){initNavTree('classDJI_1_1ESC.html',''); initResizab
 <tr class="memitem:a5ee5b147d4e6188e8bce0462698845c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a5ee5b147d4e6188e8bce0462698845c6">ESC</a> (<a class="el" href="classCanSystem_1_1ICanController.html">CanSystem::ICanController</a> &amp;canmgr)</td></tr>
 <tr class="memdesc:a5ee5b147d4e6188e8bce0462698845c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classDJI_1_1ESC.html" title="ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御するため。">ESC</a> object  <a href="classDJI_1_1ESC.html#a5ee5b147d4e6188e8bce0462698845c6">[詳解]</a><br /></td></tr>
 <tr class="separator:a5ee5b147d4e6188e8bce0462698845c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21fdfa4163b6b848bfe2955a44dd86ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a21fdfa4163b6b848bfe2955a44dd86ef">init</a> (int <a class="el" href="appMain_8cpp.html#acb1e005a324a17615d5d47e220a107d9">motor</a>, float Ampere, std::vector&lt; int &gt; C620IDX={})</td></tr>
+<tr class="memitem:a21fdfa4163b6b848bfe2955a44dd86ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a21fdfa4163b6b848bfe2955a44dd86ef">init</a> (int motor, float Ampere, std::vector&lt; int &gt; C620IDX={})</td></tr>
 <tr class="separator:a21fdfa4163b6b848bfe2955a44dd86ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a09571eedd927b4c66f59873571e689"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689">sendCurrent</a> ()</td></tr>
 <tr class="separator:a7a09571eedd927b4c66f59873571e689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e6bcd646ef225b4b4a40feb013b341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a75e6bcd646ef225b4b4a40feb013b341">registerRxCallback</a> (<a class="el" href="namespaceDJI.html#a243fc206fcf72f9e9452fd3a00679014">CallBack</a> cb)</td></tr>
 <tr class="separator:a75e6bcd646ef225b4b4a40feb013b341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f7f55cfce5bf196de2edee6968c3323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323">handle_rx_callback</a> (uint32_t motorID, const uint8_t *<a class="el" href="appMain_8cpp.html#afb87d045bbf32b236fc425efe02bdc7b">data</a>)</td></tr>
+<tr class="memitem:a1f7f55cfce5bf196de2edee6968c3323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a1f7f55cfce5bf196de2edee6968c3323">handle_rx_callback</a> (uint32_t motorID, const uint8_t *data)</td></tr>
 <tr class="separator:a1f7f55cfce5bf196de2edee6968c3323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40d5586fcd956a45de51dfe6a88dd556"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556">setCurrent</a> (int motorNumber, int current)</td></tr>
 <tr class="memdesc:a40d5586fcd956a45de51dfe6a88dd556"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したモーター番号のモーターに速度を設定する。  <a href="classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556">[詳解]</a><br /></td></tr>
@@ -205,15 +205,6 @@ $(document).ready(function(){initNavTree('classDJI_1_1ESC.html',''); initResizab
 <area shape="rect" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()" alt="" coords="232,5,284,31"/>
 </map>
 </div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDJI_1_1ESC_af488713d799bed458d1cf011303dda31_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_af488713d799bed458d1cf011303dda31_icgraph" alt=""/></div>
-<map name="aclassDJI_1_1ESC_af488713d799bed458d1cf011303dda31_icgraph" id="aclassDJI_1_1ESC_af488713d799bed458d1cf011303dda31_icgraph">
-<area shape="rect" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="132,5,311,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -299,10 +290,8 @@ $(document).ready(function(){initNavTree('classDJI_1_1ESC.html',''); initResizab
 <div class="dyncontent">
 <div class="center"><img src="classDJI_1_1ESC_a1f7f55cfce5bf196de2edee6968c3323_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_a1f7f55cfce5bf196de2edee6968c3323_icgraph" alt=""/></div>
 <map name="aclassDJI_1_1ESC_a1f7f55cfce5bf196de2edee6968c3323_icgraph" id="aclassDJI_1_1ESC_a1f7f55cfce5bf196de2edee6968c3323_icgraph">
-<area shape="rect" title=" " alt="" coords="277,23,412,63"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="145,5,216,31"/>
-<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="132,55,229,80"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" title=" " alt="" coords="151,5,285,45"/>
+<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="5,13,103,38"/>
 </map>
 </div>
 
@@ -362,10 +351,8 @@ $(document).ready(function(){initNavTree('classDJI_1_1ESC.html',''); initResizab
 <div class="dyncontent">
 <div class="center"><img src="classDJI_1_1ESC_a21fdfa4163b6b848bfe2955a44dd86ef_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_a21fdfa4163b6b848bfe2955a44dd86ef_icgraph" alt=""/></div>
 <map name="aclassDJI_1_1ESC_a21fdfa4163b6b848bfe2955a44dd86ef_icgraph" id="aclassDJI_1_1ESC_a21fdfa4163b6b848bfe2955a44dd86ef_icgraph">
-<area shape="rect" title=" " alt="" coords="277,31,375,56"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="145,5,216,31"/>
-<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="132,55,229,80"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" title=" " alt="" coords="151,5,248,31"/>
+<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="5,5,103,31"/>
 </map>
 </div>
 
@@ -394,16 +381,6 @@ $(document).ready(function(){initNavTree('classDJI_1_1ESC.html',''); initResizab
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDJI_1_1ESC_a75e6bcd646ef225b4b4a40feb013b341_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_a75e6bcd646ef225b4b4a40feb013b341_icgraph" alt=""/></div>
-<map name="aclassDJI_1_1ESC_a75e6bcd646ef225b4b4a40feb013b341_icgraph" id="aclassDJI_1_1ESC_a75e6bcd646ef225b4b4a40feb013b341_icgraph">
-<area shape="rect" title=" " alt="" coords="251,5,439,31"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -446,11 +423,8 @@ false </dd></dl>
 <div class="dyncontent">
 <div class="center"><img src="classDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_icgraph" alt=""/></div>
 <map name="aclassDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_icgraph" id="aclassDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_icgraph">
-<area shape="rect" title=" " alt="" coords="431,31,581,56"/>
-<area shape="rect" href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="251,5,383,31"/>
-<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="268,55,365,80"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" title=" " alt="" coords="151,5,301,31"/>
+<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="5,5,103,31"/>
 </map>
 </div>
 
@@ -509,11 +483,8 @@ false </dd></dl>
 <div class="dyncontent">
 <div class="center"><img src="classDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_icgraph.png" border="0" usemap="#aclassDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_icgraph" alt=""/></div>
 <map name="aclassDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_icgraph" id="aclassDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_icgraph">
-<area shape="rect" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="431,31,571,56"/>
-<area shape="rect" href="appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54" title="robomasから割り込み時に呼び出されて、対応モータのpid処理を呼び出す" alt="" coords="251,5,383,31"/>
-<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="268,55,365,80"/>
-<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="132,5,203,31"/>
-<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="スーパーループを持つ" alt="" coords="5,5,84,31"/>
+<area shape="rect" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="151,5,291,31"/>
+<area shape="rect" href="test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="5,5,103,31"/>
 </map>
 </div>
 

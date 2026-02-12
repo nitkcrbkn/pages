@@ -12,6 +12,5 @@ var searchData=
   ['create_5fname_9',['CREATE_NAME',['../classrobot_1_1Controller.html#afc6c75555646be698b57cf6290fde6ad',1,'robot::Controller']]],
   ['cross_10',['CROSS',['../structPS5_1_1Button.html#aacf90eac35bdf432bba93310713b6347',1,'PS5::Button']]],
   ['cross_5fname_11',['CROSS_NAME',['../classrobot_1_1Controller.html#a11cf30f0f76d8841517bbb813b6ae3c8',1,'robot::Controller']]],
-  ['ctn_12',['ctn',['../appMain_8cpp.html#a383cf5b814c5207cd3dc8c888a5b2a22',1,'appMain.cpp']]],
-  ['current_5fname_13',['CURRENT_NAME',['../classdevices_1_1robomas_1_1RobomasData.html#a9afb1d64f39dec97482b51f0e2f2c632',1,'devices::robomas::RobomasData::CURRENT_NAME()'],['../classrobot_1_1DJI.html#af3d2a663c3e06af48f5223ec3f43c3ae',1,'robot::DJI::CURRENT_NAME()']]]
+  ['current_5fname_12',['CURRENT_NAME',['../classdevices_1_1robomas_1_1RobomasData.html#a9afb1d64f39dec97482b51f0e2f2c632',1,'devices::robomas::RobomasData::CURRENT_NAME()'],['../classrobot_1_1DJI.html#af3d2a663c3e06af48f5223ec3f43c3ae',1,'robot::DJI::CURRENT_NAME()']]]
 ];

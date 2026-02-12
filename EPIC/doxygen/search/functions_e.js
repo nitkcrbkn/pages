@@ -12,6 +12,5 @@ var searchData=
   ['printf_9',['printf',['../utils_8h.html#a98631211a4a8aee62f572375d5b637be',1,'utils.h']]],
   ['printhex_10',['printHex',['../structCanSystem_1_1CANMessage.html#acbeac53465dce1d757def3f131ef6c3c',1,'CanSystem::CANMessage::printHex()'],['../structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102',1,'proto_can::RawMessage::printHex()']]],
   ['protocolheader_11',['ProtocolHeader',['../classproto__can_1_1ProtocolHeader.html#a1a71ff4f819f26f30c12f9d82efb7208',1,'proto_can::ProtocolHeader::ProtocolHeader()'],['../classproto__can_1_1ProtocolHeader.html#a8f6a018a208a63a2bef250c705c016f1',1,'proto_can::ProtocolHeader::ProtocolHeader(uint8_t version, DeviceType deviceType, uint8_t deviceNumber, MessageType messageType, uint8_t flags, uint16_t size)']]],
-  ['ps_12',['PS',['../classrobot_1_1Controller.html#a3bcb2bac03b2c08a41a3fea6ef10846e',1,'robot::Controller']]],
-  ['ps5_5frxcb_13',['ps5_rxcb',['../appMain_8cpp.html#a5e23da4d726d1819d095202820d64009',1,'appMain.cpp']]]
+  ['ps_12',['PS',['../classrobot_1_1Controller.html#a3bcb2bac03b2c08a41a3fea6ef10846e',1,'robot::Controller']]]
 ];

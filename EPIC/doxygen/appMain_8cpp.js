@@ -2,24 +2,9 @@ var appMain_8cpp =
 [
     [ "app_main", "appMain_8cpp.html#abce06be17fc37d675118a678a8100a36", null ],
     [ "fdcanMgr1", "appMain_8cpp.html#af26671d28c460337c995e36f27a941bc", null ],
-    [ "fdcanMgr2", "appMain_8cpp.html#a41f53d2d7880959f2519f94e223e5bb8", null ],
-    [ "HAL_UART_RxCpltCallback", "appMain_8cpp.html#ae494a9643f29b87d6d81e5264e60e57b", null ],
     [ "mysetup", "appMain_8cpp.html#a251305881b58cc833042e857d5340c5b", null ],
-    [ "ps5_rxcb", "appMain_8cpp.html#a5e23da4d726d1819d095202820d64009", null ],
-    [ "robomas_PID_rxcb", "appMain_8cpp.html#a63d09c55ffbb7265bf24d4fdbc2caa54", null ],
-    [ "ctn", "appMain_8cpp.html#a383cf5b814c5207cd3dc8c888a5b2a22", null ],
-    [ "data", "appMain_8cpp.html#afb87d045bbf32b236fc425efe02bdc7b", null ],
-    [ "dummy", "appMain_8cpp.html#ac911b47e1a48ff5d67889cc766d9dd89", null ],
-    [ "flag", "appMain_8cpp.html#a8b3ab54ed3e81c69863d65e4e6c424a0", null ],
-    [ "im920sl", "appMain_8cpp.html#af472f4980e3089f2537359f6fcfa1ad3", null ],
-    [ "M2S18v18", "appMain_8cpp.html#a28e5625b1f47e4f1be5672c527c223a1", null ],
+    [ "last_check_time", "appMain_8cpp.html#a7f889395adf7e30cd7d3a2e7b93d8e88", null ],
     [ "master", "appMain_8cpp.html#a26b63389744cb03872712ed421b3d238", null ],
     [ "messenger", "appMain_8cpp.html#a7795bc88223cf0bf68ce3d07df0cb15a", null ],
-    [ "motor", "appMain_8cpp.html#acb1e005a324a17615d5d47e220a107d9", null ],
-    [ "motor_id", "appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e", null ],
-    [ "PIDs", "appMain_8cpp.html#a7a08ea8c51fa0597cb8f8453e34e4a95", null ],
-    [ "ps5", "appMain_8cpp.html#a8efc8dbf3c040f9b27c4a667dff96caf", null ],
-    [ "RoboMaster", "appMain_8cpp.html#ac6c3732fd6178282d1c2a2534e551c84", null ],
-    [ "target_speed", "appMain_8cpp.html#afd6ebfb88b1a5fec926ccc7832cda6e2", null ],
-    [ "telem_Mctrl", "appMain_8cpp.html#a257aeaa8a8c55a5fa30f04c5c89d7b14", null ]
+    [ "motor_id", "appMain_8cpp.html#abf9127076bc8ef59739bf7de9b088f7e", null ]
 ];
