@@ -1,6 +1,7 @@
 <map id="devices::motor::Data::set_speed" name="devices::motor::Data::set_speed">
-<area shape="rect" id="node1" title=" " alt="" coords="192,69,331,109"/>
+<area shape="rect" id="node1" title=" " alt="" coords="192,92,331,132"/>
 <area shape="rect" id="node2" href="$classdevices_1_1motor_1_1Data.html#acf353a438f1ec59411ff3e178030c403" title=" " alt="" coords="5,5,144,45"/>
-<area shape="rect" id="node3" href="$classdevices_1_1motor_1_1Data.html#a2c9fcc341005e246c21d821323963ff7" title=" " alt="" coords="5,69,144,109"/>
-<area shape="rect" id="node4" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="26,134,123,159"/>
+<area shape="rect" id="node3" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="49,70,100,95"/>
+<area shape="rect" id="node4" href="$classdevices_1_1motor_1_1Data.html#a2c9fcc341005e246c21d821323963ff7" title=" " alt="" coords="5,120,144,160"/>
+<area shape="rect" id="node5" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="26,185,123,210"/>
 </map>

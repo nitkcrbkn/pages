@@ -1,6 +1,7 @@
 <map id="app/modules/CanSystem/profile/MockCanProfile.hpp" name="app/modules/CanSystem/profile/MockCanProfile.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="179,5,358,45"/>
+<area shape="rect" id="node1" title=" " alt="" coords="274,5,453,45"/>
 <area shape="rect" id="node2" href="$modules_2CanSystem_2test_8cpp.html" title=" " alt="" coords="5,93,172,133"/>
-<area shape="rect" id="node3" href="$test__DJI_8cpp.html" title=" " alt="" coords="197,93,341,133"/>
-<area shape="rect" id="node4" href="$test__proto__can_8cpp.html" title=" " alt="" coords="365,93,509,133"/>
+<area shape="rect" id="node3" href="$try_8cpp.html" title=" " alt="" coords="196,101,355,126"/>
+<area shape="rect" id="node4" href="$test__DJI_8cpp.html" title=" " alt="" coords="379,93,523,133"/>
+<area shape="rect" id="node5" href="$test__proto__can_8cpp.html" title=" " alt="" coords="547,93,691,133"/>
 </map>

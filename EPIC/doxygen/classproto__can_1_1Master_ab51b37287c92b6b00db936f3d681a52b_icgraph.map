@@ -1,4 +1,5 @@
 <map id="proto_can::Master::send_command" name="proto_can::Master::send_command">
-<area shape="rect" id="node1" title=" " alt="" coords="151,5,281,45"/>
-<area shape="rect" id="node2" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,13,103,38"/>
+<area shape="rect" id="node1" title=" " alt="" coords="151,23,281,63"/>
+<area shape="rect" id="node2" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
+<area shape="rect" id="node3" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,55,103,80"/>
 </map>
