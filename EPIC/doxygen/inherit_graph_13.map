@@ -1,24 +1,26 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" title=" " alt="" coords="5,545,229,570"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,625,229,650"/>
 <area shape="rect" id="node2" href="$classrobot_1_1Telemetry.html" title=" " alt="" coords="328,5,471,45"/>
 <area shape="rect" id="node3" href="$classcommon_1_1PIDConfig.html" title=" " alt="" coords="331,70,467,95"/>
 <area shape="rect" id="node4" href="$classdevices_1_1DeviceStatus.html" title=" " alt="" coords="324,119,475,145"/>
 <area shape="rect" id="node5" href="$classdevices_1_1RequestStatus.html" title=" " alt="" coords="320,169,479,194"/>
 <area shape="rect" id="node6" href="$classdevices_1_1ResetCommand.html" title=" " alt="" coords="316,218,483,243"/>
-<area shape="rect" id="node7" href="$classdevices_1_1motor_1_1Command.html" title=" " alt="" coords="314,267,485,293"/>
-<area shape="rect" id="node8" href="$classdevices_1_1motor_1_1Data.html" title=" " alt="" coords="330,317,469,342"/>
-<area shape="rect" id="node9" href="$classdevices_1_1robomas_1_1Command.html" title=" " alt="" coords="277,367,521,407"/>
-<area shape="rect" id="node10" href="$classdevices_1_1robomas_1_1Data.html" title=" " alt="" coords="293,431,505,471"/>
-<area shape="rect" id="node11" href="$classdevices_1_1robomas_1_1MotorCommand.html" title=" " alt="" coords="289,495,510,521"/>
-<area shape="rect" id="node12" href="$classdevices_1_1robomas_1_1PIDConfig.html" title=" " alt="" coords="306,545,493,570"/>
-<area shape="rect" id="node13" href="$classdevices_1_1robomas_1_1RobomasData.html" title=" " alt="" coords="294,594,505,619"/>
-<area shape="rect" id="node14" href="$classdevices_1_1robomas_1_1TrajectoryProfile.html" title=" " alt="" coords="306,644,493,684"/>
-<area shape="rect" id="node15" href="$classrobot_1_1Controller.html" title=" " alt="" coords="343,709,455,734"/>
-<area shape="rect" id="node16" href="$classrobot_1_1DJI.html" title=" " alt="" coords="361,758,438,783"/>
-<area shape="rect" id="node17" href="$classrobot_1_1Locomotion.html" title=" " alt="" coords="337,807,462,833"/>
-<area shape="rect" id="node18" href="$classrobot_1_1RobotCommand.html" title=" " alt="" coords="312,857,487,911"/>
-<area shape="rect" id="node19" href="$classrobot_1_1SystemCommand.html" title=" " alt="" coords="319,935,479,961"/>
-<area shape="rect" id="node20" href="$classrobot_1_1Telemetry.html" title=" " alt="" coords="301,985,497,1039"/>
-<area shape="rect" id="node21" href="$classrobot_1_1xyz__f.html" title=" " alt="" coords="356,1063,443,1089"/>
-<area shape="rect" id="node22" href="$classrobot_1_1xyz__i.html" title=" " alt="" coords="357,1113,442,1138"/>
+<area shape="rect" id="node7" href="$classdevices_1_1mock__motor_1_1Command.html" title=" " alt="" coords="327,268,472,308"/>
+<area shape="rect" id="node8" href="$classdevices_1_1mock__motor_1_1Data.html" title=" " alt="" coords="327,332,472,372"/>
+<area shape="rect" id="node9" href="$classdevices_1_1motor_1_1Command.html" title=" " alt="" coords="314,397,485,422"/>
+<area shape="rect" id="node10" href="$classdevices_1_1motor_1_1Data.html" title=" " alt="" coords="330,446,469,471"/>
+<area shape="rect" id="node11" href="$classdevices_1_1robomas_1_1Command.html" title=" " alt="" coords="277,496,521,536"/>
+<area shape="rect" id="node12" href="$classdevices_1_1robomas_1_1Data.html" title=" " alt="" coords="293,560,505,600"/>
+<area shape="rect" id="node13" href="$classdevices_1_1robomas_1_1MotorCommand.html" title=" " alt="" coords="289,625,510,650"/>
+<area shape="rect" id="node14" href="$classdevices_1_1robomas_1_1PIDConfig.html" title=" " alt="" coords="306,674,493,699"/>
+<area shape="rect" id="node15" href="$classdevices_1_1robomas_1_1RobomasData.html" title=" " alt="" coords="294,723,505,749"/>
+<area shape="rect" id="node16" href="$classdevices_1_1robomas_1_1TrajectoryProfile.html" title=" " alt="" coords="306,773,493,813"/>
+<area shape="rect" id="node17" href="$classrobot_1_1Controller.html" title=" " alt="" coords="343,838,455,863"/>
+<area shape="rect" id="node18" href="$classrobot_1_1DJI.html" title=" " alt="" coords="361,887,438,913"/>
+<area shape="rect" id="node19" href="$classrobot_1_1Locomotion.html" title=" " alt="" coords="337,937,462,962"/>
+<area shape="rect" id="node20" href="$classrobot_1_1RobotCommand.html" title=" " alt="" coords="312,986,487,1041"/>
+<area shape="rect" id="node21" href="$classrobot_1_1SystemCommand.html" title=" " alt="" coords="319,1065,479,1090"/>
+<area shape="rect" id="node22" href="$classrobot_1_1Telemetry.html" title=" " alt="" coords="301,1114,497,1169"/>
+<area shape="rect" id="node23" href="$classrobot_1_1xyz__f.html" title=" " alt="" coords="356,1193,443,1218"/>
+<area shape="rect" id="node24" href="$classrobot_1_1xyz__i.html" title=" " alt="" coords="357,1242,442,1267"/>
 </map>

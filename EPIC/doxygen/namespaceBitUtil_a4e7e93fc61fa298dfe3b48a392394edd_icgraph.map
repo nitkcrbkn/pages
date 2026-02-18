@@ -5,10 +5,11 @@
 <area shape="rect" id="node5" href="$classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="348,69,497,109"/>
 <area shape="rect" id="node6" href="$classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="348,133,497,173"/>
 <area shape="rect" id="node4" href="$classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="151,5,300,45"/>
-<area shape="rect" id="node7" href="$classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="Get the command object" alt="" coords="160,133,291,173"/>
-<area shape="rect" id="node10" href="$classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title=" " alt="" coords="160,197,291,237"/>
-<area shape="rect" id="node12" href="$classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title=" " alt="" coords="160,69,291,109"/>
-<area shape="rect" id="node8" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,173,79,198"/>
-<area shape="rect" id="node9" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,123,103,149"/>
-<area shape="rect" id="node11" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,222,93,247"/>
+<area shape="rect" id="node7" href="$classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="160,69,291,109"/>
+<area shape="rect" id="node10" href="$classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="160,197,291,237"/>
+<area shape="rect" id="node13" href="$classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title="request_stats() に対する応答をキャッシュから取得する（ポーリング）" alt="" coords="160,133,291,173"/>
+<area shape="rect" id="node8" href="$protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,77,79,102"/>
+<area shape="rect" id="node9" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,141,103,166"/>
+<area shape="rect" id="node11" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,197,93,222"/>
+<area shape="rect" id="node12" href="$motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,246,79,271"/>
 </map>

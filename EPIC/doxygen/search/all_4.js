@@ -2,8 +2,8 @@ var searchData=
 [
   ['enableloopback_0',['enableLoopback',['../classCanSystem_1_1MockCanProfile.html#aeb424593781756c2edef6c2a7e22a146',1,'CanSystem::MockCanProfile']]],
   ['encode_1',['encode',['../namespaceproto.html#ac5edcbe4db6ea0ee5ae274d7145a53a5',1,'proto']]],
-  ['end_5fspeed_2',['END_SPEED',['../classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226aae78f776ba7fb088b66b27769217e7b9',1,'devices::robomas::TrajectoryProfile']]],
-  ['end_5fspeed_3',['end_speed',['../classdevices_1_1robomas_1_1TrajectoryProfile.html#a804bfa0959f700171fa48767baeaeeeb',1,'devices::robomas::TrajectoryProfile']]],
+  ['end_5fspeed_2',['end_speed',['../classdevices_1_1robomas_1_1TrajectoryProfile.html#a804bfa0959f700171fa48767baeaeeeb',1,'devices::robomas::TrajectoryProfile']]],
+  ['end_5fspeed_3',['END_SPEED',['../classdevices_1_1robomas_1_1TrajectoryProfile.html#afbd3cfb0052d609ed4f8838be5455226aae78f776ba7fb088b66b27769217e7b9',1,'devices::robomas::TrajectoryProfile']]],
   ['end_5fspeed_5fname_4',['END_SPEED_NAME',['../classdevices_1_1robomas_1_1TrajectoryProfile.html#a800061b2dcd3635f362015cdb6d8ba3b',1,'devices::robomas::TrajectoryProfile']]],
   ['error_5',['Error',['../namespaceCanSystem.html#a59951521d59b8c6cf0ea429dcc6707dfa902b0d55fddef6f8d651fe1035b7d4bd',1,'CanSystem']]],
   ['error_6',['ERROR',['../classdevices_1_1DeviceStatus.html#aee1e2987aa1f7c454e9d74eaa16debceabb1ca97ec761fc37101737ba0aa2e7c5',1,'devices::DeviceStatus']]],

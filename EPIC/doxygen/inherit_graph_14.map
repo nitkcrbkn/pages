@@ -1,5 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$classIM920sL_1_1BaseIM920sL.html" title="IM920sLで受信するためのクラスです。" alt="" coords="5,31,165,56"/>
-<area shape="rect" id="node2" href="$classIM920sL_1_1Receiver.html" title="IM920sLで受信するための子機クラスです。" alt="" coords="221,5,351,31"/>
-<area shape="rect" id="node3" href="$classIM920sL_1_1Transmitter.html" title="IM920sLで送信するための親機クラスです。" alt="" coords="213,55,359,80"/>
+<area shape="rect" id="node1" href="$classIM920sL_1_1BaseIM920sL.html" title="IM920sLで受信するためのクラスです。" alt="" coords="5,5,165,31"/>
 </map>

@@ -92,27 +92,15 @@ $(document).ready(function(){initNavTree('classIM920sL_1_1BaseIM920sL.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
-<a href="#pro-methods">限定公開メンバ関数</a> &#124;
-<a href="#pro-attribs">限定公開変数類</a> &#124;
 <a href="classIM920sL_1_1BaseIM920sL-members.html">全メンバ一覧</a>  </div>
-  <div class="headertitle"><div class="title">IM920sL::BaseIM920sL クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">IM920sL::BaseIM920sL クラス</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>IM920sLで受信するためのクラスです。  
  <a href="classIM920sL_1_1BaseIM920sL.html#details">[詳解]</a></p>
 
-<p><code>#include &lt;IMard.h&gt;</code></p>
-<div class="dynheader">
-IM920sL::BaseIM920sL の継承関係図</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL__inherit__graph.png" border="0" usemap="#aIM920sL_1_1BaseIM920sL_inherit__map" alt="Inheritance graph"/></div>
-<map name="aIM920sL_1_1BaseIM920sL_inherit__map" id="aIM920sL_1_1BaseIM920sL_inherit__map">
-<area shape="rect" title="IM920sLで受信するためのクラスです。" alt="" coords="72,5,232,31"/>
-<area shape="rect" href="classIM920sL_1_1Receiver.html" title="IM920sLで受信するための子機クラスです。" alt="" coords="5,79,136,104"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html" title="IM920sLで送信するための親機クラスです。" alt="" coords="161,79,306,104"/>
-</map>
-<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<p><code>#include &lt;IM920sL.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -128,27 +116,6 @@ IM920sL::BaseIM920sL の継承関係図</div>
 <tr class="memitem:a3fd94b72f8cf7f40a1aab7680ea5a1cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#a3fd94b72f8cf7f40a1aab7680ea5a1cd">RxCpltCallbac</a> (UART_HandleTypeDef *huart)</td></tr>
 <tr class="memdesc:a3fd94b72f8cf7f40a1aab7680ea5a1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">割り込み用コールバック関数  <a href="classIM920sL_1_1BaseIM920sL.html#a3fd94b72f8cf7f40a1aab7680ea5a1cd">[詳解]</a><br /></td></tr>
 <tr class="separator:a3fd94b72f8cf7f40a1aab7680ea5a1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d3cfe6f08bae990e1e46aea582a809"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#ac8d3cfe6f08bae990e1e46aea582a809">initIM920sL</a> ()</td></tr>
-<tr class="separator:ac8d3cfe6f08bae990e1e46aea582a809"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace6b9ea3d788b8520dbc71518d21d62"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#aace6b9ea3d788b8520dbc71518d21d62">configIM920sL</a> ()=0</td></tr>
-<tr class="separator:aace6b9ea3d788b8520dbc71518d21d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac82c679d74c6ee6ce82879e64e2568d7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#ac82c679d74c6ee6ce82879e64e2568d7">read</a> ()</td></tr>
-<tr class="separator:ac82c679d74c6ee6ce82879e64e2568d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8782c3974599f561b4bbe03d0165724"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#aa8782c3974599f561b4bbe03d0165724">send</a> (int data)</td></tr>
-<tr class="separator:aa8782c3974599f561b4bbe03d0165724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-限定公開メンバ関数</h2></td></tr>
-<tr class="memitem:a31089988da53b83722bf6db8715250ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#a31089988da53b83722bf6db8715250ee">sendIM920</a> (const String &amp;command)</td></tr>
-<tr class="separator:a31089988da53b83722bf6db8715250ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2916aa61ec0caf1d431cfcb80acdf1ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff">initPairing</a> (int nodeId)</td></tr>
-<tr class="memdesc:a2916aa61ec0caf1d431cfcb80acdf1ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLをペアリングするための信号を出す。  <a href="classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff">[詳解]</a><br /></td></tr>
-<tr class="separator:a2916aa61ec0caf1d431cfcb80acdf1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-限定公開変数類</h2></td></tr>
-<tr class="memitem:a9884407b9edca9c123e0198ea1a87e03"><td class="memItemLeft" align="right" valign="top">HardwareSerial &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html#a9884407b9edca9c123e0198ea1a87e03">im920Serial</a> = Serial1</td></tr>
-<tr class="separator:a9884407b9edca9c123e0198ea1a87e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLで受信するためのクラスです。 </p>
@@ -190,129 +157,8 @@ IM920sL::BaseIM920sL の継承関係図</div>
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="aace6b9ea3d788b8520dbc71518d21d62" name="aace6b9ea3d788b8520dbc71518d21d62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace6b9ea3d788b8520dbc71518d21d62">&#9670;&#160;</a></span>configIM920sL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool IM920sL::BaseIM920sL::configIM920sL </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classIM920sL_1_1Transmitter.html#a35fafb3505be6d6a54207d052fb2e40f">IM920sL::Transmitter</a>, <a class="el" href="classIM920sL_1_1Receiver.html#af3282eb0e3bea06a7dc8f5057d31ded1">IM920sL::Receiver</a>で実装されています。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_aace6b9ea3d788b8520dbc71518d21d62_icgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_aace6b9ea3d788b8520dbc71518d21d62_icgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_aace6b9ea3d788b8520dbc71518d21d62_icgraph" id="aclassIM920sL_1_1BaseIM920sL_aace6b9ea3d788b8520dbc71518d21d62_icgraph">
-<area shape="rect" title=" " alt="" coords="213,5,373,45"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#ac8d3cfe6f08bae990e1e46aea582a809" title=" " alt="" coords="5,5,165,45"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac8d3cfe6f08bae990e1e46aea582a809" name="ac8d3cfe6f08bae990e1e46aea582a809"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d3cfe6f08bae990e1e46aea582a809">&#9670;&#160;</a></span>initIM920sL()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IM920sL::BaseIM920sL::initIM920sL </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_ac8d3cfe6f08bae990e1e46aea582a809_cgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_ac8d3cfe6f08bae990e1e46aea582a809_cgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_ac8d3cfe6f08bae990e1e46aea582a809_cgraph" id="aclassIM920sL_1_1BaseIM920sL_ac8d3cfe6f08bae990e1e46aea582a809_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,165,75"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#aace6b9ea3d788b8520dbc71518d21d62" title=" " alt="" coords="213,5,373,45"/>
-<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="268,70,319,95"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a2916aa61ec0caf1d431cfcb80acdf1ff" name="a2916aa61ec0caf1d431cfcb80acdf1ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2916aa61ec0caf1d431cfcb80acdf1ff">&#9670;&#160;</a></span>initPairing()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IM920sL::BaseIM920sL::initPairing </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nodeId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>IM920sLをペアリングするための信号を出す。 </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">todo:</a></b></dt><dd>動作確認 </dd></dl>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_cgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_cgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_cgraph" id="aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_cgraph">
-<area shape="rect" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,55,165,95"/>
-<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="268,5,319,31"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#aa8782c3974599f561b4bbe03d0165724" title=" " alt="" coords="213,55,373,95"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a31089988da53b83722bf6db8715250ee" title=" " alt="" coords="213,119,373,159"/>
-</map>
-</div>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_icgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_icgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_icgraph" id="aclassIM920sL_1_1BaseIM920sL_a2916aa61ec0caf1d431cfcb80acdf1ff_icgraph">
-<area shape="rect" title="IM920sLをペアリングするための信号を出す。" alt="" coords="199,37,359,77"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,5,151,45"/>
-<area shape="rect" href="classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="10,69,146,109"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a3e61147e50edde843658f4c2e509f9ff" name="a3e61147e50edde843658f4c2e509f9ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e61147e50edde843658f4c2e509f9ff">&#9670;&#160;</a></span>read() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e61147e50edde843658f4c2e509f9ff">&#9670;&#160;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,33 +182,6 @@ IM920sL::BaseIM920sL の継承関係図</div>
 
 <p>前回受信したデータを取り出す。 </p>
 <dl class="section return"><dt>戻り値</dt><dd>int 受信データ </dd></dl>
-
-</div>
-</div>
-<a id="ac82c679d74c6ee6ce82879e64e2568d7" name="ac82c679d74c6ee6ce82879e64e2568d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac82c679d74c6ee6ce82879e64e2568d7">&#9670;&#160;</a></span>read() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int IM920sL::BaseIM920sL::read </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classIM920sL_1_1Receiver.html#a04d3a0591f54ecf2df35df46d42acf08">IM920sL::Receiver</a>で再実装されています。</p>
 
 </div>
 </div>
@@ -464,110 +283,8 @@ IM920sL::BaseIM920sL の継承関係図</div>
 
 </div>
 </div>
-<a id="aa8782c3974599f561b4bbe03d0165724" name="aa8782c3974599f561b4bbe03d0165724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8782c3974599f561b4bbe03d0165724">&#9670;&#160;</a></span>send()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool IM920sL::BaseIM920sL::send </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><a class="el" href="classIM920sL_1_1Transmitter.html#a75eaff7f4524b11f6db0334665edc127">IM920sL::Transmitter</a>で再実装されています。</p>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_aa8782c3974599f561b4bbe03d0165724_icgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_aa8782c3974599f561b4bbe03d0165724_icgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_aa8782c3974599f561b4bbe03d0165724_icgraph" id="aclassIM920sL_1_1BaseIM920sL_aa8782c3974599f561b4bbe03d0165724_icgraph">
-<area shape="rect" title=" " alt="" coords="407,37,567,77"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff" title="IM920sLをペアリングするための信号を出す。" alt="" coords="199,37,359,77"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,5,151,45"/>
-<area shape="rect" href="classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="10,69,146,109"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a31089988da53b83722bf6db8715250ee" name="a31089988da53b83722bf6db8715250ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31089988da53b83722bf6db8715250ee">&#9670;&#160;</a></span>sendIM920()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IM920sL::BaseIM920sL::sendIM920 </td>
-          <td>(</td>
-          <td class="paramtype">const String &amp;&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIM920sL_1_1BaseIM920sL_a31089988da53b83722bf6db8715250ee_icgraph.png" border="0" usemap="#aclassIM920sL_1_1BaseIM920sL_a31089988da53b83722bf6db8715250ee_icgraph" alt=""/></div>
-<map name="aclassIM920sL_1_1BaseIM920sL_a31089988da53b83722bf6db8715250ee_icgraph" id="aclassIM920sL_1_1BaseIM920sL_a31089988da53b83722bf6db8715250ee_icgraph">
-<area shape="rect" title=" " alt="" coords="407,35,567,75"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html#a35fafb3505be6d6a54207d052fb2e40f" title="IM920sLの設定 完了まで2.5秒以上かかる。" alt="" coords="5,5,151,45"/>
-<area shape="rect" href="classIM920sL_1_1BaseIM920sL.html#a2916aa61ec0caf1d431cfcb80acdf1ff" title="IM920sLをペアリングするための信号を出す。" alt="" coords="199,99,359,139"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html#a75eaff7f4524b11f6db0334665edc127" title="dataを送信する。 完了まで50ms以上かかる。" alt="" coords="206,35,351,75"/>
-<area shape="rect" href="classIM920sL_1_1Transmitter.html#ac71a2b7e907dd1e432e57746941c5bcd" title="IM920sLをペアリングするための信号を出す。" alt="" coords="5,84,151,124"/>
-<area shape="rect" href="classIM920sL_1_1Receiver.html#a5abbed66e4010cf2ba9e22b073d828e2" title="IM920sLをペアリングするための信号を出す。" alt="" coords="10,148,146,188"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">メンバ詳解</h2>
-<a id="a9884407b9edca9c123e0198ea1a87e03" name="a9884407b9edca9c123e0198ea1a87e03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9884407b9edca9c123e0198ea1a87e03">&#9670;&#160;</a></span>im920Serial</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">HardwareSerial&amp; IM920sL::BaseIM920sL::im920Serial = Serial1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>app/modules/platform/<a class="el" href="IM920sL_8h.html">IM920sL.h</a></li>
-<li>app/modules/platform/<a class="el" href="IMard_8h.html">IMard.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

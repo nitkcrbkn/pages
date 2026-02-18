@@ -10,6 +10,7 @@ var protocol__types_8hpp =
       [ "MOTOR", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a", null ],
       [ "ACTUATOR", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983ae4ad238c25dd7d39e2831428adaf7332", null ],
       [ "ROBOMAS", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983abd377d731b0ccb183c03c570a2a3cf90", null ],
+      [ "MOCK_MOTOR", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983acd026760762e9afa91efb4737b898015", null ],
       [ "COUNT", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983a4905ac9d6a22bdfc1ae096094ce6248d", null ],
       [ "INVALID", "protocol__types_8hpp.html#ad0abaf53719eff1c05379fec43e5c983accc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],

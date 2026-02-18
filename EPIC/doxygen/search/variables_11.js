@@ -2,7 +2,7 @@ var searchData=
 [
   ['target_5fcurrent_5fname_0',['TARGET_CURRENT_NAME',['../classdevices_1_1robomas_1_1MotorCommand.html#ab56955bd14b1ef644a96455b0ef1913d',1,'devices::robomas::MotorCommand']]],
   ['target_5fposition_5fname_1',['TARGET_POSITION_NAME',['../classdevices_1_1robomas_1_1MotorCommand.html#a087ed923edaf8e924ee3681f5a3b1b76',1,'devices::robomas::MotorCommand']]],
-  ['target_5fspeed_5fname_2',['TARGET_SPEED_NAME',['../classdevices_1_1robomas_1_1RobomasData.html#a238e6b94e94660ec6338be227a8bb0d6',1,'devices::robomas::RobomasData::TARGET_SPEED_NAME()'],['../classdevices_1_1robomas_1_1MotorCommand.html#af4d90243fc76cc1c5e8d5bec3866ec2e',1,'devices::robomas::MotorCommand::TARGET_SPEED_NAME()']]],
+  ['target_5fspeed_5fname_2',['TARGET_SPEED_NAME',['../classdevices_1_1mock__motor_1_1Command.html#acd8ed8a9e08b4537dda69fc918478a7d',1,'devices::mock_motor::Command::TARGET_SPEED_NAME()'],['../classdevices_1_1robomas_1_1RobomasData.html#a238e6b94e94660ec6338be227a8bb0d6',1,'devices::robomas::RobomasData::TARGET_SPEED_NAME()'],['../classdevices_1_1robomas_1_1MotorCommand.html#af4d90243fc76cc1c5e8d5bec3866ec2e',1,'devices::robomas::MotorCommand::TARGET_SPEED_NAME()']]],
   ['target_5ftorque_5fname_3',['TARGET_TORQUE_NAME',['../classdevices_1_1robomas_1_1MotorCommand.html#af23bf1261994cff7b3dedb8eeb178ae5',1,'devices::robomas::MotorCommand']]],
   ['temp_4',['temp',['../structDJI_1_1ESCData.html#ad0435b29948216c1c55cf740cf498e66',1,'DJI::ESCData']]],
   ['temp_5fname_5',['TEMP_NAME',['../classdevices_1_1robomas_1_1RobomasData.html#aa3a7740b70a1108bcd9bb368a49a05ba',1,'devices::robomas::RobomasData::TEMP_NAME()'],['../classrobot_1_1DJI.html#a13f11552c70aaf89a3497f31640a559b',1,'robot::DJI::TEMP_NAME()']]],

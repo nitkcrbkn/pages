@@ -1,5 +1,7 @@
 <map id="proto_can::Device::send_data" name="proto_can::Device::send_data">
-<area shape="rect" id="node1" title=" " alt="" coords="151,23,281,63"/>
-<area shape="rect" id="node2" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
-<area shape="rect" id="node3" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,55,103,80"/>
+<area shape="rect" id="node1" title="自デバイスの状態データを送信する" alt="" coords="263,47,393,87"/>
+<area shape="rect" id="node2" href="$protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="134,5,185,31"/>
+<area shape="rect" id="node3" href="$classMockMotor.html#a8c71c73808bcb44b911ab9884cae29a2" title=" " alt="" coords="104,55,215,80"/>
+<area shape="rect" id="node5" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="111,104,208,129"/>
+<area shape="rect" id="node4" href="$motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,55,56,80"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="proto_can::Device::get_command" name="proto_can::Device::get_command">
-<area shape="rect" id="node1" title="Get the command object" alt="" coords="5,37,136,77"/>
+<area shape="rect" id="node1" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="5,37,136,77"/>
 <area shape="rect" id="node2" href="$classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="184,37,333,77"/>
 <area shape="rect" id="node3" href="$structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="381,5,545,45"/>
 <area shape="rect" id="node5" href="$classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="388,69,539,109"/>

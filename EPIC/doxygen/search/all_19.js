@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['_7ecommand_0',['~Command',['../classdevices_1_1robomas_1_1Command.html#af48c31ad5efc7ce6dc8c6c9c4d2ce44d',1,'devices::robomas::Command::~Command()'],['../classdevices_1_1motor_1_1Command.html#a4723fa014a1f7b0f505f82863a9f5602',1,'devices::motor::Command::~Command()']]],
+  ['_7ecommand_0',['~Command',['../classdevices_1_1motor_1_1Command.html#a4723fa014a1f7b0f505f82863a9f5602',1,'devices::motor::Command::~Command()'],['../classdevices_1_1robomas_1_1Command.html#af48c31ad5efc7ce6dc8c6c9c4d2ce44d',1,'devices::robomas::Command::~Command()'],['../classdevices_1_1mock__motor_1_1Command.html#af5f56354b645fa711f2c98c0c495a470',1,'devices::mock_motor::Command::~Command()']]],
   ['_7econtroller_1',['~Controller',['../classrobot_1_1Controller.html#a29a470d5c4afbbe7a6b46d78bb036ad4',1,'robot::Controller']]],
-  ['_7edata_2',['~Data',['../classdevices_1_1motor_1_1Data.html#a26b2fcf60db16bace9c089a9e01adb8a',1,'devices::motor::Data::~Data()'],['../classdevices_1_1robomas_1_1Data.html#a7e4410381c5bc92fc2a696b42281f7cd',1,'devices::robomas::Data::~Data()']]],
+  ['_7edata_2',['~Data',['../classdevices_1_1mock__motor_1_1Data.html#aefb1615b6e34057e9a44411d873ae910',1,'devices::mock_motor::Data::~Data()'],['../classdevices_1_1motor_1_1Data.html#a26b2fcf60db16bace9c089a9e01adb8a',1,'devices::motor::Data::~Data()'],['../classdevices_1_1robomas_1_1Data.html#a7e4410381c5bc92fc2a696b42281f7cd',1,'devices::robomas::Data::~Data()']]],
   ['_7edevicestatus_3',['~DeviceStatus',['../classdevices_1_1DeviceStatus.html#a20778f7a3cffa0e3cf3dcee7a6d5325b',1,'devices::DeviceStatus']]],
   ['_7edji_4',['~DJI',['../classrobot_1_1DJI.html#afdba0229dd4fe97b78f5061a8ba27d9f',1,'robot::DJI']]],
   ['_7eicancontroller_5',['~ICanController',['../classCanSystem_1_1ICanController.html#a3d848e160eb3f1d2a94b05338674b3d4',1,'CanSystem::ICanController']]],

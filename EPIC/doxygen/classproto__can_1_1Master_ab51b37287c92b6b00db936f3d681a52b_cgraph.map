@@ -1,5 +1,5 @@
 <map id="proto_can::Master::send_command" name="proto_can::Master::send_command">
-<area shape="rect" id="node1" title=" " alt="" coords="5,58,136,98"/>
+<area shape="rect" id="node1" title="指定デバイスに Command を送信する" alt="" coords="5,58,136,98"/>
 <area shape="rect" id="node2" href="$classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="184,58,333,98"/>
 <area shape="rect" id="node3" href="$classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="597,22,748,62"/>
 <area shape="rect" id="node6" href="$classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="381,86,536,126"/>

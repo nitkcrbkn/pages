@@ -1,5 +1,6 @@
 var namespacedevices =
 [
+    [ "mock_motor", "namespacedevices_1_1mock__motor.html", "namespacedevices_1_1mock__motor" ],
     [ "motor", "namespacedevices_1_1motor.html", "namespacedevices_1_1motor" ],
     [ "robomas", "namespacedevices_1_1robomas.html", "namespacedevices_1_1robomas" ],
     [ "DeviceStatus", "classdevices_1_1DeviceStatus.html", "classdevices_1_1DeviceStatus" ],

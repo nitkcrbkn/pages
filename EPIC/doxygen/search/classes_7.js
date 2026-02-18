@@ -4,5 +4,6 @@ var searchData=
   ['messageid_1',['MessageID',['../classproto__can_1_1MessageID.html',1,'proto_can']]],
   ['messenger_2',['Messenger',['../classproto__can_1_1Messenger.html',1,'proto_can']]],
   ['mockcanprofile_3',['MockCanProfile',['../classCanSystem_1_1MockCanProfile.html',1,'CanSystem']]],
-  ['motorcommand_4',['MotorCommand',['../classdevices_1_1robomas_1_1MotorCommand.html',1,'devices::robomas']]]
+  ['mockmotor_4',['MockMotor',['../classMockMotor.html',1,'']]],
+  ['motorcommand_5',['MotorCommand',['../classdevices_1_1robomas_1_1MotorCommand.html',1,'devices::robomas']]]
 ];

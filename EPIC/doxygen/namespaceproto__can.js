@@ -3,6 +3,7 @@ var namespaceproto__can =
     [ "Device", "classproto__can_1_1Device.html", "classproto__can_1_1Device" ],
     [ "DeviceID", "classproto__can_1_1DeviceID.html", "classproto__can_1_1DeviceID" ],
     [ "DeviceSchema", "structproto__can_1_1DeviceSchema.html", null ],
+    [ "DeviceSchema< DeviceType::MOCK_MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4" ],
     [ "DeviceSchema< DeviceType::MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4" ],
     [ "DeviceSchema< DeviceType::SENSOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4" ],
     [ "FrameLayer", "classproto__can_1_1FrameLayer.html", "classproto__can_1_1FrameLayer" ],
@@ -19,6 +20,7 @@ var namespaceproto__can =
       [ "MOTOR", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a", null ],
       [ "ACTUATOR", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983ae4ad238c25dd7d39e2831428adaf7332", null ],
       [ "ROBOMAS", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983abd377d731b0ccb183c03c570a2a3cf90", null ],
+      [ "MOCK_MOTOR", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983acd026760762e9afa91efb4737b898015", null ],
       [ "COUNT", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a4905ac9d6a22bdfc1ae096094ce6248d", null ],
       [ "INVALID", "namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983accc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],

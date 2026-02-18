@@ -1,6 +1,6 @@
 <map id="proto_can::Master::get_data" name="proto_can::Master::get_data">
-<area shape="rect" id="node1" title=" " alt="" coords="151,47,281,87"/>
+<area shape="rect" id="node1" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="151,47,281,87"/>
 <area shape="rect" id="node2" href="$appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,5,93,31"/>
-<area shape="rect" id="node3" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,55,79,80"/>
+<area shape="rect" id="node3" href="$motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,55,79,80"/>
 <area shape="rect" id="node4" href="$test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,104,103,129"/>
 </map>

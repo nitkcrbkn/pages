@@ -1,9 +1,6 @@
 var hierarchy =
 [
-    [ "IM920sL::BaseIM920sL", "classIM920sL_1_1BaseIM920sL.html", [
-      [ "IM920sL::Receiver", "classIM920sL_1_1Receiver.html", null ],
-      [ "IM920sL::Transmitter", "classIM920sL_1_1Transmitter.html", null ]
-    ] ],
+    [ "IM920sL::BaseIM920sL", "classIM920sL_1_1BaseIM920sL.html", null ],
     [ "BitRange", "structBitRange.html", null ],
     [ "PS5::Button", "structPS5_1_1Button.html", null ],
     [ "CanSystem::CANConfig", "structCanSystem_1_1CANConfig.html", null ],
@@ -11,9 +8,11 @@ var hierarchy =
     [ "CanSystem::CANMessage", "structCanSystem_1_1CANMessage.html", null ],
     [ "CanSystem::CANStatus", "structCanSystem_1_1CANStatus.html", null ],
     [ "proto_can::Device< DeviceTYPE >", "classproto__can_1_1Device.html", null ],
+    [ "proto_can::Device< PC::DeviceType::MOCK_MOTOR >", "classproto__can_1_1Device.html", null ],
     [ "proto_can::DeviceID< TYPE >", "classproto__can_1_1DeviceID.html", null ],
     [ "proto_can::DeviceID< DeviceTYPE >", "classproto__can_1_1DeviceID.html", null ],
     [ "proto_can::DeviceSchema< TYPE >", "structproto__can_1_1DeviceSchema.html", null ],
+    [ "proto_can::DeviceSchema< DeviceType::MOCK_MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html", null ],
     [ "proto_can::DeviceSchema< DeviceType::MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html", null ],
     [ "proto_can::DeviceSchema< DeviceType::SENSOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html", null ],
     [ "PS5::DualSense", "classPS5_1_1DualSense.html", null ],
@@ -34,6 +33,8 @@ var hierarchy =
       [ "devices::DeviceStatus", "classdevices_1_1DeviceStatus.html", null ],
       [ "devices::RequestStatus", "classdevices_1_1RequestStatus.html", null ],
       [ "devices::ResetCommand", "classdevices_1_1ResetCommand.html", null ],
+      [ "devices::mock_motor::Command", "classdevices_1_1mock__motor_1_1Command.html", null ],
+      [ "devices::mock_motor::Data", "classdevices_1_1mock__motor_1_1Data.html", null ],
       [ "devices::motor::Command", "classdevices_1_1motor_1_1Command.html", null ],
       [ "devices::motor::Data", "classdevices_1_1motor_1_1Data.html", null ],
       [ "devices::robomas::Command< Command_motors_REP_LENGTH >", "classdevices_1_1robomas_1_1Command.html", null ],
@@ -52,6 +53,7 @@ var hierarchy =
       [ "robot::xyz_i", "classrobot_1_1xyz__i.html", null ]
     ] ],
     [ "proto_can::Messenger", "classproto__can_1_1Messenger.html", null ],
+    [ "MockMotor", "classMockMotor.html", null ],
     [ "proto_can::NoSchema", "structproto__can_1_1NoSchema.html", null ],
     [ "stdr::PID", "classstdr_1_1PID.html", null ],
     [ "proto_can::ProtocolHeader", "classproto__can_1_1ProtocolHeader.html", null ],

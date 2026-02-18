@@ -1,4 +1,5 @@
 <map id="proto_can::Device::register_cb" name="proto_can::Device::register_cb">
-<area shape="rect" id="node1" title=" " alt="" coords="184,5,315,45"/>
-<area shape="rect" id="node2" href="$classproto__can_1_1Device.html#abd422a194d8c9cc6830382334b4ef6c9" title=" " alt="" coords="5,5,136,45"/>
+<area shape="rect" id="node1" title="受信コールバックを登録する" alt="" coords="212,35,343,75"/>
+<area shape="rect" id="node2" href="$classproto__can_1_1Device.html#abd422a194d8c9cc6830382334b4ef6c9" title=" " alt="" coords="19,5,150,45"/>
+<area shape="rect" id="node3" href="$classMockMotor.html#a6fe0d9514768606f7bdb04574718065f" title=" " alt="" coords="5,70,164,95"/>
 </map>

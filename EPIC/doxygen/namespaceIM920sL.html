@@ -102,12 +102,6 @@ $(document).ready(function(){initNavTree('namespaceIM920sL.html',''); initResiza
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1BaseIM920sL.html">BaseIM920sL</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで受信するためのクラスです。  <a href="classIM920sL_1_1BaseIM920sL.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1Receiver.html">Receiver</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで受信するための子機クラスです。  <a href="classIM920sL_1_1Receiver.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIM920sL_1_1Transmitter.html">Transmitter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで送信するための親機クラスです。  <a href="classIM920sL_1_1Transmitter.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
@@ -146,48 +140,6 @@ $(document).ready(function(){initNavTree('namespaceIM920sL.html',''); initResiza
 </table>
 <hr  />
 <h3><a class="anchor" id="autotoc_md21"></a>
-(c) 設定表示コマンド</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">機能   </th><th class="markdownTableHeadNone">設定   </th><th class="markdownTableHeadNone">読出し   </th><th class="markdownTableHeadNone">備考    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ノード番号   </td><td class="markdownTableBodyNone">STNN   </td><td class="markdownTableBodyNone">RDNN   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">グループ番号   </td><td class="markdownTableBodyNone">STGN   </td><td class="markdownTableBodyNone">RDGN   </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">グループ登録パスワード   </td><td class="markdownTableBodyNone">STRP   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">抜粋モード、AD入力モード時   </td></tr>
-</table>
-<p >IM920sLを扱うためのライブラリ</p>
-<p >現状アナログA2~A5を使用します。 事前に通信するIM920sL同士でペアリングする必要があります。</p>
-<h3><a class="anchor" id="autotoc_md22"></a>
-(a) データ送信コマンド</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">機能   </th><th class="markdownTableHeadNone">コマンド名   </th><th class="markdownTableHeadNone">備考    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">可変データモードで送信   </td><td class="markdownTableBodyNone">TXDA   </td><td class="markdownTableBodyNone">1～32バイト可変長データ    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">可変データモードキャスト送信   </td><td class="markdownTableBodyNone">TXDT   </td><td class="markdownTableBodyNone">8バイト固定長データ    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ユニキャスト送信   </td><td class="markdownTableBodyNone">TXDU   </td><td class="markdownTableBodyNone">相手を指定した可変長送信    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">センドバック送信   </td><td class="markdownTableBodyNone">TXSB   </td><td class="markdownTableBodyNone">他ノードからの通信の返答送信    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">デリゲート送信   </td><td class="markdownTableBodyNone">TXDG   </td><td class="markdownTableBodyNone">他ノードからの可変長送信   </td></tr>
-</table>
-<hr  />
-<h3><a class="anchor" id="autotoc_md24"></a>
-(b) 制御系コマンド</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">機能   </th><th class="markdownTableHeadNone">許可   </th><th class="markdownTableHeadNone">不許可    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">パラメータ書き込み   </td><td class="markdownTableBodyNone">ENWR   </td><td class="markdownTableBodyNone">DSWR    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ソフトウェアリセット   </td><td class="markdownTableBodyNone">SRST   </td><td class="markdownTableBodyNone"></td></tr>
-</table>
-<hr  />
-<h3><a class="anchor" id="autotoc_md26"></a>
 (c) 設定表示コマンド</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">

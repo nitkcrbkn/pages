@@ -1,5 +1,5 @@
 <map id="CanSystem::MockCanProfile::enableLoopback" name="CanSystem::MockCanProfile::enableLoopback">
 <area shape="rect" id="node1" title="ループバック有効化" alt="" coords="151,23,337,63"/>
-<area shape="rect" id="node2" href="$try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
+<area shape="rect" id="node2" href="$motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
 <area shape="rect" id="node3" href="$test__DJI_8cpp.html#a20883bef468435a3676122fd27c4b892" title=" " alt="" coords="5,55,103,80"/>
 </map>

@@ -1,16 +1,17 @@
 <map id="app/modules/ProtoCAN/common/bitwise_ops.hpp" name="app/modules/ProtoCAN/common/bitwise_ops.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="204,5,377,45"/>
 <area shape="rect" id="node2" href="$device__api_8hpp.html" title=" " alt="" coords="317,533,475,573"/>
-<area shape="rect" id="node8" href="$master__api_8hpp.html" title=" " alt="" coords="533,533,691,573"/>
-<area shape="rect" id="node9" href="$frame__field_8hpp.html" title=" " alt="" coords="379,93,546,133"/>
-<area shape="rect" id="node10" href="$protocol__types_8hpp.html" title=" " alt="" coords="349,181,537,221"/>
-<area shape="rect" id="node12" href="$frame__builder_8hpp.html" title=" " alt="" coords="94,357,253,397"/>
-<area shape="rect" id="node13" href="$messenger_8hpp.html" title=" " alt="" coords="199,445,358,485"/>
-<area shape="rect" id="node14" href="$frame__header_8hpp.html" title=" " alt="" coords="94,269,253,309"/>
+<area shape="rect" id="node9" href="$master__api_8hpp.html" title=" " alt="" coords="533,533,691,573"/>
+<area shape="rect" id="node10" href="$frame__field_8hpp.html" title=" " alt="" coords="379,93,546,133"/>
+<area shape="rect" id="node11" href="$protocol__types_8hpp.html" title=" " alt="" coords="349,181,537,221"/>
+<area shape="rect" id="node13" href="$frame__builder_8hpp.html" title=" " alt="" coords="94,357,253,397"/>
+<area shape="rect" id="node14" href="$messenger_8hpp.html" title=" " alt="" coords="199,445,358,485"/>
+<area shape="rect" id="node15" href="$frame__header_8hpp.html" title=" " alt="" coords="94,269,253,309"/>
 <area shape="rect" id="node3" href="$proto__can_8hpp.html" title=" " alt="" coords="533,621,691,661"/>
-<area shape="rect" id="node4" href="$appMain_8h.html" title=" " alt="" coords="401,717,508,742"/>
-<area shape="rect" id="node6" href="$try_8cpp.html" title=" " alt="" coords="533,717,691,742"/>
-<area shape="rect" id="node7" href="$test__proto__can_8cpp.html" title=" " alt="" coords="716,709,860,749"/>
-<area shape="rect" id="node5" href="$appMain_8cpp.html" title=" " alt="" coords="395,797,515,823"/>
-<area shape="rect" id="node11" href="$device__catalog_8hpp.html" title=" " alt="" coords="434,445,625,485"/>
+<area shape="rect" id="node4" href="$appMain_8h.html" title=" " alt="" coords="305,717,412,742"/>
+<area shape="rect" id="node6" href="$motor__proto_8cpp.html" title=" " alt="" coords="437,709,590,749"/>
+<area shape="rect" id="node7" href="$protocan_8cpp.html" title=" " alt="" coords="615,717,809,742"/>
+<area shape="rect" id="node8" href="$test__proto__can_8cpp.html" title=" " alt="" coords="833,709,977,749"/>
+<area shape="rect" id="node5" href="$appMain_8cpp.html" title=" " alt="" coords="299,797,419,823"/>
+<area shape="rect" id="node12" href="$device__catalog_8hpp.html" title=" " alt="" coords="434,445,625,485"/>
 </map>

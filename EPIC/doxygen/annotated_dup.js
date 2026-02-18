@@ -16,6 +16,10 @@ var annotated_dup =
       [ "PIDConfig", "classcommon_1_1PIDConfig.html", "classcommon_1_1PIDConfig" ]
     ] ],
     [ "devices", "namespacedevices.html", [
+      [ "mock_motor", "namespacedevices_1_1mock__motor.html", [
+        [ "Command", "classdevices_1_1mock__motor_1_1Command.html", "classdevices_1_1mock__motor_1_1Command" ],
+        [ "Data", "classdevices_1_1mock__motor_1_1Data.html", "classdevices_1_1mock__motor_1_1Data" ]
+      ] ],
       [ "motor", "namespacedevices_1_1motor.html", [
         [ "Command", "classdevices_1_1motor_1_1Command.html", "classdevices_1_1motor_1_1Command" ],
         [ "Data", "classdevices_1_1motor_1_1Data.html", "classdevices_1_1motor_1_1Data" ]
@@ -37,9 +41,7 @@ var annotated_dup =
       [ "ESCData", "structDJI_1_1ESCData.html", "structDJI_1_1ESCData" ]
     ] ],
     [ "IM920sL", "namespaceIM920sL.html", [
-      [ "BaseIM920sL", "classIM920sL_1_1BaseIM920sL.html", "classIM920sL_1_1BaseIM920sL" ],
-      [ "Receiver", "classIM920sL_1_1Receiver.html", "classIM920sL_1_1Receiver" ],
-      [ "Transmitter", "classIM920sL_1_1Transmitter.html", "classIM920sL_1_1Transmitter" ]
+      [ "BaseIM920sL", "classIM920sL_1_1BaseIM920sL.html", "classIM920sL_1_1BaseIM920sL" ]
     ] ],
     [ "Motoron", "namespaceMotoron.html", [
       [ "Master", "classMotoron_1_1Master.html", "classMotoron_1_1Master" ]
@@ -48,6 +50,7 @@ var annotated_dup =
       [ "Device", "classproto__can_1_1Device.html", "classproto__can_1_1Device" ],
       [ "DeviceID", "classproto__can_1_1DeviceID.html", "classproto__can_1_1DeviceID" ],
       [ "DeviceSchema", "structproto__can_1_1DeviceSchema.html", null ],
+      [ "DeviceSchema< DeviceType::MOCK_MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4" ],
       [ "DeviceSchema< DeviceType::MOTOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4" ],
       [ "DeviceSchema< DeviceType::SENSOR >", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html", "structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4" ],
       [ "FrameLayer", "classproto__can_1_1FrameLayer.html", "classproto__can_1_1FrameLayer" ],
@@ -76,5 +79,6 @@ var annotated_dup =
       [ "PID", "classstdr_1_1PID.html", "classstdr_1_1PID" ]
     ] ],
     [ "BitRange", "structBitRange.html", "structBitRange" ],
+    [ "MockMotor", "classMockMotor.html", "classMockMotor" ],
     [ "TelemController", "classTelemController.html", "classTelemController" ]
 ];

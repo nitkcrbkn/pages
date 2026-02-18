@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classproto__can_1_1Device.html',''); i
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classproto__can_1_1DeviceID.html" title="デバイスIDクラス">DeviceID</a> を持つノードの API  
+ <a href="classproto__can_1_1Device.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;device_api.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -105,16 +108,30 @@ $(document).ready(function(){initNavTree('classproto__can_1_1Device.html',''); i
 <tr class="separator:abd422a194d8c9cc6830382334b4ef6c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf375452e0ee82ed42058bbb08bbe2ba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adf375452e0ee82ed42058bbb08bbe2ba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Device.html#adf375452e0ee82ed42058bbb08bbe2ba">register_cb</a> (T *obj, bool(T::*method)(<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a>))</td></tr>
+<tr class="memdesc:adf375452e0ee82ed42058bbb08bbe2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信コールバックを登録する  <a href="classproto__can_1_1Device.html#adf375452e0ee82ed42058bbb08bbe2ba">[詳解]</a><br /></td></tr>
 <tr class="separator:adf375452e0ee82ed42058bbb08bbe2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa7e4884eb7a26a9ca20d300719d43c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Device.html#a9aa7e4884eb7a26a9ca20d300719d43c">register_cb</a> (<a class="el" href="namespaceproto__can.html#ab12fb9b9c563d62859b739bd008a3315">MessageCB</a> cb)</td></tr>
+<tr class="separator:a9aa7e4884eb7a26a9ca20d300719d43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541d02b0fa9fb69ba440a56ef633b322"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Device.html#a541d02b0fa9fb69ba440a56ef633b322">invoke_cbs</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a> message)</td></tr>
 <tr class="separator:a541d02b0fa9fb69ba440a56ef633b322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a160d8e9bbaada5940a55b9ff60cd0503"><td class="memItemLeft" align="right" valign="top">std::optional&lt; typename <a class="el" href="structproto__can_1_1DeviceSchema.html">DeviceSchema</a>&lt; DeviceTYPE &gt;::Command &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503">get_command</a> (uint32_t timeout=-1)</td></tr>
-<tr class="memdesc:a160d8e9bbaada5940a55b9ff60cd0503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the command object  <a href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503">[詳解]</a><br /></td></tr>
+<tr class="memdesc:a160d8e9bbaada5940a55b9ff60cd0503"><td class="mdescLeft">&#160;</td><td class="mdescRight">直近に受信した Command をキャッシュから取得する（ポーリング）  <a href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503">[詳解]</a><br /></td></tr>
 <tr class="separator:a160d8e9bbaada5940a55b9ff60cd0503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea37529ec65085915e3c62c0a4f0652e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e">send_data</a> (DataType data)</td></tr>
+<tr class="memdesc:aea37529ec65085915e3c62c0a4f0652e"><td class="mdescLeft">&#160;</td><td class="mdescRight">自デバイスの状態データを送信する  <a href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e">[詳解]</a><br /></td></tr>
 <tr class="separator:aea37529ec65085915e3c62c0a4f0652e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">構築子と解体子</h2>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a> DeviceTYPE&gt;<br />
+class proto_can::Device&lt; DeviceTYPE &gt;</div><p ><a class="el" href="classproto__can_1_1DeviceID.html" title="デバイスIDクラス">DeviceID</a> を持つノードの API </p>
+<p >自身のデータ送信と、自分宛の Command 受信を担う。 コンストラクタ時に REQUEST への自動応答と RESET ハンドラが登録される。</p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">DeviceTYPE</td><td>デバイス種別。DeviceSchema の特殊化が必要 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
 <a id="abd422a194d8c9cc6830382334b4ef6c9" name="abd422a194d8c9cc6830382334b4ef6c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd422a194d8c9cc6830382334b4ef6c9">&#9670;&#160;</a></span>Device()</h2>
 
@@ -157,7 +174,7 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
 <map name="aclassproto__can_1_1Device_abd422a194d8c9cc6830382334b4ef6c9_cgraph" id="aclassproto__can_1_1Device_abd422a194d8c9cc6830382334b4ef6c9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,69,136,109"/>
 <area shape="rect" href="classproto__can_1_1Device.html#a541d02b0fa9fb69ba440a56ef633b322" title=" " alt="" coords="193,5,324,45"/>
-<area shape="rect" href="classproto__can_1_1Device.html#adf375452e0ee82ed42058bbb08bbe2ba" title=" " alt="" coords="193,69,324,109"/>
+<area shape="rect" href="classproto__can_1_1Device.html#adf375452e0ee82ed42058bbb08bbe2ba" title="受信コールバックを登録する" alt="" coords="193,69,324,109"/>
 <area shape="rect" href="classproto__can_1_1Messenger.html#a5285ff394f71b62a307f421ba0ed1036" title="簡単に登録できる" alt="" coords="184,133,333,173"/>
 </map>
 </div>
@@ -191,20 +208,21 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
 </table>
 </div><div class="memdoc">
 
-<p>Get the command object </p>
+<p>直近に受信した Command をキャッシュから取得する（ポーリング） </p>
+<p >キャッシュは <a class="el" href="classproto__can_1_1Messenger.html">Messenger</a> が保持し、新しいフレームが来るたびに上書きされる。 未受信の場合は nullopt を返す。</p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td></td></tr>
+    <tr><td class="paramname">timeout</td><td>現在未実装。-1 以外を渡しても即 nullopt を返す </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>std::optional&lt;typename DeviceSchema&lt;DeviceTYPE&gt;::Command&gt; </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>Command が受信済みであればその値、未受信なら nullopt </dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_cgraph.png" border="0" usemap="#aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_cgraph" alt=""/></div>
 <map name="aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_cgraph" id="aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_cgraph">
-<area shape="rect" title="Get the command object" alt="" coords="5,37,136,77"/>
+<area shape="rect" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="5,37,136,77"/>
 <area shape="rect" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="184,37,333,77"/>
 <area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="381,5,545,45"/>
 <area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="388,69,539,109"/>
@@ -217,8 +235,8 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
 <div class="dyncontent">
 <div class="center"><img src="classproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_icgraph.png" border="0" usemap="#aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_icgraph" alt=""/></div>
 <map name="aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_icgraph" id="aclassproto__can_1_1Device_a160d8e9bbaada5940a55b9ff60cd0503_icgraph">
-<area shape="rect" title="Get the command object" alt="" coords="151,23,281,63"/>
-<area shape="rect" href="try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
+<area shape="rect" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="151,23,281,63"/>
+<area shape="rect" href="protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
 <area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,55,103,80"/>
 </map>
 </div>
@@ -272,8 +290,36 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
 
 </div>
 </div>
+<a id="a9aa7e4884eb7a26a9ca20d300719d43c" name="a9aa7e4884eb7a26a9ca20d300719d43c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa7e4884eb7a26a9ca20d300719d43c">&#9670;&#160;</a></span>register_cb() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a> DeviceTYPE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classproto__can_1_1Device.html">proto_can::Device</a>&lt; DeviceTYPE &gt;::register_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#ab12fb9b9c563d62859b739bd008a3315">MessageCB</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf375452e0ee82ed42058bbb08bbe2ba" name="adf375452e0ee82ed42058bbb08bbe2ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf375452e0ee82ed42058bbb08bbe2ba">&#9670;&#160;</a></span>register_cb()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adf375452e0ee82ed42058bbb08bbe2ba">&#9670;&#160;</a></span>register_cb() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,13 +355,17 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>受信コールバックを登録する </p>
+<p >全受信メッセージが引数に渡されるため、自身宛かどうかの判定は実装側で行う。 メンバ関数ポインタ形式のみ受け付ける（Master::register_cb と異なり関数オブジェクト不可）。 </p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproto__can_1_1Device_adf375452e0ee82ed42058bbb08bbe2ba_icgraph.png" border="0" usemap="#aclassproto__can_1_1Device_adf375452e0ee82ed42058bbb08bbe2ba_icgraph" alt=""/></div>
 <map name="aclassproto__can_1_1Device_adf375452e0ee82ed42058bbb08bbe2ba_icgraph" id="aclassproto__can_1_1Device_adf375452e0ee82ed42058bbb08bbe2ba_icgraph">
-<area shape="rect" title=" " alt="" coords="184,5,315,45"/>
-<area shape="rect" href="classproto__can_1_1Device.html#abd422a194d8c9cc6830382334b4ef6c9" title=" " alt="" coords="5,5,136,45"/>
+<area shape="rect" title="受信コールバックを登録する" alt="" coords="212,35,343,75"/>
+<area shape="rect" href="classproto__can_1_1Device.html#abd422a194d8c9cc6830382334b4ef6c9" title=" " alt="" coords="19,5,150,45"/>
+<area shape="rect" href="classMockMotor.html#a6fe0d9514768606f7bdb04574718065f" title=" " alt="" coords="5,70,164,95"/>
 </map>
 </div>
 
@@ -346,12 +396,15 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>自デバイスの状態データを送信する </p>
+<dl class="section return"><dt>戻り値</dt><dd>送信成功で true </dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="classproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_cgraph.png" border="0" usemap="#aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_cgraph" alt=""/></div>
 <map name="aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_cgraph" id="aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,58,136,98"/>
+<area shape="rect" title="自デバイスの状態データを送信する" alt="" coords="5,58,136,98"/>
 <area shape="rect" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="184,58,333,98"/>
 <area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="597,22,748,62"/>
 <area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="381,86,536,126"/>
@@ -370,9 +423,11 @@ template&lt;<a class="el" href="namespaceproto__can.html#ad0abaf53719eff1c05379f
 <div class="dyncontent">
 <div class="center"><img src="classproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_icgraph.png" border="0" usemap="#aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_icgraph" alt=""/></div>
 <map name="aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_icgraph" id="aclassproto__can_1_1Device_aea37529ec65085915e3c62c0a4f0652e_icgraph">
-<area shape="rect" title=" " alt="" coords="151,23,281,63"/>
-<area shape="rect" href="try_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,5,79,31"/>
-<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,55,103,80"/>
+<area shape="rect" title="自デバイスの状態データを送信する" alt="" coords="263,47,393,87"/>
+<area shape="rect" href="protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="134,5,185,31"/>
+<area shape="rect" href="classMockMotor.html#a8c71c73808bcb44b911ab9884cae29a2" title=" " alt="" coords="104,55,215,80"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="111,104,208,129"/>
+<area shape="rect" href="motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,55,56,80"/>
 </map>
 </div>
 
