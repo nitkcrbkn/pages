@@ -1,0 +1,6 @@
+<map id="devices::mock_motor::Command::set_target_speed" name="devices::mock_motor::Command::set_target_speed">
+<area shape="rect" id="node1" title=" " alt="" coords="205,63,399,103"/>
+<area shape="rect" id="node2" href="$classdevices_1_1mock__motor_1_1Command.html#a461b75388a2afbdab196b2d0b6bfdf6a" title=" " alt="" coords="5,5,157,45"/>
+<area shape="rect" id="node3" href="$motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="56,70,107,95"/>
+<area shape="rect" id="node4" href="$classdevices_1_1mock__motor_1_1Command.html#a708a2a8622e17b6931571aa98544b5c7" title=" " alt="" coords="7,120,155,160"/>
+</map>

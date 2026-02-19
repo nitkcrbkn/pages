@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: proto_can::Messenger クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classproto__can_1_1Messenger.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classproto__can_1_1Messenger-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">proto_can::Messenger クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;messenger.hpp&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a650dfe22dfcf40ed7dbb18fb5980bba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5">Messenger</a> (<a class="el" href="classCanSystem_1_1ICanController.html">CanSystem::ICanController</a> &amp;canmgr)</td></tr>
+<tr class="separator:a650dfe22dfcf40ed7dbb18fb5980bba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5285ff394f71b62a307f421ba0ed1036"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5285ff394f71b62a307f421ba0ed1036"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a5285ff394f71b62a307f421ba0ed1036">register_cb</a> (T *obj, bool(T::*method)(<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a>))</td></tr>
+<tr class="memdesc:a5285ff394f71b62a307f421ba0ed1036"><td class="mdescLeft">&#160;</td><td class="mdescRight">簡単に登録できる  <a href="classproto__can_1_1Messenger.html#a5285ff394f71b62a307f421ba0ed1036">[詳解]</a><br /></td></tr>
+<tr class="separator:a5285ff394f71b62a307f421ba0ed1036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed151c59c57169e7f21e214f0f4223d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a0ed151c59c57169e7f21e214f0f4223d">register_cb</a> (<a class="el" href="namespaceproto__can.html#ab12fb9b9c563d62859b739bd008a3315">MessageCB</a> callback)</td></tr>
+<tr class="memdesc:a0ed151c59c57169e7f21e214f0f4223d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ラムダ式で登録  <a href="classproto__can_1_1Messenger.html#a0ed151c59c57169e7f21e214f0f4223d">[詳解]</a><br /></td></tr>
+<tr class="separator:a0ed151c59c57169e7f21e214f0f4223d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d40c87968a1f7b21e2be9846f2ee9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c">invoke_cbs</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a> message)</td></tr>
+<tr class="separator:a45d40c87968a1f7b21e2be9846f2ee9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cba9af15dbb805fa77e7d028cc82afa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4cba9af15dbb805fa77e7d028cc82afa"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa">send</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, T msg)</td></tr>
+<tr class="separator:a4cba9af15dbb805fa77e7d028cc82afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd22ac1c12ea9dd10d93c8e3c37e8bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb">frame_receive_cb</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a> raw)</td></tr>
+<tr class="separator:afbd22ac1c12ea9dd10d93c8e3c37e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94797500a0fb16a3da9de568d9baf3a3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a94797500a0fb16a3da9de568d9baf3a3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3">read_cache</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, T &amp;msg)</td></tr>
+<tr class="memdesc:a94797500a0fb16a3da9de568d9baf3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャッシュからメッセージを検索して返す  <a href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3">[詳解]</a><br /></td></tr>
+<tr class="separator:a94797500a0fb16a3da9de568d9baf3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a9ec79a718432ac0c0246673def142"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a93a9ec79a718432ac0c0246673def142"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142">read</a> (<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a> msg_id, T &amp;msg, uint32_t timeout=0)</td></tr>
+<tr class="separator:a93a9ec79a718432ac0c0246673def142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19183173ecbdb5bfb9556602aa2fef47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classproto__can_1_1Messenger.html#a19183173ecbdb5bfb9556602aa2fef47">print_cache</a> () const</td></tr>
+<tr class="separator:a19183173ecbdb5bfb9556602aa2fef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a650dfe22dfcf40ed7dbb18fb5980bba5" name="a650dfe22dfcf40ed7dbb18fb5980bba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650dfe22dfcf40ed7dbb18fb5980bba5">&#9670;&#160;</a></span>Messenger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">proto_can::Messenger::Messenger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCanSystem_1_1ICanController.html">CanSystem::ICanController</a> &amp;&#160;</td>
+          <td class="paramname"><em>canmgr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a650dfe22dfcf40ed7dbb18fb5980bba5_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a650dfe22dfcf40ed7dbb18fb5980bba5_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a650dfe22dfcf40ed7dbb18fb5980bba5_cgraph" id="aclassproto__can_1_1Messenger_a650dfe22dfcf40ed7dbb18fb5980bba5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,101,155,141"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb" title=" " alt="" coords="205,69,355,109"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#a645decbc271f0174df5d5fc8068c533d" title=" " alt="" coords="203,133,357,173"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c" title=" " alt="" coords="406,5,555,45"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="405,69,556,109"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="405,133,556,173"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="646,35,697,61"/>
+<area shape="rect" href="namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="604,85,739,110"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="612,141,731,166"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afbd22ac1c12ea9dd10d93c8e3c37e8bb" name="afbd22ac1c12ea9dd10d93c8e3c37e8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd22ac1c12ea9dd10d93c8e3c37e8bb">&#9670;&#160;</a></span>frame_receive_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool proto_can::Messenger::frame_receive_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a>&#160;</td>
+          <td class="paramname"><em>raw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_cgraph" id="aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,155,109"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c" title=" " alt="" coords="203,5,353,45"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="203,69,353,109"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="203,133,353,173"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="443,35,494,61"/>
+<area shape="rect" href="namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="401,85,536,110"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="409,141,528,166"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_icgraph" id="aclassproto__can_1_1Messenger_afbd22ac1c12ea9dd10d93c8e3c37e8bb_icgraph">
+<area shape="rect" title=" " alt="" coords="203,5,352,45"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="5,5,155,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45d40c87968a1f7b21e2be9846f2ee9c" name="a45d40c87968a1f7b21e2be9846f2ee9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d40c87968a1f7b21e2be9846f2ee9c">&#9670;&#160;</a></span>invoke_cbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proto_can::Messenger::invoke_cbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a45d40c87968a1f7b21e2be9846f2ee9c_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a45d40c87968a1f7b21e2be9846f2ee9c_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a45d40c87968a1f7b21e2be9846f2ee9c_icgraph" id="aclassproto__can_1_1Messenger_a45d40c87968a1f7b21e2be9846f2ee9c_icgraph">
+<area shape="rect" title=" " alt="" coords="400,35,549,75"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb" title=" " alt="" coords="203,5,352,45"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="242,70,313,95"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="5,5,155,45"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="41,70,119,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19183173ecbdb5bfb9556602aa2fef47" name="a19183173ecbdb5bfb9556602aa2fef47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19183173ecbdb5bfb9556602aa2fef47">&#9670;&#160;</a></span>print_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proto_can::Messenger::print_cache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_cgraph" id="aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_cgraph">
+<area shape="rect" title=" " alt="" coords="5,63,155,103"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a8f11fc8e1cda0adf423c4ae880d84afa" title=" " alt="" coords="203,5,353,45"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="203,120,353,160"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="443,74,494,99"/>
+<area shape="rect" href="namespaceBitUtil.html#a8f4765916b99aace6d247993a64ec6ad" title=" " alt="" coords="405,13,532,38"/>
+<area shape="rect" href="namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="401,127,536,153"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_icgraph" id="aclassproto__can_1_1Messenger_a19183173ecbdb5bfb9556602aa2fef47_icgraph">
+<area shape="rect" title=" " alt="" coords="151,5,300,45"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,13,103,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93a9ec79a718432ac0c0246673def142" name="a93a9ec79a718432ac0c0246673def142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a9ec79a718432ac0c0246673def142">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool proto_can::Messenger::read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a93a9ec79a718432ac0c0246673def142_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a93a9ec79a718432ac0c0246673def142_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a93a9ec79a718432ac0c0246673def142_cgraph" id="aclassproto__can_1_1Messenger_a93a9ec79a718432ac0c0246673def142_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,155,95"/>
+<area shape="rect" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()" alt="" coords="259,5,311,31"/>
+<area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="203,55,367,95"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="209,119,360,159"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="449,63,499,88"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="415,127,533,152"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a94797500a0fb16a3da9de568d9baf3a3" name="a94797500a0fb16a3da9de568d9baf3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94797500a0fb16a3da9de568d9baf3a3">&#9670;&#160;</a></span>read_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool proto_can::Messenger::read_cache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>キャッシュからメッセージを検索して返す </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">todo:</a></b></dt><dd>timeout をきちんとつける。 </dd></dl>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg_id</td><td></td></tr>
+    <tr><td class="paramname">msg</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_cgraph" id="aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_cgraph">
+<area shape="rect" title="キャッシュからメッセージを検索して返す" alt="" coords="5,37,155,77"/>
+<area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="203,5,367,45"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="209,69,360,109"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="449,13,499,38"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="415,77,533,102"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_icgraph" id="aclassproto__can_1_1Messenger_a94797500a0fb16a3da9de568d9baf3a3_icgraph">
+<area shape="rect" title="キャッシュからメッセージを検索して返す" alt="" coords="329,69,479,109"/>
+<area shape="rect" href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="151,5,281,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="151,133,281,173"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title="request_stats() に対する応答をキャッシュから取得する（ポーリング）" alt="" coords="151,69,281,109"/>
+<area shape="rect" href="protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,13,79,38"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,77,103,102"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,133,93,158"/>
+<area shape="rect" href="motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,182,79,207"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ed151c59c57169e7f21e214f0f4223d" name="a0ed151c59c57169e7f21e214f0f4223d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed151c59c57169e7f21e214f0f4223d">&#9670;&#160;</a></span>register_cb() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proto_can::Messenger::register_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceproto__can.html#ab12fb9b9c563d62859b739bd008a3315">MessageCB</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ラムダ式で登録 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5285ff394f71b62a307f421ba0ed1036" name="a5285ff394f71b62a307f421ba0ed1036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5285ff394f71b62a307f421ba0ed1036">&#9670;&#160;</a></span>register_cb() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void proto_can::Messenger::register_cb </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(T::*)(<a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>, <a class="el" href="structproto__can_1_1RawMessage.html">RawMessage</a>)&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>簡単に登録できる </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+    <tr><td class="paramname">method</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a5285ff394f71b62a307f421ba0ed1036_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a5285ff394f71b62a307f421ba0ed1036_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a5285ff394f71b62a307f421ba0ed1036_icgraph" id="aclassproto__can_1_1Messenger_a5285ff394f71b62a307f421ba0ed1036_icgraph">
+<area shape="rect" title="簡単に登録できる" alt="" coords="184,37,333,77"/>
+<area shape="rect" href="classproto__can_1_1Device.html#abd422a194d8c9cc6830382334b4ef6c9" title=" " alt="" coords="5,5,136,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a66ab891dc0bd0a1072e7c8dce7822997" title=" " alt="" coords="5,69,136,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4cba9af15dbb805fa77e7d028cc82afa" name="a4cba9af15dbb805fa77e7d028cc82afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cba9af15dbb805fa77e7d028cc82afa">&#9670;&#160;</a></span>send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool proto_can::Messenger::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classproto__can_1_1MessageID.html">MessageID</a>&#160;</td>
+          <td class="paramname"><em>msg_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_cgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_cgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_cgraph" id="aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,58,155,98"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a9728221b7c1baff7c9541bd78ab0a42b" title=" " alt="" coords="419,22,569,62"/>
+<area shape="rect" href="classproto__can_1_1FrameLayer.html#aef808b60d3a117836955d229d5bc4680" title=" " alt="" coords="203,86,357,126"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="693,5,743,31"/>
+<area shape="rect" href="namespaceproto__can.html#acd877652e7007b1e567f85448bc1a4cb" title=" " alt="" coords="651,55,785,80"/>
+<area shape="rect" href="classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="405,86,583,126"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ad9369f977263ee8e6eb14e5c118821ab" title=" " alt="" coords="407,150,581,190"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#ac890ac50b7d8dda0d82af01a3ec629e4" title=" " alt="" coords="407,214,581,254"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#aecc7e5a9c66d59abae7e425614d42d96" title=" " alt="" coords="631,139,805,179"/>
+<area shape="rect" href="classproto__can_1_1ProtocolHeader.html#a7b32acb2310d563695f00d2d025ba624" title=" " alt="" coords="631,203,805,243"/>
+<area shape="rect" href="namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="853,179,1004,204"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_icgraph.png" border="0" usemap="#aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_icgraph" alt=""/></div>
+<map name="aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_icgraph" id="aclassproto__can_1_1Messenger_a4cba9af15dbb805fa77e7d028cc82afa_icgraph">
+<area shape="rect" title=" " alt="" coords="441,101,591,141"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title="指定デバイスにステータス要求を送る" alt="" coords="263,5,393,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="263,69,393,109"/>
+<area shape="rect" href="classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title="指定デバイスに Command を送信する" alt="" coords="263,133,393,173"/>
+<area shape="rect" href="classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title="自デバイスの状態データを送信する" alt="" coords="263,197,393,237"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="111,83,208,109"/>
+<area shape="rect" href="motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,166,56,191"/>
+<area shape="rect" href="protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="134,241,185,266"/>
+<area shape="rect" href="classMockMotor.html#a8c71c73808bcb44b911ab9884cae29a2" title=" " alt="" coords="104,191,215,217"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/ProtoCAN/core/<a class="el" href="messenger_8hpp.html">messenger.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceproto__can.html">proto_can</a></li><li class="navelem"><a class="el" href="classproto__can_1_1Messenger.html">Messenger</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

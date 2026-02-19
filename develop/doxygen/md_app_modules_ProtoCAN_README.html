@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: ProtoCAN</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('md_app_modules_ProtoCAN_README.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">ProtoCAN </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >ProtoCAN は、CAN バス通信上でプロトコルバッファを使用したデバイス間通信を実現する C++ ライブラリです。1000行のコードで、型安全性と柔軟性を両立させた通信システムを提供します。</p>
+<h1><a class="anchor" id="autotoc_md23"></a>
+設計思想と概念</h1>
+<p >CANバスは本質的にブロードキャスト通信です。送信されたメッセージは物理的に全ノードに届き、各ノードはCAN IDを見て自分宛かを判断します。中央集権型から完全分散型まであらゆるネットワーク構成に対応できる設計になっています。 DeviceIDはデバイス種類とデバイス番号の組み合わせを指し重複はないです。 ProtoCANはMasterとDeviceという2つのAPIを提供しますが、これは物理的な制約ではなく使いやすさのための概念的な分類です。Masterは任意のデバイスに命令を送り、任意のデバイスからデータを受信します。DeviceはDeviceIDを持ち、自身のデータを送信し、自分宛の命令を受け取ります。しかし、DeviceIDを持つノードが他のデバイスに命令を送ることも、MasterがDeviceIDを持って自身のデータを送信することも自由です。一つのノードがMasterとDeviceの両方のAPIを使って複数の役割を果たすことも自然にできます。具体的には使用するネットワーク構成に依存します。</p>
+<p >ProtoCANは現在4種類のメッセージタイプを定義しており、将来さらに追加可能です。「制御命令(Command)」は特定のDeviceIDに向けた操作指示、「データ送信(Data)」はDeviceIDを持つノードからの状態報告、「要求命令(Request)」は状態情報の問い合わせ、「応答送信(Reply)」はRequestに対する返答です。この中でCommandとDataだけが特殊で、デバイス種類ごとに異なるProtocol Buffersスキーマを使用します。RequestやReplyなど他のメッセージタイプは全デバイス共通のスキーマです。</p>
+<p >型安全性はDeviceID経由でデバイス種類をデバイスカタログで探し、そのデバイスが使用するDataスキーマとCommandスキーマがコンパイル時に決定されます。デバイスカタログがDeviceTypeと各スキーマを紐付けるため、IDEの補完機能も効き、新しいデバイス種類が増えてもタイプセーフに扱えます。</p>
+<h1><a class="anchor" id="autotoc_md24"></a>
+Quick Start</h1>
+<p ><a href="app/modules/ProtoCAN/api">apiフォルダ</a>に全てのAPIのコードがある。 拡張CANIDを使用しているため<code>ext</code>を含むprofile以外使えない FdCanCompatExtProfile、CanExtProfileなど。 今はまだfdcanのみ対応でありcanで使うことはできない。</p>
+<p >ネットワークシステムであるためスレッドに分けて割り込みをを使って見た例が<a href="app/test/scratch/motor_proto.cpp">motor_proto.cpp</a>に また簡単にシングルプロセスでデータ送信とマスターでの受け取りの例が<a href="app/test/scratch/protocan.cpp">protocan.cpp</a>に書かれている。</p>
+<h2><a class="anchor" id="autotoc_md25"></a>
+実行方法</h2>
+<ol type="1">
+<li><code>cd app/test/</code></li>
+<li><code>make gen_proto</code>を実行</li>
+<li><code>make scratch FILE=protocan</code>また <code>make scratch FILE=motor_proto</code></li>
+</ol>
+<h1><a class="anchor" id="autotoc_md26"></a>
+新規デバイス登録手順</h1>
+<ol type="1">
+<li><code>ProtoCAN/common/protocol_types</code>にてDeviceTypeに追加</li>
+<li><code>protocol/schemas/devices</code>に新規protoスキーマを作成</li>
+<li><code>app/test</code>で<code>make gen_proto</code>を実行してスキーマをコンパイル</li>
+<li><code>protoCAN/common/device_catalog</code>でコンパイル後のスキーマをincludeして新規カタログを作成。</li>
+</ol>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="motor_8h.html">proto/devices/motor.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;../common/protocol_types.hpp&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceproto__can.html">proto_can</a> {</div>
+<div class="line"><span class="comment">// 存在しないことを示す型</span></div>
+<div class="line"><span class="keyword">struct </span>NoSchema {};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// デバイスタイプごとに Data と Order をまとめて定義</span></div>
+<div class="line"><span class="keyword">template</span> &lt;DeviceType TYPE&gt;</div>
+<div class="line"><span class="keyword">struct </span>DeviceSchema;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><span class="keyword">struct </span>DeviceSchema&lt;<a class="code hl_enumeration" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a>::<a class="code hl_enumvalue" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a">MOTOR</a>&gt; {</div>
+<div class="line">    <span class="keyword">using </span>Data = <a class="code hl_class" href="classdevices_1_1motor_1_1Data.html">devices::motor::Data</a>;</div>
+<div class="line">    <span class="keyword">using </span>Command = <a class="code hl_class" href="classdevices_1_1motor_1_1Command.html">devices::motor::Command</a>;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><span class="keyword">struct </span>DeviceSchema&lt;<a class="code hl_enumeration" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">DeviceType</a>::<a class="code hl_enumvalue" href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908">SENSOR</a>&gt; {</div>
+<div class="line">    <span class="keyword">using </span>Data = NoSchema;</div>
+<div class="line">    <span class="keyword">using </span>Order = NoSchema;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">}  <span class="comment">// namespace proto_can</span></div>
+<div class="ttc" id="aclassdevices_1_1motor_1_1Command_html"><div class="ttname"><a href="classdevices_1_1motor_1_1Command.html">devices::motor::Command</a></div><div class="ttdef"><b>Definition:</b> motor.h:27</div></div>
+<div class="ttc" id="aclassdevices_1_1motor_1_1Data_html"><div class="ttname"><a href="classdevices_1_1motor_1_1Data.html">devices::motor::Data</a></div><div class="ttdef"><b>Definition:</b> motor.h:207</div></div>
+<div class="ttc" id="amotor_8h_html"><div class="ttname"><a href="motor_8h.html">motor.h</a></div></div>
+<div class="ttc" id="anamespaceproto__can_html"><div class="ttname"><a href="namespaceproto__can.html">proto_can</a></div><div class="ttdef"><b>Definition:</b> device_api.hpp:21</div></div>
+<div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983"><div class="ttname"><a href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">proto_can::DeviceType</a></div><div class="ttdeci">DeviceType</div><div class="ttdef"><b>Definition:</b> protocol_types.hpp:36</div></div>
+<div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a"><div class="ttname"><a href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a">proto_can::DeviceType::MOTOR</a></div><div class="ttdeci">@ MOTOR</div></div>
+<div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908"><div class="ttname"><a href="namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908">proto_can::DeviceType::SENSOR</a></div><div class="ttdeci">@ SENSOR</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md27"></a>
+詳細設計</h1>
+<h2><a class="anchor" id="autotoc_md28"></a>
+レイヤー構造と責務</h2>
+<p >ProtoCANは3つのレイヤーで構成され、各レイヤーは明確に分離された責務を持ちます。</p>
+<p >**API層**は、デバイス種類(DeviceType)とメッセージ種類(MessageType)の2つの情報からスキーマを特定します。DataとCommandはデバイスカタログを参照してコンパイル時に型を決定し、RequestやReplyなど他のメッセージ種類は全デバイス共通スキーマとしてハードコードされています。スキーマ型とメッセージオブジェクトをそのままMessenger層へ渡します。</p>
+<p >**Messenger層**は、受け取った型付きメッセージオブジェクトをProtocol Buffersでシリアライズし、rawバイトデータに変換してFrameLayer層へ渡します。受信時は逆に、FrameLayer層から受け取ったrawバイトデータを指定された型でデシリアライズします。<code>send&lt;T&gt;(MessageID, T data)</code>と<code>read&lt;T&gt;(MessageID, T&amp; data)</code>というテンプレート関数により、型安全性を保ちながらシリアライゼーションを完全にProtocol Buffersへ委譲しています。</p>
+<p >**FrameLayer層**は、rawバイトデータとCAN拡張IDから実際のCANフレームを構築します。送信時は最大フレームサイズ(8/64byte)に応じてデータを分割し、header-flagを設定してCanSystemへ渡します。受信時は複数フレームを同一メッセージIDでキャッシュし、size分のデータが揃ったら結合してMessenger層へ返します。フレーム欠損検出も担当し、新しいheaderフレームが来た際に前のメッセージが未完成なら破棄します。現在はフレーム未完は握りつぶしています。</p>
+<p >CAN拡張ID(29bit)に全てのルーティング情報を詰め込むことで、データ部分は純粋なProtocol Buffersのシリアライズデータのみになります。この分離により、シリアライズ/デシリアライズの詳細はProtocol Buffersに完全に委譲され、スキーマ変更への対応が容易です。フレーム分割も自動的に処理されるため、アプリケーションコードは最大1024byteまでのメッセージを単一の送受信として扱えます。</p>
+<h2><a class="anchor" id="autotoc_md29"></a>
+フォルダ構造</h2>
+<div class="fragment"><div class="line">.</div>
+<div class="line">├── README.md</div>
+<div class="line">├── api/                    # ユーザー向け API</div>
+<div class="line">│   ├── device_api.hpp     # デバイス側 API</div>
+<div class="line">│   └── master_api.hpp     # マスター側 API</div>
+<div class="line">├── common/                 # 共通定義</div>
+<div class="line">│   ├── bitwise_ops.hpp    # ビット演算ユーティリティ</div>
+<div class="line">│   ├── device_catalog.hpp # デバイス型定義</div>
+<div class="line">│   ├── frame_field.hpp    # フレームフィールド定義</div>
+<div class="line">│   └── protocol_types.hpp # プロトコル型定義</div>
+<div class="line">├── core/                   # コアロジック</div>
+<div class="line">│   ├── frame_builder.hpp  # フレーム構築</div>
+<div class="line">│   ├── frame_header.hpp   # CAN ID ヘッダー管理</div>
+<div class="line">│   └── messenger.hpp      # メッセージ送受信管理</div>
+<div class="line">└── proto_can.hpp           # メインヘッダー</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md30"></a>
+アーキテクチャ</h2>
+<p >4レイヤー階層を採用し,CAN以外の上位3レイヤーがこのmoduleで実装されている。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">レイヤー   </th><th class="markdownTableHeadNone">責務    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>ProtoCAN API</b>   </td><td class="markdownTableBodyNone">高レベル API（デバイス/マスター操作）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>Messenger</b>   </td><td class="markdownTableBodyNone">メッセージ管理・キャッシュ・ルーティング    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>FrameLayer</b>   </td><td class="markdownTableBodyNone">CAN フレームの組立・分解    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b><a class="el" href="namespaceCanSystem.html" title="元のchecker config:">CanSystem</a></b>   </td><td class="markdownTableBodyNone">CAN ハードウェア抽象化   </td></tr>
+</table>
+<p >SessionレスのOSIモデルとも言える。 シングルバスブロードキャストでありセッションがない。再送やエラー検出は実装されていない </p><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">OSI層   </th><th class="markdownTableHeadNone">層名   </th><th class="markdownTableHeadNone">ProtoCAN実装   </th><th class="markdownTableHeadNone">役割   </th><th class="markdownTableHeadNone">OSI   </th><th class="markdownTableHeadNone">ProtoCAN    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>7</b>   </td><td class="markdownTableBodyNone">Application   </td><td class="markdownTableBodyNone">Device API / Master API   </td><td class="markdownTableBodyNone">デバイス制御・データ取得   </td><td class="markdownTableBodyNone">アプリケーション固有処理   </td><td class="markdownTableBodyNone">同じ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>6</b>   </td><td class="markdownTableBodyNone">Presentation   </td><td class="markdownTableBodyNone">Protocol Buffers   </td><td class="markdownTableBodyNone">データ符号化・復号化   </td><td class="markdownTableBodyNone">符号化・暗号化・圧縮   </td><td class="markdownTableBodyNone">エンコード/デコード    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>5</b>   </td><td class="markdownTableBodyNone">Session   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone">(セッションレス)   </td><td class="markdownTableBodyNone">セッション確立・維持・終了   </td><td class="markdownTableBodyNone">省略    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>4</b>   </td><td class="markdownTableBodyNone">Transport   </td><td class="markdownTableBodyNone">Messenger   </td><td class="markdownTableBodyNone">ルーティング・キャッシュ   </td><td class="markdownTableBodyNone">エンドツーエンド・再送制御   </td><td class="markdownTableBodyNone">再送なし    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>3</b>   </td><td class="markdownTableBodyNone">Network   </td><td class="markdownTableBodyNone">FrameBuilder   </td><td class="markdownTableBodyNone">フレーム分割・再構築   </td><td class="markdownTableBodyNone">パケット化・ルーティング   </td><td class="markdownTableBodyNone">分割のみ（ルーティング不要）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>2</b>   </td><td class="markdownTableBodyNone">Data Link   </td><td class="markdownTableBodyNone"><a class="el" href="namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> (HAL)   </td><td class="markdownTableBodyNone">CANフレーム送受信   </td><td class="markdownTableBodyNone">フレーム化・MAC制御   </td><td class="markdownTableBodyNone">CAN ID管理    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>1</b>   </td><td class="markdownTableBodyNone">Physical   </td><td class="markdownTableBodyNone">CAN Transceiver   </td><td class="markdownTableBodyNone">電気信号伝送   </td><td class="markdownTableBodyNone">物理接続・信号変換   </td><td class="markdownTableBodyNone">差動信号(CAN_H/L)   </td></tr>
+</table>
+<p >CAN メッセージ受信時のコールバック呼び出しは以下の順序で実行されます：</p><ul>
+<li>CanSystem::FdCanManager::fdcanOnMsg</li>
+<li>proto_can::FrameLayer::read_cb</li>
+<li><a class="el" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb">proto_can::Messenger::frame_receive_cb</a></li>
+<li>proto_can::API::多数、(reset,reply,invoke_cbs等)</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md31"></a>
+CANプロトコル概要</h1>
+<h2><a class="anchor" id="autotoc_md32"></a>
+1. 概要</h2>
+<p >CAN拡張ID(29bit)とProtocol Buffersを用いたデバイス間通信システム。</p>
+<p ><b>対象デバイス</b></p><ul>
+<li>モータ操作基盤</li>
+<li>センサー基盤 など</li>
+</ul>
+<p >各デバイスタイプごとに個別の&lt;tt&gt;.protoスキーマファイルを用意。coreと共有して持つ。</p>
+<h2><a class="anchor" id="autotoc_md33"></a>
+2. CAN拡張ID構成(29bit)</h2>
+<div class="fragment"><div class="line">[version 2bit][デバイス種類ID 5bit][デバイス番号ID 4bit][message type 4bit][flags 4bit][size 10bit]</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md34"></a>
+DeviceID定義</h3>
+<ul>
+<li>完全なDeviceID = <code>[デバイス種類ID 5bit][デバイス番号ID 4bit]</code> (9bit)</li>
+<li>最大512デバイス (32種類 × 各16台)</li>
+<li>デバイス番号は4P DIPスイッチで基盤から設定する</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md35"></a>
+フィールド詳細</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">フィールド   </th><th class="markdownTableHeadNone">ビット幅   </th><th class="markdownTableHeadNone">範囲   </th><th class="markdownTableHeadNone">説明   </th><th class="markdownTableHeadNone">未使用    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>version</b>   </td><td class="markdownTableBodyNone">2bit   </td><td class="markdownTableBodyNone">4つ   </td><td class="markdownTableBodyNone">プロトコルバージョン   </td><td class="markdownTableBodyNone">3つ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>デバイス種類ID</b>   </td><td class="markdownTableBodyNone">5bit   </td><td class="markdownTableBodyNone">32個   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">-    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>デバイス番号ID</b>   </td><td class="markdownTableBodyNone">4bit   </td><td class="markdownTableBodyNone">16個   </td><td class="markdownTableBodyNone">4P DIPスイッチで設定   </td><td class="markdownTableBodyNone">-    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>message type</b>   </td><td class="markdownTableBodyNone">4bit   </td><td class="markdownTableBodyNone">16種類   </td><td class="markdownTableBodyNone">メッセージ種類   </td><td class="markdownTableBodyNone">2bit    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>flags</b>   </td><td class="markdownTableBodyNone">4bit   </td><td class="markdownTableBodyNone">6つ   </td><td class="markdownTableBodyNone">制御フラグ<br  />
+- bit0: header   </td><td class="markdownTableBodyNone">3bit    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>size</b>   </td><td class="markdownTableBodyNone">10bit   </td><td class="markdownTableBodyNone">0-1024   </td><td class="markdownTableBodyNone">protobufメッセージ全体のバイト数   </td><td class="markdownTableBodyNone">-   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md36"></a>
+3. メッセージ種類</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">メッセージ種類   </th><th class="markdownTableHeadNone">message type   </th><th class="markdownTableHeadNone">送信元   </th><th class="markdownTableHeadNone">送信先   </th><th class="markdownTableHeadNone">スキーマ    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>制御命令</b>   </td><td class="markdownTableBodyNone"><code>0000</code>   </td><td class="markdownTableBodyNone">core   </td><td class="markdownTableBodyNone">device (個別/全体)   </td><td class="markdownTableBodyNone">各デバイスごとの命令スキーマ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>データ送信</b>   </td><td class="markdownTableBodyNone"><code>0001</code>   </td><td class="markdownTableBodyNone">device   </td><td class="markdownTableBodyNone">core   </td><td class="markdownTableBodyNone">各デバイスごとの送信スキーマ    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>要求命令</b>   </td><td class="markdownTableBodyNone"><code>0010</code>   </td><td class="markdownTableBodyNone">core/チェックデバイス   </td><td class="markdownTableBodyNone">device (個別/全体)   </td><td class="markdownTableBodyNone">DataRequest / ResetCommand    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>応答送信</b>   </td><td class="markdownTableBodyNone"><code>0011</code>   </td><td class="markdownTableBodyNone">device   </td><td class="markdownTableBodyNone">core/要求元   </td><td class="markdownTableBodyNone">DeviceInfo + StatusInfo   </td></tr>
+</table>
+<p ><code>制御命令</code> でデバイスを制御 <br  />
+ <code>データ送信</code>でデバイスのデータを送信 <br  />
+ <code>状態要求命令</code>に対して<code>応答送信</code>が送られる <br  />
+</p>
+<p >DeviceIDとメッセージ種類でスキーマを特定できる必要がある。</p>
+<h2><a class="anchor" id="autotoc_md37"></a>
+4. プロトコル動作</h2>
+<h3><a class="anchor" id="autotoc_md38"></a>
+フレーム構造</h3>
+<p ><b>CANフレーム構成</b></p>
+<ul>
+<li>フレーム = <code>[CAN拡張ID 29bit][データ 8/64byte]</code></li>
+<li>メッセージID = <code>[vertion][DeviceID][メッセージタイプ]</code> 15bit</li>
+</ul>
+<p >拡張IDに全てのヘッダ情報が含まれるため、データは純粋にProtocol Buffersのシリアライズデータのみを格納する。</p>
+<h3><a class="anchor" id="autotoc_md39"></a>
+フレーム分割</h3>
+<p ><b>単一フレーム</b></p><ul>
+<li>データが8/64Byte以下のときは単一フレームで送信する</li>
+<li>header-flag=1で送信</li>
+</ul>
+<p ><b>分割フレーム時</b></p><ul>
+<li>単一frameに収まらないデータは複数に分割され同一メッセージIDを使い連続送信される</li>
+<li>header-flag=1のフレームはメッセージの先頭フレーム</li>
+<li>header-flag=0のフレームは継続データを示す</li>
+<li>メッセージIDが異なるフレームは独立したメッセージとして扱われる</li>
+</ul>
+<p >このフレーム分割より最大1024Byteまで送信可能になる。(sizeが10bitのため)</p>
+<h3><a class="anchor" id="autotoc_md40"></a>
+欠損検出</h3>
+<p >同一メッセージIDで、受信データ量がsize未満の状態で新たにheader-flag=1のフレームを受信したとき、前のメッセージ欠損したことになる。 <br  />
+ あるメッセージを受信している間他のメッセージを受信しても順序は保たれるためすべて追跡していれば問題ない。</p>
+<h3><a class="anchor" id="autotoc_md41"></a>
+特徴</h3>
+<ul>
+<li>CAN IDのみで全ヘッダ情報を取得可能</li>
+<li>シリアライズ/デシリアライズの詳細はProtocol Buffersに委譲</li>
+<li>CAN標準(8byte) / CAN-FD(64byte)両対応</li>
+<li>CAN拡張IDとprotocol bufferはarduinoでも使える </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

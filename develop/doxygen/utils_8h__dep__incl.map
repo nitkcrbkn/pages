@@ -1,0 +1,14 @@
+<map id="app/modules/platform/utils.h" name="app/modules/platform/utils.h">
+<area shape="rect" id="node1" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="152,5,299,45"/>
+<area shape="rect" id="node2" href="$appMain_8h.html" title=" " alt="" coords="12,453,119,478"/>
+<area shape="rect" id="node4" href="$device__api_8hpp.html" title=" " alt="" coords="305,269,463,309"/>
+<area shape="rect" id="node9" href="$master__api_8hpp.html" title=" " alt="" coords="122,269,281,309"/>
+<area shape="rect" id="node10" href="$frame__builder_8hpp.html" title=" " alt="" coords="205,93,363,133"/>
+<area shape="rect" id="node11" href="$messenger_8hpp.html" title=" " alt="" coords="179,181,338,221"/>
+<area shape="rect" id="node12" href="$test__DJI_8cpp.html" title=" " alt="" coords="439,93,583,133"/>
+<area shape="rect" id="node3" href="$appMain_8cpp.html" title=" " alt="" coords="5,533,125,559"/>
+<area shape="rect" id="node5" href="$proto__can_8hpp.html" title=" " alt="" coords="241,357,399,397"/>
+<area shape="rect" id="node6" href="$motor__proto_8cpp.html" title=" " alt="" coords="530,445,683,485"/>
+<area shape="rect" id="node7" href="$protocan_8cpp.html" title=" " alt="" coords="143,453,337,478"/>
+<area shape="rect" id="node8" href="$test__proto__can_8cpp.html" title=" " alt="" coords="361,445,505,485"/>
+</map>

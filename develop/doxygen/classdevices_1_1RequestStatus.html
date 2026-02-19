@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::RequestStatus クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1RequestStatus.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1RequestStatus-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::RequestStatus クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;request.h&gt;</code></p>
+<div class="dynheader">
+devices::RequestStatus の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus__inherit__graph.png" border="0" usemap="#adevices_1_1RequestStatus_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1RequestStatus_inherit__map" id="adevices_1_1RequestStatus_inherit__map">
+<area shape="rect" title=" " alt="" coords="38,79,197,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::RequestStatus 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus__coll__graph.png" border="0" usemap="#adevices_1_1RequestStatus_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1RequestStatus_coll__map" id="adevices_1_1RequestStatus_coll__map">
+<area shape="rect" title=" " alt="" coords="38,79,197,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a369308ddf71ae51953983d0658b7d5e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7">FieldNumber</a> : uint32_t { <a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7a1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7aad6c35880c58d97c03d60a6ad0f23737">REQUEST</a> = 1
+ }</td></tr>
+<tr class="separator:a369308ddf71ae51953983d0658b7d5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3910b4d65ac0cb1b163522a7016da9c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a3910b4d65ac0cb1b163522a7016da9c8">RequestStatus</a> ()=default</td></tr>
+<tr class="separator:a3910b4d65ac0cb1b163522a7016da9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c25fe3c225b1b29e08eb16bc8fd200a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a3c25fe3c225b1b29e08eb16bc8fd200a">RequestStatus</a> (const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;rhs)</td></tr>
+<tr class="separator:a3c25fe3c225b1b29e08eb16bc8fd200a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7904fcf3e446b24f57c1eb66fbdabc30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a7904fcf3e446b24f57c1eb66fbdabc30">RequestStatus</a> (const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a7904fcf3e446b24f57c1eb66fbdabc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9352e9cbc09ef62e0cfbfec539eae62b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a9352e9cbc09ef62e0cfbfec539eae62b">~RequestStatus</a> () override=default</td></tr>
+<tr class="separator:a9352e9cbc09ef62e0cfbfec539eae62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8946e096eaec6ca3e8af48c2073e5f5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a8946e096eaec6ca3e8af48c2073e5f5f">operator=</a> (const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;rhs)</td></tr>
+<tr class="separator:a8946e096eaec6ca3e8af48c2073e5f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e70092ddc21d8e0c32c85887350d19f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a4e70092ddc21d8e0c32c85887350d19f">operator=</a> (const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:a4e70092ddc21d8e0c32c85887350d19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac885273d99b57910c3a5a7628626f55d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#ac885273d99b57910c3a5a7628626f55d">clear_request</a> ()</td></tr>
+<tr class="separator:ac885273d99b57910c3a5a7628626f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5882fe66a6111b2cd358d64ac807d51e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a5882fe66a6111b2cd358d64ac807d51e">set_request</a> (const bool &amp;value)</td></tr>
+<tr class="separator:a5882fe66a6111b2cd358d64ac807d51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641e9b50e16acdbe8391ec5c021a10d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a641e9b50e16acdbe8391ec5c021a10d5">set_request</a> (const bool &amp;&amp;value)</td></tr>
+<tr class="separator:a641e9b50e16acdbe8391ec5c021a10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21506117559cf67671036c6a07d668b"><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#af21506117559cf67671036c6a07d668b">mutable_request</a> ()</td></tr>
+<tr class="separator:af21506117559cf67671036c6a07d668b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9095ce765ac9cf72a6313d208c68111c"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a9095ce765ac9cf72a6313d208c68111c">get_request</a> () const</td></tr>
+<tr class="separator:a9095ce765ac9cf72a6313d208c68111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a0687e08b32a951d4d822575c095d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a04a0687e08b32a951d4d822575c095d7">request</a> () const</td></tr>
+<tr class="separator:a04a0687e08b32a951d4d822575c095d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6a2322f918bbbfc2879bf666a4e216"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a9b6a2322f918bbbfc2879bf666a4e216">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:a9b6a2322f918bbbfc2879bf666a4e216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad87678917079fc030f90997a6a283e"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#aaad87678917079fc030f90997a6a283e">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:aaad87678917079fc030f90997a6a283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e913ea91f407d25e945ff6e7f3171a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a71e913ea91f407d25e945ff6e7f3171a">clear</a> () override</td></tr>
+<tr class="separator:a71e913ea91f407d25e945ff6e7f3171a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a830dfa9806b912256c275dba995bffa2"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a830dfa9806b912256c275dba995bffa2">field_number_to_name</a> (const <a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:a830dfa9806b912256c275dba995bffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a3ae6e29595b94977ff1da1d709e2a6b3"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1RequestStatus.html#a3ae6e29595b94977ff1da1d709e2a6b3">REQUEST_NAME</a> = &quot;request&quot;</td></tr>
+<tr class="separator:a3ae6e29595b94977ff1da1d709e2a6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a369308ddf71ae51953983d0658b7d5e7" name="a369308ddf71ae51953983d0658b7d5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369308ddf71ae51953983d0658b7d5e7">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7">devices::RequestStatus::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a369308ddf71ae51953983d0658b7d5e7a1c250a21210b7b88a14db9a0cbe71162" name="a369308ddf71ae51953983d0658b7d5e7a1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a369308ddf71ae51953983d0658b7d5e7aad6c35880c58d97c03d60a6ad0f23737" name="a369308ddf71ae51953983d0658b7d5e7aad6c35880c58d97c03d60a6ad0f23737"></a>REQUEST&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a3910b4d65ac0cb1b163522a7016da9c8" name="a3910b4d65ac0cb1b163522a7016da9c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3910b4d65ac0cb1b163522a7016da9c8">&#9670;&#160;</a></span>RequestStatus() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::RequestStatus::RequestStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c25fe3c225b1b29e08eb16bc8fd200a" name="a3c25fe3c225b1b29e08eb16bc8fd200a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c25fe3c225b1b29e08eb16bc8fd200a">&#9670;&#160;</a></span>RequestStatus() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::RequestStatus::RequestStatus </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a3c25fe3c225b1b29e08eb16bc8fd200a_cgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a3c25fe3c225b1b29e08eb16bc8fd200a_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a3c25fe3c225b1b29e08eb16bc8fd200a_cgraph" id="aclassdevices_1_1RequestStatus_a3c25fe3c225b1b29e08eb16bc8fd200a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,164,77"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a9095ce765ac9cf72a6313d208c68111c" title=" " alt="" coords="212,5,371,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a5882fe66a6111b2cd358d64ac807d51e" title=" " alt="" coords="212,69,371,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7904fcf3e446b24f57c1eb66fbdabc30" name="a7904fcf3e446b24f57c1eb66fbdabc30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7904fcf3e446b24f57c1eb66fbdabc30">&#9670;&#160;</a></span>RequestStatus() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::RequestStatus::RequestStatus </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a7904fcf3e446b24f57c1eb66fbdabc30_cgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a7904fcf3e446b24f57c1eb66fbdabc30_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a7904fcf3e446b24f57c1eb66fbdabc30_cgraph" id="aclassdevices_1_1RequestStatus_a7904fcf3e446b24f57c1eb66fbdabc30_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a5882fe66a6111b2cd358d64ac807d51e" title=" " alt="" coords="212,5,371,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9352e9cbc09ef62e0cfbfec539eae62b" name="a9352e9cbc09ef62e0cfbfec539eae62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9352e9cbc09ef62e0cfbfec539eae62b">&#9670;&#160;</a></span>~RequestStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::RequestStatus::~RequestStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a71e913ea91f407d25e945ff6e7f3171a" name="a71e913ea91f407d25e945ff6e7f3171a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e913ea91f407d25e945ff6e7f3171a">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::RequestStatus::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a71e913ea91f407d25e945ff6e7f3171a_cgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a71e913ea91f407d25e945ff6e7f3171a_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a71e913ea91f407d25e945ff6e7f3171a_cgraph" id="aclassdevices_1_1RequestStatus_a71e913ea91f407d25e945ff6e7f3171a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#ac885273d99b57910c3a5a7628626f55d" title=" " alt="" coords="212,5,371,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac885273d99b57910c3a5a7628626f55d" name="ac885273d99b57910c3a5a7628626f55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac885273d99b57910c3a5a7628626f55d">&#9670;&#160;</a></span>clear_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::RequestStatus::clear_request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_ac885273d99b57910c3a5a7628626f55d_icgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_ac885273d99b57910c3a5a7628626f55d_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_ac885273d99b57910c3a5a7628626f55d_icgraph" id="aclassdevices_1_1RequestStatus_ac885273d99b57910c3a5a7628626f55d_icgraph">
+<area shape="rect" title=" " alt="" coords="212,5,371,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a71e913ea91f407d25e945ff6e7f3171a" title=" " alt="" coords="5,5,164,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaad87678917079fc030f90997a6a283e" name="aaad87678917079fc030f90997a6a283e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad87678917079fc030f90997a6a283e">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::RequestStatus::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a830dfa9806b912256c275dba995bffa2" name="a830dfa9806b912256c275dba995bffa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830dfa9806b912256c275dba995bffa2">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::RequestStatus::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9095ce765ac9cf72a6313d208c68111c" name="a9095ce765ac9cf72a6313d208c68111c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9095ce765ac9cf72a6313d208c68111c">&#9670;&#160;</a></span>get_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool &amp; devices::RequestStatus::get_request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a9095ce765ac9cf72a6313d208c68111c_icgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a9095ce765ac9cf72a6313d208c68111c_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a9095ce765ac9cf72a6313d208c68111c_icgraph" id="aclassdevices_1_1RequestStatus_a9095ce765ac9cf72a6313d208c68111c_icgraph">
+<area shape="rect" title=" " alt="" coords="212,37,371,77"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a8946e096eaec6ca3e8af48c2073e5f5f" title=" " alt="" coords="5,5,164,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a3c25fe3c225b1b29e08eb16bc8fd200a" title=" " alt="" coords="5,69,164,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af21506117559cf67671036c6a07d668b" name="af21506117559cf67671036c6a07d668b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21506117559cf67671036c6a07d668b">&#9670;&#160;</a></span>mutable_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool &amp; devices::RequestStatus::mutable_request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e70092ddc21d8e0c32c85887350d19f" name="a4e70092ddc21d8e0c32c85887350d19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e70092ddc21d8e0c32c85887350d19f">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp; devices::RequestStatus::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a4e70092ddc21d8e0c32c85887350d19f_cgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a4e70092ddc21d8e0c32c85887350d19f_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a4e70092ddc21d8e0c32c85887350d19f_cgraph" id="aclassdevices_1_1RequestStatus_a4e70092ddc21d8e0c32c85887350d19f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a5882fe66a6111b2cd358d64ac807d51e" title=" " alt="" coords="212,5,371,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8946e096eaec6ca3e8af48c2073e5f5f" name="a8946e096eaec6ca3e8af48c2073e5f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8946e096eaec6ca3e8af48c2073e5f5f">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp; devices::RequestStatus::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a8946e096eaec6ca3e8af48c2073e5f5f_cgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a8946e096eaec6ca3e8af48c2073e5f5f_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a8946e096eaec6ca3e8af48c2073e5f5f_cgraph" id="aclassdevices_1_1RequestStatus_a8946e096eaec6ca3e8af48c2073e5f5f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,37,164,77"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a9095ce765ac9cf72a6313d208c68111c" title=" " alt="" coords="212,5,371,45"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a5882fe66a6111b2cd358d64ac807d51e" title=" " alt="" coords="212,69,371,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a04a0687e08b32a951d4d822575c095d7" name="a04a0687e08b32a951d4d822575c095d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a0687e08b32a951d4d822575c095d7">&#9670;&#160;</a></span>request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::RequestStatus::request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b6a2322f918bbbfc2879bf666a4e216" name="a9b6a2322f918bbbfc2879bf666a4e216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6a2322f918bbbfc2879bf666a4e216">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::RequestStatus::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a641e9b50e16acdbe8391ec5c021a10d5" name="a641e9b50e16acdbe8391ec5c021a10d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641e9b50e16acdbe8391ec5c021a10d5">&#9670;&#160;</a></span>set_request() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::RequestStatus::set_request </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5882fe66a6111b2cd358d64ac807d51e" name="a5882fe66a6111b2cd358d64ac807d51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5882fe66a6111b2cd358d64ac807d51e">&#9670;&#160;</a></span>set_request() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::RequestStatus::set_request </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1RequestStatus_a5882fe66a6111b2cd358d64ac807d51e_icgraph.png" border="0" usemap="#aclassdevices_1_1RequestStatus_a5882fe66a6111b2cd358d64ac807d51e_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1RequestStatus_a5882fe66a6111b2cd358d64ac807d51e_icgraph" id="aclassdevices_1_1RequestStatus_a5882fe66a6111b2cd358d64ac807d51e_icgraph">
+<area shape="rect" title=" " alt="" coords="357,69,516,109"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a8946e096eaec6ca3e8af48c2073e5f5f" title=" " alt="" coords="151,5,309,45"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title="指定デバイスにステータス要求を送る" alt="" coords="165,69,295,109"/>
+<area shape="rect" href="classdevices_1_1RequestStatus.html#a3c25fe3c225b1b29e08eb16bc8fd200a" title=" " alt="" coords="151,133,309,173"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,77,103,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a3ae6e29595b94977ff1da1d709e2a6b3" name="a3ae6e29595b94977ff1da1d709e2a6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae6e29595b94977ff1da1d709e2a6b3">&#9670;&#160;</a></span>REQUEST_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::RequestStatus::REQUEST_NAME = &quot;request&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="request_8h.html">request.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="classdevices_1_1RequestStatus.html">RequestStatus</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

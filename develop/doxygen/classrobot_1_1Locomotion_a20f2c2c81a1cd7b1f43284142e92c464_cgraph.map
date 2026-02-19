@@ -1,0 +1,13 @@
+<map id="robot::Locomotion::clear" name="robot::Locomotion::clear">
+<area shape="rect" id="node1" title=" " alt="" coords="5,101,136,141"/>
+<area shape="rect" id="node2" href="$classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="184,5,315,45"/>
+<area shape="rect" id="node9" href="$classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="184,69,315,109"/>
+<area shape="rect" id="node10" href="$classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="184,133,315,173"/>
+<area shape="rect" id="node11" href="$classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="184,197,315,237"/>
+<area shape="rect" id="node3" href="$classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="363,109,473,134"/>
+<area shape="rect" id="node4" href="$classrobot_1_1DJI.html#a7dce74fca1cef17b6945d0dc99e1305f" title=" " alt="" coords="526,10,675,35"/>
+<area shape="rect" id="node5" href="$classrobot_1_1DJI.html#a1de073717f1947d37ee8dd36cf2f58dc" title=" " alt="" coords="521,59,680,85"/>
+<area shape="rect" id="node6" href="$classrobot_1_1DJI.html#a185c53a80fa68eb4e6ff78d00312d5ca" title=" " alt="" coords="524,109,677,134"/>
+<area shape="rect" id="node7" href="$classrobot_1_1DJI.html#a01e6059eba4bfe298fe218ff5ae3adb9" title=" " alt="" coords="527,158,674,183"/>
+<area shape="rect" id="node8" href="$classrobot_1_1DJI.html#a0cbd7ea9afd35eca38570aa6fe7cc46d" title=" " alt="" coords="523,208,678,248"/>
+</map>

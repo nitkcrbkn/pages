@@ -1,0 +1,13 @@
+<map id="robot::DJI::clear_temp" name="robot::DJI::clear_temp">
+<area shape="rect" id="node1" title=" " alt="" coords="1308,109,1455,134"/>
+<area shape="rect" id="node2" href="$classrobot_1_1DJI.html#af1c06f0c79dbf1977adbb66415c536f9" title=" " alt="" coords="1149,109,1260,134"/>
+<area shape="rect" id="node3" href="$classrobot_1_1Locomotion.html#a7e07ea8c5a1edce5b26c55c20b47b0e4" title=" " alt="" coords="971,5,1101,45"/>
+<area shape="rect" id="node9" href="$classrobot_1_1Locomotion.html#afb595871741d0a1e13baca4a7e0eb6df" title=" " alt="" coords="971,69,1101,109"/>
+<area shape="rect" id="node10" href="$classrobot_1_1Locomotion.html#acf08a984a774fa12634502a3ac1a8298" title=" " alt="" coords="971,133,1101,173"/>
+<area shape="rect" id="node11" href="$classrobot_1_1Locomotion.html#a77a60e70427e31257cddbac5b16d4b6d" title=" " alt="" coords="971,197,1101,237"/>
+<area shape="rect" id="node4" href="$classrobot_1_1Locomotion.html#a20f2c2c81a1cd7b1f43284142e92c464" title=" " alt="" coords="792,101,923,141"/>
+<area shape="rect" id="node5" href="$classrobot_1_1Telemetry.html#ab5b54dc8a79056c555df26e41dcfa833" title=" " alt="" coords="596,101,744,141"/>
+<area shape="rect" id="node6" href="$classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="400,109,548,134"/>
+<area shape="rect" id="node7" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="204,109,352,134"/>
+<area shape="rect" id="node8" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,101,156,141"/>
+</map>

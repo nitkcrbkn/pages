@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: BitUtil 名前空間</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespaceBitUtil.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle"><div class="title">BitUtil 名前空間</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a8f4765916b99aace6d247993a64ec6ad"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBitUtil.html#a8f4765916b99aace6d247993a64ec6ad">extractBits</a> (uint32_t value, <a class="el" href="structBitRange.html">BitRange</a> range)</td></tr>
+<tr class="separator:a8f4765916b99aace6d247993a64ec6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7e93fc61fa298dfe3b48a392394edd"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd">insertBits</a> (uint32_t target, uint32_t value, uint8_t offset, uint8_t width)</td></tr>
+<tr class="separator:a4e7e93fc61fa298dfe3b48a392394edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71923663b7ba4db1575ec5b10a02ca5"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBitUtil.html#aa71923663b7ba4db1575ec5b10a02ca5">checkRange</a> (uint32_t value, uint8_t maxBits)</td></tr>
+<tr class="memdesc:aa71923663b7ba4db1575ec5b10a02ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">値が指定されたビット幅に収まるか確認します (32bit)  <a href="namespaceBitUtil.html#aa71923663b7ba4db1575ec5b10a02ca5">[詳解]</a><br /></td></tr>
+<tr class="separator:aa71923663b7ba4db1575ec5b10a02ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded90152308ee9fd81b2b5dd05792ebb"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBitUtil.html#aded90152308ee9fd81b2b5dd05792ebb">checkRange</a> (uint16_t value, uint8_t maxBits)</td></tr>
+<tr class="memdesc:aded90152308ee9fd81b2b5dd05792ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">値が指定されたビット幅に収まるか確認します (16bit)  <a href="namespaceBitUtil.html#aded90152308ee9fd81b2b5dd05792ebb">[詳解]</a><br /></td></tr>
+<tr class="separator:aded90152308ee9fd81b2b5dd05792ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd37a4618f55ee4f8e095bc3932a7429"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceBitUtil.html#afd37a4618f55ee4f8e095bc3932a7429">checkRange</a> (uint8_t value, uint8_t maxBits)</td></tr>
+<tr class="memdesc:afd37a4618f55ee4f8e095bc3932a7429"><td class="mdescLeft">&#160;</td><td class="mdescRight">値が指定されたビット幅に収まるか確認します (8bit)  <a href="namespaceBitUtil.html#afd37a4618f55ee4f8e095bc3932a7429">[詳解]</a><br /></td></tr>
+<tr class="separator:afd37a4618f55ee4f8e095bc3932a7429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aded90152308ee9fd81b2b5dd05792ebb" name="aded90152308ee9fd81b2b5dd05792ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded90152308ee9fd81b2b5dd05792ebb">&#9670;&#160;</a></span>checkRange() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool BitUtil::checkRange </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>maxBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>値が指定されたビット幅に収まるか確認します (16bit) </p>
+
+</div>
+</div>
+<a id="aa71923663b7ba4db1575ec5b10a02ca5" name="aa71923663b7ba4db1575ec5b10a02ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71923663b7ba4db1575ec5b10a02ca5">&#9670;&#160;</a></span>checkRange() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool BitUtil::checkRange </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>maxBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>値が指定されたビット幅に収まるか確認します (32bit) </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBitUtil_aa71923663b7ba4db1575ec5b10a02ca5_icgraph.png" border="0" usemap="#anamespaceBitUtil_aa71923663b7ba4db1575ec5b10a02ca5_icgraph" alt=""/></div>
+<map name="anamespaceBitUtil_aa71923663b7ba4db1575ec5b10a02ca5_icgraph" id="anamespaceBitUtil_aa71923663b7ba4db1575ec5b10a02ca5_icgraph">
+<area shape="rect" title="値が指定されたビット幅に収まるか確認します (32bit)" alt="" coords="403,77,539,102"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a931f5a25720a155c474e56a642fe404c" title=" " alt="" coords="204,5,355,45"/>
+<area shape="rect" href="classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef" title=" " alt="" coords="210,69,349,109"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#aad87e89c87a98ae1c2450cebab655853" title=" " alt="" coords="204,133,355,173"/>
+<area shape="rect" href="classproto__can_1_1DeviceID.html#aad2d7549399be5c0ad93c266a953a22b" title=" " alt="" coords="11,69,150,109"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a825c6f7d7fe01c4927733ecec9aab939" title=" " alt="" coords="5,133,156,173"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd37a4618f55ee4f8e095bc3932a7429" name="afd37a4618f55ee4f8e095bc3932a7429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd37a4618f55ee4f8e095bc3932a7429">&#9670;&#160;</a></span>checkRange() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool BitUtil::checkRange </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>maxBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>値が指定されたビット幅に収まるか確認します (8bit) </p>
+
+</div>
+</div>
+<a id="a8f4765916b99aace6d247993a64ec6ad" name="a8f4765916b99aace6d247993a64ec6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4765916b99aace6d247993a64ec6ad">&#9670;&#160;</a></span>extractBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t BitUtil::extractBits </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structBitRange.html">BitRange</a>&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >指定したオフセットから指定した幅のビットを抽出する </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBitUtil_a8f4765916b99aace6d247993a64ec6ad_icgraph.png" border="0" usemap="#anamespaceBitUtil_a8f4765916b99aace6d247993a64ec6ad_icgraph" alt=""/></div>
+<map name="anamespaceBitUtil_a8f4765916b99aace6d247993a64ec6ad_icgraph" id="anamespaceBitUtil_a8f4765916b99aace6d247993a64ec6ad_icgraph">
+<area shape="rect" title=" " alt="" coords="547,35,673,60"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a8f11fc8e1cda0adf423c4ae880d84afa" title=" " alt="" coords="348,27,499,67"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="190,5,261,31"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a19183173ecbdb5bfb9556602aa2fef47" title=" " alt="" coords="151,55,300,95"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,5,93,31"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,63,103,88"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e7e93fc61fa298dfe3b48a392394edd" name="a4e7e93fc61fa298dfe3b48a392394edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7e93fc61fa298dfe3b48a392394edd">&#9670;&#160;</a></span>insertBits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t BitUtil::insertBits </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >ターゲットの指定範囲に値を埋め込む </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceBitUtil_a4e7e93fc61fa298dfe3b48a392394edd_icgraph.png" border="0" usemap="#anamespaceBitUtil_a4e7e93fc61fa298dfe3b48a392394edd_icgraph" alt=""/></div>
+<map name="anamespaceBitUtil_a4e7e93fc61fa298dfe3b48a392394edd_icgraph" id="anamespaceBitUtil_a4e7e93fc61fa298dfe3b48a392394edd_icgraph">
+<area shape="rect" title=" " alt="" coords="744,77,863,102"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="545,69,696,109"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb" title=" " alt="" coords="348,5,497,45"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="348,69,497,109"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="348,133,497,173"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="151,5,300,45"/>
+<area shape="rect" href="classproto__can_1_1Device.html#a160d8e9bbaada5940a55b9ff60cd0503" title="直近に受信した Command をキャッシュから取得する（ポーリング）" alt="" coords="160,69,291,109"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="160,197,291,237"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title="request_stats() に対する応答をキャッシュから取得する（ポーリング）" alt="" coords="160,133,291,173"/>
+<area shape="rect" href="protocan_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,77,79,102"/>
+<area shape="rect" href="test__proto__can_8cpp.html#a16bff0f4aff4c4505bb63d5053324c52" title=" " alt="" coords="5,141,103,166"/>
+<area shape="rect" href="appMain_8cpp.html#abce06be17fc37d675118a678a8100a36" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="15,197,93,222"/>
+<area shape="rect" href="motor__proto_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="29,246,79,271"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceBitUtil.html">BitUtil</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

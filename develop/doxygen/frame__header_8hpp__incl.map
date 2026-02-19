@@ -1,0 +1,12 @@
+<map id="app/modules/ProtoCAN/core/frame_header.hpp" name="app/modules/ProtoCAN/core/frame_header.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="92,5,251,45"/>
+<area shape="rect" id="node2" title=" " alt="" coords="34,255,85,280"/>
+<area shape="rect" id="node3" title=" " alt="" coords="200,328,261,353"/>
+<area shape="rect" id="node4" href="$protocol__types_8hpp.html" title=" " alt="" coords="366,93,498,133"/>
+<area shape="rect" id="node8" href="$bitwise__ops_8hpp.html" title=" " alt="" coords="250,255,429,280"/>
+<area shape="rect" id="node5" title=" " alt="" coords="470,181,548,207"/>
+<area shape="rect" id="node6" title=" " alt="" coords="572,181,630,207"/>
+<area shape="rect" id="node7" title=" " alt="" coords="333,181,394,207"/>
+<area shape="rect" id="node9" href="$frame__field_8hpp.html" title=" " alt="" coords="85,181,258,207"/>
+<area shape="rect" id="node10" title=" " alt="" coords="160,255,226,280"/>
+</map>

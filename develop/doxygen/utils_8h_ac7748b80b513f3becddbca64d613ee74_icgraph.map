@@ -1,0 +1,5 @@
+<map id="UART_SendBytes" name="UART_SendBytes">
+<area shape="rect" id="node1" title="UART 送信（1バイトずつ）" alt="" coords="399,13,527,38"/>
+<area shape="rect" id="node2" href="$classTelemController.html#afc1f3386e69d9968990e88a702f7baf1" title="内部のテレメトリーデータをシリアライズしてUART経由で送信 [マジックナンバー(2B:0xFADE)] + [データ長(2B)] + [データ本体]" alt="" coords="204,13,351,38"/>
+<area shape="rect" id="node3" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,5,156,45"/>
+</map>

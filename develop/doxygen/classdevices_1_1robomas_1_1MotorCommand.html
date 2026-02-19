@@ -1,0 +1,3075 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: devices::robomas::MotorCommand クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classdevices_1_1robomas_1_1MotorCommand.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="classdevices_1_1robomas_1_1MotorCommand-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">devices::robomas::MotorCommand クラス<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;robomas.h&gt;</code></p>
+<div class="dynheader">
+devices::robomas::MotorCommand の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand__inherit__graph.png" border="0" usemap="#adevices_1_1robomas_1_1MotorCommand_inherit__map" alt="Inheritance graph"/></div>
+<map name="adevices_1_1robomas_1_1MotorCommand_inherit__map" id="adevices_1_1robomas_1_1MotorCommand_inherit__map">
+<area shape="rect" title=" " alt="" coords="7,79,228,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+devices::robomas::MotorCommand 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand__coll__graph.png" border="0" usemap="#adevices_1_1robomas_1_1MotorCommand_coll__map" alt="Collaboration graph"/></div>
+<map name="adevices_1_1robomas_1_1MotorCommand_coll__map" id="adevices_1_1robomas_1_1MotorCommand_coll__map">
+<area shape="rect" title=" " alt="" coords="7,79,228,104"/>
+<area shape="rect" title=" " alt="" coords="5,5,229,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a7b5d3084224ef274532cb1249b0ba956"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">FieldNumber</a> : uint32_t { <br />
+&#160;&#160;<a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a1c250a21210b7b88a14db9a0cbe71162">NOT_SET</a> = 0
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956af6c0b66bd9c1a776a3d134ffe2aa69cb">MOTOR_ID</a> = 1
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956ac9daae3d81bf19632c686c17841b0c1e">MOTOR_TYPE</a> = 2
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a7a601a2c0ecbccf73150748332d84fda">TARGET_CURRENT</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956aa25921bcbc90e3b0b7d378ae9d10af61">TARGET_SPEED</a> = 4
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a4f8a32f8785501fe7f4ca885600e50a9">TARGET_TORQUE</a> = 5
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a2fa89a641701ff6684ef0e99e269c87a">TARGET_POSITION</a> = 6
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a34225c1cf0341960a46a1624fb6d665e">TRAJECTORY</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a960edf351db409adf4b01eecb246d115">POSITION_PID</a> = 8
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a3e61921d63090aff7047c529561ecd99">SPEED_PID</a> = 9
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a2fdf59518c2420ca8d26e37c5100e48e">LOW_SPEED_PID</a> = 10
+, <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956a8b8699b6d6fd24676ca6d1c1cd4d84d3">SPEED_THRESHOLD</a> = 11
+<br />
+ }</td></tr>
+<tr class="separator:a7b5d3084224ef274532cb1249b0ba956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad4f190f35b1046c9af420bf54734759d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ad4f190f35b1046c9af420bf54734759d">MotorCommand</a> ()=default</td></tr>
+<tr class="separator:ad4f190f35b1046c9af420bf54734759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5fea540537da245e36f07a06a7029a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a">MotorCommand</a> (const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:a1e5fea540537da245e36f07a06a7029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8c0a7384feed56cd137275305b05d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aba8c0a7384feed56cd137275305b05d4">MotorCommand</a> (const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:aba8c0a7384feed56cd137275305b05d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56add0bb076b502229bec145f07c5ef7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a56add0bb076b502229bec145f07c5ef7">~MotorCommand</a> () override=default</td></tr>
+<tr class="separator:a56add0bb076b502229bec145f07c5ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b9295b0de4eff55a96db7391c50cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;rhs)</td></tr>
+<tr class="separator:af3b9295b0de4eff55a96db7391c50cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44a2602aa4fbf2f1e4e671a8d4fb9e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af44a2602aa4fbf2f1e4e671a8d4fb9e5">operator=</a> (const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&amp;rhs) noexcept</td></tr>
+<tr class="separator:af44a2602aa4fbf2f1e4e671a8d4fb9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2110d74916a35935e2daaf861cfd07f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a2110d74916a35935e2daaf861cfd07f3">clear_motor_id</a> ()</td></tr>
+<tr class="separator:a2110d74916a35935e2daaf861cfd07f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eff92d2fd464fad59b69a2541188d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a8eff92d2fd464fad59b69a2541188d06">set_motor_id</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a8eff92d2fd464fad59b69a2541188d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6040879abff890e9099526f8ac06e503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a6040879abff890e9099526f8ac06e503">set_motor_id</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a6040879abff890e9099526f8ac06e503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba30497ec91401abd5dac0382c7747a"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a5ba30497ec91401abd5dac0382c7747a">mutable_motor_id</a> ()</td></tr>
+<tr class="separator:a5ba30497ec91401abd5dac0382c7747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3d2789d5da26279153bf184eda369e"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#add3d2789d5da26279153bf184eda369e">get_motor_id</a> () const</td></tr>
+<tr class="separator:add3d2789d5da26279153bf184eda369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f38b8bb948888c5bc615a3e9095c82"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a93f38b8bb948888c5bc615a3e9095c82">motor_id</a> () const</td></tr>
+<tr class="separator:a93f38b8bb948888c5bc615a3e9095c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885f85ce7d0810976b9fdec82dc40797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a885f85ce7d0810976b9fdec82dc40797">clear_motor_type</a> ()</td></tr>
+<tr class="separator:a885f85ce7d0810976b9fdec82dc40797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1bfed648b76571392d73ca053d2cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#adb1bfed648b76571392d73ca053d2cc2">set_motor_type</a> (const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp;value)</td></tr>
+<tr class="separator:adb1bfed648b76571392d73ca053d2cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af337ade7b0fa3e9957bd972660e1753f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af337ade7b0fa3e9957bd972660e1753f">set_motor_type</a> (const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp;&amp;value)</td></tr>
+<tr class="separator:af337ade7b0fa3e9957bd972660e1753f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8da36e42935bdc7454b9965364f951"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a9b8da36e42935bdc7454b9965364f951">get_motor_type</a> () const</td></tr>
+<tr class="separator:a9b8da36e42935bdc7454b9965364f951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c8d20ec8db9d28bf2c3b02ebb7e5d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ad1c8d20ec8db9d28bf2c3b02ebb7e5d6">motor_type</a> () const</td></tr>
+<tr class="separator:ad1c8d20ec8db9d28bf2c3b02ebb7e5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adee6a7553417a1d1e1e8edc227c152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152">clear_position_pid</a> ()</td></tr>
+<tr class="separator:a0adee6a7553417a1d1e1e8edc227c152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8d0b1af51e3ffb4a3bc6fbe22762d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7a8d0b1af51e3ffb4a3bc6fbe22762d4">set_position_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;value)</td></tr>
+<tr class="separator:a7a8d0b1af51e3ffb4a3bc6fbe22762d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cfcf8a9c12d728b99586f7afbe1dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a66cfcf8a9c12d728b99586f7afbe1dc6">set_position_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;value)</td></tr>
+<tr class="separator:a66cfcf8a9c12d728b99586f7afbe1dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b69176b036a3c695fc616d4101ef7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1b69176b036a3c695fc616d4101ef7fa">mutable_position_pid</a> ()</td></tr>
+<tr class="separator:a1b69176b036a3c695fc616d4101ef7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1295eeef0dc124ced60b483d2e6d140d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1295eeef0dc124ced60b483d2e6d140d">get_position_pid</a> () const</td></tr>
+<tr class="separator:a1295eeef0dc124ced60b483d2e6d140d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485ec2de2f072d7bcb4b091f7038724f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a485ec2de2f072d7bcb4b091f7038724f">position_pid</a> () const</td></tr>
+<tr class="separator:a485ec2de2f072d7bcb4b091f7038724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1043fb0dd652e25f34d454598ddbf4df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df">clear_speed_pid</a> ()</td></tr>
+<tr class="separator:a1043fb0dd652e25f34d454598ddbf4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec63d3d0a0bd92d2a600e8cc4918cb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aec63d3d0a0bd92d2a600e8cc4918cb22">set_speed_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;value)</td></tr>
+<tr class="separator:aec63d3d0a0bd92d2a600e8cc4918cb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9cf9a748f4cc7995c189903732ef58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a0f9cf9a748f4cc7995c189903732ef58">set_speed_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;value)</td></tr>
+<tr class="separator:a0f9cf9a748f4cc7995c189903732ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9338e4111743493f5d9cd2f210c8d99a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a9338e4111743493f5d9cd2f210c8d99a">mutable_speed_pid</a> ()</td></tr>
+<tr class="separator:a9338e4111743493f5d9cd2f210c8d99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2efb09a241922c39d7403e5a0a200c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#afc2efb09a241922c39d7403e5a0a200c">get_speed_pid</a> () const</td></tr>
+<tr class="separator:afc2efb09a241922c39d7403e5a0a200c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2b6974cc77e97e87c201fdc588245a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a3f2b6974cc77e97e87c201fdc588245a">speed_pid</a> () const</td></tr>
+<tr class="separator:a3f2b6974cc77e97e87c201fdc588245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd54d79c348ade76150601983a9c3095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095">clear_low_speed_pid</a> ()</td></tr>
+<tr class="separator:afd54d79c348ade76150601983a9c3095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6858b685fb63d832cf08d3c52abc17a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af6858b685fb63d832cf08d3c52abc17a">set_low_speed_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;value)</td></tr>
+<tr class="separator:af6858b685fb63d832cf08d3c52abc17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c7872306a1e7ccebcfc7f3914d6fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af8c7872306a1e7ccebcfc7f3914d6fc2">set_low_speed_pid</a> (const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;value)</td></tr>
+<tr class="separator:af8c7872306a1e7ccebcfc7f3914d6fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6c990f46ff99b2850ccaccec55d720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7d6c990f46ff99b2850ccaccec55d720">mutable_low_speed_pid</a> ()</td></tr>
+<tr class="separator:a7d6c990f46ff99b2850ccaccec55d720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa8572edf00724773b89b81edfe8c19"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#acfa8572edf00724773b89b81edfe8c19">get_low_speed_pid</a> () const</td></tr>
+<tr class="separator:acfa8572edf00724773b89b81edfe8c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ddb4b68a9252e335e081d7a71f0aba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ab2ddb4b68a9252e335e081d7a71f0aba">low_speed_pid</a> () const</td></tr>
+<tr class="separator:ab2ddb4b68a9252e335e081d7a71f0aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04670e8fd7cc5051483b5bfda902246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ab04670e8fd7cc5051483b5bfda902246">clear_speed_threshold</a> ()</td></tr>
+<tr class="separator:ab04670e8fd7cc5051483b5bfda902246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1558dd27e6c75849c90db02b876ca6f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1558dd27e6c75849c90db02b876ca6f0">set_speed_threshold</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a1558dd27e6c75849c90db02b876ca6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05645c86fca111d90331a7a9a2fbc8ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a05645c86fca111d90331a7a9a2fbc8ad">set_speed_threshold</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a05645c86fca111d90331a7a9a2fbc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce3c2fe5df3319255bc276f9ea9846b"><td class="memItemLeft" align="right" valign="top">int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a3ce3c2fe5df3319255bc276f9ea9846b">mutable_speed_threshold</a> ()</td></tr>
+<tr class="separator:a3ce3c2fe5df3319255bc276f9ea9846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13476141030041235ae1265c7f2e0f1"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af13476141030041235ae1265c7f2e0f1">get_speed_threshold</a> () const</td></tr>
+<tr class="separator:af13476141030041235ae1265c7f2e0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f3f4cd001f2802ee81056d8993fe80"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a12f3f4cd001f2802ee81056d8993fe80">speed_threshold</a> () const</td></tr>
+<tr class="separator:a12f3f4cd001f2802ee81056d8993fe80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3aeceebf44ca9c9b59ce5e248bdd27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">FieldNumber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7f3aeceebf44ca9c9b59ce5e248bdd27">get_which_target</a> () const</td></tr>
+<tr class="separator:a7f3aeceebf44ca9c9b59ce5e248bdd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b04316d28cc3fce18d04d4c84104c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a62b04316d28cc3fce18d04d4c84104c2">has_target_current</a> () const</td></tr>
+<tr class="separator:a62b04316d28cc3fce18d04d4c84104c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21cc95463bf4ac2c5c6b23c078a01bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ac21cc95463bf4ac2c5c6b23c078a01bd">clear_target_current</a> ()</td></tr>
+<tr class="separator:ac21cc95463bf4ac2c5c6b23c078a01bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44aca64ad0081d844661655935afe38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aa44aca64ad0081d844661655935afe38">set_target_current</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:aa44aca64ad0081d844661655935afe38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3d0d55d226cca17d438dc9758e2ef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a2e3d0d55d226cca17d438dc9758e2ef8">set_target_current</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a2e3d0d55d226cca17d438dc9758e2ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda4fd5a5c3b2afcb5da5bd47e59fbee"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#afda4fd5a5c3b2afcb5da5bd47e59fbee">get_target_current</a> () const</td></tr>
+<tr class="separator:afda4fd5a5c3b2afcb5da5bd47e59fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2977bd24cc5e09d43611f278ec4418"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aea2977bd24cc5e09d43611f278ec4418">target_current</a> () const</td></tr>
+<tr class="separator:aea2977bd24cc5e09d43611f278ec4418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fcdc72305487fec1de6f3b2b95f476"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ab4fcdc72305487fec1de6f3b2b95f476">has_target_speed</a> () const</td></tr>
+<tr class="separator:ab4fcdc72305487fec1de6f3b2b95f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e50766d0a1d99bb7e0e1f9245f1241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a12e50766d0a1d99bb7e0e1f9245f1241">clear_target_speed</a> ()</td></tr>
+<tr class="separator:a12e50766d0a1d99bb7e0e1f9245f1241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e1b32607e5fcd606ebf907a81acf56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a11e1b32607e5fcd606ebf907a81acf56">set_target_speed</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a11e1b32607e5fcd606ebf907a81acf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703475d4d442ffd243f217fcbe7f217d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a703475d4d442ffd243f217fcbe7f217d">set_target_speed</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:a703475d4d442ffd243f217fcbe7f217d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1431f612d851535b1df8221e7e76197"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ab1431f612d851535b1df8221e7e76197">get_target_speed</a> () const</td></tr>
+<tr class="separator:ab1431f612d851535b1df8221e7e76197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67bec2f0b36c2e5cc23dc707c5828b27"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a67bec2f0b36c2e5cc23dc707c5828b27">target_speed</a> () const</td></tr>
+<tr class="separator:a67bec2f0b36c2e5cc23dc707c5828b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a817d4423ac33ec5988213329bd2466"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a0a817d4423ac33ec5988213329bd2466">has_target_torque</a> () const</td></tr>
+<tr class="separator:a0a817d4423ac33ec5988213329bd2466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00839d23ef9f05cfed81b5ef947741fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a00839d23ef9f05cfed81b5ef947741fd">clear_target_torque</a> ()</td></tr>
+<tr class="separator:a00839d23ef9f05cfed81b5ef947741fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfb5b14fe2a816d1688902c7044a050"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aadfb5b14fe2a816d1688902c7044a050">set_target_torque</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:aadfb5b14fe2a816d1688902c7044a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca25c87b9eb191640d17626add287ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#afca25c87b9eb191640d17626add287ec">set_target_torque</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:afca25c87b9eb191640d17626add287ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822477369164034e3b29ba2f3a77c3f9"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a822477369164034e3b29ba2f3a77c3f9">get_target_torque</a> () const</td></tr>
+<tr class="separator:a822477369164034e3b29ba2f3a77c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585d3ad4de4e689580ba2a38ad0177ab"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a585d3ad4de4e689580ba2a38ad0177ab">target_torque</a> () const</td></tr>
+<tr class="separator:a585d3ad4de4e689580ba2a38ad0177ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcc6140cd065720def379c0cbc67bde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a8dcc6140cd065720def379c0cbc67bde">has_target_position</a> () const</td></tr>
+<tr class="separator:a8dcc6140cd065720def379c0cbc67bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1742b46f18b71ebd19be1e363f714d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a8a1742b46f18b71ebd19be1e363f714d">clear_target_position</a> ()</td></tr>
+<tr class="separator:a8a1742b46f18b71ebd19be1e363f714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0834c2b89bdaa762479f6796d5d2969a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a0834c2b89bdaa762479f6796d5d2969a">set_target_position</a> (const int32_t &amp;value)</td></tr>
+<tr class="separator:a0834c2b89bdaa762479f6796d5d2969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5bf1024a99c1ffde3688134777dc622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ad5bf1024a99c1ffde3688134777dc622">set_target_position</a> (const int32_t &amp;&amp;value)</td></tr>
+<tr class="separator:ad5bf1024a99c1ffde3688134777dc622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1000de08048ddefe4b8a0e3a127cee7d"><td class="memItemLeft" align="right" valign="top">const int32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1000de08048ddefe4b8a0e3a127cee7d">get_target_position</a> () const</td></tr>
+<tr class="separator:a1000de08048ddefe4b8a0e3a127cee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9d10a0e0eaa2f0c5556a1033a8cffb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#aab9d10a0e0eaa2f0c5556a1033a8cffb">target_position</a> () const</td></tr>
+<tr class="separator:aab9d10a0e0eaa2f0c5556a1033a8cffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cfaa31f2185fec4b96cba18ddafb02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ad4cfaa31f2185fec4b96cba18ddafb02">has_trajectory</a> () const</td></tr>
+<tr class="separator:ad4cfaa31f2185fec4b96cba18ddafb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74045f345dc1fb9eeabbce911a3bb61f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a74045f345dc1fb9eeabbce911a3bb61f">clear_trajectory</a> ()</td></tr>
+<tr class="separator:a74045f345dc1fb9eeabbce911a3bb61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbdf1eb5d804b647d32ccbc2297448b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#acdbdf1eb5d804b647d32ccbc2297448b">set_trajectory</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;value)</td></tr>
+<tr class="separator:acdbdf1eb5d804b647d32ccbc2297448b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8afd4d2c1b9304b63afa996e9c50d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a1c8afd4d2c1b9304b63afa996e9c50d6">set_trajectory</a> (const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;value)</td></tr>
+<tr class="separator:a1c8afd4d2c1b9304b63afa996e9c50d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196b4702525e4e570e88e7707ed94f16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a196b4702525e4e570e88e7707ed94f16">mutable_trajectory</a> ()</td></tr>
+<tr class="separator:a196b4702525e4e570e88e7707ed94f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad698c7c6936b62dde9857203ce217fc3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ad698c7c6936b62dde9857203ce217fc3">get_trajectory</a> () const</td></tr>
+<tr class="separator:ad698c7c6936b62dde9857203ce217fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a898eab500ce165259e626906edd44027"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a898eab500ce165259e626906edd44027">trajectory</a> () const</td></tr>
+<tr class="separator:a898eab500ce165259e626906edd44027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd72a722225941ce549dbbf863dd53c9"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9">serialize</a> (::EmbeddedProto::WriteBufferInterface &amp;buffer) const override</td></tr>
+<tr class="separator:afd72a722225941ce549dbbf863dd53c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480cad7a9c8f9ebf9788f7ab999eb26b"><td class="memItemLeft" align="right" valign="top">::EmbeddedProto::Error&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a480cad7a9c8f9ebf9788f7ab999eb26b">deserialize</a> (::EmbeddedProto::ReadBufferInterface &amp;buffer) override</td></tr>
+<tr class="separator:a480cad7a9c8f9ebf9788f7ab999eb26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f2d69c38ec2fe1e15933548922496f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f">clear</a> () override</td></tr>
+<tr class="separator:ae4f2d69c38ec2fe1e15933548922496f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:abbed1914e721102756ad2726432f8958"><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#abbed1914e721102756ad2726432f8958">field_number_to_name</a> (const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">FieldNumber</a> fieldNumber)</td></tr>
+<tr class="separator:abbed1914e721102756ad2726432f8958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a60edc9cfebc6e62679b3bba4f3d4d25d"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a60edc9cfebc6e62679b3bba4f3d4d25d">MOTOR_ID_NAME</a> = &quot;motor_id&quot;</td></tr>
+<tr class="separator:a60edc9cfebc6e62679b3bba4f3d4d25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9698799395c84d58dadabc29ddd49c6"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af9698799395c84d58dadabc29ddd49c6">MOTOR_TYPE_NAME</a> = &quot;motor_type&quot;</td></tr>
+<tr class="separator:af9698799395c84d58dadabc29ddd49c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725114e8e762705224d6a790e6d81650"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a725114e8e762705224d6a790e6d81650">POSITION_PID_NAME</a> = &quot;position_pid&quot;</td></tr>
+<tr class="separator:a725114e8e762705224d6a790e6d81650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd7f1c7007e7af07d3d56a16df6389c"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#abdd7f1c7007e7af07d3d56a16df6389c">SPEED_PID_NAME</a> = &quot;speed_pid&quot;</td></tr>
+<tr class="separator:abdd7f1c7007e7af07d3d56a16df6389c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b4d59a17cf9f192849888a0b85cd69"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a57b4d59a17cf9f192849888a0b85cd69">LOW_SPEED_PID_NAME</a> = &quot;low_speed_pid&quot;</td></tr>
+<tr class="separator:a57b4d59a17cf9f192849888a0b85cd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca349703fc02b58927dea5e919f6a01"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a6ca349703fc02b58927dea5e919f6a01">SPEED_THRESHOLD_NAME</a> = &quot;speed_threshold&quot;</td></tr>
+<tr class="separator:a6ca349703fc02b58927dea5e919f6a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56955bd14b1ef644a96455b0ef1913d"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#ab56955bd14b1ef644a96455b0ef1913d">TARGET_CURRENT_NAME</a> = &quot;target_current&quot;</td></tr>
+<tr class="separator:ab56955bd14b1ef644a96455b0ef1913d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d90243fc76cc1c5e8d5bec3866ec2e"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af4d90243fc76cc1c5e8d5bec3866ec2e">TARGET_SPEED_NAME</a> = &quot;target_speed&quot;</td></tr>
+<tr class="separator:af4d90243fc76cc1c5e8d5bec3866ec2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23bf1261994cff7b3dedb8eeb178ae5"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#af23bf1261994cff7b3dedb8eeb178ae5">TARGET_TORQUE_NAME</a> = &quot;target_torque&quot;</td></tr>
+<tr class="separator:af23bf1261994cff7b3dedb8eeb178ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087ed923edaf8e924ee3681f5a3b1b76"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a087ed923edaf8e924ee3681f5a3b1b76">TARGET_POSITION_NAME</a> = &quot;target_position&quot;</td></tr>
+<tr class="separator:a087ed923edaf8e924ee3681f5a3b1b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6a4f36c9c7a6383f65a046672e1c27"><td class="memItemLeft" align="right" valign="top">static constexpr char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#abf6a4f36c9c7a6383f65a046672e1c27">TRAJECTORY_NAME</a> = &quot;trajectory&quot;</td></tr>
+<tr class="separator:abf6a4f36c9c7a6383f65a046672e1c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a7b5d3084224ef274532cb1249b0ba956" name="a7b5d3084224ef274532cb1249b0ba956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5d3084224ef274532cb1249b0ba956">&#9670;&#160;</a></span>FieldNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">devices::robomas::MotorCommand::FieldNumber</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a1c250a21210b7b88a14db9a0cbe71162" name="a7b5d3084224ef274532cb1249b0ba956a1c250a21210b7b88a14db9a0cbe71162"></a>NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956af6c0b66bd9c1a776a3d134ffe2aa69cb" name="a7b5d3084224ef274532cb1249b0ba956af6c0b66bd9c1a776a3d134ffe2aa69cb"></a>MOTOR_ID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956ac9daae3d81bf19632c686c17841b0c1e" name="a7b5d3084224ef274532cb1249b0ba956ac9daae3d81bf19632c686c17841b0c1e"></a>MOTOR_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a7a601a2c0ecbccf73150748332d84fda" name="a7b5d3084224ef274532cb1249b0ba956a7a601a2c0ecbccf73150748332d84fda"></a>TARGET_CURRENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956aa25921bcbc90e3b0b7d378ae9d10af61" name="a7b5d3084224ef274532cb1249b0ba956aa25921bcbc90e3b0b7d378ae9d10af61"></a>TARGET_SPEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a4f8a32f8785501fe7f4ca885600e50a9" name="a7b5d3084224ef274532cb1249b0ba956a4f8a32f8785501fe7f4ca885600e50a9"></a>TARGET_TORQUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a2fa89a641701ff6684ef0e99e269c87a" name="a7b5d3084224ef274532cb1249b0ba956a2fa89a641701ff6684ef0e99e269c87a"></a>TARGET_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a34225c1cf0341960a46a1624fb6d665e" name="a7b5d3084224ef274532cb1249b0ba956a34225c1cf0341960a46a1624fb6d665e"></a>TRAJECTORY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a960edf351db409adf4b01eecb246d115" name="a7b5d3084224ef274532cb1249b0ba956a960edf351db409adf4b01eecb246d115"></a>POSITION_PID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a3e61921d63090aff7047c529561ecd99" name="a7b5d3084224ef274532cb1249b0ba956a3e61921d63090aff7047c529561ecd99"></a>SPEED_PID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a2fdf59518c2420ca8d26e37c5100e48e" name="a7b5d3084224ef274532cb1249b0ba956a2fdf59518c2420ca8d26e37c5100e48e"></a>LOW_SPEED_PID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7b5d3084224ef274532cb1249b0ba956a8b8699b6d6fd24676ca6d1c1cd4d84d3" name="a7b5d3084224ef274532cb1249b0ba956a8b8699b6d6fd24676ca6d1c1cd4d84d3"></a>SPEED_THRESHOLD&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ad4f190f35b1046c9af420bf54734759d" name="ad4f190f35b1046c9af420bf54734759d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f190f35b1046c9af420bf54734759d">&#9670;&#160;</a></span>MotorCommand() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::MotorCommand::MotorCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e5fea540537da245e36f07a06a7029a" name="a1e5fea540537da245e36f07a06a7029a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5fea540537da245e36f07a06a7029a">&#9670;&#160;</a></span>MotorCommand() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::MotorCommand::MotorCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1e5fea540537da245e36f07a06a7029a_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1e5fea540537da245e36f07a06a7029a_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1e5fea540537da245e36f07a06a7029a_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1e5fea540537da245e36f07a06a7029a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,709,227,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acfa8572edf00724773b89b81edfe8c19" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#add3d2789d5da26279153bf184eda369e" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a9b8da36e42935bdc7454b9965364f951" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1295eeef0dc124ced60b483d2e6d140d" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afc2efb09a241922c39d7403e5a0a200c" title=" " alt="" coords="275,261,496,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af13476141030041235ae1265c7f2e0f1" title=" " alt="" coords="275,325,496,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afda4fd5a5c3b2afcb5da5bd47e59fbee" title=" " alt="" coords="275,389,496,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1000de08048ddefe4b8a0e3a127cee7d" title=" " alt="" coords="275,453,496,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ab1431f612d851535b1df8221e7e76197" title=" " alt="" coords="275,517,496,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a822477369164034e3b29ba2f3a77c3f9" title=" " alt="" coords="275,581,496,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ad698c7c6936b62dde9857203ce217fc3" title=" " alt="" coords="275,645,496,685"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7f3aeceebf44ca9c9b59ce5e248bdd27" title=" " alt="" coords="275,709,496,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af6858b685fb63d832cf08d3c52abc17a" title=" " alt="" coords="275,773,496,813"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a8eff92d2fd464fad59b69a2541188d06" title=" " alt="" coords="275,837,496,877"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#adb1bfed648b76571392d73ca053d2cc2" title=" " alt="" coords="275,901,496,941"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7a8d0b1af51e3ffb4a3bc6fbe22762d4" title=" " alt="" coords="275,965,496,1005"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aec63d3d0a0bd92d2a600e8cc4918cb22" title=" " alt="" coords="275,1029,496,1069"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1558dd27e6c75849c90db02b876ca6f0" title=" " alt="" coords="275,1093,496,1133"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aa44aca64ad0081d844661655935afe38" title=" " alt="" coords="275,1157,496,1197"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0834c2b89bdaa762479f6796d5d2969a" title=" " alt="" coords="275,1221,496,1261"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a11e1b32607e5fcd606ebf907a81acf56" title=" " alt="" coords="275,1285,496,1325"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aadfb5b14fe2a816d1688902c7044a050" title=" " alt="" coords="275,1349,496,1389"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acdbdf1eb5d804b647d32ccbc2297448b" title=" " alt="" coords="275,1413,496,1453"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aba8c0a7384feed56cd137275305b05d4" name="aba8c0a7384feed56cd137275305b05d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8c0a7384feed56cd137275305b05d4">&#9670;&#160;</a></span>MotorCommand() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::MotorCommand::MotorCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_aba8c0a7384feed56cd137275305b05d4_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_aba8c0a7384feed56cd137275305b05d4_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_aba8c0a7384feed56cd137275305b05d4_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_aba8c0a7384feed56cd137275305b05d4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,325,227,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af6858b685fb63d832cf08d3c52abc17a" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a8eff92d2fd464fad59b69a2541188d06" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#adb1bfed648b76571392d73ca053d2cc2" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7a8d0b1af51e3ffb4a3bc6fbe22762d4" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aec63d3d0a0bd92d2a600e8cc4918cb22" title=" " alt="" coords="275,261,496,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1558dd27e6c75849c90db02b876ca6f0" title=" " alt="" coords="275,325,496,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aa44aca64ad0081d844661655935afe38" title=" " alt="" coords="275,389,496,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0834c2b89bdaa762479f6796d5d2969a" title=" " alt="" coords="275,453,496,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a11e1b32607e5fcd606ebf907a81acf56" title=" " alt="" coords="275,517,496,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aadfb5b14fe2a816d1688902c7044a050" title=" " alt="" coords="275,581,496,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acdbdf1eb5d804b647d32ccbc2297448b" title=" " alt="" coords="275,645,496,685"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a56add0bb076b502229bec145f07c5ef7" name="a56add0bb076b502229bec145f07c5ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56add0bb076b502229bec145f07c5ef7">&#9670;&#160;</a></span>~MotorCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">devices::robomas::MotorCommand::~MotorCommand </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ae4f2d69c38ec2fe1e15933548922496f" name="ae4f2d69c38ec2fe1e15933548922496f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f2d69c38ec2fe1e15933548922496f">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ae4f2d69c38ec2fe1e15933548922496f_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ae4f2d69c38ec2fe1e15933548922496f_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ae4f2d69c38ec2fe1e15933548922496f_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ae4f2d69c38ec2fe1e15933548922496f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,165,227,205"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd54d79c348ade76150601983a9c3095" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a2110d74916a35935e2daaf861cfd07f3" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a885f85ce7d0810976b9fdec82dc40797" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0adee6a7553417a1d1e1e8edc227c152" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1043fb0dd652e25f34d454598ddbf4df" title=" " alt="" coords="275,261,496,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ab04670e8fd7cc5051483b5bfda902246" title=" " alt="" coords="275,325,496,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="544,197,731,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="779,133,965,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="779,197,965,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="779,261,965,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd54d79c348ade76150601983a9c3095" name="afd54d79c348ade76150601983a9c3095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd54d79c348ade76150601983a9c3095">&#9670;&#160;</a></span>clear_low_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_low_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,227,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="275,69,461,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="509,5,696,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="509,69,696,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="509,133,696,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_afd54d79c348ade76150601983a9c3095_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2110d74916a35935e2daaf861cfd07f3" name="a2110d74916a35935e2daaf861cfd07f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2110d74916a35935e2daaf861cfd07f3">&#9670;&#160;</a></span>clear_motor_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_motor_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a2110d74916a35935e2daaf861cfd07f3_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a2110d74916a35935e2daaf861cfd07f3_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a2110d74916a35935e2daaf861cfd07f3_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a2110d74916a35935e2daaf861cfd07f3_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a885f85ce7d0810976b9fdec82dc40797" name="a885f85ce7d0810976b9fdec82dc40797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885f85ce7d0810976b9fdec82dc40797">&#9670;&#160;</a></span>clear_motor_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_motor_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a885f85ce7d0810976b9fdec82dc40797_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a885f85ce7d0810976b9fdec82dc40797_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a885f85ce7d0810976b9fdec82dc40797_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a885f85ce7d0810976b9fdec82dc40797_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0adee6a7553417a1d1e1e8edc227c152" name="a0adee6a7553417a1d1e1e8edc227c152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0adee6a7553417a1d1e1e8edc227c152">&#9670;&#160;</a></span>clear_position_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_position_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,227,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="275,69,461,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="509,5,696,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="509,69,696,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="509,133,696,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a0adee6a7553417a1d1e1e8edc227c152_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1043fb0dd652e25f34d454598ddbf4df" name="a1043fb0dd652e25f34d454598ddbf4df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1043fb0dd652e25f34d454598ddbf4df">&#9670;&#160;</a></span>clear_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,227,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a9f4400f9965f3853baddfaa8f1fd1006" title=" " alt="" coords="275,69,461,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#ad8b2ffa0b4745f31ca7382afb6147880" title=" " alt="" coords="509,5,696,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#a3d09bab313186d1417085fd76004ba1d" title=" " alt="" coords="509,69,696,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1PIDConfig.html#af2cfab6e8fcad067a71bf07ed744cc44" title=" " alt="" coords="509,133,696,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1043fb0dd652e25f34d454598ddbf4df_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab04670e8fd7cc5051483b5bfda902246" name="ab04670e8fd7cc5051483b5bfda902246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04670e8fd7cc5051483b5bfda902246">&#9670;&#160;</a></span>clear_speed_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_speed_threshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ab04670e8fd7cc5051483b5bfda902246_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ab04670e8fd7cc5051483b5bfda902246_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ab04670e8fd7cc5051483b5bfda902246_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ab04670e8fd7cc5051483b5bfda902246_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ae4f2d69c38ec2fe1e15933548922496f" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac21cc95463bf4ac2c5c6b23c078a01bd" name="ac21cc95463bf4ac2c5c6b23c078a01bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21cc95463bf4ac2c5c6b23c078a01bd">&#9670;&#160;</a></span>clear_target_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_target_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a1742b46f18b71ebd19be1e363f714d" name="a8a1742b46f18b71ebd19be1e363f714d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1742b46f18b71ebd19be1e363f714d">&#9670;&#160;</a></span>clear_target_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_target_position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12e50766d0a1d99bb7e0e1f9245f1241" name="a12e50766d0a1d99bb7e0e1f9245f1241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e50766d0a1d99bb7e0e1f9245f1241">&#9670;&#160;</a></span>clear_target_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_target_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00839d23ef9f05cfed81b5ef947741fd" name="a00839d23ef9f05cfed81b5ef947741fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00839d23ef9f05cfed81b5ef947741fd">&#9670;&#160;</a></span>clear_target_torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_target_torque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74045f345dc1fb9eeabbce911a3bb61f" name="a74045f345dc1fb9eeabbce911a3bb61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74045f345dc1fb9eeabbce911a3bb61f">&#9670;&#160;</a></span>clear_trajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::clear_trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480cad7a9c8f9ebf9788f7ab999eb26b" name="a480cad7a9c8f9ebf9788f7ab999eb26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480cad7a9c8f9ebf9788f7ab999eb26b">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::MotorCommand::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::ReadBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbed1914e721102756ad2726432f8958" name="abbed1914e721102756ad2726432f8958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbed1914e721102756ad2726432f8958">&#9670;&#160;</a></span>field_number_to_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char const  * devices::robomas::MotorCommand::field_number_to_name </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">FieldNumber</a>&#160;</td>
+          <td class="paramname"><em>fieldNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfa8572edf00724773b89b81edfe8c19" name="acfa8572edf00724773b89b81edfe8c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa8572edf00724773b89b81edfe8c19">&#9670;&#160;</a></span>get_low_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::get_low_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_acfa8572edf00724773b89b81edfe8c19_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_acfa8572edf00724773b89b81edfe8c19_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_acfa8572edf00724773b89b81edfe8c19_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_acfa8572edf00724773b89b81edfe8c19_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add3d2789d5da26279153bf184eda369e" name="add3d2789d5da26279153bf184eda369e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3d2789d5da26279153bf184eda369e">&#9670;&#160;</a></span>get_motor_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_motor_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_add3d2789d5da26279153bf184eda369e_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_add3d2789d5da26279153bf184eda369e_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_add3d2789d5da26279153bf184eda369e_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_add3d2789d5da26279153bf184eda369e_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b8da36e42935bdc7454b9965364f951" name="a9b8da36e42935bdc7454b9965364f951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b8da36e42935bdc7454b9965364f951">&#9670;&#160;</a></span>get_motor_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp; devices::robomas::MotorCommand::get_motor_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a9b8da36e42935bdc7454b9965364f951_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a9b8da36e42935bdc7454b9965364f951_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a9b8da36e42935bdc7454b9965364f951_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a9b8da36e42935bdc7454b9965364f951_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1295eeef0dc124ced60b483d2e6d140d" name="a1295eeef0dc124ced60b483d2e6d140d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1295eeef0dc124ced60b483d2e6d140d">&#9670;&#160;</a></span>get_position_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::get_position_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1295eeef0dc124ced60b483d2e6d140d_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1295eeef0dc124ced60b483d2e6d140d_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1295eeef0dc124ced60b483d2e6d140d_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1295eeef0dc124ced60b483d2e6d140d_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc2efb09a241922c39d7403e5a0a200c" name="afc2efb09a241922c39d7403e5a0a200c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2efb09a241922c39d7403e5a0a200c">&#9670;&#160;</a></span>get_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::get_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_afc2efb09a241922c39d7403e5a0a200c_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_afc2efb09a241922c39d7403e5a0a200c_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_afc2efb09a241922c39d7403e5a0a200c_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_afc2efb09a241922c39d7403e5a0a200c_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af13476141030041235ae1265c7f2e0f1" name="af13476141030041235ae1265c7f2e0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13476141030041235ae1265c7f2e0f1">&#9670;&#160;</a></span>get_speed_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_speed_threshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_af13476141030041235ae1265c7f2e0f1_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_af13476141030041235ae1265c7f2e0f1_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_af13476141030041235ae1265c7f2e0f1_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_af13476141030041235ae1265c7f2e0f1_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afda4fd5a5c3b2afcb5da5bd47e59fbee" name="afda4fd5a5c3b2afcb5da5bd47e59fbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda4fd5a5c3b2afcb5da5bd47e59fbee">&#9670;&#160;</a></span>get_target_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_target_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_afda4fd5a5c3b2afcb5da5bd47e59fbee_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_afda4fd5a5c3b2afcb5da5bd47e59fbee_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_afda4fd5a5c3b2afcb5da5bd47e59fbee_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_afda4fd5a5c3b2afcb5da5bd47e59fbee_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1000de08048ddefe4b8a0e3a127cee7d" name="a1000de08048ddefe4b8a0e3a127cee7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1000de08048ddefe4b8a0e3a127cee7d">&#9670;&#160;</a></span>get_target_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_target_position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1000de08048ddefe4b8a0e3a127cee7d_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1000de08048ddefe4b8a0e3a127cee7d_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1000de08048ddefe4b8a0e3a127cee7d_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1000de08048ddefe4b8a0e3a127cee7d_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1431f612d851535b1df8221e7e76197" name="ab1431f612d851535b1df8221e7e76197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1431f612d851535b1df8221e7e76197">&#9670;&#160;</a></span>get_target_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_target_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ab1431f612d851535b1df8221e7e76197_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ab1431f612d851535b1df8221e7e76197_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ab1431f612d851535b1df8221e7e76197_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ab1431f612d851535b1df8221e7e76197_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a822477369164034e3b29ba2f3a77c3f9" name="a822477369164034e3b29ba2f3a77c3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a822477369164034e3b29ba2f3a77c3f9">&#9670;&#160;</a></span>get_target_torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int32_t &amp; devices::robomas::MotorCommand::get_target_torque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a822477369164034e3b29ba2f3a77c3f9_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a822477369164034e3b29ba2f3a77c3f9_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a822477369164034e3b29ba2f3a77c3f9_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a822477369164034e3b29ba2f3a77c3f9_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad698c7c6936b62dde9857203ce217fc3" name="ad698c7c6936b62dde9857203ce217fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad698c7c6936b62dde9857203ce217fc3">&#9670;&#160;</a></span>get_trajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp; devices::robomas::MotorCommand::get_trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ad698c7c6936b62dde9857203ce217fc3_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ad698c7c6936b62dde9857203ce217fc3_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ad698c7c6936b62dde9857203ce217fc3_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ad698c7c6936b62dde9857203ce217fc3_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f3aeceebf44ca9c9b59ce5e248bdd27" name="a7f3aeceebf44ca9c9b59ce5e248bdd27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3aeceebf44ca9c9b59ce5e248bdd27">&#9670;&#160;</a></span>get_which_target()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html#a7b5d3084224ef274532cb1249b0ba956">FieldNumber</a> devices::robomas::MotorCommand::get_which_target </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a7f3aeceebf44ca9c9b59ce5e248bdd27_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a7f3aeceebf44ca9c9b59ce5e248bdd27_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a7f3aeceebf44ca9c9b59ce5e248bdd27_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a7f3aeceebf44ca9c9b59ce5e248bdd27_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a62b04316d28cc3fce18d04d4c84104c2" name="a62b04316d28cc3fce18d04d4c84104c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b04316d28cc3fce18d04d4c84104c2">&#9670;&#160;</a></span>has_target_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::MotorCommand::has_target_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a62b04316d28cc3fce18d04d4c84104c2_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a62b04316d28cc3fce18d04d4c84104c2_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a62b04316d28cc3fce18d04d4c84104c2_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a62b04316d28cc3fce18d04d4c84104c2_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8dcc6140cd065720def379c0cbc67bde" name="a8dcc6140cd065720def379c0cbc67bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcc6140cd065720def379c0cbc67bde">&#9670;&#160;</a></span>has_target_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::MotorCommand::has_target_position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a8dcc6140cd065720def379c0cbc67bde_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a8dcc6140cd065720def379c0cbc67bde_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a8dcc6140cd065720def379c0cbc67bde_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a8dcc6140cd065720def379c0cbc67bde_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4fcdc72305487fec1de6f3b2b95f476" name="ab4fcdc72305487fec1de6f3b2b95f476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fcdc72305487fec1de6f3b2b95f476">&#9670;&#160;</a></span>has_target_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::MotorCommand::has_target_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ab4fcdc72305487fec1de6f3b2b95f476_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ab4fcdc72305487fec1de6f3b2b95f476_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ab4fcdc72305487fec1de6f3b2b95f476_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ab4fcdc72305487fec1de6f3b2b95f476_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a817d4423ac33ec5988213329bd2466" name="a0a817d4423ac33ec5988213329bd2466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a817d4423ac33ec5988213329bd2466">&#9670;&#160;</a></span>has_target_torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::MotorCommand::has_target_torque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a0a817d4423ac33ec5988213329bd2466_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a0a817d4423ac33ec5988213329bd2466_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a0a817d4423ac33ec5988213329bd2466_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a0a817d4423ac33ec5988213329bd2466_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4cfaa31f2185fec4b96cba18ddafb02" name="ad4cfaa31f2185fec4b96cba18ddafb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cfaa31f2185fec4b96cba18ddafb02">&#9670;&#160;</a></span>has_trajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool devices::robomas::MotorCommand::has_trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_ad4cfaa31f2185fec4b96cba18ddafb02_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_ad4cfaa31f2185fec4b96cba18ddafb02_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_ad4cfaa31f2185fec4b96cba18ddafb02_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_ad4cfaa31f2185fec4b96cba18ddafb02_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afd72a722225941ce549dbbf863dd53c9" title=" " alt="" coords="5,5,227,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2ddb4b68a9252e335e081d7a71f0aba" name="ab2ddb4b68a9252e335e081d7a71f0aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ddb4b68a9252e335e081d7a71f0aba">&#9670;&#160;</a></span>low_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::low_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93f38b8bb948888c5bc615a3e9095c82" name="a93f38b8bb948888c5bc615a3e9095c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f38b8bb948888c5bc615a3e9095c82">&#9670;&#160;</a></span>motor_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::motor_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1c8d20ec8db9d28bf2c3b02ebb7e5d6" name="ad1c8d20ec8db9d28bf2c3b02ebb7e5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c8d20ec8db9d28bf2c3b02ebb7e5d6">&#9670;&#160;</a></span>motor_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> devices::robomas::MotorCommand::motor_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d6c990f46ff99b2850ccaccec55d720" name="a7d6c990f46ff99b2850ccaccec55d720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6c990f46ff99b2850ccaccec55d720">&#9670;&#160;</a></span>mutable_low_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::mutable_low_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ba30497ec91401abd5dac0382c7747a" name="a5ba30497ec91401abd5dac0382c7747a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba30497ec91401abd5dac0382c7747a">&#9670;&#160;</a></span>mutable_motor_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::MotorCommand::mutable_motor_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b69176b036a3c695fc616d4101ef7fa" name="a1b69176b036a3c695fc616d4101ef7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b69176b036a3c695fc616d4101ef7fa">&#9670;&#160;</a></span>mutable_position_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::mutable_position_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9338e4111743493f5d9cd2f210c8d99a" name="a9338e4111743493f5d9cd2f210c8d99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9338e4111743493f5d9cd2f210c8d99a">&#9670;&#160;</a></span>mutable_speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::mutable_speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ce3c2fe5df3319255bc276f9ea9846b" name="a3ce3c2fe5df3319255bc276f9ea9846b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce3c2fe5df3319255bc276f9ea9846b">&#9670;&#160;</a></span>mutable_speed_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t &amp; devices::robomas::MotorCommand::mutable_speed_threshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a196b4702525e4e570e88e7707ed94f16" name="a196b4702525e4e570e88e7707ed94f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196b4702525e4e570e88e7707ed94f16">&#9670;&#160;</a></span>mutable_trajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp; devices::robomas::MotorCommand::mutable_trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af44a2602aa4fbf2f1e4e671a8d4fb9e5" name="af44a2602aa4fbf2f1e4e671a8d4fb9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44a2602aa4fbf2f1e4e671a8d4fb9e5">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp; devices::robomas::MotorCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_af44a2602aa4fbf2f1e4e671a8d4fb9e5_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_af44a2602aa4fbf2f1e4e671a8d4fb9e5_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_af44a2602aa4fbf2f1e4e671a8d4fb9e5_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_af44a2602aa4fbf2f1e4e671a8d4fb9e5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,325,227,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af6858b685fb63d832cf08d3c52abc17a" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a8eff92d2fd464fad59b69a2541188d06" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#adb1bfed648b76571392d73ca053d2cc2" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7a8d0b1af51e3ffb4a3bc6fbe22762d4" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aec63d3d0a0bd92d2a600e8cc4918cb22" title=" " alt="" coords="275,261,496,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1558dd27e6c75849c90db02b876ca6f0" title=" " alt="" coords="275,325,496,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aa44aca64ad0081d844661655935afe38" title=" " alt="" coords="275,389,496,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0834c2b89bdaa762479f6796d5d2969a" title=" " alt="" coords="275,453,496,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a11e1b32607e5fcd606ebf907a81acf56" title=" " alt="" coords="275,517,496,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aadfb5b14fe2a816d1688902c7044a050" title=" " alt="" coords="275,581,496,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acdbdf1eb5d804b647d32ccbc2297448b" title=" " alt="" coords="275,645,496,685"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af3b9295b0de4eff55a96db7391c50cd5" name="af3b9295b0de4eff55a96db7391c50cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b9295b0de4eff55a96db7391c50cd5">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp; devices::robomas::MotorCommand::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_af3b9295b0de4eff55a96db7391c50cd5_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_af3b9295b0de4eff55a96db7391c50cd5_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_af3b9295b0de4eff55a96db7391c50cd5_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_af3b9295b0de4eff55a96db7391c50cd5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,709,227,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acfa8572edf00724773b89b81edfe8c19" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#add3d2789d5da26279153bf184eda369e" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a9b8da36e42935bdc7454b9965364f951" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1295eeef0dc124ced60b483d2e6d140d" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afc2efb09a241922c39d7403e5a0a200c" title=" " alt="" coords="275,261,496,301"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af13476141030041235ae1265c7f2e0f1" title=" " alt="" coords="275,325,496,365"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#afda4fd5a5c3b2afcb5da5bd47e59fbee" title=" " alt="" coords="275,389,496,429"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1000de08048ddefe4b8a0e3a127cee7d" title=" " alt="" coords="275,453,496,493"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ab1431f612d851535b1df8221e7e76197" title=" " alt="" coords="275,517,496,557"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a822477369164034e3b29ba2f3a77c3f9" title=" " alt="" coords="275,581,496,621"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ad698c7c6936b62dde9857203ce217fc3" title=" " alt="" coords="275,645,496,685"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7f3aeceebf44ca9c9b59ce5e248bdd27" title=" " alt="" coords="275,709,496,749"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af6858b685fb63d832cf08d3c52abc17a" title=" " alt="" coords="275,773,496,813"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a8eff92d2fd464fad59b69a2541188d06" title=" " alt="" coords="275,837,496,877"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#adb1bfed648b76571392d73ca053d2cc2" title=" " alt="" coords="275,901,496,941"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a7a8d0b1af51e3ffb4a3bc6fbe22762d4" title=" " alt="" coords="275,965,496,1005"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aec63d3d0a0bd92d2a600e8cc4918cb22" title=" " alt="" coords="275,1029,496,1069"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1558dd27e6c75849c90db02b876ca6f0" title=" " alt="" coords="275,1093,496,1133"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aa44aca64ad0081d844661655935afe38" title=" " alt="" coords="275,1157,496,1197"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0834c2b89bdaa762479f6796d5d2969a" title=" " alt="" coords="275,1221,496,1261"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a11e1b32607e5fcd606ebf907a81acf56" title=" " alt="" coords="275,1285,496,1325"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#aadfb5b14fe2a816d1688902c7044a050" title=" " alt="" coords="275,1349,496,1389"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#acdbdf1eb5d804b647d32ccbc2297448b" title=" " alt="" coords="275,1413,496,1453"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a485ec2de2f072d7bcb4b091f7038724f" name="a485ec2de2f072d7bcb4b091f7038724f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485ec2de2f072d7bcb4b091f7038724f">&#9670;&#160;</a></span>position_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::position_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd72a722225941ce549dbbf863dd53c9" name="afd72a722225941ce549dbbf863dd53c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd72a722225941ce549dbbf863dd53c9">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">::EmbeddedProto::Error devices::robomas::MotorCommand::serialize </td>
+          <td>(</td>
+          <td class="paramtype">::EmbeddedProto::WriteBufferInterface &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_afd72a722225941ce549dbbf863dd53c9_cgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_afd72a722225941ce549dbbf863dd53c9_cgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_afd72a722225941ce549dbbf863dd53c9_cgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_afd72a722225941ce549dbbf863dd53c9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,133,227,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a62b04316d28cc3fce18d04d4c84104c2" title=" " alt="" coords="275,5,496,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a8dcc6140cd065720def379c0cbc67bde" title=" " alt="" coords="275,69,496,109"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ab4fcdc72305487fec1de6f3b2b95f476" title=" " alt="" coords="275,133,496,173"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a0a817d4423ac33ec5988213329bd2466" title=" " alt="" coords="275,197,496,237"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#ad4cfaa31f2185fec4b96cba18ddafb02" title=" " alt="" coords="275,261,496,301"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af8c7872306a1e7ccebcfc7f3914d6fc2" name="af8c7872306a1e7ccebcfc7f3914d6fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c7872306a1e7ccebcfc7f3914d6fc2">&#9670;&#160;</a></span>set_low_speed_pid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_low_speed_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6858b685fb63d832cf08d3c52abc17a" name="af6858b685fb63d832cf08d3c52abc17a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6858b685fb63d832cf08d3c52abc17a">&#9670;&#160;</a></span>set_low_speed_pid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_low_speed_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_af6858b685fb63d832cf08d3c52abc17a_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_af6858b685fb63d832cf08d3c52abc17a_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_af6858b685fb63d832cf08d3c52abc17a_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_af6858b685fb63d832cf08d3c52abc17a_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6040879abff890e9099526f8ac06e503" name="a6040879abff890e9099526f8ac06e503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6040879abff890e9099526f8ac06e503">&#9670;&#160;</a></span>set_motor_id() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_motor_id </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eff92d2fd464fad59b69a2541188d06" name="a8eff92d2fd464fad59b69a2541188d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eff92d2fd464fad59b69a2541188d06">&#9670;&#160;</a></span>set_motor_id() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_motor_id </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a8eff92d2fd464fad59b69a2541188d06_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a8eff92d2fd464fad59b69a2541188d06_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a8eff92d2fd464fad59b69a2541188d06_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a8eff92d2fd464fad59b69a2541188d06_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af337ade7b0fa3e9957bd972660e1753f" name="af337ade7b0fa3e9957bd972660e1753f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af337ade7b0fa3e9957bd972660e1753f">&#9670;&#160;</a></span>set_motor_type() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_motor_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb1bfed648b76571392d73ca053d2cc2" name="adb1bfed648b76571392d73ca053d2cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb1bfed648b76571392d73ca053d2cc2">&#9670;&#160;</a></span>set_motor_type() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_motor_type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedevices_1_1robomas.html#a7f6613d56845dad2594e59ab06c087d9">MotorType</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_adb1bfed648b76571392d73ca053d2cc2_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_adb1bfed648b76571392d73ca053d2cc2_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_adb1bfed648b76571392d73ca053d2cc2_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_adb1bfed648b76571392d73ca053d2cc2_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a66cfcf8a9c12d728b99586f7afbe1dc6" name="a66cfcf8a9c12d728b99586f7afbe1dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66cfcf8a9c12d728b99586f7afbe1dc6">&#9670;&#160;</a></span>set_position_pid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_position_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a8d0b1af51e3ffb4a3bc6fbe22762d4" name="a7a8d0b1af51e3ffb4a3bc6fbe22762d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8d0b1af51e3ffb4a3bc6fbe22762d4">&#9670;&#160;</a></span>set_position_pid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_position_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a7a8d0b1af51e3ffb4a3bc6fbe22762d4_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a7a8d0b1af51e3ffb4a3bc6fbe22762d4_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a7a8d0b1af51e3ffb4a3bc6fbe22762d4_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a7a8d0b1af51e3ffb4a3bc6fbe22762d4_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f9cf9a748f4cc7995c189903732ef58" name="a0f9cf9a748f4cc7995c189903732ef58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9cf9a748f4cc7995c189903732ef58">&#9670;&#160;</a></span>set_speed_pid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_speed_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec63d3d0a0bd92d2a600e8cc4918cb22" name="aec63d3d0a0bd92d2a600e8cc4918cb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec63d3d0a0bd92d2a600e8cc4918cb22">&#9670;&#160;</a></span>set_speed_pid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_speed_pid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_aec63d3d0a0bd92d2a600e8cc4918cb22_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_aec63d3d0a0bd92d2a600e8cc4918cb22_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_aec63d3d0a0bd92d2a600e8cc4918cb22_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_aec63d3d0a0bd92d2a600e8cc4918cb22_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05645c86fca111d90331a7a9a2fbc8ad" name="a05645c86fca111d90331a7a9a2fbc8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05645c86fca111d90331a7a9a2fbc8ad">&#9670;&#160;</a></span>set_speed_threshold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_speed_threshold </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1558dd27e6c75849c90db02b876ca6f0" name="a1558dd27e6c75849c90db02b876ca6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1558dd27e6c75849c90db02b876ca6f0">&#9670;&#160;</a></span>set_speed_threshold() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_speed_threshold </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a1558dd27e6c75849c90db02b876ca6f0_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a1558dd27e6c75849c90db02b876ca6f0_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a1558dd27e6c75849c90db02b876ca6f0_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a1558dd27e6c75849c90db02b876ca6f0_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e3d0d55d226cca17d438dc9758e2ef8" name="a2e3d0d55d226cca17d438dc9758e2ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3d0d55d226cca17d438dc9758e2ef8">&#9670;&#160;</a></span>set_target_current() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa44aca64ad0081d844661655935afe38" name="aa44aca64ad0081d844661655935afe38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44aca64ad0081d844661655935afe38">&#9670;&#160;</a></span>set_target_current() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_current </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_aa44aca64ad0081d844661655935afe38_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_aa44aca64ad0081d844661655935afe38_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_aa44aca64ad0081d844661655935afe38_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_aa44aca64ad0081d844661655935afe38_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5bf1024a99c1ffde3688134777dc622" name="ad5bf1024a99c1ffde3688134777dc622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5bf1024a99c1ffde3688134777dc622">&#9670;&#160;</a></span>set_target_position() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_position </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0834c2b89bdaa762479f6796d5d2969a" name="a0834c2b89bdaa762479f6796d5d2969a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0834c2b89bdaa762479f6796d5d2969a">&#9670;&#160;</a></span>set_target_position() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_position </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a0834c2b89bdaa762479f6796d5d2969a_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a0834c2b89bdaa762479f6796d5d2969a_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a0834c2b89bdaa762479f6796d5d2969a_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a0834c2b89bdaa762479f6796d5d2969a_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a703475d4d442ffd243f217fcbe7f217d" name="a703475d4d442ffd243f217fcbe7f217d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703475d4d442ffd243f217fcbe7f217d">&#9670;&#160;</a></span>set_target_speed() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11e1b32607e5fcd606ebf907a81acf56" name="a11e1b32607e5fcd606ebf907a81acf56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e1b32607e5fcd606ebf907a81acf56">&#9670;&#160;</a></span>set_target_speed() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_speed </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_a11e1b32607e5fcd606ebf907a81acf56_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_a11e1b32607e5fcd606ebf907a81acf56_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_a11e1b32607e5fcd606ebf907a81acf56_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_a11e1b32607e5fcd606ebf907a81acf56_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afca25c87b9eb191640d17626add287ec" name="afca25c87b9eb191640d17626add287ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca25c87b9eb191640d17626add287ec">&#9670;&#160;</a></span>set_target_torque() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_torque </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadfb5b14fe2a816d1688902c7044a050" name="aadfb5b14fe2a816d1688902c7044a050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfb5b14fe2a816d1688902c7044a050">&#9670;&#160;</a></span>set_target_torque() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_target_torque </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_aadfb5b14fe2a816d1688902c7044a050_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_aadfb5b14fe2a816d1688902c7044a050_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_aadfb5b14fe2a816d1688902c7044a050_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_aadfb5b14fe2a816d1688902c7044a050_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c8afd4d2c1b9304b63afa996e9c50d6" name="a1c8afd4d2c1b9304b63afa996e9c50d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8afd4d2c1b9304b63afa996e9c50d6">&#9670;&#160;</a></span>set_trajectory() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_trajectory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdbdf1eb5d804b647d32ccbc2297448b" name="acdbdf1eb5d804b647d32ccbc2297448b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbdf1eb5d804b647d32ccbc2297448b">&#9670;&#160;</a></span>set_trajectory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void devices::robomas::MotorCommand::set_trajectory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdevices_1_1robomas_1_1MotorCommand_acdbdf1eb5d804b647d32ccbc2297448b_icgraph.png" border="0" usemap="#aclassdevices_1_1robomas_1_1MotorCommand_acdbdf1eb5d804b647d32ccbc2297448b_icgraph" alt=""/></div>
+<map name="aclassdevices_1_1robomas_1_1MotorCommand_acdbdf1eb5d804b647d32ccbc2297448b_icgraph" id="aclassdevices_1_1robomas_1_1MotorCommand_acdbdf1eb5d804b647d32ccbc2297448b_icgraph">
+<area shape="rect" title=" " alt="" coords="275,37,496,77"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#a1e5fea540537da245e36f07a06a7029a" title=" " alt="" coords="5,5,227,45"/>
+<area shape="rect" href="classdevices_1_1robomas_1_1MotorCommand.html#af3b9295b0de4eff55a96db7391c50cd5" title=" " alt="" coords="5,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3f2b6974cc77e97e87c201fdc588245a" name="a3f2b6974cc77e97e87c201fdc588245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2b6974cc77e97e87c201fdc588245a">&#9670;&#160;</a></span>speed_pid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1PIDConfig.html">PIDConfig</a> &amp; devices::robomas::MotorCommand::speed_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12f3f4cd001f2802ee81056d8993fe80" name="a12f3f4cd001f2802ee81056d8993fe80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f3f4cd001f2802ee81056d8993fe80">&#9670;&#160;</a></span>speed_threshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::speed_threshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2977bd24cc5e09d43611f278ec4418" name="aea2977bd24cc5e09d43611f278ec4418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2977bd24cc5e09d43611f278ec4418">&#9670;&#160;</a></span>target_current()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::target_current </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab9d10a0e0eaa2f0c5556a1033a8cffb" name="aab9d10a0e0eaa2f0c5556a1033a8cffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9d10a0e0eaa2f0c5556a1033a8cffb">&#9670;&#160;</a></span>target_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::target_position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67bec2f0b36c2e5cc23dc707c5828b27" name="a67bec2f0b36c2e5cc23dc707c5828b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67bec2f0b36c2e5cc23dc707c5828b27">&#9670;&#160;</a></span>target_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::target_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a585d3ad4de4e689580ba2a38ad0177ab" name="a585d3ad4de4e689580ba2a38ad0177ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585d3ad4de4e689580ba2a38ad0177ab">&#9670;&#160;</a></span>target_torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t devices::robomas::MotorCommand::target_torque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a898eab500ce165259e626906edd44027" name="a898eab500ce165259e626906edd44027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898eab500ce165259e626906edd44027">&#9670;&#160;</a></span>trajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdevices_1_1robomas_1_1TrajectoryProfile.html">TrajectoryProfile</a> &amp; devices::robomas::MotorCommand::trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a57b4d59a17cf9f192849888a0b85cd69" name="a57b4d59a17cf9f192849888a0b85cd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b4d59a17cf9f192849888a0b85cd69">&#9670;&#160;</a></span>LOW_SPEED_PID_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::LOW_SPEED_PID_NAME = &quot;low_speed_pid&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60edc9cfebc6e62679b3bba4f3d4d25d" name="a60edc9cfebc6e62679b3bba4f3d4d25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60edc9cfebc6e62679b3bba4f3d4d25d">&#9670;&#160;</a></span>MOTOR_ID_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::MOTOR_ID_NAME = &quot;motor_id&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9698799395c84d58dadabc29ddd49c6" name="af9698799395c84d58dadabc29ddd49c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9698799395c84d58dadabc29ddd49c6">&#9670;&#160;</a></span>MOTOR_TYPE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::MOTOR_TYPE_NAME = &quot;motor_type&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a725114e8e762705224d6a790e6d81650" name="a725114e8e762705224d6a790e6d81650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725114e8e762705224d6a790e6d81650">&#9670;&#160;</a></span>POSITION_PID_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::POSITION_PID_NAME = &quot;position_pid&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abdd7f1c7007e7af07d3d56a16df6389c" name="abdd7f1c7007e7af07d3d56a16df6389c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd7f1c7007e7af07d3d56a16df6389c">&#9670;&#160;</a></span>SPEED_PID_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::SPEED_PID_NAME = &quot;speed_pid&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ca349703fc02b58927dea5e919f6a01" name="a6ca349703fc02b58927dea5e919f6a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca349703fc02b58927dea5e919f6a01">&#9670;&#160;</a></span>SPEED_THRESHOLD_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::SPEED_THRESHOLD_NAME = &quot;speed_threshold&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab56955bd14b1ef644a96455b0ef1913d" name="ab56955bd14b1ef644a96455b0ef1913d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56955bd14b1ef644a96455b0ef1913d">&#9670;&#160;</a></span>TARGET_CURRENT_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::TARGET_CURRENT_NAME = &quot;target_current&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a087ed923edaf8e924ee3681f5a3b1b76" name="a087ed923edaf8e924ee3681f5a3b1b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087ed923edaf8e924ee3681f5a3b1b76">&#9670;&#160;</a></span>TARGET_POSITION_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::TARGET_POSITION_NAME = &quot;target_position&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4d90243fc76cc1c5e8d5bec3866ec2e" name="af4d90243fc76cc1c5e8d5bec3866ec2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d90243fc76cc1c5e8d5bec3866ec2e">&#9670;&#160;</a></span>TARGET_SPEED_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::TARGET_SPEED_NAME = &quot;target_speed&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af23bf1261994cff7b3dedb8eeb178ae5" name="af23bf1261994cff7b3dedb8eeb178ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23bf1261994cff7b3dedb8eeb178ae5">&#9670;&#160;</a></span>TARGET_TORQUE_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::TARGET_TORQUE_NAME = &quot;target_torque&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf6a4f36c9c7a6383f65a046672e1c27" name="abf6a4f36c9c7a6383f65a046672e1c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6a4f36c9c7a6383f65a046672e1c27">&#9670;&#160;</a></span>TRAJECTORY_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr char const* devices::robomas::MotorCommand::TRAJECTORY_NAME = &quot;trajectory&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>app/modules/protocol/proto/devices/<a class="el" href="robomas_8h.html">robomas.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacedevices.html">devices</a></li><li class="navelem"><a class="el" href="namespacedevices_1_1robomas.html">robomas</a></li><li class="navelem"><a class="el" href="classdevices_1_1robomas_1_1MotorCommand.html">MotorCommand</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

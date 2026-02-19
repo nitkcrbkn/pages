@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: app/appMain.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('appMain_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">appMain.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8h.html">config.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="utils_8h.html">platform/utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="proto__uart_8hpp.html">proto_uart.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="logger_8hpp.html">logic/logger.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="FdCanCompatProfile_8hpp.html">CanSystem/profile/FdCanCompatProfile.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="FdCanCompatExtProfile_8hpp.html">CanSystem/profile/FdCanCompatExtProfile.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="DJI_8h.html">logic/DJI.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Motron_8h.html">logic/Motron.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="Dualsense_8h.html">platform/Dualsense.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="proto__can_8hpp.html">ProtoCAN/proto_can.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+appMain.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8h__incl.png" border="0" usemap="#aapp_2appMain_8h" alt=""/></div>
+<map name="aapp_2appMain_8h" id="aapp_2appMain_8h">
+<area shape="rect" title=" " alt="" coords="2282,5,2389,31"/>
+<area shape="rect" title=" " alt="" coords="5,328,65,353"/>
+<area shape="rect" title=" " alt="" coords="2420,86,2480,111"/>
+<area shape="rect" title=" " alt="" coords="1038,475,1099,500"/>
+<area shape="rect" title=" " alt="" coords="2505,86,2569,111"/>
+<area shape="rect" href="config_8h.html" title=" " alt="" coords="2593,86,2659,111"/>
+<area shape="rect" href="utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="66,255,173,280"/>
+<area shape="rect" href="proto__uart_8hpp.html" title=" " alt="" coords="1314,174,1418,199"/>
+<area shape="rect" href="logger_8hpp.html" title="C++用高機能ログライブラリ &#45; カスタムインターフェース" alt="" coords="2233,86,2345,111"/>
+<area shape="rect" href="FdCanCompatProfile_8hpp.html" title=" " alt="" coords="2684,79,2899,119"/>
+<area shape="rect" href="FdCanCompatExtProfile_8hpp.html" title=" " alt="" coords="2923,79,3137,119"/>
+<area shape="rect" href="DJI_8h.html" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="1661,174,1743,199"/>
+<area shape="rect" href="Motron_8h.html" title=" " alt="" coords="1940,174,2043,199"/>
+<area shape="rect" href="Dualsense_8h.html" title=" " alt="" coords="3162,86,3306,111"/>
+<area shape="rect" href="proto__can_8hpp.html" title=" " alt="" coords="948,86,1115,111"/>
+<area shape="rect" title=" " alt="" coords="152,328,217,353"/>
+<area shape="rect" title=" " alt="" coords="1314,255,1381,280"/>
+<area shape="rect" href="telemetry_8h.html" title=" " alt="" coords="1840,255,1959,280"/>
+<area shape="rect" title=" " alt="" coords="759,255,911,280"/>
+<area shape="rect" title=" " alt="" coords="986,255,1138,280"/>
+<area shape="rect" title=" " alt="" coords="2218,328,2354,353"/>
+<area shape="rect" title=" " alt="" coords="2378,328,2493,353"/>
+<area shape="rect" title=" " alt="" coords="2517,328,2583,353"/>
+<area shape="rect" title=" " alt="" coords="1247,328,1415,353"/>
+<area shape="rect" title=" " alt="" coords="1440,328,1580,353"/>
+<area shape="rect" title=" " alt="" coords="1605,328,1775,353"/>
+<area shape="rect" title=" " alt="" coords="1800,328,1927,353"/>
+<area shape="rect" title=" " alt="" coords="1951,328,2018,353"/>
+<area shape="rect" title=" " alt="" coords="2042,328,2117,353"/>
+<area shape="rect" title=" " alt="" coords="2141,328,2194,353"/>
+<area shape="rect" title=" " alt="" coords="2680,401,2745,427"/>
+<area shape="rect" title=" " alt="" coords="2611,174,2767,199"/>
+<area shape="rect" title=" " alt="" coords="2118,167,2321,207"/>
+<area shape="rect" title=" " alt="" coords="2396,174,2587,199"/>
+<area shape="rect" title=" " alt="" coords="1983,255,2043,280"/>
+<area shape="rect" title=" " alt="" coords="1506,255,1565,280"/>
+<area shape="rect" title=" " alt="" coords="992,328,1071,353"/>
+<area shape="rect" title=" " alt="" coords="999,401,1050,427"/>
+<area shape="rect" href="stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="2239,255,2357,280"/>
+<area shape="rect" href="CanInterfaces_8hpp.html" title=" " alt="" coords="1589,255,1815,280"/>
+<area shape="rect" title=" " alt="" coords="2658,328,2717,353"/>
+<area shape="rect" title=" " alt="" coords="906,328,967,353"/>
+<area shape="rect" href="IM920sL_8h.html" title="IM920sLを操作するためのクラス" alt="" coords="3167,174,3301,199"/>
+<area shape="rect" title=" " alt="" coords="241,328,299,353"/>
+<area shape="rect" href="motor_8h.html" title=" " alt="" coords="2067,255,2214,280"/>
+<area shape="rect" href="protocol__types_8hpp.html" title=" " alt="" coords="399,255,583,280"/>
+<area shape="rect" href="master__api_8hpp.html" title=" " alt="" coords="555,174,686,199"/>
+<area shape="rect" href="device__api_8hpp.html" title=" " alt="" coords="771,174,900,199"/>
+<area shape="rect" href="bitwise__ops_8hpp.html" title=" " alt="" coords="582,401,761,427"/>
+<area shape="rect" href="frame__field_8hpp.html" title=" " alt="" coords="709,328,882,353"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8h__dep__incl.png" border="0" usemap="#aapp_2appMain_8hdep" alt=""/></div>
+<map name="aapp_2appMain_8hdep" id="aapp_2appMain_8hdep">
+<area shape="rect" title=" " alt="" coords="12,5,119,31"/>
+<area shape="rect" href="appMain_8cpp.html" title=" " alt="" coords="5,79,125,104"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main</a> (void)</td></tr>
+<tr class="memdesc:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; uint8_t, uint32_tのインクルード  <a href="appMain_8h.html#a630544a7f0a2cc40d8a7fefab7e2fe70">[詳解]</a><br /></td></tr>
+<tr class="separator:a630544a7f0a2cc40d8a7fefab7e2fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a7e870132380038c7b0e226a8c78d3461"><td class="memItemLeft" align="right" valign="top">FDCAN_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a7e870132380038c7b0e226a8c78d3461">hfdcan1</a></td></tr>
+<tr class="separator:a7e870132380038c7b0e226a8c78d3461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71d0ea733e88dc84fb4506e3bb5d8ce"><td class="memItemLeft" align="right" valign="top">FDCAN_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#af71d0ea733e88dc84fb4506e3bb5d8ce">hfdcan2</a></td></tr>
+<tr class="separator:af71d0ea733e88dc84fb4506e3bb5d8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfb40a407dae9135a746a08a8819b5b"><td class="memItemLeft" align="right" valign="top">FDCAN_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#adcfb40a407dae9135a746a08a8819b5b">hfdcan3</a></td></tr>
+<tr class="separator:adcfb40a407dae9135a746a08a8819b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccf4a01a8d7f08d3190181f843f7515"><td class="memItemLeft" align="right" valign="top">I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a5ccf4a01a8d7f08d3190181f843f7515">hi2c3</a></td></tr>
+<tr class="separator:a5ccf4a01a8d7f08d3190181f843f7515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818789480a74b70bbcaf6d73e8e763ed"><td class="memItemLeft" align="right" valign="top">I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a818789480a74b70bbcaf6d73e8e763ed">hi2c4</a></td></tr>
+<tr class="separator:a818789480a74b70bbcaf6d73e8e763ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6222bae4d0328dd843ae099623b40b"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a9c6222bae4d0328dd843ae099623b40b">hspi1</a></td></tr>
+<tr class="separator:a9c6222bae4d0328dd843ae099623b40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9da65f935e805137e2eb4e18c5ab224"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#ab9da65f935e805137e2eb4e18c5ab224">hspi2</a></td></tr>
+<tr class="separator:ab9da65f935e805137e2eb4e18c5ab224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec51920045aad7f70cbfd1f58228d866"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#aec51920045aad7f70cbfd1f58228d866">hspi3</a></td></tr>
+<tr class="separator:aec51920045aad7f70cbfd1f58228d866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3f9dccaa7cebcc70e1657af9e5e5dc"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a5c3f9dccaa7cebcc70e1657af9e5e5dc">hlpuart1</a></td></tr>
+<tr class="separator:a5c3f9dccaa7cebcc70e1657af9e5e5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a82fcf0cd24eb6d39977cb5864cec8"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a25a82fcf0cd24eb6d39977cb5864cec8">huart5</a></td></tr>
+<tr class="separator:a25a82fcf0cd24eb6d39977cb5864cec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#a2cf715bef37f7e8ef385a30974a5f0d5">huart1</a></td></tr>
+<tr class="separator:a2cf715bef37f7e8ef385a30974a5f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appMain_8h.html#ab7c63c1b0f65db92b6a4ea19edf957e1">huart3</a></td></tr>
+<tr class="separator:ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a630544a7f0a2cc40d8a7fefab7e2fe70" name="a630544a7f0a2cc40d8a7fefab7e2fe70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630544a7f0a2cc40d8a7fefab7e2fe70">&#9670;&#160;</a></span>app_main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void app_main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>&lt; uint8_t, uint32_tのインクルード </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="appMain_8h_a630544a7f0a2cc40d8a7fefab7e2fe70_cgraph.png" border="0" usemap="#aappMain_8h_a630544a7f0a2cc40d8a7fefab7e2fe70_cgraph" alt=""/></div>
+<map name="aappMain_8h_a630544a7f0a2cc40d8a7fefab7e2fe70_cgraph" id="aappMain_8h_a630544a7f0a2cc40d8a7fefab7e2fe70_cgraph">
+<area shape="rect" title="&lt; uint8_t, uint32_tのインクルード" alt="" coords="5,101,84,126"/>
+<area shape="rect" href="appMain_8cpp.html#af26671d28c460337c995e36f27a941bc" title=" " alt="" coords="345,87,427,113"/>
+<area shape="rect" href="classproto__can_1_1Master.html#a3222fdccf0ce4481d11eb0299dac175a" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="132,11,263,51"/>
+<area shape="rect" href="utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title="Arduino互換 millis()" alt="" coords="171,126,223,151"/>
+<area shape="rect" href="appMain_8cpp.html#a251305881b58cc833042e857d5340c5b" title=" " alt="" coords="162,175,233,201"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="311,11,461,51"/>
+<area shape="rect" href="structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="509,69,673,109"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="516,5,667,45"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="755,77,806,102"/>
+<area shape="rect" href="namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="721,13,840,38"/>
+<area shape="rect" href="classproto__can_1_1MessageID.html#a8f11fc8e1cda0adf423c4ae880d84afa" title=" " alt="" coords="311,144,461,184"/>
+<area shape="rect" href="classproto__can_1_1Messenger.html#a45d40c87968a1f7b21e2be9846f2ee9c" title=" " alt="" coords="311,208,461,248"/>
+<area shape="rect" href="namespaceBitUtil.html#a8f4765916b99aace6d247993a64ec6ad" title=" " alt="" coords="528,151,655,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="a7e870132380038c7b0e226a8c78d3461" name="a7e870132380038c7b0e226a8c78d3461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e870132380038c7b0e226a8c78d3461">&#9670;&#160;</a></span>hfdcan1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FDCAN_HandleTypeDef hfdcan1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af71d0ea733e88dc84fb4506e3bb5d8ce" name="af71d0ea733e88dc84fb4506e3bb5d8ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71d0ea733e88dc84fb4506e3bb5d8ce">&#9670;&#160;</a></span>hfdcan2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FDCAN_HandleTypeDef hfdcan2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcfb40a407dae9135a746a08a8819b5b" name="adcfb40a407dae9135a746a08a8819b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfb40a407dae9135a746a08a8819b5b">&#9670;&#160;</a></span>hfdcan3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FDCAN_HandleTypeDef hfdcan3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ccf4a01a8d7f08d3190181f843f7515" name="a5ccf4a01a8d7f08d3190181f843f7515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ccf4a01a8d7f08d3190181f843f7515">&#9670;&#160;</a></span>hi2c3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2C_HandleTypeDef hi2c3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a818789480a74b70bbcaf6d73e8e763ed" name="a818789480a74b70bbcaf6d73e8e763ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818789480a74b70bbcaf6d73e8e763ed">&#9670;&#160;</a></span>hi2c4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2C_HandleTypeDef hi2c4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c3f9dccaa7cebcc70e1657af9e5e5dc" name="a5c3f9dccaa7cebcc70e1657af9e5e5dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3f9dccaa7cebcc70e1657af9e5e5dc">&#9670;&#160;</a></span>hlpuart1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef hlpuart1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c6222bae4d0328dd843ae099623b40b" name="a9c6222bae4d0328dd843ae099623b40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c6222bae4d0328dd843ae099623b40b">&#9670;&#160;</a></span>hspi1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef hspi1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9da65f935e805137e2eb4e18c5ab224" name="ab9da65f935e805137e2eb4e18c5ab224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9da65f935e805137e2eb4e18c5ab224">&#9670;&#160;</a></span>hspi2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef hspi2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec51920045aad7f70cbfd1f58228d866" name="aec51920045aad7f70cbfd1f58228d866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec51920045aad7f70cbfd1f58228d866">&#9670;&#160;</a></span>hspi3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef hspi3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cf715bef37f7e8ef385a30974a5f0d5" name="a2cf715bef37f7e8ef385a30974a5f0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf715bef37f7e8ef385a30974a5f0d5">&#9670;&#160;</a></span>huart1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef huart1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7c63c1b0f65db92b6a4ea19edf957e1" name="ab7c63c1b0f65db92b6a4ea19edf957e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c63c1b0f65db92b6a4ea19edf957e1">&#9670;&#160;</a></span>huart3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef huart3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25a82fcf0cd24eb6d39977cb5864cec8" name="a25a82fcf0cd24eb6d39977cb5864cec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a82fcf0cd24eb6d39977cb5864cec8">&#9670;&#160;</a></span>huart5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef huart5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="appMain_8h.html">appMain.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

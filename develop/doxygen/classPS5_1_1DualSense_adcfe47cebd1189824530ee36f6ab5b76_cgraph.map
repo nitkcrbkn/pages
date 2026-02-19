@@ -1,0 +1,52 @@
+<map id="PS5::DualSense::send_telem" name="PS5::DualSense::send_telem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1481,156,1521"/>
+<area shape="rect" id="node2" href="$classrobot_1_1Controller.html#a61c0908bca8396a456d8bef8d9150326" title=" " alt="" coords="228,517,347,557"/>
+<area shape="rect" id="node20" href="$classrobot_1_1Telemetry.html#a43ee8590457455bb26191a6bf4c31e28" title=" " alt="" coords="204,581,371,621"/>
+<area shape="rect" id="node21" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="213,646,361,671"/>
+<area shape="rect" id="node22" href="$classTelemController.html#afc1f3386e69d9968990e88a702f7baf1" title="内部のテレメトリーデータをシリアライズしてUART経由で送信 [マジックナンバー(2B:0xFADE)] + [データ長(2B)] + [データ本体]" alt="" coords="214,695,361,721"/>
+<area shape="rect" id="node23" href="$classrobot_1_1Controller.html#a54ebcd73f3c9f7805c872541354741d9" title=" " alt="" coords="228,745,347,785"/>
+<area shape="rect" id="node24" href="$classrobot_1_1Controller.html#abeb998746ca6805bd9e294469a6b273c" title=" " alt="" coords="228,809,347,849"/>
+<area shape="rect" id="node25" href="$classrobot_1_1Controller.html#a25a8a529431a0f70829e88d598ff818b" title=" " alt="" coords="228,873,347,913"/>
+<area shape="rect" id="node26" href="$classrobot_1_1Controller.html#a26eec48338133e9715a1640c77f187ae" title=" " alt="" coords="228,937,347,977"/>
+<area shape="rect" id="node27" href="$classrobot_1_1Controller.html#ae9ee77623209f96f39f94fc9765eddd6" title=" " alt="" coords="228,1001,347,1041"/>
+<area shape="rect" id="node28" href="$classrobot_1_1Controller.html#a1d7536f0793bac4117718c903d823fc1" title=" " alt="" coords="228,1065,347,1105"/>
+<area shape="rect" id="node29" href="$classrobot_1_1Controller.html#a46f560237dd96c0b6de2cfc5d800fd3f" title=" " alt="" coords="228,1129,347,1169"/>
+<area shape="rect" id="node30" href="$classrobot_1_1Controller.html#abc609ef72e1a7b3b7250cc143f277334" title=" " alt="" coords="228,1193,347,1233"/>
+<area shape="rect" id="node31" href="$classrobot_1_1Controller.html#a1aec92ca450ff08520a82c181dc875a9" title=" " alt="" coords="228,1257,347,1297"/>
+<area shape="rect" id="node32" href="$classrobot_1_1Controller.html#a830865098839e4872fa5f7e0dd3bf688" title=" " alt="" coords="228,1321,347,1361"/>
+<area shape="rect" id="node33" href="$classrobot_1_1Controller.html#a51c1cb2f898967fbc63762c32131cad1" title=" " alt="" coords="219,1385,356,1425"/>
+<area shape="rect" id="node34" href="$classrobot_1_1Controller.html#a9f8b4b234a1c2aa8039e6e7ad1e8e75b" title=" " alt="" coords="228,1449,347,1489"/>
+<area shape="rect" id="node35" href="$classrobot_1_1Controller.html#af93578f9c253c38f4e1b4e2eb1b09725" title=" " alt="" coords="228,1513,347,1553"/>
+<area shape="rect" id="node36" href="$classrobot_1_1Controller.html#ae32902a63183afc10d57b5414425957b" title=" " alt="" coords="228,1577,347,1617"/>
+<area shape="rect" id="node37" href="$classrobot_1_1Controller.html#a42c3bc5e47fd3a4875cd962d404e843c" title=" " alt="" coords="228,1641,347,1681"/>
+<area shape="rect" id="node38" href="$classrobot_1_1Controller.html#a65c7be4b5ddb76375a607f6994825658" title=" " alt="" coords="228,1705,347,1745"/>
+<area shape="rect" id="node39" href="$classrobot_1_1Controller.html#aa851421fb95f64c838129b7acc174e5b" title=" " alt="" coords="228,1769,347,1809"/>
+<area shape="rect" id="node40" href="$classrobot_1_1Controller.html#a3633ab8fdf35c4a1b25dd5ede551b57a" title=" " alt="" coords="228,1833,347,1873"/>
+<area shape="rect" id="node41" href="$classrobot_1_1Controller.html#a39fe9f46acdfa7fc7497039e04642840" title=" " alt="" coords="228,1897,347,1937"/>
+<area shape="rect" id="node42" href="$classrobot_1_1Controller.html#a5863aa2acde3c824db4405e5c8be8270" title=" " alt="" coords="228,1961,347,2001"/>
+<area shape="rect" id="node43" href="$classrobot_1_1Controller.html#a66453dd2083cf82a1f12132db4579902" title=" " alt="" coords="228,2025,347,2065"/>
+<area shape="rect" id="node44" href="$classrobot_1_1Controller.html#a1892ca08ffb8d479ad9be4a9df6afa09" title=" " alt="" coords="228,2089,347,2129"/>
+<area shape="rect" id="node45" href="$classrobot_1_1Controller.html#a3df48a7f3c78eda33be612fd2e8bfc2f" title=" " alt="" coords="227,2153,348,2193"/>
+<area shape="rect" id="node46" href="$classrobot_1_1Controller.html#aff2687c8a41306a20a202a4d8c30fa21" title=" " alt="" coords="228,2217,347,2257"/>
+<area shape="rect" id="node47" href="$classrobot_1_1Controller.html#a81136aa46f75fb246c513487f607a14f" title=" " alt="" coords="228,2281,347,2321"/>
+<area shape="rect" id="node48" href="$classrobot_1_1Controller.html#abfa761632a4a2eea63489fe24e8860f5" title=" " alt="" coords="228,2345,347,2385"/>
+<area shape="rect" id="node49" href="$classrobot_1_1Controller.html#a232db58d7a13f18984a13c7c221cd217" title=" " alt="" coords="228,2409,347,2449"/>
+<area shape="rect" id="node50" href="$classTelemController.html#a4c9a832c3d81b76119bfac34d799b2af" title="テレメトリーデータへの参照を取得（編集可能）" alt="" coords="212,2474,363,2499"/>
+<area shape="rect" id="node3" href="$classrobot_1_1Controller.html#adf5188eb4b448b01a80434d69d63b59b" title=" " alt="" coords="433,5,551,45"/>
+<area shape="rect" id="node4" href="$classrobot_1_1Controller.html#ab59cb830ad884851831bdb933c1c4ce9" title=" " alt="" coords="433,69,551,109"/>
+<area shape="rect" id="node5" href="$classrobot_1_1Controller.html#ac1d4bf968c66843b1cb6de9864d7359e" title=" " alt="" coords="433,133,551,173"/>
+<area shape="rect" id="node6" href="$classrobot_1_1Controller.html#accd1425d91892a47b459d645e979ee59" title=" " alt="" coords="433,197,551,237"/>
+<area shape="rect" id="node7" href="$classrobot_1_1Controller.html#a2a977ddfc3b0043614984cca10fe7d7a" title=" " alt="" coords="433,261,551,301"/>
+<area shape="rect" id="node8" href="$classrobot_1_1Controller.html#a3948cafd7b2d7553f26dbd7ef60e90e4" title=" " alt="" coords="433,325,551,365"/>
+<area shape="rect" id="node9" href="$classrobot_1_1Controller.html#a9d555229d0b8a86552e838f2e1b095f5" title=" " alt="" coords="433,389,551,429"/>
+<area shape="rect" id="node10" href="$classrobot_1_1Controller.html#a8a7ad0657c5db9cf3225ceb6cc7b351b" title=" " alt="" coords="433,453,551,493"/>
+<area shape="rect" id="node11" href="$classrobot_1_1Controller.html#a1c3f7b4438788009045dad65c06f7c06" title=" " alt="" coords="433,517,551,557"/>
+<area shape="rect" id="node12" href="$classrobot_1_1Controller.html#ab9fee9261cc2bce1e1099f493c5ea540" title=" " alt="" coords="433,581,551,621"/>
+<area shape="rect" id="node13" href="$classrobot_1_1Controller.html#aa6c098a494b1a4d7907ac006bbf74ed4" title=" " alt="" coords="419,645,565,685"/>
+<area shape="rect" id="node14" href="$classrobot_1_1Controller.html#a5867e8f0ad04ae1173264e3b04e4bb15" title=" " alt="" coords="433,709,551,749"/>
+<area shape="rect" id="node15" href="$classrobot_1_1Controller.html#ab566c4e1e06d40918257e8c75e798a77" title=" " alt="" coords="433,773,551,813"/>
+<area shape="rect" id="node16" href="$classrobot_1_1Controller.html#a66e5a01f92877b652429b96817b58728" title=" " alt="" coords="433,837,551,877"/>
+<area shape="rect" id="node17" href="$classrobot_1_1Controller.html#a2832eb2e30c38c9bb97854eedadcbc94" title=" " alt="" coords="433,901,551,941"/>
+<area shape="rect" id="node18" href="$classrobot_1_1Controller.html#a95d33b9caf49b3d12316f6088654005a" title=" " alt="" coords="433,965,551,1005"/>
+<area shape="rect" id="node19" href="$classrobot_1_1Controller.html#ae5adefe2e3adb3d562dd974a678cf985" title=" " alt="" coords="433,1029,551,1069"/>
+</map>

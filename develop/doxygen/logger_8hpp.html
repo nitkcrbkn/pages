@@ -1,0 +1,785 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: app/modules/logic/logger.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('logger_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle"><div class="title">logger.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>C++用高機能ログライブラリ - カスタムインターフェース  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;Clog/logger/include.hpp&gt;</code><br />
+<code>#include &lt;Clog/ASCIIStream/asciiStream_include.hpp&gt;</code><br />
+<code>#include &lt;Clog/logger/log_streamer.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+logger.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="logger_8hpp__incl.png" border="0" usemap="#aapp_2modules_2logic_2logger_8hpp" alt=""/></div>
+<map name="aapp_2modules_2logic_2logger_8hpp" id="aapp_2modules_2logic_2logger_8hpp">
+<area shape="rect" title="C++用高機能ログライブラリ &#45; カスタムインターフェース" alt="" coords="179,5,369,31"/>
+<area shape="rect" title=" " alt="" coords="5,86,71,111"/>
+<area shape="rect" title=" " alt="" coords="95,86,251,111"/>
+<area shape="rect" title=" " alt="" coords="275,79,478,119"/>
+<area shape="rect" title=" " alt="" coords="503,86,693,111"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="logger_8hpp__dep__incl.png" border="0" usemap="#aapp_2modules_2logic_2logger_8hppdep" alt=""/></div>
+<map name="aapp_2modules_2logic_2logger_8hppdep" id="aapp_2modules_2logic_2logger_8hppdep">
+<area shape="rect" title="C++用高機能ログライブラリ &#45; カスタムインターフェース" alt="" coords="45,5,235,31"/>
+<area shape="rect" href="appMain_8h.html" title=" " alt="" coords="12,86,119,111"/>
+<area shape="rect" href="test__DJI_8cpp.html" title=" " alt="" coords="143,79,287,119"/>
+<area shape="rect" href="appMain_8cpp.html" title=" " alt="" coords="5,167,125,192"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a7e6e8aabbcc70b81e233fdc6c99b76fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a7e6e8aabbcc70b81e233fdc6c99b76fa">SIZE_DEF</a></td></tr>
+<tr class="separator:a7e6e8aabbcc70b81e233fdc6c99b76fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9749312bf030df31f08ee65e0a1b361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ab9749312bf030df31f08ee65e0a1b361">PARSE_CTAG</a>&#160;&#160;&#160;true</td></tr>
+<tr class="separator:ab9749312bf030df31f08ee65e0a1b361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13eeec15c7d165fcc61f088317d8274c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a13eeec15c7d165fcc61f088317d8274c">STREAM_ON</a></td></tr>
+<tr class="separator:a13eeec15c7d165fcc61f088317d8274c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac48e7417b851f0eaf66a547a3f5aab7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#aac48e7417b851f0eaf66a547a3f5aab7">LOG_OUTPUT_BASIC</a>(level,  fmt, ...)</td></tr>
+<tr class="separator:aac48e7417b851f0eaf66a547a3f5aab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b752af9e624c2580d13ab72e3d7a3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(level,  fmt, ...)&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#aac48e7417b851f0eaf66a547a3f5aab7">LOG_OUTPUT_BASIC</a>(level, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ab9b752af9e624c2580d13ab72e3d7a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06cfc686322558f590c50eab8622ebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ac06cfc686322558f590c50eab8622ebd">LOG_DEBUG</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::DEBUG_, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ac06cfc686322558f590c50eab8622ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69d735f8291bd2aff230fe6ffb4d4b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ae69d735f8291bd2aff230fe6ffb4d4b3">LOG_INFO</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::INFO_, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ae69d735f8291bd2aff230fe6ffb4d4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba1363ea408060eab75cb5a48dcb907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#adba1363ea408060eab75cb5a48dcb907">LOG_WARN</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::WARN_, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:adba1363ea408060eab75cb5a48dcb907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fc70e87e424e7083c63696b8fb9e78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ae6fc70e87e424e7083c63696b8fb9e78">LOG_ERROR</a>(fmt, ...)&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::ERROR_, fmt, ##__VA_ARGS__)</td></tr>
+<tr class="separator:ae6fc70e87e424e7083c63696b8fb9e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b5282578b939fd77b7bb1d00c4f15a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a62b5282578b939fd77b7bb1d00c4f15a">LOGD</a>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ac06cfc686322558f590c50eab8622ebd">LOG_DEBUG</a></td></tr>
+<tr class="separator:a62b5282578b939fd77b7bb1d00c4f15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fd5c842ec8d93baac58bb616497fe8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a13fd5c842ec8d93baac58bb616497fe8">LOGI</a>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ae69d735f8291bd2aff230fe6ffb4d4b3">LOG_INFO</a></td></tr>
+<tr class="separator:a13fd5c842ec8d93baac58bb616497fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f0b43ab85743ce5de50d53bda6de62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ac6f0b43ab85743ce5de50d53bda6de62">LOGW</a>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#adba1363ea408060eab75cb5a48dcb907">LOG_WARN</a></td></tr>
+<tr class="separator:ac6f0b43ab85743ce5de50d53bda6de62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08358ff7da64345ad674296a5957823"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#ae08358ff7da64345ad674296a5957823">LOGE</a>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ae6fc70e87e424e7083c63696b8fb9e78">LOG_ERROR</a></td></tr>
+<tr class="separator:ae08358ff7da64345ad674296a5957823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a90b670f6a04a321cb8611d25a5a66e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a3a90b670f6a04a321cb8611d25a5a66e">FLUSH_BUFF</a>()&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">get_logger</a>().flush()</td></tr>
+<tr class="separator:a3a90b670f6a04a321cb8611d25a5a66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9df2eb9c1db40885bed18155943a01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a9e9df2eb9c1db40885bed18155943a01">STREAM_SETUP</a>(count)&#160;&#160;&#160;stream_setup(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), count);</td></tr>
+<tr class="separator:a9e9df2eb9c1db40885bed18155943a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63880d1a97e6873be7b40d8c4936b301"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a63880d1a97e6873be7b40d8c4936b301">STREAM</a>(id,  fmt, ...)&#160;&#160;&#160;    streamWrite(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), <a class="el" href="logger_8hpp.html#ab9749312bf030df31f08ee65e0a1b361">PARSE_CTAG</a>, id + 1, cFormat(fmt, ##__VA_ARGS__))</td></tr>
+<tr class="separator:a63880d1a97e6873be7b40d8c4936b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e3a9599f3debdeb180ed718832e857"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a19e3a9599f3debdeb180ed718832e857">STREAM_ADD</a>(id,  fmt, ...)&#160;&#160;&#160;    streamAdd(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), <a class="el" href="logger_8hpp.html#ab9749312bf030df31f08ee65e0a1b361">PARSE_CTAG</a>, id + 1, cFormat(fmt, ##__VA_ARGS__))</td></tr>
+<tr class="separator:a19e3a9599f3debdeb180ed718832e857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a88e611ae51dac81409696c1a5bdf5e3e"><td class="memItemLeft" align="right" valign="top">CLog::LogDirector &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">get_logger</a> ()</td></tr>
+<tr class="memdesc:a88e611ae51dac81409696c1a5bdf5e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">複数出力対応Logger取得関数  <a href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">[詳解]</a><br /></td></tr>
+<tr class="separator:a88e611ae51dac81409696c1a5bdf5e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5a08ce1b8d1a0cbe17efeff30bf551"><td class="memItemLeft" align="right" valign="top">AsciiStream::TerminalController &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a> ()</td></tr>
+<tr class="separator:acc5a08ce1b8d1a0cbe17efeff30bf551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72aea7eecd5e6db25d9dc152cf1b8f3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a72aea7eecd5e6db25d9dc152cf1b8f3f">writeTerminal</a> (const std::string &amp;string)</td></tr>
+<tr class="separator:a72aea7eecd5e6db25d9dc152cf1b8f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:afbdf366a3ff0d118e9042ebd9882954a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#afbdf366a3ff0d118e9042ebd9882954a">SZ</a> = 32</td></tr>
+<tr class="separator:afbdf366a3ff0d118e9042ebd9882954a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b81a65975e500221a6a0636cdf8745a"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a9b81a65975e500221a6a0636cdf8745a">LOG_SIZE</a> = 128</td></tr>
+<tr class="separator:a9b81a65975e500221a6a0636cdf8745a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5661e37f4e4ddc1f61757cb35290ce93"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a5661e37f4e4ddc1f61757cb35290ce93">MSG_SIZE</a> = <a class="el" href="config_8h.html#a9b81a65975e500221a6a0636cdf8745a">LOG_SIZE</a> * 2</td></tr>
+<tr class="separator:a5661e37f4e4ddc1f61757cb35290ce93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ebcb7f17a1ad5ea059a3821567824d"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a04ebcb7f17a1ad5ea059a3821567824d">FMT_SIZE</a> = <a class="el" href="config_8h.html#a5661e37f4e4ddc1f61757cb35290ce93">MSG_SIZE</a> * 2</td></tr>
+<tr class="separator:a04ebcb7f17a1ad5ea059a3821567824d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b20806b4d2bf57ff66d35711eaee4fa"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logger_8hpp.html#a7b20806b4d2bf57ff66d35711eaee4fa">BUFFER_SIZE</a> = <a class="el" href="config_8h.html#a04ebcb7f17a1ad5ea059a3821567824d">FMT_SIZE</a> * 2</td></tr>
+<tr class="separator:a7b20806b4d2bf57ff66d35711eaee4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >C++用高機能ログライブラリ - カスタムインターフェース </p>
+<p >ユーザー向けのメインAPIを提供 LOG_DEBUG("デバッグメッセージy|黄色|: %s", "詳細情報"); </p><dl class="section author"><dt>著者</dt><dd>ren255 </dd></dl>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a3a90b670f6a04a321cb8611d25a5a66e" name="a3a90b670f6a04a321cb8611d25a5a66e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a90b670f6a04a321cb8611d25a5a66e">&#9670;&#160;</a></span>FLUSH_BUFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLUSH_BUFF</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">get_logger</a>().flush()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac06cfc686322558f590c50eab8622ebd" name="ac06cfc686322558f590c50eab8622ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06cfc686322558f590c50eab8622ebd">&#9670;&#160;</a></span>LOG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::DEBUG_, fmt, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6fc70e87e424e7083c63696b8fb9e78" name="ae6fc70e87e424e7083c63696b8fb9e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fc70e87e424e7083c63696b8fb9e78">&#9670;&#160;</a></span>LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_ERROR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::ERROR_, fmt, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae69d735f8291bd2aff230fe6ffb4d4b3" name="ae69d735f8291bd2aff230fe6ffb4d4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69d735f8291bd2aff230fe6ffb4d4b3">&#9670;&#160;</a></span>LOG_INFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_INFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::INFO_, fmt, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9b752af9e624c2580d13ab72e3d7a3a" name="ab9b752af9e624c2580d13ab72e3d7a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b752af9e624c2580d13ab72e3d7a3a">&#9670;&#160;</a></span>LOG_OUTPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_OUTPUT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#aac48e7417b851f0eaf66a547a3f5aab7">LOG_OUTPUT_BASIC</a>(level, fmt, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac48e7417b851f0eaf66a547a3f5aab7" name="aac48e7417b851f0eaf66a547a3f5aab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac48e7417b851f0eaf66a547a3f5aab7">&#9670;&#160;</a></span>LOG_OUTPUT_BASIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_OUTPUT_BASIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    <a class="code hl_function" href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">get_logger</a>().log_output(level, __FILE__, __LINE__, \</div>
+<div class="line">                            cFormat(fmt, ##__VA_ARGS__).c_str())</div>
+<div class="ttc" id="alogger_8hpp_html_a88e611ae51dac81409696c1a5bdf5e3e"><div class="ttname"><a href="logger_8hpp.html#a88e611ae51dac81409696c1a5bdf5e3e">get_logger</a></div><div class="ttdeci">CLog::LogDirector &amp; get_logger()</div><div class="ttdoc">複数出力対応Logger取得関数</div><div class="ttdef"><b>Definition:</b> logger.hpp:88</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adba1363ea408060eab75cb5a48dcb907" name="adba1363ea408060eab75cb5a48dcb907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba1363ea408060eab75cb5a48dcb907">&#9670;&#160;</a></span>LOG_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_WARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ab9b752af9e624c2580d13ab72e3d7a3a">LOG_OUTPUT</a>(LogLevel::WARN_, fmt, ##__VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62b5282578b939fd77b7bb1d00c4f15a" name="a62b5282578b939fd77b7bb1d00c4f15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b5282578b939fd77b7bb1d00c4f15a">&#9670;&#160;</a></span>LOGD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGD&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ac06cfc686322558f590c50eab8622ebd">LOG_DEBUG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae08358ff7da64345ad674296a5957823" name="ae08358ff7da64345ad674296a5957823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08358ff7da64345ad674296a5957823">&#9670;&#160;</a></span>LOGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGE&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ae6fc70e87e424e7083c63696b8fb9e78">LOG_ERROR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13fd5c842ec8d93baac58bb616497fe8" name="a13fd5c842ec8d93baac58bb616497fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fd5c842ec8d93baac58bb616497fe8">&#9670;&#160;</a></span>LOGI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGI&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#ae69d735f8291bd2aff230fe6ffb4d4b3">LOG_INFO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6f0b43ab85743ce5de50d53bda6de62" name="ac6f0b43ab85743ce5de50d53bda6de62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f0b43ab85743ce5de50d53bda6de62">&#9670;&#160;</a></span>LOGW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGW&#160;&#160;&#160;<a class="el" href="logger_8hpp.html#adba1363ea408060eab75cb5a48dcb907">LOG_WARN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9749312bf030df31f08ee65e0a1b361" name="ab9749312bf030df31f08ee65e0a1b361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9749312bf030df31f08ee65e0a1b361">&#9670;&#160;</a></span>PARSE_CTAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARSE_CTAG&#160;&#160;&#160;true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e6e8aabbcc70b81e233fdc6c99b76fa" name="a7e6e8aabbcc70b81e233fdc6c99b76fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6e8aabbcc70b81e233fdc6c99b76fa">&#9670;&#160;</a></span>SIZE_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SIZE_DEF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63880d1a97e6873be7b40d8c4936b301" name="a63880d1a97e6873be7b40d8c4936b301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63880d1a97e6873be7b40d8c4936b301">&#9670;&#160;</a></span>STREAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STREAM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    streamWrite(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), <a class="el" href="logger_8hpp.html#ab9749312bf030df31f08ee65e0a1b361">PARSE_CTAG</a>, id + 1, cFormat(fmt, ##__VA_ARGS__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19e3a9599f3debdeb180ed718832e857" name="a19e3a9599f3debdeb180ed718832e857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e3a9599f3debdeb180ed718832e857">&#9670;&#160;</a></span>STREAM_ADD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STREAM_ADD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    streamAdd(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), <a class="el" href="logger_8hpp.html#ab9749312bf030df31f08ee65e0a1b361">PARSE_CTAG</a>, id + 1, cFormat(fmt, ##__VA_ARGS__))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13eeec15c7d165fcc61f088317d8274c" name="a13eeec15c7d165fcc61f088317d8274c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13eeec15c7d165fcc61f088317d8274c">&#9670;&#160;</a></span>STREAM_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STREAM_ON</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e9df2eb9c1db40885bed18155943a01" name="a9e9df2eb9c1db40885bed18155943a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9df2eb9c1db40885bed18155943a01">&#9670;&#160;</a></span>STREAM_SETUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STREAM_SETUP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count</td><td>)</td>
+          <td>&#160;&#160;&#160;stream_setup(<a class="el" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551">get_ctrl</a>(), count);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="acc5a08ce1b8d1a0cbe17efeff30bf551" name="acc5a08ce1b8d1a0cbe17efeff30bf551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5a08ce1b8d1a0cbe17efeff30bf551">&#9670;&#160;</a></span>get_ctrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AsciiStream::TerminalController &amp; get_ctrl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="logger_8hpp_acc5a08ce1b8d1a0cbe17efeff30bf551_cgraph.png" border="0" usemap="#alogger_8hpp_acc5a08ce1b8d1a0cbe17efeff30bf551_cgraph" alt=""/></div>
+<map name="alogger_8hpp_acc5a08ce1b8d1a0cbe17efeff30bf551_cgraph" id="alogger_8hpp_acc5a08ce1b8d1a0cbe17efeff30bf551_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,71,31"/>
+<area shape="rect" href="logger_8hpp.html#a72aea7eecd5e6db25d9dc152cf1b8f3f" title=" " alt="" coords="119,5,219,31"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="267,5,317,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a88e611ae51dac81409696c1a5bdf5e3e" name="a88e611ae51dac81409696c1a5bdf5e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e611ae51dac81409696c1a5bdf5e3e">&#9670;&#160;</a></span>get_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLog::LogDirector &amp; get_logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>複数出力対応Logger取得関数 </p>
+<dl class="section return"><dt>戻り値</dt><dd>writerとformaterを設定 </dd></dl>
+<p >director-&gt;addOutputCtl(Writers::BufferedWriter(), Formatters::ConsoleFmt{}); Writers::ConsoleWriter consoleWriter; Formatters::ConsoleFmt consoleFmt; director-&gt;addOutputCtl(consoleWriter, consoleFmt);</p>
+
+</div>
+</div>
+<a id="a72aea7eecd5e6db25d9dc152cf1b8f3f" name="a72aea7eecd5e6db25d9dc152cf1b8f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72aea7eecd5e6db25d9dc152cf1b8f3f">&#9670;&#160;</a></span>writeTerminal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int writeTerminal </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="logger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_cgraph.png" border="0" usemap="#alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_cgraph" alt=""/></div>
+<map name="alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_cgraph" id="alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,105,31"/>
+<area shape="rect" href="utils_8h.html#a98631211a4a8aee62f572375d5b637be" title=" " alt="" coords="153,5,204,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="logger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_icgraph.png" border="0" usemap="#alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_icgraph" alt=""/></div>
+<map name="alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_icgraph" id="alogger_8hpp_a72aea7eecd5e6db25d9dc152cf1b8f3f_icgraph">
+<area shape="rect" title=" " alt="" coords="119,5,219,31"/>
+<area shape="rect" href="logger_8hpp.html#acc5a08ce1b8d1a0cbe17efeff30bf551" title=" " alt="" coords="5,5,71,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="a7b20806b4d2bf57ff66d35711eaee4fa" name="a7b20806b4d2bf57ff66d35711eaee4fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b20806b4d2bf57ff66d35711eaee4fa">&#9670;&#160;</a></span>BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t BUFFER_SIZE = <a class="el" href="config_8h.html#a04ebcb7f17a1ad5ea059a3821567824d">FMT_SIZE</a> * 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04ebcb7f17a1ad5ea059a3821567824d" name="a04ebcb7f17a1ad5ea059a3821567824d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ebcb7f17a1ad5ea059a3821567824d">&#9670;&#160;</a></span>FMT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t FMT_SIZE = <a class="el" href="config_8h.html#a5661e37f4e4ddc1f61757cb35290ce93">MSG_SIZE</a> * 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b81a65975e500221a6a0636cdf8745a" name="a9b81a65975e500221a6a0636cdf8745a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b81a65975e500221a6a0636cdf8745a">&#9670;&#160;</a></span>LOG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t LOG_SIZE = 128</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5661e37f4e4ddc1f61757cb35290ce93" name="a5661e37f4e4ddc1f61757cb35290ce93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5661e37f4e4ddc1f61757cb35290ce93">&#9670;&#160;</a></span>MSG_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t MSG_SIZE = <a class="el" href="config_8h.html#a9b81a65975e500221a6a0636cdf8745a">LOG_SIZE</a> * 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbdf366a3ff0d118e9042ebd9882954a" name="afbdf366a3ff0d118e9042ebd9882954a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdf366a3ff0d118e9042ebd9882954a">&#9670;&#160;</a></span>SZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t SZ = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d422163b96683743ed3963d4aac17747.html">app</a></li><li class="navelem"><a class="el" href="dir_5271bff3c5a06a3249a041c6437a62cf.html">modules</a></li><li class="navelem"><a class="el" href="dir_8bde8f6c330defb68c9661dbc43cd15c.html">logic</a></li><li class="navelem"><a class="el" href="logger_8hpp.html">logger.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

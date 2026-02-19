@@ -1,0 +1,6 @@
+<map id="robot::Telemetry::clear_controller" name="robot::Telemetry::clear_controller">
+<area shape="rect" id="node1" title=" " alt="" coords="596,5,744,45"/>
+<area shape="rect" id="node2" href="$classrobot_1_1Telemetry.html#a06f3a1cd3ad84ff6ef2045956479b42a" title=" " alt="" coords="400,13,548,38"/>
+<area shape="rect" id="node3" href="$classTelemController.html#a4d4c830d27924aa0123a6c2d0acea9d2" title="テレメトリーデータをリセットし、バージョン情報とタイムスタンプを設定 メソッドチェーン可能" alt="" coords="204,13,352,38"/>
+<area shape="rect" id="node4" href="$classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76" title=" " alt="" coords="5,5,156,45"/>
+</map>
