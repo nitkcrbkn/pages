@@ -1,0 +1,4 @@
+<map id="solenoid_ctrl::SolenoidMaster::SolenoidMaster" name="solenoid_ctrl::SolenoidMaster::SolenoidMaster">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,196,45"/>
+<area shape="rect" id="node2" href="$d3/da4/classproto__can_1_1Master.html#ac9274c5110441a73ef68a45866280f6a" title="受信コールバックを登録する" alt="" coords="244,5,375,45"/>
+</map>

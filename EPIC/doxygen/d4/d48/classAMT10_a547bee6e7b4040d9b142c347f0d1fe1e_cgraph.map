@@ -1,0 +1,5 @@
+<map id="AMT10::print_state" name="AMT10::print_state">
+<area shape="rect" id="node1" title="現在の状態をストリームに出力（デバッグ用）" alt="" coords="5,55,136,80"/>
+<area shape="rect" id="node2" href="$d4/d48/classAMT10.html#acf33c408660137d4741b9e33ff0e409e" title="現在の1回転内角度を返す [0.0 &#45; 360.0 度] X パルス検出後はインデックス基準の角度、未検出時は累積カウント基準" alt="" coords="200,29,301,55"/>
+<area shape="rect" id="node3" href="$d4/d48/classAMT10.html#a4d5e1b401cf5d7b7fcb94662cd68176f" title="累積回転数を返す（正負・小数含む）" alt="" coords="184,79,317,104"/>
+</map>

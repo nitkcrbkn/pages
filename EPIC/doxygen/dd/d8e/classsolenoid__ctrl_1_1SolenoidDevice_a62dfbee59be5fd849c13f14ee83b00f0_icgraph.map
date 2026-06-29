@@ -1,0 +1,4 @@
+<map id="solenoid_ctrl::SolenoidDevice::update_dip" name="solenoid_ctrl::SolenoidDevice::update_dip">
+<area shape="rect" id="node1" title="DIPスイッチを読み直してデバイスIDを更新する" alt="" coords="244,5,435,45"/>
+<area shape="rect" id="node2" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a3d0c269cb62f65a1ba90a967d0142161" title=" " alt="" coords="5,5,196,45"/>
+</map>

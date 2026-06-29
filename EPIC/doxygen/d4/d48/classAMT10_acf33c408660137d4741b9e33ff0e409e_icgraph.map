@@ -1,0 +1,5 @@
+<map id="AMT10::angle" name="AMT10::angle">
+<area shape="rect" id="node1" title="現在の1回転内角度を返す [0.0 &#45; 360.0 度] X パルス検出後はインデックス基準の角度、未検出時は累積カウント基準" alt="" coords="184,31,285,56"/>
+<area shape="rect" id="node2" href="$d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="18,5,123,31"/>
+<area shape="rect" id="node3" href="$d4/d48/classAMT10.html#a547bee6e7b4040d9b142c347f0d1fe1e" title="現在の状態をストリームに出力（デバッグ用）" alt="" coords="5,55,136,80"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="proto_can::Device::send_data" name="proto_can::Device::send_data">
+<area shape="rect" id="node1" title="自デバイスの状態データを送信する" alt="" coords="244,5,375,45"/>
+<area shape="rect" id="node2" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a981dc57820e261be95013fd0e4d16716" title="メインループから毎サイクル呼ぶ。 send_rate_ms 経過していれば現在のGPIO状態を送信する。" alt="" coords="5,5,196,45"/>
+</map>

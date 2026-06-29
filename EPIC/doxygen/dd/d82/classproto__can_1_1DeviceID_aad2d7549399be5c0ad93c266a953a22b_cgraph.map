@@ -1,0 +1,6 @@
+<map id="proto_can::DeviceID::DeviceID" name="proto_can::DeviceID::DeviceID">
+<area shape="rect" id="node1" title="デバイスIDを種類と番号で構成。" alt="" coords="5,23,144,63"/>
+<area shape="rect" id="node2" href="$dd/d82/classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef" title="デバイスの番号を決定する。" alt="" coords="192,23,331,63"/>
+<area shape="rect" id="node3" href="$d0/d31/namespaceBitUtil.html#aa71923663b7ba4db1575ec5b10a02ca5" title="値が指定されたビット幅に収まるか確認します (32bit)" alt="" coords="386,5,522,31"/>
+<area shape="rect" id="node4" href="$dc/d65/namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="379,55,529,80"/>
+</map>

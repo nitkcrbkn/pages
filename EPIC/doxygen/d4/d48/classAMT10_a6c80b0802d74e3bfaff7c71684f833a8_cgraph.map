@@ -1,0 +1,9 @@
+<map id="AMT10::on_cb" name="AMT10::on_cb">
+<area shape="rect" id="node1" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="5,153,111,179"/>
+<area shape="rect" id="node2" href="$d4/d48/classAMT10.html#acf33c408660137d4741b9e33ff0e409e" title="現在の1回転内角度を返す [0.0 &#45; 360.0 度] X パルス検出後はインデックス基準の角度、未検出時は累積カウント基準" alt="" coords="174,29,275,55"/>
+<area shape="rect" id="node3" href="$d4/d48/classAMT10.html#ac3181c63bc0ca65bb6c6dd9c0ca290ca" title=" " alt="" coords="173,79,276,104"/>
+<area shape="rect" id="node4" href="$d4/d48/classAMT10.html#afd6b0f207b0d49e2f6124be89e0beffa" title=" " alt="" coords="173,128,276,153"/>
+<area shape="rect" id="node5" href="$d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="159,177,291,203"/>
+<area shape="rect" id="node6" href="$d4/d48/classAMT10.html#ae0a2088b41215ad5065400461c2ff863" title=" " alt="" coords="174,227,275,252"/>
+<area shape="rect" id="node7" href="$d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="167,276,282,301"/>
+</map>

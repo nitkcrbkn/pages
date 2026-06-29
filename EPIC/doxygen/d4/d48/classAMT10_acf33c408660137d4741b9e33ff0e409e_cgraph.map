@@ -1,0 +1,3 @@
+<map id="AMT10::angle" name="AMT10::angle">
+<area shape="rect" id="node1" title="現在の1回転内角度を返す [0.0 &#45; 360.0 度] X パルス検出後はインデックス基準の角度、未検出時は累積カウント基準" alt="" coords="5,29,107,55"/>
+</map>

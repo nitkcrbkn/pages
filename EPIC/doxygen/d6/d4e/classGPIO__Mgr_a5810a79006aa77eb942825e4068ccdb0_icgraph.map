@@ -1,0 +1,7 @@
+<map id="GPIO_Mgr::read" name="GPIO_Mgr::read">
+<area shape="rect" id="node1" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="375,31,489,56"/>
+<area shape="rect" id="node2" href="$d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="215,5,320,31"/>
+<area shape="rect" id="node3" href="$d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="208,55,327,80"/>
+<area shape="rect" id="node4" href="$d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,29,160,55"/>
+<area shape="rect" id="node5" href="$d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,79,140,104"/>
+</map>

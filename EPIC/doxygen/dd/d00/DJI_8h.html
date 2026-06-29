@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: modules/logic/DJI.h ファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dd/d00/DJI_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle"><div class="title">DJI.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ESC class-ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d6/dbe/stdRBKN_8h.html">logic/stdRBKN.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/d9b/CanInterfaces_8hpp.html">CanSystem/core/CanInterfaces.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+DJI.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2a/DJI_8h__incl.png" border="0" usemap="#amodules_2logic_2DJI_8h" alt=""/></div>
+<map name="amodules_2logic_2DJI_8h" id="amodules_2logic_2DJI_8h">
+<area shape="rect" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="219,5,355,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,65,104"/>
+<area shape="rect" title=" " alt="" coords="90,79,149,104"/>
+<area shape="rect" title=" " alt="" coords="379,152,457,177"/>
+<area shape="rect" title=" " alt="" coords="317,79,367,104"/>
+<area shape="rect" href="../../d6/dbe/stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="173,79,292,104"/>
+<area shape="rect" href="../../df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="442,79,669,104"/>
+<area shape="rect" title=" " alt="" coords="203,152,262,177"/>
+<area shape="rect" title=" " alt="" coords="510,152,571,177"/>
+<area shape="rect" title=" " alt="" coords="595,152,657,177"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/structDJI_1_1ESCData.html">DJI::ESCData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ESCから受信するデータを格納するために作られた構造体  <a href="../../d2/df4/structDJI_1_1ESCData.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html">DJI::ESC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御するため。  <a href="../../d4/d2e/classDJI_1_1ESC.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:da/db0/namespaceDJI"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/namespaceDJI.html">DJI</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a33cf7bac68390608d1fcf88ff127c645"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a33cf7bac68390608d1fcf88ff127c645">C610_MAX_CURRENT</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="memdesc:a33cf7bac68390608d1fcf88ff127c645"><td class="mdescLeft">&#160;</td><td class="mdescRight">C610が許容する電流の最大値  <a href="../../dd/d00/DJI_8h.html#a33cf7bac68390608d1fcf88ff127c645">[詳解]</a><br /></td></tr>
+<tr class="separator:a33cf7bac68390608d1fcf88ff127c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766acc0a953199d800d1af5c282199b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a766acc0a953199d800d1af5c282199b3">C610_MIN_CURRENT</a>&#160;&#160;&#160;-10000</td></tr>
+<tr class="memdesc:a766acc0a953199d800d1af5c282199b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">C610が許容する電流の最小値  <a href="../../dd/d00/DJI_8h.html#a766acc0a953199d800d1af5c282199b3">[詳解]</a><br /></td></tr>
+<tr class="separator:a766acc0a953199d800d1af5c282199b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c2ccc5bf8129364ecfc6853e7c028f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a48c2ccc5bf8129364ecfc6853e7c028f">M2006_MAX_SPEED</a>&#160;&#160;&#160;18000</td></tr>
+<tr class="memdesc:a48c2ccc5bf8129364ecfc6853e7c028f"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の速度の最大値  <a href="../../dd/d00/DJI_8h.html#a48c2ccc5bf8129364ecfc6853e7c028f">[詳解]</a><br /></td></tr>
+<tr class="separator:a48c2ccc5bf8129364ecfc6853e7c028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af654f155b7fb798d35fd7893bce1e0b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#af654f155b7fb798d35fd7893bce1e0b5">M2006_MIN_SPEED</a>&#160;&#160;&#160;-18000</td></tr>
+<tr class="memdesc:af654f155b7fb798d35fd7893bce1e0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の速度の最小値  <a href="../../dd/d00/DJI_8h.html#af654f155b7fb798d35fd7893bce1e0b5">[詳解]</a><br /></td></tr>
+<tr class="separator:af654f155b7fb798d35fd7893bce1e0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c8f58fadf5b088d56446664be7214a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a10c8f58fadf5b088d56446664be7214a">C620_MAX_CURRENT</a>&#160;&#160;&#160;16384</td></tr>
+<tr class="memdesc:a10c8f58fadf5b088d56446664be7214a"><td class="mdescLeft">&#160;</td><td class="mdescRight">C620が許容する電流の最大値  <a href="../../dd/d00/DJI_8h.html#a10c8f58fadf5b088d56446664be7214a">[詳解]</a><br /></td></tr>
+<tr class="separator:a10c8f58fadf5b088d56446664be7214a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c70982fdd9d1eca70b3a683ec747b22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a2c70982fdd9d1eca70b3a683ec747b22">C620_MIN_CURRENT</a>&#160;&#160;&#160;-16384</td></tr>
+<tr class="memdesc:a2c70982fdd9d1eca70b3a683ec747b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">C620が許容する電流の最小値  <a href="../../dd/d00/DJI_8h.html#a2c70982fdd9d1eca70b3a683ec747b22">[詳解]</a><br /></td></tr>
+<tr class="separator:a2c70982fdd9d1eca70b3a683ec747b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb62eb5ff57c88bc170ebc6dbfac13e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#acb62eb5ff57c88bc170ebc6dbfac13e4">M3508_MAX_SPEED</a>&#160;&#160;&#160;16384</td></tr>
+<tr class="memdesc:acb62eb5ff57c88bc170ebc6dbfac13e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508の速度の最大値  <a href="../../dd/d00/DJI_8h.html#acb62eb5ff57c88bc170ebc6dbfac13e4">[詳解]</a><br /></td></tr>
+<tr class="separator:acb62eb5ff57c88bc170ebc6dbfac13e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396f438e15f77cd156d0aa1767959c43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a396f438e15f77cd156d0aa1767959c43">M3508_MIN_SPEED</a>&#160;&#160;&#160;-16384</td></tr>
+<tr class="memdesc:a396f438e15f77cd156d0aa1767959c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">M3508の速度の最小値  <a href="../../dd/d00/DJI_8h.html#a396f438e15f77cd156d0aa1767959c43">[詳解]</a><br /></td></tr>
+<tr class="separator:a396f438e15f77cd156d0aa1767959c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d5f46611cba9a11f0d02b11b0036df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#ae6d5f46611cba9a11f0d02b11b0036df">M2006_DEFAULT_KP</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ae6d5f46611cba9a11f0d02b11b0036df"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の無負荷状態のおすすめPゲイン  <a href="../../dd/d00/DJI_8h.html#ae6d5f46611cba9a11f0d02b11b0036df">[詳解]</a><br /></td></tr>
+<tr class="separator:ae6d5f46611cba9a11f0d02b11b0036df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a77550a7e737c1c6b47fc6a4e33ca6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a0a77550a7e737c1c6b47fc6a4e33ca6c">M2006_DEFAULT_KI</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:a0a77550a7e737c1c6b47fc6a4e33ca6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の無負荷状態のおすすめIゲイン  <a href="../../dd/d00/DJI_8h.html#a0a77550a7e737c1c6b47fc6a4e33ca6c">[詳解]</a><br /></td></tr>
+<tr class="separator:a0a77550a7e737c1c6b47fc6a4e33ca6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c41d2998da15f4fb84a8c2cdfe911a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a9c41d2998da15f4fb84a8c2cdfe911a3">M2006_DEFAULT_KD</a>&#160;&#160;&#160;0.01125</td></tr>
+<tr class="memdesc:a9c41d2998da15f4fb84a8c2cdfe911a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">M2006の無負荷状態のおすすめDゲイン  <a href="../../dd/d00/DJI_8h.html#a9c41d2998da15f4fb84a8c2cdfe911a3">[詳解]</a><br /></td></tr>
+<tr class="separator:a9c41d2998da15f4fb84a8c2cdfe911a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9891ce34c723ca9ba080768570d180"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a1f9891ce34c723ca9ba080768570d180">C610_MAX_ANGLE</a>&#160;&#160;&#160;8191</td></tr>
+<tr class="separator:a1f9891ce34c723ca9ba080768570d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cc6bb98ef53b137ba6501bb5ea3c94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#ae6cc6bb98ef53b137ba6501bb5ea3c94">C610_MIN_ANGLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae6cc6bb98ef53b137ba6501bb5ea3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4569844d2ef716b3d18e62f8d421d1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#ac4569844d2ef716b3d18e62f8d421d1c">C620_MAX_ANGLE</a>&#160;&#160;&#160;8191</td></tr>
+<tr class="separator:ac4569844d2ef716b3d18e62f8d421d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817987fd262e21d6c754ed09286fe16d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a817987fd262e21d6c754ed09286fe16d">C620_MIN_ANGLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a817987fd262e21d6c754ed09286fe16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a243fc206fcf72f9e9452fd3a00679014"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/namespaceDJI.html#a243fc206fcf72f9e9452fd3a00679014">DJI::CallBack</a> = std::function&lt; void(const uint32_t, const <a class="el" href="../../d2/df4/structDJI_1_1ESCData.html">DJI::ESCData</a> &amp;)&gt;</td></tr>
+<tr class="separator:a243fc206fcf72f9e9452fd3a00679014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a69284ac5817deab119f96c3fb6152c5c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5c">DJI::MotorState</a> { <br />
+&#160;&#160;<a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca95b19f7739b0b7ea7d6b07586be54f36">DJI::Init</a>
+, <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca5bda814c4aedb126839228f1a3d92f09">DJI::Running</a>
+, <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cac23e2b09ebe6bf4cb5e2a9abe85c0be2">DJI::Stopped</a>
+, <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cab6809b85aeee44b9074843bdef4b9553">DJI::SetCurrentError</a>
+, <br />
+&#160;&#160;<a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca529abae0d19eeb3cd2a0467560e9be7f">DJI::AdjustedCurrent</a>
+<br />
+ }</td></tr>
+<tr class="separator:a69284ac5817deab119f96c3fb6152c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >ESC class-ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する </p>
+<dl class="section author"><dt>著者</dt><dd>Ryosei Hoshi, Ren TOda</dd></dl>
+<p>org/ NIT,Kisarazu College RBKN </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a1f9891ce34c723ca9ba080768570d180" name="a1f9891ce34c723ca9ba080768570d180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9891ce34c723ca9ba080768570d180">&#9670;&#160;</a></span>C610_MAX_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C610_MAX_ANGLE&#160;&#160;&#160;8191</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33cf7bac68390608d1fcf88ff127c645" name="a33cf7bac68390608d1fcf88ff127c645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33cf7bac68390608d1fcf88ff127c645">&#9670;&#160;</a></span>C610_MAX_CURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C610_MAX_CURRENT&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C610が許容する電流の最大値 </p>
+
+</div>
+</div>
+<a id="ae6cc6bb98ef53b137ba6501bb5ea3c94" name="ae6cc6bb98ef53b137ba6501bb5ea3c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6cc6bb98ef53b137ba6501bb5ea3c94">&#9670;&#160;</a></span>C610_MIN_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C610_MIN_ANGLE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a766acc0a953199d800d1af5c282199b3" name="a766acc0a953199d800d1af5c282199b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766acc0a953199d800d1af5c282199b3">&#9670;&#160;</a></span>C610_MIN_CURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C610_MIN_CURRENT&#160;&#160;&#160;-10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C610が許容する電流の最小値 </p>
+
+</div>
+</div>
+<a id="ac4569844d2ef716b3d18e62f8d421d1c" name="ac4569844d2ef716b3d18e62f8d421d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4569844d2ef716b3d18e62f8d421d1c">&#9670;&#160;</a></span>C620_MAX_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C620_MAX_ANGLE&#160;&#160;&#160;8191</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c8f58fadf5b088d56446664be7214a" name="a10c8f58fadf5b088d56446664be7214a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c8f58fadf5b088d56446664be7214a">&#9670;&#160;</a></span>C620_MAX_CURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C620_MAX_CURRENT&#160;&#160;&#160;16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C620が許容する電流の最大値 </p>
+
+</div>
+</div>
+<a id="a817987fd262e21d6c754ed09286fe16d" name="a817987fd262e21d6c754ed09286fe16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817987fd262e21d6c754ed09286fe16d">&#9670;&#160;</a></span>C620_MIN_ANGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C620_MIN_ANGLE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c70982fdd9d1eca70b3a683ec747b22" name="a2c70982fdd9d1eca70b3a683ec747b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c70982fdd9d1eca70b3a683ec747b22">&#9670;&#160;</a></span>C620_MIN_CURRENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C620_MIN_CURRENT&#160;&#160;&#160;-16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C620が許容する電流の最小値 </p>
+
+</div>
+</div>
+<a id="a9c41d2998da15f4fb84a8c2cdfe911a3" name="a9c41d2998da15f4fb84a8c2cdfe911a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c41d2998da15f4fb84a8c2cdfe911a3">&#9670;&#160;</a></span>M2006_DEFAULT_KD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M2006_DEFAULT_KD&#160;&#160;&#160;0.01125</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M2006の無負荷状態のおすすめDゲイン </p>
+
+</div>
+</div>
+<a id="a0a77550a7e737c1c6b47fc6a4e33ca6c" name="a0a77550a7e737c1c6b47fc6a4e33ca6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a77550a7e737c1c6b47fc6a4e33ca6c">&#9670;&#160;</a></span>M2006_DEFAULT_KI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M2006_DEFAULT_KI&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M2006の無負荷状態のおすすめIゲイン </p>
+
+</div>
+</div>
+<a id="ae6d5f46611cba9a11f0d02b11b0036df" name="ae6d5f46611cba9a11f0d02b11b0036df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d5f46611cba9a11f0d02b11b0036df">&#9670;&#160;</a></span>M2006_DEFAULT_KP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M2006_DEFAULT_KP&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M2006の無負荷状態のおすすめPゲイン </p>
+
+</div>
+</div>
+<a id="a48c2ccc5bf8129364ecfc6853e7c028f" name="a48c2ccc5bf8129364ecfc6853e7c028f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c2ccc5bf8129364ecfc6853e7c028f">&#9670;&#160;</a></span>M2006_MAX_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M2006_MAX_SPEED&#160;&#160;&#160;18000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M2006の速度の最大値 </p>
+
+</div>
+</div>
+<a id="af654f155b7fb798d35fd7893bce1e0b5" name="af654f155b7fb798d35fd7893bce1e0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af654f155b7fb798d35fd7893bce1e0b5">&#9670;&#160;</a></span>M2006_MIN_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M2006_MIN_SPEED&#160;&#160;&#160;-18000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M2006の速度の最小値 </p>
+
+</div>
+</div>
+<a id="acb62eb5ff57c88bc170ebc6dbfac13e4" name="acb62eb5ff57c88bc170ebc6dbfac13e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb62eb5ff57c88bc170ebc6dbfac13e4">&#9670;&#160;</a></span>M3508_MAX_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M3508_MAX_SPEED&#160;&#160;&#160;16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M3508の速度の最大値 </p>
+
+</div>
+</div>
+<a id="a396f438e15f77cd156d0aa1767959c43" name="a396f438e15f77cd156d0aa1767959c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396f438e15f77cd156d0aa1767959c43">&#9670;&#160;</a></span>M3508_MIN_SPEED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M3508_MIN_SPEED&#160;&#160;&#160;-16384</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>M3508の速度の最小値 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_419d2904af11a64b1df4335283624bbe.html">logic</a></li><li class="navelem"><a class="el" href="../../dd/d00/DJI_8h.html">DJI.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

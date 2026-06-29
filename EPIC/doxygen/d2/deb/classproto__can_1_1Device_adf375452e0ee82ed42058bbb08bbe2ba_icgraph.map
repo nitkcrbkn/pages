@@ -1,0 +1,5 @@
+<map id="proto_can::Device::register_cb" name="proto_can::Device::register_cb">
+<area shape="rect" id="node1" title="受信コールバックを登録する" alt="" coords="244,37,375,77"/>
+<area shape="rect" id="node2" href="$d2/deb/classproto__can_1_1Device.html#aef663c8c7fb3f582110c5b28a1a7efce" title=" " alt="" coords="35,5,166,45"/>
+<area shape="rect" id="node3" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a3d0c269cb62f65a1ba90a967d0142161" title=" " alt="" coords="5,69,196,109"/>
+</map>
