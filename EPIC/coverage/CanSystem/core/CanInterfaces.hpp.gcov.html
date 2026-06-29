@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-02-12 08:25:34</td>
+            <td class="headerValue">2026-06-29 03:47:40</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryMed">80.0&nbsp;%</td>
@@ -56,9 +56,9 @@
 </td>
             <td></td>
             <td class="headerItem">Branches:</td>
-            <td class="headerCovTableEntryMed">75.0&nbsp;%</td>
-            <td class="headerCovTableEntry">4</td>
-            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntryLo">56.2&nbsp;%</td>
+            <td class="headerCovTableEntry">16</td>
+            <td class="headerCovTableEntry">9</td>
           </tr>
                   <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
                 </table>
@@ -88,22 +88,22 @@
 <span id="L10"><span class="lineNum">      10</span>                 :             :     uint8_t data[BUFF_SIZE];</span>
 <span id="L11"><span class="lineNum">      11</span>                 :             :     size_t size;</span>
 <span id="L12"><span class="lineNum">      12</span>                 :             : </span>
-<span id="L13"><span class="lineNum">      13</span>                 :<span class="tlaGNC tlaBgGNC">          17 :     CANMessage() : id(0), size(0) { memset(data, 0, BUFF_SIZE); }</span></span>
+<span id="L13"><span class="lineNum">      13</span>                 :<span class="tlaGNC tlaBgGNC">          38 :     CANMessage() : id(0), size(0) { memset(data, 0, BUFF_SIZE); }</span></span>
 <span id="L14"><span class="lineNum">      14</span>                 :             : </span>
-<span id="L15"><span class="lineNum">      15</span>                 :<span class="tlaGNC">          17 :     CANMessage(uint32_t can_id, const uint8_t *src, size_t src_size)</span></span>
-<span id="L16"><span class="lineNum">      16</span>                 :<span class="tlaGNC">          17 :         : id(can_id), size(src_size) {</span></span>
-<span id="L17"><span class="lineNum">      17</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 17 times"> + </span>]:<span class="tlaGNC">          17 :         if(src_size &gt; BUFF_SIZE) {</span></span>
+<span id="L15"><span class="lineNum">      15</span>                 :<span class="tlaGNC">          38 :     CANMessage(uint32_t can_id, const uint8_t *src, size_t src_size)</span></span>
+<span id="L16"><span class="lineNum">      16</span>                 :<span class="tlaGNC">          38 :         : id(can_id), size(src_size) {</span></span>
+<span id="L17"><span class="lineNum">      17</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 38 times"> + </span>]:<span class="tlaGNC">          38 :         if(src_size &gt; BUFF_SIZE) {</span></span>
 <span id="L18"><span class="lineNum">      18</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             size = BUFF_SIZE;</span></span>
 <span id="L19"><span class="lineNum">      19</span>                 :             :         }</span>
-<span id="L20"><span class="lineNum">      20</span>                 :<span class="tlaGNC tlaBgGNC">          17 :         memcpy(data, src, size);</span></span>
-<span id="L21"><span class="lineNum">      21</span>                 :<span class="tlaGNC">          17 :     }</span></span>
+<span id="L20"><span class="lineNum">      20</span>                 :<span class="tlaGNC tlaBgGNC">          38 :         memcpy(data, src, size);</span></span>
+<span id="L21"><span class="lineNum">      21</span>                 :<span class="tlaGNC">          38 :     }</span></span>
 <span id="L22"><span class="lineNum">      22</span>                 :             : </span>
 <span id="L23"><span class="lineNum">      23</span>                 :<span class="tlaGNC">           2 :     void printHex() const {</span></span>
-<span id="L24"><span class="lineNum">      24</span>                 :<span class="tlaGNC">           2 :         printf(&quot;ID: 0x%03X  Data: &quot;, id);</span></span>
+<span id="L24"><span class="lineNum">      24</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :         LOG(&quot;ID: 0x%03X  Data: &quot;, id);</span></span>
 <span id="L25"><span class="lineNum">      25</span>         [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">          11 :         for(size_t i = 0; i &lt; size; i++) {</span></span>
-<span id="L26"><span class="lineNum">      26</span>                 :<span class="tlaGNC">           9 :             printf(&quot;%02X &quot;, data[i]);</span></span>
+<span id="L26"><span class="lineNum">      26</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           9 :             LOG(&quot;%02X &quot;, data[i]);</span></span>
 <span id="L27"><span class="lineNum">      27</span>                 :             :         }</span>
-<span id="L28"><span class="lineNum">      28</span>                 :<span class="tlaGNC">           2 :         printf(&quot; (size: %zu)\n&quot;, size);</span></span>
+<span id="L28"><span class="lineNum">      28</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :         LOG(&quot; (size: %zu)\n&quot;, size);</span></span>
 <span id="L29"><span class="lineNum">      29</span>                 :<span class="tlaGNC">           2 :     }</span></span>
 <span id="L30"><span class="lineNum">      30</span>                 :             : };</span>
 <span id="L31"><span class="lineNum">      31</span>                 :             : </span>
@@ -177,7 +177,7 @@
 <span id="L99"><span class="lineNum">      99</span>                 :             :     virtual uint8_t getFifo(void) = 0;</span>
 <span id="L100"><span class="lineNum">     100</span>                 :             :     virtual void setFifo(uint8_t fifo) = 0;</span>
 <span id="L101"><span class="lineNum">     101</span>                 :             : </span>
-<span id="L102"><span class="lineNum">     102</span>                 :             :     virtual void onMsgReceived(CAN_HandleTypeDef *hCAN) = 0;</span>
+<span id="L102"><span class="lineNum">     102</span>                 :             :     virtual bool onMsgReceived(CAN_HandleTypeDef *hCAN) = 0;</span>
 <span id="L103"><span class="lineNum">     103</span>                 :             : </span>
 <span id="L104"><span class="lineNum">     104</span>                 :             :     virtual bool sendFrame(CAN_TxHeaderTypeDef *header, uint8_t *data) = 0;</span>
 <span id="L105"><span class="lineNum">     105</span>                 :             : };</span>
