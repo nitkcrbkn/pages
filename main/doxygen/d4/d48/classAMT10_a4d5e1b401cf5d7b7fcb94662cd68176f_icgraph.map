@@ -1,0 +1,4 @@
+<map id="AMT10::revolutions" name="AMT10::revolutions">
+<area shape="rect" id="node1" title="累積回転数を返す（正負・小数含む）" alt="" coords="184,5,317,31"/>
+<area shape="rect" id="node2" href="$d4/d48/classAMT10.html#a547bee6e7b4040d9b142c347f0d1fe1e" title="現在の状態をストリームに出力（デバッグ用）" alt="" coords="5,5,136,31"/>
+</map>

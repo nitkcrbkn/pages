@@ -1,0 +1,8 @@
+<map id="CanSystem::CanErrorTracker::updateStatus" name="CanSystem::CanErrorTracker::updateStatus">
+<area shape="rect" id="node1" title=" " alt="" coords="5,69,195,109"/>
+<area shape="rect" id="node2" href="$d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="243,69,404,109"/>
+<area shape="rect" id="node3" href="$d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="459,5,620,45"/>
+<area shape="rect" id="node4" href="$d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="452,69,627,109"/>
+<area shape="rect" id="node5" href="$d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="459,133,620,173"/>
+<area shape="rect" id="node6" href="$df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="675,133,849,173"/>
+</map>

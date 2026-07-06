@@ -1,0 +1,1422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: GPIO_Mgr&lt; PIN_COUNT &gt; クラステンプレート</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d6/d4e/classGPIO__Mgr.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../de/d3e/classGPIO__Mgr-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">GPIO_Mgr&lt; PIN_COUNT &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>読み取り・書き込み用GPIOマネージャークラス @detail GPIOピンのマッピング情報を保持し、ピンの状態読み取り・書き込みや ビット列での状態操作、状態の2進表記ログ出力などを行います。  
+ <a href="../../d6/d4e/classGPIO__Mgr.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;gpio.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4dd7b6beab0a8384caefa2cb30df2f76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76">GPIO_Mgr</a> (const <a class="el" href="../../dc/de9/lite_2gpio_8h.html#aa730e34bcb2cf42a59b8ca41650d05d8">GPIOmap</a>&lt; PIN_COUNT &gt; &amp;gpiomap)</td></tr>
+<tr class="memdesc:a4dd7b6beab0a8384caefa2cb30df2f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76">[詳解]</a><br /></td></tr>
+<tr class="separator:a4dd7b6beab0a8384caefa2cb30df2f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810a79006aa77eb942825e4068ccdb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">read</a> (int index=0) const</td></tr>
+<tr class="memdesc:a5810a79006aa77eb942825e4068ccdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンの状態を読み取る  <a href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">[詳解]</a><br /></td></tr>
+<tr class="separator:a5810a79006aa77eb942825e4068ccdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a">set</a> (int index, bool value)</td></tr>
+<tr class="memdesc:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンに値を書き込む  <a href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a">[詳解]</a><br /></td></tr>
+<tr class="separator:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021215aae2b3b4175849f6d732c2c8a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8">toggle</a> (int index=0)</td></tr>
+<tr class="memdesc:a021215aae2b3b4175849f6d732c2c8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンを反転  <a href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8">[詳解]</a><br /></td></tr>
+<tr class="separator:a021215aae2b3b4175849f6d732c2c8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04">state</a> () const</td></tr>
+<tr class="memdesc:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理している全GPIOピンの状態を0/1ビットに詰めて返す  <a href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04">[詳解]</a><br /></td></tr>
+<tr class="separator:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb2f26704071085754db9489a4d90c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1">print</a> () const</td></tr>
+<tr class="memdesc:afcb2f26704071085754db9489a4d90c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す">state()</a>で得られたビットマップを2進数でログ出力する  <a href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1">[詳解]</a><br /></td></tr>
+<tr class="separator:afcb2f26704071085754db9489a4d90c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a665bae20e3b10841f08659b1cc315b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b">apply</a> (uint32_t bitmap)</td></tr>
+<tr class="memdesc:a6a665bae20e3b10841f08659b1cc315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">受け取ったビットマップをpinに反映する  <a href="../../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a665bae20e3b10841f08659b1cc315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3081e1c791fea0f7be9d5aa9c0238c38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38">NOT</a> ()</td></tr>
+<tr class="memdesc:a3081e1c791fea0f7be9d5aa9c0238c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理対象の全てのGPIOピンを反転する  <a href="../../d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38">[詳解]</a><br /></td></tr>
+<tr class="separator:a3081e1c791fea0f7be9d5aa9c0238c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab5e2b32a15a4d368b32329212e6862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862">flashPattern</a> (uint16_t on_ms, uint16_t off_ms=0, uint16_t count=1, uint8_t index=0)</td></tr>
+<tr class="memdesc:adab5e2b32a15a4d368b32329212e6862"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定回数点滅  <a href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862">[詳解]</a><br /></td></tr>
+<tr class="separator:adab5e2b32a15a4d368b32329212e6862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b6295086faf11c826f718c076bc64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b">pwm</a> (int duty_width, int period, int duration_ms, uint8_t index=0)</td></tr>
+<tr class="memdesc:ad0b6295086faf11c826f718c076bc64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM制御での点滅  <a href="../../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b">[詳解]</a><br /></td></tr>
+<tr class="separator:ad0b6295086faf11c826f718c076bc64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a0d3d569f1d6ee971bd8def3531aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a63a0d3d569f1d6ee971bd8def3531aab">flashLoop</a> (uint16_t ms, uint8_t count=1, uint8_t index=0)</td></tr>
+<tr class="separator:a63a0d3d569f1d6ee971bd8def3531aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49843ef2e0c9c834593d91fba79aa91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b">playPattern</a> (uint32_t bit_pattern, uint16_t bit_duration_ms, uint8_t index=0)</td></tr>
+<tr class="memdesc:a49843ef2e0c9c834593d91fba79aa91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビットパターン再生  <a href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b">[詳解]</a><br /></td></tr>
+<tr class="separator:a49843ef2e0c9c834593d91fba79aa91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad073cb1a452c56d44dcf9afe2d23a13a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a">GPIO_Mgr</a> (const <a class="el" href="../../d4/dff/structGPIOConfig.html">GPIOConfig</a>(&amp;configs)[PIN_COUNT])</td></tr>
+<tr class="memdesc:ad073cb1a452c56d44dcf9afe2d23a13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a">[詳解]</a><br /></td></tr>
+<tr class="separator:ad073cb1a452c56d44dcf9afe2d23a13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7">get_pin</a> (int index) const</td></tr>
+<tr class="memdesc:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンの番号を返す  <a href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7">[詳解]</a><br /></td></tr>
+<tr class="separator:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5810a79006aa77eb942825e4068ccdb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">read</a> (int index=0) const</td></tr>
+<tr class="memdesc:a5810a79006aa77eb942825e4068ccdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンの状態を読み取る  <a href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">[詳解]</a><br /></td></tr>
+<tr class="separator:a5810a79006aa77eb942825e4068ccdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a">set</a> (int index, bool value)</td></tr>
+<tr class="memdesc:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンに値を書き込む  <a href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a">[詳解]</a><br /></td></tr>
+<tr class="separator:a7d5d165172ae56a5ab3c6b850d972a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021215aae2b3b4175849f6d732c2c8a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8">toggle</a> (int index=0)</td></tr>
+<tr class="memdesc:a021215aae2b3b4175849f6d732c2c8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンを反転  <a href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8">[詳解]</a><br /></td></tr>
+<tr class="separator:a021215aae2b3b4175849f6d732c2c8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04">state</a> () const</td></tr>
+<tr class="memdesc:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理している全GPIOピンの状態をビットマップで返す  <a href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04">[詳解]</a><br /></td></tr>
+<tr class="separator:a38e64fd7fc78cc4161e8e7a8a5179c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb2f26704071085754db9489a4d90c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1">print</a> () const</td></tr>
+<tr class="memdesc:afcb2f26704071085754db9489a4d90c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態をログ出力する.index0から左詰め  <a href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1">[詳解]</a><br /></td></tr>
+<tr class="separator:afcb2f26704071085754db9489a4d90c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a665bae20e3b10841f08659b1cc315b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b">apply</a> (uint32_t bitmap)</td></tr>
+<tr class="memdesc:a6a665bae20e3b10841f08659b1cc315b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビットマップを全ピンに一括反映  <a href="../../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b">[詳解]</a><br /></td></tr>
+<tr class="separator:a6a665bae20e3b10841f08659b1cc315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3081e1c791fea0f7be9d5aa9c0238c38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38">NOT</a> ()</td></tr>
+<tr class="separator:a3081e1c791fea0f7be9d5aa9c0238c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab5e2b32a15a4d368b32329212e6862"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862">flashPattern</a> (uint16_t on_ms, uint16_t off_ms=0, uint16_t count=1, uint8_t index=0)</td></tr>
+<tr class="separator:adab5e2b32a15a4d368b32329212e6862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b6295086faf11c826f718c076bc64b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b">pwm</a> (int duty_width, int period, int duration_ms, uint8_t index=0)</td></tr>
+<tr class="separator:ad0b6295086faf11c826f718c076bc64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a0d3d569f1d6ee971bd8def3531aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a63a0d3d569f1d6ee971bd8def3531aab">flashLoop</a> (uint16_t ms, uint8_t count=1, uint8_t index=0)</td></tr>
+<tr class="separator:a63a0d3d569f1d6ee971bd8def3531aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49843ef2e0c9c834593d91fba79aa91b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b">playPattern</a> (uint32_t bit_pattern, uint16_t bit_duration_ms, uint8_t index=0)</td></tr>
+<tr class="separator:a49843ef2e0c9c834593d91fba79aa91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;size_t PIN_COUNT&gt;<br />
+class GPIO_Mgr&lt; PIN_COUNT &gt;</div><p >読み取り・書き込み用GPIOマネージャークラス @detail GPIOピンのマッピング情報を保持し、ピンの状態読み取り・書き込みや ビット列での状態操作、状態の2進表記ログ出力などを行います。 </p>
+<p >読み取り・書き込み用GPIOマネージャークラス</p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000001">todo:</a></b></dt><dd>書き込み関数のtest,OR,AND,XORのついか？</dd></dl>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">S</td><td>管理するGPIOピンの数 最大32</td></tr>
+    <tr><td class="paramname">PIN_COUNT</td><td>管理するGPIOピンの数 最大32 </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a4dd7b6beab0a8384caefa2cb30df2f76" name="a4dd7b6beab0a8384caefa2cb30df2f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd7b6beab0a8384caefa2cb30df2f76">&#9670;&#160;</a></span>GPIO_Mgr() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;<a class="el" href="../../d6/d4e/classGPIO__Mgr.html">::GPIO_Mgr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/de9/lite_2gpio_8h.html#aa730e34bcb2cf42a59b8ca41650d05d8">GPIOmap</a>&lt; PIN_COUNT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gpiomap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gpiomap</td><td>管理対象のGPIOピンマッピング。配列順にLSBからMSBのビットに詰められます。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad073cb1a452c56d44dcf9afe2d23a13a" name="ad073cb1a452c56d44dcf9afe2d23a13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad073cb1a452c56d44dcf9afe2d23a13a">&#9670;&#160;</a></span>GPIO_Mgr() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;<a class="el" href="../../d6/d4e/classGPIO__Mgr.html">::GPIO_Mgr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/dff/structGPIOConfig.html">GPIOConfig</a>(&amp;)&#160;</td>
+          <td class="paramname"><em>configs</em>[PIN_COUNT]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configs</td><td>GPIOConfigの配列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6a665bae20e3b10841f08659b1cc315b" name="a6a665bae20e3b10841f08659b1cc315b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a665bae20e3b10841f08659b1cc315b">&#9670;&#160;</a></span>apply() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bitmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>受け取ったビットマップをpinに反映する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bitmap</td><td>設定するビットマップ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>書き込み成功 </td></tr>
+    <tr><td class="paramname">false</td><td>管理外の値に1があった </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph" id="ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph">
+<area shape="rect" title="ビットマップを全ピンに一括反映" alt="" coords="5,5,125,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="173,5,281,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6a665bae20e3b10841f08659b1cc315b" name="a6a665bae20e3b10841f08659b1cc315b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a665bae20e3b10841f08659b1cc315b">&#9670;&#160;</a></span>apply() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::apply </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bitmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ビットマップを全ピンに一括反映 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph" id="ad6/d4e/classGPIO__Mgr_a6a665bae20e3b10841f08659b1cc315b_cgraph">
+<area shape="rect" title="ビットマップを全ピンに一括反映" alt="" coords="5,5,125,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="173,5,281,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63a0d3d569f1d6ee971bd8def3531aab" name="a63a0d3d569f1d6ee971bd8def3531aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a0d3d569f1d6ee971bd8def3531aab">&#9670;&#160;</a></span>flashLoop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::flashLoop </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph" id="ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,152,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862" title="指定回数点滅" alt="" coords="200,31,359,56"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346" title=" " alt="" coords="435,5,487,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="407,55,515,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63a0d3d569f1d6ee971bd8def3531aab" name="a63a0d3d569f1d6ee971bd8def3531aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a0d3d569f1d6ee971bd8def3531aab">&#9670;&#160;</a></span>flashLoop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::flashLoop </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph" id="ad6/d4e/classGPIO__Mgr_a63a0d3d569f1d6ee971bd8def3531aab_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,152,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862" title="指定回数点滅" alt="" coords="200,31,359,56"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346" title=" " alt="" coords="435,5,487,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="407,55,515,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adab5e2b32a15a4d368b32329212e6862" name="adab5e2b32a15a4d368b32329212e6862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab5e2b32a15a4d368b32329212e6862">&#9670;&#160;</a></span>flashPattern() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::flashPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>on_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>off_ms</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>count</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定回数点滅 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on_ms</td><td>点灯時間[ms] </td></tr>
+    <tr><td class="paramname">off_ms</td><td>消灯時間[ms] </td></tr>
+    <tr><td class="paramname">count</td><td>繰返し回数(既定1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph" id="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="212,5,320,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_icgraph" id="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_icgraph">
+<area shape="rect" title="指定回数点滅" alt="" coords="200,31,359,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a63a0d3d569f1d6ee971bd8def3531aab" title=" " alt="" coords="5,5,152,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b" title="PWM制御での点滅" alt="" coords="19,55,138,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adab5e2b32a15a4d368b32329212e6862" name="adab5e2b32a15a4d368b32329212e6862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab5e2b32a15a4d368b32329212e6862">&#9670;&#160;</a></span>flashPattern() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::flashPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>on_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>off_ms</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>count</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph" id="ad6/d4e/classGPIO__Mgr_adab5e2b32a15a4d368b32329212e6862_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="212,5,320,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aadd2723b1c3be80f2a1fe9c667e7e2a7" name="aadd2723b1c3be80f2a1fe9c667e7e2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd2723b1c3be80f2a1fe9c667e7e2a7">&#9670;&#160;</a></span>get_pin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::get_pin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンの番号を返す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>uint16_t </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph" id="ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph">
+<area shape="rect" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="159,5,291,31"/>
+<area shape="rect" href="../../d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="5,5,111,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3081e1c791fea0f7be9d5aa9c0238c38" name="a3081e1c791fea0f7be9d5aa9c0238c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3081e1c791fea0f7be9d5aa9c0238c38">&#9670;&#160;</a></span>NOT() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::NOT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>管理対象の全てのGPIOピンを反転する </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph" id="ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,124,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8" title="指定インデックスのGPIOピンを反転" alt="" coords="172,5,297,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3081e1c791fea0f7be9d5aa9c0238c38" name="a3081e1c791fea0f7be9d5aa9c0238c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3081e1c791fea0f7be9d5aa9c0238c38">&#9670;&#160;</a></span>NOT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::NOT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph" id="ad6/d4e/classGPIO__Mgr_a3081e1c791fea0f7be9d5aa9c0238c38_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,124,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a021215aae2b3b4175849f6d732c2c8a8" title="指定インデックスのGPIOピンを反転" alt="" coords="172,5,297,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a49843ef2e0c9c834593d91fba79aa91b" name="a49843ef2e0c9c834593d91fba79aa91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49843ef2e0c9c834593d91fba79aa91b">&#9670;&#160;</a></span>playPattern() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::playPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bit_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bit_duration_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ビットパターン再生 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bit_pattern</td><td>LSBから順に1=点灯,0=消灯 </td></tr>
+    <tr><td class="paramname">bit_duration_ms</td><td>各ビット時間[ms] </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph" id="ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="208,5,316,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a49843ef2e0c9c834593d91fba79aa91b" name="a49843ef2e0c9c834593d91fba79aa91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49843ef2e0c9c834593d91fba79aa91b">&#9670;&#160;</a></span>playPattern() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::playPattern </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bit_pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>bit_duration_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph" id="ad6/d4e/classGPIO__Mgr_a49843ef2e0c9c834593d91fba79aa91b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="208,5,316,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afcb2f26704071085754db9489a4d90c1" name="afcb2f26704071085754db9489a4d90c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb2f26704071085754db9489a4d90c1">&#9670;&#160;</a></span>print() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す">state()</a>で得られたビットマップを2進数でログ出力する </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph" id="ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph">
+<area shape="rect" title="状態をログ出力する.index0から左詰め" alt="" coords="5,5,120,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="168,5,287,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="335,5,449,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afcb2f26704071085754db9489a4d90c1" name="afcb2f26704071085754db9489a4d90c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb2f26704071085754db9489a4d90c1">&#9670;&#160;</a></span>print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>状態をログ出力する.index0から左詰め </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph" id="ad6/d4e/classGPIO__Mgr_afcb2f26704071085754db9489a4d90c1_cgraph">
+<area shape="rect" title="状態をログ出力する.index0から左詰め" alt="" coords="5,5,120,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="168,5,287,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="335,5,449,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0b6295086faf11c826f718c076bc64b" name="ad0b6295086faf11c826f718c076bc64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b6295086faf11c826f718c076bc64b">&#9670;&#160;</a></span>pwm() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::pwm </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duty_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PWM制御での点滅 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">duty_width</td><td>デューティ幅 </td></tr>
+    <tr><td class="paramname">period</td><td>デューティ全幅 </td></tr>
+    <tr><td class="paramname">duration_ms</td><td>合計点滅時間[ms] </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph" id="ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,124,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862" title="指定回数点滅" alt="" coords="172,31,331,56"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346" title=" " alt="" coords="407,5,459,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="379,55,487,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0b6295086faf11c826f718c076bc64b" name="ad0b6295086faf11c826f718c076bc64b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b6295086faf11c826f718c076bc64b">&#9670;&#160;</a></span>pwm() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::pwm </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duty_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph" id="ad6/d4e/classGPIO__Mgr_ad0b6295086faf11c826f718c076bc64b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,124,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862" title="指定回数点滅" alt="" coords="172,31,331,56"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346" title=" " alt="" coords="407,5,459,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="379,55,487,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5810a79006aa77eb942825e4068ccdb0" name="a5810a79006aa77eb942825e4068ccdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810a79006aa77eb942825e4068ccdb0">&#9670;&#160;</a></span>read() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::read </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンの状態を読み取る </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>取得対象のインデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>GPIO_PIN_SET </td></tr>
+    <tr><td class="paramname">false</td><td>範囲外またはGPIO_PIN_RESET </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph" id="ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph">
+<area shape="rect" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="375,31,489,56"/>
+<area shape="rect" href="../../d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="215,5,320,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="208,55,327,80"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,29,160,55"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,79,140,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5810a79006aa77eb942825e4068ccdb0" name="a5810a79006aa77eb942825e4068ccdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5810a79006aa77eb942825e4068ccdb0">&#9670;&#160;</a></span>read() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::read </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンの状態を読み取る </p>
+
+</div>
+</div>
+<a id="a7d5d165172ae56a5ab3c6b850d972a4a" name="a7d5d165172ae56a5ab3c6b850d972a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5d165172ae56a5ab3c6b850d972a4a">&#9670;&#160;</a></span>set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンに値を書き込む </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>書き込み対象ピンのインデックス </td></tr>
+    <tr><td class="paramname">value</td><td>true: SET, false: RESET </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>書き込み成功 </td></tr>
+    <tr><td class="paramname">false</td><td>範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a7d5d165172ae56a5ab3c6b850d972a4a_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a7d5d165172ae56a5ab3c6b850d972a4a_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a7d5d165172ae56a5ab3c6b850d972a4a_icgraph" id="ad6/d4e/classGPIO__Mgr_a7d5d165172ae56a5ab3c6b850d972a4a_icgraph">
+<area shape="rect" title="指定インデックスのGPIOピンに値を書き込む" alt="" coords="407,55,515,80"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b" title="受け取ったビットマップをpinに反映する" alt="" coords="219,5,339,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862" title="指定回数点滅" alt="" coords="200,55,359,80"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="202,104,357,129"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a63a0d3d569f1d6ee971bd8def3531aab" title=" " alt="" coords="5,31,152,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b" title="PWM制御での点滅" alt="" coords="19,80,138,105"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7d5d165172ae56a5ab3c6b850d972a4a" name="a7d5d165172ae56a5ab3c6b850d972a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5d165172ae56a5ab3c6b850d972a4a">&#9670;&#160;</a></span>set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::set </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンに値を書き込む </p>
+
+</div>
+</div>
+<a id="a38e64fd7fc78cc4161e8e7a8a5179c04" name="a38e64fd7fc78cc4161e8e7a8a5179c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e64fd7fc78cc4161e8e7a8a5179c04">&#9670;&#160;</a></span>state() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>管理している全GPIOピンの状態を0/1ビットに詰めて返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>uint32_t ピン状態のビットマップ </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph" id="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph">
+<area shape="rect" title="管理している全GPIOピンの状態をビットマップで返す" alt="" coords="5,5,124,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="172,5,287,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_icgraph" id="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_icgraph">
+<area shape="rect" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="208,31,327,56"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,5,160,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,55,140,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38e64fd7fc78cc4161e8e7a8a5179c04" name="a38e64fd7fc78cc4161e8e7a8a5179c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e64fd7fc78cc4161e8e7a8a5179c04">&#9670;&#160;</a></span>state() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>管理している全GPIOピンの状態をビットマップで返す </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph" id="ad6/d4e/classGPIO__Mgr_a38e64fd7fc78cc4161e8e7a8a5179c04_cgraph">
+<area shape="rect" title="管理している全GPIOピンの状態をビットマップで返す" alt="" coords="5,5,124,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="172,5,287,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a021215aae2b3b4175849f6d732c2c8a8" name="a021215aae2b3b4175849f6d732c2c8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021215aae2b3b4175849f6d732c2c8a8">&#9670;&#160;</a></span>toggle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::toggle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンを反転 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>書き込み対象ピンのインデックス </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>書き込み成功 </td></tr>
+    <tr><td class="paramname">false</td><td>範囲外 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a021215aae2b3b4175849f6d732c2c8a8_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a021215aae2b3b4175849f6d732c2c8a8_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_a021215aae2b3b4175849f6d732c2c8a8_icgraph" id="ad6/d4e/classGPIO__Mgr_a021215aae2b3b4175849f6d732c2c8a8_icgraph">
+<area shape="rect" title="指定インデックスのGPIOピンを反転" alt="" coords="172,5,297,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38" title="管理対象の全てのGPIOピンを反転する" alt="" coords="5,5,124,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a021215aae2b3b4175849f6d732c2c8a8" name="a021215aae2b3b4175849f6d732c2c8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021215aae2b3b4175849f6d732c2c8a8">&#9670;&#160;</a></span>toggle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::toggle </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定インデックスのGPIOピンを反転 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/lite/<a class="el" href="../../dc/de9/lite_2gpio_8h.html">gpio.h</a></li>
+<li>modules/platform/<a class="el" href="../../df/d0d/platform_2gpio_8h.html">gpio.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

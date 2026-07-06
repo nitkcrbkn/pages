@@ -1,0 +1,4 @@
+<map id="PS5::DualSense::send_telem" name="PS5::DualSense::send_telem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,156,45"/>
+<area shape="rect" id="node2" href="$dd/d8a/classTelemController.html#a9740aeb563c3c976dd08447e7bde4ab9" title="ユーザーが組み立てた TelemetryT を送信する" alt="" coords="204,13,351,38"/>
+</map>

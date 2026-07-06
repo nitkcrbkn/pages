@@ -1,0 +1,4 @@
+<map id="CanSystem::MockCanProfile" name="CanSystem::MockCanProfile">
+<area shape="rect" id="node1" title="テスト用CAN通信プロファイル" alt="" coords="5,79,192,104"/>
+<area shape="rect" id="node2" href="$d6/dca/classCanSystem_1_1ICanController.html" title="CAN通信の基本インターフェース canとfdcanに共通する基本的な送受信、初期化、設定リセットなどの機能を提供する。 高度な設定などにアクセスするには各特化したinterfaceが必要" alt="" coords="10,5,187,31"/>
+</map>

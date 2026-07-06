@@ -1,0 +1,4 @@
+<map id="stdr::mecanum" name="stdr::mecanum">
+<area shape="rect" id="node1" title="メカナムホイールの制御関数" alt="" coords="195,5,301,31"/>
+<area shape="rect" id="node2" href="$d5/dc4/namespacestdr.html#a0474c2959329b069841274dd19565777" title="移動を8方向に限定して操縦しやすさを上げたメカナムホイールの制御関数" alt="" coords="5,5,147,31"/>
+</map>

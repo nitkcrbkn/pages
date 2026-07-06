@@ -1,0 +1,13 @@
+<map id="CanSystem::ICanController::send" name="CanSystem::ICanController::send">
+<area shape="rect" id="node1" title=" " alt="" coords="855,159,1032,199"/>
+<area shape="rect" id="node2" href="$d6/d2e/classproto__can_1_1FrameLayer.html#ae6b7acaba683fa57ad448b3cbe2c1b10" title=" " alt="" coords="636,101,791,141"/>
+<area shape="rect" id="node10" href="$d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="638,166,789,191"/>
+<area shape="rect" id="node11" href="$da/d4c/classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b" title="CANデータの送信を行う" alt="" coords="620,215,807,241"/>
+<area shape="rect" id="node3" href="$d8/dd9/classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="423,101,572,141"/>
+<area shape="rect" id="node4" href="$d3/da4/classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title="指定デバイスにステータス要求を送る" alt="" coords="244,5,375,45"/>
+<area shape="rect" id="node5" href="$d3/da4/classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="244,69,375,109"/>
+<area shape="rect" id="node6" href="$d3/da4/classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title="指定デバイスに Command を送信する" alt="" coords="244,133,375,173"/>
+<area shape="rect" id="node8" href="$d2/deb/classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title="自デバイスの状態データを送信する" alt="" coords="244,197,375,237"/>
+<area shape="rect" id="node7" href="$dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a27191cd8ad207b2cf9d054024bf554b5" title="現在のコマンド状態をスレーブへ送信する" alt="" coords="5,133,196,173"/>
+<area shape="rect" id="node9" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a981dc57820e261be95013fd0e4d16716" title="メインループから毎サイクル呼ぶ。 send_rate_ms 経過していれば現在のGPIO状態を送信する。" alt="" coords="5,197,196,237"/>
+</map>

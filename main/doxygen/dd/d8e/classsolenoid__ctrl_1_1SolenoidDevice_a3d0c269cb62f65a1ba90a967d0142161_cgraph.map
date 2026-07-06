@@ -1,0 +1,9 @@
+<map id="solenoid_ctrl::SolenoidDevice::SolenoidDevice" name="solenoid_ctrl::SolenoidDevice::SolenoidDevice">
+<area shape="rect" id="node1" title=" " alt="" coords="5,37,196,77"/>
+<area shape="rect" id="node2" href="$d2/deb/classproto__can_1_1Device.html#adf375452e0ee82ed42058bbb08bbe2ba" title="受信コールバックを登録する" alt="" coords="274,5,405,45"/>
+<area shape="rect" id="node3" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a62dfbee59be5fd849c13f14ee83b00f0" title="DIPスイッチを読み直してデバイスIDを更新する" alt="" coords="244,69,435,109"/>
+<area shape="rect" id="node4" href="$dd/d82/classproto__can_1_1DeviceID.html#ac6d236665a12f504dfab33faffb126b6" title=" " alt="" coords="483,37,621,77"/>
+<area shape="rect" id="node5" href="$dd/d82/classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef" title="デバイスの番号を決定する。" alt="" coords="483,101,621,141"/>
+<area shape="rect" id="node6" href="$d0/d31/namespaceBitUtil.html#aa71923663b7ba4db1575ec5b10a02ca5" title="値が指定されたビット幅に収まるか確認します (32bit)" alt="" coords="677,83,813,109"/>
+<area shape="rect" id="node7" href="$dc/d65/namespaceproto__can.html#aaa9b2a7eca25af5dac27895170131e60" title=" " alt="" coords="669,133,820,158"/>
+</map>

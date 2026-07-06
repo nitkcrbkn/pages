@@ -1,0 +1,5 @@
+<map id="GPIO_Mgr::state" name="GPIO_Mgr::state">
+<area shape="rect" id="node1" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="208,31,327,56"/>
+<area shape="rect" id="node2" href="$d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,5,160,31"/>
+<area shape="rect" id="node3" href="$d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,55,140,80"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TelemController::send_log" name="TelemController::send_log">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,176,31"/>
+<area shape="rect" id="node2" href="$dd/d8a/classTelemController.html#a1571e97be867f9f419b3b8efbe7c43a4" title="タイムスタンプとバージョンを注入した TelemetryT を返す" alt="" coords="224,5,380,31"/>
+<area shape="rect" id="node3" href="$d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="428,5,480,31"/>
+</map>

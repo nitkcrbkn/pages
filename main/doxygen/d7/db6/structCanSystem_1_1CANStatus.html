@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: CanSystem::CANStatus 構造体</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d7/db6/structCanSystem_1_1CANStatus.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="../../da/d69/structCanSystem_1_1CANStatus-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">CanSystem::CANStatus 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;CanState.hpp&gt;</code></p>
+<div class="dynheader">
+CanSystem::CANStatus 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/df9/structCanSystem_1_1CANStatus__coll__graph.png" border="0" usemap="#aCanSystem_1_1CANStatus_coll__map" alt="Collaboration graph"/></div>
+<map name="aCanSystem_1_1CANStatus_coll__map" id="aCanSystem_1_1CANStatus_coll__map">
+<area shape="rect" title=" " alt="" coords="111,108,272,133"/>
+<area shape="rect" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html" title=" " alt="" coords="204,13,379,38"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aac1fd74b4e58796d385dc72ce593ab4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b">software_error</a> () const</td></tr>
+<tr class="separator:aac1fd74b4e58796d385dc72ce593ab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01b6952f6ddfb80f71d50dbf2cae40f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f">hardware_error</a> () const</td></tr>
+<tr class="separator:ac01b6952f6ddfb80f71d50dbf2cae40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6302c8a8d667fb3295b5f976543668c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4">is_error_state</a> () const</td></tr>
+<tr class="separator:a6302c8a8d667fb3295b5f976543668c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3157b0a105f90b637872b58a5c016531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a3157b0a105f90b637872b58a5c016531">is_operational</a> () const</td></tr>
+<tr class="separator:a3157b0a105f90b637872b58a5c016531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8540657749c09357e60faa34f5e5c52f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8b">BusErrorState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f">get_bus_error_state</a> () const</td></tr>
+<tr class="separator:a8540657749c09357e60faa34f5e5c52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a310bae508fcdaeeaf1c5dc1c212a8a82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31">ControllerState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a310bae508fcdaeeaf1c5dc1c212a8a82">controller_state</a> = <a class="el" href="../../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a88183b946cc5f0e8c96b2e66e1c74a7e">ControllerState::Unknown</a></td></tr>
+<tr class="separator:a310bae508fcdaeeaf1c5dc1c212a8a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217a6b732cbf356bcdd907e168c74273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a217a6b732cbf356bcdd907e168c74273">locked</a> = false</td></tr>
+<tr class="separator:a217a6b732cbf356bcdd907e168c74273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee650ce37275f7791836a11a74051f5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a9ee650ce37275f7791836a11a74051f5">hal_error_code</a> = 0</td></tr>
+<tr class="separator:a9ee650ce37275f7791836a11a74051f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee133d5843e3c98b3abe6ec157471b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html">SoftwareErrorFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a2ee133d5843e3c98b3abe6ec157471b3">software_errors</a></td></tr>
+<tr class="separator:a2ee133d5843e3c98b3abe6ec157471b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2309e2eeaa25c5f24ebdc18038d0e48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html">ErrorCounters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a2309e2eeaa25c5f24ebdc18038d0e48b">error_counters</a></td></tr>
+<tr class="separator:a2309e2eeaa25c5f24ebdc18038d0e48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9837ae87e1d8aa54c79d58ad8902a90f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa1f64e659dad06465614e7ece30db045">LastErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a9837ae87e1d8aa54c79d58ad8902a90f">last_error_type</a> = <a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa1f64e659dad06465614e7ece30db045a70a47cae4eb221930f2663fd244369ea">LastErrorType::NoError</a></td></tr>
+<tr class="separator:a9837ae87e1d8aa54c79d58ad8902a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1401fd6edd64e7b393f4cdf5b8fb980"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#af1401fd6edd64e7b393f4cdf5b8fb980">protocol_status_register</a> = 0</td></tr>
+<tr class="separator:af1401fd6edd64e7b393f4cdf5b8fb980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a8540657749c09357e60faa34f5e5c52f" name="a8540657749c09357e60faa34f5e5c52f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8540657749c09357e60faa34f5e5c52f">&#9670;&#160;</a></span>get_bus_error_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8b">BusErrorState</a> CanSystem::CANStatus::get_bus_error_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_cgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_cgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_cgraph" id="ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,45"/>
+<area shape="rect" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="215,5,389,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_icgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_icgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_icgraph" id="ad7/db6/structCanSystem_1_1CANStatus_a8540657749c09357e60faa34f5e5c52f_icgraph">
+<area shape="rect" title=" " alt="" coords="243,5,404,45"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="5,5,195,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac01b6952f6ddfb80f71d50dbf2cae40f" name="ac01b6952f6ddfb80f71d50dbf2cae40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac01b6952f6ddfb80f71d50dbf2cae40f">&#9670;&#160;</a></span>hardware_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::hardware_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_ac01b6952f6ddfb80f71d50dbf2cae40f_icgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_ac01b6952f6ddfb80f71d50dbf2cae40f_icgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_ac01b6952f6ddfb80f71d50dbf2cae40f_icgraph" id="ad7/db6/structCanSystem_1_1CANStatus_ac01b6952f6ddfb80f71d50dbf2cae40f_icgraph">
+<area shape="rect" title=" " alt="" coords="884,69,1045,109"/>
+<area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="675,69,836,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="437,5,627,45"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="437,69,627,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="437,133,627,173"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77" title="CAN の初期化" alt="" coords="221,101,389,141"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title=" " alt="" coords="221,165,389,205"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="CAN を停止してから initCan() を再実行する" alt="" coords="5,101,173,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6302c8a8d667fb3295b5f976543668c4" name="a6302c8a8d667fb3295b5f976543668c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6302c8a8d667fb3295b5f976543668c4">&#9670;&#160;</a></span>is_error_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::is_error_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_cgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_cgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_cgraph" id="ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,69,167,109"/>
+<area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="221,5,383,45"/>
+<area shape="rect" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="215,69,389,109"/>
+<area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="221,133,383,173"/>
+<area shape="rect" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="437,133,612,173"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_icgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_icgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_icgraph" id="ad7/db6/structCanSystem_1_1CANStatus_a6302c8a8d667fb3295b5f976543668c4_icgraph">
+<area shape="rect" title=" " alt="" coords="675,69,836,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="437,5,627,45"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="437,69,627,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="437,133,627,173"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77" title="CAN の初期化" alt="" coords="221,101,389,141"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title=" " alt="" coords="221,165,389,205"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="CAN を停止してから initCan() を再実行する" alt="" coords="5,101,173,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3157b0a105f90b637872b58a5c016531" name="a3157b0a105f90b637872b58a5c016531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3157b0a105f90b637872b58a5c016531">&#9670;&#160;</a></span>is_operational()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::is_operational </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac1fd74b4e58796d385dc72ce593ab4b" name="aac1fd74b4e58796d385dc72ce593ab4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1fd74b4e58796d385dc72ce593ab4b">&#9670;&#160;</a></span>software_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::software_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_cgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_cgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_cgraph" id="ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,45"/>
+<area shape="rect" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="215,5,389,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_icgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_icgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_icgraph" id="ad7/db6/structCanSystem_1_1CANStatus_aac1fd74b4e58796d385dc72ce593ab4b_icgraph">
+<area shape="rect" title=" " alt="" coords="884,69,1045,109"/>
+<area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="675,69,836,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43" title=" " alt="" coords="437,5,627,45"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="437,69,627,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="437,133,627,173"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77" title="CAN の初期化" alt="" coords="221,101,389,141"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title=" " alt="" coords="221,165,389,205"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="CAN を停止してから initCan() を再実行する" alt="" coords="5,101,173,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a310bae508fcdaeeaf1c5dc1c212a8a82" name="a310bae508fcdaeeaf1c5dc1c212a8a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310bae508fcdaeeaf1c5dc1c212a8a82">&#9670;&#160;</a></span>controller_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31">ControllerState</a> CanSystem::CANStatus::controller_state = <a class="el" href="../../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a88183b946cc5f0e8c96b2e66e1c74a7e">ControllerState::Unknown</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2309e2eeaa25c5f24ebdc18038d0e48b" name="a2309e2eeaa25c5f24ebdc18038d0e48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2309e2eeaa25c5f24ebdc18038d0e48b">&#9670;&#160;</a></span>error_counters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html">ErrorCounters</a> CanSystem::CANStatus::error_counters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ee650ce37275f7791836a11a74051f5" name="a9ee650ce37275f7791836a11a74051f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee650ce37275f7791836a11a74051f5">&#9670;&#160;</a></span>hal_error_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CANStatus::hal_error_code = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9837ae87e1d8aa54c79d58ad8902a90f" name="a9837ae87e1d8aa54c79d58ad8902a90f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9837ae87e1d8aa54c79d58ad8902a90f">&#9670;&#160;</a></span>last_error_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa1f64e659dad06465614e7ece30db045">LastErrorType</a> CanSystem::CANStatus::last_error_type = <a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa1f64e659dad06465614e7ece30db045a70a47cae4eb221930f2663fd244369ea">LastErrorType::NoError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a217a6b732cbf356bcdd907e168c74273" name="a217a6b732cbf356bcdd907e168c74273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217a6b732cbf356bcdd907e168c74273">&#9670;&#160;</a></span>locked</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::locked = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1401fd6edd64e7b393f4cdf5b8fb980" name="af1401fd6edd64e7b393f4cdf5b8fb980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1401fd6edd64e7b393f4cdf5b8fb980">&#9670;&#160;</a></span>protocol_status_register</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t CanSystem::CANStatus::protocol_status_register = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ee133d5843e3c98b3abe6ec157471b3" name="a2ee133d5843e3c98b3abe6ec157471b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee133d5843e3c98b3abe6ec157471b3">&#9670;&#160;</a></span>software_errors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html">SoftwareErrorFlags</a> CanSystem::CANStatus::software_errors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>modules/CanSystem/support/<a class="el" href="../../df/d05/CanState_8hpp.html">CanState.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dc4/namespaceCanSystem.html">CanSystem</a></li><li class="navelem"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html">CANStatus</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

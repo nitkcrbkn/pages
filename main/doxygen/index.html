@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: STM32System</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">STM32System </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><a class="anchor" id="md_README"></a><img src="https://img.shields.io/endpoint?url=https://nitkcrbkn.github.io/pages/main/badges/coverage.json" alt="Coverage" class="inline"/> <img src="https://img.shields.io/endpoint?url=https://nitkcrbkn.github.io/pages/develop/badges/coverage.json" alt="Coverage" class="inline"/> <img src="https://img.shields.io/endpoint?url=https://nitkcrbkn.github.io/pages/EPIC/badges/coverage.json" alt="Coverage" class="inline"/></p>
+<p ><a href="https://github.com/nitkcrbkn/pages/blob/gh-pages/index.md">github-pages Index Page</a></p>
+<ul>
+<li><a href="https://nitkcrbkn.github.io/pages/main/coverage/">main-coverage</a></li>
+<li><a href="https://nitkcrbkn.github.io/pages/develop/coverage/">develop-coverage</a></li>
+<li><a href="https://nitkcrbkn.github.io/pages/EPIC/coverage/">EPIC-coverage</a></li>
+</ul>
+<p >STM32 マイコン用のロボット制御システム。HAL 依存を分離したモジュラーアーキテクチャを採用し、ロギング・CAN 通信・デバッグストリーム機能を提供する。</p>
+<h1><a class="anchor" id="autotoc_md36"></a>
+Quick Start</h1>
+<p >環境構築から STM32 への書き込み、動作確認までの手順を示す。 STM32CubeIDEを使用する方法とdockerビルド環境を使う方法がある。 dockerのほうがサポートしてされてるがSTM32CubeIDEでは動かない可能性がある。</p>
+<h2><a class="anchor" id="autotoc_md37"></a>
+docker</h2>
+<h3><a class="anchor" id="autotoc_md38"></a>
+clone</h3>
+<div class="fragment"><div class="line">git clone https://github.com/nitkcrbkn/STM32System</div>
+<div class="line">git submodule init</div>
+<div class="line">git submodule update</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md39"></a>
+dockerビルド環境のビルド</h3>
+<p ><a href="https://github.com/nitkcrbkn/stm32-docker-flash">stm32-docker-flash</a>のrepoにコードがある。 このプロジェクトではstm32-docker-flash/README 詳細が書かれているが、細かい動作は[Makefile](Makefile)の基準によって変わる。</p>
+<div class="fragment"><div class="line">cd app/lib/stm32-docker-flash</div>
+<div class="line">docker build -t stm32-flash .</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md40"></a>
+STM32用プロジェクトビルド</h3>
+<div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
+<div class="line">    stm32-flash bash /app/build.sh</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md41"></a>
+書き込み</h3>
+<div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
+<div class="line">    --privileged --device=/dev/ttyACM0 \</div>
+<div class="line">    stm32-flash bash /app/flash.sh</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
+Debug</h2>
+<p >以下のコマンドでTUIのデバッガを開く。IDEのデバッガを使用する方法はREADMEを確認。 </p><div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
+<div class="line">    --privileged --device=/dev/ttyACM0 \</div>
+<div class="line">    stm32-flash bash /app/debug.sh</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
+CubeIDE</h2>
+<h3><a class="anchor" id="autotoc_md44"></a>
+1. プロジェクトのクローンとセットアップ</h3>
+<div class="fragment"><div class="line">git clone https://github.com/nitkcrbkn/STM32System</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md45"></a>
+2. STM32CubeIDE でプロジェクト作成</h3>
+<p ><code>File -&gt; Import -&gt; Import from existing STM32CubeMX configuration File (.ioc)</code></p>
+<h3><a class="anchor" id="autotoc_md46"></a>
+3. コードの移動と設定</h3>
+<ul>
+<li>新しく生成された CubeIDE 管理下の <code>STM32System/</code> に、clone した repo の <code>.git/</code> を移動</li>
+<li>IDE または console で目的のブランチへ checkout</li>
+<li><p class="startli">submodule を更新:</p>
+<div class="fragment"><div class="line">git submodule init</div>
+<div class="line">git submodule update</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><code>main.c</code> に以下を追加:</p>
+<div class="fragment"><div class="line">{c++}</div>
+<div class="line"> /* USER CODE BEGIN PFP */</div>
+<div class="line"> void app_main(void);</div>
+<div class="line"> /* USER CODE END PFP */</div>
+</div><!-- fragment --><div class="fragment"><div class="line">{c++}</div>
+<div class="line"> /* USER CODE BEGIN WHILE */</div>
+<div class="line"> app_main();</div>
+<div class="line"> /* USER CODE END WHILE */</div>
+</div><!-- fragment --></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md47"></a>
+4. コード生成とビルド</h3>
+<p >CubeMX (CubeIDE 組み込み) で <code>.ioc</code> を開き、code generation を実行する。</p>
+<h3><a class="anchor" id="autotoc_md48"></a>
+5. STM32 への書き込み</h3>
+<ul>
+<li>STM32 を接続</li>
+<li><code>STM32CubeIDE -&gt; Project Explorer -&gt; right click -&gt; Run as -&gt; STM32 C/C++ Application</code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md49"></a>
+STM32 との通信</h1>
+<ul>
+<li>Tera Term などの Terminal ソフトで STM32 の COM ポートを bitrate 115200 で開く</li>
+<li>Break Signal を送信して再起動する</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md50"></a>
+TEST</h1>
+<p >testについてはapp/test/README.mdを確認すること。</p>
+<h1><a class="anchor" id="autotoc_md51"></a>
+Folder Structure</h1>
+<p >プロジェクトの構造と各ディレクトリの役割を示す。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone">file   </th><th class="markdownTableHeadNone">役割   </th><th class="markdownTableHeadNone">備考    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app   </td><td class="markdownTableBodyNone">appMain.cpp   </td><td class="markdownTableBodyNone">ロボット制御コード。初期化処理とメインループ   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">appMain.h   </td><td class="markdownTableBodyNone"><code>app_main()</code> プロトタイプ宣言／C/C++リンク保証   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">config.h   </td><td class="markdownTableBodyNone">汎用定数・設定値定義   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">app/lib   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">git submodule 配置   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/module   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">複数ファイル構成のライブラリ   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">logic/   </td><td class="markdownTableBodyNone">ビジネスロジック層   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">platform/   </td><td class="markdownTableBodyNone">HAL 依存インターフェースアダプタ層   </td><td class="markdownTableBodyNone">HAL 依存    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応">platform/utils.h</a>   </td><td class="markdownTableBodyNone">Arduino 互換関数／HAL ラッパー   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/test   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">テスト用コード。HAL 依存が強いと不可   </td><td class="markdownTableBodyNone">HAL 依存無し   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md52"></a>
+lib一覧</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">ライブラリ名   </th><th class="markdownTableHeadNone">説明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Catch2   </td><td class="markdownTableBodyNone">C++テストフレームワーク    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Clog   </td><td class="markdownTableBodyNone">ロギングシステム    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">doxygen-awesome-css   </td><td class="markdownTableBodyNone">Doxygenドキュメント用CSSテーマ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">embeddedproto   </td><td class="markdownTableBodyNone">組み込み向けProtocol Buffers実装    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">stm32-docker-flash   </td><td class="markdownTableBodyNone">STM32用Dockerビルド・書き込み環境   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md53"></a>
+module一覧</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">モジュール名   </th><th class="markdownTableHeadNone">説明   </th><th class="markdownTableHeadNone">主な機能    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a>   </td><td class="markdownTableBodyNone">CAN/FDCAN通信システム   </td><td class="markdownTableBodyNone">CAN/FDCANの抽象化、送受信、フィルタ設定    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">logic   </td><td class="markdownTableBodyNone">単一ファイルライブラリ   </td><td class="markdownTableBodyNone">ビジネスロジック、アルゴリズム    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">platform   </td><td class="markdownTableBodyNone">単一ファイルライブラリ   </td><td class="markdownTableBodyNone">HALラッパー（utils.h等）、Arduino互換関数    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ProtoCAN   </td><td class="markdownTableBodyNone">Protocol Buffer通信   </td><td class="markdownTableBodyNone">Master/Device API、request/response、reset制御    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">protocol   </td><td class="markdownTableBodyNone">Protobufスキーマ管理   </td><td class="markdownTableBodyNone">.protoファイル、コンパイル済みコード、Embedded Protoラッパー   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md54"></a>
+Document Structure</h1>
+<p >各ライブラリのドキュメント配置を示す。</p>
+<ul>
+<li><code>lib/*/README.md</code>: 各 submodule リポジトリの README</li>
+<li><code>module/*/README.md</code>: Quick Start と Implementation/Architecture を記載</li>
+<li>詳細 API 仕様: doxygen コメントで記述する</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md55"></a>
+Usage Guide</h1>
+<p >各モジュールの基本的な使い方を示す。詳細な API 仕様は doxygen を参照のこと。</p>
+<h2><a class="anchor" id="autotoc_md56"></a>
+Include Path</h2>
+<p ><code>module</code> および <code>lib</code> は include に含まれているため <code>&lt;logic/&gt;</code> などで include 可能。 追加の include が必要な場合は以下の設定を行う。 <code>Project -&gt; Properties -&gt; C/C++ build -&gt; setting -&gt; MCU/MPU GCC compiler -&gt; include paths</code> ここに Debug/folder からの相対パスを追加する（例: <code>../app/lib/etl/include/</code>）。</p>
+<h2><a class="anchor" id="autotoc_md57"></a>
+Clog (ロギングシステム)</h2>
+<p >printf スタイルのロギングと色付き出力機能を提供する。</p>
+<h3><a class="anchor" id="autotoc_md58"></a>
+基本的な使い方</h3>
+<p >各 project ごとに <code>Logger.hpp</code> を <code>logic/</code> に配置する。ここでマクロ API の生成と設定を行う。 <code>CLog::LogDirector&amp; get_logger()</code> により最低の loglvl と出力先（複数可）を設定できる。</p>
+<h3><a class="anchor" id="autotoc_md59"></a>
+ロギングマクロ</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">マクロ   </th><th class="markdownTableHeadNone">log lvl    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOGD   </td><td class="markdownTableBodyNone">debug    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOGI   </td><td class="markdownTableBodyNone">info    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOGW   </td><td class="markdownTableBodyNone">warning    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOGE   </td><td class="markdownTableBodyNone">error   </td></tr>
+</table>
+<p >使用方法: <code>LOG*(const char* format, ...)</code></p>
+<ul>
+<li>printf と同様に C 言語 format が利用可能</li>
+<li>マクロ内で cTag のコンパイル時検証と cformat を実行する</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md60"></a>
+色付きログ</h3>
+<p >パイプ (<code>|</code>) と Color Tag（cTag）で文字色を指定可能。 使用可能な色は <code>log_type.hpp</code> の <code>ASCII_COLORS</code> を参照する。</p>
+<p ><b>使用例:</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">LOGI(&quot;g|green text| normal text y|yellow|&quot;);</div>
+</div><!-- fragment --><p ><b>バリデーション:</b></p>
+<ul>
+<li>コンパイル時: パイプの偶数個チェック、cTag が 0-1 または a-z かを検証</li>
+<li>ランタイム時: cFormat 後の文字列についてパイプと cTag を検証</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md61"></a>
+STREAM (split screen)</h2>
+<p >複数チャンネルのリアルタイムデータを画面に対して指定行へ固定表示する。通常の LOG と共用可能。</p>
+<h3><a class="anchor" id="autotoc_md62"></a>
+セットアップ</h3>
+<p >起動時に必ず以下を実行する。</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">STREAM_SETUP(CH_COUNT);  // config.h の enum LogChannel の CH_COUNT を渡す</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md63"></a>
+データ出力</h3>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">STREAM(CH_index, const char* format, ...);</div>
+</div><!-- fragment --><ul>
+<li>config.h の LogChannel を index で指定する</li>
+<li>C 言語の format が利用可能</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md64"></a>
+重要な注意点</h3>
+<ul>
+<li><b>接続するたびに再起動すること</b>: 起動時のみ console format ASCII を送信する</li>
+<li><b>割り込み中に printf を使用しない</b>: CAN 送受信を阻害し console format の崩れを引き起こす</li>
+<li><b>F0 マイコンでは使用不可</b>: 32kb の FLASH RAM 制限により lite module を利用すること</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md65"></a>
+Architecture</h1>
+<p >システムの設計思想とモジュール開発者向け情報を示す。</p>
+<h2><a class="anchor" id="autotoc_md66"></a>
+設計思想</h2>
+<p >STM32System は HAL 依存コードと非依存コードを分離したレイヤーアーキテクチャを採用している。ただし STM32 HAL の特性上、HAL 非依存とは「HAL を直接呼び出さない」ことを意味し、完全な独立性を持つわけではない。</p>
+<p >システムは 3 つの主要レイヤーで構成される。logic 層はビジネスロジックを担当し HAL 非依存、platform 層は HAL へのアダプタとして機能し HAL 依存、app 層はロボット制御の実装を担い HAL を直接使わず他層を経由する。</p>
+<p ><code>modules</code> フォルダには複数ファイルからなる自作ライブラリ（各 module と呼ぶ）を配置する。CanSystem など HAL 依存が強い module は独立したフォルダを持つ。<code>module/logic/</code> と <code>module/platform/</code> には単一ファイルの小規模ライブラリを依存性に応じて配置する。<code>lib</code> フォルダには HAL 非依存の純粋な外部ライブラリを git submodule として配置する。</p>
+<p >すべてのライブラリは基本的に header only で実装されており、<code>app/appMain.cpp</code> が唯一の非ヘッダーコードである。これにより管理を簡素化し、ArduinoSys との互換性を高めている。</p>
+<h3><a class="anchor" id="autotoc_md67"></a>
+フォルダ構造とレイヤーの対応</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone">layer   </th><th class="markdownTableHeadNone">HAL 依存   </th><th class="markdownTableHeadNone">説明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/   </td><td class="markdownTableBodyNone">app 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">ロボット制御コード（appMain.cpp 等）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">app/module/logic/*   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">単一ファイルのビジネスロジックライブラリ    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/module/platform/*   </td><td class="markdownTableBodyNone">platform 層   </td><td class="markdownTableBodyNone">有り   </td><td class="markdownTableBodyNone">単一ファイルの HAL アダプタライブラリ    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">app/modules/*/   </td><td class="markdownTableBodyNone">（※）   </td><td class="markdownTableBodyNone">混在   </td><td class="markdownTableBodyNone">複数ファイル構成の自作ライブラリ（module）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app/lib/   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">完全無し   </td><td class="markdownTableBodyNone">外部ライブラリ（git submodule）   </td></tr>
+</table>
+<p >※ logic と platform が混在する場合あり</p>
+<h3><a class="anchor" id="autotoc_md68"></a>
+レイヤー詳細</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">レイヤー名   </th><th class="markdownTableHeadNone">責務   </th><th class="markdownTableHeadNone">依存ルール   </th><th class="markdownTableHeadNone">配置基準    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">app 層   </td><td class="markdownTableBodyNone">ロボット制御フロー実装、初期化処理とメインループ   </td><td class="markdownTableBodyNone">logic 層、platform 層に依存可。HAL 直接呼び出し不可   </td><td class="markdownTableBodyNone">appMain.cpp、config.h    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">ビジネスロジック、アルゴリズム、データ処理   </td><td class="markdownTableBodyNone">他 logic 層、外部ライブラリのみ依存可。HAL 依存不可   </td><td class="markdownTableBodyNone">HAL を使わない汎用的な処理    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">platform 層   </td><td class="markdownTableBodyNone">HAL へのアダプタ、ハードウェア抽象化   </td><td class="markdownTableBodyNone">logic 層、HAL に依存可   </td><td class="markdownTableBodyNone">HAL API を直接呼び出す必要がある処理   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md69"></a>
+モジュール開発</h2>
+<h3><a class="anchor" id="autotoc_md70"></a>
+用語の定義</h3>
+<ul>
+<li><b>ライブラリ</b>: 再利用可能な機能をまとめたコード集合。単一ファイルまたは複数ファイルで構成される。基本的に header only で実装</li>
+<li><b>modules（フォルダ）</b>: <code>app/modules/</code> ディレクトリ。複数ファイルからなる自作ライブラリを配置</li>
+<li><b>module（ライブラリ）</b>: <code>modules/</code> 内の各独立フォルダ（例: CanSystem/）。複数のソースやヘッダーで構成され特定の機能を提供する単位</li>
+<li><b>logic/（フォルダ）</b>: <code>app/module/logic/</code> ディレクトリ。HAL 非依存の単一ファイルライブラリを配置</li>
+<li><b>platform/（フォルダ）</b>: <code>app/module/platform/</code> ディレクトリ。HAL 依存の単一ファイルライブラリを配置</li>
+<li><b>lib/（フォルダ）</b>: <code>app/lib/</code> ディレクトリ。git submodule として管理される外部ライブラリを配置。すべて HAL 非依存</li>
+<li><b>単一ファイルライブラリ</b>: 1 つの .h や .hpp ファイルで完結する小規模ライブラリ。<code>module/logic/</code> または <code>module/platform/</code> に直接配置</li>
+<li><b>複数ファイルライブラリ</b>: 複数ソースで構成される中〜大規模ライブラリ。独立したフォルダ（module）として管理</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md71"></a>
+新規モジュール追加</h3>
+<ol type="1">
+<li><p class="startli"><b>配置場所の決定</b> 単一ファイルライブラリ:</p><ul>
+<li>HAL 非依存 → <code>app/module/logic/</code></li>
+<li>HAL 依存 → <code>app/module/platform/</code></li>
+</ul>
+<p class="startli">複数ファイルライブラリ:</p><ul>
+<li>自作ライブラリ → <code>app/modules/&lt;module名&gt;/</code>（独立フォルダとして管理）</li>
+<li>外部ライブラリ → <code>app/lib/&lt;module名&gt;/</code>（git submodule として追加）</li>
+</ul>
+</li>
+<li><b>インクルードパスの追加</b> 必要に応じて以下を設定する。 <code>Project -&gt; Properties -&gt; C/C++ build -&gt; setting -&gt; MCU/MPU GCC compiler -&gt; include paths</code> Debug/folder からの相対パスで追加（例: <code>../app/lib/etl/include/</code>）</li>
+<li><p class="startli">**git submodule 管理**（外部ライブラリの場合）</p>
+<div class="fragment"><div class="line">git submodule add &lt;repository-url&gt; app/lib/&lt;module-name&gt;</div>
+<div class="line">cd app/lib/&lt;module-name&gt;</div>
+<div class="line">git fetch</div>
+<div class="line">git checkout &lt;target branch&gt;</div>
+</div><!-- fragment --></li>
+</ol>
+<h1><a class="anchor" id="autotoc_md72"></a>
+Best Practices / Guidelines</h1>
+<p >ライブラリ開発とコード記述における推奨事項をまとめる。</p>
+<h2><a class="anchor" id="autotoc_md73"></a>
+コーディング規約</h2>
+<p ><b>命名規則:</b></p>
+<ul>
+<li>クラス/構造体: <code>PascalCase</code>（例: <code>CanController</code>, <code>LogDirector</code>）</li>
+<li>関数/変数: <code>snake_case</code>（例: <code>init_can()</code>, <code>log_level</code>）</li>
+<li>定数/マクロ: <code>UPPER_SNAKE_CASE</code>（例: <code>MAX_BUFFER_SIZE</code>, <code>LOGD</code>）</li>
+<li>ファイル: <code>snake_case.hpp</code>（例: <code>can_system.hpp</code>）</li>
+<li>フォルダ: <code>snake_case</code> または <code>PascalCase</code>（例: <code>logic/</code>, <code>CanSystem/</code>）</li>
+</ul>
+<p ><b>ファイル拡張子:</b></p>
+<ul>
+<li><code>.hpp</code>: C++ ヘッダー（クラス、テンプレートを含む）</li>
+<li><code>.h</code>: C 互換ヘッダー（<code>extern "C"</code> リンケージ用）app_main.h だけ</li>
+</ul>
+<p ><b>インクルードガード:</b></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md74"></a>
+ライブラリ実装方針</h2>
+<p ><b>Header-only 原則:</b></p>
+<ul>
+<li>基本 header-only で実装し、<code>appMain.cpp</code> 以外に <code>.cpp</code> を作らない</li>
+</ul>
+<p ><b>依存関係の明示:</b></p>
+<ul>
+<li>header-only で技術的に不要でも依存ファイルをすべて <code>#include</code> する</li>
+<li>可読性と依存関係の可視化を優先する</li>
+</ul>
+<p ><b>HAL 依存の分離:</b></p>
+<ul>
+<li>HAL 非依存の場所（logic 層、lib/）では HAL を直接呼ばない</li>
+<li>必要な場合は platform 層を経由する</li>
+</ul>
+<p ><b>インスタンス管理:</b></p>
+<ul>
+<li>イミュータブルなインスタンスはポインターでなく参照（<code>&amp;</code>）で管理する</li>
+<li>コピーコストを削減し所有権を明確にする</li>
+</ul>
+<p ><b>インターフェースの使用:</b></p>
+<ul>
+<li><code>#ifdef</code> の多用や複数クラスで同じ形式の結果を返す場合は抽象インターフェースを使用し可読性を高める</li>
+<li>例: <code>ICanController</code> で CAN/FDCAN の差異を吸収する</li>
+</ul>
+<p ><b>コールバック実装:</b></p>
+<ul>
+<li>初期実装: <code>&lt;platform/Callbacks.h&gt;</code> に HAL 提供の weak 関数を記述</li>
+<li>柔軟性が必要な場合: クラス内で自動コールバック登録/検索機能を実装</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md75"></a>
+エラー処理</h2>
+<p ><b>戻り値:</b></p>
+<ul>
+<li><code>bool</code> 型で成功/失敗を返す</li>
+<li>エラー時は必ず <code><a class="el" href="d1/d8c/logger_8h.html#ae08358ff7da64345ad674296a5957823">LOGE()</a></code> を用いてログ出力する</li>
+</ul>
+<p ><b>例外処理:</b></p>
+<ul>
+<li><code>try</code>/<code>catch</code> など例外機構は使用しない</li>
+<li>コードサイズと実行時オーバーヘッドを削減する</li>
+</ul>
+<p ><b>ログ出力:</b></p>
+<ul>
+<li>エラー発生時は必ず <code><a class="el" href="d1/d8c/logger_8h.html#ae08358ff7da64345ad674296a5957823">LOGE()</a></code> でエラー内容を記録する</li>
+<li>デバッグ情報として原因特定に利用する</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md76"></a>
+メモリ管理</h2>
+<p ><b>動的確保の禁止:</b></p>
+<ul>
+<li><code>new</code>/<code>delete</code>, <code>malloc</code>/<code>free</code> を使用しない</li>
+<li>メモリフラグメンテーションと予測不能な挙動を回避する</li>
+</ul>
+<p ><b>スタック使用:</b></p>
+<ul>
+<li>大きな配列は <code>static</code> またはグローバルに配置する</li>
+<li>スタックオーバーフローを防止する</li>
+</ul>
+<p ><b>STL 制限:</b></p>
+<ul>
+<li>F0 マイコン: ETL（Embedded Template Library）の使用を必須とする</li>
+<li>他マイコン: STL 使用可（将来的に ETL へ移行予定）</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md77"></a>
+F0 マイコンの制限</h3>
+<p >F0 マイコンは 32KB の FLASH ROM 制約があるため、通常の <a class="el" href="d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> や Clog ではなく lite module を使用する（詳細は <code>module/lite/README.md</code> を参照）。</p>
+<p >lite module を使用しても機能追加により 32KB に近づくと HardFault エラー（強制停止）が発生する場合がある。F0 マイコンでは STL を避け ETL の使用を推奨する。</p>
+<h2><a class="anchor" id="autotoc_md78"></a>
+パフォーマンス</h2>
+<p ><b>割り込み内処理:</b></p>
+<ul>
+<li>処理は最小限に抑える</li>
+<li>メモリ操作や再割り込みを発生させる処理（<code><a class="el" href="d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346">delay()</a></code> など）は強制停止につながる</li>
+<li><code>printf</code> は非推奨</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md79"></a>
+詳細実装</h1>
+<h3><a class="anchor" id="autotoc_md80"></a>
+Clog 実装詳細</h3>
+<ul>
+<li>各 project ごとに <code>Logger.hpp</code> を配置し設定と API 提供が行われる</li>
+<li>マクロ API はコンパイル時とランタイム時の二段階で検証を行う</li>
+<li>cTag（Color Tag）により色付きログを実現する</li>
+<li>現状は自由度が高すぎるため今後変更予定</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md81"></a>
+CanSystem 実装詳細</h3>
+<p ><b>インターフェース設計:</b></p>
+<ul>
+<li><code>ICanController</code>: CAN/FDCAN 共通の基本インターフェース</li>
+<li><code>IFdcanMgr</code>: FDCAN 固有機能</li>
+<li><code>ICanMgr</code>: CAN 固有機能</li>
+</ul>
+<p ><b>実装構造:</b></p>
+<ul>
+<li><code><a class="el" href="df/d9b/CanInterfaces_8hpp.html">CanInterfaces.hpp</a></code>: 全関数プロトタイプ</li>
+<li><code>abstract/</code>: 実装コード（命名変更予定）</li>
+<li><code>impl/</code>: profile 定義（CAN 割り込み設定、TxHeader、sFilterConfig）</li>
+</ul>
+<p ><b>デフォルト profile:</b></p>
+<ul>
+<li>CAN: 全 ID パス設定</li>
+<li>FDCAN: 全 ID パス設定</li>
+<li>FDCAN 互換 CAN: 全 ID パス設定</li>
+</ul>
+<p ><b>カスタム profile:</b> 新規作成するか、既存 profile の config を取得・編集・再適用する</p>
+<h3><a class="anchor" id="autotoc_md82"></a>
+ライブラリ内使用</h3>
+<ul>
+<li><code>ICanController&amp;</code>: CAN/FDCAN 共通機能（推奨）</li>
+<li><code>IFdcanMgr&amp;</code> または <code>ICanMgr&amp;</code>: プロトコル固有機能を追加利用可能</li>
+</ul>
+<p ><code>ICanController</code> を使用することで CAN/FDCAN に依存しない汎用ライブラリを実現できる。 </p>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>
