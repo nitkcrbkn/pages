@@ -1,0 +1,11 @@
+<map id="BitUtil::insertBits" name="BitUtil::insertBits">
+<area shape="rect" id="node1" title=" " alt="" coords="599,77,717,102"/>
+<area shape="rect" id="node2" href="$d9/d34/classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="400,69,551,109"/>
+<area shape="rect" id="node3" href="$d8/dd9/classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb" title=" " alt="" coords="203,5,352,45"/>
+<area shape="rect" id="node5" href="$d8/dd9/classproto__can_1_1Messenger.html#a93a9ec79a718432ac0c0246673def142" title=" " alt="" coords="203,69,352,109"/>
+<area shape="rect" id="node6" href="$d8/dd9/classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="203,133,352,173"/>
+<area shape="rect" id="node4" href="$d8/dd9/classproto__can_1_1Messenger.html#a650dfe22dfcf40ed7dbb18fb5980bba5" title=" " alt="" coords="5,5,155,45"/>
+<area shape="rect" id="node7" href="$d2/deb/classproto__can_1_1Device.html#ad33778b61710bf2e0fca9fa065ca4c69" title="直近に受信した Command をキャッシュから取得する（ポーリング） キャッシュは Messenger が保持し、新しいフレームが来るたびに上書きされる。 未受信の場合は nullopt を返す。" alt="" coords="15,69,145,109"/>
+<area shape="rect" id="node8" href="$d3/da4/classproto__can_1_1Master.html#ad60b32f09a9e2dc7921153a042eda447" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="15,133,145,173"/>
+<area shape="rect" id="node9" href="$d3/da4/classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title="request_stats() に対する応答をキャッシュから取得する（ポーリング）" alt="" coords="15,197,145,237"/>
+</map>

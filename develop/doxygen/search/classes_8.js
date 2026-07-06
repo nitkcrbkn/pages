@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noschema_0',['NoSchema',['../structproto__can_1_1NoSchema.html',1,'proto_can']]]
+  ['loglite_0',['LogLite',['../d9/d24/classLogLite.html',1,'']]]
 ];

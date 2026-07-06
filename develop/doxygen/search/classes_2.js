@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['data_0',['Data',['../classdevices_1_1mock__motor_1_1Data.html',1,'devices::mock_motor::Data'],['../classdevices_1_1motor_1_1Data.html',1,'devices::motor::Data'],['../classdevices_1_1robomas_1_1Data.html',1,'devices::robomas::Data&lt; Data_motors_REP_LENGTH &gt;']]],
-  ['device_1',['Device',['../classproto__can_1_1Device.html',1,'proto_can']]],
-  ['device_3c_20pc_3a_3adevicetype_3a_3amock_5fmotor_20_3e_2',['Device&lt; PC::DeviceType::MOCK_MOTOR &gt;',['../classproto__can_1_1Device.html',1,'proto_can']]],
-  ['deviceid_3',['DeviceID',['../classproto__can_1_1DeviceID.html',1,'proto_can']]],
-  ['deviceid_3c_20devicetype_20_3e_4',['DeviceID&lt; DeviceTYPE &gt;',['../classproto__can_1_1DeviceID.html',1,'proto_can']]],
-  ['deviceschema_5',['DeviceSchema',['../structproto__can_1_1DeviceSchema.html',1,'proto_can']]],
-  ['deviceschema_3c_20devicetype_3a_3amock_5fmotor_20_3e_6',['DeviceSchema&lt; DeviceType::MOCK_MOTOR &gt;',['../structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html',1,'proto_can']]],
-  ['deviceschema_3c_20devicetype_3a_3amotor_20_3e_7',['DeviceSchema&lt; DeviceType::MOTOR &gt;',['../structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html',1,'proto_can']]],
-  ['deviceschema_3c_20devicetype_3a_3asensor_20_3e_8',['DeviceSchema&lt; DeviceType::SENSOR &gt;',['../structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html',1,'proto_can']]],
-  ['devicestatus_9',['DeviceStatus',['../classdevices_1_1DeviceStatus.html',1,'devices']]],
-  ['dji_10',['DJI',['../classrobot_1_1DJI.html',1,'robot']]],
-  ['dualsense_11',['DualSense',['../classPS5_1_1DualSense.html',1,'PS5']]]
+  ['canconfig_0',['CANConfig',['../d7/d93/structCanSystem_1_1CANConfig.html',1,'CanSystem']]],
+  ['canerrortracker_1',['CanErrorTracker',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html',1,'CanSystem']]],
+  ['canfifoconfig_2',['CANFifoConfig',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html',1,'CanSystem::CanManager']]],
+  ['canmanager_3',['CanManager',['../d1/d4a/classCanSystem_1_1CanManager.html',1,'CanSystem']]],
+  ['canmessage_4',['CANMessage',['../d2/d4a/structCanSystem_1_1CANMessage.html',1,'CanSystem']]],
+  ['canstatus_5',['CANStatus',['../d7/db6/structCanSystem_1_1CANStatus.html',1,'CanSystem']]]
 ];

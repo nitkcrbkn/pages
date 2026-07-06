@@ -1,0 +1,10 @@
+<map id="BitUtil::checkRange" name="BitUtil::checkRange">
+<area shape="rect" id="node1" title="値が指定されたビット幅に収まるか確認します (32bit)" alt="" coords="681,77,817,102"/>
+<area shape="rect" id="node2" href="$d9/d34/classproto__can_1_1MessageID.html#a931f5a25720a155c474e56a642fe404c" title=" " alt="" coords="483,5,633,45"/>
+<area shape="rect" id="node3" href="$dd/d82/classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef" title="デバイスの番号を決定する。" alt="" coords="489,69,627,109"/>
+<area shape="rect" id="node7" href="$d9/d34/classproto__can_1_1MessageID.html#aad87e89c87a98ae1c2450cebab655853" title=" " alt="" coords="483,133,633,173"/>
+<area shape="rect" id="node4" href="$dd/d82/classproto__can_1_1DeviceID.html#aad2d7549399be5c0ad93c266a953a22b" title="デバイスIDを種類と番号で構成。" alt="" coords="270,5,409,45"/>
+<area shape="rect" id="node5" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a62dfbee59be5fd849c13f14ee83b00f0" title="DIPスイッチを読み直してデバイスIDを更新する" alt="" coords="244,69,435,109"/>
+<area shape="rect" id="node6" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a3d0c269cb62f65a1ba90a967d0142161" title=" " alt="" coords="5,69,196,109"/>
+<area shape="rect" id="node8" href="$d9/d34/classproto__can_1_1MessageID.html#a825c6f7d7fe01c4927733ecec9aab939" title=" " alt="" coords="264,133,415,173"/>
+</map>

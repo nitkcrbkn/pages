@@ -1,0 +1,13 @@
+<map id="modules/ProtoCAN/common/bitwise_ops.hpp" name="modules/ProtoCAN/common/bitwise_ops.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="199,5,387,45"/>
+<area shape="rect" id="node2" href="$d2/d68/device__api_8hpp.html" title=" " alt="" coords="323,533,477,573"/>
+<area shape="rect" id="node5" href="$d8/d47/master__api_8hpp.html" title=" " alt="" coords="537,533,692,573"/>
+<area shape="rect" id="node6" href="$d3/d09/frame__field_8hpp.html" title=" " alt="" coords="382,93,570,133"/>
+<area shape="rect" id="node7" href="$d8/d3c/protocol__types_8hpp.html" title=" " alt="" coords="351,181,539,221"/>
+<area shape="rect" id="node9" href="$dd/d37/frame__builder_8hpp.html" title=" " alt="" coords="93,357,256,397"/>
+<area shape="rect" id="node10" href="$d2/d80/messenger_8hpp.html" title=" " alt="" coords="200,445,363,485"/>
+<area shape="rect" id="node11" href="$d1/d1d/frame__header_8hpp.html" title=" " alt="" coords="93,269,256,309"/>
+<area shape="rect" id="node3" href="$df/d58/proto__can_8hpp.html" title=" " alt="" coords="531,621,698,661"/>
+<area shape="rect" id="node4" href="$dc/d07/solenoid_8h.html" title=" " alt="" coords="523,709,707,735"/>
+<area shape="rect" id="node8" href="$d8/da2/device__catalog_8hpp.html" title=" " alt="" coords="438,445,626,485"/>
+</map>

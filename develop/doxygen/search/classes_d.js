@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['xyz_5ff_0',['xyz_f',['../classrobot_1_1xyz__f.html',1,'robot']]],
-  ['xyz_5fi_1',['xyz_i',['../classrobot_1_1xyz__i.html',1,'robot']]]
+  ['softwareerrorflags_0',['SoftwareErrorFlags',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html',1,'CanSystem']]],
+  ['solenoiddevice_1',['SolenoidDevice',['../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html',1,'solenoid_ctrl']]],
+  ['solenoidmaster_2',['SolenoidMaster',['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html',1,'solenoid_ctrl']]]
 ];

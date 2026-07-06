@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: modules/platform/solenoid.h ファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dc/d07/solenoid_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a>  </div>
+  <div class="headertitle"><div class="title">solenoid.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/d58/proto__can_8hpp.html">ProtoCAN/proto_can.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/d0d/platform_2gpio_8h.html">platform/gpio.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d60/utils_8h.html">platform/utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/d8c/logger_8h.html">lite/logger.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+solenoid.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d3b/solenoid_8h__incl.png" border="0" usemap="#amodules_2platform_2solenoid_8h" alt=""/></div>
+<map name="amodules_2platform_2solenoid_8h" id="amodules_2platform_2solenoid_8h">
+<area shape="rect" title=" " alt="" coords="2344,5,2528,31"/>
+<area shape="rect" title=" " alt="" coords="1524,680,1585,705"/>
+<area shape="rect" href="../../df/d58/proto__can_8hpp.html" title=" " alt="" coords="967,79,1134,104"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="1828,387,1935,412"/>
+<area shape="rect" href="../../df/d0d/platform_2gpio_8h.html" title=" " alt="" coords="2544,79,2651,104"/>
+<area shape="rect" href="../../d1/d8c/logger_8h.html" title=" " alt="" coords="35,387,123,412"/>
+<area shape="rect" title=" " alt="" coords="201,533,258,559"/>
+<area shape="rect" title=" " alt="" coords="668,533,729,559"/>
+<area shape="rect" title=" " alt="" coords="2176,306,2323,331"/>
+<area shape="rect" title=" " alt="" coords="1793,533,1871,559"/>
+<area shape="rect" href="../../d8/d3c/protocol__types_8hpp.html" title=" " alt="" coords="859,460,1043,485"/>
+<area shape="rect" href="../../d8/d47/master__api_8hpp.html" title=" " alt="" coords="1097,152,1228,177"/>
+<area shape="rect" href="../../d2/d68/device__api_8hpp.html" title=" " alt="" coords="875,152,1005,177"/>
+<area shape="rect" href="../../d2/d9c/bitwise__ops_8hpp.html" title=" " alt="" coords="876,607,1055,632"/>
+<area shape="rect" href="../../d3/d09/frame__field_8hpp.html" title=" " alt="" coords="1168,533,1341,559"/>
+<area shape="rect" title=" " alt="" coords="889,533,1042,559"/>
+<area shape="rect" title=" " alt="" coords="1467,607,1517,632"/>
+<area shape="rect" title=" " alt="" coords="1275,607,1341,632"/>
+<area shape="rect" title=" " alt="" coords="907,225,973,251"/>
+<area shape="rect" title=" " alt="" coords="721,306,759,331"/>
+<area shape="rect" title=" " alt="" coords="1224,306,1376,331"/>
+<area shape="rect" title=" " alt="" coords="1400,306,1552,331"/>
+<area shape="rect" href="../../d8/da2/device__catalog_8hpp.html" title=" " alt="" coords="1779,225,1976,251"/>
+<area shape="rect" href="../../d2/d80/messenger_8hpp.html" title=" " alt="" coords="1200,225,1349,251"/>
+<area shape="rect" title=" " alt="" coords="533,225,691,251"/>
+<area shape="rect" title=" " alt="" coords="715,225,882,251"/>
+<area shape="rect" title=" " alt="" coords="1779,299,1915,339"/>
+<area shape="rect" title=" " alt="" coords="1939,306,2101,331"/>
+<area shape="rect" href="../../df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="1568,460,1795,485"/>
+<area shape="rect" href="../../dd/d37/frame__builder_8hpp.html" title=" " alt="" coords="936,306,1099,331"/>
+<area shape="rect" title=" " alt="" coords="2550,460,2610,485"/>
+<area shape="rect" title=" " alt="" coords="1427,460,1493,485"/>
+<area shape="rect" title=" " alt="" coords="990,387,1037,412"/>
+<area shape="rect" title=" " alt="" coords="1061,387,1136,412"/>
+<area shape="rect" href="../../d1/d1d/frame__header_8hpp.html" title=" " alt="" coords="1262,387,1426,412"/>
+<area shape="rect" title=" " alt="" coords="2600,152,2664,177"/>
+<area shape="rect" title=" " alt="" coords="2689,152,2757,177"/>
+<area shape="rect" title=" " alt="" coords="5,460,72,485"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html">solenoid_ctrl::SolenoidMaster&lt; SOL_COUNT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">マスター側ノード。スレーブへコマンドを送信し、状態を受信・保持する。  <a href="../../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html">solenoid_ctrl::SolenoidDevice&lt; SOL_COUNT, DIP_COUNT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイス側ノード。コマンドを受信してGPIOに反映し、状態を定期送信する。  <a href="../../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:db/d2d/namespacesolenoid__ctrl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2d/namespacesolenoid__ctrl.html">solenoid_ctrl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_88aae3d0f25401488c8c6aff1f39c0de.html">platform</a></li><li class="navelem"><a class="el" href="../../dc/d07/solenoid_8h.html">solenoid.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

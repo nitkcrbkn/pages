@@ -1,0 +1,6 @@
+<map id="proto_can::DeviceID::setNumber" name="proto_can::DeviceID::setNumber">
+<area shape="rect" id="node1" title="デバイスの番号を決定する。" alt="" coords="483,37,621,77"/>
+<area shape="rect" id="node2" href="$dd/d82/classproto__can_1_1DeviceID.html#aad2d7549399be5c0ad93c266a953a22b" title="デバイスIDを種類と番号で構成。" alt="" coords="270,5,409,45"/>
+<area shape="rect" id="node3" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a62dfbee59be5fd849c13f14ee83b00f0" title="DIPスイッチを読み直してデバイスIDを更新する" alt="" coords="244,69,435,109"/>
+<area shape="rect" id="node4" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a3d0c269cb62f65a1ba90a967d0142161" title=" " alt="" coords="5,69,196,109"/>
+</map>

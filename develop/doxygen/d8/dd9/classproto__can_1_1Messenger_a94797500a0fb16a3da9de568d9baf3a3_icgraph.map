@@ -1,0 +1,6 @@
+<map id="proto_can::Messenger::read_cache" name="proto_can::Messenger::read_cache">
+<area shape="rect" id="node1" title="キャッシュからメッセージを検索して返す" alt="" coords="184,69,333,109"/>
+<area shape="rect" id="node2" href="$d2/deb/classproto__can_1_1Device.html#ad33778b61710bf2e0fca9fa065ca4c69" title="直近に受信した Command をキャッシュから取得する（ポーリング） キャッシュは Messenger が保持し、新しいフレームが来るたびに上書きされる。 未受信の場合は nullopt を返す。" alt="" coords="5,5,136,45"/>
+<area shape="rect" id="node3" href="$d3/da4/classproto__can_1_1Master.html#ad60b32f09a9e2dc7921153a042eda447" title="指定デバイスの直近 Data をキャッシュから取得する（ポーリング）" alt="" coords="5,69,136,109"/>
+<area shape="rect" id="node4" href="$d3/da4/classproto__can_1_1Master.html#a0b83037a61599bdebd362b6ac9aeaabc" title="request_stats() に対する応答をキャッシュから取得する（ポーリング）" alt="" coords="5,133,136,173"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CanSystem::CanManager::sendFrame" name="CanSystem::CanManager::sendFrame">
+<area shape="rect" id="node1" title="ヘッダを直接指定して送信する（上位 API）" alt="" coords="5,5,173,45"/>
+<area shape="rect" id="node2" href="$d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae43499956d51725021b59f53a54b2054" title=" " alt="" coords="221,5,411,45"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="proto_can::Master::send_command" name="proto_can::Master::send_command">
+<area shape="rect" id="node1" title="指定デバイスに Command を送信する" alt="" coords="244,5,375,45"/>
+<area shape="rect" id="node2" href="$dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a27191cd8ad207b2cf9d054024bf554b5" title="現在のコマンド状態をスレーブへ送信する" alt="" coords="5,5,196,45"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="proto_can::Device::get_command" name="proto_can::Device::get_command">
+<area shape="rect" id="node1" title="直近に受信した Command をキャッシュから取得する（ポーリング） キャッシュは Messenger が保持し、新しいフレームが来るたびに上書きされる。 未受信の場合は nullopt を返す。" alt="" coords="5,27,136,67"/>
+<area shape="rect" id="node2" href="$d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="233,5,285,31"/>
+<area shape="rect" id="node3" href="$d8/dd9/classproto__can_1_1Messenger.html#a94797500a0fb16a3da9de568d9baf3a3" title="キャッシュからメッセージを検索して返す" alt="" coords="184,55,333,95"/>
+<area shape="rect" id="node4" href="$df/d58/structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102" title=" " alt="" coords="381,23,545,63"/>
+<area shape="rect" id="node5" href="$d9/d34/classproto__can_1_1MessageID.html#a65dbe34d26df508aa94aa5a830619cf4" title=" " alt="" coords="388,87,539,127"/>
+<area shape="rect" id="node6" href="$d0/d31/namespaceBitUtil.html#a4e7e93fc61fa298dfe3b48a392394edd" title=" " alt="" coords="593,95,712,120"/>
+</map>
