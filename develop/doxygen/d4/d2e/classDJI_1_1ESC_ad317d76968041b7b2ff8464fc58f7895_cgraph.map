@@ -1,0 +1,4 @@
+<map id="DJI::ESC::setCurrentLimit" name="DJI::ESC::setCurrentLimit">
+<area shape="rect" id="node1" title="電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。" alt="" coords="5,5,175,31"/>
+<area shape="rect" id="node2" href="$d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55" title=" " alt="" coords="223,5,297,31"/>
+</map>

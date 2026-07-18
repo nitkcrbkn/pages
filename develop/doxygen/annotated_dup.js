@@ -14,6 +14,7 @@ var annotated_dup =
       [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
+      [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
       [ "ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],
@@ -56,6 +57,13 @@ var annotated_dup =
     [ "GPIO_Mgr", "d6/d4e/classGPIO__Mgr.html", "d6/d4e/classGPIO__Mgr" ],
     [ "GPIOConfig", "d4/dff/structGPIOConfig.html", "d4/dff/structGPIOConfig" ],
     [ "LogLite", "d9/d24/classLogLite.html", "d9/d24/classLogLite" ],
+    [ "Motion", "d1/d3c/classMotion.html", "d1/d3c/classMotion" ],
+    [ "MotionController", "d9/d58/classMotionController.html", "d9/d58/classMotionController" ],
+    [ "MotionMode", "df/d66/classMotionMode.html", "df/d66/classMotionMode" ],
+    [ "PID", "d8/da9/classPID.html", "d8/da9/classPID" ],
+    [ "PIDConfig", "dc/df1/structPIDConfig.html", "dc/df1/structPIDConfig" ],
+    [ "PIDGain", "d4/d2c/structPIDGain.html", "d4/d2c/structPIDGain" ],
+    [ "PIDProfile", "d8/daf/structPIDProfile.html", "d8/daf/structPIDProfile" ],
     [ "TelemController", "dd/d8a/classTelemController.html", "dd/d8a/classTelemController" ],
     [ "TimerMgr", "d5/db3/classTimerMgr.html", "d5/db3/classTimerMgr" ],
     [ "UartManager", "dd/d1a/classUartManager.html", "dd/d1a/classUartManager" ]

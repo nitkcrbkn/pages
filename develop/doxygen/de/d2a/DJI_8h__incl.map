@@ -1,12 +1,16 @@
 <map id="modules/logic/DJI.h" name="modules/logic/DJI.h">
-<area shape="rect" id="node1" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="219,5,355,31"/>
+<area shape="rect" id="node1" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="291,5,427,31"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,79,65,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="90,79,149,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="379,152,457,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="317,79,367,104"/>
-<area shape="rect" id="node6" href="$d6/dbe/stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="173,79,292,104"/>
-<area shape="rect" id="node8" href="$df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="442,79,669,104"/>
-<area shape="rect" id="node7" title=" " alt="" coords="203,152,262,177"/>
-<area shape="rect" id="node9" title=" " alt="" coords="510,152,571,177"/>
-<area shape="rect" id="node10" title=" " alt="" coords="595,152,657,177"/>
+<area shape="rect" id="node3" title=" " alt="" coords="235,152,294,177"/>
+<area shape="rect" id="node4" title=" " alt="" coords="233,79,291,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="403,152,481,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="366,79,417,104"/>
+<area shape="rect" id="node7" href="$d6/dbe/stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="89,79,208,104"/>
+<area shape="rect" id="node8" href="$df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="491,79,718,104"/>
+<area shape="rect" id="node12" href="$d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="763,79,870,104"/>
+<area shape="rect" id="node9" title=" " alt="" coords="709,152,770,177"/>
+<area shape="rect" id="node10" title=" " alt="" coords="623,152,685,177"/>
+<area shape="rect" id="node11" title=" " alt="" coords="506,152,599,177"/>
+<area shape="rect" id="node13" title=" " alt="" coords="884,152,944,177"/>
+<area shape="rect" id="node14" title=" " alt="" coords="795,152,860,177"/>
 </map>
