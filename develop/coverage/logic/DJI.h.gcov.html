@@ -31,18 +31,18 @@
             <td class="headerValue">coverage_filtered.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntryMed">80.7&nbsp;%</td>
-            <td class="headerCovTableEntry">83</td>
-            <td class="headerCovTableEntry">67</td>
+            <td class="headerCovTableEntryHi">94.1&nbsp;%</td>
+            <td class="headerCovTableEntry">170</td>
+            <td class="headerCovTableEntry">160</td>
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-07-06 02:40:39</td>
+            <td class="headerValue">2026-07-18 15:49:55</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
-            <td class="headerCovTableEntry">5</td>
-            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">14</td>
+            <td class="headerCovTableEntry">14</td>
           </tr>
           <tr>
             <td class="headerItem">Legend:</td>
@@ -56,9 +56,9 @@
 </td>
             <td></td>
             <td class="headerItem">Branches:</td>
-            <td class="headerCovTableEntryLo">67.8&nbsp;%</td>
-            <td class="headerCovTableEntry">90</td>
-            <td class="headerCovTableEntry">61</td>
+            <td class="headerCovTableEntryLo">69.2&nbsp;%</td>
+            <td class="headerCovTableEntry">146</td>
+            <td class="headerCovTableEntry">101</td>
           </tr>
                   <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
                 </table>
@@ -88,407 +88,563 @@
 <span id="L10"><span class="lineNum">      10</span>                 :             : #define CONTROLSYSTEMTEMPLATE_C610_H</span>
 <span id="L11"><span class="lineNum">      11</span>                 :             : </span>
 <span id="L12"><span class="lineNum">      12</span>                 :             : #include &lt;cstdlib&gt;</span>
-<span id="L13"><span class="lineNum">      13</span>                 :             : #include &lt;vector&gt;</span>
-<span id="L14"><span class="lineNum">      14</span>                 :             : #include &lt;functional&gt;</span>
-<span id="L15"><span class="lineNum">      15</span>                 :             : #include &lt;array&gt;</span>
-<span id="L16"><span class="lineNum">      16</span>                 :             : </span>
-<span id="L17"><span class="lineNum">      17</span>                 :             : #include &lt;logic/stdRBKN.h&gt;</span>
-<span id="L18"><span class="lineNum">      18</span>                 :             : #include &lt;CanSystem/core/CanInterfaces.hpp&gt;</span>
-<span id="L19"><span class="lineNum">      19</span>                 :             : </span>
-<span id="L20"><span class="lineNum">      20</span>                 :             : #define C610_MAX_CURRENT 10000   //!&lt; C610が許容する電流の最大値</span>
-<span id="L21"><span class="lineNum">      21</span>                 :             : #define C610_MIN_CURRENT -10000  //!&lt; C610が許容する電流の最小値</span>
-<span id="L22"><span class="lineNum">      22</span>                 :             : </span>
-<span id="L23"><span class="lineNum">      23</span>                 :             : #define M2006_MAX_SPEED 18000   //!&lt; M2006の速度の最大値</span>
-<span id="L24"><span class="lineNum">      24</span>                 :             : #define M2006_MIN_SPEED -18000  //!&lt; M2006の速度の最小値</span>
-<span id="L25"><span class="lineNum">      25</span>                 :             : </span>
-<span id="L26"><span class="lineNum">      26</span>                 :             : #define C620_MAX_CURRENT 16384   //!&lt; C620が許容する電流の最大値</span>
-<span id="L27"><span class="lineNum">      27</span>                 :             : #define C620_MIN_CURRENT -16384  //!&lt; C620が許容する電流の最小値</span>
-<span id="L28"><span class="lineNum">      28</span>                 :             : </span>
-<span id="L29"><span class="lineNum">      29</span>                 :             : #define M3508_MAX_SPEED 16384   //!&lt; M3508の速度の最大値</span>
-<span id="L30"><span class="lineNum">      30</span>                 :             : #define M3508_MIN_SPEED -16384  //!&lt; M3508の速度の最小値</span>
-<span id="L31"><span class="lineNum">      31</span>                 :             : </span>
-<span id="L32"><span class="lineNum">      32</span>                 :             : #define M2006_DEFAULT_KP 6  //!&lt; M2006の無負荷状態のおすすめPゲイン</span>
-<span id="L33"><span class="lineNum">      33</span>                 :             : #define M2006_DEFAULT_KI 16  //!&lt; M2006の無負荷状態のおすすめIゲイン</span>
-<span id="L34"><span class="lineNum">      34</span>                 :             : #define M2006_DEFAULT_KD 0.01125  //!&lt; M2006の無負荷状態のおすすめDゲイン</span>
-<span id="L35"><span class="lineNum">      35</span>                 :             : </span>
-<span id="L36"><span class="lineNum">      36</span>                 :             : #define C610_MAX_ANGLE 8191</span>
-<span id="L37"><span class="lineNum">      37</span>                 :             : #define C610_MIN_ANGLE 0</span>
-<span id="L38"><span class="lineNum">      38</span>                 :             : </span>
-<span id="L39"><span class="lineNum">      39</span>                 :             : #define C620_MAX_ANGLE 8191</span>
-<span id="L40"><span class="lineNum">      40</span>                 :             : #define C620_MIN_ANGLE 0</span>
+<span id="L13"><span class="lineNum">      13</span>                 :             : #include &lt;cmath&gt;</span>
+<span id="L14"><span class="lineNum">      14</span>                 :             : #include &lt;vector&gt;</span>
+<span id="L15"><span class="lineNum">      15</span>                 :             : #include &lt;functional&gt;</span>
+<span id="L16"><span class="lineNum">      16</span>                 :             : #include &lt;array&gt;</span>
+<span id="L17"><span class="lineNum">      17</span>                 :             : </span>
+<span id="L18"><span class="lineNum">      18</span>                 :             : #include &lt;logic/stdRBKN.h&gt;</span>
+<span id="L19"><span class="lineNum">      19</span>                 :             : #include &lt;CanSystem/core/CanInterfaces.hpp&gt;</span>
+<span id="L20"><span class="lineNum">      20</span>                 :             : #include &lt;platform/utils.h&gt;</span>
+<span id="L21"><span class="lineNum">      21</span>                 :             : </span>
+<span id="L22"><span class="lineNum">      22</span>                 :             : #define C610_MAX_CURRENT 10000   //!&lt; C610が許容する電流の最大値</span>
+<span id="L23"><span class="lineNum">      23</span>                 :             : #define C610_MIN_CURRENT -10000  //!&lt; C610が許容する電流の最小値</span>
+<span id="L24"><span class="lineNum">      24</span>                 :             : </span>
+<span id="L25"><span class="lineNum">      25</span>                 :             : #define M2006_MAX_SPEED 18000   //!&lt; M2006の速度の最大値</span>
+<span id="L26"><span class="lineNum">      26</span>                 :             : #define M2006_MIN_SPEED -18000  //!&lt; M2006の速度の最小値</span>
+<span id="L27"><span class="lineNum">      27</span>                 :             : </span>
+<span id="L28"><span class="lineNum">      28</span>                 :             : #define C620_MAX_CURRENT 16384   //!&lt; C620が許容する電流の最大値</span>
+<span id="L29"><span class="lineNum">      29</span>                 :             : #define C620_MIN_CURRENT -16384  //!&lt; C620が許容する電流の最小値</span>
+<span id="L30"><span class="lineNum">      30</span>                 :             : </span>
+<span id="L31"><span class="lineNum">      31</span>                 :             : #define M3508_MAX_SPEED 16384   //!&lt; M3508の速度の最大値</span>
+<span id="L32"><span class="lineNum">      32</span>                 :             : #define M3508_MIN_SPEED -16384  //!&lt; M3508の速度の最小値</span>
+<span id="L33"><span class="lineNum">      33</span>                 :             : </span>
+<span id="L34"><span class="lineNum">      34</span>                 :             : #define C610_MAX_ANGLE 8191</span>
+<span id="L35"><span class="lineNum">      35</span>                 :             : #define C610_MIN_ANGLE 0</span>
+<span id="L36"><span class="lineNum">      36</span>                 :             : </span>
+<span id="L37"><span class="lineNum">      37</span>                 :             : #define C620_MAX_ANGLE 8191</span>
+<span id="L38"><span class="lineNum">      38</span>                 :             : #define C620_MIN_ANGLE 0</span>
+<span id="L39"><span class="lineNum">      39</span>                 :             : </span>
+<span id="L40"><span class="lineNum">      40</span>                 :             : namespace DJI {</span>
 <span id="L41"><span class="lineNum">      41</span>                 :             : </span>
-<span id="L42"><span class="lineNum">      42</span>                 :             : namespace DJI {</span>
-<span id="L43"><span class="lineNum">      43</span>                 :             : </span>
-<span id="L44"><span class="lineNum">      44</span>                 :             : /**</span>
-<span id="L45"><span class="lineNum">      45</span>                 :             :  * @brief ESCから受信するデータを格納するために作られた構造体</span>
-<span id="L46"><span class="lineNum">      46</span>                 :             :  * @details</span>
-<span id="L47"><span class="lineNum">      47</span>                 :             :  * C610に温度を測定する機能は備わっていないため、C610の場合のtempの値は未定義です。</span>
-<span id="L48"><span class="lineNum">      48</span>                 :             :  */</span>
-<span id="L49"><span class="lineNum">      49</span>                 :             : typedef struct {</span>
-<span id="L50"><span class="lineNum">      50</span>                 :             :     int speed;          //!&lt; ローター(=ギアを通す前)のスピード</span>
-<span id="L51"><span class="lineNum">      51</span>                 :             :     int angle;          //!&lt; ローターの回転角(0~8192の8192段階)</span>
-<span id="L52"><span class="lineNum">      52</span>                 :             :     int torqueCurrent;  //!&lt; トルク電流</span>
-<span id="L53"><span class="lineNum">      53</span>                 :             :     int temp;           //!&lt; 温度</span>
-<span id="L54"><span class="lineNum">      54</span>                 :             : } ESCData;</span>
-<span id="L55"><span class="lineNum">      55</span>                 :             : </span>
-<span id="L56"><span class="lineNum">      56</span>                 :             : enum class MotorState {</span>
-<span id="L57"><span class="lineNum">      57</span>                 :             :     Init,</span>
-<span id="L58"><span class="lineNum">      58</span>                 :             :     Running,</span>
-<span id="L59"><span class="lineNum">      59</span>                 :             :     Stopped,</span>
-<span id="L60"><span class="lineNum">      60</span>                 :             :     SetCurrentError,</span>
-<span id="L61"><span class="lineNum">      61</span>                 :             :     AdjustedCurrent,</span>
+<span id="L42"><span class="lineNum">      42</span>                 :             : class CriticalSection {</span>
+<span id="L43"><span class="lineNum">      43</span>                 :             : #ifndef HOST_BUILD</span>
+<span id="L44"><span class="lineNum">      44</span>                 :             :     uint32_t primask;</span>
+<span id="L45"><span class="lineNum">      45</span>                 :             : #endif</span>
+<span id="L46"><span class="lineNum">      46</span>                 :             : </span>
+<span id="L47"><span class="lineNum">      47</span>                 :             : public:</span>
+<span id="L48"><span class="lineNum">      48</span>                 :<span class="tlaGNC tlaBgGNC">          63 :     CriticalSection() {</span></span>
+<span id="L49"><span class="lineNum">      49</span>                 :             : #ifndef HOST_BUILD</span>
+<span id="L50"><span class="lineNum">      50</span>                 :             :         primask = __get_PRIMASK();</span>
+<span id="L51"><span class="lineNum">      51</span>                 :             :         __disable_irq();</span>
+<span id="L52"><span class="lineNum">      52</span>                 :             : #endif</span>
+<span id="L53"><span class="lineNum">      53</span>                 :<span class="tlaGNC">          63 :     }</span></span>
+<span id="L54"><span class="lineNum">      54</span>                 :             : </span>
+<span id="L55"><span class="lineNum">      55</span>                 :<span class="tlaGNC">          63 :     ~CriticalSection() {</span></span>
+<span id="L56"><span class="lineNum">      56</span>                 :             : #ifndef HOST_BUILD</span>
+<span id="L57"><span class="lineNum">      57</span>                 :             :         if(primask == 0) {</span>
+<span id="L58"><span class="lineNum">      58</span>                 :             :             __enable_irq();</span>
+<span id="L59"><span class="lineNum">      59</span>                 :             :         }</span>
+<span id="L60"><span class="lineNum">      60</span>                 :             : #endif</span>
+<span id="L61"><span class="lineNum">      61</span>                 :<span class="tlaGNC">          63 :     }</span></span>
 <span id="L62"><span class="lineNum">      62</span>                 :             : };</span>
 <span id="L63"><span class="lineNum">      63</span>                 :             : </span>
-<span id="L64"><span class="lineNum">      64</span>                 :             : using CallBack = std::function&lt;void(const uint32_t, const DJI::ESCData &amp;)&gt;;</span>
-<span id="L65"><span class="lineNum">      65</span>                 :             : </span>
-<span id="L66"><span class="lineNum">      66</span>                 :             : /**</span>
-<span id="L67"><span class="lineNum">      67</span>                 :             :  * @brief</span>
-<span id="L68"><span class="lineNum">      68</span>                 :             :  * ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御するため。</span>
-<span id="L69"><span class="lineNum">      69</span>                 :             :  */</span>
-<span id="L70"><span class="lineNum">      70</span>                 :             : class ESC {</span>
-<span id="L71"><span class="lineNum">      71</span>                 :             : private:</span>
-<span id="L72"><span class="lineNum">      72</span>                 :             :     float maxAmpere;</span>
-<span id="L73"><span class="lineNum">      73</span>                 :             :     int numOfMotor;</span>
-<span id="L74"><span class="lineNum">      74</span>                 :             :     int currentSum = 0;</span>
+<span id="L64"><span class="lineNum">      64</span>                 :             : /**</span>
+<span id="L65"><span class="lineNum">      65</span>                 :             :  * @brief ESCから受信するデータを格納するために作られた構造体</span>
+<span id="L66"><span class="lineNum">      66</span>                 :             :  * @details</span>
+<span id="L67"><span class="lineNum">      67</span>                 :             :  * C610に温度を測定する機能は備わっていないため、C610の場合のtempの値は未定義です。</span>
+<span id="L68"><span class="lineNum">      68</span>                 :             :  */</span>
+<span id="L69"><span class="lineNum">      69</span>                 :             : typedef struct {</span>
+<span id="L70"><span class="lineNum">      70</span>                 :             :     int speed;          //!&lt; ローター(=ギアを通す前)のスピード</span>
+<span id="L71"><span class="lineNum">      71</span>                 :             :     int angle;          //!&lt; ローターの回転角(0~8192の8192段階)</span>
+<span id="L72"><span class="lineNum">      72</span>                 :             :     int torqueCurrent;  //!&lt; トルク電流</span>
+<span id="L73"><span class="lineNum">      73</span>                 :             :     int temp;           //!&lt; 温度</span>
+<span id="L74"><span class="lineNum">      74</span>                 :             : } ESCData;</span>
 <span id="L75"><span class="lineNum">      75</span>                 :             : </span>
-<span id="L76"><span class="lineNum">      76</span>                 :             :     static uint32_t const CAN_ID1 = 0x200;</span>
-<span id="L77"><span class="lineNum">      77</span>                 :             :     static uint32_t const CAN_ID2 = 0x1FF;</span>
-<span id="L78"><span class="lineNum">      78</span>                 :             :     uint8_t msg_data1[8] = {0x00, 0x00, 0x00, 0x00, 0x0, 0x0, 0x0, 0x0};</span>
-<span id="L79"><span class="lineNum">      79</span>                 :             :     uint8_t msg_data2[8] = {0x00, 0x00, 0x00, 0x00, 0x0, 0x0, 0x0, 0x0};</span>
-<span id="L80"><span class="lineNum">      80</span>                 :             : </span>
-<span id="L81"><span class="lineNum">      81</span>                 :             :     ESCData received[8];</span>
-<span id="L82"><span class="lineNum">      82</span>                 :             :     bool isC610[8] = {true, true, true, true, true, true, true, true};</span>
-<span id="L83"><span class="lineNum">      83</span>                 :             :     int currentData[8] = {0, 0, 0, 0, 0, 0, 0, 0};</span>
-<span id="L84"><span class="lineNum">      84</span>                 :             :     std::vector&lt;MotorState&gt; motor_state = {</span>
-<span id="L85"><span class="lineNum">      85</span>                 :             :         MotorState::Init, MotorState::Init, MotorState::Init, MotorState::Init,</span>
-<span id="L86"><span class="lineNum">      86</span>                 :             :         MotorState::Init, MotorState::Init, MotorState::Init, MotorState::Init};</span>
-<span id="L87"><span class="lineNum">      87</span>                 :             : </span>
-<span id="L88"><span class="lineNum">      88</span>                 :             :     std::vector&lt;int&gt; last_cb = {-1, -1, -1, -1, -1, -1, -1, -1, -1};</span>
-<span id="L89"><span class="lineNum">      89</span>                 :             : </span>
-<span id="L90"><span class="lineNum">      90</span>                 :             :     CallBack rxCallback;</span>
-<span id="L91"><span class="lineNum">      91</span>                 :             :     CanSystem::ICanController &amp;canMgr;</span>
-<span id="L92"><span class="lineNum">      92</span>                 :             : </span>
-<span id="L93"><span class="lineNum">      93</span>                 :             : public:</span>
-<span id="L94"><span class="lineNum">      94</span>                 :             :     /**</span>
-<span id="L95"><span class="lineNum">      95</span>                 :             :      * @brief Construct a new ESC object</span>
-<span id="L96"><span class="lineNum">      96</span>                 :             :      * @param canmgr can,fdcanどちらでもよい 依存注入で入れ替え可能</span>
-<span id="L97"><span class="lineNum">      97</span>                 :             :      */</span>
-<span id="L98"><span class="lineNum">      98</span>                 :<span class="tlaGNC tlaBgGNC">          22 :     ESC(CanSystem::ICanController &amp;canmgr)</span></span>
-<span id="L99"><span class="lineNum">      99</span>   [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">         110 :         : canMgr(canmgr)  //!&lt; インスタンス参照を渡す</span></span>
-<span id="L100"><span class="lineNum">     100</span>                 :<span class="tlaGNC">          22 :     {}</span></span>
-<span id="L101"><span class="lineNum">     101</span>                 :             : </span>
-<span id="L102"><span class="lineNum">     102</span>                 :             :     /**</span>
-<span id="L103"><span class="lineNum">     103</span>                 :             :      * @param motor モーターの数（0〜8の範囲で指定）</span>
-<span id="L104"><span class="lineNum">     104</span>                 :             :      * @param Ampere 設定する最大電流（A）</span>
-<span id="L105"><span class="lineNum">     105</span>                 :             :      * @param C620IDX C620を使用するID</span>
-<span id="L106"><span class="lineNum">     106</span>                 :             :      * @return bool true/false</span>
-<span id="L107"><span class="lineNum">     107</span>                 :             :      * @details</span>
-<span id="L108"><span class="lineNum">     108</span>                 :             :      * 引数のモーター数(1~8)で制御システムを初期化。最大電流も設定する。</span>
-<span id="L109"><span class="lineNum">     109</span>                 :             :      * また、指定したモーター番号はm3508用に上限を設定する。</span>
-<span id="L110"><span class="lineNum">     110</span>                 :             :      * 電流の最大値を適切に設定しないと、ヒューズが切れる(C610は-10～10A、C620は-20~20Aまで許容する)。</span>
-<span id="L111"><span class="lineNum">     111</span>                 :             :      */</span>
-<span id="L112"><span class="lineNum">     112</span>                 :<span class="tlaGNC">          27 :     bool init(int motor, float Ampere, std::vector&lt;int&gt; C620IDX = {}) {</span></span>
-<span id="L113"><span class="lineNum">     113</span>   [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 25 times"> + </span>]:<span class="tlaGNC">          27 :         if(motor &gt; 8 || motor &lt; 0) {</span></span>
-<span id="L114"><span class="lineNum">     114</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :             LOGW(&quot;The number of RoboMaster motors must be 0~8&quot;);</span></span>
-<span id="L115"><span class="lineNum">     115</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
-<span id="L116"><span class="lineNum">     116</span>                 :             :         }</span>
-<span id="L117"><span class="lineNum">     117</span>                 :<span class="tlaGNC">          25 :         numOfMotor = motor;</span></span>
-<span id="L118"><span class="lineNum">     118</span>                 :             : </span>
-<span id="L119"><span class="lineNum">     119</span>                 :             :         // 初期化時にisC610配列をtrueで初期化</span>
-<span id="L120"><span class="lineNum">     120</span>         [<span class="tlaGBC" title="Branch 0 was taken 200 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 25 times"> + </span>]:<span class="tlaGNC">         225 :         for(int i = 0; i &lt; 8; i++) {</span></span>
-<span id="L121"><span class="lineNum">     121</span>                 :<span class="tlaGNC">         200 :             isC610[i] = true;</span></span>
-<span id="L122"><span class="lineNum">     122</span>                 :             :         }</span>
+<span id="L76"><span class="lineNum">      76</span>                 :             : enum class MotorState {</span>
+<span id="L77"><span class="lineNum">      77</span>                 :             :     Init,</span>
+<span id="L78"><span class="lineNum">      78</span>                 :             :     Running,</span>
+<span id="L79"><span class="lineNum">      79</span>                 :             :     Stopped,</span>
+<span id="L80"><span class="lineNum">      80</span>                 :             :     SetCurrentError,</span>
+<span id="L81"><span class="lineNum">      81</span>                 :             : };</span>
+<span id="L82"><span class="lineNum">      82</span>                 :             : </span>
+<span id="L83"><span class="lineNum">      83</span>                 :             : using CallBack = std::function&lt;void(const uint32_t, const DJI::ESCData &amp;)&gt;;</span>
+<span id="L84"><span class="lineNum">      84</span>                 :             : </span>
+<span id="L85"><span class="lineNum">      85</span>                 :             : /**</span>
+<span id="L86"><span class="lineNum">      86</span>                 :             :  * @brief</span>
+<span id="L87"><span class="lineNum">      87</span>                 :             :  * ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御するため。</span>
+<span id="L88"><span class="lineNum">      88</span>                 :             :  */</span>
+<span id="L89"><span class="lineNum">      89</span>                 :             : class ESC {</span>
+<span id="L90"><span class="lineNum">      90</span>                 :             : private:</span>
+<span id="L91"><span class="lineNum">      91</span>                 :             :     float maxAmpere;</span>
+<span id="L92"><span class="lineNum">      92</span>                 :             :     int numOfMotor;</span>
+<span id="L93"><span class="lineNum">      93</span>                 :             :     int currentSum = 0;</span>
+<span id="L94"><span class="lineNum">      94</span>                 :             : </span>
+<span id="L95"><span class="lineNum">      95</span>                 :             :     static uint32_t const CAN_ID1 = 0x200;</span>
+<span id="L96"><span class="lineNum">      96</span>                 :             :     static uint32_t const CAN_ID2 = 0x1FF;</span>
+<span id="L97"><span class="lineNum">      97</span>                 :             : </span>
+<span id="L98"><span class="lineNum">      98</span>                 :             :     ESCData received[8];</span>
+<span id="L99"><span class="lineNum">      99</span>                 :             :     bool isC610[8] = {true, true, true, true, true, true, true, true};</span>
+<span id="L100"><span class="lineNum">     100</span>                 :             :     int currentData[8] = {0, 0, 0, 0, 0, 0, 0, 0};</span>
+<span id="L101"><span class="lineNum">     101</span>                 :             :     std::vector&lt;MotorState&gt; motor_state = {</span>
+<span id="L102"><span class="lineNum">     102</span>                 :             :         MotorState::Init, MotorState::Init, MotorState::Init, MotorState::Init,</span>
+<span id="L103"><span class="lineNum">     103</span>                 :             :         MotorState::Init, MotorState::Init, MotorState::Init, MotorState::Init};</span>
+<span id="L104"><span class="lineNum">     104</span>                 :             : </span>
+<span id="L105"><span class="lineNum">     105</span>                 :             :     std::vector&lt;int&gt; last_cb = {-1, -1, -1, -1, -1, -1, -1, -1, -1};</span>
+<span id="L106"><span class="lineNum">     106</span>                 :             :     uint32_t lastFeedbackTime[8];</span>
+<span id="L107"><span class="lineNum">     107</span>                 :             :     bool feedbackReceived[8];</span>
+<span id="L108"><span class="lineNum">     108</span>                 :             : </span>
+<span id="L109"><span class="lineNum">     109</span>                 :             :     // 多回転トラッキング</span>
+<span id="L110"><span class="lineNum">     110</span>                 :             :     int32_t roundCount[8];     //!&lt; 多回転トラッキング</span>
+<span id="L111"><span class="lineNum">     111</span>                 :             :     bool roundReady[8];        //!&lt; 最初の角度受信が完了したか</span>
+<span id="L112"><span class="lineNum">     112</span>                 :             :     int prevRawAngle[8];       //!&lt; wrap検出用</span>
+<span id="L113"><span class="lineNum">     113</span>                 :             : </span>
+<span id="L114"><span class="lineNum">     114</span>                 :             :     // ソフト電流制限</span>
+<span id="L115"><span class="lineNum">     115</span>                 :             :     int minCurrent_mA[8];      //!&lt; ソフト電流下限</span>
+<span id="L116"><span class="lineNum">     116</span>                 :             :     int maxCurrent_mA[8];      //!&lt; ソフト電流上限</span>
+<span id="L117"><span class="lineNum">     117</span>                 :             : </span>
+<span id="L118"><span class="lineNum">     118</span>                 :             :     // フィードバックタイムアウト (0=無効)</span>
+<span id="L119"><span class="lineNum">     119</span>                 :             :     uint32_t feedbackTimeout_ms[8];</span>
+<span id="L120"><span class="lineNum">     120</span>                 :             : </span>
+<span id="L121"><span class="lineNum">     121</span>                 :             :     CallBack rxCallback;</span>
+<span id="L122"><span class="lineNum">     122</span>                 :             :     CanSystem::ICanController &amp;canMgr;</span>
 <span id="L123"><span class="lineNum">     123</span>                 :             : </span>
-<span id="L124"><span class="lineNum">     124</span>         [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 25 times"> + </span>]:<span class="tlaGNC">          34 :         for(int v : C620IDX) {</span></span>
-<span id="L125"><span class="lineNum">     125</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 9 times"> + </span>]:<span class="tlaGNC">           9 :             if((v - 1) &lt; 0 || (v - 1) &gt;= numOfMotor) continue;</span></span>
-<span id="L126"><span class="lineNum">     126</span>                 :<span class="tlaGNC">           9 :             isC610[v - 1] = false;</span></span>
-<span id="L127"><span class="lineNum">     127</span>                 :             :         }</span>
-<span id="L128"><span class="lineNum">     128</span>                 :             : </span>
-<span id="L129"><span class="lineNum">     129</span>         [<span class="tlaGBC" title="Branch 0 was taken 110 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 25 times"> + </span>]:<span class="tlaGNC">         135 :         for(int i = 0; i &lt; numOfMotor; i++) {</span></span>
-<span id="L130"><span class="lineNum">     130</span>                 :<span class="tlaGNC">         110 :             received[i] = {0, 0, 0, 0};</span></span>
-<span id="L131"><span class="lineNum">     131</span>                 :             :         }</span>
-<span id="L132"><span class="lineNum">     132</span>                 :<span class="tlaGNC">          25 :         maxAmpere = Ampere * 1000;</span></span>
-<span id="L133"><span class="lineNum">     133</span>                 :             : </span>
-<span id="L134"><span class="lineNum">     134</span>   [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          25 :         LOGI(&quot;&quot;);</span></span>
-<span id="L135"><span class="lineNum">     135</span>         [<span class="tlaGBC" title="Branch 0 was taken 110 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 25 times"> + </span>]:<span class="tlaGNC">         135 :         for(int i = 0; i &lt; numOfMotor; ++i) {</span></span>
-<span id="L136"><span class="lineNum">     136</span>   [<span class="tlaGBC" title="Branch 0 was taken 101 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 110 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">         110 :             LOGI(&quot;%d &quot;, isC610[i] ? 1 : 0);</span></span>
-<span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 110 times"> + </span><span class="tlaUNC" title="Branch 5 was not taken"> - </span>]
-<span id="L137"><span class="lineNum">     137</span>                 :             :         }</span>
-<span id="L138"><span class="lineNum">     138</span>   [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          25 :         LOGI(&quot;&quot;);</span></span>
-<span id="L139"><span class="lineNum">     139</span>   [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 25 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          25 :         LOGI(&quot;RoboMaster is Ready&quot;);</span></span>
-<span id="L140"><span class="lineNum">     140</span>                 :<span class="tlaGNC">          25 :         return true;</span></span>
-<span id="L141"><span class="lineNum">     141</span>                 :             :     }</span>
-<span id="L142"><span class="lineNum">     142</span>                 :             : </span>
-<span id="L143"><span class="lineNum">     143</span>                 :             :     /**</span>
-<span id="L144"><span class="lineNum">     144</span>                 :             :      * @brief</span>
-<span id="L145"><span class="lineNum">     145</span>                 :             :      * @details</span>
-<span id="L146"><span class="lineNum">     146</span>                 :             :      * ロボマス側で送信者のcanIDとdataの位置に合わせてモーター速度が変更される。</span>
-<span id="L147"><span class="lineNum">     147</span>                 :             :      * @return true</span>
-<span id="L148"><span class="lineNum">     148</span>                 :             :      * @return false</span>
-<span id="L149"><span class="lineNum">     149</span>                 :             :      */</span>
-<span id="L150"><span class="lineNum">     150</span>                 :<span class="tlaGNC">           4 :     bool sendCurrent() {</span></span>
-<span id="L151"><span class="lineNum">     151</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span>]:<span class="tlaGNC">           4 :         if(!canMgr.send(CAN_ID1, msg_data1)) {</span></span>
-<span id="L152"><span class="lineNum">     152</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             return false;</span></span>
-<span id="L153"><span class="lineNum">     153</span>                 :             :         }</span>
-<span id="L154"><span class="lineNum">     154</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC tlaBgGNC">           4 :         if(numOfMotor &gt; 4) {</span></span>
-<span id="L155"><span class="lineNum">     155</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :             if(!canMgr.send(CAN_ID2, msg_data2)) {</span></span>
-<span id="L156"><span class="lineNum">     156</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 return false;</span></span>
-<span id="L157"><span class="lineNum">     157</span>                 :             :             }</span>
-<span id="L158"><span class="lineNum">     158</span>                 :             :         }</span>
-<span id="L159"><span class="lineNum">     159</span>                 :<span class="tlaGNC tlaBgGNC">           4 :         return true;</span></span>
-<span id="L160"><span class="lineNum">     160</span>                 :             :     }</span>
-<span id="L161"><span class="lineNum">     161</span>                 :             : </span>
-<span id="L162"><span class="lineNum">     162</span>                 :             :     void registerRxCallback(CallBack cb) { rxCallback = cb; }</span>
-<span id="L163"><span class="lineNum">     163</span>                 :             : </span>
-<span id="L164"><span class="lineNum">     164</span>                 :<span class="tlaGNC">           2 :     bool handle_rx_callback(uint32_t motorID, const uint8_t *data) {</span></span>
-<span id="L165"><span class="lineNum">     165</span>                 :<span class="tlaGNC">           2 :         motorID -= 512;</span></span>
-<span id="L166"><span class="lineNum">     166</span>   [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :         if(motorID &lt; 1 || motorID &gt; (uint32_t)numOfMotor) {</span></span>
-<span id="L167"><span class="lineNum">     167</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
+<span id="L124"><span class="lineNum">     124</span>                 :             : public:</span>
+<span id="L125"><span class="lineNum">     125</span>                 :             :     /**</span>
+<span id="L126"><span class="lineNum">     126</span>                 :             :      * @brief Construct a new ESC object</span>
+<span id="L127"><span class="lineNum">     127</span>                 :             :      * @param canmgr can,fdcanどちらでもよい 依存注入で入れ替え可能</span>
+<span id="L128"><span class="lineNum">     128</span>                 :             :      */</span>
+<span id="L129"><span class="lineNum">     129</span>                 :<span class="tlaGNC">          27 :     ESC(CanSystem::ICanController &amp;canmgr)</span></span>
+<span id="L130"><span class="lineNum">     130</span>   [<span class="tlaGBC" title="Branch 0 was taken 27 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 27 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">         135 :         : canMgr(canmgr)  //!&lt; インスタンス参照を渡す</span></span>
+<span id="L131"><span class="lineNum">     131</span>                 :<span class="tlaGNC">          27 :     {}</span></span>
+<span id="L132"><span class="lineNum">     132</span>                 :             : </span>
+<span id="L133"><span class="lineNum">     133</span>                 :             :     /**</span>
+<span id="L134"><span class="lineNum">     134</span>                 :             :      * @param motor モーターの数（0〜8の範囲で指定）</span>
+<span id="L135"><span class="lineNum">     135</span>                 :             :      * @param Ampere 設定する最大電流（A）</span>
+<span id="L136"><span class="lineNum">     136</span>                 :             :      * @param C620IDX C620を使用するID</span>
+<span id="L137"><span class="lineNum">     137</span>                 :             :      * @return bool true/false</span>
+<span id="L138"><span class="lineNum">     138</span>                 :             :      * @details</span>
+<span id="L139"><span class="lineNum">     139</span>                 :             :      * 引数のモーター数(1~8)で制御システムを初期化。最大電流も設定する。</span>
+<span id="L140"><span class="lineNum">     140</span>                 :             :      * また、指定したモーター番号はm3508用に上限を設定する。</span>
+<span id="L141"><span class="lineNum">     141</span>                 :             :      * 電流の最大値を適切に設定しないと、ヒューズが切れる(C610は-10～10A、C620は-20~20Aまで許容する)。</span>
+<span id="L142"><span class="lineNum">     142</span>                 :             :      */</span>
+<span id="L143"><span class="lineNum">     143</span>                 :<span class="tlaGNC">          32 :     bool init(int motor, float Ampere, std::vector&lt;int&gt; C620IDX = {}) {</span></span>
+<span id="L144"><span class="lineNum">     144</span>   [<span class="tlaGBC" title="Branch 0 was taken 31 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 30 times"> + </span>]:<span class="tlaGNC">          32 :         if(motor &gt; 8 || motor &lt; 0) {</span></span>
+<span id="L145"><span class="lineNum">     145</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :             LOGW(&quot;The number of RoboMaster motors must be 0~8&quot;);</span></span>
+<span id="L146"><span class="lineNum">     146</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
+<span id="L147"><span class="lineNum">     147</span>                 :             :         }</span>
+<span id="L148"><span class="lineNum">     148</span>                 :<span class="tlaGNC">          30 :         numOfMotor = motor;</span></span>
+<span id="L149"><span class="lineNum">     149</span>                 :<span class="tlaGNC">          30 :         currentSum = 0;</span></span>
+<span id="L150"><span class="lineNum">     150</span>                 :             : </span>
+<span id="L151"><span class="lineNum">     151</span>                 :<span class="tlaGNC">          30 :         uint32_t now = millis();</span></span>
+<span id="L152"><span class="lineNum">     152</span>         [<span class="tlaGBC" title="Branch 0 was taken 240 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">         270 :         for(int i = 0; i &lt; 8; i++) {</span></span>
+<span id="L153"><span class="lineNum">     153</span>                 :<span class="tlaGNC">         240 :             received[i] = {0, 0, 0, 0};</span></span>
+<span id="L154"><span class="lineNum">     154</span>                 :<span class="tlaGNC">         240 :             currentData[i] = 0;</span></span>
+<span id="L155"><span class="lineNum">     155</span>                 :<span class="tlaGNC">         240 :             motor_state[i] = MotorState::Init;</span></span>
+<span id="L156"><span class="lineNum">     156</span>                 :<span class="tlaGNC">         240 :             last_cb[i] = -1;</span></span>
+<span id="L157"><span class="lineNum">     157</span>                 :<span class="tlaGNC">         240 :             lastFeedbackTime[i] = now;</span></span>
+<span id="L158"><span class="lineNum">     158</span>                 :<span class="tlaGNC">         240 :             feedbackReceived[i] = false;</span></span>
+<span id="L159"><span class="lineNum">     159</span>                 :<span class="tlaGNC">         240 :             roundCount[i] = 0;</span></span>
+<span id="L160"><span class="lineNum">     160</span>                 :<span class="tlaGNC">         240 :             roundReady[i] = false;</span></span>
+<span id="L161"><span class="lineNum">     161</span>                 :<span class="tlaGNC">         240 :             prevRawAngle[i] = 0;</span></span>
+<span id="L162"><span class="lineNum">     162</span>                 :<span class="tlaGNC">         240 :             feedbackTimeout_ms[i] = 0;  // デフォルト無効</span></span>
+<span id="L163"><span class="lineNum">     163</span>                 :             :         }</span>
+<span id="L164"><span class="lineNum">     164</span>                 :             : </span>
+<span id="L165"><span class="lineNum">     165</span>                 :             :         // 初期化時にisC610配列をtrueで初期化</span>
+<span id="L166"><span class="lineNum">     166</span>         [<span class="tlaGBC" title="Branch 0 was taken 240 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">         270 :         for(int i = 0; i &lt; 8; i++) {</span></span>
+<span id="L167"><span class="lineNum">     167</span>                 :<span class="tlaGNC">         240 :             isC610[i] = true;</span></span>
 <span id="L168"><span class="lineNum">     168</span>                 :             :         }</span>
-<span id="L169"><span class="lineNum">     169</span>                 :<span class="tlaUNC tlaBgUNC">           0 :         motorID -= 1;  // indexへ</span></span>
-<span id="L170"><span class="lineNum">     170</span>                 :             : </span>
-<span id="L171"><span class="lineNum">     171</span>                 :<span class="tlaUNC">           0 :         last_cb[motorID] = millis();</span></span>
-<span id="L172"><span class="lineNum">     172</span>                 :             : </span>
-<span id="L173"><span class="lineNum">     173</span>                 :<span class="tlaUNC">           0 :         received[motorID] = {</span></span>
-<span id="L174"><span class="lineNum">     174</span>                 :<span class="tlaUNC">           0 :             (int)(data[2] &lt;&lt; 8) | (int)data[3],</span></span>
-<span id="L175"><span class="lineNum">     175</span>                 :<span class="tlaUNC">           0 :             (int)(data[0] &lt;&lt; 8) | (int)data[1],</span></span>
-<span id="L176"><span class="lineNum">     176</span>                 :<span class="tlaUNC">           0 :             (int)(data[4] &lt;&lt; 8) | (int)data[5],</span></span>
-<span id="L177"><span class="lineNum">     177</span>                 :<span class="tlaUNC">           0 :             (int)(data[6]),</span></span>
-<span id="L178"><span class="lineNum">     178</span>                 :             :         };</span>
+<span id="L169"><span class="lineNum">     169</span>                 :             : </span>
+<span id="L170"><span class="lineNum">     170</span>         [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">          39 :         for(int v : C620IDX) {</span></span>
+<span id="L171"><span class="lineNum">     171</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 9 times"> + </span>]:<span class="tlaGNC">           9 :             if((v - 1) &lt; 0 || (v - 1) &gt;= numOfMotor) continue;</span></span>
+<span id="L172"><span class="lineNum">     172</span>                 :<span class="tlaGNC">           9 :             isC610[v - 1] = false;</span></span>
+<span id="L173"><span class="lineNum">     173</span>                 :             :         }</span>
+<span id="L174"><span class="lineNum">     174</span>                 :             : </span>
+<span id="L175"><span class="lineNum">     175</span>         [<span class="tlaGBC" title="Branch 0 was taken 115 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">         145 :         for(int i = 0; i &lt; numOfMotor; i++) {</span></span>
+<span id="L176"><span class="lineNum">     176</span>                 :<span class="tlaGNC">         115 :             received[i] = {0, 0, 0, 0};</span></span>
+<span id="L177"><span class="lineNum">     177</span>                 :             :         }</span>
+<span id="L178"><span class="lineNum">     178</span>                 :<span class="tlaGNC">          30 :         maxAmpere = Ampere * 1000;</span></span>
 <span id="L179"><span class="lineNum">     179</span>                 :             : </span>
-<span id="L180"><span class="lineNum">     180</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC">           0 :         if(received[motorID].speed &amp;</span></span>
-<span id="L181"><span class="lineNum">     181</span>                 :             :            0x8000)  // 上位ビットが立ってる → 符号付きとして負</span>
-<span id="L182"><span class="lineNum">     182</span>                 :             :         {</span>
-<span id="L183"><span class="lineNum">     183</span>                 :<span class="tlaUNC">           0 :             received[motorID].speed -= 1 &lt;&lt; 16;  // two's complement補正</span></span>
-<span id="L184"><span class="lineNum">     184</span>                 :             :         }</span>
-<span id="L185"><span class="lineNum">     185</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC">           0 :         if(received[motorID].torqueCurrent &amp; 0x8000) {</span></span>
-<span id="L186"><span class="lineNum">     186</span>                 :<span class="tlaUNC">           0 :             received[motorID].torqueCurrent -= 1 &lt;&lt; 16;</span></span>
-<span id="L187"><span class="lineNum">     187</span>                 :             :         }</span>
-<span id="L188"><span class="lineNum">     188</span>                 :             : </span>
-<span id="L189"><span class="lineNum">     189</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC">           0 :         if(rxCallback) {</span></span>
-<span id="L190"><span class="lineNum">     190</span>                 :<span class="tlaUNC">           0 :             rxCallback(motorID, received[motorID]);</span></span>
+<span id="L180"><span class="lineNum">     180</span>                 :             :         // ソフト電流制限の初期化(ハード上下限で初期化)</span>
+<span id="L181"><span class="lineNum">     181</span>         [<span class="tlaGBC" title="Branch 0 was taken 115 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">         145 :         for(int i = 0; i &lt; numOfMotor; i++) {</span></span>
+<span id="L182"><span class="lineNum">     182</span>         [<span class="tlaGBC" title="Branch 0 was taken 106 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 9 times"> + </span>]:<span class="tlaGNC">         115 :             int hardMin = isC610[i] ? C610_MIN_CURRENT : C620_MIN_CURRENT;</span></span>
+<span id="L183"><span class="lineNum">     183</span>         [<span class="tlaGBC" title="Branch 0 was taken 106 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 9 times"> + </span>]:<span class="tlaGNC">         115 :             int hardMax = isC610[i] ? C610_MAX_CURRENT : C620_MAX_CURRENT;</span></span>
+<span id="L184"><span class="lineNum">     184</span>                 :<span class="tlaGNC">         115 :             minCurrent_mA[i] = hardMin;</span></span>
+<span id="L185"><span class="lineNum">     185</span>                 :<span class="tlaGNC">         115 :             maxCurrent_mA[i] = hardMax;</span></span>
+<span id="L186"><span class="lineNum">     186</span>                 :             :         }</span>
+<span id="L187"><span class="lineNum">     187</span>                 :             : </span>
+<span id="L188"><span class="lineNum">     188</span>   [<span class="tlaGBC" title="Branch 0 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          30 :         LOGI(&quot;&quot;);</span></span>
+<span id="L189"><span class="lineNum">     189</span>         [<span class="tlaGBC" title="Branch 0 was taken 115 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 30 times"> + </span>]:<span class="tlaGNC">         145 :         for(int i = 0; i &lt; numOfMotor; ++i) {</span></span>
+<span id="L190"><span class="lineNum">     190</span>   [<span class="tlaGBC" title="Branch 0 was taken 106 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 115 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">         115 :             LOGI(&quot;%d &quot;, isC610[i] ? 1 : 0);</span></span>
+<span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 115 times"> + </span><span class="tlaUNC" title="Branch 5 was not taken"> - </span>]
 <span id="L191"><span class="lineNum">     191</span>                 :             :         }</span>
-<span id="L192"><span class="lineNum">     192</span>                 :             : </span>
-<span id="L193"><span class="lineNum">     193</span>                 :             :         // if (isC610[motorID])</span>
-<span id="L194"><span class="lineNum">     194</span>                 :             :         //     LOGD(&quot;m2006[%lu]     : %5d  |  Received:(%6d, %4d, %5d,</span>
-<span id="L195"><span class="lineNum">     195</span>                 :             :         //     %5d)\n&quot;,</span>
-<span id="L196"><span class="lineNum">     196</span>                 :             :         //            motorID + 1, currentData[motorID],</span>
-<span id="L197"><span class="lineNum">     197</span>                 :             :         //            received[motorID].speed, received[motorID].angle,</span>
-<span id="L198"><span class="lineNum">     198</span>                 :             :         //            received[motorID].torqueCurrent, received[motorID].temp);</span>
-<span id="L199"><span class="lineNum">     199</span>                 :             :         // else</span>
-<span id="L200"><span class="lineNum">     200</span>                 :             :         //     LOGD(&quot;m3508[%lu]     : %5d  |  Received:(%6d, %4d, %5d,</span>
-<span id="L201"><span class="lineNum">     201</span>                 :             :         //     %5d)\n&quot;,</span>
-<span id="L202"><span class="lineNum">     202</span>                 :             :         //            motorID + 1, currentData[motorID],</span>
-<span id="L203"><span class="lineNum">     203</span>                 :             :         //            received[motorID].speed, received[motorID].angle,</span>
-<span id="L204"><span class="lineNum">     204</span>                 :             :         //            received[motorID].torqueCurrent, received[motorID].temp);</span>
-<span id="L205"><span class="lineNum">     205</span>                 :<span class="tlaUNC">           0 :         return true;</span></span>
-<span id="L206"><span class="lineNum">     206</span>                 :             :     }</span>
+<span id="L192"><span class="lineNum">     192</span>   [<span class="tlaGBC" title="Branch 0 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          30 :         LOGI(&quot;&quot;);</span></span>
+<span id="L193"><span class="lineNum">     193</span>   [<span class="tlaGBC" title="Branch 0 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 30 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          30 :         LOGI(&quot;RoboMaster is Ready&quot;);</span></span>
+<span id="L194"><span class="lineNum">     194</span>                 :<span class="tlaGNC">          30 :         return true;</span></span>
+<span id="L195"><span class="lineNum">     195</span>                 :             :     }</span>
+<span id="L196"><span class="lineNum">     196</span>                 :             : </span>
+<span id="L197"><span class="lineNum">     197</span>                 :             :     /**</span>
+<span id="L198"><span class="lineNum">     198</span>                 :             :      * @brief</span>
+<span id="L199"><span class="lineNum">     199</span>                 :             :      * @details</span>
+<span id="L200"><span class="lineNum">     200</span>                 :             :      * ロボマス側で送信者のcanIDとdataの位置に合わせてモーター速度が変更される。</span>
+<span id="L201"><span class="lineNum">     201</span>                 :             :      * @return true</span>
+<span id="L202"><span class="lineNum">     202</span>                 :             :      * @return false</span>
+<span id="L203"><span class="lineNum">     203</span>                 :             :      */</span>
+<span id="L204"><span class="lineNum">     204</span>                 :<span class="tlaGNC">           8 :     bool sendCurrent() {</span></span>
+<span id="L205"><span class="lineNum">     205</span>                 :<span class="tlaGNC">           8 :         uint8_t txData1[8] = {0};</span></span>
+<span id="L206"><span class="lineNum">     206</span>                 :<span class="tlaGNC">           8 :         uint8_t txData2[8] = {0};</span></span>
 <span id="L207"><span class="lineNum">     207</span>                 :             : </span>
-<span id="L208"><span class="lineNum">     208</span>                 :             :     /**</span>
-<span id="L209"><span class="lineNum">     209</span>                 :             :      * @brief 指定したモーター番号のモーターに速度を設定する。</span>
-<span id="L210"><span class="lineNum">     210</span>                 :             :      * @details チェック事項:</span>
-<span id="L211"><span class="lineNum">     211</span>                 :             :      * - モーター番号が設定以下0以上であること</span>
-<span id="L212"><span class="lineNum">     212</span>                 :             :      * - 電流がC610またはC620の最大電流以下最小電流以上であること</span>
-<span id="L213"><span class="lineNum">     213</span>                 :             :      * - 合計電流が最大合計電流以下であること</span>
-<span id="L214"><span class="lineNum">     214</span>                 :             :      * @param motorNumber モーター番号(1~8)</span>
-<span id="L215"><span class="lineNum">     215</span>                 :             :      * @param current 電流値(int) +-10Aぐらい (mA)で渡す</span>
-<span id="L216"><span class="lineNum">     216</span>                 :             :      * @return bool true / false</span>
-<span id="L217"><span class="lineNum">     217</span>                 :             :      */</span>
-<span id="L218"><span class="lineNum">     218</span>                 :<span class="tlaGNC tlaBgGNC">          52 :     bool setCurrent(int motorNumber, int current) {</span></span>
-<span id="L219"><span class="lineNum">     219</span>                 :             :         // モーター番号が設定以下0以上であること</span>
-<span id="L220"><span class="lineNum">     220</span>   [<span class="tlaGBC" title="Branch 0 was taken 51 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 50 times"> + </span>]:<span class="tlaGNC">          52 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) {</span></span>
-<span id="L221"><span class="lineNum">     221</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :             LOGW(</span></span>
-<span id="L222"><span class="lineNum">     222</span>                 :             :                 &quot;Invalid motor number : m2006/m3508[%d] (Valid range: &quot;</span>
-<span id="L223"><span class="lineNum">     223</span>                 :             :                 &quot;1~%d)\n&quot;,</span>
-<span id="L224"><span class="lineNum">     224</span>                 :             :                 motorNumber, numOfMotor);</span>
-<span id="L225"><span class="lineNum">     225</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
-<span id="L226"><span class="lineNum">     226</span>                 :             :         }</span>
-<span id="L227"><span class="lineNum">     227</span>                 :<span class="tlaGNC">          50 :         int motorIndex = motorNumber - 1;</span></span>
-<span id="L228"><span class="lineNum">     228</span>                 :             : </span>
-<span id="L229"><span class="lineNum">     229</span>                 :             :         // 電流がC610またはC620の最大電流以下最小電流以上であること</span>
-<span id="L230"><span class="lineNum">     230</span>                 :             :         int16_t minCurrent;</span>
-<span id="L231"><span class="lineNum">     231</span>                 :             :         int16_t maxCurrent;</span>
-<span id="L232"><span class="lineNum">     232</span>                 :             : </span>
-<span id="L233"><span class="lineNum">     233</span>         [<span class="tlaGBC" title="Branch 0 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 7 times"> + </span>]:<span class="tlaGNC">          50 :         if(isC610[motorIndex]) {</span></span>
-<span id="L234"><span class="lineNum">     234</span>                 :<span class="tlaGNC">          43 :             minCurrent = C610_MIN_CURRENT;</span></span>
-<span id="L235"><span class="lineNum">     235</span>                 :<span class="tlaGNC">          43 :             maxCurrent = C610_MAX_CURRENT;</span></span>
-<span id="L236"><span class="lineNum">     236</span>                 :             :         } else {</span>
-<span id="L237"><span class="lineNum">     237</span>                 :<span class="tlaGNC">           7 :             minCurrent = C620_MIN_CURRENT;</span></span>
-<span id="L238"><span class="lineNum">     238</span>                 :<span class="tlaGNC">           7 :             maxCurrent = C620_MAX_CURRENT;</span></span>
-<span id="L239"><span class="lineNum">     239</span>                 :             :         }</span>
-<span id="L240"><span class="lineNum">     240</span>                 :             : </span>
-<span id="L241"><span class="lineNum">     241</span>   [<span class="tlaGBC" title="Branch 0 was taken 48 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 46 times"> + </span>]:<span class="tlaGNC">          50 :         if(current &lt; minCurrent || current &gt; maxCurrent) {</span></span>
-<span id="L242"><span class="lineNum">     242</span>         [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">           4 :             const char *motorType = isC610[motorIndex] ? &quot;m2006&quot; : &quot;m3508&quot;;</span></span>
-<span id="L243"><span class="lineNum">     243</span>   [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           4 :             LOGW(&quot;Current out of range for %s[%d]: %d (Range: %d~%d)\n&quot;,</span></span>
-<span id="L244"><span class="lineNum">     244</span>                 :             :                  motorType, motorNumber, current, minCurrent, maxCurrent);</span>
-<span id="L245"><span class="lineNum">     245</span>                 :<span class="tlaGNC">           4 :             motor_state[motorIndex] = MotorState::SetCurrentError;</span></span>
-<span id="L246"><span class="lineNum">     246</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
-<span id="L247"><span class="lineNum">     247</span>                 :             :         }</span>
-<span id="L248"><span class="lineNum">     248</span>                 :             : </span>
-<span id="L249"><span class="lineNum">     249</span>                 :             :         // 合計電流が最大合計電流以下であること</span>
-<span id="L250"><span class="lineNum">     250</span>                 :<span class="tlaGNC">          46 :         int newCurrentSum =</span></span>
-<span id="L251"><span class="lineNum">     251</span>                 :<span class="tlaGNC">          46 :             currentSum - abs(currentData[motorIndex]) + abs(current);</span></span>
-<span id="L252"><span class="lineNum">     252</span>         [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 41 times"> + </span>]:<span class="tlaGNC">          46 :         if(newCurrentSum &gt; maxAmpere) {</span></span>
-<span id="L253"><span class="lineNum">     253</span>   [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 5 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           5 :             LOGW(&quot;total Exceeds max current: Set = %dmA, Max = %fA\n&quot;,</span></span>
-<span id="L254"><span class="lineNum">     254</span>                 :             :                  newCurrentSum, maxAmpere);</span>
-<span id="L255"><span class="lineNum">     255</span>                 :<span class="tlaGNC">           5 :             motor_state[motorIndex] = MotorState::SetCurrentError;</span></span>
-<span id="L256"><span class="lineNum">     256</span>                 :<span class="tlaGNC">           5 :             return false;</span></span>
-<span id="L257"><span class="lineNum">     257</span>                 :             :         }</span>
-<span id="L258"><span class="lineNum">     258</span>                 :             : </span>
-<span id="L259"><span class="lineNum">     259</span>                 :             :         // 電流を更新</span>
-<span id="L260"><span class="lineNum">     260</span>                 :<span class="tlaGNC">          41 :         currentSum = newCurrentSum;</span></span>
-<span id="L261"><span class="lineNum">     261</span>                 :<span class="tlaGNC">          41 :         currentData[motorIndex] = current;</span></span>
-<span id="L262"><span class="lineNum">     262</span>                 :             : </span>
-<span id="L263"><span class="lineNum">     263</span>                 :<span class="tlaGNC">          41 :         int dataIndex = motorIndex;</span></span>
-<span id="L264"><span class="lineNum">     264</span>         [<span class="tlaGBC" title="Branch 0 was taken 37 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span>]:<span class="tlaGNC">          41 :         if(motorNumber &lt;= 4) {</span></span>
-<span id="L265"><span class="lineNum">     265</span>                 :<span class="tlaGNC">          37 :             msg_data1[dataIndex * 2] =</span></span>
-<span id="L266"><span class="lineNum">     266</span>                 :<span class="tlaGNC">          37 :                 (current &gt;&gt; 8) &amp; 0xFF;  // 上位バイトを格納</span></span>
-<span id="L267"><span class="lineNum">     267</span>                 :<span class="tlaGNC">          37 :             msg_data1[dataIndex * 2 + 1] = current &amp; 0xFF;  // 下位バイトを格納</span></span>
+<span id="L208"><span class="lineNum">     208</span>                 :             :         {</span>
+<span id="L209"><span class="lineNum">     209</span>                 :<span class="tlaGNC">           8 :             CriticalSection lock;</span></span>
+<span id="L210"><span class="lineNum">     210</span>                 :             : </span>
+<span id="L211"><span class="lineNum">     211</span>                 :             :             // フィードバックタイムアウト検査: 受信断で停止+多回転リセット</span>
+<span id="L212"><span class="lineNum">     212</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           8 :             uint32_t now = millis();</span></span>
+<span id="L213"><span class="lineNum">     213</span>         [<span class="tlaGBC" title="Branch 0 was taken 24 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8 times"> + </span>]:<span class="tlaGNC">          32 :             for(int i = 0; i &lt; numOfMotor; i++) {</span></span>
+<span id="L214"><span class="lineNum">     214</span>         [<span class="tlaGBC" title="Branch 0 was taken 23 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">          24 :                 if(feedbackTimeout_ms[i] == 0) continue;  // 無効</span></span>
+<span id="L215"><span class="lineNum">     215</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :                 if(now - lastFeedbackTime[i] &gt; feedbackTimeout_ms[i]) {</span></span>
+<span id="L216"><span class="lineNum">     216</span>                 :<span class="tlaGNC">           1 :                     resetMotor(i, now);</span></span>
+<span id="L217"><span class="lineNum">     217</span>                 :             :                 }</span>
+<span id="L218"><span class="lineNum">     218</span>                 :             :             }</span>
+<span id="L219"><span class="lineNum">     219</span>                 :             : </span>
+<span id="L220"><span class="lineNum">     220</span>                 :<span class="tlaGNC">           8 :             packCurrentData(txData1, txData2);</span></span>
+<span id="L221"><span class="lineNum">     221</span>                 :<span class="tlaGNC">           8 :         }</span></span>
+<span id="L222"><span class="lineNum">     222</span>                 :             : </span>
+<span id="L223"><span class="lineNum">     223</span>   [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 8 times"> + </span>]:<span class="tlaGNC">           8 :         if(!canMgr.send(CAN_ID1, txData1)) {</span></span>
+<span id="L224"><span class="lineNum">     224</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             return false;</span></span>
+<span id="L225"><span class="lineNum">     225</span>                 :             :         }</span>
+<span id="L226"><span class="lineNum">     226</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 7 times"> + </span>]:<span class="tlaGNC tlaBgGNC">           8 :         if(numOfMotor &gt; 4) {</span></span>
+<span id="L227"><span class="lineNum">     227</span>   [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :             if(!canMgr.send(CAN_ID2, txData2)) {</span></span>
+<span id="L228"><span class="lineNum">     228</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 return false;</span></span>
+<span id="L229"><span class="lineNum">     229</span>                 :             :             }</span>
+<span id="L230"><span class="lineNum">     230</span>                 :             :         }</span>
+<span id="L231"><span class="lineNum">     231</span>                 :<span class="tlaGNC tlaBgGNC">           8 :         return true;</span></span>
+<span id="L232"><span class="lineNum">     232</span>                 :             :     }</span>
+<span id="L233"><span class="lineNum">     233</span>                 :             : </span>
+<span id="L234"><span class="lineNum">     234</span>                 :             :     void registerRxCallback(CallBack cb) { rxCallback = cb; }</span>
+<span id="L235"><span class="lineNum">     235</span>                 :             : </span>
+<span id="L236"><span class="lineNum">     236</span>                 :<span class="tlaGNC">           3 :     bool handle_rx_callback(uint32_t motorID, const uint8_t *data) {</span></span>
+<span id="L237"><span class="lineNum">     237</span>                 :<span class="tlaGNC">           3 :         motorID -= 512;</span></span>
+<span id="L238"><span class="lineNum">     238</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">           3 :         if(motorID &lt; 1 || motorID &gt; (uint32_t)numOfMotor) {</span></span>
+<span id="L239"><span class="lineNum">     239</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
+<span id="L240"><span class="lineNum">     240</span>                 :             :         }</span>
+<span id="L241"><span class="lineNum">     241</span>                 :<span class="tlaGNC">           1 :         motorID -= 1;  // indexへ</span></span>
+<span id="L242"><span class="lineNum">     242</span>                 :             : </span>
+<span id="L243"><span class="lineNum">     243</span>                 :<span class="tlaGNC">           1 :         uint32_t now = millis();</span></span>
+<span id="L244"><span class="lineNum">     244</span>                 :<span class="tlaGNC">           1 :         last_cb[motorID] = now;</span></span>
+<span id="L245"><span class="lineNum">     245</span>                 :<span class="tlaGNC">           1 :         lastFeedbackTime[motorID] = now;</span></span>
+<span id="L246"><span class="lineNum">     246</span>                 :<span class="tlaGNC">           1 :         feedbackReceived[motorID] = true;</span></span>
+<span id="L247"><span class="lineNum">     247</span>                 :             : </span>
+<span id="L248"><span class="lineNum">     248</span>                 :<span class="tlaGNC">           1 :         int newAngle = (int)(data[0] &lt;&lt; 8) | (int)data[1];</span></span>
+<span id="L249"><span class="lineNum">     249</span>                 :<span class="tlaGNC">           1 :         received[motorID] = {</span></span>
+<span id="L250"><span class="lineNum">     250</span>                 :<span class="tlaGNC">           1 :             (int)(data[2] &lt;&lt; 8) | (int)data[3],</span></span>
+<span id="L251"><span class="lineNum">     251</span>                 :             :             newAngle,</span>
+<span id="L252"><span class="lineNum">     252</span>                 :<span class="tlaGNC">           1 :             (int)(data[4] &lt;&lt; 8) | (int)data[5],</span></span>
+<span id="L253"><span class="lineNum">     253</span>                 :<span class="tlaGNC">           1 :             (int)(data[6]),</span></span>
+<span id="L254"><span class="lineNum">     254</span>                 :             :         };</span>
+<span id="L255"><span class="lineNum">     255</span>                 :             : </span>
+<span id="L256"><span class="lineNum">     256</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :         if(received[motorID].speed &amp;</span></span>
+<span id="L257"><span class="lineNum">     257</span>                 :             :            0x8000)  // 上位ビットが立ってる → 符号付きとして負</span>
+<span id="L258"><span class="lineNum">     258</span>                 :             :         {</span>
+<span id="L259"><span class="lineNum">     259</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             received[motorID].speed -= 1 &lt;&lt; 16;  // two's complement補正</span></span>
+<span id="L260"><span class="lineNum">     260</span>                 :             :         }</span>
+<span id="L261"><span class="lineNum">     261</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC tlaBgGNC">           1 :         if(received[motorID].torqueCurrent &amp; 0x8000) {</span></span>
+<span id="L262"><span class="lineNum">     262</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             received[motorID].torqueCurrent -= 1 &lt;&lt; 16;</span></span>
+<span id="L263"><span class="lineNum">     263</span>                 :             :         }</span>
+<span id="L264"><span class="lineNum">     264</span>                 :             : </span>
+<span id="L265"><span class="lineNum">     265</span>                 :             :         // 多回転トラッキング (8192 → 0 / 0 → 8192 のwrapを検出)</span>
+<span id="L266"><span class="lineNum">     266</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC tlaBgGNC">           1 :         if(!roundReady[motorID]) {</span></span>
+<span id="L267"><span class="lineNum">     267</span>                 :<span class="tlaGNC">           1 :             roundReady[motorID] = true;</span></span>
 <span id="L268"><span class="lineNum">     268</span>                 :             :         } else {</span>
-<span id="L269"><span class="lineNum">     269</span>                 :<span class="tlaGNC">           4 :             dataIndex -= 4;  // 5番からはmsg_data2を使う index reset</span></span>
-<span id="L270"><span class="lineNum">     270</span>                 :<span class="tlaGNC">           4 :             msg_data2[dataIndex * 2] =</span></span>
-<span id="L271"><span class="lineNum">     271</span>                 :<span class="tlaGNC">           4 :                 (current &gt;&gt; 8) &amp; 0xFF;  // 上位バイトを格納</span></span>
-<span id="L272"><span class="lineNum">     272</span>                 :<span class="tlaGNC">           4 :             msg_data2[dataIndex * 2 + 1] = current &amp; 0xFF;  // 下位バイトを格納</span></span>
-<span id="L273"><span class="lineNum">     273</span>                 :             :         }</span>
-<span id="L274"><span class="lineNum">     274</span>   [<span class="tlaGBC" title="Branch 0 was taken 7 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 34 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 6 times"> + </span>]:<span class="tlaGNC">          41 :         if(current &lt;= 10 &amp;&amp; current &gt;= -10) {</span></span>
-<span id="L275"><span class="lineNum">     275</span>                 :<span class="tlaGNC">           1 :             motor_state[motorIndex] = MotorState::Stopped;</span></span>
-<span id="L276"><span class="lineNum">     276</span>                 :             :         } else {</span>
-<span id="L277"><span class="lineNum">     277</span>                 :<span class="tlaGNC">          40 :             motor_state[motorIndex] = MotorState::Running;</span></span>
-<span id="L278"><span class="lineNum">     278</span>                 :             :         }</span>
-<span id="L279"><span class="lineNum">     279</span>                 :<span class="tlaGNC">          41 :         return true;</span></span>
-<span id="L280"><span class="lineNum">     280</span>                 :             :     }</span>
+<span id="L269"><span class="lineNum">     269</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             int diff = newAngle - prevRawAngle[motorID];</span></span>
+<span id="L270"><span class="lineNum">     270</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC">           0 :             if(diff &gt; 4096) {</span></span>
+<span id="L271"><span class="lineNum">     271</span>                 :<span class="tlaUNC">           0 :                 roundCount[motorID]--;</span></span>
+<span id="L272"><span class="lineNum">     272</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC">           0 :             } else if(diff &lt; -4096) {</span></span>
+<span id="L273"><span class="lineNum">     273</span>                 :<span class="tlaUNC">           0 :                 roundCount[motorID]++;</span></span>
+<span id="L274"><span class="lineNum">     274</span>                 :             :             }</span>
+<span id="L275"><span class="lineNum">     275</span>                 :             :         }</span>
+<span id="L276"><span class="lineNum">     276</span>                 :<span class="tlaGNC tlaBgGNC">           1 :         prevRawAngle[motorID] = newAngle;</span></span>
+<span id="L277"><span class="lineNum">     277</span>                 :             : </span>
+<span id="L278"><span class="lineNum">     278</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :         if(rxCallback) {</span></span>
+<span id="L279"><span class="lineNum">     279</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             rxCallback(motorID, received[motorID]);</span></span>
+<span id="L280"><span class="lineNum">     280</span>                 :             :         }</span>
 <span id="L281"><span class="lineNum">     281</span>                 :             : </span>
-<span id="L282"><span class="lineNum">     282</span>                 :             :     /**</span>
-<span id="L283"><span class="lineNum">     283</span>                 :             :      * @brief 指定したモーターからの情報を格納した構造体を返す。</span>
-<span id="L284"><span class="lineNum">     284</span>                 :             :      * @param motorNumber モーター番号(int)</span>
-<span id="L285"><span class="lineNum">     285</span>                 :             :      * @return ESCData ESCData型構造体</span>
-<span id="L286"><span class="lineNum">     286</span>                 :             :      */</span>
-<span id="L287"><span class="lineNum">     287</span>                 :             :     ESCData get(int motorNumber) {</span>
-<span id="L288"><span class="lineNum">     288</span>                 :             :         ESCData data = received[motorNumber - 1];</span>
-<span id="L289"><span class="lineNum">     289</span>                 :             :         data.speed += 10;</span>
-<span id="L290"><span class="lineNum">     290</span>                 :             :         return data;</span>
-<span id="L291"><span class="lineNum">     291</span>                 :             :     }</span>
-<span id="L292"><span class="lineNum">     292</span>                 :             : </span>
-<span id="L293"><span class="lineNum">     293</span>                 :             :     /**</span>
-<span id="L294"><span class="lineNum">     294</span>                 :             :      * @brief 指定したモーターからの情報をprotobuffで返す</span>
-<span id="L295"><span class="lineNum">     295</span>                 :             :      * @param motorNumber モーター番号(int)</span>
-<span id="L296"><span class="lineNum">     296</span>                 :             :      * @return robot::DJI</span>
-<span id="L297"><span class="lineNum">     297</span>                 :             :      */</span>
-<span id="L298"><span class="lineNum">     298</span>                 :             :     // void setPB(int motorNumber, robot::DJI &amp;esc_pb) {</span>
-<span id="L299"><span class="lineNum">     299</span>                 :             :     //     ESCData esc = get(motorNumber);</span>
-<span id="L300"><span class="lineNum">     300</span>                 :             :     //     esc_pb.set_current(currentData[motorNumber - 1]);</span>
-<span id="L301"><span class="lineNum">     301</span>                 :             :     //     esc_pb.set_angle(esc.angle);</span>
-<span id="L302"><span class="lineNum">     302</span>                 :             :     //     esc_pb.set_speed(esc.speed);</span>
-<span id="L303"><span class="lineNum">     303</span>                 :             :     //     esc_pb.set_torque_current(esc.torqueCurrent);</span>
-<span id="L304"><span class="lineNum">     304</span>                 :             :     //     esc_pb.set_temp(-1);</span>
-<span id="L305"><span class="lineNum">     305</span>                 :             :     // }</span>
-<span id="L306"><span class="lineNum">     306</span>                 :             : </span>
-<span id="L307"><span class="lineNum">     307</span>                 :             :     /**</span>
-<span id="L308"><span class="lineNum">     308</span>                 :             :      * @brief 全チャンネルのデバッグ情報を表示する関数</span>
-<span id="L309"><span class="lineNum">     309</span>                 :             :      * @details CH_ROBOMAS, CH_ROBOMAS_TX, CH_ROBOMAS_RXの情報を一括表示</span>
-<span id="L310"><span class="lineNum">     310</span>                 :             :      */</span>
-<span id="L311"><span class="lineNum">     311</span>                 :             :     void displayDebugInfo() {</span>
-<span id="L312"><span class="lineNum">     312</span>                 :             :         // CH_ROBOMAS: 初期化情報と電流使用状況</span>
-<span id="L313"><span class="lineNum">     313</span>                 :             :         float currentUsagePercent = (currentSum / maxAmpere) * 100.0f;</span>
-<span id="L314"><span class="lineNum">     314</span>                 :             :         char cTag;</span>
-<span id="L315"><span class="lineNum">     315</span>                 :             :         if(currentUsagePercent &lt; 50.0) {</span>
-<span id="L316"><span class="lineNum">     316</span>                 :             :             cTag = 'g';</span>
-<span id="L317"><span class="lineNum">     317</span>                 :             :         } else if(currentUsagePercent &lt;= 80) {</span>
-<span id="L318"><span class="lineNum">     318</span>                 :             :             cTag = 'y';</span>
-<span id="L319"><span class="lineNum">     319</span>                 :             :         } else {</span>
-<span id="L320"><span class="lineNum">     320</span>                 :             :             cTag = 'r';</span>
-<span id="L321"><span class="lineNum">     321</span>                 :             :         }</span>
-<span id="L322"><span class="lineNum">     322</span>                 :             :         const char *currentUsageString =</span>
-<span id="L323"><span class="lineNum">     323</span>                 :             :             cFormat(&quot;%c|%3.1f%%|&quot;, cTag, currentUsagePercent).c_str();</span>
-<span id="L324"><span class="lineNum">     324</span>                 :             : </span>
-<span id="L325"><span class="lineNum">     325</span>                 :             :         // C620のIDリストを文字列で構築</span>
-<span id="L326"><span class="lineNum">     326</span>                 :             :         std::string c620List = &quot;&quot;;</span>
-<span id="L327"><span class="lineNum">     327</span>                 :             :         bool first = true;</span>
-<span id="L328"><span class="lineNum">     328</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
-<span id="L329"><span class="lineNum">     329</span>                 :             :             if(!isC610[i]) {  // C620の場合</span>
-<span id="L330"><span class="lineNum">     330</span>                 :             :                 if(!first) c620List += &quot;,&quot;;</span>
-<span id="L331"><span class="lineNum">     331</span>                 :             :                 c620List += std::to_string(i + 1);</span>
-<span id="L332"><span class="lineNum">     332</span>                 :             :                 first = false;</span>
-<span id="L333"><span class="lineNum">     333</span>                 :             :             }</span>
-<span id="L334"><span class="lineNum">     334</span>                 :             :         }</span>
-<span id="L335"><span class="lineNum">     335</span>                 :             : </span>
-<span id="L336"><span class="lineNum">     336</span>                 :             :         STREAM(CH_ROBOMAS,</span>
-<span id="L337"><span class="lineNum">     337</span>                 :             :                &quot;p|robomas |[%d , %3.1fA] C620:[%s] Current: &quot;</span>
-<span id="L338"><span class="lineNum">     338</span>                 :             :                &quot;%3.1fA/%3.1fA(%s)&quot;,</span>
-<span id="L339"><span class="lineNum">     339</span>                 :             :                numOfMotor, maxAmpere / 1000.0f, c620List.c_str(),</span>
-<span id="L340"><span class="lineNum">     340</span>                 :             :                currentSum / 1000.0f, maxAmpere / 1000.0f, currentUsageString);</span>
-<span id="L341"><span class="lineNum">     341</span>                 :             : </span>
-<span id="L342"><span class="lineNum">     342</span>                 :             :         // CH_ROBOMAS_TX: 電流設定値表示</span>
-<span id="L343"><span class="lineNum">     343</span>                 :             :         std::string currentStr = &quot;[&quot;;</span>
-<span id="L344"><span class="lineNum">     344</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
-<span id="L345"><span class="lineNum">     345</span>                 :             :             if(i &gt; 0) currentStr += &quot;,&quot;;</span>
-<span id="L346"><span class="lineNum">     346</span>                 :             : </span>
-<span id="L347"><span class="lineNum">     347</span>                 :             :             // モーター状態に応じた色を選択</span>
-<span id="L348"><span class="lineNum">     348</span>                 :             :             char colorCode;</span>
-<span id="L349"><span class="lineNum">     349</span>                 :             :             switch(motor_state[i]) {</span>
-<span id="L350"><span class="lineNum">     350</span>                 :             :                 case MotorState::Init:</span>
-<span id="L351"><span class="lineNum">     351</span>                 :             :                     colorCode = 'a';</span>
-<span id="L352"><span class="lineNum">     352</span>                 :             :                     break;  // Aqua</span>
-<span id="L353"><span class="lineNum">     353</span>                 :             :                 case MotorState::Running:</span>
-<span id="L354"><span class="lineNum">     354</span>                 :             :                     colorCode = 'g';</span>
-<span id="L355"><span class="lineNum">     355</span>                 :             :                     break;  // Green</span>
-<span id="L356"><span class="lineNum">     356</span>                 :             :                 case MotorState::Stopped:</span>
-<span id="L357"><span class="lineNum">     357</span>                 :             :                     colorCode = 'z';</span>
-<span id="L358"><span class="lineNum">     358</span>                 :             :                     break;  // Gray</span>
-<span id="L359"><span class="lineNum">     359</span>                 :             :                 case MotorState::SetCurrentError:</span>
-<span id="L360"><span class="lineNum">     360</span>                 :             :                     colorCode = 'r';</span>
-<span id="L361"><span class="lineNum">     361</span>                 :             :                     break;  // Red</span>
-<span id="L362"><span class="lineNum">     362</span>                 :             :                 case MotorState::AdjustedCurrent:</span>
-<span id="L363"><span class="lineNum">     363</span>                 :             :                     colorCode = 'y';</span>
-<span id="L364"><span class="lineNum">     364</span>                 :             :                     break;  // Yellow</span>
-<span id="L365"><span class="lineNum">     365</span>                 :             :                 default:</span>
-<span id="L366"><span class="lineNum">     366</span>                 :             :                     colorCode = 'd';</span>
-<span id="L367"><span class="lineNum">     367</span>                 :             :                     break;</span>
-<span id="L368"><span class="lineNum">     368</span>                 :             :             }</span>
-<span id="L369"><span class="lineNum">     369</span>                 :             :             currentStr += cFormat(&quot;%c|%5d|&quot;, colorCode, currentData[i]);</span>
-<span id="L370"><span class="lineNum">     370</span>                 :             :         }</span>
-<span id="L371"><span class="lineNum">     371</span>                 :             :         currentStr += &quot;]&quot;;</span>
-<span id="L372"><span class="lineNum">     372</span>                 :             : </span>
-<span id="L373"><span class="lineNum">     373</span>                 :             :         STREAM(CH_ROBOMAS_TX, &quot;p|robomasTX |current %s (mA)&quot;,</span>
-<span id="L374"><span class="lineNum">     374</span>                 :             :                currentStr.c_str());</span>
-<span id="L375"><span class="lineNum">     375</span>                 :             : </span>
-<span id="L376"><span class="lineNum">     376</span>                 :             :         // CH_ROBOMAS_RX: 速度と角度表示</span>
-<span id="L377"><span class="lineNum">     377</span>                 :             :         std::string speedStr = &quot;[&quot;;</span>
-<span id="L378"><span class="lineNum">     378</span>                 :             :         std::string angleStr = &quot;[&quot;;</span>
-<span id="L379"><span class="lineNum">     379</span>                 :             : </span>
-<span id="L380"><span class="lineNum">     380</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
-<span id="L381"><span class="lineNum">     381</span>                 :             :             if(i &gt; 0) {</span>
-<span id="L382"><span class="lineNum">     382</span>                 :             :                 speedStr += &quot;, &quot;;</span>
-<span id="L383"><span class="lineNum">     383</span>                 :             :                 angleStr += &quot;, &quot;;</span>
-<span id="L384"><span class="lineNum">     384</span>                 :             :             }</span>
-<span id="L385"><span class="lineNum">     385</span>                 :             :             char cTag;</span>
-<span id="L386"><span class="lineNum">     386</span>                 :             :             int last_cb_time = millis() - last_cb[i];</span>
-<span id="L387"><span class="lineNum">     387</span>                 :             :             if(last_cb[i] == -1) {</span>
-<span id="L388"><span class="lineNum">     388</span>                 :             :                 cTag = 'z';</span>
-<span id="L389"><span class="lineNum">     389</span>                 :             :             } else if(last_cb_time &lt; 200) {</span>
-<span id="L390"><span class="lineNum">     390</span>                 :             :                 cTag = 'g';</span>
-<span id="L391"><span class="lineNum">     391</span>                 :             :             } else {</span>
-<span id="L392"><span class="lineNum">     392</span>                 :             :                 cTag = 'y';</span>
-<span id="L393"><span class="lineNum">     393</span>                 :             :             }</span>
-<span id="L394"><span class="lineNum">     394</span>                 :             :             speedStr += cFormat(&quot;%c|%5d|&quot;, cTag, received[i].speed);</span>
-<span id="L395"><span class="lineNum">     395</span>                 :             : </span>
-<span id="L396"><span class="lineNum">     396</span>                 :             :             // 角度をdegreeに変換 (angle/8192*360)</span>
-<span id="L397"><span class="lineNum">     397</span>                 :             :             float angleDegree = (received[i].angle / 8192.0f) * 360.0f;</span>
-<span id="L398"><span class="lineNum">     398</span>                 :             :             char angleBuffer[10];</span>
-<span id="L399"><span class="lineNum">     399</span>                 :             :             snprintf(angleBuffer, sizeof(angleBuffer), &quot;%5.1f&quot;, angleDegree);</span>
-<span id="L400"><span class="lineNum">     400</span>                 :             :             angleStr += angleBuffer;</span>
-<span id="L401"><span class="lineNum">     401</span>                 :             :         }</span>
-<span id="L402"><span class="lineNum">     402</span>                 :             :         speedStr += &quot;]&quot;;</span>
-<span id="L403"><span class="lineNum">     403</span>                 :             :         angleStr += &quot;]&quot;;</span>
-<span id="L404"><span class="lineNum">     404</span>                 :             : </span>
-<span id="L405"><span class="lineNum">     405</span>                 :             :         STREAM(CH_ROBOMAS_RX, &quot;p|robomasRX |speed %s (RPM) angle %s (degree)&quot;,</span>
-<span id="L406"><span class="lineNum">     406</span>                 :             :                speedStr.c_str(), angleStr.c_str());</span>
+<span id="L282"><span class="lineNum">     282</span>                 :<span class="tlaGNC tlaBgGNC">           1 :         return true;</span></span>
+<span id="L283"><span class="lineNum">     283</span>                 :             :     }</span>
+<span id="L284"><span class="lineNum">     284</span>                 :             : </span>
+<span id="L285"><span class="lineNum">     285</span>                 :             :     /**</span>
+<span id="L286"><span class="lineNum">     286</span>                 :             :      * @brief 指定したモーター番号のモーターに速度を設定する。</span>
+<span id="L287"><span class="lineNum">     287</span>                 :             :      * @details チェック事項:</span>
+<span id="L288"><span class="lineNum">     288</span>                 :             :      * - モーター番号が設定以下0以上であること</span>
+<span id="L289"><span class="lineNum">     289</span>                 :             :      * - 電流がC610またはC620の最大電流以下最小電流以上であること</span>
+<span id="L290"><span class="lineNum">     290</span>                 :             :      * - 合計電流が最大合計電流以下であること</span>
+<span id="L291"><span class="lineNum">     291</span>                 :             :      * @param motorNumber モーター番号(1~8)</span>
+<span id="L292"><span class="lineNum">     292</span>                 :             :      * @param current 電流値(int) +-10Aぐらい (mA)で渡す</span>
+<span id="L293"><span class="lineNum">     293</span>                 :             :      * @return bool true / false</span>
+<span id="L294"><span class="lineNum">     294</span>                 :             :      */</span>
+<span id="L295"><span class="lineNum">     295</span>                 :<span class="tlaGNC">          57 :     bool setCurrent(int motorNumber, int current) {</span></span>
+<span id="L296"><span class="lineNum">     296</span>                 :             :         // モーター番号が設定以下0以上であること</span>
+<span id="L297"><span class="lineNum">     297</span>   [<span class="tlaGBC" title="Branch 0 was taken 56 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 55 times"> + </span>]:<span class="tlaGNC">          57 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) {</span></span>
+<span id="L298"><span class="lineNum">     298</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :             LOGW(</span></span>
+<span id="L299"><span class="lineNum">     299</span>                 :             :                 &quot;Invalid motor number : m2006/m3508[%d] (Valid range: &quot;</span>
+<span id="L300"><span class="lineNum">     300</span>                 :             :                 &quot;1~%d)\n&quot;,</span>
+<span id="L301"><span class="lineNum">     301</span>                 :             :                 motorNumber, numOfMotor);</span>
+<span id="L302"><span class="lineNum">     302</span>                 :<span class="tlaGNC">           2 :             return false;</span></span>
+<span id="L303"><span class="lineNum">     303</span>                 :             :         }</span>
+<span id="L304"><span class="lineNum">     304</span>                 :<span class="tlaGNC">          55 :         int motorIndex = motorNumber - 1;</span></span>
+<span id="L305"><span class="lineNum">     305</span>                 :             : </span>
+<span id="L306"><span class="lineNum">     306</span>                 :             :         // 電流がC610またはC620の最大電流以下最小電流以上であること</span>
+<span id="L307"><span class="lineNum">     307</span>                 :             :         int16_t minCurrent;</span>
+<span id="L308"><span class="lineNum">     308</span>                 :             :         int16_t maxCurrent;</span>
+<span id="L309"><span class="lineNum">     309</span>                 :             : </span>
+<span id="L310"><span class="lineNum">     310</span>         [<span class="tlaGBC" title="Branch 0 was taken 48 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 7 times"> + </span>]:<span class="tlaGNC">          55 :         if(isC610[motorIndex]) {</span></span>
+<span id="L311"><span class="lineNum">     311</span>                 :<span class="tlaGNC">          48 :             minCurrent = C610_MIN_CURRENT;</span></span>
+<span id="L312"><span class="lineNum">     312</span>                 :<span class="tlaGNC">          48 :             maxCurrent = C610_MAX_CURRENT;</span></span>
+<span id="L313"><span class="lineNum">     313</span>                 :             :         } else {</span>
+<span id="L314"><span class="lineNum">     314</span>                 :<span class="tlaGNC">           7 :             minCurrent = C620_MIN_CURRENT;</span></span>
+<span id="L315"><span class="lineNum">     315</span>                 :<span class="tlaGNC">           7 :             maxCurrent = C620_MAX_CURRENT;</span></span>
+<span id="L316"><span class="lineNum">     316</span>                 :             :         }</span>
+<span id="L317"><span class="lineNum">     317</span>                 :             : </span>
+<span id="L318"><span class="lineNum">     318</span>   [<span class="tlaGBC" title="Branch 0 was taken 53 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 51 times"> + </span>]:<span class="tlaGNC">          55 :         if(current &lt; minCurrent || current &gt; maxCurrent) {</span></span>
+<span id="L319"><span class="lineNum">     319</span>         [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">           4 :             const char *motorType = isC610[motorIndex] ? &quot;m2006&quot; : &quot;m3508&quot;;</span></span>
+<span id="L320"><span class="lineNum">     320</span>   [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           4 :             LOGW(&quot;Current out of range for %s[%d]: %d (Range: %d~%d)\n&quot;,</span></span>
+<span id="L321"><span class="lineNum">     321</span>                 :             :                  motorType, motorNumber, current, minCurrent, maxCurrent);</span>
+<span id="L322"><span class="lineNum">     322</span>                 :<span class="tlaGNC">           4 :             motor_state[motorIndex] = MotorState::SetCurrentError;</span></span>
+<span id="L323"><span class="lineNum">     323</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
+<span id="L324"><span class="lineNum">     324</span>                 :             :         }</span>
+<span id="L325"><span class="lineNum">     325</span>                 :             : </span>
+<span id="L326"><span class="lineNum">     326</span>                 :<span class="tlaGNC">          51 :         int newCurrentSum = 0;</span></span>
+<span id="L327"><span class="lineNum">     327</span>                 :             : </span>
+<span id="L328"><span class="lineNum">     328</span>                 :             :         {</span>
+<span id="L329"><span class="lineNum">     329</span>                 :<span class="tlaGNC">          51 :             CriticalSection lock;</span></span>
+<span id="L330"><span class="lineNum">     330</span>                 :             : </span>
+<span id="L331"><span class="lineNum">     331</span>                 :             :             // 合計電流が最大合計電流以下であること</span>
+<span id="L332"><span class="lineNum">     332</span>                 :<span class="tlaGNC">          51 :             newCurrentSum =</span></span>
+<span id="L333"><span class="lineNum">     333</span>                 :<span class="tlaGNC">          51 :                 currentSum - abs(currentData[motorIndex]) + abs(current);</span></span>
+<span id="L334"><span class="lineNum">     334</span>         [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 46 times"> + </span>]:<span class="tlaGNC">          51 :             if(newCurrentSum &gt; maxAmpere) {</span></span>
+<span id="L335"><span class="lineNum">     335</span>                 :<span class="tlaGNC">           5 :                 motor_state[motorIndex] = MotorState::SetCurrentError;</span></span>
+<span id="L336"><span class="lineNum">     336</span>                 :             :             } else {</span>
+<span id="L337"><span class="lineNum">     337</span>         [<span class="tlaGBC" title="Branch 0 was taken 46 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          46 :                 writeCurrent_internal(motorNumber, current);</span></span>
+<span id="L338"><span class="lineNum">     338</span>                 :             :             }</span>
+<span id="L339"><span class="lineNum">     339</span>                 :<span class="tlaGNC">          51 :         }</span></span>
+<span id="L340"><span class="lineNum">     340</span>                 :             : </span>
+<span id="L341"><span class="lineNum">     341</span>         [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 46 times"> + </span>]:<span class="tlaGNC">          51 :         if(newCurrentSum &gt; maxAmpere) {</span></span>
+<span id="L342"><span class="lineNum">     342</span>   [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 5 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           5 :             LOGW(&quot;total Exceeds max current: Set = %dmA, Max = %fA\n&quot;,</span></span>
+<span id="L343"><span class="lineNum">     343</span>                 :             :                  newCurrentSum, maxAmpere);</span>
+<span id="L344"><span class="lineNum">     344</span>                 :<span class="tlaGNC">           5 :             return false;</span></span>
+<span id="L345"><span class="lineNum">     345</span>                 :             :         }</span>
+<span id="L346"><span class="lineNum">     346</span>                 :<span class="tlaGNC">          46 :         return true;</span></span>
+<span id="L347"><span class="lineNum">     347</span>                 :             :     }</span>
+<span id="L348"><span class="lineNum">     348</span>                 :             : </span>
+<span id="L349"><span class="lineNum">     349</span>                 :             :     /**</span>
+<span id="L350"><span class="lineNum">     350</span>                 :             :      * @brief 指定したモーターからの情報を格納した構造体を返す。</span>
+<span id="L351"><span class="lineNum">     351</span>                 :             :      * @param motorNumber モーター番号(int)</span>
+<span id="L352"><span class="lineNum">     352</span>                 :             :      * @return ESCData ESCData型構造体</span>
+<span id="L353"><span class="lineNum">     353</span>                 :             :      */</span>
+<span id="L354"><span class="lineNum">     354</span>                 :             :     ESCData get(int motorNumber) {</span>
+<span id="L355"><span class="lineNum">     355</span>                 :             :         ESCData data = received[motorNumber - 1];</span>
+<span id="L356"><span class="lineNum">     356</span>                 :             :         data.speed += 10;</span>
+<span id="L357"><span class="lineNum">     357</span>                 :             :         return data;</span>
+<span id="L358"><span class="lineNum">     358</span>                 :             :     }</span>
+<span id="L359"><span class="lineNum">     359</span>                 :             : </span>
+<span id="L360"><span class="lineNum">     360</span>                 :             :     /**</span>
+<span id="L361"><span class="lineNum">     361</span>                 :             :      * @brief 電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。</span>
+<span id="L362"><span class="lineNum">     362</span>                 :             :      * @details ハードウェア上下限(C610/C620の物理限界)を超える値は無視される。</span>
+<span id="L363"><span class="lineNum">     363</span>                 :             :      */</span>
+<span id="L364"><span class="lineNum">     364</span>                 :<span class="tlaGNC">           3 :     void setCurrentLimit(int motorNumber, int minMa, int maxMa) {</span></span>
+<span id="L365"><span class="lineNum">     365</span>   [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 3 times"> + </span>]:<span class="tlaGNC">           3 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) return;</span></span>
+<span id="L366"><span class="lineNum">     366</span>                 :<span class="tlaGNC">           3 :         int i = motorNumber - 1;</span></span>
+<span id="L367"><span class="lineNum">     367</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           3 :         int hardMin = isC610[i] ? C610_MIN_CURRENT : C620_MIN_CURRENT;</span></span>
+<span id="L368"><span class="lineNum">     368</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           3 :         int hardMax = isC610[i] ? C610_MAX_CURRENT : C620_MAX_CURRENT;</span></span>
+<span id="L369"><span class="lineNum">     369</span>                 :<span class="tlaGNC">           3 :         CriticalSection lock;</span></span>
+<span id="L370"><span class="lineNum">     370</span>                 :<span class="tlaGNC">           3 :         minCurrent_mA[i] = constrain(minMa, hardMin, hardMax);</span></span>
+<span id="L371"><span class="lineNum">     371</span>                 :<span class="tlaGNC">           3 :         maxCurrent_mA[i] = constrain(maxMa, hardMin, hardMax);</span></span>
+<span id="L372"><span class="lineNum">     372</span>                 :<span class="tlaGNC">           3 :     }</span></span>
+<span id="L373"><span class="lineNum">     373</span>                 :             : </span>
+<span id="L374"><span class="lineNum">     374</span>                 :             :     /**</span>
+<span id="L375"><span class="lineNum">     375</span>                 :             :      * @brief フィードバックタイムアウトを設定 (0で無効、デフォルト無効)</span>
+<span id="L376"><span class="lineNum">     376</span>                 :             :      * @details</span>
+<span id="L377"><span class="lineNum">     377</span>                 :             :      * feedbackTo_ms: 最後のCAN受信から経過したら停止 + 多回転をリセット。</span>
+<span id="L378"><span class="lineNum">     378</span>                 :             :      * 0を指定すると無効(タイムアウトしない)。</span>
+<span id="L379"><span class="lineNum">     379</span>                 :             :      */</span>
+<span id="L380"><span class="lineNum">     380</span>                 :<span class="tlaGNC">           1 :     void setTimeout(int motorNumber, uint32_t feedbackTo_ms) {</span></span>
+<span id="L381"><span class="lineNum">     381</span>   [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) return;</span></span>
+<span id="L382"><span class="lineNum">     382</span>                 :<span class="tlaGNC">           1 :         CriticalSection lock;</span></span>
+<span id="L383"><span class="lineNum">     383</span>                 :<span class="tlaGNC">           1 :         feedbackTimeout_ms[motorNumber - 1] = feedbackTo_ms;</span></span>
+<span id="L384"><span class="lineNum">     384</span>                 :<span class="tlaGNC">           1 :     }</span></span>
+<span id="L385"><span class="lineNum">     385</span>                 :             : </span>
+<span id="L386"><span class="lineNum">     386</span>                 :             :     /**</span>
+<span id="L387"><span class="lineNum">     387</span>                 :             :      * @brief 現在の角度を「ゼロ位置」として再定義</span>
+<span id="L388"><span class="lineNum">     388</span>                 :             :      */</span>
+<span id="L389"><span class="lineNum">     389</span>                 :             :     void resetZeroPosition(int motorNumber) {</span>
+<span id="L390"><span class="lineNum">     390</span>                 :             :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) return;</span>
+<span id="L391"><span class="lineNum">     391</span>                 :             :         int i = motorNumber - 1;</span>
+<span id="L392"><span class="lineNum">     392</span>                 :             :         CriticalSection lock;</span>
+<span id="L393"><span class="lineNum">     393</span>                 :             :         roundCount[i] = 0;</span>
+<span id="L394"><span class="lineNum">     394</span>                 :             :         // ゼロ位置を現在角度に揃えるため、次フレームのwrap誤検出を避ける</span>
+<span id="L395"><span class="lineNum">     395</span>                 :             :         prevRawAngle[i] = received[i].angle;</span>
+<span id="L396"><span class="lineNum">     396</span>                 :             :         roundReady[i] = true;</span>
+<span id="L397"><span class="lineNum">     397</span>                 :             :     }</span>
+<span id="L398"><span class="lineNum">     398</span>                 :             : </span>
+<span id="L399"><span class="lineNum">     399</span>                 :             :     /**</span>
+<span id="L400"><span class="lineNum">     400</span>                 :             :      * @brief 多回転を含む現在のモーター軸角度 [deg]</span>
+<span id="L401"><span class="lineNum">     401</span>                 :             :      */</span>
+<span id="L402"><span class="lineNum">     402</span>                 :<span class="tlaGNC">           1 :     float getPosition(int motorNumber) const {</span></span>
+<span id="L403"><span class="lineNum">     403</span>   [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">           1 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) return 0.0f;</span></span>
+<span id="L404"><span class="lineNum">     404</span>                 :<span class="tlaGNC">           1 :         int i = motorNumber - 1;</span></span>
+<span id="L405"><span class="lineNum">     405</span>                 :<span class="tlaGNC">           1 :         return ((float)roundCount[i] * 8192.0f + (float)received[i].angle) *</span></span>
+<span id="L406"><span class="lineNum">     406</span>                 :<span class="tlaGNC">           1 :                (360.0f / 8192.0f);</span></span>
 <span id="L407"><span class="lineNum">     407</span>                 :             :     }</span>
-<span id="L408"><span class="lineNum">     408</span>                 :             : };</span>
-<span id="L409"><span class="lineNum">     409</span>                 :             : </span>
-<span id="L410"><span class="lineNum">     410</span>                 :             : }  // namespace DJI</span>
-<span id="L411"><span class="lineNum">     411</span>                 :             : </span>
-<span id="L412"><span class="lineNum">     412</span>                 :             : #endif  // CONTROLSYSTEMTEMPLATE_C610_H</span>
+<span id="L408"><span class="lineNum">     408</span>                 :             : </span>
+<span id="L409"><span class="lineNum">     409</span>                 :             : private:</span>
+<span id="L410"><span class="lineNum">     410</span>                 :             :     /**</span>
+<span id="L411"><span class="lineNum">     411</span>                 :             :      * @brief 電流書き込み内部関数</span>
+<span id="L412"><span class="lineNum">     412</span>                 :             :      * @details setCurrent()と同じCANフレーム更新を行うが、警告ログや</span>
+<span id="L413"><span class="lineNum">     413</span>                 :             :      * 合計電流チェックは省く。ソフト電流制限(setCurrentLimit)を適用する。</span>
+<span id="L414"><span class="lineNum">     414</span>                 :             :      */</span>
+<span id="L415"><span class="lineNum">     415</span>                 :<span class="tlaGNC">          46 :     void writeCurrent_internal(int motorNumber, int current) {</span></span>
+<span id="L416"><span class="lineNum">     416</span>   [<span class="tlaGBC" title="Branch 0 was taken 46 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 46 times"> + </span>]:<span class="tlaGNC">          46 :         if(motorNumber &lt; 1 || motorNumber &gt; numOfMotor) return;</span></span>
+<span id="L417"><span class="lineNum">     417</span>                 :<span class="tlaGNC">          46 :         int motorIndex = motorNumber - 1;</span></span>
+<span id="L418"><span class="lineNum">     418</span>                 :             : </span>
+<span id="L419"><span class="lineNum">     419</span>                 :             :         // ソフトクランプ(setCurrentLimitで設定した範囲)</span>
+<span id="L420"><span class="lineNum">     420</span>                 :<span class="tlaGNC">          46 :         current = constrain(current, minCurrent_mA[motorIndex], maxCurrent_mA[motorIndex]);</span></span>
+<span id="L421"><span class="lineNum">     421</span>                 :             : </span>
+<span id="L422"><span class="lineNum">     422</span>                 :             :         // ハードクランプ</span>
+<span id="L423"><span class="lineNum">     423</span>         [<span class="tlaGBC" title="Branch 0 was taken 41 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          46 :         int minC = isC610[motorIndex] ? C610_MIN_CURRENT : C620_MIN_CURRENT;</span></span>
+<span id="L424"><span class="lineNum">     424</span>         [<span class="tlaGBC" title="Branch 0 was taken 41 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          46 :         int maxC = isC610[motorIndex] ? C610_MAX_CURRENT : C620_MAX_CURRENT;</span></span>
+<span id="L425"><span class="lineNum">     425</span>                 :<span class="tlaGNC">          46 :         current = constrain(current, minC, maxC);</span></span>
+<span id="L426"><span class="lineNum">     426</span>                 :             : </span>
+<span id="L427"><span class="lineNum">     427</span>                 :<span class="tlaGNC">          46 :         currentSum = currentSum - abs(currentData[motorIndex]) + abs(current);</span></span>
+<span id="L428"><span class="lineNum">     428</span>                 :<span class="tlaGNC">          46 :         currentData[motorIndex] = current;</span></span>
+<span id="L429"><span class="lineNum">     429</span>                 :             : </span>
+<span id="L430"><span class="lineNum">     430</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 7 times"> + </span>]:<span class="tlaGNC">          54 :         motor_state[motorIndex] = (current &lt;= 10 &amp;&amp; current &gt;= -10)</span></span>
+<span id="L431"><span class="lineNum">     431</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 38 times"> + </span>]:<span class="tlaGNC">          54 :                                       ? MotorState::Stopped</span></span>
+<span id="L432"><span class="lineNum">     432</span>                 :             :                                       : MotorState::Running;</span>
+<span id="L433"><span class="lineNum">     433</span>                 :             :     }</span>
+<span id="L434"><span class="lineNum">     434</span>                 :             : </span>
+<span id="L435"><span class="lineNum">     435</span>                 :<span class="tlaGNC">          24 :     void writeCurrentBytes(uint8_t *data, int dataIndex, int current) const {</span></span>
+<span id="L436"><span class="lineNum">     436</span>                 :<span class="tlaGNC">          24 :         uint16_t raw = static_cast&lt;uint16_t&gt;(static_cast&lt;int16_t&gt;(current));</span></span>
+<span id="L437"><span class="lineNum">     437</span>                 :<span class="tlaGNC">          24 :         data[dataIndex * 2] = (raw &gt;&gt; 8) &amp; 0xFF;</span></span>
+<span id="L438"><span class="lineNum">     438</span>                 :<span class="tlaGNC">          24 :         data[dataIndex * 2 + 1] = raw &amp; 0xFF;</span></span>
+<span id="L439"><span class="lineNum">     439</span>                 :<span class="tlaGNC">          24 :     }</span></span>
+<span id="L440"><span class="lineNum">     440</span>                 :             : </span>
+<span id="L441"><span class="lineNum">     441</span>                 :<span class="tlaGNC">           8 :     void packCurrentData(uint8_t *data1, uint8_t *data2) const {</span></span>
+<span id="L442"><span class="lineNum">     442</span>         [<span class="tlaGBC" title="Branch 0 was taken 24 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8 times"> + </span>]:<span class="tlaGNC">          32 :         for(int i = 0; i &lt; numOfMotor; i++) {</span></span>
+<span id="L443"><span class="lineNum">     443</span>         [<span class="tlaGBC" title="Branch 0 was taken 20 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span>]:<span class="tlaGNC">          24 :             if(i &lt; 4) {</span></span>
+<span id="L444"><span class="lineNum">     444</span>                 :<span class="tlaGNC">          20 :                 writeCurrentBytes(data1, i, currentData[i]);</span></span>
+<span id="L445"><span class="lineNum">     445</span>                 :             :             } else {</span>
+<span id="L446"><span class="lineNum">     446</span>                 :<span class="tlaGNC">           4 :                 writeCurrentBytes(data2, i - 4, currentData[i]);</span></span>
+<span id="L447"><span class="lineNum">     447</span>                 :             :             }</span>
+<span id="L448"><span class="lineNum">     448</span>                 :             :         }</span>
+<span id="L449"><span class="lineNum">     449</span>                 :<span class="tlaGNC">           8 :     }</span></span>
+<span id="L450"><span class="lineNum">     450</span>                 :             : </span>
+<span id="L451"><span class="lineNum">     451</span>                 :<span class="tlaGNC">           1 :     void resetMotor(int motorIndex, uint32_t now) {</span></span>
+<span id="L452"><span class="lineNum">     452</span>                 :<span class="tlaGNC">           1 :         received[motorIndex] = {0, 0, 0, 0};</span></span>
+<span id="L453"><span class="lineNum">     453</span>                 :<span class="tlaGNC">           1 :         roundCount[motorIndex] = 0;</span></span>
+<span id="L454"><span class="lineNum">     454</span>                 :<span class="tlaGNC">           1 :         roundReady[motorIndex] = false;</span></span>
+<span id="L455"><span class="lineNum">     455</span>                 :<span class="tlaGNC">           1 :         prevRawAngle[motorIndex] = 0;</span></span>
+<span id="L456"><span class="lineNum">     456</span>                 :<span class="tlaGNC">           1 :         feedbackReceived[motorIndex] = false;</span></span>
+<span id="L457"><span class="lineNum">     457</span>                 :<span class="tlaGNC">           1 :         last_cb[motorIndex] = -1;</span></span>
+<span id="L458"><span class="lineNum">     458</span>                 :<span class="tlaGNC">           1 :         lastFeedbackTime[motorIndex] = now;</span></span>
+<span id="L459"><span class="lineNum">     459</span>                 :             :         // 電流を0に設定</span>
+<span id="L460"><span class="lineNum">     460</span>                 :<span class="tlaGNC">           1 :         currentSum -= abs(currentData[motorIndex]);</span></span>
+<span id="L461"><span class="lineNum">     461</span>                 :<span class="tlaGNC">           1 :         currentData[motorIndex] = 0;</span></span>
+<span id="L462"><span class="lineNum">     462</span>                 :<span class="tlaGNC">           1 :         motor_state[motorIndex] = MotorState::Stopped;</span></span>
+<span id="L463"><span class="lineNum">     463</span>                 :<span class="tlaGNC">           1 :     }</span></span>
+<span id="L464"><span class="lineNum">     464</span>                 :             : </span>
+<span id="L465"><span class="lineNum">     465</span>                 :             : public:</span>
+<span id="L466"><span class="lineNum">     466</span>                 :             :     /**</span>
+<span id="L467"><span class="lineNum">     467</span>                 :             :      * @brief 全チャンネルのデバッグ情報を表示する関数</span>
+<span id="L468"><span class="lineNum">     468</span>                 :             :      * @details CH_ROBOMAS, CH_ROBOMAS_TX, CH_ROBOMAS_RXの情報を一括表示</span>
+<span id="L469"><span class="lineNum">     469</span>                 :             :      */</span>
+<span id="L470"><span class="lineNum">     470</span>                 :             :     void displayDebugInfo() {</span>
+<span id="L471"><span class="lineNum">     471</span>                 :             :         // CH_ROBOMAS: 初期化情報と電流使用状況</span>
+<span id="L472"><span class="lineNum">     472</span>                 :             :         float currentUsagePercent = (currentSum / maxAmpere) * 100.0f;</span>
+<span id="L473"><span class="lineNum">     473</span>                 :             :         char cTag;</span>
+<span id="L474"><span class="lineNum">     474</span>                 :             :         if(currentUsagePercent &lt; 50.0) {</span>
+<span id="L475"><span class="lineNum">     475</span>                 :             :             cTag = 'g';</span>
+<span id="L476"><span class="lineNum">     476</span>                 :             :         } else if(currentUsagePercent &lt;= 80) {</span>
+<span id="L477"><span class="lineNum">     477</span>                 :             :             cTag = 'y';</span>
+<span id="L478"><span class="lineNum">     478</span>                 :             :         } else {</span>
+<span id="L479"><span class="lineNum">     479</span>                 :             :             cTag = 'r';</span>
+<span id="L480"><span class="lineNum">     480</span>                 :             :         }</span>
+<span id="L481"><span class="lineNum">     481</span>                 :             :         const char *currentUsageString =</span>
+<span id="L482"><span class="lineNum">     482</span>                 :             :             cFormat(&quot;%c|%3.1f%%|&quot;, cTag, currentUsagePercent).c_str();</span>
+<span id="L483"><span class="lineNum">     483</span>                 :             : </span>
+<span id="L484"><span class="lineNum">     484</span>                 :             :         // C620のIDリストを文字列で構築</span>
+<span id="L485"><span class="lineNum">     485</span>                 :             :         std::string c620List = &quot;&quot;;</span>
+<span id="L486"><span class="lineNum">     486</span>                 :             :         bool first = true;</span>
+<span id="L487"><span class="lineNum">     487</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
+<span id="L488"><span class="lineNum">     488</span>                 :             :             if(!isC610[i]) {  // C620の場合</span>
+<span id="L489"><span class="lineNum">     489</span>                 :             :                 if(!first) c620List += &quot;,&quot;;</span>
+<span id="L490"><span class="lineNum">     490</span>                 :             :                 c620List += std::to_string(i + 1);</span>
+<span id="L491"><span class="lineNum">     491</span>                 :             :                 first = false;</span>
+<span id="L492"><span class="lineNum">     492</span>                 :             :             }</span>
+<span id="L493"><span class="lineNum">     493</span>                 :             :         }</span>
+<span id="L494"><span class="lineNum">     494</span>                 :             : </span>
+<span id="L495"><span class="lineNum">     495</span>                 :             :         STREAM(CH_ROBOMAS,</span>
+<span id="L496"><span class="lineNum">     496</span>                 :             :                &quot;p|robomas |[%d , %3.1fA] C620:[%s] Current: &quot;</span>
+<span id="L497"><span class="lineNum">     497</span>                 :             :                &quot;%3.1fA/%3.1fA(%s)&quot;,</span>
+<span id="L498"><span class="lineNum">     498</span>                 :             :                numOfMotor, maxAmpere / 1000.0f, c620List.c_str(),</span>
+<span id="L499"><span class="lineNum">     499</span>                 :             :                currentSum / 1000.0f, maxAmpere / 1000.0f, currentUsageString);</span>
+<span id="L500"><span class="lineNum">     500</span>                 :             : </span>
+<span id="L501"><span class="lineNum">     501</span>                 :             :         // CH_ROBOMAS_TX: 電流設定値表示</span>
+<span id="L502"><span class="lineNum">     502</span>                 :             :         std::string currentStr = &quot;[&quot;;</span>
+<span id="L503"><span class="lineNum">     503</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
+<span id="L504"><span class="lineNum">     504</span>                 :             :             if(i &gt; 0) currentStr += &quot;,&quot;;</span>
+<span id="L505"><span class="lineNum">     505</span>                 :             : </span>
+<span id="L506"><span class="lineNum">     506</span>                 :             :             // モーター状態に応じた色を選択</span>
+<span id="L507"><span class="lineNum">     507</span>                 :             :             char colorCode;</span>
+<span id="L508"><span class="lineNum">     508</span>                 :             :             switch(motor_state[i]) {</span>
+<span id="L509"><span class="lineNum">     509</span>                 :             :                 case MotorState::Init:</span>
+<span id="L510"><span class="lineNum">     510</span>                 :             :                     colorCode = 'a';</span>
+<span id="L511"><span class="lineNum">     511</span>                 :             :                     break;  // Aqua</span>
+<span id="L512"><span class="lineNum">     512</span>                 :             :                 case MotorState::Running:</span>
+<span id="L513"><span class="lineNum">     513</span>                 :             :                     colorCode = 'g';</span>
+<span id="L514"><span class="lineNum">     514</span>                 :             :                     break;  // Green</span>
+<span id="L515"><span class="lineNum">     515</span>                 :             :                 case MotorState::Stopped:</span>
+<span id="L516"><span class="lineNum">     516</span>                 :             :                     colorCode = 'z';</span>
+<span id="L517"><span class="lineNum">     517</span>                 :             :                     break;  // Gray</span>
+<span id="L518"><span class="lineNum">     518</span>                 :             :                 case MotorState::SetCurrentError:</span>
+<span id="L519"><span class="lineNum">     519</span>                 :             :                     colorCode = 'r';</span>
+<span id="L520"><span class="lineNum">     520</span>                 :             :                     break;  // Red</span>
+<span id="L521"><span class="lineNum">     521</span>                 :             :                 default:</span>
+<span id="L522"><span class="lineNum">     522</span>                 :             :                     colorCode = 'd';</span>
+<span id="L523"><span class="lineNum">     523</span>                 :             :                     break;</span>
+<span id="L524"><span class="lineNum">     524</span>                 :             :             }</span>
+<span id="L525"><span class="lineNum">     525</span>                 :             :             currentStr += cFormat(&quot;%c|%5d|&quot;, colorCode, currentData[i]);</span>
+<span id="L526"><span class="lineNum">     526</span>                 :             :         }</span>
+<span id="L527"><span class="lineNum">     527</span>                 :             :         currentStr += &quot;]&quot;;</span>
+<span id="L528"><span class="lineNum">     528</span>                 :             : </span>
+<span id="L529"><span class="lineNum">     529</span>                 :             :         STREAM(CH_ROBOMAS_TX, &quot;p|robomasTX |current %s (mA)&quot;,</span>
+<span id="L530"><span class="lineNum">     530</span>                 :             :                currentStr.c_str());</span>
+<span id="L531"><span class="lineNum">     531</span>                 :             : </span>
+<span id="L532"><span class="lineNum">     532</span>                 :             :         // CH_ROBOMAS_RX: 速度と角度表示</span>
+<span id="L533"><span class="lineNum">     533</span>                 :             :         std::string speedStr = &quot;[&quot;;</span>
+<span id="L534"><span class="lineNum">     534</span>                 :             :         std::string angleStr = &quot;[&quot;;</span>
+<span id="L535"><span class="lineNum">     535</span>                 :             : </span>
+<span id="L536"><span class="lineNum">     536</span>                 :             :         for(int i = 0; i &lt; numOfMotor; i++) {</span>
+<span id="L537"><span class="lineNum">     537</span>                 :             :             if(i &gt; 0) {</span>
+<span id="L538"><span class="lineNum">     538</span>                 :             :                 speedStr += &quot;, &quot;;</span>
+<span id="L539"><span class="lineNum">     539</span>                 :             :                 angleStr += &quot;, &quot;;</span>
+<span id="L540"><span class="lineNum">     540</span>                 :             :             }</span>
+<span id="L541"><span class="lineNum">     541</span>                 :             :             char cTag2;</span>
+<span id="L542"><span class="lineNum">     542</span>                 :             :             int last_cb_time = millis() - last_cb[i];</span>
+<span id="L543"><span class="lineNum">     543</span>                 :             :             if(!feedbackReceived[i]) {</span>
+<span id="L544"><span class="lineNum">     544</span>                 :             :                 cTag2 = 'z';</span>
+<span id="L545"><span class="lineNum">     545</span>                 :             :             } else if(last_cb_time &lt; 200) {</span>
+<span id="L546"><span class="lineNum">     546</span>                 :             :                 cTag2 = 'g';</span>
+<span id="L547"><span class="lineNum">     547</span>                 :             :             } else {</span>
+<span id="L548"><span class="lineNum">     548</span>                 :             :                 cTag2 = 'y';</span>
+<span id="L549"><span class="lineNum">     549</span>                 :             :             }</span>
+<span id="L550"><span class="lineNum">     550</span>                 :             :             speedStr += cFormat(&quot;%c|%5d|&quot;, cTag2, received[i].speed);</span>
+<span id="L551"><span class="lineNum">     551</span>                 :             : </span>
+<span id="L552"><span class="lineNum">     552</span>                 :             :             // 角度をdegreeに変換 (angle/8192*360)</span>
+<span id="L553"><span class="lineNum">     553</span>                 :             :             float angleDegree = (received[i].angle / 8192.0f) * 360.0f;</span>
+<span id="L554"><span class="lineNum">     554</span>                 :             :             char angleBuffer[10];</span>
+<span id="L555"><span class="lineNum">     555</span>                 :             :             snprintf(angleBuffer, sizeof(angleBuffer), &quot;%5.1f&quot;, angleDegree);</span>
+<span id="L556"><span class="lineNum">     556</span>                 :             :             angleStr += angleBuffer;</span>
+<span id="L557"><span class="lineNum">     557</span>                 :             :         }</span>
+<span id="L558"><span class="lineNum">     558</span>                 :             :         speedStr += &quot;]&quot;;</span>
+<span id="L559"><span class="lineNum">     559</span>                 :             :         angleStr += &quot;]&quot;;</span>
+<span id="L560"><span class="lineNum">     560</span>                 :             : </span>
+<span id="L561"><span class="lineNum">     561</span>                 :             :         STREAM(CH_ROBOMAS_RX, &quot;p|robomasRX |speed %s (RPM) angle %s (degree)&quot;,</span>
+<span id="L562"><span class="lineNum">     562</span>                 :             :                speedStr.c_str(), angleStr.c_str());</span>
+<span id="L563"><span class="lineNum">     563</span>                 :             :     }</span>
+<span id="L564"><span class="lineNum">     564</span>                 :             : };</span>
+<span id="L565"><span class="lineNum">     565</span>                 :             : </span>
+<span id="L566"><span class="lineNum">     566</span>                 :             : }  // namespace DJI</span>
+<span id="L567"><span class="lineNum">     567</span>                 :             : </span>
+<span id="L568"><span class="lineNum">     568</span>                 :             : #endif  // CONTROLSYSTEMTEMPLATE_C610_H</span>
         </pre>
               </td>
             </tr>
