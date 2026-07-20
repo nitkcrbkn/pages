@@ -1,15 +1,16 @@
 <map id="modules/platform/telem_controller.hpp" name="modules/platform/telem_controller.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="242,5,401,45"/>
+<area shape="rect" id="node1" title=" " alt="" coords="305,5,463,45"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,93,72,119"/>
 <area shape="rect" id="node3" title=" " alt="" coords="97,93,215,119"/>
-<area shape="rect" id="node4" href="$d3/d78/uart__manager_8h.html" title=" " alt="" coords="240,93,403,119"/>
-<area shape="rect" id="node12" title=" " alt="" coords="427,93,579,119"/>
-<area shape="rect" id="node13" title=" " alt="" coords="603,93,755,119"/>
-<area shape="rect" id="node5" title=" " alt="" coords="19,167,79,192"/>
-<area shape="rect" id="node6" title=" " alt="" coords="104,167,171,192"/>
-<area shape="rect" id="node7" title=" " alt="" coords="195,167,274,192"/>
-<area shape="rect" id="node8" title=" " alt="" coords="298,167,345,192"/>
-<area shape="rect" id="node9" title=" " alt="" coords="369,167,431,192"/>
-<area shape="rect" id="node10" title=" " alt="" coords="455,167,513,192"/>
-<area shape="rect" id="node11" title=" " alt="" coords="537,167,602,192"/>
+<area shape="rect" id="node4" title=" " alt="" coords="240,93,363,119"/>
+<area shape="rect" id="node5" href="$d3/d78/uart__manager_8h.html" title=" " alt="" coords="387,93,549,119"/>
+<area shape="rect" id="node13" title=" " alt="" coords="573,93,725,119"/>
+<area shape="rect" id="node14" title=" " alt="" coords="749,93,901,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="166,167,226,192"/>
+<area shape="rect" id="node7" title=" " alt="" coords="251,167,317,192"/>
+<area shape="rect" id="node8" title=" " alt="" coords="342,167,421,192"/>
+<area shape="rect" id="node9" title=" " alt="" coords="445,167,491,192"/>
+<area shape="rect" id="node10" title=" " alt="" coords="516,167,577,192"/>
+<area shape="rect" id="node11" title=" " alt="" coords="602,167,659,192"/>
+<area shape="rect" id="node12" title=" " alt="" coords="683,167,749,192"/>
 </map>

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['telem_5fcontroller_2ehpp_0',['telem_controller.hpp',['../da/d5f/telem__controller_8hpp.html',1,'']]],
-  ['telemcontroller_1',['TelemController',['../dd/d8a/classTelemController.html',1,'TelemController&lt; MAX_SIZE &gt;'],['../dd/d8a/classTelemController.html#aba2d2a32a5bb20d67143a78aaea63eec',1,'TelemController::TelemController()']]],
-  ['telemetryt_2',['TelemetryT',['../da/d5f/telem__controller_8hpp.html#a91f448553bf2f5cf9b358f85b126e0a1',1,'telem_controller.hpp']]],
+  ['telemetryt_1',['TelemetryT',['../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069',1,'telem_controller.hpp']]],
+  ['telemsender_2',['TelemSender',['../d0/dc3/classTelemSender.html',1,'TelemSender&lt; MAX_SIZE &gt;'],['../d0/dc3/classTelemSender.html#ae68523a205094ba7a073482032f52a22',1,'TelemSender::TelemSender()']]],
   ['temp_3',['temp',['../d2/df4/structDJI_1_1ESCData.html#ad0435b29948216c1c55cf740cf498e66',1,'DJI::ESCData']]],
   ['test_2ecpp_4',['test.cpp',['../df/dac/test_8cpp.html',1,'']]],
   ['time_5fseg1_5',['time_seg1',['../de/da9/structCanSystem_1_1TimingConfig.html#a3cd9b3cf7303269599bfc11edf99e819',1,'CanSystem::TimingConfig']]],

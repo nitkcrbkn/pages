@@ -1,0 +1,5 @@
+<map id="TelemSender::send_log" name="TelemSender::send_log">
+<area shape="rect" id="node1" title="ログ文字列を format + send する" alt="" coords="5,5,163,31"/>
+<area shape="rect" id="node2" href="$d0/dc3/classTelemSender.html#a1c786874c330acc50a8f59930722e38f" title="タイムスタンプとバージョンを注入した TelemetryT を返す" alt="" coords="211,5,353,31"/>
+<area shape="rect" id="node3" href="$d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="401,5,453,31"/>
+</map>
