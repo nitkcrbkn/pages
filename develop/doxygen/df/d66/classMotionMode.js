@@ -7,5 +7,6 @@ var classMotionMode =
     [ "setMaxAcceleration", "df/d66/classMotionMode.html#a27f1d72e7dd2fbe6f9a90e581ba4c2a0", null ],
     [ "setMaxJerk", "df/d66/classMotionMode.html#af0d6a92520246b2acafae5e5d71837df", null ],
     [ "setMaxVelocity", "df/d66/classMotionMode.html#a695eebfecc85ba14522160e8a2786c2c", null ],
-    [ "setMode", "df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39", null ]
+    [ "setMode", "df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39", null ],
+    [ "velocity", "df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572", null ]
 ];

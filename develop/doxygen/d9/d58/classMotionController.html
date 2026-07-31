@@ -115,8 +115,9 @@ $(document).ready(function(){initNavTree('d9/d58/classMotionController.html','..
 <tr class="separator:a1012743499f32dd3f5b2f2ce84fbd854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5301b453fc8953e412cd90778e30974"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974">calculateVelocity</a> (VelocityType target, VelocityType velFb, float dt)</td></tr>
 <tr class="separator:aa5301b453fc8953e412cd90778e30974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43eb648ce6771af5f826edb63d80f3fa"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classMotionController.html#a43eb648ce6771af5f826edb63d80f3fa">calculatePosition</a> (PositionType target, VelocityType velFb, PositionType posFb, float dt)</td></tr>
-<tr class="separator:a43eb648ce6771af5f826edb63d80f3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a4cfe4631a0b307209a95b944e34e8"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8">calculatePosition</a> (PositionType target, VelocityType velFb, PositionType posFb, float dt, VelocityType velFF={})</td></tr>
+<tr class="memdesc:ac6a4cfe4631a0b307209a95b944e34e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する  <a href="../../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8">[詳解]</a><br /></td></tr>
+<tr class="separator:ac6a4cfe4631a0b307209a95b944e34e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab078675b8f0a5d8f72f0465c64c33981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classMotionController.html#ab078675b8f0a5d8f72f0465c64c33981">resetControllers</a> ()</td></tr>
 <tr class="separator:ab078675b8f0a5d8f72f0465c64c33981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -198,8 +199,8 @@ template&lt;class VelocityType , class PositionType , class OutputType &gt; </di
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a43eb648ce6771af5f826edb63d80f3fa" name="a43eb648ce6771af5f826edb63d80f3fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43eb648ce6771af5f826edb63d80f3fa">&#9670;&#160;</a></span>calculatePosition()</h2>
+<a id="ac6a4cfe4631a0b307209a95b944e34e8" name="ac6a4cfe4631a0b307209a95b944e34e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a4cfe4631a0b307209a95b944e34e8">&#9670;&#160;</a></span>calculatePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +232,13 @@ template&lt;class VelocityType , class PositionType , class OutputType &gt; </di
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VelocityType&#160;</td>
+          <td class="paramname"><em>velFF</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,21 +252,21 @@ template&lt;class VelocityType , class PositionType , class OutputType &gt; </di
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_cgraph.png" border="0" usemap="#ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_cgraph" alt=""/></div>
-<map name="ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_cgraph" id="ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,180,45"/>
-<area shape="rect" href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3" title="PIDを計算して出力値を返す" alt="" coords="228,13,331,38"/>
-</map>
-</div>
+
+<p>位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velFF</td><td>速度フィードフォワード。位置PID出力(velRef)に加算して速度PID目標に する。省略時は 0 で従来のカスケード挙動と一致する。</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>和 velRef + velFF は速度PID内部で minTarget/maxTarget クランプされる。 </p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_icgraph.png" border="0" usemap="#ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_icgraph" alt=""/></div>
-<map name="ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_icgraph" id="ad9/d58/classMotionController_a43eb648ce6771af5f826edb63d80f3fa_icgraph">
-<area shape="rect" title=" " alt="" coords="220,5,395,45"/>
+<div class="center"><img src="../../d9/d58/classMotionController_ac6a4cfe4631a0b307209a95b944e34e8_icgraph.png" border="0" usemap="#ad9/d58/classMotionController_ac6a4cfe4631a0b307209a95b944e34e8_icgraph" alt=""/></div>
+<map name="ad9/d58/classMotionController_ac6a4cfe4631a0b307209a95b944e34e8_icgraph" id="ad9/d58/classMotionController_ac6a4cfe4631a0b307209a95b944e34e8_icgraph">
+<area shape="rect" title="位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する" alt="" coords="220,5,395,45"/>
 <area shape="rect" href="../../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62" title=" " alt="" coords="5,13,172,38"/>
 </map>
 </div>

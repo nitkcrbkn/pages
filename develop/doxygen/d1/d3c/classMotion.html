@@ -122,6 +122,9 @@ $(document).ready(function(){initNavTree('d1/d3c/classMotion.html','../../'); in
 <tr class="memitem:a36cfd6e899f5078a824a1515e16e589b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3c/classMotion.html#a36cfd6e899f5078a824a1515e16e589b">setPositionProfileLimits</a> (float maxVel, float maxAcc, float maxJerk=0.0f) noexcept</td></tr>
 <tr class="memdesc:a36cfd6e899f5078a824a1515e16e589b"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置プロファイルの制限値を設定する  <a href="../../d1/d3c/classMotion.html#a36cfd6e899f5078a824a1515e16e589b">[詳解]</a><br /></td></tr>
 <tr class="separator:a36cfd6e899f5078a824a1515e16e589b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80a82286e4fd1612cf4469c063ad27e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3c/classMotion.html#aa80a82286e4fd1612cf4469c063ad27e">setPositionVelocityFeedforwardScale</a> (float scale) noexcept</td></tr>
+<tr class="memdesc:aa80a82286e4fd1612cf4469c063ad27e"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置プロファイル速度を速度PIDの単位へ変換する係数を設定する  <a href="../../d1/d3c/classMotion.html#aa80a82286e4fd1612cf4469c063ad27e">[詳解]</a><br /></td></tr>
+<tr class="separator:aa80a82286e4fd1612cf4469c063ad27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae117e4d69ea14d4371af6441fd08b20a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d58/classMotionController.html">MotionController</a>&lt; VelocityType, PositionType, OutputType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3c/classMotion.html#ae117e4d69ea14d4371af6441fd08b20a">motionController</a> () noexcept</td></tr>
 <tr class="memdesc:ae117e4d69ea14d4371af6441fd08b20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">MotionControllerへの参照を返す  <a href="../../d1/d3c/classMotion.html#ae117e4d69ea14d4371af6441fd08b20a">[詳解]</a><br /></td></tr>
 <tr class="separator:ae117e4d69ea14d4371af6441fd08b20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,10 +276,10 @@ template&lt;class VelocityType , class PositionType , class OutputType &gt; </di
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d3c/classMotion_a2ddd42e66702121702c0d40b4dc87f62_cgraph.png" border="0" usemap="#ad1/d3c/classMotion_a2ddd42e66702121702c0d40b4dc87f62_cgraph" alt=""/></div>
 <map name="ad1/d3c/classMotion_a2ddd42e66702121702c0d40b4dc87f62_cgraph" id="ad1/d3c/classMotion_a2ddd42e66702121702c0d40b4dc87f62_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,172,60"/>
+<area shape="rect" title=" " alt="" coords="5,63,172,88"/>
 <area shape="rect" href="../../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8" title="プロファイルを 1 ステップ進め、現在位置指令を返す" alt="" coords="232,5,383,31"/>
-<area shape="rect" href="../../d9/d58/classMotionController.html#a43eb648ce6771af5f826edb63d80f3fa" title=" " alt="" coords="220,55,395,95"/>
-<area shape="rect" href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3" title="PIDを計算して出力値を返す" alt="" coords="443,63,545,88"/>
+<area shape="rect" href="../../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8" title="位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する" alt="" coords="220,55,395,95"/>
+<area shape="rect" href="../../df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572" title="現在のプロファイル内部速度を返す" alt="" coords="236,120,379,145"/>
 </map>
 </div>
 
@@ -618,6 +621,37 @@ template&lt;class VelocityType , class PositionType , class OutputType &gt; </di
 <area shape="rect" href="../../df/d66/classMotionMode.html#a695eebfecc85ba14522160e8a2786c2c" title=" " alt="" coords="235,104,421,129"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aa80a82286e4fd1612cf4469c063ad27e" name="aa80a82286e4fd1612cf4469c063ad27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80a82286e4fd1612cf4469c063ad27e">&#9670;&#160;</a></span>setPositionVelocityFeedforwardScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class VelocityType , class PositionType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d3c/classMotion.html">Motion</a>&lt; VelocityType, PositionType, OutputType &gt;::setPositionVelocityFeedforwardScale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>位置プロファイル速度を速度PIDの単位へ変換する係数を設定する </p>
+<p >例えば位置が degree、速度PIDが RPM の場合は 1/6 を設定する。 既定値は 1 で、両者の単位が同じ場合は変換しない。 </p>
 
 </div>
 </div>

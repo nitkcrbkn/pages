@@ -121,6 +121,9 @@ $(document).ready(function(){initNavTree('df/d66/classMotionMode.html','../../')
 <tr class="memitem:a313a5c207093096ff451eb634b5af049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d66/classMotionMode.html#a313a5c207093096ff451eb634b5af049">reset</a> (OutputType value={}) noexcept</td></tr>
 <tr class="memdesc:a313a5c207093096ff451eb634b5af049"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部位置を value に、速度・加速度を 0 に初期化する  <a href="../../df/d66/classMotionMode.html#a313a5c207093096ff451eb634b5af049">[詳解]</a><br /></td></tr>
 <tr class="separator:a313a5c207093096ff451eb634b5af049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398b919e56fbe01152220903a8d48572"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572">velocity</a> () const noexcept</td></tr>
+<tr class="memdesc:a398b919e56fbe01152220903a8d48572"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のプロファイル内部速度を返す  <a href="../../df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572">[詳解]</a><br /></td></tr>
+<tr class="separator:a398b919e56fbe01152220903a8d48572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60faa8b8ccf2d0ca7d683544ab6fb7a8"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8">calculate</a> (OutputType target, float dt)</td></tr>
 <tr class="memdesc:a60faa8b8ccf2d0ca7d683544ab6fb7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロファイルを 1 ステップ進め、現在位置指令を返す  <a href="../../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8">[詳解]</a><br /></td></tr>
 <tr class="separator:a60faa8b8ccf2d0ca7d683544ab6fb7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -472,6 +475,45 @@ template&lt;class OutputType &gt; </div>
 <area shape="rect" href="../../d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5" title="速度・位置の両プロファイルに同じモードを一括設定するユーティリティ" alt="" coords="29,5,146,31"/>
 <area shape="rect" href="../../d1/d3c/classMotion.html#afd5952d83b2f9f8c6fca74d279da8012" title="位置プロファイルのモードのみを設定する" alt="" coords="5,55,169,80"/>
 <area shape="rect" href="../../d1/d3c/classMotion.html#a07b78ef3567b63e9266630496b650fe6" title="速度プロファイルのモードのみを設定する" alt="" coords="6,104,169,129"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a398b919e56fbe01152220903a8d48572" name="a398b919e56fbe01152220903a8d48572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398b919e56fbe01152220903a8d48572">&#9670;&#160;</a></span>velocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="../../df/d66/classMotionMode.html">MotionMode</a>&lt; OutputType &gt;::velocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のプロファイル内部速度を返す </p>
+<p ><a class="el" href="../../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8" title="プロファイルを 1 ステップ進め、現在位置指令を返す">calculate()</a> が更新する意図速度(位置/秒)。速度フィードフォワード源。 Normalモードおよび整定後は 0。無効dtで <a class="el" href="../../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8" title="プロファイルを 1 ステップ進め、現在位置指令を返す">calculate()</a> が早期returnした場合は 前回値を保持する。内部表現の float をそのまま返す。 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d66/classMotionMode_a398b919e56fbe01152220903a8d48572_icgraph.png" border="0" usemap="#adf/d66/classMotionMode_a398b919e56fbe01152220903a8d48572_icgraph" alt=""/></div>
+<map name="adf/d66/classMotionMode_a398b919e56fbe01152220903a8d48572_icgraph" id="adf/d66/classMotionMode_a398b919e56fbe01152220903a8d48572_icgraph">
+<area shape="rect" title="現在のプロファイル内部速度を返す" alt="" coords="220,5,363,31"/>
+<area shape="rect" href="../../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62" title=" " alt="" coords="5,5,172,31"/>
 </map>
 </div>
 

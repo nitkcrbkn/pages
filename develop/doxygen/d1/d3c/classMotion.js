@@ -11,6 +11,7 @@ var classMotion =
     [ "setMode", "d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5", null ],
     [ "setPositionMode", "d1/d3c/classMotion.html#afd5952d83b2f9f8c6fca74d279da8012", null ],
     [ "setPositionProfileLimits", "d1/d3c/classMotion.html#a36cfd6e899f5078a824a1515e16e589b", null ],
+    [ "setPositionVelocityFeedforwardScale", "d1/d3c/classMotion.html#aa80a82286e4fd1612cf4469c063ad27e", null ],
     [ "setVelocityMode", "d1/d3c/classMotion.html#a07b78ef3567b63e9266630496b650fe6", null ],
     [ "setVelocityProfileLimits", "d1/d3c/classMotion.html#af6bc7cd5ce62038931bd34e5e3daca00", null ]
 ];

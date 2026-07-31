@@ -1,6 +1,6 @@
 <map id="Motion::calculatePosition" name="Motion::calculatePosition">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,172,60"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,63,172,88"/>
 <area shape="rect" id="node2" href="$df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8" title="プロファイルを 1 ステップ進め、現在位置指令を返す" alt="" coords="232,5,383,31"/>
-<area shape="rect" id="node3" href="$d9/d58/classMotionController.html#a43eb648ce6771af5f826edb63d80f3fa" title=" " alt="" coords="220,55,395,95"/>
-<area shape="rect" id="node4" href="$d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3" title="PIDを計算して出力値を返す" alt="" coords="443,63,545,88"/>
+<area shape="rect" id="node3" href="$d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8" title="位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する" alt="" coords="220,55,395,95"/>
+<area shape="rect" id="node4" href="$df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572" title="現在のプロファイル内部速度を返す" alt="" coords="236,120,379,145"/>
 </map>

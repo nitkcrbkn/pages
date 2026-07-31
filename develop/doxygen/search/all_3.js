@@ -10,7 +10,7 @@ var searchData=
   ['c620_5fmin_5fcurrent_7',['C620_MIN_CURRENT',['../dd/d00/DJI_8h.html#a2c70982fdd9d1eca70b3a683ec747b22',1,'DJI.h']]],
   ['c_5fstr_8',['c_str',['../de/d83/structFormatStr.html#a300a70e69ebe28fc7ee8b6fd2e31a591',1,'FormatStr']]],
   ['calculate_9',['calculate',['../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3',1,'PID::calculate()'],['../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8',1,'MotionMode::calculate()']]],
-  ['calculateposition_10',['calculatePosition',['../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62',1,'Motion::calculatePosition()'],['../d9/d58/classMotionController.html#a43eb648ce6771af5f826edb63d80f3fa',1,'MotionController::calculatePosition(PositionType target, VelocityType velFb, PositionType posFb, float dt)']]],
+  ['calculateposition_10',['calculatePosition',['../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62',1,'Motion::calculatePosition()'],['../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8',1,'MotionController::calculatePosition(PositionType target, VelocityType velFb, PositionType posFb, float dt, VelocityType velFF={})']]],
   ['calculatevelocity_11',['calculateVelocity',['../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974',1,'MotionController::calculateVelocity()'],['../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1',1,'Motion::calculateVelocity()']]],
   ['callback_12',['CallBack',['../da/db0/namespaceDJI.html#a243fc206fcf72f9e9452fd3a00679014',1,'DJI::CallBack()'],['../da/d22/namespaceIM920sL.html#adc86bf22674297c791c2be505605bca6',1,'IM920sL::CallBack()']]],
   ['can_20profile_20命名規則_13',['CAN Profile 命名規則',['../d3/d50/md_modules_CanSystem_profile_README.html',1,'']]],
