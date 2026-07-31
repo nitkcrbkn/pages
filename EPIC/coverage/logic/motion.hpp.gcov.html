@@ -1,0 +1,514 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - coverage_filtered.info - logic/motion.hpp</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="title">LCOV - code coverage report</td></tr>
+            <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+            <tr>
+              <td width="100%">
+                <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="10%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">logic</a> - motion.hpp<span style="font-size: 80%;"> (source / <a href="motion.hpp.func-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="5%"></td>
+            <td width="5%" class="headerCovTableHead">Coverage</td>
+            <td width="5%" class="headerCovTableHead" title="Covered + Uncovered code">Total</td>
+            <td width="5%" class="headerCovTableHead" title="Exercised code only">Hit</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">coverage_filtered.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntryHi">97.9&nbsp;%</td>
+            <td class="headerCovTableEntry">140</td>
+            <td class="headerCovTableEntry">137</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test Date:</td>
+            <td class="headerValue">2026-07-31 14:51:01</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
+            <td class="headerCovTableEntry">38</td>
+            <td class="headerCovTableEntry">38</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Legend:</td>
+            <td class="headerValueLeg">            Lines:
+            <span class="coverLegendCov">hit</span>
+            <span class="coverLegendNoCov">not hit</span>
+            | Branches:
+            <span class="coverLegendCov">+</span> taken
+            <span class="coverLegendNoCov">-</span> not taken
+            <span class="coverLegendNoCov">#</span> not executed
+</td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntryMed">80.4&nbsp;%</td>
+            <td class="headerCovTableEntry">56</td>
+            <td class="headerCovTableEntry">45</td>
+          </tr>
+                  <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+          </table>
+
+          <table cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+<pre class="sourceHeading">             Branch data     Line data    Source code</pre>
+<pre class="source">
+<span id="L1"><span class="lineNum">       1</span>                 :             : /**</span>
+<span id="L2"><span class="lineNum">       2</span>                 :             :  * @file motion.hpp</span>
+<span id="L3"><span class="lineNum">       3</span>                 :             :  * @author Kaede Ryoken</span>
+<span id="L4"><span class="lineNum">       4</span>                 :             :  * @brief MotionMode / MotionController / Motion</span>
+<span id="L5"><span class="lineNum">       5</span>                 :             :  * @details</span>
+<span id="L6"><span class="lineNum">       6</span>                 :             :  * - MotionMode&lt;OutputType&gt;: プロファイル生成(Normal/Trapezoid/SCurve)</span>
+<span id="L7"><span class="lineNum">       7</span>                 :             :  * - MotionController&lt;V,P,O&gt;: 速度PID / カスケード(位置→速度)PID</span>
+<span id="L8"><span class="lineNum">       8</span>                 :             :  * - Motion&lt;V,P,O&gt;: プロファイル + コントローラの統合クラス</span>
+<span id="L9"><span class="lineNum">       9</span>                 :             :  *</span>
+<span id="L10"><span class="lineNum">      10</span>                 :             :  * 内部状態は float で保持し、出力時にテンプレート型へキャスト。</span>
+<span id="L11"><span class="lineNum">      11</span>                 :             :  */</span>
+<span id="L12"><span class="lineNum">      12</span>                 :             : </span>
+<span id="L13"><span class="lineNum">      13</span>                 :             : #pragma once</span>
+<span id="L14"><span class="lineNum">      14</span>                 :             : </span>
+<span id="L15"><span class="lineNum">      15</span>                 :             : #include &lt;cmath&gt;</span>
+<span id="L16"><span class="lineNum">      16</span>                 :             : #include &lt;logic/pid.hpp&gt;</span>
+<span id="L17"><span class="lineNum">      17</span>                 :             : </span>
+<span id="L18"><span class="lineNum">      18</span>                 :             : /**</span>
+<span id="L19"><span class="lineNum">      19</span>                 :             :  * @brief プロファイル種別</span>
+<span id="L20"><span class="lineNum">      20</span>                 :             :  */</span>
+<span id="L21"><span class="lineNum">      21</span>                 :             : enum class ProfileType {</span>
+<span id="L22"><span class="lineNum">      22</span>                 :             :     Normal,</span>
+<span id="L23"><span class="lineNum">      23</span>                 :             :     Trapezoid,</span>
+<span id="L24"><span class="lineNum">      24</span>                 :             :     SCurve,</span>
+<span id="L25"><span class="lineNum">      25</span>                 :             : };</span>
+<span id="L26"><span class="lineNum">      26</span>                 :             : </span>
+<span id="L27"><span class="lineNum">      27</span>                 :             : // MotionMode</span>
+<span id="L28"><span class="lineNum">      28</span>                 :             : </span>
+<span id="L29"><span class="lineNum">      29</span>                 :             : /**</span>
+<span id="L30"><span class="lineNum">      30</span>                 :             :  * @brief モーションプロファイル生成</span>
+<span id="L31"><span class="lineNum">      31</span>                 :             :  * @tparam OutputType calculate() の戻り値型。内部演算は float。</span>
+<span id="L32"><span class="lineNum">      32</span>                 :             :  *</span>
+<span id="L33"><span class="lineNum">      33</span>                 :             :  * 減速計画方式: 速度指令追従</span>
+<span id="L34"><span class="lineNum">      34</span>                 :             :  *   - Trapezoid:</span>
+<span id="L35"><span class="lineNum">      35</span>                 :             :  *       vLimit = sign(e) * min(maxV, -a*dt/2 + sqrt((a*dt/2)^2 + 2*a*|e|))</span>
+<span id="L36"><span class="lineNum">      36</span>                 :             :  *       _velocity を ±maxAcceleration*dt の範囲で vLimit へ追従</span>
+<span id="L37"><span class="lineNum">      37</span>                 :             :  *   - SCurve: 状態(v, acc)からゴールまでを毎周期逆算</span>
+<span id="L38"><span class="lineNum">      38</span>                 :             :  *       tR = |acc|/j として</span>
+<span id="L39"><span class="lineNum">      39</span>                 :             :  *       vPred    = v + acc*tR/2            (accを0へ戻した時点の予測速度)</span>
+<span id="L40"><span class="lineNum">      40</span>                 :             :  *       dTransit = v*tR + acc^3/(3j^2)       (巻き戻し中の走行距離)</span>
+<span id="L41"><span class="lineNum">      41</span>                 :             :  *       |e|' = max(0, |e| - dTransit - |vPred|*a/(2j))</span>
+<span id="L42"><span class="lineNum">      42</span>                 :             :  *       vLimit を同式で算出し、targetAcc = clamp((vLimit - vPred)/dt, ±a) を</span>
+<span id="L43"><span class="lineNum">      43</span>                 :             :  *       ±maxJerk*dt で追従(Td先行補正 — 現在値でなく予測値で誤差評価)。</span>
+<span id="L44"><span class="lineNum">      44</span>                 :             :  *       速度は加速度の積分。速度・加速度の絶対値クランプを維持</span>
+<span id="L45"><span class="lineNum">      45</span>                 :             :  *</span>
+<span id="L46"><span class="lineNum">      46</span>                 :             :  * 整定条件(複合):</span>
+<span id="L47"><span class="lineNum">      47</span>                 :             :  *   Trapezoid : |error| &lt;= maxAcc*dt^2  AND  |v| &lt;= maxAcc*dt</span>
+<span id="L48"><span class="lineNum">      48</span>                 :             :  *   SCurve    : 上記 AND |acc| &lt;= maxJerk*dt</span>
+<span id="L49"><span class="lineNum">      49</span>                 :             :  *   条件が揃ったときのみスナップ整定。速度が残る間はスナップしない。</span>
+<span id="L50"><span class="lineNum">      50</span>                 :             :  *</span>
+<span id="L51"><span class="lineNum">      51</span>                 :             :  * @note 前提条件:</span>
+<span id="L52"><span class="lineNum">      52</span>                 :             :  *   - Trapezoid モードは maxVelocity &gt; 0 かつ maxAcceleration &gt; 0 を設定しないと</span>
+<span id="L53"><span class="lineNum">      53</span>                 :             :  *     出力が動かない(エラーは出ない)。</span>
+<span id="L54"><span class="lineNum">      54</span>                 :             :  *   - SCurve モードは上記に加えて maxJerk &gt; 0 も必要。</span>
+<span id="L55"><span class="lineNum">      55</span>                 :             :  */</span>
+<span id="L56"><span class="lineNum">      56</span>                 :             : template &lt;class OutputType&gt;</span>
+<span id="L57"><span class="lineNum">      57</span>                 :             : class MotionMode {</span>
+<span id="L58"><span class="lineNum">      58</span>                 :             : private:</span>
+<span id="L59"><span class="lineNum">      59</span>                 :             :     ProfileType _mode;</span>
+<span id="L60"><span class="lineNum">      60</span>                 :             : </span>
+<span id="L61"><span class="lineNum">      61</span>                 :             :     float _target = 0.0f;</span>
+<span id="L62"><span class="lineNum">      62</span>                 :             :     float _velocity = 0.0f;</span>
+<span id="L63"><span class="lineNum">      63</span>                 :             :     float _acceleration = 0.0f;</span>
+<span id="L64"><span class="lineNum">      64</span>                 :             : </span>
+<span id="L65"><span class="lineNum">      65</span>                 :             :     float _maxVelocity = 0.0f;</span>
+<span id="L66"><span class="lineNum">      66</span>                 :             :     float _maxAcceleration = 0.0f;</span>
+<span id="L67"><span class="lineNum">      67</span>                 :             :     float _maxJerk = 0.0f;</span>
+<span id="L68"><span class="lineNum">      68</span>                 :             : </span>
+<span id="L69"><span class="lineNum">      69</span>                 :             : public:</span>
+<span id="L70"><span class="lineNum">      70</span>                 :             :     /** @brief デフォルトコンストラクタ: Normalモードで初期化 */</span>
+<span id="L71"><span class="lineNum">      71</span>                 :<span class="tlaGNC tlaBgGNC">          16 :     MotionMode() : _mode(ProfileType::Normal) {}</span></span>
+<span id="L72"><span class="lineNum">      72</span>                 :             : </span>
+<span id="L73"><span class="lineNum">      73</span>                 :             :     /** @brief コンストラクタ */</span>
+<span id="L74"><span class="lineNum">      74</span>                 :<span class="tlaGNC">          31 :     explicit MotionMode(ProfileType mode, float maxVelocity = {},</span></span>
+<span id="L75"><span class="lineNum">      75</span>                 :             :                         float maxAcceleration = {}, float maxJerk = {})</span>
+<span id="L76"><span class="lineNum">      76</span>                 :<span class="tlaGNC">          31 :         : _mode(mode), _maxVelocity(maxVelocity),</span></span>
+<span id="L77"><span class="lineNum">      77</span>                 :<span class="tlaGNC">          31 :           _maxAcceleration(maxAcceleration), _maxJerk(maxJerk) {}</span></span>
+<span id="L78"><span class="lineNum">      78</span>                 :             : </span>
+<span id="L79"><span class="lineNum">      79</span>                 :<span class="tlaGNC">          27 :     void setMaxVelocity(float v) noexcept { _maxVelocity = v; }</span></span>
+<span id="L80"><span class="lineNum">      80</span>                 :<span class="tlaGNC">          27 :     void setMaxAcceleration(float a) noexcept { _maxAcceleration = a; }</span></span>
+<span id="L81"><span class="lineNum">      81</span>                 :<span class="tlaGNC">          17 :     void setMaxJerk(float j) noexcept { _maxJerk = j; }</span></span>
+<span id="L82"><span class="lineNum">      82</span>                 :             : </span>
+<span id="L83"><span class="lineNum">      83</span>                 :<span class="tlaGNC">          14 :     void setMode(ProfileType mode) noexcept { _mode = mode; }</span></span>
+<span id="L84"><span class="lineNum">      84</span>                 :             : </span>
+<span id="L85"><span class="lineNum">      85</span>                 :             :     /** @brief 内部位置を value に、速度・加速度を 0 に初期化する */</span>
+<span id="L86"><span class="lineNum">      86</span>                 :<span class="tlaGNC">          38 :     void reset(OutputType value = {}) noexcept {</span></span>
+<span id="L87"><span class="lineNum">      87</span>                 :<span class="tlaGNC">          38 :         _target = static_cast&lt;float&gt;(value);</span></span>
+<span id="L88"><span class="lineNum">      88</span>                 :<span class="tlaGNC">          38 :         _velocity = 0.0f;</span></span>
+<span id="L89"><span class="lineNum">      89</span>                 :<span class="tlaGNC">          38 :         _acceleration = 0.0f;</span></span>
+<span id="L90"><span class="lineNum">      90</span>                 :<span class="tlaGNC">          38 :     }</span></span>
+<span id="L91"><span class="lineNum">      91</span>                 :             : </span>
+<span id="L92"><span class="lineNum">      92</span>                 :             :     /**</span>
+<span id="L93"><span class="lineNum">      93</span>                 :             :      * @brief 現在のプロファイル内部速度を返す</span>
+<span id="L94"><span class="lineNum">      94</span>                 :             :      * @details calculate() が更新する意図速度(位置/秒)。速度フィードフォワード源。</span>
+<span id="L95"><span class="lineNum">      95</span>                 :             :      *   Normalモードおよび整定後は 0。無効dtで calculate() が早期returnした場合は</span>
+<span id="L96"><span class="lineNum">      96</span>                 :             :      *   前回値を保持する。内部表現の float をそのまま返す。</span>
+<span id="L97"><span class="lineNum">      97</span>                 :             :      */</span>
+<span id="L98"><span class="lineNum">      98</span>                 :<span class="tlaGNC">         560 :     [[nodiscard]] float velocity() const noexcept { return _velocity; }</span></span>
+<span id="L99"><span class="lineNum">      99</span>                 :             : </span>
+<span id="L100"><span class="lineNum">     100</span>                 :             :     /**</span>
+<span id="L101"><span class="lineNum">     101</span>                 :             :      * @brief プロファイルを 1 ステップ進め、現在位置指令を返す</span>
+<span id="L102"><span class="lineNum">     102</span>                 :             :      * @param target 目標位置</span>
+<span id="L103"><span class="lineNum">     103</span>                 :             :      * @param dt     制御周期 (秒, float)</span>
+<span id="L104"><span class="lineNum">     104</span>                 :             :      */</span>
+<span id="L105"><span class="lineNum">     105</span>                 :<span class="tlaGNC">       72328 :     OutputType calculate(OutputType target, float dt) {</span></span>
+<span id="L106"><span class="lineNum">     106</span>                 :<span class="tlaGNC">       72328 :         const float tgt = static_cast&lt;float&gt;(target);</span></span>
+<span id="L107"><span class="lineNum">     107</span>                 :             : </span>
+<span id="L108"><span class="lineNum">     108</span>                 :             :         // Normalモードはパススルー: 無効dtでも新しいtargetを返す</span>
+<span id="L109"><span class="lineNum">     109</span>         [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 72319 times"> + </span>]:<span class="tlaGNC">       72328 :         if(_mode == ProfileType::Normal) {</span></span>
+<span id="L110"><span class="lineNum">     110</span>                 :<span class="tlaGNC">           9 :             _target = tgt;</span></span>
+<span id="L111"><span class="lineNum">     111</span>                 :<span class="tlaGNC">           9 :             _velocity = 0.0f;</span></span>
+<span id="L112"><span class="lineNum">     112</span>                 :<span class="tlaGNC">           9 :             _acceleration = 0.0f;</span></span>
+<span id="L113"><span class="lineNum">     113</span>                 :<span class="tlaGNC">           9 :             return static_cast&lt;OutputType&gt;(_target);</span></span>
+<span id="L114"><span class="lineNum">     114</span>                 :             :         }</span>
+<span id="L115"><span class="lineNum">     115</span>                 :             : </span>
+<span id="L116"><span class="lineNum">     116</span>                 :             :         // Trapezoid/SCurveは無効dtで前回値を維持</span>
+<span id="L117"><span class="lineNum">     117</span>   [<span class="tlaGBC" title="Branch 0 was taken 72319 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 72319 times"> + </span> :<span class="tlaGNC">       72319 :         if(!(std::isfinite(dt) &amp;&amp; dt &gt; 0.0f)) {</span></span>
+<span class="lineNum">        </span>          <span class="tlaUNC" title="Branch 4 was not taken"> - </span><span class="tlaGBC" title="Branch 5 was taken 72319 times"> + </span>]
+<span id="L118"><span class="lineNum">     118</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             return static_cast&lt;OutputType&gt;(_target);</span></span>
+<span id="L119"><span class="lineNum">     119</span>                 :             :         }</span>
+<span id="L120"><span class="lineNum">     120</span>                 :             : </span>
+<span id="L121"><span class="lineNum">     121</span>   [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 22116 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 50203 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC tlaBgGNC">       72319 :         switch(_mode) {</span></span>
+<span id="L122"><span class="lineNum">     122</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             case ProfileType::Normal:</span></span>
+<span id="L123"><span class="lineNum">     123</span>                 :             :                 // 上で処理済み(到達しない)</span>
+<span id="L124"><span class="lineNum">     124</span>                 :<span class="tlaUNC">           0 :                 break;</span></span>
+<span id="L125"><span class="lineNum">     125</span>                 :             : </span>
+<span id="L126"><span class="lineNum">     126</span>                 :<span class="tlaGNC tlaBgGNC">       22116 :             case ProfileType::Trapezoid: {</span></span>
+<span id="L127"><span class="lineNum">     127</span>                 :<span class="tlaGNC">       22116 :                 const float error = tgt - _target;</span></span>
+<span id="L128"><span class="lineNum">     128</span>                 :<span class="tlaGNC">       22116 :                 const float absErr = std::fabs(error);</span></span>
+<span id="L129"><span class="lineNum">     129</span>                 :<span class="tlaGNC">       22116 :                 const float a = _maxAcceleration;</span></span>
+<span id="L130"><span class="lineNum">     130</span>                 :             : </span>
+<span id="L131"><span class="lineNum">     131</span>   [<span class="tlaGBC" title="Branch 0 was taken 14238 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 7878 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 14224 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 14 times"> + </span> :<span class="tlaGNC">       22116 :                 if(absErr &lt;= a * dt * dt &amp;&amp; std::fabs(_velocity) &lt;= a * dt) {</span></span>
+<span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 14224 times"> + </span><span class="tlaGBC" title="Branch 5 was taken 7892 times"> + </span>]
+<span id="L132"><span class="lineNum">     132</span>                 :<span class="tlaGNC">       14224 :                     _target = tgt;</span></span>
+<span id="L133"><span class="lineNum">     133</span>                 :<span class="tlaGNC">       14224 :                     _velocity = 0.0f;</span></span>
+<span id="L134"><span class="lineNum">     134</span>                 :<span class="tlaGNC">       14224 :                     _acceleration = 0.0f;</span></span>
+<span id="L135"><span class="lineNum">     135</span>                 :<span class="tlaGNC">       14224 :                     break;</span></span>
+<span id="L136"><span class="lineNum">     136</span>                 :             :                 }</span>
+<span id="L137"><span class="lineNum">     137</span>                 :             : </span>
+<span id="L138"><span class="lineNum">     138</span>                 :             :                 // 速度上限: 制動距離から逆算 (離散化補正付き)</span>
+<span id="L139"><span class="lineNum">     139</span>                 :             :                 // vLimit = sign(e) * min(maxV, -a*dt/2 + sqrt((a*dt/2)^2 + 2*a*|e|))</span>
+<span id="L140"><span class="lineNum">     140</span>                 :<span class="tlaGNC">        7892 :                 const float half_a_dt = 0.5f * a * dt;</span></span>
+<span id="L141"><span class="lineNum">     141</span>                 :<span class="tlaGNC">        7892 :                 const float vLimit_mag = std::fmin(</span></span>
+<span id="L142"><span class="lineNum">     142</span>                 :<span class="tlaGNC">        7892 :                     _maxVelocity, -half_a_dt + std::sqrt(half_a_dt * half_a_dt +</span></span>
+<span id="L143"><span class="lineNum">     143</span>                 :<span class="tlaGNC">        7892 :                                                          2.0f * a * absErr));</span></span>
+<span id="L144"><span class="lineNum">     144</span>         [<span class="tlaGBC" title="Branch 0 was taken 6408 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1484 times"> + </span>]:<span class="tlaGNC">        7892 :                 const float sign_e = (error &gt; 0.0f) ? 1.0f : -1.0f;</span></span>
+<span id="L145"><span class="lineNum">     145</span>                 :<span class="tlaGNC">        7892 :                 const float vLimit = sign_e * vLimit_mag;</span></span>
+<span id="L146"><span class="lineNum">     146</span>                 :             : </span>
+<span id="L147"><span class="lineNum">     147</span>                 :             :                 // _velocity を vLimit へ ±a*dt で追従</span>
+<span id="L148"><span class="lineNum">     148</span>                 :<span class="tlaGNC">        7892 :                 const float dv = a * dt;</span></span>
+<span id="L149"><span class="lineNum">     149</span>         [<span class="tlaGBC" title="Branch 0 was taken 3967 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3925 times"> + </span>]:<span class="tlaGNC">        7892 :                 if(_velocity &lt; vLimit) {</span></span>
+<span id="L150"><span class="lineNum">     150</span>                 :<span class="tlaGNC">        3967 :                     _velocity = std::fmin(_velocity + dv, vLimit);</span></span>
+<span id="L151"><span class="lineNum">     151</span>         [<span class="tlaGBC" title="Branch 0 was taken 3747 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 178 times"> + </span>]:<span class="tlaGNC">        3925 :                 } else if(_velocity &gt; vLimit) {</span></span>
+<span id="L152"><span class="lineNum">     152</span>                 :<span class="tlaGNC">        3747 :                     _velocity = std::fmax(_velocity - dv, vLimit);</span></span>
+<span id="L153"><span class="lineNum">     153</span>                 :             :                 }</span>
+<span id="L154"><span class="lineNum">     154</span>                 :             : </span>
+<span id="L155"><span class="lineNum">     155</span>                 :<span class="tlaGNC">        7892 :                 _target += _velocity * dt;</span></span>
+<span id="L156"><span class="lineNum">     156</span>                 :<span class="tlaGNC">        7892 :                 break;</span></span>
+<span id="L157"><span class="lineNum">     157</span>                 :             :             }</span>
+<span id="L158"><span class="lineNum">     158</span>                 :             : </span>
+<span id="L159"><span class="lineNum">     159</span>                 :<span class="tlaGNC">       50203 :             case ProfileType::SCurve: {</span></span>
+<span id="L160"><span class="lineNum">     160</span>                 :<span class="tlaGNC">       50203 :                 const float error = tgt - _target;</span></span>
+<span id="L161"><span class="lineNum">     161</span>                 :<span class="tlaGNC">       50203 :                 const float absErr = std::fabs(error);</span></span>
+<span id="L162"><span class="lineNum">     162</span>                 :<span class="tlaGNC">       50203 :                 const float a = _maxAcceleration;</span></span>
+<span id="L163"><span class="lineNum">     163</span>                 :<span class="tlaGNC">       50203 :                 const float j = _maxJerk;</span></span>
+<span id="L164"><span class="lineNum">     164</span>                 :             : </span>
+<span id="L165"><span class="lineNum">     165</span>   [<span class="tlaGBC" title="Branch 0 was taken 27517 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 22686 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 27517 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">       77720 :                 if(absErr &lt;= a * dt * dt &amp;&amp; std::fabs(_velocity) &lt;= a * dt &amp;&amp;</span></span>
+<span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 27515 times"> + </span><span class="tlaGBC" title="Branch 5 was taken 22688 times"> + </span>]
+<span id="L166"><span class="lineNum">     166</span>         [<span class="tlaGBC" title="Branch 0 was taken 27515 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">       27517 :                    std::fabs(_acceleration) &lt;= j * dt) {</span></span>
+<span id="L167"><span class="lineNum">     167</span>                 :<span class="tlaGNC">       27515 :                     _target = tgt;</span></span>
+<span id="L168"><span class="lineNum">     168</span>                 :<span class="tlaGNC">       27515 :                     _velocity = 0.0f;</span></span>
+<span id="L169"><span class="lineNum">     169</span>                 :<span class="tlaGNC">       27515 :                     _acceleration = 0.0f;</span></span>
+<span id="L170"><span class="lineNum">     170</span>                 :<span class="tlaGNC">       27515 :                     break;</span></span>
+<span id="L171"><span class="lineNum">     171</span>                 :             :                 }</span>
+<span id="L172"><span class="lineNum">     172</span>                 :             : </span>
+<span id="L173"><span class="lineNum">     173</span>         [<span class="tlaGBC" title="Branch 0 was taken 20305 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2383 times"> + </span>]:<span class="tlaGNC">       22688 :                 const float sign_e = (error &gt; 0.0f) ? 1.0f : -1.0f;</span></span>
+<span id="L174"><span class="lineNum">     174</span>                 :             : </span>
+<span id="L175"><span class="lineNum">     175</span>                 :             :                 // 状態(v, acc)からの先読み (Td先行補正):</span>
+<span id="L176"><span class="lineNum">     176</span>                 :             :                 // 加速度をジャーク制限で0へ戻すのに tR = |acc|/j かかり、その間に</span>
+<span id="L177"><span class="lineNum">     177</span>                 :             :                 // 速度は acc*tR/2 変化し、位置は v*tR + acc*tR^2/2 進む。</span>
+<span id="L178"><span class="lineNum">     178</span>                 :             :                 // vPred    : 巻き戻し完了時の予測速度(追従誤差の評価に使用)</span>
+<span id="L179"><span class="lineNum">     179</span>                 :             :                 // dTransit : 巻き戻し中に目標方向へ進む距離(残距離から先読みで差引)</span>
+<span id="L180"><span class="lineNum">     180</span>                 :<span class="tlaGNC">       22688 :                 float vPred = _velocity;</span></span>
+<span id="L181"><span class="lineNum">     181</span>                 :<span class="tlaGNC">       22688 :                 float effErr = absErr;</span></span>
+<span id="L182"><span class="lineNum">     182</span>         [<span class="tlaGBC" title="Branch 0 was taken 22688 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       22688 :                 if(j &gt; 0.0f) {</span></span>
+<span id="L183"><span class="lineNum">     183</span>                 :<span class="tlaGNC">       22688 :                     const float tR = std::fabs(_acceleration) / j;</span></span>
+<span id="L184"><span class="lineNum">     184</span>                 :<span class="tlaGNC">       22688 :                     vPred = _velocity + 0.5f * _acceleration * tR;</span></span>
+<span id="L185"><span class="lineNum">     185</span>                 :             :                     // 巻き戻し中の走行距離: v*tR + acc^3/(3j^2)</span>
+<span id="L186"><span class="lineNum">     186</span>                 :             :                     // 制動中も適用しないと、終端で残留速度(a^2/2j)を抱えたまま</span>
+<span id="L187"><span class="lineNum">     187</span>                 :             :                     // 目標に到達しオーバーシュートする</span>
+<span id="L188"><span class="lineNum">     188</span>                 :<span class="tlaGNC">       22688 :                     const float dTransit =</span></span>
+<span id="L189"><span class="lineNum">     189</span>                 :<span class="tlaGNC">       22688 :                         (_velocity * tR + _acceleration * _acceleration *</span></span>
+<span id="L190"><span class="lineNum">     190</span>                 :<span class="tlaGNC">       22688 :                                               _acceleration / (3.0f * j * j)) *</span></span>
+<span id="L191"><span class="lineNum">     191</span>                 :             :                         sign_e;</span>
+<span id="L192"><span class="lineNum">     192</span>         [<span class="tlaGBC" title="Branch 0 was taken 11957 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 10731 times"> + </span>]:<span class="tlaGNC">       22688 :                     if(dTransit &gt; 0.0f) {</span></span>
+<span id="L193"><span class="lineNum">     193</span>                 :<span class="tlaGNC">       11957 :                         effErr = std::fmax(0.0f, absErr - dTransit);</span></span>
+<span id="L194"><span class="lineNum">     194</span>                 :             :                     }</span>
+<span id="L195"><span class="lineNum">     195</span>                 :             :                 }</span>
+<span id="L196"><span class="lineNum">     196</span>                 :             : </span>
+<span id="L197"><span class="lineNum">     197</span>                 :             :                 // ジャーク補正済み残距離</span>
+<span id="L198"><span class="lineNum">     198</span>                 :             :                 // SCurve停止距離 = v^2/(2a) + v*a/(2j) に基づき、</span>
+<span id="L199"><span class="lineNum">     199</span>                 :             :                 // correctedErr = max(0, effErr - |vPred|*a/(2j))</span>
+<span id="L200"><span class="lineNum">     200</span>                 :             :                 // (定数項を足すと v=0 で残距離が釣り合いデッドロックするため不可)</span>
+<span id="L201"><span class="lineNum">     201</span>                 :<span class="tlaGNC">       22688 :                 const float jerkCorrection =</span></span>
+<span id="L202"><span class="lineNum">     202</span>         [<span class="tlaGBC" title="Branch 0 was taken 22688 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       22688 :                     (j &gt; 0.0f) ? std::fabs(vPred) * a / (2.0f * j) : 0.0f;</span></span>
+<span id="L203"><span class="lineNum">     203</span>                 :             :                 const float correctedErr =</span>
+<span id="L204"><span class="lineNum">     204</span>                 :<span class="tlaGNC">       22688 :                     std::fmax(0.0f, effErr - jerkCorrection);</span></span>
+<span id="L205"><span class="lineNum">     205</span>                 :             : </span>
+<span id="L206"><span class="lineNum">     206</span>                 :             :                 // vLimit (Trapezoidと同式、補正済み残距離を使用)</span>
+<span id="L207"><span class="lineNum">     207</span>                 :<span class="tlaGNC">       22688 :                 const float half_a_dt = 0.5f * a * dt;</span></span>
+<span id="L208"><span class="lineNum">     208</span>                 :             :                 const float vLimit_mag =</span>
+<span id="L209"><span class="lineNum">     209</span>                 :<span class="tlaGNC">       22688 :                     std::fmin(_maxVelocity,</span></span>
+<span id="L210"><span class="lineNum">     210</span>                 :<span class="tlaGNC">       22688 :                               -half_a_dt + std::sqrt(half_a_dt * half_a_dt +</span></span>
+<span id="L211"><span class="lineNum">     211</span>                 :<span class="tlaGNC">       22688 :                                                      2.0f * a * correctedErr));</span></span>
+<span id="L212"><span class="lineNum">     212</span>                 :<span class="tlaGNC">       22688 :                 const float vLimit = sign_e * vLimit_mag;</span></span>
+<span id="L213"><span class="lineNum">     213</span>                 :             : </span>
+<span id="L214"><span class="lineNum">     214</span>                 :             :                 // 目標加速度: 予測速度誤差による比例則</span>
+<span id="L215"><span class="lineNum">     215</span>                 :             :                 // 現在速度でなく vPred で評価することで、加速度の巻き戻し遅れに</span>
+<span id="L216"><span class="lineNum">     216</span>                 :             :                 // よる行き過ぎ・リミットサイクルを防ぐ。bang bang(±a固定)は不可。</span>
+<span id="L217"><span class="lineNum">     217</span>                 :<span class="tlaGNC">       22688 :                 float targetAcc = (vLimit - vPred) / dt;</span></span>
+<span id="L218"><span class="lineNum">     218</span>                 :             :                 // ±maxAcceleration にクランプ</span>
+<span id="L219"><span class="lineNum">     219</span>         [<span class="tlaGBC" title="Branch 0 was taken 4925 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 17763 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(targetAcc &gt; a) targetAcc = a;</span></span>
+<span id="L220"><span class="lineNum">     220</span>         [<span class="tlaGBC" title="Branch 0 was taken 4357 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 18331 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(targetAcc &lt; -a) targetAcc = -a;</span></span>
+<span id="L221"><span class="lineNum">     221</span>                 :             : </span>
+<span id="L222"><span class="lineNum">     222</span>                 :             :                 // _acceleration を ±maxJerk*dt で targetAcc へ追従</span>
+<span id="L223"><span class="lineNum">     223</span>                 :<span class="tlaGNC">       22688 :                 const float dj = j * dt;</span></span>
+<span id="L224"><span class="lineNum">     224</span>         [<span class="tlaGBC" title="Branch 0 was taken 3510 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 19178 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(_acceleration &lt; targetAcc) {</span></span>
+<span id="L225"><span class="lineNum">     225</span>                 :<span class="tlaGNC">        3510 :                     _acceleration = std::fmin(_acceleration + dj, targetAcc);</span></span>
+<span id="L226"><span class="lineNum">     226</span>         [<span class="tlaGBC" title="Branch 0 was taken 3307 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 15871 times"> + </span>]:<span class="tlaGNC">       19178 :                 } else if(_acceleration &gt; targetAcc) {</span></span>
+<span id="L227"><span class="lineNum">     227</span>                 :<span class="tlaGNC">        3307 :                     _acceleration = std::fmax(_acceleration - dj, targetAcc);</span></span>
+<span id="L228"><span class="lineNum">     228</span>                 :             :                 }</span>
+<span id="L229"><span class="lineNum">     229</span>                 :             : </span>
+<span id="L230"><span class="lineNum">     230</span>                 :<span class="tlaGNC">       22688 :                 _velocity += _acceleration * dt;</span></span>
+<span id="L231"><span class="lineNum">     231</span>                 :             : </span>
+<span id="L232"><span class="lineNum">     232</span>         [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 22686 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(_velocity &gt; _maxVelocity) _velocity = _maxVelocity;</span></span>
+<span id="L233"><span class="lineNum">     233</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 22688 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(_velocity &lt; -_maxVelocity) _velocity = -_maxVelocity;</span></span>
+<span id="L234"><span class="lineNum">     234</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 22688 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(_acceleration &gt; a) _acceleration = a;</span></span>
+<span id="L235"><span class="lineNum">     235</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 22688 times"> + </span>]:<span class="tlaGNC">       22688 :                 if(_acceleration &lt; -a) _acceleration = -a;</span></span>
+<span id="L236"><span class="lineNum">     236</span>                 :             : </span>
+<span id="L237"><span class="lineNum">     237</span>                 :<span class="tlaGNC">       22688 :                 _target += _velocity * dt;</span></span>
+<span id="L238"><span class="lineNum">     238</span>                 :<span class="tlaGNC">       22688 :                 break;</span></span>
+<span id="L239"><span class="lineNum">     239</span>                 :             :             }</span>
+<span id="L240"><span class="lineNum">     240</span>                 :             :         }</span>
+<span id="L241"><span class="lineNum">     241</span>                 :             : </span>
+<span id="L242"><span class="lineNum">     242</span>                 :<span class="tlaGNC">       72319 :         return static_cast&lt;OutputType&gt;(_target);</span></span>
+<span id="L243"><span class="lineNum">     243</span>                 :             :     }</span>
+<span id="L244"><span class="lineNum">     244</span>                 :             : };</span>
+<span id="L245"><span class="lineNum">     245</span>                 :             : </span>
+<span id="L246"><span class="lineNum">     246</span>                 :             : // MotionController</span>
+<span id="L247"><span class="lineNum">     247</span>                 :             : </span>
+<span id="L248"><span class="lineNum">     248</span>                 :             : template &lt;class VelocityType, class PositionType, class OutputType&gt;</span>
+<span id="L249"><span class="lineNum">     249</span>                 :             : class MotionController {</span>
+<span id="L250"><span class="lineNum">     250</span>                 :             : private:</span>
+<span id="L251"><span class="lineNum">     251</span>                 :             :     PID&lt;VelocityType, OutputType&gt; _velPID;</span>
+<span id="L252"><span class="lineNum">     252</span>                 :             :     PID&lt;PositionType, VelocityType&gt; _posPID;</span>
+<span id="L253"><span class="lineNum">     253</span>                 :             : </span>
+<span id="L254"><span class="lineNum">     254</span>                 :             : public:</span>
+<span id="L255"><span class="lineNum">     255</span>                 :             :     /** @brief デフォルトコンストラクタ: ゲイン0で初期化*/</span>
+<span id="L256"><span class="lineNum">     256</span>                 :<span class="tlaGNC">           8 :     MotionController() = default;</span></span>
+<span id="L257"><span class="lineNum">     257</span>                 :             : </span>
+<span id="L258"><span class="lineNum">     258</span>                 :             :     /**</span>
+<span id="L259"><span class="lineNum">     259</span>                 :             :      * @brief コンストラクタ</span>
+<span id="L260"><span class="lineNum">     260</span>                 :             :      * @param velPID  速度PID</span>
+<span id="L261"><span class="lineNum">     261</span>                 :             :      * @param posPID  位置PID</span>
+<span id="L262"><span class="lineNum">     262</span>                 :             :      */</span>
+<span id="L263"><span class="lineNum">     263</span>                 :<span class="tlaGNC">           5 :     explicit MotionController(</span></span>
+<span id="L264"><span class="lineNum">     264</span>                 :             :         const PID&lt;VelocityType, OutputType&gt;&amp; velPID,</span>
+<span id="L265"><span class="lineNum">     265</span>                 :             :         const PID&lt;PositionType, VelocityType&gt;&amp; posPID = {})</span>
+<span id="L266"><span class="lineNum">     266</span>                 :<span class="tlaGNC">           5 :         : _velPID(velPID), _posPID(posPID) {}</span></span>
+<span id="L267"><span class="lineNum">     267</span>                 :             : </span>
+<span id="L268"><span class="lineNum">     268</span>                 :             :     /** @brief 速度PIDへの参照を返す */</span>
+<span id="L269"><span class="lineNum">     269</span>                 :<span class="tlaGNC">          17 :     PID&lt;VelocityType, OutputType&gt;&amp; velPID() noexcept { return _velPID; }</span></span>
+<span id="L270"><span class="lineNum">     270</span>                 :             :     /** @brief 位置PIDへの参照を返す */</span>
+<span id="L271"><span class="lineNum">     271</span>                 :<span class="tlaGNC">          18 :     PID&lt;PositionType, VelocityType&gt;&amp; posPID() noexcept { return _posPID; }</span></span>
+<span id="L272"><span class="lineNum">     272</span>                 :             : </span>
+<span id="L273"><span class="lineNum">     273</span>                 :<span class="tlaGNC">           7 :     OutputType calculateVelocity(VelocityType target, VelocityType velFb,</span></span>
+<span id="L274"><span class="lineNum">     274</span>                 :             :                                  float dt) {</span>
+<span id="L275"><span class="lineNum">     275</span>                 :<span class="tlaGNC">           7 :         return _velPID.calculate(target, velFb, dt);</span></span>
+<span id="L276"><span class="lineNum">     276</span>                 :             :     }</span>
+<span id="L277"><span class="lineNum">     277</span>                 :             : </span>
+<span id="L278"><span class="lineNum">     278</span>                 :             :     /**</span>
+<span id="L279"><span class="lineNum">     279</span>                 :             :      * @brief 位置カスケード制御(位置PID→速度PID)を 1 ステップ実行する</span>
+<span id="L280"><span class="lineNum">     280</span>                 :             :      * @param velFF 速度フィードフォワード。位置PID出力(velRef)に加算して速度PID目標に</span>
+<span id="L281"><span class="lineNum">     281</span>                 :             :      *              する。省略時は 0 で従来のカスケード挙動と一致する。</span>
+<span id="L282"><span class="lineNum">     282</span>                 :             :      * @details 和 velRef + velFF は速度PID内部で minTarget/maxTarget クランプされる。</span>
+<span id="L283"><span class="lineNum">     283</span>                 :             :      */</span>
+<span id="L284"><span class="lineNum">     284</span>                 :<span class="tlaGNC">         515 :     OutputType calculatePosition(PositionType target, VelocityType velFb,</span></span>
+<span id="L285"><span class="lineNum">     285</span>                 :             :                                  PositionType posFb, float dt,</span>
+<span id="L286"><span class="lineNum">     286</span>                 :             :                                  VelocityType velFF = {}) {</span>
+<span id="L287"><span class="lineNum">     287</span>                 :<span class="tlaGNC">         515 :         VelocityType velRef = _posPID.calculate(target, posFb, dt);</span></span>
+<span id="L288"><span class="lineNum">     288</span>                 :<span class="tlaGNC">         515 :         return _velPID.calculate(static_cast&lt;VelocityType&gt;(velRef + velFF),</span></span>
+<span id="L289"><span class="lineNum">     289</span>                 :<span class="tlaGNC">         515 :                                  velFb, dt);</span></span>
+<span id="L290"><span class="lineNum">     290</span>                 :             :     }</span>
+<span id="L291"><span class="lineNum">     291</span>                 :             : </span>
+<span id="L292"><span class="lineNum">     292</span>                 :<span class="tlaGNC">          18 :     void resetControllers() {</span></span>
+<span id="L293"><span class="lineNum">     293</span>                 :<span class="tlaGNC">          18 :         _velPID.reset();</span></span>
+<span id="L294"><span class="lineNum">     294</span>                 :<span class="tlaGNC">          18 :         _posPID.reset();</span></span>
+<span id="L295"><span class="lineNum">     295</span>                 :<span class="tlaGNC">          18 :     }</span></span>
+<span id="L296"><span class="lineNum">     296</span>                 :             : };</span>
+<span id="L297"><span class="lineNum">     297</span>                 :             : </span>
+<span id="L298"><span class="lineNum">     298</span>                 :             : // MotionController template arguments deducation</span>
+<span id="L299"><span class="lineNum">     299</span>                 :             : template &lt;class VelocityType, class PositionType, class OutputType&gt;</span>
+<span id="L300"><span class="lineNum">     300</span>                 :             : MotionController(const PID&lt;VelocityType, OutputType&gt;&amp;,</span>
+<span id="L301"><span class="lineNum">     301</span>                 :             :                  const PID&lt;PositionType, VelocityType&gt;&amp; = {})</span>
+<span id="L302"><span class="lineNum">     302</span>                 :             :     -&gt; MotionController&lt;VelocityType, PositionType, OutputType&gt;;</span>
+<span id="L303"><span class="lineNum">     303</span>                 :             : </span>
+<span id="L304"><span class="lineNum">     304</span>                 :             : // Motion</span>
+<span id="L305"><span class="lineNum">     305</span>                 :             : </span>
+<span id="L306"><span class="lineNum">     306</span>                 :             : template &lt;class VelocityType, class PositionType, class OutputType&gt;</span>
+<span id="L307"><span class="lineNum">     307</span>                 :             : class Motion {</span>
+<span id="L308"><span class="lineNum">     308</span>                 :             : private:</span>
+<span id="L309"><span class="lineNum">     309</span>                 :             :     MotionController&lt;VelocityType, PositionType, OutputType&gt; _motionController;</span>
+<span id="L310"><span class="lineNum">     310</span>                 :             :     MotionMode&lt;VelocityType&gt; _velMode;</span>
+<span id="L311"><span class="lineNum">     311</span>                 :             :     MotionMode&lt;PositionType&gt; _posMode;</span>
+<span id="L312"><span class="lineNum">     312</span>                 :             :     float _positionVelocityFeedforwardScale = 1.0f;</span>
+<span id="L313"><span class="lineNum">     313</span>                 :             : </span>
+<span id="L314"><span class="lineNum">     314</span>                 :             : public:</span>
+<span id="L315"><span class="lineNum">     315</span>                 :             :     /** @brief デフォルトコンストラクタ: ゲイン0・Normalモードで初期化 */</span>
+<span id="L316"><span class="lineNum">     316</span>                 :<span class="tlaGNC">           8 :     Motion() = default;</span></span>
+<span id="L317"><span class="lineNum">     317</span>                 :             : </span>
+<span id="L318"><span class="lineNum">     318</span>                 :             :     /**</span>
+<span id="L319"><span class="lineNum">     319</span>                 :             :      * @brief コンストラクタ</span>
+<span id="L320"><span class="lineNum">     320</span>                 :             :      * @param motionController コントローラ(velPID/posPIDを設定済みのもの)</span>
+<span id="L321"><span class="lineNum">     321</span>                 :             :      * @param velMode          速度プロファイルモード</span>
+<span id="L322"><span class="lineNum">     322</span>                 :             :      * @param posMode          位置プロファイルモード</span>
+<span id="L323"><span class="lineNum">     323</span>                 :             :      */</span>
+<span id="L324"><span class="lineNum">     324</span>                 :<span class="tlaGNC">           2 :     explicit Motion(const MotionController&lt;VelocityType, PositionType,</span></span>
+<span id="L325"><span class="lineNum">     325</span>                 :             :                                            OutputType&gt;&amp; motionController,</span>
+<span id="L326"><span class="lineNum">     326</span>                 :             :                     const MotionMode&lt;VelocityType&gt;&amp; velMode =</span>
+<span id="L327"><span class="lineNum">     327</span>                 :             :                         MotionMode&lt;VelocityType&gt;(ProfileType::Normal),</span>
+<span id="L328"><span class="lineNum">     328</span>                 :             :                     const MotionMode&lt;PositionType&gt;&amp; posMode =</span>
+<span id="L329"><span class="lineNum">     329</span>                 :             :                         MotionMode&lt;PositionType&gt;(ProfileType::Normal))</span>
+<span id="L330"><span class="lineNum">     330</span>                 :<span class="tlaGNC">           2 :         : _motionController(motionController), _velMode(velMode),</span></span>
+<span id="L331"><span class="lineNum">     331</span>                 :<span class="tlaGNC">           2 :           _posMode(posMode) {}</span></span>
+<span id="L332"><span class="lineNum">     332</span>                 :             : </span>
+<span id="L333"><span class="lineNum">     333</span>                 :             :     /** @brief 速度プロファイルのモードのみを設定する */</span>
+<span id="L334"><span class="lineNum">     334</span>                 :             :     void setVelocityMode(ProfileType mode) noexcept { _velMode.setMode(mode); }</span>
+<span id="L335"><span class="lineNum">     335</span>                 :             : </span>
+<span id="L336"><span class="lineNum">     336</span>                 :             :     /** @brief 位置プロファイルのモードのみを設定する */</span>
+<span id="L337"><span class="lineNum">     337</span>                 :<span class="tlaGNC">           6 :     void setPositionMode(ProfileType mode) noexcept { _posMode.setMode(mode); }</span></span>
+<span id="L338"><span class="lineNum">     338</span>                 :             : </span>
+<span id="L339"><span class="lineNum">     339</span>                 :             :     /**</span>
+<span id="L340"><span class="lineNum">     340</span>                 :             :      * @brief 速度・位置の両プロファイルに同じモードを一括設定するユーティリティ</span>
+<span id="L341"><span class="lineNum">     341</span>                 :             :      * @note 速度と位置で異なるモードを使う場合(例: 位置=Trapezoid、速度=Normal)は</span>
+<span id="L342"><span class="lineNum">     342</span>                 :             :      *       setVelocityMode() / setPositionMode() を個別に呼ぶこと。</span>
+<span id="L343"><span class="lineNum">     343</span>                 :             :      */</span>
+<span id="L344"><span class="lineNum">     344</span>                 :<span class="tlaGNC">           2 :     void setMode(ProfileType mode) noexcept {</span></span>
+<span id="L345"><span class="lineNum">     345</span>                 :<span class="tlaGNC">           2 :         _velMode.setMode(mode);</span></span>
+<span id="L346"><span class="lineNum">     346</span>                 :<span class="tlaGNC">           2 :         _posMode.setMode(mode);</span></span>
+<span id="L347"><span class="lineNum">     347</span>                 :<span class="tlaGNC">           2 :     }</span></span>
+<span id="L348"><span class="lineNum">     348</span>                 :             : </span>
+<span id="L349"><span class="lineNum">     349</span>                 :             :     /**</span>
+<span id="L350"><span class="lineNum">     350</span>                 :             :      * @brief 速度プロファイルの制限値を設定する</span>
+<span id="L351"><span class="lineNum">     351</span>                 :             :      * @param maxVel  最大速度</span>
+<span id="L352"><span class="lineNum">     352</span>                 :             :      * @param maxAcc  最大加速度</span>
+<span id="L353"><span class="lineNum">     353</span>                 :             :      * @param maxJerk 最大ジャーク(SCurve用、省略可)</span>
+<span id="L354"><span class="lineNum">     354</span>                 :             :      */</span>
+<span id="L355"><span class="lineNum">     355</span>                 :             :     void setVelocityProfileLimits(float maxVel, float maxAcc,</span>
+<span id="L356"><span class="lineNum">     356</span>                 :             :                                   float maxJerk = 0.0f) noexcept {</span>
+<span id="L357"><span class="lineNum">     357</span>                 :             :         _velMode.setMaxVelocity(maxVel);</span>
+<span id="L358"><span class="lineNum">     358</span>                 :             :         _velMode.setMaxAcceleration(maxAcc);</span>
+<span id="L359"><span class="lineNum">     359</span>                 :             :         _velMode.setMaxJerk(maxJerk);</span>
+<span id="L360"><span class="lineNum">     360</span>                 :             :     }</span>
+<span id="L361"><span class="lineNum">     361</span>                 :             : </span>
+<span id="L362"><span class="lineNum">     362</span>                 :             :     /**</span>
+<span id="L363"><span class="lineNum">     363</span>                 :             :      * @brief 位置プロファイルの制限値を設定する</span>
+<span id="L364"><span class="lineNum">     364</span>                 :             :      * @param maxVel  最大速度</span>
+<span id="L365"><span class="lineNum">     365</span>                 :             :      * @param maxAcc  最大加速度</span>
+<span id="L366"><span class="lineNum">     366</span>                 :             :      * @param maxJerk 最大ジャーク(SCurve用、省略可)</span>
+<span id="L367"><span class="lineNum">     367</span>                 :             :      */</span>
+<span id="L368"><span class="lineNum">     368</span>                 :<span class="tlaGNC">           6 :     void setPositionProfileLimits(float maxVel, float maxAcc,</span></span>
+<span id="L369"><span class="lineNum">     369</span>                 :             :                                   float maxJerk = 0.0f) noexcept {</span>
+<span id="L370"><span class="lineNum">     370</span>                 :<span class="tlaGNC">           6 :         _posMode.setMaxVelocity(maxVel);</span></span>
+<span id="L371"><span class="lineNum">     371</span>                 :<span class="tlaGNC">           6 :         _posMode.setMaxAcceleration(maxAcc);</span></span>
+<span id="L372"><span class="lineNum">     372</span>                 :<span class="tlaGNC">           6 :         _posMode.setMaxJerk(maxJerk);</span></span>
+<span id="L373"><span class="lineNum">     373</span>                 :<span class="tlaGNC">           6 :     }</span></span>
+<span id="L374"><span class="lineNum">     374</span>                 :             : </span>
+<span id="L375"><span class="lineNum">     375</span>                 :             :     /**</span>
+<span id="L376"><span class="lineNum">     376</span>                 :             :      * @brief 位置プロファイル速度を速度PIDの単位へ変換する係数を設定する</span>
+<span id="L377"><span class="lineNum">     377</span>                 :             :      * @details 例えば位置が degree、速度PIDが RPM の場合は 1/6 を設定する。</span>
+<span id="L378"><span class="lineNum">     378</span>                 :             :      *          既定値は 1 で、両者の単位が同じ場合は変換しない。</span>
+<span id="L379"><span class="lineNum">     379</span>                 :             :      */</span>
+<span id="L380"><span class="lineNum">     380</span>                 :<span class="tlaGNC">           1 :     void setPositionVelocityFeedforwardScale(float scale) noexcept {</span></span>
+<span id="L381"><span class="lineNum">     381</span>                 :<span class="tlaGNC">           1 :         _positionVelocityFeedforwardScale = scale;</span></span>
+<span id="L382"><span class="lineNum">     382</span>                 :<span class="tlaGNC">           1 :     }</span></span>
+<span id="L383"><span class="lineNum">     383</span>                 :             : </span>
+<span id="L384"><span class="lineNum">     384</span>                 :             :     /** @brief MotionControllerへの参照を返す */</span>
+<span id="L385"><span class="lineNum">     385</span>                 :             :     MotionController&lt;VelocityType, PositionType, OutputType&gt;&amp;</span>
+<span id="L386"><span class="lineNum">     386</span>                 :<span class="tlaGNC">          16 :     motionController() noexcept {</span></span>
+<span id="L387"><span class="lineNum">     387</span>                 :<span class="tlaGNC">          16 :         return _motionController;</span></span>
+<span id="L388"><span class="lineNum">     388</span>                 :             :     }</span>
+<span id="L389"><span class="lineNum">     389</span>                 :             : </span>
+<span id="L390"><span class="lineNum">     390</span>                 :<span class="tlaGNC">           2 :     void resetVelocityProfile(VelocityType v) { _velMode.reset(v); }</span></span>
+<span id="L391"><span class="lineNum">     391</span>                 :<span class="tlaGNC">           8 :     void resetPositionProfile(PositionType p) { _posMode.reset(p); }</span></span>
+<span id="L392"><span class="lineNum">     392</span>                 :<span class="tlaGNC">           7 :     void resetControllers() { _motionController.resetControllers(); }</span></span>
+<span id="L393"><span class="lineNum">     393</span>                 :             : </span>
+<span id="L394"><span class="lineNum">     394</span>                 :<span class="tlaGNC">           1 :     OutputType calculateVelocity(VelocityType target, VelocityType velFb,</span></span>
+<span id="L395"><span class="lineNum">     395</span>                 :             :                                  float dt) {</span>
+<span id="L396"><span class="lineNum">     396</span>                 :<span class="tlaGNC">           1 :         return _motionController.calculateVelocity(</span></span>
+<span id="L397"><span class="lineNum">     397</span>                 :<span class="tlaGNC">           1 :             _velMode.calculate(target, dt), velFb, dt);</span></span>
+<span id="L398"><span class="lineNum">     398</span>                 :             :     }</span>
+<span id="L399"><span class="lineNum">     399</span>                 :             : </span>
+<span id="L400"><span class="lineNum">     400</span>                 :<span class="tlaGNC">         505 :     OutputType calculatePosition(PositionType target, VelocityType velFb,</span></span>
+<span id="L401"><span class="lineNum">     401</span>                 :             :                                  PositionType posFb, float dt) {</span>
+<span id="L402"><span class="lineNum">     402</span>                 :             :         // calculate() を先に進めてから velocity() を読む(当該周期の意図速度を</span>
+<span id="L403"><span class="lineNum">     403</span>                 :             :         // 速度フィードフォワードとして渡す。1周期遅れないこと)。</span>
+<span id="L404"><span class="lineNum">     404</span>                 :<span class="tlaGNC">         505 :         const PositionType posRef = _posMode.calculate(target, dt);</span></span>
+<span id="L405"><span class="lineNum">     405</span>                 :<span class="tlaGNC">         505 :         const VelocityType velFF = static_cast&lt;VelocityType&gt;(</span></span>
+<span id="L406"><span class="lineNum">     406</span>                 :<span class="tlaGNC">         505 :             _posMode.velocity() * _positionVelocityFeedforwardScale);</span></span>
+<span id="L407"><span class="lineNum">     407</span>                 :<span class="tlaGNC">         505 :         return _motionController.calculatePosition(posRef, velFb, posFb, dt,</span></span>
+<span id="L408"><span class="lineNum">     408</span>                 :<span class="tlaGNC">         505 :                                                    velFF);</span></span>
+<span id="L409"><span class="lineNum">     409</span>                 :             :     }</span>
+<span id="L410"><span class="lineNum">     410</span>                 :             : };</span>
+<span id="L411"><span class="lineNum">     411</span>                 :             : </span>
+<span id="L412"><span class="lineNum">     412</span>                 :             : // Motion template arguments deducation</span>
+<span id="L413"><span class="lineNum">     413</span>                 :             : template &lt;class VelocityType, class PositionType, class OutputType&gt;</span>
+<span id="L414"><span class="lineNum">     414</span>                 :             : Motion(const MotionController&lt;VelocityType, PositionType, OutputType&gt;&amp;,</span>
+<span id="L415"><span class="lineNum">     415</span>                 :             :        const MotionMode&lt;VelocityType&gt;&amp; =</span>
+<span id="L416"><span class="lineNum">     416</span>                 :             :            MotionMode&lt;VelocityType&gt;(ProfileType::Normal),</span>
+<span id="L417"><span class="lineNum">     417</span>                 :             :        const MotionMode&lt;PositionType&gt;&amp; =</span>
+<span id="L418"><span class="lineNum">     418</span>                 :             :            MotionMode&lt;PositionType&gt;(ProfileType::Normal))</span>
+<span id="L419"><span class="lineNum">     419</span>                 :             :     -&gt; Motion&lt;VelocityType, PositionType, OutputType&gt;;</span>
+        </pre>
+              </td>
+            </tr>
+          </table>
+          <br>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+            <tr><td class="versionInfo">Generated by: <a href="https://github.com//linux-test-project/lcov" target="_parent">LCOV version 2.0-1</a></td></tr>
+          </table>
+          <br>
+
+</body>
+</html>
