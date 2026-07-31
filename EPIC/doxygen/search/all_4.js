@@ -1,8 +1,8 @@
 var searchData=
 [
   ['data_0',['DATA',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216ae44f9e348e41cb272efa87387728571b',1,'proto_can']]],
-  ['data_1',['Data',['../d0/d8c/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SOLENOID_01_4.html#afb525ed3eede172e67d4e23c2f01bf35',1,'proto_can::DeviceSchema&lt; DeviceType::SOLENOID &gt;::Data()'],['../d2/de2/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html#adcfe8ed180099d2c2c7dc6c6c6371829',1,'proto_can::DeviceSchema&lt; DeviceType::MOCK_MOTOR &gt;::Data()'],['../dd/d4e/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html#afeddb5b48898fc5c3ffd4bf4c132eb84',1,'proto_can::DeviceSchema&lt; DeviceType::SENSOR &gt;::Data()'],['../d5/d25/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html#aea9575592e9e84a0b1dcb3b6aeeee21c',1,'proto_can::DeviceSchema&lt; DeviceType::MOTOR &gt;::Data()']]],
-  ['data_2',['data',['../df/d58/structproto__can_1_1RawMessage.html#a3cbac53a758eb77843ebd186d676c949',1,'proto_can::RawMessage::data()'],['../d2/d4a/structCanSystem_1_1CANMessage.html#a0f7c21c4869b624eff2b987224332f37',1,'CanSystem::CANMessage::data()']]],
+  ['data_1',['data',['../df/d58/structproto__can_1_1RawMessage.html#a3cbac53a758eb77843ebd186d676c949',1,'proto_can::RawMessage::data()'],['../d2/d4a/structCanSystem_1_1CANMessage.html#a0f7c21c4869b624eff2b987224332f37',1,'CanSystem::CANMessage::data()']]],
+  ['data_2',['Data',['../d0/d8c/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SOLENOID_01_4.html#afb525ed3eede172e67d4e23c2f01bf35',1,'proto_can::DeviceSchema&lt; DeviceType::SOLENOID &gt;::Data()'],['../d2/de2/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html#adcfe8ed180099d2c2c7dc6c6c6371829',1,'proto_can::DeviceSchema&lt; DeviceType::MOCK_MOTOR &gt;::Data()'],['../dd/d4e/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html#afeddb5b48898fc5c3ffd4bf4c132eb84',1,'proto_can::DeviceSchema&lt; DeviceType::SENSOR &gt;::Data()'],['../d5/d25/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html#aea9575592e9e84a0b1dcb3b6aeeee21c',1,'proto_can::DeviceSchema&lt; DeviceType::MOTOR &gt;::Data()']]],
   ['data_5fprotocol_5ferror_3',['data_protocol_error',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#afe50bdd20e8bc35232df277e85baa5e0',1,'CanSystem::SoftwareErrorFlags']]],
   ['data_5ftiming_4',['data_timing',['../d7/d93/structCanSystem_1_1CANConfig.html#ab8234f2b46b5447b828d48c5e0fd79e3',1,'CanSystem::CANConfig']]],
   ['debug_5',['Debug',['../d2/dc4/namespaceCanSystem.html#a59951521d59b8c6cf0ea429dcc6707dfaa603905470e2a5b8c13e96b579ef0dba',1,'CanSystem']]],
@@ -24,14 +24,16 @@ var searchData=
   ['deviceschema_3c_20devicetype_3a_3asensor_20_3e_21',['DeviceSchema&lt; DeviceType::SENSOR &gt;',['../dd/d4e/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html',1,'proto_can']]],
   ['deviceschema_3c_20devicetype_3a_3asolenoid_20_3e_22',['DeviceSchema&lt; DeviceType::SOLENOID &gt;',['../d0/d8c/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SOLENOID_01_4.html',1,'proto_can']]],
   ['devicetype_23',['DeviceType',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983',1,'proto_can']]],
-  ['direction_24',['direction',['../d4/d48/classAMT10.html#aaee792f59d9904bd1709e29f9cfbfaf7',1,'AMT10']]],
-  ['dispatch_25',['dispatch',['../dd/d1a/classUartManager.html#aab2ce645a9f0b439c6b245c828aa678b',1,'UartManager']]],
-  ['displaydebuginfo_26',['displayDebugInfo',['../da/d4c/classMotoron_1_1Master.html#afa69381d195401cb3e4e993f304f8efc',1,'Motoron::Master::displayDebugInfo()'],['../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31',1,'DJI::ESC::displayDebugInfo()']]],
-  ['dji_27',['DJI',['../da/db0/namespaceDJI.html',1,'']]],
-  ['dji_2eh_28',['DJI.h',['../dd/d00/DJI_8h.html',1,'']]],
-  ['dnumber_29',['dNumber',['../d9/d34/classproto__can_1_1MessageID.html#a346d8f9cf4f469e1285f51cfc721122d',1,'proto_can::MessageID']]],
-  ['down_30',['DOWN',['../d6/de5/structPS5_1_1Button.html#a544b6234db8f648e66766611dd14a361',1,'PS5::Button']]],
-  ['dtype_31',['dType',['../d9/d34/classproto__can_1_1MessageID.html#a65e6f143fa3658c51cd7b5ffd3598e72',1,'proto_can::MessageID']]],
-  ['dualsense_32',['DualSense',['../d7/db3/classPS5_1_1DualSense.html',1,'PS5']]],
-  ['dualsense_2eh_33',['Dualsense.h',['../d9/dc2/Dualsense_8h.html',1,'']]]
+  ['dgain_24',['dGain',['../d4/d2c/structPIDGain.html#a8e0eeb19b768bd635b2d353725c06af4',1,'PIDGain']]],
+  ['direction_25',['direction',['../d4/d48/classAMT10.html#aaee792f59d9904bd1709e29f9cfbfaf7',1,'AMT10']]],
+  ['dispatch_26',['dispatch',['../dd/d1a/classUartManager.html#aab2ce645a9f0b439c6b245c828aa678b',1,'UartManager']]],
+  ['displaydebuginfo_27',['displayDebugInfo',['../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31',1,'DJI::ESC::displayDebugInfo()'],['../da/d4c/classMotoron_1_1Master.html#afa69381d195401cb3e4e993f304f8efc',1,'Motoron::Master::displayDebugInfo()']]],
+  ['dji_28',['DJI',['../da/db0/namespaceDJI.html',1,'']]],
+  ['dji_2eh_29',['DJI.h',['../dd/d00/DJI_8h.html',1,'']]],
+  ['dnumber_30',['dNumber',['../d9/d34/classproto__can_1_1MessageID.html#a346d8f9cf4f469e1285f51cfc721122d',1,'proto_can::MessageID']]],
+  ['doutput_31',['dOutput',['../d8/da9/classPID.html#a4daac8462c04cd7485f8578678d91e2c',1,'PID']]],
+  ['down_32',['DOWN',['../d6/de5/structPS5_1_1Button.html#a544b6234db8f648e66766611dd14a361',1,'PS5::Button']]],
+  ['dtype_33',['dType',['../d9/d34/classproto__can_1_1MessageID.html#a65e6f143fa3658c51cd7b5ffd3598e72',1,'proto_can::MessageID']]],
+  ['dualsense_34',['DualSense',['../d7/db3/classPS5_1_1DualSense.html#aa3446bdd9fa9abcbe4c09b319ecd4cf6',1,'PS5::DualSense::DualSense(UartManager &amp;uart)'],['../d7/db3/classPS5_1_1DualSense.html#a68e2328c5b3d513812af143b4ea50e04',1,'PS5::DualSense::DualSense(const DualSense &amp;)=delete'],['../d7/db3/classPS5_1_1DualSense.html',1,'PS5::DualSense']]],
+  ['dualsense_2eh_35',['Dualsense.h',['../d9/dc2/Dualsense_8h.html',1,'']]]
 ];

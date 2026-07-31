@@ -104,6 +104,13 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa3446bdd9fa9abcbe4c09b319ecd4cf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#aa3446bdd9fa9abcbe4c09b319ecd4cf6">DualSense</a> (<a class="el" href="../../dd/d1a/classUartManager.html">UartManager</a> &amp;uart)</td></tr>
+<tr class="memdesc:aa3446bdd9fa9abcbe4c09b319ecd4cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSenseを構築します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#aa3446bdd9fa9abcbe4c09b319ecd4cf6">[詳解]</a><br /></td></tr>
+<tr class="separator:aa3446bdd9fa9abcbe4c09b319ecd4cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e2328c5b3d513812af143b4ea50e04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a68e2328c5b3d513812af143b4ea50e04">DualSense</a> (const <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp;)=delete</td></tr>
+<tr class="separator:a68e2328c5b3d513812af143b4ea50e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4366121ebabe5571f816abe2f4b648f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#ac4366121ebabe5571f816abe2f4b648f">operator=</a> (const <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp;)=delete</td></tr>
+<tr class="separator:ac4366121ebabe5571f816abe2f4b648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06f95add438293d4af09fa1bd5df3286"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de5/structPS5_1_1Button.html">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286">get</a> ()</td></tr>
 <tr class="memdesc:a06f95add438293d4af09fa1bd5df3286"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のコントローラーの入力情報をButton構造体で返します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286">[詳解]</a><br /></td></tr>
 <tr class="separator:a06f95add438293d4af09fa1bd5df3286"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,18 +120,78 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
 <tr class="memitem:a01c0ef79500d1b0e53b75fc43abf69ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a01c0ef79500d1b0e53b75fc43abf69ef">debug_ButtonPrint</a> ()</td></tr>
 <tr class="memdesc:a01c0ef79500d1b0e53b75fc43abf69ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のボタンの状況をprintfで出力する  <a href="../../d7/db3/classPS5_1_1DualSense.html#a01c0ef79500d1b0e53b75fc43abf69ef">[詳解]</a><br /></td></tr>
 <tr class="separator:a01c0ef79500d1b0e53b75fc43abf69ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcfe47cebd1189824530ee36f6ab5b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#adcfe47cebd1189824530ee36f6ab5b76">send_telem</a> ()</td></tr>
-<tr class="separator:adcfe47cebd1189824530ee36f6ab5b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLを使った920MHz通信でDualSenseとの接続を実現するクラスです。 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">(im920sl)</td><td>IM920sL::ExtensionUnitを参照渡しします。 </td></tr>
+    <tr><td class="paramname">uart</td><td>テレメトリ送受信に使うUartManagerを参照渡しします（TelemControllerが受信コールバックを登録します）。 </td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">関数詳解</h2>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aa3446bdd9fa9abcbe4c09b319ecd4cf6" name="aa3446bdd9fa9abcbe4c09b319ecd4cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3446bdd9fa9abcbe4c09b319ecd4cf6">&#9670;&#160;</a></span>DualSense() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PS5::DualSense::DualSense </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d1a/classUartManager.html">UartManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>uart</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DualSenseを構築します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uart</td><td>テレメトリ送受信に使うUartManagerを参照渡しします。</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>メンバtelem_PS5ctrlをこのUartManagerで初期化します。TelemControllerは 構築時にUARTへthis参照の受信コールバックを登録するため、コピー/ムーブすると ダングリングします。よってDualSenseはコピー/ムーブ禁止（単一インスタンス運用）です。 渡すUartManagerはDualSenseより長生きし、構築前に初期化済みである必要があります。 </p>
+
+</div>
+</div>
+<a id="a68e2328c5b3d513812af143b4ea50e04" name="a68e2328c5b3d513812af143b4ea50e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e2328c5b3d513812af143b4ea50e04">&#9670;&#160;</a></span>DualSense() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PS5::DualSense::DualSense </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
 <a id="a01c0ef79500d1b0e53b75fc43abf69ef" name="a01c0ef79500d1b0e53b75fc43abf69ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01c0ef79500d1b0e53b75fc43abf69ef">&#9670;&#160;</a></span>debug_ButtonPrint()</h2>
 
@@ -181,6 +248,32 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
 
 </div>
 </div>
+<a id="ac4366121ebabe5571f816abe2f4b648f" name="ac4366121ebabe5571f816abe2f4b648f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4366121ebabe5571f816abe2f4b648f">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp; PS5::DualSense::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9ab094ac26db85dbfbc39fea01c4d618" name="a9ab094ac26db85dbfbc39fea01c4d618"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ab094ac26db85dbfbc39fea01c4d618">&#9670;&#160;</a></span>RxCpltCallbac()</h2>
 
@@ -212,40 +305,6 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="adcfe47cebd1189824530ee36f6ab5b76" name="adcfe47cebd1189824530ee36f6ab5b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcfe47cebd1189824530ee36f6ab5b76">&#9670;&#160;</a></span>send_telem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PS5::DualSense::send_telem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d7/db3/classPS5_1_1DualSense_adcfe47cebd1189824530ee36f6ab5b76_cgraph.png" border="0" usemap="#ad7/db3/classPS5_1_1DualSense_adcfe47cebd1189824530ee36f6ab5b76_cgraph" alt=""/></div>
-<map name="ad7/db3/classPS5_1_1DualSense_adcfe47cebd1189824530ee36f6ab5b76_cgraph" id="ad7/db3/classPS5_1_1DualSense_adcfe47cebd1189824530ee36f6ab5b76_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,156,45"/>
-<area shape="rect" href="../../dd/d8a/classTelemController.html#a9740aeb563c3c976dd08447e7bde4ab9" title="ユーザーが組み立てた TelemetryT を送信する" alt="" coords="204,13,351,38"/>
-</map>
-</div>
 
 </div>
 </div>

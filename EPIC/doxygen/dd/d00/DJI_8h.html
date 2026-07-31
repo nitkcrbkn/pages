@@ -103,31 +103,39 @@ $(document).ready(function(){initNavTree('dd/d00/DJI_8h.html','../../'); initRes
 <p>ESC class-ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する  
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/dbe/stdRBKN_8h.html">logic/stdRBKN.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/d9b/CanInterfaces_8hpp.html">CanSystem/core/CanInterfaces.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d60/utils_8h.html">platform/utils.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 DJI.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d2a/DJI_8h__incl.png" border="0" usemap="#amodules_2logic_2DJI_8h" alt=""/></div>
 <map name="amodules_2logic_2DJI_8h" id="amodules_2logic_2DJI_8h">
-<area shape="rect" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="219,5,355,31"/>
+<area shape="rect" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="291,5,427,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,65,104"/>
-<area shape="rect" title=" " alt="" coords="90,79,149,104"/>
-<area shape="rect" title=" " alt="" coords="379,152,457,177"/>
-<area shape="rect" title=" " alt="" coords="317,79,367,104"/>
-<area shape="rect" href="../../d6/dbe/stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="173,79,292,104"/>
-<area shape="rect" href="../../df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="442,79,669,104"/>
-<area shape="rect" title=" " alt="" coords="203,152,262,177"/>
-<area shape="rect" title=" " alt="" coords="510,152,571,177"/>
-<area shape="rect" title=" " alt="" coords="595,152,657,177"/>
+<area shape="rect" title=" " alt="" coords="235,152,294,177"/>
+<area shape="rect" title=" " alt="" coords="233,79,291,104"/>
+<area shape="rect" title=" " alt="" coords="403,152,481,177"/>
+<area shape="rect" title=" " alt="" coords="366,79,417,104"/>
+<area shape="rect" href="../../d6/dbe/stdRBKN_8h.html" title="メカナムホイールとオムニの制御関数とPID制御アルゴリズムを実装" alt="" coords="89,79,208,104"/>
+<area shape="rect" href="../../df/d9b/CanInterfaces_8hpp.html" title=" " alt="" coords="491,79,718,104"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="763,79,870,104"/>
+<area shape="rect" title=" " alt="" coords="591,152,685,177"/>
+<area shape="rect" title=" " alt="" coords="709,152,770,177"/>
+<area shape="rect" title=" " alt="" coords="506,152,567,177"/>
+<area shape="rect" title=" " alt="" coords="884,152,944,177"/>
+<area shape="rect" title=" " alt="" coords="795,152,860,177"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d04/classDJI_1_1CriticalSection.html">DJI::CriticalSection</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df4/structDJI_1_1ESCData.html">DJI::ESCData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ESCから受信するデータを格納するために作られた構造体  <a href="../../d2/df4/structDJI_1_1ESCData.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +191,10 @@ DJI.h の依存先関係図:</div>
 <tr class="separator:ac4569844d2ef716b3d18e62f8d421d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817987fd262e21d6c754ed09286fe16d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a817987fd262e21d6c754ed09286fe16d">C620_MIN_ANGLE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a817987fd262e21d6c754ed09286fe16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ae6cb4a526db306d19a0f05056c3fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a23ae6cb4a526db306d19a0f05056c3fc">ROBOMAS_DEFAULT_CONTROL_TIMEOUT_MS</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a23ae6cb4a526db306d19a0f05056c3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ab284b5d10c5719e10d5bb91b94978"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d00/DJI_8h.html#a23ab284b5d10c5719e10d5bb91b94978">ROBOMAS_DEFAULT_FEEDBACK_TIMEOUT_MS</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a23ab284b5d10c5719e10d5bb91b94978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
@@ -191,14 +203,10 @@ DJI.h の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 列挙型</h2></td></tr>
-<tr class="memitem:a69284ac5817deab119f96c3fb6152c5c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5c">DJI::MotorState</a> { <br />
-&#160;&#160;<a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca95b19f7739b0b7ea7d6b07586be54f36">DJI::Init</a>
+<tr class="memitem:a69284ac5817deab119f96c3fb6152c5c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5c">DJI::MotorState</a> { <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca95b19f7739b0b7ea7d6b07586be54f36">DJI::Init</a>
 , <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca5bda814c4aedb126839228f1a3d92f09">DJI::Running</a>
 , <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cac23e2b09ebe6bf4cb5e2a9abe85c0be2">DJI::Stopped</a>
 , <a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cab6809b85aeee44b9074843bdef4b9553">DJI::SetCurrentError</a>
-, <br />
-&#160;&#160;<a class="el" href="../../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca529abae0d19eeb3cd2a0467560e9be7f">DJI::AdjustedCurrent</a>
-<br />
  }</td></tr>
 <tr class="separator:a69284ac5817deab119f96c3fb6152c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -436,6 +444,34 @@ DJI.h の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p>M3508の速度の最小値 </p>
+
+</div>
+</div>
+<a id="a23ae6cb4a526db306d19a0f05056c3fc" name="a23ae6cb4a526db306d19a0f05056c3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ae6cb4a526db306d19a0f05056c3fc">&#9670;&#160;</a></span>ROBOMAS_DEFAULT_CONTROL_TIMEOUT_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROBOMAS_DEFAULT_CONTROL_TIMEOUT_MS&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23ab284b5d10c5719e10d5bb91b94978" name="a23ab284b5d10c5719e10d5bb91b94978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ab284b5d10c5719e10d5bb91b94978">&#9670;&#160;</a></span>ROBOMAS_DEFAULT_FEEDBACK_TIMEOUT_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROBOMAS_DEFAULT_FEEDBACK_TIMEOUT_MS&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

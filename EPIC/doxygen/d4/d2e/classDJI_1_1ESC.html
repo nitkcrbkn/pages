@@ -121,8 +121,20 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 <tr class="memitem:a43db472f35d4d8838fb54272206dd771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/df4/structDJI_1_1ESCData.html">ESCData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771">get</a> (int motorNumber)</td></tr>
 <tr class="memdesc:a43db472f35d4d8838fb54272206dd771"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したモーターからの情報を格納した構造体を返す。  <a href="../../d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771">[詳解]</a><br /></td></tr>
 <tr class="separator:a43db472f35d4d8838fb54272206dd771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad317d76968041b7b2ff8464fc58f7895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895">setCurrentLimit</a> (int motorNumber, int minMa, int maxMa)</td></tr>
+<tr class="memdesc:ad317d76968041b7b2ff8464fc58f7895"><td class="mdescLeft">&#160;</td><td class="mdescRight">電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。  <a href="../../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895">[詳解]</a><br /></td></tr>
+<tr class="separator:ad317d76968041b7b2ff8464fc58f7895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d02dda1294dbca760e13bb8da91dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd">setTimeout</a> (int motorNumber, uint32_t feedbackTo_ms)</td></tr>
+<tr class="memdesc:aa2d02dda1294dbca760e13bb8da91dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィードバックタイムアウトを設定 (0で無効、デフォルト無効)  <a href="../../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd">[詳解]</a><br /></td></tr>
+<tr class="separator:aa2d02dda1294dbca760e13bb8da91dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ed2677d59d8e86d5265aaee949308d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#a28ed2677d59d8e86d5265aaee949308d">resetZeroPosition</a> (int motorNumber)</td></tr>
+<tr class="memdesc:a28ed2677d59d8e86d5265aaee949308d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の角度を「ゼロ位置」として再定義  <a href="../../d4/d2e/classDJI_1_1ESC.html#a28ed2677d59d8e86d5265aaee949308d">[詳解]</a><br /></td></tr>
+<tr class="separator:a28ed2677d59d8e86d5265aaee949308d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8">getPosition</a> (int motorNumber) const</td></tr>
+<tr class="memdesc:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">多回転を含む現在のモーター軸角度 [deg]  <a href="../../d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8">[詳解]</a><br /></td></tr>
+<tr class="separator:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af488713d799bed458d1cf011303dda31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31">displayDebugInfo</a> ()</td></tr>
-<tr class="memdesc:af488713d799bed458d1cf011303dda31"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したモーターからの情報をprotobuffで返す  <a href="../../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31">[詳解]</a><br /></td></tr>
+<tr class="memdesc:af488713d799bed458d1cf011303dda31"><td class="mdescLeft">&#160;</td><td class="mdescRight">全チャンネルのデバッグ情報を表示する関数  <a href="../../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31">[詳解]</a><br /></td></tr>
 <tr class="separator:af488713d799bed458d1cf011303dda31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -186,22 +198,14 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 </table>
 </div><div class="memdoc">
 
-<p>指定したモーターからの情報をprotobuffで返す </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">motorNumber</td><td>モーター番号(int) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>robot::DJI</dd></dl>
-<p>全チャンネルのデバッグ情報を表示する関数</p>
+<p>全チャンネルのデバッグ情報を表示する関数 </p>
 <p >CH_ROBOMAS, CH_ROBOMAS_TX, CH_ROBOMAS_RXの情報を一括表示 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d2e/classDJI_1_1ESC_af488713d799bed458d1cf011303dda31_cgraph.png" border="0" usemap="#ad4/d2e/classDJI_1_1ESC_af488713d799bed458d1cf011303dda31_cgraph" alt=""/></div>
 <map name="ad4/d2e/classDJI_1_1ESC_af488713d799bed458d1cf011303dda31_cgraph" id="ad4/d2e/classDJI_1_1ESC_af488713d799bed458d1cf011303dda31_cgraph">
-<area shape="rect" title="指定したモーターからの情報をprotobuffで返す" alt="" coords="5,5,184,31"/>
+<area shape="rect" title="全チャンネルのデバッグ情報を表示する関数" alt="" coords="5,5,184,31"/>
 <area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="232,5,284,31"/>
 </map>
 </div>
@@ -240,6 +244,34 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd><a class="el" href="../../d2/df4/structDJI_1_1ESCData.html" title="ESCから受信するデータを格納するために作られた構造体">ESCData</a> ESCData型構造体 </dd></dl>
+
+</div>
+</div>
+<a id="aae29a396b71bf9cbf1cb2a659e37f0e8" name="aae29a396b71bf9cbf1cb2a659e37f0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae29a396b71bf9cbf1cb2a659e37f0e8">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DJI::ESC::getPosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>多回転を含む現在のモーター軸角度 [deg] </p>
 
 </div>
 </div>
@@ -366,6 +398,34 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 
 </div>
 </div>
+<a id="a28ed2677d59d8e86d5265aaee949308d" name="a28ed2677d59d8e86d5265aaee949308d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ed2677d59d8e86d5265aaee949308d">&#9670;&#160;</a></span>resetZeroPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::ESC::resetZeroPosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の角度を「ゼロ位置」として再定義 </p>
+
+</div>
+</div>
 <a id="a7a09571eedd927b4c66f59873571e689" name="a7a09571eedd927b4c66f59873571e689"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a09571eedd927b4c66f59873571e689">&#9670;&#160;</a></span>sendCurrent()</h2>
 
@@ -396,8 +456,9 @@ false </dd></dl>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d2e/classDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_cgraph.png" border="0" usemap="#ad4/d2e/classDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_cgraph" alt=""/></div>
 <map name="ad4/d2e/classDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_cgraph" id="ad4/d2e/classDJI_1_1ESC_a7a09571eedd927b4c66f59873571e689_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,156,38"/>
-<area shape="rect" href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="204,5,381,45"/>
+<area shape="rect" title=" " alt="" coords="5,35,156,60"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="267,5,319,31"/>
+<area shape="rect" href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="204,55,381,95"/>
 </map>
 </div>
 
@@ -451,6 +512,99 @@ false </dd></dl>
 <dl class="section return"><dt>戻り値</dt><dd>bool true / false </dd></dl>
 </li>
 </ul>
+
+</div>
+</div>
+<a id="ad317d76968041b7b2ff8464fc58f7895" name="ad317d76968041b7b2ff8464fc58f7895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad317d76968041b7b2ff8464fc58f7895">&#9670;&#160;</a></span>setCurrentLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::ESC::setCurrentLimit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minMa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxMa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。 </p>
+<p >ハードウェア上下限(C610/C620の物理限界)を超える値は無視される。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph.png" border="0" usemap="#ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph" alt=""/></div>
+<map name="ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph" id="ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph">
+<area shape="rect" title="電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。" alt="" coords="5,5,175,31"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55" title=" " alt="" coords="223,5,297,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2d02dda1294dbca760e13bb8da91dbd" name="aa2d02dda1294dbca760e13bb8da91dbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d02dda1294dbca760e13bb8da91dbd">&#9670;&#160;</a></span>setTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::ESC::setTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>feedbackTo_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>フィードバックタイムアウトを設定 (0で無効、デフォルト無効) </p>
+<p >feedbackTo_ms: 最後のCAN受信から経過したら停止 + 多回転をリセット。 0を指定すると無効(タイムアウトしない)。 </p>
 
 </div>
 </div>

@@ -1,4 +1,5 @@
 <map id="DJI::ESC::sendCurrent" name="DJI::ESC::sendCurrent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,156,38"/>
-<area shape="rect" id="node2" href="$d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="204,5,381,45"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,156,60"/>
+<area shape="rect" id="node2" href="$d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="267,5,319,31"/>
+<area shape="rect" id="node3" href="$d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title=" " alt="" coords="204,55,381,95"/>
 </map>

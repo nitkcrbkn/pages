@@ -14,6 +14,7 @@ var annotated_dup =
       [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
+      [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
       [ "ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],
@@ -52,11 +53,19 @@ var annotated_dup =
     ] ],
     [ "AMT10", "d4/d48/classAMT10.html", "d4/d48/classAMT10" ],
     [ "BitRange", "d6/d01/structBitRange.html", "d6/d01/structBitRange" ],
+    [ "CommandReceiver", "d0/d45/classCommandReceiver.html", "d0/d45/classCommandReceiver" ],
     [ "FormatStr", "de/d83/structFormatStr.html", "de/d83/structFormatStr" ],
     [ "GPIO_Mgr", "d6/d4e/classGPIO__Mgr.html", "d6/d4e/classGPIO__Mgr" ],
     [ "GPIOConfig", "d4/dff/structGPIOConfig.html", "d4/dff/structGPIOConfig" ],
     [ "LogLite", "d9/d24/classLogLite.html", "d9/d24/classLogLite" ],
-    [ "TelemController", "dd/d8a/classTelemController.html", "dd/d8a/classTelemController" ],
+    [ "Motion", "d1/d3c/classMotion.html", "d1/d3c/classMotion" ],
+    [ "MotionController", "d9/d58/classMotionController.html", "d9/d58/classMotionController" ],
+    [ "MotionMode", "df/d66/classMotionMode.html", "df/d66/classMotionMode" ],
+    [ "PID", "d8/da9/classPID.html", "d8/da9/classPID" ],
+    [ "PIDConfig", "dc/df1/structPIDConfig.html", "dc/df1/structPIDConfig" ],
+    [ "PIDGain", "d4/d2c/structPIDGain.html", "d4/d2c/structPIDGain" ],
+    [ "PIDProfile", "d8/daf/structPIDProfile.html", "d8/daf/structPIDProfile" ],
+    [ "TelemSender", "d0/dc3/classTelemSender.html", "d0/dc3/classTelemSender" ],
     [ "TimerMgr", "d5/db3/classTimerMgr.html", "d5/db3/classTimerMgr" ],
     [ "UartManager", "dd/d1a/classUartManager.html", "dd/d1a/classUartManager" ]
 ];

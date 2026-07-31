@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('da/d5f/telem__controller_8hpp.html','.
 <div class="contents">
 <div class="textblock"><code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &lt;proto/telemetry.h&gt;</code><br />
+<code>#include &lt;proto/command.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/d78/uart__manager_8h.html">platform/uart_manager.h</a>&gt;</code><br />
 <code>#include &lt;WriteBufferFixedSize.h&gt;</code><br />
 <code>#include &lt;ReadBufferFixedSize.h&gt;</code><br />
@@ -106,42 +107,62 @@ telem_controller.hpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d4f/telem__controller_8hpp__incl.png" border="0" usemap="#amodules_2platform_2telem__controller_8hpp" alt=""/></div>
 <map name="amodules_2platform_2telem__controller_8hpp" id="amodules_2platform_2telem__controller_8hpp">
-<area shape="rect" title=" " alt="" coords="242,5,401,45"/>
+<area shape="rect" title=" " alt="" coords="305,5,463,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,72,119"/>
 <area shape="rect" title=" " alt="" coords="97,93,215,119"/>
-<area shape="rect" href="../../d3/d78/uart__manager_8h.html" title=" " alt="" coords="240,93,403,119"/>
-<area shape="rect" title=" " alt="" coords="427,93,579,119"/>
-<area shape="rect" title=" " alt="" coords="603,93,755,119"/>
-<area shape="rect" title=" " alt="" coords="19,167,79,192"/>
-<area shape="rect" title=" " alt="" coords="104,167,171,192"/>
-<area shape="rect" title=" " alt="" coords="195,167,274,192"/>
-<area shape="rect" title=" " alt="" coords="298,167,345,192"/>
-<area shape="rect" title=" " alt="" coords="369,167,431,192"/>
-<area shape="rect" title=" " alt="" coords="455,167,513,192"/>
-<area shape="rect" title=" " alt="" coords="537,167,602,192"/>
+<area shape="rect" title=" " alt="" coords="240,93,363,119"/>
+<area shape="rect" href="../../d3/d78/uart__manager_8h.html" title=" " alt="" coords="387,93,549,119"/>
+<area shape="rect" title=" " alt="" coords="573,93,725,119"/>
+<area shape="rect" title=" " alt="" coords="749,93,901,119"/>
+<area shape="rect" title=" " alt="" coords="166,167,226,192"/>
+<area shape="rect" title=" " alt="" coords="251,167,317,192"/>
+<area shape="rect" title=" " alt="" coords="342,167,421,192"/>
+<area shape="rect" title=" " alt="" coords="445,167,491,192"/>
+<area shape="rect" title=" " alt="" coords="516,167,577,192"/>
+<area shape="rect" title=" " alt="" coords="602,167,659,192"/>
+<area shape="rect" title=" " alt="" coords="683,167,749,192"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8a/classTelemController.html">TelemController&lt; MAX_SIZE &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テレメトリーデータの送受信を行うコントローラークラス  <a href="../../dd/d8a/classTelemController.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc3/classTelemSender.html">TelemSender&lt; MAX_SIZE &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telemetry のシリアライズ・フレーム化・UART送信を行うクラス  <a href="../../d0/dc3/classTelemSender.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d45/classCommandReceiver.html">CommandReceiver&lt; MAX_SIZE &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART受信コールバックの所有・フレーム解析・Commandデシリアライズを行うクラス  <a href="../../d0/d45/classCommandReceiver.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:a91f448553bf2f5cf9b358f85b126e0a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5f/telem__controller_8hpp.html#a91f448553bf2f5cf9b358f85b126e0a1">TelemetryT</a> = robot::Telemetry&lt; V_SIZE, MSG_SIZE &gt;</td></tr>
-<tr class="separator:a91f448553bf2f5cf9b358f85b126e0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a9cea2ad816b777521ad1804426069"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069">TelemetryT</a> = robot::Telemetry&lt; V_SIZE, MSG_SIZE, 8 &gt;</td></tr>
+<tr class="separator:a17a9cea2ad816b777521ad1804426069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69bd031ae7d2c30a5f8ede6c5e2dd1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d5f/telem__controller_8hpp.html#ac69bd031ae7d2c30a5f8ede6c5e2dd1b">CommandT</a> = robot::RobotCommand</td></tr>
+<tr class="separator:ac69bd031ae7d2c30a5f8ede6c5e2dd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">型定義詳解</h2>
-<a id="a91f448553bf2f5cf9b358f85b126e0a1" name="a91f448553bf2f5cf9b358f85b126e0a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f448553bf2f5cf9b358f85b126e0a1">&#9670;&#160;</a></span>TelemetryT</h2>
+<a id="ac69bd031ae7d2c30a5f8ede6c5e2dd1b" name="ac69bd031ae7d2c30a5f8ede6c5e2dd1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69bd031ae7d2c30a5f8ede6c5e2dd1b">&#9670;&#160;</a></span>CommandT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/d5f/telem__controller_8hpp.html#a91f448553bf2f5cf9b358f85b126e0a1">TelemetryT</a> =  robot::Telemetry&lt;V_SIZE, MSG_SIZE&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/d5f/telem__controller_8hpp.html#ac69bd031ae7d2c30a5f8ede6c5e2dd1b">CommandT</a> =  robot::RobotCommand</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17a9cea2ad816b777521ad1804426069" name="a17a9cea2ad816b777521ad1804426069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a9cea2ad816b777521ad1804426069">&#9670;&#160;</a></span>TelemetryT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069">TelemetryT</a> =  robot::Telemetry&lt;V_SIZE, MSG_SIZE, 8&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

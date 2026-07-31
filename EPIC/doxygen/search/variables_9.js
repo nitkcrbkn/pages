@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['message_0',['message',['../d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html#ac03ce10099d2ad2ea0effa9e59cdca0a',1,'CanSystem::MockCanProfile::TxRecord']]],
-  ['message_5fcbs_1',['message_cbs',['../d1/d4a/classCanSystem_1_1CanManager.html#a51026752f21487250954ff9bfdc864cf',1,'CanSystem::CanManager']]],
-  ['microphone_2',['MICROPHONE',['../d6/de5/structPS5_1_1Button.html#abf0df6d88d4980e69d041c5cded90d50',1,'PS5::Button']]],
-  ['mode_3',['mode',['../d7/d93/structCanSystem_1_1CANConfig.html#a36ce1539b1d0fc0f6303f413a4df269c',1,'CanSystem::CANConfig']]],
-  ['msgpending_4',['msgPending',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html#a43bc330f1afb0338df5e012cdb60ea99',1,'CanSystem::CanManager::CANFifoConfig']]],
-  ['mtype_5',['mType',['../d9/d34/classproto__can_1_1MessageID.html#a249c600b2c65e36636f7fecc2ae27d43',1,'proto_can::MessageID']]]
+  ['maxdeadband_0',['maxDeadband',['../dc/df1/structPIDConfig.html#a5df4d751a3252729705fba88b4c61e7e',1,'PIDConfig']]],
+  ['maxerror_1',['maxError',['../dc/df1/structPIDConfig.html#a1cb06d8bc1ada96625a9d484b5ae26b2',1,'PIDConfig']]],
+  ['maxintegral_2',['maxIntegral',['../dc/df1/structPIDConfig.html#a71f225e9c6a5c4ebb6aa12fa8d4c2b5f',1,'PIDConfig']]],
+  ['maxout_3',['maxOut',['../dc/df1/structPIDConfig.html#a8b227e00cdd15daf79439491c77ea08a',1,'PIDConfig']]],
+  ['maxtarget_4',['maxTarget',['../dc/df1/structPIDConfig.html#ae16e94ae51ab0681075dcb9b4f04a521',1,'PIDConfig']]],
+  ['message_5',['message',['../d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html#ac03ce10099d2ad2ea0effa9e59cdca0a',1,'CanSystem::MockCanProfile::TxRecord']]],
+  ['message_5fcbs_6',['message_cbs',['../d1/d4a/classCanSystem_1_1CanManager.html#a51026752f21487250954ff9bfdc864cf',1,'CanSystem::CanManager']]],
+  ['microphone_7',['MICROPHONE',['../d6/de5/structPS5_1_1Button.html#abf0df6d88d4980e69d041c5cded90d50',1,'PS5::Button']]],
+  ['mindeadband_8',['minDeadband',['../dc/df1/structPIDConfig.html#ac60039de289c76270688010eb89dcfe7',1,'PIDConfig']]],
+  ['minerror_9',['minError',['../dc/df1/structPIDConfig.html#a65606d68642d26b42071773811dc5973',1,'PIDConfig']]],
+  ['minintegral_10',['minIntegral',['../dc/df1/structPIDConfig.html#a13cfdbcb3d2c5489e84f6e5fcf71cc2f',1,'PIDConfig']]],
+  ['minout_11',['minOut',['../dc/df1/structPIDConfig.html#a5d8c3df7ee15b6f78964cc4c705e0aa5',1,'PIDConfig']]],
+  ['mintarget_12',['minTarget',['../dc/df1/structPIDConfig.html#a228c54be31fdb4a9434b3de58b84ac18',1,'PIDConfig']]],
+  ['mode_13',['mode',['../d7/d93/structCanSystem_1_1CANConfig.html#a36ce1539b1d0fc0f6303f413a4df269c',1,'CanSystem::CANConfig']]],
+  ['msgpending_14',['msgPending',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html#a43bc330f1afb0338df5e012cdb60ea99',1,'CanSystem::CanManager::CANFifoConfig']]],
+  ['mtype_15',['mType',['../d9/d34/classproto__can_1_1MessageID.html#a249c600b2c65e36636f7fecc2ae27d43',1,'proto_can::MessageID']]]
 ];

@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d5/d25/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html" title=" " alt="" coords="5,5,179,45"/>
+<area shape="rect" id="node1" href="$da/d4c/classMotoron_1_1Master.html" title="同一CAN Bus内に接続されたArduino&amp;Motoron製MDを制御するためのクラス" alt="" coords="5,5,120,31"/>
 </map>

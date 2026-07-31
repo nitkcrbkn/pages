@@ -1,0 +1,6 @@
+<map id="MotionMode::setMode" name="MotionMode::setMode">
+<area shape="rect" id="node1" title=" " alt="" coords="217,55,367,80"/>
+<area shape="rect" id="node2" href="$d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5" title="速度・位置の両プロファイルに同じモードを一括設定するユーティリティ" alt="" coords="29,5,146,31"/>
+<area shape="rect" id="node3" href="$d1/d3c/classMotion.html#afd5952d83b2f9f8c6fca74d279da8012" title="位置プロファイルのモードのみを設定する" alt="" coords="5,55,169,80"/>
+<area shape="rect" id="node4" href="$d1/d3c/classMotion.html#a07b78ef3567b63e9266630496b650fe6" title="速度プロファイルのモードのみを設定する" alt="" coords="6,104,169,129"/>
+</map>

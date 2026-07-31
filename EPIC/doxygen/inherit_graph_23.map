@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d9/d24/classLogLite.html" title=" " alt="" coords="5,5,72,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,104,31"/>
+<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html" title="Classic CAN 管理基底クラス" alt="" coords="152,5,320,31"/>
 </map>

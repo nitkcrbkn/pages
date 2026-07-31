@@ -1,4 +1,5 @@
 <map id="constrain" name="constrain">
-<area shape="rect" id="node1" title=" " alt="" coords="149,5,224,31"/>
-<area shape="rect" id="node2" href="$dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="5,5,101,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="223,31,297,56"/>
+<area shape="rect" id="node2" href="$dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="42,5,138,31"/>
+<area shape="rect" id="node3" href="$d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895" title="電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。" alt="" coords="5,55,175,80"/>
 </map>

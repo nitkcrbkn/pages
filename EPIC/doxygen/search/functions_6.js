@@ -33,12 +33,13 @@ var searchData=
   ['getmaxtec_30',['getMaxTEC',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a1c4f593c4c77b131308e231ecc72db75',1,'CanSystem::CanErrorTracker']]],
   ['getmessagetype_31',['getMessageType',['../df/db1/classproto__can_1_1ProtocolHeader.html#a1641e63ed89b4eecad4e62414298f163',1,'proto_can::ProtocolHeader']]],
   ['getnumber_32',['getNumber',['../dd/d82/classproto__can_1_1DeviceID.html#ac6d236665a12f504dfab33faffb126b6',1,'proto_can::DeviceID']]],
-  ['getquickstats_33',['getQuickStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43',1,'CanSystem::CanErrorTracker']]],
-  ['getreceivedidcount_34',['getReceivedIdCount',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a41711e79ffb9c299d71f0f93ffe40a3f',1,'CanSystem::CanErrorTracker']]],
-  ['getsendidcount_35',['getSendIdCount',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a13bf515f57d578ec2da03daf5794ccc4',1,'CanSystem::CanErrorTracker']]],
-  ['getstatus_36',['getStatus',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a03ed447de3fa5d443def6da2717da09c',1,'CanSystem::CanErrorTracker']]],
-  ['gettotalupdates_37',['getTotalUpdates',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a321deb52ded7bf434e147837ef1334e9',1,'CanSystem::CanErrorTracker']]],
-  ['gettxhistory_38',['getTxHistory',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a9b3d173dad0b129663a8b99ca8b77d33',1,'CanSystem::MockCanProfile']]],
-  ['getversion_39',['getVersion',['../d9/d34/classproto__can_1_1MessageID.html#aafd320439a68ebff3a1762c3805c62b2',1,'proto_can::MessageID']]],
-  ['gpio_5fmgr_40',['GPIO_Mgr',['../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76',1,'GPIO_Mgr::GPIO_Mgr(const GPIOmap&lt; PIN_COUNT &gt; &amp;gpiomap)'],['../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a',1,'GPIO_Mgr::GPIO_Mgr(const GPIOConfig(&amp;configs)[PIN_COUNT])']]]
+  ['getposition_33',['getPosition',['../d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8',1,'DJI::ESC']]],
+  ['getquickstats_34',['getQuickStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae443ebaa8a3c205781a9f826f9834f43',1,'CanSystem::CanErrorTracker']]],
+  ['getreceivedidcount_35',['getReceivedIdCount',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a41711e79ffb9c299d71f0f93ffe40a3f',1,'CanSystem::CanErrorTracker']]],
+  ['getsendidcount_36',['getSendIdCount',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a13bf515f57d578ec2da03daf5794ccc4',1,'CanSystem::CanErrorTracker']]],
+  ['getstatus_37',['getStatus',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a03ed447de3fa5d443def6da2717da09c',1,'CanSystem::CanErrorTracker']]],
+  ['gettotalupdates_38',['getTotalUpdates',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a321deb52ded7bf434e147837ef1334e9',1,'CanSystem::CanErrorTracker']]],
+  ['gettxhistory_39',['getTxHistory',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a9b3d173dad0b129663a8b99ca8b77d33',1,'CanSystem::MockCanProfile']]],
+  ['getversion_40',['getVersion',['../d9/d34/classproto__can_1_1MessageID.html#aafd320439a68ebff3a1762c3805c62b2',1,'proto_can::MessageID']]],
+  ['gpio_5fmgr_41',['GPIO_Mgr',['../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76',1,'GPIO_Mgr::GPIO_Mgr(const GPIOmap&lt; PIN_COUNT &gt; &amp;gpiomap)'],['../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a',1,'GPIO_Mgr::GPIO_Mgr(const GPIOConfig(&amp;configs)[PIN_COUNT])']]]
 ];
