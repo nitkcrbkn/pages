@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-08-07 07:12:31</td>
+            <td class="headerValue">2026-08-07 07:28:19</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryMed">80.0&nbsp;%</td>
@@ -90,20 +90,20 @@
 <span id="L12"><span class="lineNum">      12</span>                 :             :     uint8_t data[BUFF_SIZE];</span>
 <span id="L13"><span class="lineNum">      13</span>                 :             :     size_t size;</span>
 <span id="L14"><span class="lineNum">      14</span>                 :             : </span>
-<span id="L15"><span class="lineNum">      15</span>                 :<span class="tlaGNC tlaBgGNC">          42 :     CANMessage() : id(0), size(0) { memset(data, 0, BUFF_SIZE); }</span></span>
+<span id="L15"><span class="lineNum">      15</span>                 :<span class="tlaGNC tlaBgGNC">          53 :     CANMessage() : id(0), size(0) { memset(data, 0, BUFF_SIZE); }</span></span>
 <span id="L16"><span class="lineNum">      16</span>                 :             : </span>
-<span id="L17"><span class="lineNum">      17</span>                 :<span class="tlaGNC">          42 :     CANMessage(uint32_t can_id, const uint8_t *src, size_t src_size)</span></span>
-<span id="L18"><span class="lineNum">      18</span>                 :<span class="tlaGNC">          42 :         : id(can_id), size(src_size) {</span></span>
-<span id="L19"><span class="lineNum">      19</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 42 times"> + </span>]:<span class="tlaGNC">          42 :         if(src_size &gt; BUFF_SIZE) {</span></span>
+<span id="L17"><span class="lineNum">      17</span>                 :<span class="tlaGNC">          53 :     CANMessage(uint32_t can_id, const uint8_t *src, size_t src_size)</span></span>
+<span id="L18"><span class="lineNum">      18</span>                 :<span class="tlaGNC">          53 :         : id(can_id), size(src_size) {</span></span>
+<span id="L19"><span class="lineNum">      19</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 53 times"> + </span>]:<span class="tlaGNC">          53 :         if(src_size &gt; BUFF_SIZE) {</span></span>
 <span id="L20"><span class="lineNum">      20</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             size = BUFF_SIZE;</span></span>
 <span id="L21"><span class="lineNum">      21</span>                 :             :         }</span>
-<span id="L22"><span class="lineNum">      22</span>                 :<span class="tlaGNC tlaBgGNC">          42 :         memcpy(data, src, size);</span></span>
-<span id="L23"><span class="lineNum">      23</span>                 :<span class="tlaGNC">          42 :     }</span></span>
+<span id="L22"><span class="lineNum">      22</span>                 :<span class="tlaGNC tlaBgGNC">          53 :         memcpy(data, src, size);</span></span>
+<span id="L23"><span class="lineNum">      23</span>                 :<span class="tlaGNC">          53 :     }</span></span>
 <span id="L24"><span class="lineNum">      24</span>                 :             : </span>
 <span id="L25"><span class="lineNum">      25</span>                 :<span class="tlaGNC">           2 :     void printHex() const {</span></span>
 <span id="L26"><span class="lineNum">      26</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :         LOGD(&quot;ID: 0x%03X  Data: &quot;, id);</span></span>
-<span id="L27"><span class="lineNum">      27</span>         [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">          11 :         for(size_t i = 0; i &lt; size; i++) {</span></span>
-<span id="L28"><span class="lineNum">      28</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 9 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           9 :             LOGD(&quot;%02X &quot;, data[i]);</span></span>
+<span id="L27"><span class="lineNum">      27</span>         [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">          12 :         for(size_t i = 0; i &lt; size; i++) {</span></span>
+<span id="L28"><span class="lineNum">      28</span>   [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 10 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          10 :             LOGD(&quot;%02X &quot;, data[i]);</span></span>
 <span id="L29"><span class="lineNum">      29</span>                 :             :         }</span>
 <span id="L30"><span class="lineNum">      30</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           2 :         LOGD(&quot; (size: %zu)\n&quot;, size);</span></span>
 <span id="L31"><span class="lineNum">      31</span>                 :<span class="tlaGNC">           2 :     }</span></span>
@@ -118,7 +118,7 @@
 <span id="L40"><span class="lineNum">      40</span>                 :             :  */</span>
 <span id="L41"><span class="lineNum">      41</span>                 :             : class ICanController {</span>
 <span id="L42"><span class="lineNum">      42</span>                 :             : public:</span>
-<span id="L43"><span class="lineNum">      43</span>                 :<span class="tlaGNC">          34 :     virtual ~ICanController() = default;</span></span>
+<span id="L43"><span class="lineNum">      43</span>                 :<span class="tlaGNC">          51 :     virtual ~ICanController() = default;</span></span>
 <span id="L44"><span class="lineNum">      44</span>                 :             : </span>
 <span id="L45"><span class="lineNum">      45</span>                 :             :     //!&lt; fdcanもcan互換にしてある。そのままcanが始まる。</span>
 <span id="L46"><span class="lineNum">      46</span>                 :             :     virtual bool initCan(const char *_name, int _stream_pos,</span>
