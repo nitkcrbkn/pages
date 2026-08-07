@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>STM32System: modules/logic/pid.hpp ファイル</title>
+<title>STM32System: modules/pid/pid.hpp ファイル</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('d4/db9/pid_8hpp.html','../../'); initR
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">クラス</a>  </div>
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
   <div class="headertitle"><div class="title">pid.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,21 +101,30 @@ $(document).ready(function(){initNavTree('d4/db9/pid_8hpp.html','../../'); initR
 <p><a class="el" href="../../d8/da9/classPID.html" title="PID制御器">PID</a> PIDを計算して、値を返すクラス それ以外の操作は一切行わない。  
 <a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d60/utils_8h.html">platform/utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/dfb/controller_8hpp.html">pid/controller.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 pid.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d5/ddf/pid_8hpp__incl.png" border="0" usemap="#amodules_2logic_2pid_8hpp" alt=""/></div>
-<map name="amodules_2logic_2pid_8hpp" id="amodules_2logic_2pid_8hpp">
-<area shape="rect" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="5,5,152,31"/>
-<area shape="rect" title=" " alt="" coords="49,79,108,104"/>
+<div class="center"><img src="../../d5/ddf/pid_8hpp__incl.png" border="0" usemap="#amodules_2pid_2pid_8hpp" alt=""/></div>
+<map name="amodules_2pid_2pid_8hpp" id="amodules_2pid_2pid_8hpp">
+<area shape="rect" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="118,5,255,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,64,104"/>
+<area shape="rect" title=" " alt="" coords="201,152,263,177"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="88,79,195,104"/>
+<area shape="rect" href="../../dc/dfb/controller_8hpp.html" title=" " alt="" coords="269,79,389,104"/>
+<area shape="rect" title=" " alt="" coords="109,152,174,177"/>
+<area shape="rect" title=" " alt="" coords="289,152,367,177"/>
+<area shape="rect" title=" " alt="" coords="392,152,451,177"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../da/d2e/pid_8hpp__dep__incl.png" border="0" usemap="#amodules_2logic_2pid_8hppdep" alt=""/></div>
-<map name="amodules_2logic_2pid_8hppdep" id="amodules_2logic_2pid_8hppdep">
-<area shape="rect" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="17,5,163,31"/>
+<div class="center"><img src="../../da/d2e/pid_8hpp__dep__incl.png" border="0" usemap="#amodules_2pid_2pid_8hppdep" alt=""/></div>
+<map name="amodules_2pid_2pid_8hppdep" id="amodules_2pid_2pid_8hppdep">
+<area shape="rect" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="21,5,159,31"/>
 <area shape="rect" href="../../d3/d3a/motion_8hpp.html" title="MotionMode / MotionController / Motion" alt="" coords="5,79,175,104"/>
 </map>
 </div>
@@ -131,17 +142,28 @@ pid.hpp の依存先関係図:</div>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html">PID&lt; InputType, OutputType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID制御器  <a href="../../d8/da9/classPID.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:d6/dc7/namespacepid__detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/namespacepid__detail.html">pid_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a7a736862e14bda8fc92798fddbb07d10"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10">pid_detail::clamp</a> (float value, float lo, float hi) noexcept</td></tr>
+<tr class="memdesc:a7a736862e14bda8fc92798fddbb07d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">[lo, hi] にクランプする。lo &gt; hi の場合の挙動は未定義扱い  <a href="../../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10">[詳解]</a><br /></td></tr>
+<tr class="separator:a7a736862e14bda8fc92798fddbb07d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p ><a class="el" href="../../d8/da9/classPID.html" title="PID制御器">PID</a> PIDを計算して、値を返すクラス それ以外の操作は一切行わない。 </p>
 <dl class="section author"><dt>著者</dt><dd>Kaede Ryoken</dd></dl>
-<p>PID&lt;InputType, OutputType&gt;のcalculate引数・戻り値のみテンプレート型 _hasLastFeedbackフラグで初回/reset直後のD項を0に保証 derivative on measurement(フィードバックベース微分) アンチワインドアップ: P+D+更新前I(iGain×前周期積分値)で飽和判定 </p>
+<p>PID&lt;InputType, OutputType&gt;のupdate_goal/update_state/tick引数・戻り値のみテンプレート型 _hasLastFeedbackフラグで初回/reset直後のD項を0に保証 derivative on measurement(フィードバックベース微分) アンチワインドアップ: P+D+更新前I(iGain×前周期積分値)で飽和判定 </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_419d2904af11a64b1df4335283624bbe.html">logic</a></li><li class="navelem"><a class="el" href="../../d4/db9/pid_8hpp.html">pid.hpp</a></li>
+    <li class="navelem"><a class="el" href="../../dir_e05d7e2b1ecd646af5bb94391405f3b5.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_4f7ac7d3e5bb50deaa25dd3767f16f08.html">pid</a></li><li class="navelem"><a class="el" href="../../d4/db9/pid_8hpp.html">pid.hpp</a></li>
     <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

@@ -1,10 +1,12 @@
 <map id="modules/platform/utils.h" name="modules/platform/utils.h">
-<area shape="rect" id="node1" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="117,5,277,31"/>
+<area shape="rect" id="node1" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="245,5,405,31"/>
 <area shape="rect" id="node2" href="$d2/d68/device__api_8hpp.html" title=" " alt="" coords="257,255,412,295"/>
 <area shape="rect" id="node4" href="$dc/d07/solenoid_8h.html" title=" " alt="" coords="5,431,189,456"/>
 <area shape="rect" id="node5" href="$d8/d47/master__api_8hpp.html" title=" " alt="" coords="79,255,233,295"/>
-<area shape="rect" id="node6" href="$dd/d37/frame__builder_8hpp.html" title=" " alt="" coords="176,79,339,119"/>
+<area shape="rect" id="node6" href="$dd/d37/frame__builder_8hpp.html" title=" " alt="" coords="125,79,288,119"/>
 <area shape="rect" id="node7" href="$d2/d80/messenger_8hpp.html" title=" " alt="" coords="151,167,313,207"/>
 <area shape="rect" id="node8" href="$dd/d00/DJI_8h.html" title="ESC class&#45;ロボマスモータのC610(M2006用コントローラー)、C620(M3508用コントローラー)を制御する" alt="" coords="413,86,549,111"/>
+<area shape="rect" id="node9" href="$d4/db9/pid_8hpp.html" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="574,86,711,111"/>
 <area shape="rect" id="node3" href="$df/d58/proto__can_8hpp.html" title=" " alt="" coords="75,343,242,383"/>
+<area shape="rect" id="node10" href="$d3/d3a/motion_8hpp.html" title="MotionMode / MotionController / Motion" alt="" coords="558,174,727,199"/>
 </map>

@@ -7,5 +7,6 @@ var searchData=
   ['canprofile_2ehpp_4',['CanProfile.hpp',['../dc/de7/CanProfile_8hpp.html',1,'']]],
   ['canstate_2ehpp_5',['CanState.hpp',['../df/d05/CanState_8hpp.html',1,'']]],
   ['canstatebuilder_2ehpp_6',['CanStateBuilder.hpp',['../de/dd7/CanStateBuilder_8hpp.html',1,'']]],
-  ['cansystem_2ehpp_7',['CanSystem.hpp',['../df/dfc/CanSystem_8hpp.html',1,'']]]
+  ['cansystem_2ehpp_7',['CanSystem.hpp',['../df/dfc/CanSystem_8hpp.html',1,'']]],
+  ['controller_2ehpp_8',['controller.hpp',['../dc/dfb/controller_8hpp.html',1,'']]]
 ];

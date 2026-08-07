@@ -1,5 +1,12 @@
 var hierarchy =
 [
+    [ "AbstractController< InputType, OutputType >", "d0/d5c/classAbstractController.html", [
+      [ "PID< VelocityType, OutputType >", "d8/da9/classPID.html", null ],
+      [ "PID< PositionType, VelocityType >", "d8/da9/classPID.html", null ],
+      [ "PID< InputType, OutputType >", "d8/da9/classPID.html", null ]
+    ] ],
+    [ "AbstractController< PositionType, VelocityType >", "d0/d5c/classAbstractController.html", null ],
+    [ "AbstractController< VelocityType, OutputType >", "d0/d5c/classAbstractController.html", null ],
     [ "AMT10", "d4/d48/classAMT10.html", null ],
     [ "IM920sL::BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", null ],
     [ "BitRange", "d6/d01/structBitRange.html", null ],
@@ -50,10 +57,7 @@ var hierarchy =
     [ "MotionMode< PositionType >", "df/d66/classMotionMode.html", null ],
     [ "MotionMode< VelocityType >", "df/d66/classMotionMode.html", null ],
     [ "proto_can::NoSchema", "de/d88/structproto__can_1_1NoSchema.html", null ],
-    [ "PID< InputType, OutputType >", "d8/da9/classPID.html", null ],
     [ "stdr::PID", "dc/d22/classstdr_1_1PID.html", null ],
-    [ "PID< PositionType, VelocityType >", "d8/da9/classPID.html", null ],
-    [ "PID< VelocityType, OutputType >", "d8/da9/classPID.html", null ],
     [ "PIDConfig", "dc/df1/structPIDConfig.html", null ],
     [ "PIDGain", "d4/d2c/structPIDGain.html", null ],
     [ "PIDProfile", "d8/daf/structPIDProfile.html", null ],

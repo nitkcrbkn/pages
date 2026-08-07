@@ -102,14 +102,30 @@ $(document).ready(function(){initNavTree('d8/da9/classPID.html','../../'); initR
  <a href="../../d8/da9/classPID.html#details">[詳解]</a></p>
 
 <p><code>#include &lt;pid.hpp&gt;</code></p>
+<div class="dynheader">
+PID&lt; InputType, OutputType &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d39/classPID__inherit__graph.png" border="0" usemap="#aPID_3_01InputType_00_01OutputType_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="aPID_3_01InputType_00_01OutputType_01_4_inherit__map" id="aPID_3_01InputType_00_01OutputType_01_4_inherit__map">
+<area shape="rect" title="PID制御器" alt="" coords="5,93,203,119"/>
+<area shape="rect" href="../../d0/d5c/classAbstractController.html" title=" " alt="" coords="17,5,191,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+PID&lt; InputType, OutputType &gt; 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d06/classPID__coll__graph.png" border="0" usemap="#aPID_3_01InputType_00_01OutputType_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aPID_3_01InputType_00_01OutputType_01_4_coll__map" id="aPID_3_01InputType_00_01OutputType_01_4_coll__map">
+<area shape="rect" title="PID制御器" alt="" coords="5,93,203,119"/>
+<area shape="rect" href="../../d0/d5c/classAbstractController.html" title=" " alt="" coords="17,5,191,45"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:ac4cf6928d10428bc9da43d4e8b1686e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#ac4cf6928d10428bc9da43d4e8b1686e4">PID</a> ()=default</td></tr>
-<tr class="memdesc:ac4cf6928d10428bc9da43d4e8b1686e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">デフォルトコンストラクタ  <a href="../../d8/da9/classPID.html#ac4cf6928d10428bc9da43d4e8b1686e4">[詳解]</a><br /></td></tr>
 <tr class="separator:ac4cf6928d10428bc9da43d4e8b1686e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc28976cb73930474ad97315a3f16739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#acc28976cb73930474ad97315a3f16739">PID</a> (const <a class="el" href="../../d8/daf/structPIDProfile.html">PIDProfile</a> &amp;pidProfile)</td></tr>
-<tr class="memdesc:acc28976cb73930474ad97315a3f16739"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d8/da9/classPID.html#acc28976cb73930474ad97315a3f16739">[詳解]</a><br /></td></tr>
 <tr class="separator:acc28976cb73930474ad97315a3f16739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18baaf6164898825126c48749ab16168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a18baaf6164898825126c48749ab16168">setProfile</a> (const <a class="el" href="../../d8/daf/structPIDProfile.html">PIDProfile</a> &amp;pidProfile) noexcept</td></tr>
 <tr class="memdesc:a18baaf6164898825126c48749ab16168"><td class="mdescLeft">&#160;</td><td class="mdescRight">プロファイルを設定する  <a href="../../d8/da9/classPID.html#a18baaf6164898825126c48749ab16168">[詳解]</a><br /></td></tr>
@@ -123,32 +139,65 @@ $(document).ready(function(){initNavTree('d8/da9/classPID.html','../../'); initR
 <tr class="memitem:a9ab71a21772124d8befa7ac9c13d234c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a9ab71a21772124d8befa7ac9c13d234c">reset</a> () noexcept</td></tr>
 <tr class="memdesc:a9ab71a21772124d8befa7ac9c13d234c"><td class="mdescLeft">&#160;</td><td class="mdescRight">全内部状態を初期化し、次回呼び出しを初回として扱う  <a href="../../d8/da9/classPID.html#a9ab71a21772124d8befa7ac9c13d234c">[詳解]</a><br /></td></tr>
 <tr class="separator:a9ab71a21772124d8befa7ac9c13d234c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ccfe0cbe91bcb320f5423b65abb3d3"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3">calculate</a> (InputType target, InputType feedback, float dt)</td></tr>
-<tr class="memdesc:a31ccfe0cbe91bcb320f5423b65abb3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIDを計算して出力値を返す  <a href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3">[詳解]</a><br /></td></tr>
-<tr class="separator:a31ccfe0cbe91bcb320f5423b65abb3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534610d4424ff511dd5b29b776d1df7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a534610d4424ff511dd5b29b776d1df7c">set_dt</a> (int32_t dt_ms=-1) noexcept</td></tr>
+<tr class="memdesc:a534610d4424ff511dd5b29b776d1df7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御周期をミリ秒で設定する。未設定時はmillis()差分を使用  <a href="../../d8/da9/classPID.html#a534610d4424ff511dd5b29b776d1df7c">[詳解]</a><br /></td></tr>
+<tr class="separator:a534610d4424ff511dd5b29b776d1df7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979d54b630e174777f0f52a604615afb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a979d54b630e174777f0f52a604615afb">update_goal</a> (InputType goal) override</td></tr>
+<tr class="memdesc:a979d54b630e174777f0f52a604615afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する  <a href="../../d8/da9/classPID.html#a979d54b630e174777f0f52a604615afb">[詳解]</a><br /></td></tr>
+<tr class="separator:a979d54b630e174777f0f52a604615afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb56bf322ced6ad4eaf1ca0ec45e212"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#accb56bf322ced6ad4eaf1ca0ec45e212">update_state</a> (InputType state) override</td></tr>
+<tr class="memdesc:accb56bf322ced6ad4eaf1ca0ec45e212"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在状態を入力する  <a href="../../d8/da9/classPID.html#accb56bf322ced6ad4eaf1ca0ec45e212">[詳解]</a><br /></td></tr>
+<tr class="separator:accb56bf322ced6ad4eaf1ca0ec45e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4bab2c003d13035787288d711d47e1"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a2f4bab2c003d13035787288d711d47e1">tick</a> () override</td></tr>
+<tr class="memdesc:a2f4bab2c003d13035787288d711d47e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御演算を実行し、制御値を返す  <a href="../../d8/da9/classPID.html#a2f4bab2c003d13035787288d711d47e1">[詳解]</a><br /></td></tr>
+<tr class="separator:a2f4bab2c003d13035787288d711d47e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81e4c7081f1d3c89846ff03d82d63823"><td class="memItemLeft" align="right" valign="top">OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a81e4c7081f1d3c89846ff03d82d63823">output</a> () const noexcept</td></tr>
 <tr class="memdesc:a81e4c7081f1d3c89846ff03d82d63823"><td class="mdescLeft">&#160;</td><td class="mdescRight">最終出力値  <a href="../../d8/da9/classPID.html#a81e4c7081f1d3c89846ff03d82d63823">[詳解]</a><br /></td></tr>
 <tr class="separator:a81e4c7081f1d3c89846ff03d82d63823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885b3ffa0a270e525c6b91bbd5c5658e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a885b3ffa0a270e525c6b91bbd5c5658e">pOutput</a> () const noexcept</td></tr>
-<tr class="memdesc:a885b3ffa0a270e525c6b91bbd5c5658e"><td class="mdescLeft">&#160;</td><td class="mdescRight">P項出力  <a href="../../d8/da9/classPID.html#a885b3ffa0a270e525c6b91bbd5c5658e">[詳解]</a><br /></td></tr>
-<tr class="separator:a885b3ffa0a270e525c6b91bbd5c5658e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a155f54655dbf4f948bb623bafecb7444"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a155f54655dbf4f948bb623bafecb7444">iOutput</a> () const noexcept</td></tr>
-<tr class="memdesc:a155f54655dbf4f948bb623bafecb7444"><td class="mdescLeft">&#160;</td><td class="mdescRight">I項出力  <a href="../../d8/da9/classPID.html#a155f54655dbf4f948bb623bafecb7444">[詳解]</a><br /></td></tr>
-<tr class="separator:a155f54655dbf4f948bb623bafecb7444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4daac8462c04cd7485f8578678d91e2c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a4daac8462c04cd7485f8578678d91e2c">dOutput</a> () const noexcept</td></tr>
-<tr class="memdesc:a4daac8462c04cd7485f8578678d91e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">D項出力  <a href="../../d8/da9/classPID.html#a4daac8462c04cd7485f8578678d91e2c">[詳解]</a><br /></td></tr>
-<tr class="separator:a4daac8462c04cd7485f8578678d91e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74179ad126a72b91a067add5547ab6c7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a74179ad126a72b91a067add5547ab6c7">p_output</a> () const noexcept</td></tr>
+<tr class="memdesc:a74179ad126a72b91a067add5547ab6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">P項出力  <a href="../../d8/da9/classPID.html#a74179ad126a72b91a067add5547ab6c7">[詳解]</a><br /></td></tr>
+<tr class="separator:a74179ad126a72b91a067add5547ab6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9901e0521c726578821b80c3b0a86c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#acf9901e0521c726578821b80c3b0a86c">i_output</a> () const noexcept</td></tr>
+<tr class="memdesc:acf9901e0521c726578821b80c3b0a86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">I項出力  <a href="../../d8/da9/classPID.html#acf9901e0521c726578821b80c3b0a86c">[詳解]</a><br /></td></tr>
+<tr class="separator:acf9901e0521c726578821b80c3b0a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2402927cb46e913dd19f5c2eb4294b7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#ac2402927cb46e913dd19f5c2eb4294b7">d_output</a> () const noexcept</td></tr>
+<tr class="memdesc:ac2402927cb46e913dd19f5c2eb4294b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">D項出力  <a href="../../d8/da9/classPID.html#ac2402927cb46e913dd19f5c2eb4294b7">[詳解]</a><br /></td></tr>
+<tr class="separator:ac2402927cb46e913dd19f5c2eb4294b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98629eda30e4abc6191e8b4a116a1e7a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da9/classPID.html#a98629eda30e4abc6191e8b4a116a1e7a">integral</a> () const noexcept</td></tr>
 <tr class="memdesc:a98629eda30e4abc6191e8b4a116a1e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部積分値  <a href="../../d8/da9/classPID.html#a98629eda30e4abc6191e8b4a116a1e7a">[詳解]</a><br /></td></tr>
 <tr class="separator:a98629eda30e4abc6191e8b4a116a1e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classAbstractController"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractController')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/d5c/classAbstractController.html">AbstractController&lt; InputType, OutputType &gt;</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a1b4074d4b0aa29f48f90ff247e3f0c4b inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#a1b4074d4b0aa29f48f90ff247e3f0c4b">~AbstractController</a> ()=default</td></tr>
+<tr class="separator:a1b4074d4b0aa29f48f90ff247e3f0c4b inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38b47b909288706b32de4926e8c53fc inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#af38b47b909288706b32de4926e8c53fc">update_goal</a> (InputType goal)=0</td></tr>
+<tr class="memdesc:af38b47b909288706b32de4926e8c53fc inherit pub_methods_classAbstractController"><td class="mdescLeft">&#160;</td><td class="mdescRight">目標値を設定する  <a href="../../d0/d5c/classAbstractController.html#af38b47b909288706b32de4926e8c53fc">[詳解]</a><br /></td></tr>
+<tr class="separator:af38b47b909288706b32de4926e8c53fc inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2edff7b7c20ce8c00af7c85126246af inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#ac2edff7b7c20ce8c00af7c85126246af">update_state</a> (InputType state)=0</td></tr>
+<tr class="memdesc:ac2edff7b7c20ce8c00af7c85126246af inherit pub_methods_classAbstractController"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在状態を入力する  <a href="../../d0/d5c/classAbstractController.html#ac2edff7b7c20ce8c00af7c85126246af">[詳解]</a><br /></td></tr>
+<tr class="separator:ac2edff7b7c20ce8c00af7c85126246af inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d848550bcfb1cf02b3062176bf755e inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">virtual OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#a09d848550bcfb1cf02b3062176bf755e">tick</a> ()=0</td></tr>
+<tr class="memdesc:a09d848550bcfb1cf02b3062176bf755e inherit pub_methods_classAbstractController"><td class="mdescLeft">&#160;</td><td class="mdescRight">制御演算を実行し、制御値を返す  <a href="../../d0/d5c/classAbstractController.html#a09d848550bcfb1cf02b3062176bf755e">[詳解]</a><br /></td></tr>
+<tr class="separator:a09d848550bcfb1cf02b3062176bf755e inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7aff0920897d2d7ce991d380f444c2 inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">virtual OutputType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#adf7aff0920897d2d7ce991d380f444c2">update</a> (InputType state)</td></tr>
+<tr class="memdesc:adf7aff0920897d2d7ce991d380f444c2 inherit pub_methods_classAbstractController"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_state + tick のショートカット  <a href="../../d0/d5c/classAbstractController.html#adf7aff0920897d2d7ce991d380f444c2">[詳解]</a><br /></td></tr>
+<tr class="separator:adf7aff0920897d2d7ce991d380f444c2 inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87380c37241ae5f9b9e49310f038eef7 inherit pub_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#a87380c37241ae5f9b9e49310f038eef7">register_callback</a> (std::function&lt; void(OutputType)&gt; callback)</td></tr>
+<tr class="memdesc:a87380c37241ae5f9b9e49310f038eef7 inherit pub_methods_classAbstractController"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/d5c/classAbstractController.html#a09d848550bcfb1cf02b3062176bf755e" title="制御演算を実行し、制御値を返す">tick()</a> の出力を受け取るコールバックを登録する  <a href="../../d0/d5c/classAbstractController.html#a87380c37241ae5f9b9e49310f038eef7">[詳解]</a><br /></td></tr>
+<tr class="separator:a87380c37241ae5f9b9e49310f038eef7 inherit pub_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_classAbstractController"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classAbstractController')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/d5c/classAbstractController.html">AbstractController&lt; InputType, OutputType &gt;</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a13a83ec644a50c4bdb62c6e416d712e6 inherit pro_methods_classAbstractController"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/classAbstractController.html#a13a83ec644a50c4bdb62c6e416d712e6">fire_callback</a> (OutputType out)</td></tr>
+<tr class="separator:a13a83ec644a50c4bdb62c6e416d712e6 inherit pro_methods_classAbstractController"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class InputType, class OutputType = InputType&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;class InputType, class OutputType&gt;<br />
 class PID&lt; InputType, OutputType &gt;</div><p >PID制御器 </p>
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">InputType</td><td><a class="el" href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3" title="PIDを計算して出力値を返す">calculate()</a>の入力型(目標値・フィードバック値) </td></tr>
-    <tr><td class="paramname">OutputType</td><td><a class="el" href="../../d8/da9/classPID.html#a31ccfe0cbe91bcb320f5423b65abb3d3" title="PIDを計算して出力値を返す">calculate()</a>の戻り値型</td></tr>
+    <tr><td class="paramname">InputType</td><td><a class="el" href="../../d8/da9/classPID.html#a979d54b630e174777f0f52a604615afb" title="目標値を設定する">update_goal()</a>/update_state()の入力型(目標値/現在状態) </td></tr>
+    <tr><td class="paramname">OutputType</td><td><a class="el" href="../../d8/da9/classPID.html#a2f4bab2c003d13035787288d711d47e1" title="制御演算を実行し、制御値を返す">tick()</a>の戻り値型</td></tr>
   </table>
   </dd>
 </dl>
@@ -160,7 +209,7 @@ class PID&lt; InputType, OutputType &gt;</div><p >PID制御器 </p>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -179,9 +228,6 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>デフォルトコンストラクタ </p>
-<p >ゲイン0・クランプ無効で初期化する </p>
-
 </div>
 </div>
 <a id="acc28976cb73930474ad97315a3f16739" name="acc28976cb73930474ad97315a3f16739"></a>
@@ -190,7 +236,7 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -210,95 +256,22 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>コンストラクタ </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pidProfile</td><td>PIDプロファイル </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a31ccfe0cbe91bcb320f5423b65abb3d3" name="a31ccfe0cbe91bcb320f5423b65abb3d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ccfe0cbe91bcb320f5423b65abb3d3">&#9670;&#160;</a></span>calculate()</h2>
+<a id="ac2402927cb46e913dd19f5c2eb4294b7" name="ac2402927cb46e913dd19f5c2eb4294b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2402927cb46e913dd19f5c2eb4294b7">&#9670;&#160;</a></span>d_output()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OutputType <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::calculate </td>
-          <td>(</td>
-          <td class="paramtype">InputType&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputType&#160;</td>
-          <td class="paramname"><em>feedback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>dt</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>PIDを計算して出力値を返す </p>
-<dl class="params"><dt>引数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">target</td><td>目標値 </td></tr>
-    <tr><td class="paramname">feedback</td><td>フィードバック値 </td></tr>
-    <tr><td class="paramname">dt</td><td>制御周期(秒, float) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>戻り値</dt><dd>出力値(OutputType) </dd></dl>
-<div class="dynheader">
-被呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d8/da9/classPID_a31ccfe0cbe91bcb320f5423b65abb3d3_icgraph.png" border="0" usemap="#ad8/da9/classPID_a31ccfe0cbe91bcb320f5423b65abb3d3_icgraph" alt=""/></div>
-<map name="ad8/da9/classPID_a31ccfe0cbe91bcb320f5423b65abb3d3_icgraph" id="ad8/da9/classPID_a31ccfe0cbe91bcb320f5423b65abb3d3_icgraph">
-<area shape="rect" title="PIDを計算して出力値を返す" alt="" coords="441,13,544,38"/>
-<area shape="rect" href="../../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974" title=" " alt="" coords="219,5,393,45"/>
-<area shape="rect" href="../../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1" title=" " alt="" coords="5,13,171,38"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4daac8462c04cd7485f8578678d91e2c" name="a4daac8462c04cd7485f8578678d91e2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4daac8462c04cd7485f8578678d91e2c">&#9670;&#160;</a></span>dOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::dOutput </td>
+          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::d_output </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -315,13 +288,42 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 
 </div>
 </div>
+<a id="acf9901e0521c726578821b80c3b0a86c" name="acf9901e0521c726578821b80c3b0a86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9901e0521c726578821b80c3b0a86c">&#9670;&#160;</a></span>i_output()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::i_output </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>I項出力 </p>
+
+</div>
+</div>
 <a id="a98629eda30e4abc6191e8b4a116a1e7a" name="a98629eda30e4abc6191e8b4a116a1e7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a98629eda30e4abc6191e8b4a116a1e7a">&#9670;&#160;</a></span>integral()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -344,42 +346,13 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 
 </div>
 </div>
-<a id="a155f54655dbf4f948bb623bafecb7444" name="a155f54655dbf4f948bb623bafecb7444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a155f54655dbf4f948bb623bafecb7444">&#9670;&#160;</a></span>iOutput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::iOutput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>I項出力 </p>
-
-</div>
-</div>
 <a id="a81e4c7081f1d3c89846ff03d82d63823" name="a81e4c7081f1d3c89846ff03d82d63823"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81e4c7081f1d3c89846ff03d82d63823">&#9670;&#160;</a></span>output()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -402,19 +375,19 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 
 </div>
 </div>
-<a id="a885b3ffa0a270e525c6b91bbd5c5658e" name="a885b3ffa0a270e525c6b91bbd5c5658e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a885b3ffa0a270e525c6b91bbd5c5658e">&#9670;&#160;</a></span>pOutput()</h2>
+<a id="a74179ad126a72b91a067add5547ab6c7" name="a74179ad126a72b91a067add5547ab6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74179ad126a72b91a067add5547ab6c7">&#9670;&#160;</a></span>p_output()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::pOutput </td>
+          <td class="memname">float <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::p_output </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -437,7 +410,7 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -470,13 +443,43 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 
 </div>
 </div>
+<a id="a534610d4424ff511dd5b29b776d1df7c" name="a534610d4424ff511dd5b29b776d1df7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534610d4424ff511dd5b29b776d1df7c">&#9670;&#160;</a></span>set_dt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::set_dt </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>dt_ms</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>制御周期をミリ秒で設定する。未設定時はmillis()差分を使用 </p>
+
+</div>
+</div>
 <a id="aab42cc6fa8947f822354895e352eb98e" name="aab42cc6fa8947f822354895e352eb98e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab42cc6fa8947f822354895e352eb98e">&#9670;&#160;</a></span>setConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -506,7 +509,7 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -536,7 +539,7 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class InputType , class OutputType  = InputType&gt; </div>
+template&lt;class InputType , class OutputType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -560,8 +563,166 @@ template&lt;class InputType , class OutputType  = InputType&gt; </div>
 
 </div>
 </div>
+<a id="a2f4bab2c003d13035787288d711d47e1" name="a2f4bab2c003d13035787288d711d47e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4bab2c003d13035787288d711d47e1">&#9670;&#160;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutputType <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>制御演算を実行し、制御値を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd>出力値(OutputType) </dd></dl>
+
+<p><a class="el" href="../../d0/d5c/classAbstractController.html#a09d848550bcfb1cf02b3062176bf755e">AbstractController&lt; InputType, OutputType &gt;</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_cgraph.png" border="0" usemap="#ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_cgraph" alt=""/></div>
+<map name="ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_cgraph" id="ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_cgraph">
+<area shape="rect" title="制御演算を実行し、制御値を返す" alt="" coords="5,5,76,31"/>
+<area shape="rect" href="../../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10" title="[lo, hi] にクランプする。lo &gt; hi の場合の挙動は未定義扱い" alt="" coords="124,5,243,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_icgraph.png" border="0" usemap="#ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_icgraph" alt=""/></div>
+<map name="ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_icgraph" id="ad8/da9/classPID_a2f4bab2c003d13035787288d711d47e1_icgraph">
+<area shape="rect" title="制御演算を実行し、制御値を返す" alt="" coords="441,13,512,38"/>
+<area shape="rect" href="../../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974" title="速度PIDを 1 ステップ実行する" alt="" coords="219,5,393,45"/>
+<area shape="rect" href="../../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1" title=" " alt="" coords="5,13,171,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a979d54b630e174777f0f52a604615afb" name="a979d54b630e174777f0f52a604615afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979d54b630e174777f0f52a604615afb">&#9670;&#160;</a></span>update_goal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::update_goal </td>
+          <td>(</td>
+          <td class="paramtype">InputType&#160;</td>
+          <td class="paramname"><em>goal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>目標値を設定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">goal</td><td>目標値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>常にtrue </dd></dl>
+
+<p><a class="el" href="../../d0/d5c/classAbstractController.html#af38b47b909288706b32de4926e8c53fc">AbstractController&lt; InputType, OutputType &gt;</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da9/classPID_a979d54b630e174777f0f52a604615afb_cgraph.png" border="0" usemap="#ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_cgraph" alt=""/></div>
+<map name="ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_cgraph" id="ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_cgraph">
+<area shape="rect" title="目標値を設定する" alt="" coords="5,5,125,31"/>
+<area shape="rect" href="../../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10" title="[lo, hi] にクランプする。lo &gt; hi の場合の挙動は未定義扱い" alt="" coords="173,5,292,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da9/classPID_a979d54b630e174777f0f52a604615afb_icgraph.png" border="0" usemap="#ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_icgraph" alt=""/></div>
+<map name="ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_icgraph" id="ad8/da9/classPID_a979d54b630e174777f0f52a604615afb_icgraph">
+<area shape="rect" title="目標値を設定する" alt="" coords="441,13,561,38"/>
+<area shape="rect" href="../../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974" title="速度PIDを 1 ステップ実行する" alt="" coords="219,5,393,45"/>
+<area shape="rect" href="../../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1" title=" " alt="" coords="5,13,171,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="accb56bf322ced6ad4eaf1ca0ec45e212" name="accb56bf322ced6ad4eaf1ca0ec45e212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb56bf322ced6ad4eaf1ca0ec45e212">&#9670;&#160;</a></span>update_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class InputType , class OutputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d8/da9/classPID.html">PID</a>&lt; InputType, OutputType &gt;::update_state </td>
+          <td>(</td>
+          <td class="paramtype">InputType&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在状態を入力する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>現在状態 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>常にtrue </dd></dl>
+
+<p><a class="el" href="../../d0/d5c/classAbstractController.html#ac2edff7b7c20ce8c00af7c85126246af">AbstractController&lt; InputType, OutputType &gt;</a>を実装しています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/da9/classPID_accb56bf322ced6ad4eaf1ca0ec45e212_icgraph.png" border="0" usemap="#ad8/da9/classPID_accb56bf322ced6ad4eaf1ca0ec45e212_icgraph" alt=""/></div>
+<map name="ad8/da9/classPID_accb56bf322ced6ad4eaf1ca0ec45e212_icgraph" id="ad8/da9/classPID_accb56bf322ced6ad4eaf1ca0ec45e212_icgraph">
+<area shape="rect" title="現在状態を入力する" alt="" coords="441,13,567,38"/>
+<area shape="rect" href="../../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974" title="速度PIDを 1 ステップ実行する" alt="" coords="219,5,393,45"/>
+<area shape="rect" href="../../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1" title=" " alt="" coords="5,13,171,38"/>
+</map>
+</div>
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>modules/logic/<a class="el" href="../../d4/db9/pid_8hpp.html">pid.hpp</a></li>
+<li>modules/pid/<a class="el" href="../../d4/db9/pid_8hpp.html">pid.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

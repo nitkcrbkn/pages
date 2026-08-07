@@ -1,5 +1,11 @@
 <map id="modules/logic/motion.hpp" name="modules/logic/motion.hpp">
 <area shape="rect" id="node1" title="MotionMode / MotionController / Motion" alt="" coords="5,5,175,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="61,152,119,177"/>
-<area shape="rect" id="node3" href="$d4/db9/pid_8hpp.html" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="85,79,180,104"/>
+<area shape="rect" id="node2" title=" " alt="" coords="7,152,66,177"/>
+<area shape="rect" id="node3" href="$d4/db9/pid_8hpp.html" title="PID PIDを計算して、値を返すクラス それ以外の操作は一切行わない。" alt="" coords="101,79,185,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="203,225,265,251"/>
+<area shape="rect" id="node5" href="$d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="90,152,197,177"/>
+<area shape="rect" id="node7" href="$dc/dfb/controller_8hpp.html" title=" " alt="" coords="271,152,391,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="111,225,176,251"/>
+<area shape="rect" id="node8" title=" " alt="" coords="291,225,369,251"/>
+<area shape="rect" id="node9" title=" " alt="" coords="394,225,453,251"/>
 </map>

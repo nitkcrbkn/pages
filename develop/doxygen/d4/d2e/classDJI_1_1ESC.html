@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 <tr class="memdesc:a43db472f35d4d8838fb54272206dd771"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したモーターからの情報を格納した構造体を返す。  <a href="../../d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771">[詳解]</a><br /></td></tr>
 <tr class="separator:a43db472f35d4d8838fb54272206dd771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad317d76968041b7b2ff8464fc58f7895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895">setCurrentLimit</a> (int motorNumber, int minMa, int maxMa)</td></tr>
-<tr class="memdesc:ad317d76968041b7b2ff8464fc58f7895"><td class="mdescLeft">&#160;</td><td class="mdescRight">電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。  <a href="../../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895">[詳解]</a><br /></td></tr>
+<tr class="memdesc:ad317d76968041b7b2ff8464fc58f7895"><td class="mdescLeft">&#160;</td><td class="mdescRight">電流のソフト上下限(mA)を設定。setCurrent()のクランプに使用。  <a href="../../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895">[詳解]</a><br /></td></tr>
 <tr class="separator:ad317d76968041b7b2ff8464fc58f7895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d02dda1294dbca760e13bb8da91dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd">setTimeout</a> (int motorNumber, uint32_t feedbackTo_ms)</td></tr>
 <tr class="memdesc:aa2d02dda1294dbca760e13bb8da91dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィードバックタイムアウトを設定 (0で無効、デフォルト無効)  <a href="../../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd">[詳解]</a><br /></td></tr>
@@ -133,6 +133,18 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 <tr class="memitem:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8">getPosition</a> (int motorNumber) const</td></tr>
 <tr class="memdesc:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">多回転を含む現在のモーター軸角度 [deg]  <a href="../../d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8">[詳解]</a><br /></td></tr>
 <tr class="separator:aae29a396b71bf9cbf1cb2a659e37f0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9887467af398b47c08e54dcc150e2ac7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#a9887467af398b47c08e54dcc150e2ac7">setSafetyFactor</a> (float factor)</td></tr>
+<tr class="memdesc:a9887467af398b47c08e54dcc150e2ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">安全係数を変更する  <a href="../../d4/d2e/classDJI_1_1ESC.html#a9887467af398b47c08e54dcc150e2ac7">[詳解]</a><br /></td></tr>
+<tr class="separator:a9887467af398b47c08e54dcc150e2ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d3f31e18c7f7fa5c7c6964ae1eae36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#ad0d3f31e18c7f7fa5c7c6964ae1eae36">getRequested</a> (int motorNumber) const</td></tr>
+<tr class="memdesc:ad0d3f31e18c7f7fa5c7c6964ae1eae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">要求電流を返す (mA, ソフト電流制限でクリップ済み)  <a href="../../d4/d2e/classDJI_1_1ESC.html#ad0d3f31e18c7f7fa5c7c6964ae1eae36">[詳解]</a><br /></td></tr>
+<tr class="separator:ad0d3f31e18c7f7fa5c7c6964ae1eae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f24e855bfcf41f1b49b6976c1a350f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#ae2f24e855bfcf41f1b49b6976c1a350f">getConsumed</a> (int motorNumber) const</td></tr>
+<tr class="memdesc:ae2f24e855bfcf41f1b49b6976c1a350f"><td class="mdescLeft">&#160;</td><td class="mdescRight">合計制限適用後の消費電流を返す (mA, 比例分配済み)  <a href="../../d4/d2e/classDJI_1_1ESC.html#ae2f24e855bfcf41f1b49b6976c1a350f">[詳解]</a><br /></td></tr>
+<tr class="separator:ae2f24e855bfcf41f1b49b6976c1a350f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3371a5041b8a7f9e0dd9637f2af8b313"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#a3371a5041b8a7f9e0dd9637f2af8b313">getTransmit</a> (int motorNumber) const</td></tr>
+<tr class="memdesc:a3371a5041b8a7f9e0dd9637f2af8b313"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケール変換後の送信値を返す (ESC固有単位)  <a href="../../d4/d2e/classDJI_1_1ESC.html#a3371a5041b8a7f9e0dd9637f2af8b313">[詳解]</a><br /></td></tr>
+<tr class="separator:a3371a5041b8a7f9e0dd9637f2af8b313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af488713d799bed458d1cf011303dda31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31">displayDebugInfo</a> ()</td></tr>
 <tr class="memdesc:af488713d799bed458d1cf011303dda31"><td class="mdescLeft">&#160;</td><td class="mdescRight">全チャンネルのデバッグ情報を表示する関数  <a href="../../d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31">[詳解]</a><br /></td></tr>
 <tr class="separator:af488713d799bed458d1cf011303dda31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +259,40 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 
 </div>
 </div>
+<a id="ae2f24e855bfcf41f1b49b6976c1a350f" name="ae2f24e855bfcf41f1b49b6976c1a350f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f24e855bfcf41f1b49b6976c1a350f">&#9670;&#160;</a></span>getConsumed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DJI::ESC::getConsumed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>合計制限適用後の消費電流を返す (mA, 比例分配済み) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motorNumber</td><td>モーター番号 (1~8) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aae29a396b71bf9cbf1cb2a659e37f0e8" name="aae29a396b71bf9cbf1cb2a659e37f0e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae29a396b71bf9cbf1cb2a659e37f0e8">&#9670;&#160;</a></span>getPosition()</h2>
 
@@ -272,6 +318,74 @@ $(document).ready(function(){initNavTree('d4/d2e/classDJI_1_1ESC.html','../../')
 </div><div class="memdoc">
 
 <p>多回転を含む現在のモーター軸角度 [deg] </p>
+
+</div>
+</div>
+<a id="ad0d3f31e18c7f7fa5c7c6964ae1eae36" name="ad0d3f31e18c7f7fa5c7c6964ae1eae36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d3f31e18c7f7fa5c7c6964ae1eae36">&#9670;&#160;</a></span>getRequested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DJI::ESC::getRequested </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>要求電流を返す (mA, ソフト電流制限でクリップ済み) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motorNumber</td><td>モーター番号 (1~8) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3371a5041b8a7f9e0dd9637f2af8b313" name="a3371a5041b8a7f9e0dd9637f2af8b313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3371a5041b8a7f9e0dd9637f2af8b313">&#9670;&#160;</a></span>getTransmit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DJI::ESC::getTransmit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motorNumber</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スケール変換後の送信値を返す (ESC固有単位) </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">motorNumber</td><td>モーター番号 (1~8) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -501,8 +615,7 @@ false </dd></dl>
 <p>指定したモーター番号のモーターに速度を設定する。 </p>
 <p >チェック事項:</p><ul>
 <li>モーター番号が設定以下0以上であること</li>
-<li>電流がC610またはC620の最大電流以下最小電流以上であること</li>
-<li>合計電流が最大合計電流以下であること <dl class="params"><dt>引数</dt><dd>
+<li>電流がC610またはC620の最大電流以下最小電流以上であること 合計電流制限は <a class="el" href="../../d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689">sendCurrent()</a> 時に比例再分配される。 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">motorNumber</td><td>モーター番号(1~8) </td></tr>
     <tr><td class="paramname">current</td><td>電流値(int) +-10Aぐらい (mA)で渡す </td></tr>
@@ -512,6 +625,15 @@ false </dd></dl>
 <dl class="section return"><dt>戻り値</dt><dd>bool true / false </dd></dl>
 </li>
 </ul>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d2e/classDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_cgraph.png" border="0" usemap="#ad4/d2e/classDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_cgraph" alt=""/></div>
+<map name="ad4/d2e/classDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_cgraph" id="ad4/d2e/classDJI_1_1ESC_a40d5586fcd956a45de51dfe6a88dd556_cgraph">
+<area shape="rect" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="5,5,145,31"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55" title=" " alt="" coords="193,5,268,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -555,17 +677,51 @@ false </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。 </p>
+<p>電流のソフト上下限(mA)を設定。setCurrent()のクランプに使用。 </p>
 <p >ハードウェア上下限(C610/C620の物理限界)を超える値は無視される。 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph.png" border="0" usemap="#ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph" alt=""/></div>
 <map name="ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph" id="ad4/d2e/classDJI_1_1ESC_ad317d76968041b7b2ff8464fc58f7895_cgraph">
-<area shape="rect" title="電流のソフト上下限(mA)を設定。writeCurrent_internalのクランプに使用。" alt="" coords="5,5,175,31"/>
+<area shape="rect" title="電流のソフト上下限(mA)を設定。setCurrent()のクランプに使用。" alt="" coords="5,5,175,31"/>
 <area shape="rect" href="../../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55" title=" " alt="" coords="223,5,297,31"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9887467af398b47c08e54dcc150e2ac7" name="a9887467af398b47c08e54dcc150e2ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9887467af398b47c08e54dcc150e2ac7">&#9670;&#160;</a></span>setSafetyFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::ESC::setSafetyFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>安全係数を変更する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factor</td><td>(0.0, 1.0] </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

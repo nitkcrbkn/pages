@@ -1,7 +1,7 @@
 var classCanSystem_1_1CanManager =
 [
     [ "CANFifoConfig", "dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html", "dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig" ],
-    [ "CanManager", "d1/d4a/classCanSystem_1_1CanManager.html#a17922f89f06c0d82d13fe5373b0a69c0", null ],
+    [ "CanManager", "d1/d4a/classCanSystem_1_1CanManager.html#a34626aac10c17b771acba1212af43b5a", null ],
     [ "getCanFilterConfig", "d1/d4a/classCanSystem_1_1CanManager.html#adbb4788525dbadeae56c7b00ea65016f", null ],
     [ "getCanTxHeader", "d1/d4a/classCanSystem_1_1CanManager.html#ae6cd2f1dcebdf1ac54ff454f5071c7cf", null ],
     [ "getFifo", "d1/d4a/classCanSystem_1_1CanManager.html#ae76cb26d1c9ef3b1dbd3dc587ec46ecd", null ],

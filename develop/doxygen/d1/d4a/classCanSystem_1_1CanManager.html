@@ -132,9 +132,9 @@ CanSystem::CanManager 連携図</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a17922f89f06c0d82d13fe5373b0a69c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a17922f89f06c0d82d13fe5373b0a69c0">CanManager</a> (CAN_HandleTypeDef &amp;hcan, uint8_t fifoid=0)</td></tr>
-<tr class="memdesc:a17922f89f06c0d82d13fe5373b0a69c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#a17922f89f06c0d82d13fe5373b0a69c0">[詳解]</a><br /></td></tr>
-<tr class="separator:a17922f89f06c0d82d13fe5373b0a69c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34626aac10c17b771acba1212af43b5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a34626aac10c17b771acba1212af43b5a">CanManager</a> (CAN_HandleTypeDef &amp;hcan, bool extid, uint8_t fifoid=0)</td></tr>
+<tr class="memdesc:a34626aac10c17b771acba1212af43b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#a34626aac10c17b771acba1212af43b5a">[詳解]</a><br /></td></tr>
+<tr class="separator:a34626aac10c17b771acba1212af43b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a035f4e3c3ecd485e52bc7109ac9b77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77">initCan</a> (const char *_name, int _stream_pos, bool _restart_on_error=false, bool _show_config=false) override</td></tr>
 <tr class="memdesc:a3a035f4e3c3ecd485e52bc7109ac9b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN の初期化  <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77">[詳解]</a><br /></td></tr>
 <tr class="separator:a3a035f4e3c3ecd485e52bc7109ac9b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,8 +218,8 @@ CanSystem::CanManager 連携図</div>
 <p >ICanManager を実装し、フィルタ設定・送受信・割り込み管理などの 共通機能を提供する。派生クラスで setConfig() と setInterrupt() を実装すること。</p>
 <dl class="section note"><dt>覚え書き</dt><dd>使用する前に <a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77" title="CAN の初期化">initCan()</a> を呼び出すこと。 受信コールバックは <a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a85bd0dde9eb0d5a9833e64d15f067d04" title="受信コールバックを登録する">register_cb()</a> で複数登録可能。 </dd></dl>
 </div><h2 class="groupheader">構築子と解体子</h2>
-<a id="a17922f89f06c0d82d13fe5373b0a69c0" name="a17922f89f06c0d82d13fe5373b0a69c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17922f89f06c0d82d13fe5373b0a69c0">&#9670;&#160;</a></span>CanManager()</h2>
+<a id="a34626aac10c17b771acba1212af43b5a" name="a34626aac10c17b771acba1212af43b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34626aac10c17b771acba1212af43b5a">&#9670;&#160;</a></span>CanManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,6 +232,12 @@ CanSystem::CanManager 連携図</div>
           <td>(</td>
           <td class="paramtype">CAN_HandleTypeDef &amp;&#160;</td>
           <td class="paramname"><em>hcan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>extid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -256,6 +262,7 @@ CanSystem::CanManager 連携図</div>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">hcan</td><td>HAL CAN ハンドルへの参照 </td></tr>
+    <tr><td class="paramname">extid</td><td>拡張IDを使用するか </td></tr>
     <tr><td class="paramname">fifoid</td><td>使用する受信 FIFO 番号（省略時 0） </td></tr>
   </table>
   </dd>

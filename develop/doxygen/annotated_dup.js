@@ -51,6 +51,7 @@ var annotated_dup =
     [ "stdr", "d5/dc4/namespacestdr.html", [
       [ "PID", "dc/d22/classstdr_1_1PID.html", "dc/d22/classstdr_1_1PID" ]
     ] ],
+    [ "AbstractController", "d0/d5c/classAbstractController.html", "d0/d5c/classAbstractController" ],
     [ "AMT10", "d4/d48/classAMT10.html", "d4/d48/classAMT10" ],
     [ "BitRange", "d6/d01/structBitRange.html", "d6/d01/structBitRange" ],
     [ "CommandReceiver", "d0/d45/classCommandReceiver.html", "d0/d45/classCommandReceiver" ],
