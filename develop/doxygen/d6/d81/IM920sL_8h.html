@@ -100,14 +100,22 @@ $(document).ready(function(){initNavTree('d6/d81/IM920sL_8h.html','../../'); ini
 
 <p>IM920sLを操作するためのクラス  
 <a href="#details">[詳解]</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 IM920sL.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/dc2/IM920sL_8h__incl.png" border="0" usemap="#amodules_2platform_2IM920sL_8h" alt=""/></div>
 <map name="amodules_2platform_2IM920sL_8h" id="amodules_2platform_2IM920sL_8h">
-<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="5,5,192,31"/>
-<area shape="rect" title=" " alt="" coords="71,79,126,104"/>
+<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="111,5,297,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,67,104"/>
+<area shape="rect" title=" " alt="" coords="91,79,149,104"/>
+<area shape="rect" title=" " alt="" coords="173,79,235,104"/>
+<area shape="rect" title=" " alt="" coords="259,79,314,104"/>
+<area shape="rect" title=" " alt="" coords="339,79,427,104"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -122,6 +130,8 @@ IM920sL.h の依存先関係図:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">IM920sL::Packet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html">IM920sL::BaseIM920sL</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで受信するためのクラスです。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +145,8 @@ IM920sL.h の依存先関係図:</div>
 型定義</h2></td></tr>
 <tr class="memitem:adc86bf22674297c791c2be505605bca6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#adc86bf22674297c791c2be505605bca6">IM920sL::CallBack</a> = void(*)(const int &amp;)</td></tr>
 <tr class="separator:adc86bf22674297c791c2be505605bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ab0ae356090621f770eba1520b0acc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#ad8ab0ae356090621f770eba1520b0acc">IM920sL::PacketCallBack</a> = void(*)(const Packet &amp;)</td></tr>
+<tr class="separator:ad8ab0ae356090621f770eba1520b0acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLを操作するためのクラス </p>

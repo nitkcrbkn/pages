@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writefn_0',['WriteFn',['../d9/d24/classLogLite.html#a1a0a5a4f74d25d5c506fbb8c1bd15d11',1,'LogLite']]]
+  ['telemetryt_0',['TelemetryT',['../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069',1,'telem_controller.hpp']]]
 ];

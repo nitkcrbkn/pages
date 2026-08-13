@@ -19,7 +19,8 @@ var annotated_dup =
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],
     [ "IM920sL", "da/d22/namespaceIM920sL.html", [
-      [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", "d7/dd8/classIM920sL_1_1BaseIM920sL" ]
+      [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", "d7/dd8/classIM920sL_1_1BaseIM920sL" ],
+      [ "Packet", "db/d29/structIM920sL_1_1Packet.html", "db/d29/structIM920sL_1_1Packet" ]
     ] ],
     [ "Motoron", "d5/d02/namespaceMotoron.html", [
       [ "Master", "da/d4c/classMotoron_1_1Master.html", "da/d4c/classMotoron_1_1Master" ]

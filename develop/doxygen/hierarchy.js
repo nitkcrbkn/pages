@@ -57,6 +57,7 @@ var hierarchy =
     [ "MotionMode< PositionType >", "df/d66/classMotionMode.html", null ],
     [ "MotionMode< VelocityType >", "df/d66/classMotionMode.html", null ],
     [ "proto_can::NoSchema", "de/d88/structproto__can_1_1NoSchema.html", null ],
+    [ "IM920sL::Packet", "db/d29/structIM920sL_1_1Packet.html", null ],
     [ "stdr::PID", "dc/d22/classstdr_1_1PID.html", null ],
     [ "PIDConfig", "dc/df1/structPIDConfig.html", null ],
     [ "PIDGain", "d4/d2c/structPIDGain.html", null ],
