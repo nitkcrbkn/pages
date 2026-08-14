@@ -131,6 +131,7 @@ IM920sL.h の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">IM920sL::Packet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLがデータモードで出力する受信パケットです。  <a href="../../db/d29/structIM920sL_1_1Packet.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html">IM920sL::BaseIM920sL</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで受信するためのクラスです。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#details">[詳解]</a><br /></td></tr>
@@ -139,14 +140,17 @@ IM920sL.h の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
 <tr class="memitem:da/d22/namespaceIM920sL"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html">IM920sL</a></td></tr>
+<tr class="memdesc:da/d22/namespaceIM920sL"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLを扱うためのライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:adc86bf22674297c791c2be505605bca6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#adc86bf22674297c791c2be505605bca6">IM920sL::CallBack</a> = void(*)(const int &amp;)</td></tr>
-<tr class="separator:adc86bf22674297c791c2be505605bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ab0ae356090621f770eba1520b0acc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#ad8ab0ae356090621f770eba1520b0acc">IM920sL::PacketCallBack</a> = void(*)(const Packet &amp;)</td></tr>
-<tr class="separator:ad8ab0ae356090621f770eba1520b0acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9328138ed0e4f7089428eed9e4402c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1">IM920sL::CallBack</a> = void(*)(const int &amp;value)</td></tr>
+<tr class="memdesc:ae9328138ed0e4f7089428eed9e4402c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">従来形式の受信値コールバックです。  <a href="../../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1">[詳解]</a><br /></td></tr>
+<tr class="separator:ae9328138ed0e4f7089428eed9e4402c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43037d2fae5272adb4cab5e85d2ee884"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">IM920sL::PacketCallBack</a> = void(*)(const Packet &amp;packet)</td></tr>
+<tr class="memdesc:a43037d2fae5272adb4cab5e85d2ee884"><td class="mdescLeft">&#160;</td><td class="mdescRight">パース済み受信パケットのコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">[詳解]</a><br /></td></tr>
+<tr class="separator:a43037d2fae5272adb4cab5e85d2ee884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLを操作するためのクラス </p>

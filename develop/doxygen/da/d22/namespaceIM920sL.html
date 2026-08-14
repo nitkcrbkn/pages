@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
   <div class="headertitle"><div class="title">IM920sL 名前空間</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>IM920sLを扱うためのライブラリ  
+<a href="../../da/d22/namespaceIM920sL.html#details">[詳解]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
@@ -103,18 +106,21 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLで受信するためのクラスです。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLがデータモードで出力する受信パケットです。  <a href="../../db/d29/structIM920sL_1_1Packet.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:adc86bf22674297c791c2be505605bca6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#adc86bf22674297c791c2be505605bca6">CallBack</a> = void(*)(const int &amp;)</td></tr>
-<tr class="separator:adc86bf22674297c791c2be505605bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ab0ae356090621f770eba1520b0acc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#ad8ab0ae356090621f770eba1520b0acc">PacketCallBack</a> = void(*)(const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;)</td></tr>
-<tr class="separator:ad8ab0ae356090621f770eba1520b0acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9328138ed0e4f7089428eed9e4402c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1">CallBack</a> = void(*)(const int &amp;value)</td></tr>
+<tr class="memdesc:ae9328138ed0e4f7089428eed9e4402c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">従来形式の受信値コールバックです。  <a href="../../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1">[詳解]</a><br /></td></tr>
+<tr class="separator:ae9328138ed0e4f7089428eed9e4402c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43037d2fae5272adb4cab5e85d2ee884"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">PacketCallBack</a> = void(*)(const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;packet)</td></tr>
+<tr class="memdesc:a43037d2fae5272adb4cab5e85d2ee884"><td class="mdescLeft">&#160;</td><td class="mdescRight">パース済み受信パケットのコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">[詳解]</a><br /></td></tr>
+<tr class="separator:a43037d2fae5272adb4cab5e85d2ee884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p >IM920sLを扱うためのライブラリ</p>
-<p >現状アナログA2~A5を使用します。 事前に通信するIM920sL同士でペアリングする必要があります。</p>
+<div class="textblock"><p >IM920sLを扱うためのライブラリ </p>
+<p >UARTで接続したIM920sLを操作します。 事前に通信するIM920sL同士でペアリングする必要があります。</p>
 <h3><a class="anchor" id="autotoc_md3"></a>
 (a) データ送信コマンド</h3>
 <table class="markdownTable">
@@ -156,31 +162,47 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
 <td class="markdownTableBodyNone">グループ登録パスワード   </td><td class="markdownTableBodyNone">STRP   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">抜粋モード、AD入力モード時   </td></tr>
 </table>
 </div><h2 class="groupheader">型定義詳解</h2>
-<a id="adc86bf22674297c791c2be505605bca6" name="adc86bf22674297c791c2be505605bca6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc86bf22674297c791c2be505605bca6">&#9670;&#160;</a></span>CallBack</h2>
+<a id="ae9328138ed0e4f7089428eed9e4402c1" name="ae9328138ed0e4f7089428eed9e4402c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9328138ed0e4f7089428eed9e4402c1">&#9670;&#160;</a></span>CallBack</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#adc86bf22674297c791c2be505605bca6">IM920sL::CallBack</a> = typedef void (*)(const int &amp;)</td>
+          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1">IM920sL::CallBack</a> = typedef void (*)(const int &amp;value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>従来形式の受信値コールバックです。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>ノード0001から受信した16進数ペイロードを整数へ変換した値。変換できない場合は-1。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ad8ab0ae356090621f770eba1520b0acc" name="ad8ab0ae356090621f770eba1520b0acc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ab0ae356090621f770eba1520b0acc">&#9670;&#160;</a></span>PacketCallBack</h2>
+<a id="a43037d2fae5272adb4cab5e85d2ee884" name="a43037d2fae5272adb4cab5e85d2ee884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43037d2fae5272adb4cab5e85d2ee884">&#9670;&#160;</a></span>PacketCallBack</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#ad8ab0ae356090621f770eba1520b0acc">IM920sL::PacketCallBack</a> = typedef void (*)(const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;)</td>
+          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">IM920sL::PacketCallBack</a> = typedef void (*)(const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;packet)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>パース済み受信パケットのコールバックです。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packet</td><td>受信したパケット。この参照およびrawPayloadはコールバック中だけ有効です。 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -97,20 +97,26 @@ $(document).ready(function(){initNavTree('db/d29/structIM920sL_1_1Packet.html','
 </div><!--header-->
 <div class="contents">
 
+<p>IM920sLがデータモードで出力する受信パケットです。  
+ <a href="../../db/d29/structIM920sL_1_1Packet.html#details">[詳解]</a></p>
+
 <p><code>#include &lt;IM920sL.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
 <tr class="memitem:a85ac144a32f29b95bfcb197c24bb5678"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html#a85ac144a32f29b95bfcb197c24bb5678">senderNode</a> = 0</td></tr>
+<tr class="memdesc:a85ac144a32f29b95bfcb197c24bb5678"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信元ノード番号です。  <a href="../../db/d29/structIM920sL_1_1Packet.html#a85ac144a32f29b95bfcb197c24bb5678">[詳解]</a><br /></td></tr>
 <tr class="separator:a85ac144a32f29b95bfcb197c24bb5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba73531cf39bc862803cd9e5daad14b9"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html#aba73531cf39bc862803cd9e5daad14b9">rssi</a> = 0</td></tr>
+<tr class="memdesc:aba73531cf39bc862803cd9e5daad14b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信元から受信したRSSI値です。  <a href="../../db/d29/structIM920sL_1_1Packet.html#aba73531cf39bc862803cd9e5daad14b9">[詳解]</a><br /></td></tr>
 <tr class="separator:aba73531cf39bc862803cd9e5daad14b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9b201bdfe277d4865cd1f9d52361e7"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d29/structIM920sL_1_1Packet.html#a2f9b201bdfe277d4865cd1f9d52361e7">rawPayload</a></td></tr>
+<tr class="memdesc:a2f9b201bdfe277d4865cd1f9d52361e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">DCIOの生ペイロードです。  <a href="../../db/d29/structIM920sL_1_1Packet.html#a2f9b201bdfe277d4865cd1f9d52361e7">[詳解]</a><br /></td></tr>
 <tr class="separator:a2f9b201bdfe277d4865cd1f9d52361e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p >A packet printed by <a class="el" href="../../da/d22/namespaceIM920sL.html">IM920sL</a> in data mode.</p>
-<p >The module prints received packets as <code>aa,bbbb,dd:payload\\r\\n</code>. <code>bbbb</code> is the sender node number and <code>dd</code> is the signed RSSI byte. </p>
+<div class="textblock"><p >IM920sLがデータモードで出力する受信パケットです。 </p>
+<p >受信行 <code>aa,bbbb,dd:payload\\r\\n</code> をパースした結果です。 <code>bbbb</code> は送信元ノード番号、<code>dd</code> は符号付きRSSI値を表します。 </p>
 </div><h2 class="groupheader">メンバ詳解</h2>
 <a id="a2f9b201bdfe277d4865cd1f9d52361e7" name="a2f9b201bdfe277d4865cd1f9d52361e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f9b201bdfe277d4865cd1f9d52361e7">&#9670;&#160;</a></span>rawPayload</h2>
@@ -123,6 +129,9 @@ $(document).ready(function(){initNavTree('db/d29/structIM920sL_1_1Packet.html','
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>DCIOの生ペイロードです。 </p>
+<dl class="section warning"><dt>警告</dt><dd>このビューはパケットコールバックの実行中だけ有効です。保持する場合はコピーしてください。 </dd></dl>
 
 </div>
 </div>
@@ -138,6 +147,8 @@ $(document).ready(function(){initNavTree('db/d29/structIM920sL_1_1Packet.html','
       </table>
 </div><div class="memdoc">
 
+<p>送信元から受信したRSSI値です。 </p>
+
 </div>
 </div>
 <a id="a85ac144a32f29b95bfcb197c24bb5678" name="a85ac144a32f29b95bfcb197c24bb5678"></a>
@@ -151,6 +162,8 @@ $(document).ready(function(){initNavTree('db/d29/structIM920sL_1_1Packet.html','
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>送信元ノード番号です。 </p>
 
 </div>
 </div>
