@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['va_5fend_0',['va_end',['../de/d83/structFormatStr.html#abb83b99b004d2a837eae348c71fd27e0',1,'FormatStr']]],
-  ['va_5fstart_1',['va_start',['../de/d83/structFormatStr.html#ab633947a1aebc2108121bff1626c9c3a',1,'FormatStr']]],
-  ['velocity_2',['velocity',['../df/d66/classMotionMode.html#a398b919e56fbe01152220903a8d48572',1,'MotionMode']]],
-  ['velpid_3',['velPID',['../d9/d58/classMotionController.html#aa7e89ccfac6d53abd934d1a15b1b23b2',1,'MotionController']]],
-  ['vsnprintf_4',['vsnprintf',['../de/d83/structFormatStr.html#abd511ce047577623405733141e3ad963',1,'FormatStr']]]
+  ['uartmanager_0',['UartManager',['../dd/d1a/classUartManager.html#a5d5ab6d09daae6b88a7c790de101f775',1,'UartManager']]],
+  ['update_1',['update',['../d0/d5c/classAbstractController.html#adf7aff0920897d2d7ce991d380f444c2',1,'AbstractController']]],
+  ['update_5fdip_2',['update_dip',['../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a62dfbee59be5fd849c13f14ee83b00f0',1,'solenoid_ctrl::SolenoidDevice']]],
+  ['update_5fgoal_3',['update_goal',['../d0/d5c/classAbstractController.html#af38b47b909288706b32de4926e8c53fc',1,'AbstractController::update_goal()'],['../d8/da9/classPID.html#a979d54b630e174777f0f52a604615afb',1,'PID::update_goal()']]],
+  ['update_5fstate_4',['update_state',['../d0/d5c/classAbstractController.html#ac2edff7b7c20ce8c00af7c85126246af',1,'AbstractController::update_state()'],['../d8/da9/classPID.html#accb56bf322ced6ad4eaf1ca0ec45e212',1,'PID::update_state()']]],
+  ['updaterpm_5',['updateRpm',['../db/d69/classAMTEncoderBase.html#aab64121063fc31a15f3cf7cfbffc84a9',1,'AMTEncoderBase']]],
+  ['updaterpmatinterval_6',['updateRpmAtInterval',['../db/d69/classAMTEncoderBase.html#a7b4fcf49fa955ca187c55b1cbfc82758',1,'AMTEncoderBase']]],
+  ['updatestatus_7',['updateStatus',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6',1,'CanSystem::CanErrorTracker']]]
 ];

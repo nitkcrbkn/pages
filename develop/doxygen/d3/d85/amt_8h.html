@@ -95,30 +95,38 @@ $(document).ready(function(){initNavTree('d3/d85/amt_8h.html','../../'); initRes
   <div class="headertitle"><div class="title">amt.h ファイル</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
+
+<p>AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d0/d0c/amt__base_8h.html">logic/amt_base.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/d0d/platform_2gpio_8h.html">platform/gpio.h</a>&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;stddef.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 amt.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d0e/amt_8h__incl.png" border="0" usemap="#amodules_2logic_2amt_8h" alt=""/></div>
 <map name="amodules_2logic_2amt_8h" id="amodules_2logic_2amt_8h">
-<area shape="rect" title=" " alt="" coords="87,5,226,31"/>
-<area shape="rect" title=" " alt="" coords="5,152,65,177"/>
-<area shape="rect" href="../../df/d0d/platform_2gpio_8h.html" title=" " alt="" coords="58,79,165,104"/>
-<area shape="rect" title=" " alt="" coords="91,152,155,177"/>
-<area shape="rect" title=" " alt="" coords="205,152,273,177"/>
+<area shape="rect" title="AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。" alt="" coords="209,5,347,31"/>
+<area shape="rect" href="../../d0/d0c/amt__base_8h.html" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="150,79,270,104"/>
+<area shape="rect" href="../../df/d0d/platform_2gpio_8h.html" title=" " alt="" coords="311,79,418,104"/>
+<area shape="rect" title=" " alt="" coords="265,152,325,177"/>
+<area shape="rect" title=" " alt="" coords="5,152,71,177"/>
+<area shape="rect" title=" " alt="" coords="95,152,155,177"/>
+<area shape="rect" title=" " alt="" coords="179,152,241,177"/>
+<area shape="rect" title=" " alt="" coords="350,152,414,177"/>
+<area shape="rect" title=" " alt="" coords="439,152,507,177"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/classAMT10.html">AMT10</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CUI Devices AMT10シリーズ エンコーダ制御クラス  <a href="../../d4/d48/classAMT10.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO EXTIでquadratureを解読するbackend。  <a href="../../df/d9b/classAMTEncoderExti.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>利用側は本ヘッダだけをincludeすればよい。 </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

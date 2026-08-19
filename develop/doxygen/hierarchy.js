@@ -7,7 +7,9 @@ var hierarchy =
     ] ],
     [ "AbstractController< PositionType, VelocityType >", "d0/d5c/classAbstractController.html", null ],
     [ "AbstractController< VelocityType, OutputType >", "d0/d5c/classAbstractController.html", null ],
-    [ "AMT10", "d4/d48/classAMT10.html", null ],
+    [ "AMTEncoderBase", "db/d69/classAMTEncoderBase.html", [
+      [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", null ]
+    ] ],
     [ "IM920sL::BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", null ],
     [ "BitRange", "d6/d01/structBitRange.html", null ],
     [ "PS5::Button", "d6/de5/structPS5_1_1Button.html", null ],

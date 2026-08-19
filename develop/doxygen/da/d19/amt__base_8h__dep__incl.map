@@ -1,0 +1,4 @@
+<map id="modules/logic/amt_base.h" name="modules/logic/amt_base.h">
+<area shape="rect" id="node1" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="5,5,179,31"/>
+<area shape="rect" id="node2" href="$d3/d85/amt_8h.html" title="AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。" alt="" coords="23,79,161,104"/>
+</map>

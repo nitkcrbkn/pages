@@ -1,0 +1,6 @@
+<map id="AMTEncoderBase::correctionIsBlocked" name="AMTEncoderBase::correctionIsBlocked">
+<area shape="rect" id="node1" title=" " alt="" coords="491,27,681,67"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#af6fc3eed2c5862cf14d963cf5ad3db4c" title=" " alt="" coords="238,5,441,31"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#aef252d951bfeff07f907d807b76c2f59" title="OnRequestモードの次回X相補正を予約する。" alt="" coords="236,55,443,95"/>
+<area shape="rect" id="node3" href="$df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="5,5,188,31"/>
+</map>

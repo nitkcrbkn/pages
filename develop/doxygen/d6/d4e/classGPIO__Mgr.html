@@ -145,6 +145,8 @@ $(document).ready(function(){initNavTree('d6/d4e/classGPIO__Mgr.html','../../');
 <tr class="memitem:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7">get_pin</a> (int index) const</td></tr>
 <tr class="memdesc:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンの番号を返す  <a href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7">[詳解]</a><br /></td></tr>
 <tr class="separator:aadd2723b1c3be80f2a1fe9c667e7e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00fbd9a40812c254074ced4098b4c37"><td class="memItemLeft" align="right" valign="top">GPIO_TypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#ac00fbd9a40812c254074ced4098b4c37">get_port</a> (int index) const</td></tr>
+<tr class="separator:ac00fbd9a40812c254074ced4098b4c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5810a79006aa77eb942825e4068ccdb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">read</a> (int index=0) const</td></tr>
 <tr class="memdesc:a5810a79006aa77eb942825e4068ccdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定インデックスのGPIOピンの状態を読み取る  <a href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0">[詳解]</a><br /></td></tr>
 <tr class="separator:a5810a79006aa77eb942825e4068ccdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -638,8 +640,46 @@ template&lt;size_t PIN_COUNT&gt; </div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph" alt=""/></div>
 <map name="ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph" id="ad6/d4e/classGPIO__Mgr_aadd2723b1c3be80f2a1fe9c667e7e2a7_icgraph">
-<area shape="rect" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="159,5,291,31"/>
-<area shape="rect" href="../../d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="5,5,111,31"/>
+<area shape="rect" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="236,31,368,56"/>
+<area shape="rect" href="../../df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37" title="初期A/B状態を同期する。" alt="" coords="19,5,174,31"/>
+<area shape="rect" href="../../df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="5,55,188,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac00fbd9a40812c254074ced4098b4c37" name="ac00fbd9a40812c254074ced4098b4c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00fbd9a40812c254074ced4098b4c37">&#9670;&#160;</a></span>get_port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIO_TypeDef * <a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt;::get_port </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d4e/classGPIO__Mgr_ac00fbd9a40812c254074ced4098b4c37_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_ac00fbd9a40812c254074ced4098b4c37_icgraph" alt=""/></div>
+<map name="ad6/d4e/classGPIO__Mgr_ac00fbd9a40812c254074ced4098b4c37_icgraph" id="ad6/d4e/classGPIO__Mgr_ac00fbd9a40812c254074ced4098b4c37_icgraph">
+<area shape="rect" title=" " alt="" coords="208,5,345,31"/>
+<area shape="rect" href="../../df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37" title="初期A/B状態を同期する。" alt="" coords="5,5,160,31"/>
 </map>
 </div>
 
@@ -1089,11 +1129,12 @@ template&lt;size_t PIN_COUNT&gt; </div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph.png" border="0" usemap="#ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph" alt=""/></div>
 <map name="ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph" id="ad6/d4e/classGPIO__Mgr_a5810a79006aa77eb942825e4068ccdb0_icgraph">
-<area shape="rect" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="375,31,489,56"/>
-<area shape="rect" href="../../d4/d48/classAMT10.html#a6c80b0802d74e3bfaff7c71684f833a8" title="外部割り込みハンドラ(HAL_GPIO_EXTI_Callback等)から呼び出すコールバック" alt="" coords="215,5,320,31"/>
-<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="208,55,327,80"/>
-<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,29,160,55"/>
-<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,79,140,104"/>
+<area shape="rect" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="439,55,553,80"/>
+<area shape="rect" href="../../df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37" title="初期A/B状態を同期する。" alt="" coords="222,5,377,31"/>
+<area shape="rect" href="../../df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="208,55,391,80"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04" title="管理している全GPIOピンの状態を0/1ビットに詰めて返す" alt="" coords="240,104,359,129"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b" title="ビットパターン再生" alt="" coords="5,79,160,104"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#afcb2f26704071085754db9489a4d90c1" title="state()で得られたビットマップを2進数でログ出力する" alt="" coords="25,128,140,153"/>
 </map>
 </div>
 

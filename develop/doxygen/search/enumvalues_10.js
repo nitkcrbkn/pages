@@ -1,19 +1,4 @@
 var searchData=
 [
-  ['r1_0',['R1',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529facda522d4353b166cc2dee84673307b4e',1,'robot::Controller']]],
-  ['r2_1',['R2',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529fa8c6d22ff6f63fc6711cfa315cb80b314',1,'robot::Controller']]],
-  ['r3_2',['R3',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529fa5c108ce0fe89d0632cfce75f650b36c2',1,'robot::Controller']]],
-  ['ready_3',['Ready',['../namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31ae7d31fc0602fb2ede144d18cdffd816b',1,'CanSystem']]],
-  ['request_4',['REQUEST',['../classdevices_1_1RequestStatus.html#a369308ddf71ae51953983d0658b7d5e7aad6c35880c58d97c03d60a6ad0f23737',1,'devices::RequestStatus::REQUEST()'],['../namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216aad6c35880c58d97c03d60a6ad0f23737',1,'proto_can::REQUEST()']]],
-  ['reset_5',['RESET',['../namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216ab5859d8721cfdc0312b2838b9c985bc1',1,'proto_can']]],
-  ['reset_6',['Reset',['../namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a526d688f37a86d3c3f27d0c5016eb71d',1,'CanSystem']]],
-  ['reset_5ftype_7',['RESET_TYPE',['../classdevices_1_1ResetCommand.html#a9e66fa5f9d2c624425455a65f586f18caaf1c26a0063c7385334cae17aa76aa01',1,'devices::ResetCommand']]],
-  ['response_8',['RESPONSE',['../namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216a4fa1a4d2e48aa765093ca6aae57a5150',1,'proto_can']]],
-  ['restart_9',['RESTART',['../classrobot_1_1SystemCommand.html#a036c54b9b6f237a920bc323530f57287a1104c54a9ec6549e4ef9562b687596fb',1,'robot::SystemCommand']]],
-  ['right_10',['RIGHT',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529fa21507b40c80068eda19865706fdc2403',1,'robot::Controller']]],
-  ['rightx_11',['RIGHTX',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529fa4b030e8ec8464937b79250713a288d1b',1,'robot::Controller']]],
-  ['righty_12',['RIGHTY',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529facdb22014715be6e70bf0dcbccccdbfee',1,'robot::Controller']]],
-  ['robomas_13',['ROBOMAS',['../namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983abd377d731b0ccb183c03c570a2a3cf90',1,'proto_can']]],
-  ['roll_14',['ROLL',['../classrobot_1_1Controller.html#a5a660df67b6b48a2698e8510d647529fa08cd1a31f17f0247ac89e2fbaadaa9e8',1,'robot::Controller']]],
-  ['running_15',['Running',['../namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca5bda814c4aedb126839228f1a3d92f09',1,'DJI']]]
+  ['version_0',['VERSION',['../dc/d65/namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0a021321e8c168ba3ae39ce3a2e7b3ec87',1,'proto_can']]]
 ];

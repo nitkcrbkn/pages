@@ -9,6 +9,7 @@ var classGPIO__Mgr =
     [ "flashPattern", "d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862", null ],
     [ "flashPattern", "d6/d4e/classGPIO__Mgr.html#adab5e2b32a15a4d368b32329212e6862", null ],
     [ "get_pin", "d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7", null ],
+    [ "get_port", "d6/d4e/classGPIO__Mgr.html#ac00fbd9a40812c254074ced4098b4c37", null ],
     [ "NOT", "d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38", null ],
     [ "NOT", "d6/d4e/classGPIO__Mgr.html#a3081e1c791fea0f7be9d5aa9c0238c38", null ],
     [ "playPattern", "d6/d4e/classGPIO__Mgr.html#a49843ef2e0c9c834593d91fba79aa91b", null ],

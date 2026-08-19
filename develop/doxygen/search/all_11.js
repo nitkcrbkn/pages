@@ -26,8 +26,9 @@ var searchData=
   ['transmit_5ferror_5fcount_23',['transmit_error_count',['../df/d6b/structCanSystem_1_1ErrorCounters.html#a97d59394e03c0a98f5d5041a632e1cdc',1,'CanSystem::ErrorCounters']]],
   ['trapezoid_24',['Trapezoid',['../d3/d3a/motion_8hpp.html#ae5463507f115f3f36a28277995cf711ba7e7dd435b4cc7ba2b020d5a97856dc80',1,'motion.hpp']]],
   ['triangle_25',['TRIANGLE',['../d6/de5/structPS5_1_1Button.html#acbfe32b8783a9e0d7dedd4832e6954b8',1,'PS5::Button']]],
-  ['tx_5ffifo_5fqueue_5fmode_26',['tx_fifo_queue_mode',['../d7/d93/structCanSystem_1_1CANConfig.html#a5372343552fe8fc53c38219238093fc3',1,'CanSystem::CANConfig']]],
-  ['txheader_27',['TxHeader',['../d1/d4a/classCanSystem_1_1CanManager.html#a48981528435c9e59ea9efb02c342bfab',1,'CanSystem::CanManager']]],
-  ['txrecord_28',['TxRecord',['../d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html',1,'CanSystem::MockCanProfile']]],
-  ['type_29',['Type',['../dd/d82/classproto__can_1_1DeviceID.html#a168f22204a45c663c7d8bd28a4fdfa8a',1,'proto_can::DeviceID']]]
+  ['triggerdirection_26',['TriggerDirection',['../d0/d0c/amt__base_8h.html#a91519aa051e040f781d489302a630d39',1,'amt_base.h']]],
+  ['tx_5ffifo_5fqueue_5fmode_27',['tx_fifo_queue_mode',['../d7/d93/structCanSystem_1_1CANConfig.html#a5372343552fe8fc53c38219238093fc3',1,'CanSystem::CANConfig']]],
+  ['txheader_28',['TxHeader',['../d1/d4a/classCanSystem_1_1CanManager.html#a48981528435c9e59ea9efb02c342bfab',1,'CanSystem::CanManager']]],
+  ['txrecord_29',['TxRecord',['../d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html',1,'CanSystem::MockCanProfile']]],
+  ['type_30',['Type',['../dd/d82/classproto__can_1_1DeviceID.html#a168f22204a45c663c7d8bd28a4fdfa8a',1,'proto_can::DeviceID']]]
 ];

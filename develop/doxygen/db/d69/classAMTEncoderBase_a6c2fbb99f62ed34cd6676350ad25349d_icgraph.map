@@ -1,0 +1,8 @@
+<map id="AMTEncoderBase::positiveModulo" name="AMTEncoderBase::positiveModulo">
+<area shape="rect" id="node1" title=" " alt="" coords="684,47,863,87"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#af6fc3eed2c5862cf14d963cf5ad3db4c" title=" " alt="" coords="433,5,636,31"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0" title="Position Countを1回転内のphaseへ変換して返す。" alt="" coords="433,55,636,80"/>
+<area shape="rect" id="node6" href="$df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="5,73,155,113"/>
+<area shape="rect" id="node3" href="$df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="203,5,385,31"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7" title="Position Count基準の角度を返す。" alt="" coords="212,55,376,80"/>
+</map>
