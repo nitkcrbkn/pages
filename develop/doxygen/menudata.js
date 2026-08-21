@@ -29,6 +29,7 @@ var menudata={children:[
 {text:"名前空間一覧",url:"namespaces.html"},
 {text:"名前空間メンバ",url:"namespacemembers.html",children:[
 {text:"全て",url:"namespacemembers.html",children:[
+{text:"a",url:"namespacemembers.html#index_a"},
 {text:"b",url:"namespacemembers.html#index_b"},
 {text:"c",url:"namespacemembers.html#index_c"},
 {text:"d",url:"namespacemembers.html#index_d"},
@@ -37,6 +38,7 @@ var menudata={children:[
 {text:"i",url:"namespacemembers.html#index_i"},
 {text:"l",url:"namespacemembers.html#index_l"},
 {text:"m",url:"namespacemembers.html#index_m"},
+{text:"n",url:"namespacemembers.html#index_n"},
 {text:"o",url:"namespacemembers.html#index_o"},
 {text:"p",url:"namespacemembers.html#index_p"},
 {text:"s",url:"namespacemembers.html#index_s"},
@@ -115,7 +117,8 @@ var menudata={children:[
 {text:"v",url:"functions_vars.html#index_v"},
 {text:"w",url:"functions_vars.html#index_w"}]},
 {text:"型定義",url:"functions_type.html"},
-{text:"列挙型",url:"functions_enum.html"}]}]},
+{text:"列挙型",url:"functions_enum.html"},
+{text:"関連関数",url:"functions_rela.html"}]}]},
 {text:"ファイル",url:"files.html",children:[
 {text:"ファイル一覧",url:"files.html"},
 {text:"ファイルメンバ",url:"globals.html",children:[

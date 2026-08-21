@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_0',['get',['../d7/db3/classPS5_1_1DualSense.html#a06f95add438293d4af09fa1bd5df3286',1,'PS5::DualSense::get()'],['../d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771',1,'DJI::ESC::get()']]],
+  ['get_0',['get',['../d7/dea/classPS5_1_1ControllerRegistry.html#a95d77ef8ddf937e38607a1d8daffa12f',1,'PS5::ControllerRegistry::get()'],['../d7/db3/classPS5_1_1DualSense.html#a1b664ee669f7ebf7446b1a2f90d59899',1,'PS5::DualSense::get()'],['../d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771',1,'DJI::ESC::get()']]],
   ['get_5fbitrate_1',['get_bitrate',['../de/da9/structCanSystem_1_1TimingConfig.html#abd30d5d1b68657efcdd9c0a33531ce8b',1,'CanSystem::TimingConfig']]],
   ['get_5fbus_5ferror_5fstate_2',['get_bus_error_state',['../d7/db6/structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f',1,'CanSystem::CANStatus']]],
   ['get_5fbus_5fstate_3',['get_bus_state',['../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08',1,'CanSystem::ErrorCounters']]],

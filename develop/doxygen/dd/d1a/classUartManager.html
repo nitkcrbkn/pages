@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
 <a href="../../d7/d30/classUartManager-members.html">全メンバ一覧</a>  </div>
@@ -103,6 +104,12 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 
 <p><code>#include &lt;uart_manager.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:aef96546e5d417d98f03087a22d542ef7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#aef96546e5d417d98f03087a22d542ef7">ContextCallback</a> = void(*)(void *owner, uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:aef96546e5d417d98f03087a22d542ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録元のオブジェクトを受け取るUART受信コールバックです。  <a href="../../dd/d1a/classUartManager.html#aef96546e5d417d98f03087a22d542ef7">[詳解]</a><br /></td></tr>
+<tr class="separator:aef96546e5d417d98f03087a22d542ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a5d5ab6d09daae6b88a7c790de101f775"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#a5d5ab6d09daae6b88a7c790de101f775">UartManager</a> (UART_HandleTypeDef &amp;h, int _max_delay=10)</td></tr>
@@ -110,7 +117,14 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 <tr class="memitem:ada3be903d853fb64dae51a2e1ff714bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#ada3be903d853fb64dae51a2e1ff714bb">~UartManager</a> ()</td></tr>
 <tr class="separator:ada3be903d853fb64dae51a2e1ff714bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36576242fde860d2aa1cc6a4f4ee0ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#ae36576242fde860d2aa1cc6a4f4ee0ae">set_callback</a> (std::function&lt; void(uint8_t *, size_t)&gt; cb)</td></tr>
+<tr class="memdesc:ae36576242fde860d2aa1cc6a4f4ee0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART受信コールバックを登録します。  <a href="../../dd/d1a/classUartManager.html#ae36576242fde860d2aa1cc6a4f4ee0ae">[詳解]</a><br /></td></tr>
 <tr class="separator:ae36576242fde860d2aa1cc6a4f4ee0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaec0f2ea951aff6e87d60aec63ba750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#adaec0f2ea951aff6e87d60aec63ba750">set_callback</a> (void *owner, <a class="el" href="../../dd/d1a/classUartManager.html#aef96546e5d417d98f03087a22d542ef7">ContextCallback</a> cb) noexcept</td></tr>
+<tr class="memdesc:adaec0f2ea951aff6e87d60aec63ba750"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録元を識別できるUART受信コールバックを登録します。  <a href="../../dd/d1a/classUartManager.html#adaec0f2ea951aff6e87d60aec63ba750">[詳解]</a><br /></td></tr>
+<tr class="separator:adaec0f2ea951aff6e87d60aec63ba750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5ea5fa9d1dc58a71aac1291c51a022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#aae5ea5fa9d1dc58a71aac1291c51a022">clear_callback</a> (void *owner) noexcept</td></tr>
+<tr class="memdesc:aae5ea5fa9d1dc58a71aac1291c51a022"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した登録元のUART受信コールバックを解除します。  <a href="../../dd/d1a/classUartManager.html#aae5ea5fa9d1dc58a71aac1291c51a022">[詳解]</a><br /></td></tr>
+<tr class="separator:aae5ea5fa9d1dc58a71aac1291c51a022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dcb91ce28bd91cd50e89aa22c28fa13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#a0dcb91ce28bd91cd50e89aa22c28fa13">on_complete</a> ()</td></tr>
 <tr class="separator:a0dcb91ce28bd91cd50e89aa22c28fa13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7369256d9f03490ff3e4db34fd66d3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1a/classUartManager.html#ae7369256d9f03490ff3e4db34fd66d3b">receive</a> (size_t len)</td></tr>
@@ -132,7 +146,32 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >UARTごとに個別のmanager </p>
-</div><h2 class="groupheader">構築子と解体子</h2>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="aef96546e5d417d98f03087a22d542ef7" name="aef96546e5d417d98f03087a22d542ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef96546e5d417d98f03087a22d542ef7">&#9670;&#160;</a></span>ContextCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dd/d1a/classUartManager.html#aef96546e5d417d98f03087a22d542ef7">UartManager::ContextCallback</a> =  void (*)(void *owner, uint8_t *data, size_t length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>登録元のオブジェクトを受け取るUART受信コールバックです。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>登録時に指定したオブジェクトへのポインタ </td></tr>
+    <tr><td class="paramname">data</td><td>受信データ </td></tr>
+    <tr><td class="paramname">length</td><td>受信データ長 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
 <a id="a5d5ab6d09daae6b88a7c790de101f775" name="a5d5ab6d09daae6b88a7c790de101f775"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d5ab6d09daae6b88a7c790de101f775">&#9670;&#160;</a></span>UartManager()</h2>
 
@@ -195,6 +234,50 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
+<a id="aae5ea5fa9d1dc58a71aac1291c51a022" name="aae5ea5fa9d1dc58a71aac1291c51a022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5ea5fa9d1dc58a71aac1291c51a022">&#9670;&#160;</a></span>clear_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UartManager::clear_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した登録元のUART受信コールバックを解除します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>解除対象として登録したオブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定した登録元のコールバックを解除した場合はtrue </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d1a/classUartManager_aae5ea5fa9d1dc58a71aac1291c51a022_icgraph.png" border="0" usemap="#add/d1a/classUartManager_aae5ea5fa9d1dc58a71aac1291c51a022_icgraph" alt=""/></div>
+<map name="add/d1a/classUartManager_aae5ea5fa9d1dc58a71aac1291c51a022_icgraph" id="add/d1a/classUartManager_aae5ea5fa9d1dc58a71aac1291c51a022_icgraph">
+<area shape="rect" title="指定した登録元のUART受信コールバックを解除します。" alt="" coords="213,5,344,45"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8b9bbc662d3db4bde25b7b90885e4dae" title="UartManagerに登録した受信コールバックを解除します。" alt="" coords="5,5,165,45"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aab2ce645a9f0b439c6b245c828aa678b" name="aab2ce645a9f0b439c6b245c828aa678b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab2ce645a9f0b439c6b245c828aa678b">&#9670;&#160;</a></span>dispatch()</h2>
 
@@ -354,8 +437,9 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 <div class="dyncontent">
 <div class="center"><img src="../../dd/d1a/classUartManager_ae7369256d9f03490ff3e4db34fd66d3b_icgraph.png" border="0" usemap="#add/d1a/classUartManager_ae7369256d9f03490ff3e4db34fd66d3b_icgraph" alt=""/></div>
 <map name="add/d1a/classUartManager_ae7369256d9f03490ff3e4db34fd66d3b_icgraph" id="add/d1a/classUartManager_ae7369256d9f03490ff3e4db34fd66d3b_icgraph">
-<area shape="rect" title=" " alt="" coords="208,5,353,31"/>
-<area shape="rect" href="../../d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" title=" " alt="" coords="213,35,359,60"/>
+<area shape="rect" href="../../d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="8,5,163,31"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f" title="1バイトのUART割り込み受信を開始します。" alt="" coords="5,55,165,95"/>
 </map>
 </div>
 
@@ -441,15 +525,21 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 <div class="dyncontent">
 <div class="center"><img src="../../dd/d1a/classUartManager_a920db1d38f267b6b6ad8599a5111f772_icgraph.png" border="0" usemap="#add/d1a/classUartManager_a920db1d38f267b6b6ad8599a5111f772_icgraph" alt=""/></div>
 <map name="add/d1a/classUartManager_a920db1d38f267b6b6ad8599a5111f772_icgraph" id="add/d1a/classUartManager_a920db1d38f267b6b6ad8599a5111f772_icgraph">
-<area shape="rect" title=" " alt="" coords="185,5,316,31"/>
-<area shape="rect" href="../../dd/d1a/classUartManager.html#a802edce5be8d434d4e802ada4bc8d4b1" title="huart経由printf関数" alt="" coords="5,5,137,31"/>
+<area shape="rect" title=" " alt="" coords="421,113,552,138"/>
+<area shape="rect" href="../../dd/d1a/classUartManager.html#a802edce5be8d434d4e802ada4bc8d4b1" title="huart経由printf関数" alt="" coords="227,83,359,109"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a02a5f429201c575a12718eda469b5569" title="IM920sLコマンドを1行送信します。" alt="" coords="213,133,373,173"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9b04df6923044ff937084a19f45e0b25" title="パラメータ書き込みを有効化します。" alt="" coords="5,5,165,45"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a91749da8556411c4aa2a8c4eb4eff05d" title="DCIOモードでバイナリデータをブロードキャスト送信します。" alt="" coords="5,69,165,109"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1ef5879468233c3d43019fec0ccce2a1" title="ネットワークモードを設定します。" alt="" coords="5,133,165,173"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aa9a45c809be6e872105cc722d628f9bd" title="ノード番号を設定します。" alt="" coords="5,197,165,237"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1eb7a0a9113247ddb976e16b83764ec0" title="グループ登録を開始します。" alt="" coords="5,261,165,301"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="ae36576242fde860d2aa1cc6a4f4ee0ae" name="ae36576242fde860d2aa1cc6a4f4ee0ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae36576242fde860d2aa1cc6a4f4ee0ae">&#9670;&#160;</a></span>set_callback()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36576242fde860d2aa1cc6a4f4ee0ae">&#9670;&#160;</a></span>set_callback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,15 +561,71 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>UART受信コールバックを登録します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>登録するコールバック </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>受信割り込みを開始する前に呼び出してください。 </dd></dl>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/d1a/classUartManager_ae36576242fde860d2aa1cc6a4f4ee0ae_icgraph.png" border="0" usemap="#add/d1a/classUartManager_ae36576242fde860d2aa1cc6a4f4ee0ae_icgraph" alt=""/></div>
 <map name="add/d1a/classUartManager_ae36576242fde860d2aa1cc6a4f4ee0ae_icgraph" id="add/d1a/classUartManager_ae36576242fde860d2aa1cc6a4f4ee0ae_icgraph">
-<area shape="rect" title=" " alt="" coords="208,5,384,31"/>
-<area shape="rect" href="../../d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" title="UART受信コールバックを登録します。" alt="" coords="213,42,389,67"/>
+<area shape="rect" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8432e03024beca9f356aeef056313be8" title="IM920sLをUARTへ関連付けます。" alt="" coords="5,5,165,45"/>
+<area shape="rect" href="../../d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="8,70,163,95"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="adaec0f2ea951aff6e87d60aec63ba750" name="adaec0f2ea951aff6e87d60aec63ba750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaec0f2ea951aff6e87d60aec63ba750">&#9670;&#160;</a></span>set_callback() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UartManager::set_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>owner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d1a/classUartManager.html#aef96546e5d417d98f03087a22d542ef7">ContextCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登録元を識別できるUART受信コールバックを登録します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>コールバックへ渡す登録元オブジェクト </td></tr>
+    <tr><td class="paramname">cb</td><td>登録するコールバック </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>同じUartManagerに登録できる受信コールバックは1つです。 </dd></dl>
 
 </div>
 </div>

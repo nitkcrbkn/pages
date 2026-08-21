@@ -1,7 +1,7 @@
 var searchData=
 [
   ['r1_0',['R1',['../d6/de5/structPS5_1_1Button.html#ab143b2913426e227ca211224049dc301',1,'PS5::Button']]],
-  ['r2_1',['R2',['../d6/de5/structPS5_1_1Button.html#aa35d04d90a3dfe6270587e8b54d6845c',1,'PS5::Button']]],
+  ['r2_1',['R2',['../d6/de5/structPS5_1_1Button.html#aee0bd2900e76837e193b70df8a8ffaf2',1,'PS5::Button']]],
   ['r3_2',['R3',['../d6/de5/structPS5_1_1Button.html#afa27e6f198f6332ec31154b7574c36a2',1,'PS5::Button']]],
   ['ram_5faccess_5ffailure_3',['ram_access_failure',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#abb8fc28bcfb7aaa0fd8209db633bb8a7',1,'CanSystem::SoftwareErrorFlags']]],
   ['ram_5fwatchdog_4',['ram_watchdog',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#af7c6fe28acb0af21fc8ac58d453c3369',1,'CanSystem::SoftwareErrorFlags']]],
@@ -11,11 +11,10 @@ var searchData=
   ['reserved_5faddress_5faccess_8',['reserved_address_access',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#ad0e2bf20d53d907e171f9adafe985abf',1,'CanSystem::SoftwareErrorFlags']]],
   ['restart_5fon_5ferror_9',['restart_on_error',['../d1/d4a/classCanSystem_1_1CanManager.html#a5a6a7b5e2e5f46c10faf93558ffe57ce',1,'CanSystem::CanManager']]],
   ['right_10',['RIGHT',['../d6/de5/structPS5_1_1Button.html#a4e3104f4f17be335c67e32c83a762a44',1,'PS5::Button']]],
-  ['rightx_11',['RightX',['../d6/de5/structPS5_1_1Button.html#aad7a3cc496a0d0220726baf4cde20956',1,'PS5::Button']]],
-  ['righty_12',['RightY',['../d6/de5/structPS5_1_1Button.html#a2e4ac18133191e0931563685cfbf93a3',1,'PS5::Button']]],
-  ['roll_13',['Roll',['../d6/de5/structPS5_1_1Button.html#a8c0113792b16a69c0f1c053622959631',1,'PS5::Button']]],
-  ['rpm_5f_14',['rpm_',['../db/d69/classAMTEncoderBase.html#a9474670a5c8f7205f4183d2669e54c87',1,'AMTEncoderBase']]],
-  ['rssi_15',['rssi',['../db/d29/structIM920sL_1_1Packet.html#aba73531cf39bc862803cd9e5daad14b9',1,'IM920sL::Packet']]],
-  ['rxfifo_16',['rxFifo',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html#a1ae78d6a88024be4bfaba2b2f6daea5d',1,'CanSystem::CanManager::CANFifoConfig']]],
-  ['rxheader_17',['RxHeader',['../d1/d4a/classCanSystem_1_1CanManager.html#a0f3cd9d144348b6582a750f7ba837ac8',1,'CanSystem::CanManager']]]
+  ['rightx_11',['RightX',['../d6/de5/structPS5_1_1Button.html#a1359cd2134b16b6d9e8671381842c2d1',1,'PS5::Button']]],
+  ['righty_12',['RightY',['../d6/de5/structPS5_1_1Button.html#ad4e888d6e9dbb823f47ecce71a8d4ab9',1,'PS5::Button']]],
+  ['rpm_5f_13',['rpm_',['../db/d69/classAMTEncoderBase.html#a9474670a5c8f7205f4183d2669e54c87',1,'AMTEncoderBase']]],
+  ['rssi_14',['rssi',['../db/d29/structIM920sL_1_1Packet.html#aba73531cf39bc862803cd9e5daad14b9',1,'IM920sL::Packet']]],
+  ['rxfifo_15',['rxFifo',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html#a1ae78d6a88024be4bfaba2b2f6daea5d',1,'CanSystem::CanManager::CANFifoConfig']]],
+  ['rxheader_16',['RxHeader',['../d1/d4a/classCanSystem_1_1CanManager.html#a0f3cd9d144348b6582a750f7ba837ac8',1,'CanSystem::CanManager']]]
 ];

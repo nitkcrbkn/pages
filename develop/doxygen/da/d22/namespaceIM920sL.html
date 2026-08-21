@@ -117,6 +117,12 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
 <tr class="memitem:a43037d2fae5272adb4cab5e85d2ee884"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">PacketCallBack</a> = void(*)(const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;packet)</td></tr>
 <tr class="memdesc:a43037d2fae5272adb4cab5e85d2ee884"><td class="mdescLeft">&#160;</td><td class="mdescRight">パース済み受信パケットのコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">[詳解]</a><br /></td></tr>
 <tr class="separator:a43037d2fae5272adb4cab5e85d2ee884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f61b19e1041ee66bc5ed9be4114947"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a74f61b19e1041ee66bc5ed9be4114947">PacketCallBackWithContext</a> = void(*)(void *owner, const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;packet)</td></tr>
+<tr class="memdesc:a74f61b19e1041ee66bc5ed9be4114947"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテキストを伴って受信パケットを処理するコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a74f61b19e1041ee66bc5ed9be4114947">[詳解]</a><br /></td></tr>
+<tr class="separator:a74f61b19e1041ee66bc5ed9be4114947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f5f3338039b84148ea3c7fd4342a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">LatestPacketCallBackWithContext</a> = void(*)(void *owner, uint16_t senderNode, std::string_view rawPayload, uint32_t receivedAtMs)</td></tr>
+<tr class="memdesc:a539f5f3338039b84148ea3c7fd4342a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQ内で受信完了パケットを処理するコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">[詳解]</a><br /></td></tr>
+<tr class="separator:a539f5f3338039b84148ea3c7fd4342a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLを扱うためのライブラリ </p>
@@ -184,6 +190,32 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
 
 </div>
 </div>
+<a id="a539f5f3338039b84148ea3c7fd4342a0" name="a539f5f3338039b84148ea3c7fd4342a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539f5f3338039b84148ea3c7fd4342a0">&#9670;&#160;</a></span>LatestPacketCallBackWithContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">IM920sL::LatestPacketCallBackWithContext</a> = typedef void (*)( void *owner, uint16_t senderNode, std::string_view rawPayload, uint32_t receivedAtMs)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IRQ内で受信完了パケットを処理するコールバックです。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>登録側が指定した受信先コンテキスト </td></tr>
+    <tr><td class="paramname">senderNode</td><td>送信元ノード番号 </td></tr>
+    <tr><td class="paramname">rawPayload</td><td>IM920sLが出力したDCIOペイロード </td></tr>
+    <tr><td class="paramname">receivedAtMs</td><td>UARTで一行を受信し終えた時刻[ms] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>UART受信割り込み内から呼ばれます。動的メモリ確保や待機処理を避け、 短時間で完了させてください。rawPayloadは呼び出し中だけ有効です。 </dd></dl>
+
+</div>
+</div>
 <a id="a43037d2fae5272adb4cab5e85d2ee884" name="a43037d2fae5272adb4cab5e85d2ee884"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43037d2fae5272adb4cab5e85d2ee884">&#9670;&#160;</a></span>PacketCallBack</h2>
 
@@ -203,6 +235,30 @@ $(document).ready(function(){initNavTree('da/d22/namespaceIM920sL.html','../../'
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a74f61b19e1041ee66bc5ed9be4114947" name="a74f61b19e1041ee66bc5ed9be4114947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f61b19e1041ee66bc5ed9be4114947">&#9670;&#160;</a></span>PacketCallBackWithContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/d22/namespaceIM920sL.html#a74f61b19e1041ee66bc5ed9be4114947">IM920sL::PacketCallBackWithContext</a> = typedef void (*)(void *owner, const <a class="el" href="../../db/d29/structIM920sL_1_1Packet.html">Packet</a> &amp;packet)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンテキストを伴って受信パケットを処理するコールバックです。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>登録側が指定した受信先コンテキスト </td></tr>
+    <tr><td class="paramname">packet</td><td>受信したIM920sLパケット</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>コールバックはprocess()のメインコンテキストで実行されます。 </p>
 
 </div>
 </div>

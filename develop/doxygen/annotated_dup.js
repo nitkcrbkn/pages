@@ -43,7 +43,11 @@ var annotated_dup =
     ] ],
     [ "PS5", "d2/d9f/namespacePS5.html", [
       [ "Button", "d6/de5/structPS5_1_1Button.html", "d6/de5/structPS5_1_1Button" ],
-      [ "DualSense", "d7/db3/classPS5_1_1DualSense.html", "d7/db3/classPS5_1_1DualSense" ]
+      [ "ControllerCodec", "de/d75/classPS5_1_1ControllerCodec.html", null ],
+      [ "ControllerRegistry", "d7/dea/classPS5_1_1ControllerRegistry.html", "d7/dea/classPS5_1_1ControllerRegistry" ],
+      [ "DualSense", "d7/db3/classPS5_1_1DualSense.html", "d7/db3/classPS5_1_1DualSense" ],
+      [ "DualSenseMonitor", "da/de0/classPS5_1_1DualSenseMonitor.html", "da/de0/classPS5_1_1DualSenseMonitor" ],
+      [ "DualSenseStatistics", "dd/de0/structPS5_1_1DualSenseStatistics.html", "dd/de0/structPS5_1_1DualSenseStatistics" ]
     ] ],
     [ "solenoid_ctrl", "db/d2d/namespacesolenoid__ctrl.html", [
       [ "SolenoidDevice", "dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html", "dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice" ],

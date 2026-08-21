@@ -13,10 +13,12 @@ var searchData=
   ['amt_2eh_10',['amt.h',['../d3/d85/amt_8h.html',1,'']]],
   ['amt_5fbase_2eh_11',['amt_base.h',['../d0/d0c/amt__base_8h.html',1,'']]],
   ['amtencoderbase_12',['AMTEncoderBase',['../db/d69/classAMTEncoderBase.html',1,'AMTEncoderBase'],['../db/d69/classAMTEncoderBase.html#a74aa1c4d4d5af730577415060d88e938',1,'AMTEncoderBase::AMTEncoderBase()']]],
-  ['amtencoderexti_13',['AMTEncoderExti',['../df/d9b/classAMTEncoderExti.html#a9c77ec83882c0d3a1c7e8f6a989af8ff',1,'AMTEncoderExti::AMTEncoderExti(GPIO_Mgr&lt; 3 &gt; &amp;gpio, uint16_t ppr)'],['../df/d9b/classAMTEncoderExti.html#aee183937d503c8d7f6943da435e977f8',1,'AMTEncoderExti::AMTEncoderExti(AMTEncoderExti &amp;&amp;)=delete'],['../df/d9b/classAMTEncoderExti.html#a0de78e4aa71f7e4e8cc5a7e32708ce7c',1,'AMTEncoderExti::AMTEncoderExti(const AMTEncoderExti &amp;)=delete'],['../df/d9b/classAMTEncoderExti.html',1,'AMTEncoderExti']]],
-  ['angle_14',['angle',['../d2/df4/structDJI_1_1ESCData.html#a1db8a18ae8ab55bf602da4d19676a40b',1,'DJI::ESCData::angle()'],['../db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7',1,'AMTEncoderBase::angle()']]],
-  ['any_15',['Any',['../d0/d0c/amt__base_8h.html#a91519aa051e040f781d489302a630d39aed36a1ef76a59ee3f15180e0441188ad',1,'amt_base.h']]],
-  ['apply_16',['apply',['../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b',1,'GPIO_Mgr::apply(uint32_t bitmap)'],['../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b',1,'GPIO_Mgr::apply(uint32_t bitmap)']]],
-  ['arb_5fprotocol_5ferror_17',['arb_protocol_error',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a6ebe903122d992ed1bdb90842333db1d',1,'CanSystem::SoftwareErrorFlags']]],
-  ['auto_5fretransmission_18',['auto_retransmission',['../d7/d93/structCanSystem_1_1CANConfig.html#af59e83557c2eb76c0ad9b36f2f88eae0',1,'CanSystem::CANConfig']]]
+  ['amtencoderexti_13',['AMTEncoderExti',['../df/d9b/classAMTEncoderExti.html#a0de78e4aa71f7e4e8cc5a7e32708ce7c',1,'AMTEncoderExti::AMTEncoderExti(const AMTEncoderExti &amp;)=delete'],['../df/d9b/classAMTEncoderExti.html#aee183937d503c8d7f6943da435e977f8',1,'AMTEncoderExti::AMTEncoderExti(AMTEncoderExti &amp;&amp;)=delete'],['../df/d9b/classAMTEncoderExti.html#a9c77ec83882c0d3a1c7e8f6a989af8ff',1,'AMTEncoderExti::AMTEncoderExti(GPIO_Mgr&lt; 3 &gt; &amp;gpio, uint16_t ppr)'],['../df/d9b/classAMTEncoderExti.html',1,'AMTEncoderExti']]],
+  ['analog_5fmax_14',['ANALOG_MAX',['../d2/d9f/namespacePS5.html#a8790a2bf0698a532e1e9445057a92c8e',1,'PS5']]],
+  ['analog_5fmin_15',['ANALOG_MIN',['../d2/d9f/namespacePS5.html#aa4506cc16e11fcbe1779d9a8902148d0',1,'PS5']]],
+  ['angle_16',['angle',['../d2/df4/structDJI_1_1ESCData.html#a1db8a18ae8ab55bf602da4d19676a40b',1,'DJI::ESCData::angle()'],['../db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7',1,'AMTEncoderBase::angle()']]],
+  ['any_17',['Any',['../d0/d0c/amt__base_8h.html#a91519aa051e040f781d489302a630d39aed36a1ef76a59ee3f15180e0441188ad',1,'amt_base.h']]],
+  ['apply_18',['apply',['../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b',1,'GPIO_Mgr::apply(uint32_t bitmap)'],['../d6/d4e/classGPIO__Mgr.html#a6a665bae20e3b10841f08659b1cc315b',1,'GPIO_Mgr::apply(uint32_t bitmap)']]],
+  ['arb_5fprotocol_5ferror_19',['arb_protocol_error',['../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a6ebe903122d992ed1bdb90842333db1d',1,'CanSystem::SoftwareErrorFlags']]],
+  ['auto_5fretransmission_20',['auto_retransmission',['../d7/d93/structCanSystem_1_1CANConfig.html#af59e83557c2eb76c0ad9b36f2f88eae0',1,'CanSystem::CANConfig']]]
 ];

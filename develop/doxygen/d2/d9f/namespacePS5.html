@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('d2/d9f/namespacePS5.html','../../'); i
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">クラス</a>  </div>
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
   <div class="headertitle"><div class="title">PS5 名前空間</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,29 +101,271 @@ $(document).ready(function(){initNavTree('d2/d9f/namespacePS5.html','../../'); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de5/structPS5_1_1Button.html">Button</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSenseの入力データを統一した型で表すための構造体  <a href="../../d6/de5/structPS5_1_1Button.html#details">[詳解]</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSenseの入力状態です。  <a href="../../d6/de5/structPS5_1_1Button.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d75/classPS5_1_1ControllerCodec.html">ControllerCodec</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ArduinoSystem互換のDualSense 10バイト形式を扱います。  <a href="../../de/d75/classPS5_1_1ControllerCodec.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dea/classPS5_1_1ControllerRegistry.html">ControllerRegistry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信元ノードごとの入力状態とタイムアウトを管理します。  <a href="../../d7/dea/classPS5_1_1ControllerRegistry.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLを使った920MHz通信でDualSenseとの接続を実現するクラスです。  <a href="../../d7/db3/classPS5_1_1DualSense.html#details">[詳解]</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ArduinoSystem互換のDualSense入力をIM920sLから受信します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de0/classPS5_1_1DualSenseMonitor.html">DualSenseMonitor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSenseの状態をCLog STREAMへ表示します。  <a href="../../da/de0/classPS5_1_1DualSenseMonitor.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de0/structPS5_1_1DualSenseStatistics.html">DualSenseStatistics</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSense受信処理の累積統計です。  <a href="../../dd/de0/structPS5_1_1DualSenseStatistics.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:aa33b79cee682f6d270275fea0efc1d0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#aa33b79cee682f6d270275fea0efc1d0e">ControllerRegistry</a> (uint32_t) -&gt; <a class="el" href="../../d7/dea/classPS5_1_1ControllerRegistry.html">ControllerRegistry</a>&lt; 8 &gt;</td></tr>
+<tr class="separator:aa33b79cee682f6d270275fea0efc1d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3b7c24be829d9c707842df2fd8856e"><td class="memTemplParams" colspan="2">template&lt;typename Radio &gt; </td></tr>
+<tr class="memitem:a3a3b7c24be829d9c707842df2fd8856e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#a3a3b7c24be829d9c707842df2fd8856e">DualSense</a> (Radio &amp;) -&gt; <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td></tr>
+<tr class="separator:a3a3b7c24be829d9c707842df2fd8856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0f684e8e9f87f7aeefade014aff521"><td class="memTemplParams" colspan="2">template&lt;typename Radio &gt; </td></tr>
+<tr class="memitem:aea0f684e8e9f87f7aeefade014aff521"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#aea0f684e8e9f87f7aeefade014aff521">DualSense</a> (Radio &amp;, uint32_t) -&gt; <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td></tr>
+<tr class="separator:aea0f684e8e9f87f7aeefade014aff521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6f01674aa5262f77e213a961221678"><td class="memTemplParams" colspan="2">template&lt;typename Radio &gt; </td></tr>
+<tr class="memitem:acf6f01674aa5262f77e213a961221678"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#acf6f01674aa5262f77e213a961221678">DualSense</a> (Radio &amp;, uint32_t, typename <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;::TimeSource) -&gt; <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td></tr>
+<tr class="separator:acf6f01674aa5262f77e213a961221678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a7f268a331f9a8aebb49a3c8e11c16428"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#a7f268a331f9a8aebb49a3c8e11c16428">STICK_MAX</a> = 127</td></tr>
+<tr class="separator:a7f268a331f9a8aebb49a3c8e11c16428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de4bba574477076911c616d99123eb2"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#a0de4bba574477076911c616d99123eb2">STICK_MIN</a> = -127</td></tr>
+<tr class="separator:a0de4bba574477076911c616d99123eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8790a2bf0698a532e1e9445057a92c8e"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#a8790a2bf0698a532e1e9445057a92c8e">ANALOG_MAX</a> = 255</td></tr>
+<tr class="separator:a8790a2bf0698a532e1e9445057a92c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4506cc16e11fcbe1779d9a8902148d0"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#aa4506cc16e11fcbe1779d9a8902148d0">ANALOG_MIN</a> = 0</td></tr>
+<tr class="separator:aa4506cc16e11fcbe1779d9a8902148d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2876b0c4ae9605b5e5ab21df8ec9c270"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html#a2876b0c4ae9605b5e5ab21df8ec9c270">NO_TIMEOUT</a> = UINT32_MAX</td></tr>
+<tr class="memdesc:a2876b0c4ae9605b5e5ab21df8ec9c270"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Nodeの通信タイムアウト判定を無効化する値です。  <a href="../../d2/d9f/namespacePS5.html#a2876b0c4ae9605b5e5ab21df8ec9c270">[詳解]</a><br /></td></tr>
+<tr class="separator:a2876b0c4ae9605b5e5ab21df8ec9c270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><h1><a class="anchor" id="int型メッセージデータ仕様"></a>
-int型メッセージデータ仕様</h1>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">下位から数えた位置   </th><th class="markdownTableHeadNone">説明    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">17~30   </td><td class="markdownTableBodyNone">上(30)から順にL1,L2,L3,R1,R2,R3,〇,△,□,×,↑,→,↓,←が、押されていれば1 / 押されていなければ0    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">16   </td><td class="markdownTableBodyNone">以下のスティックデータが左右どちらのものかを表す。Lならば0 / Rならば1 　    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">8~15   </td><td class="markdownTableBodyNone">コントローラーのX方向のデータ(0~255)を2進数で格納している    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">0~7   </td><td class="markdownTableBodyNone">コントローラーのY方向のデータ(0~255)を2進数で格納している   </td></tr>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa33b79cee682f6d270275fea0efc1d0e" name="aa33b79cee682f6d270275fea0efc1d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa33b79cee682f6d270275fea0efc1d0e">&#9670;&#160;</a></span>ControllerRegistry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dea/classPS5_1_1ControllerRegistry.html">PS5::ControllerRegistry</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="../../d7/dea/classPS5_1_1ControllerRegistry.html">ControllerRegistry</a>&lt; 8 &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a3b7c24be829d9c707842df2fd8856e" name="a3a3b7c24be829d9c707842df2fd8856e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3b7c24be829d9c707842df2fd8856e">&#9670;&#160;</a></span>DualSense() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Radio &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">PS5::DualSense</a> </td>
+          <td>(</td>
+          <td class="paramtype">Radio &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt;  <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea0f684e8e9f87f7aeefade014aff521" name="aea0f684e8e9f87f7aeefade014aff521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0f684e8e9f87f7aeefade014aff521">&#9670;&#160;</a></span>DualSense() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Radio &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">PS5::DualSense</a> </td>
+          <td>(</td>
+          <td class="paramtype">Radio &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt;  <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf6f01674aa5262f77e213a961221678" name="acf6f01674aa5262f77e213a961221678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6f01674aa5262f77e213a961221678">&#9670;&#160;</a></span>DualSense() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Radio &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">PS5::DualSense</a> </td>
+          <td>(</td>
+          <td class="paramtype">Radio &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;::TimeSource&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt;  <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">DualSense</a>&lt; 8, Radio &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="a8790a2bf0698a532e1e9445057a92c8e" name="a8790a2bf0698a532e1e9445057a92c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8790a2bf0698a532e1e9445057a92c8e">&#9670;&#160;</a></span>ANALOG_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int PS5::ANALOG_MAX = 255</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
 </table>
-<p>データサイズ削減のために一部ボタンや機能には対応していない。 </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000004">todo:</a></b></dt><dd>button構造体の中に構造体を入れる形にして bool pressed,label, bit などを保存. unionなどでint,floadなどに対応? またはbitとlabelを別に構造体で保存. </dd></dl>
-</div></div><!-- contents -->
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4506cc16e11fcbe1779d9a8902148d0" name="aa4506cc16e11fcbe1779d9a8902148d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4506cc16e11fcbe1779d9a8902148d0">&#9670;&#160;</a></span>ANALOG_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int PS5::ANALOG_MIN = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2876b0c4ae9605b5e5ab21df8ec9c270" name="a2876b0c4ae9605b5e5ab21df8ec9c270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2876b0c4ae9605b5e5ab21df8ec9c270">&#9670;&#160;</a></span>NO_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t PS5::NO_TIMEOUT = UINT32_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定Nodeの通信タイムアウト判定を無効化する値です。 </p>
+
+</div>
+</div>
+<a id="a7f268a331f9a8aebb49a3c8e11c16428" name="a7f268a331f9a8aebb49a3c8e11c16428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f268a331f9a8aebb49a3c8e11c16428">&#9670;&#160;</a></span>STICK_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int PS5::STICK_MAX = 127</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0de4bba574477076911c616d99123eb2" name="a0de4bba574477076911c616d99123eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de4bba574477076911c616d99123eb2">&#9670;&#160;</a></span>STICK_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int PS5::STICK_MIN = -127</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

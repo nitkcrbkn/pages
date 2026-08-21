@@ -11,12 +11,15 @@ var searchData=
   ['checkrange_8',['checkRange',['../d0/d31/namespaceBitUtil.html#afd37a4618f55ee4f8e095bc3932a7429',1,'BitUtil::checkRange(uint8_t value, uint8_t maxBits)'],['../d0/d31/namespaceBitUtil.html#aded90152308ee9fd81b2b5dd05792ebb',1,'BitUtil::checkRange(uint16_t value, uint8_t maxBits)'],['../d0/d31/namespaceBitUtil.html#aa71923663b7ba4db1575ec5b10a02ca5',1,'BitUtil::checkRange(uint32_t value, uint8_t maxBits)']]],
   ['clamp_9',['clamp',['../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10',1,'pid_detail']]],
   ['clear_10',['clear',['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a039e63b64eede511a9860a2fc8fbc8a3',1,'solenoid_ctrl::SolenoidMaster']]],
-  ['clearreceiveoverflow_11',['clearReceiveOverflow',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9ed01136d8205eeccd810c874e57191c',1,'IM920sL::BaseIM920sL']]],
-  ['clearstatistics_12',['clearStatistics',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a18fbbffa33ed077b78f38060da0c9932',1,'CanSystem::CanErrorTracker']]],
-  ['cleartxhistory_13',['clearTxHistory',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a8b48b801d02ce44802cbd44148e1248a',1,'CanSystem::MockCanProfile']]],
-  ['commandreceiver_14',['CommandReceiver',['../d0/d45/classCommandReceiver.html#a40b44377614b2b192555076121644d62',1,'CommandReceiver']]],
-  ['constrain_15',['constrain',['../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55',1,'utils.h']]],
-  ['correctionisblocked_16',['correctionIsBlocked',['../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8',1,'AMTEncoderBase']]],
-  ['countsperrevolution_17',['countsPerRevolution',['../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b',1,'AMTEncoderBase']]],
-  ['criticalsection_18',['CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html#a506f6db4c8f328d6f6fab1e77e39df64',1,'DJI::CriticalSection']]]
+  ['clear_5fcallback_11',['clear_callback',['../dd/d1a/classUartManager.html#aae5ea5fa9d1dc58a71aac1291c51a022',1,'UartManager']]],
+  ['clearreceiveoverflow_12',['clearReceiveOverflow',['../d7/db3/classPS5_1_1DualSense.html#af6467b9771534889ed584d1eaf12d906',1,'PS5::DualSense::clearReceiveOverflow()'],['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9ed01136d8205eeccd810c874e57191c',1,'IM920sL::BaseIM920sL::clearReceiveOverflow()']]],
+  ['clearstatistics_13',['clearStatistics',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a18fbbffa33ed077b78f38060da0c9932',1,'CanSystem::CanErrorTracker']]],
+  ['cleartxhistory_14',['clearTxHistory',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a8b48b801d02ce44802cbd44148e1248a',1,'CanSystem::MockCanProfile']]],
+  ['commandreceiver_15',['CommandReceiver',['../d0/d45/classCommandReceiver.html#a40b44377614b2b192555076121644d62',1,'CommandReceiver']]],
+  ['constrain_16',['constrain',['../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55',1,'utils.h']]],
+  ['controllercount_17',['controllerCount',['../d7/db3/classPS5_1_1DualSense.html#a18a699fa0cc6dcde505a019b1d512146',1,'PS5::DualSense::controllerCount()'],['../d7/dea/classPS5_1_1ControllerRegistry.html#ae5f4d9b6ccb93c50cfc6d114c9962f6e',1,'PS5::ControllerRegistry::controllerCount() const noexcept']]],
+  ['controllerregistry_18',['ControllerRegistry',['../d7/dea/classPS5_1_1ControllerRegistry.html#acc1b94458a09023a06b5553ef622f079',1,'PS5::ControllerRegistry::ControllerRegistry()'],['../d2/d9f/namespacePS5.html#aa33b79cee682f6d270275fea0efc1d0e',1,'PS5::ControllerRegistry()']]],
+  ['correctionisblocked_19',['correctionIsBlocked',['../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8',1,'AMTEncoderBase']]],
+  ['countsperrevolution_20',['countsPerRevolution',['../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b',1,'AMTEncoderBase']]],
+  ['criticalsection_21',['CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html#a506f6db4c8f328d6f6fab1e77e39df64',1,'DJI::CriticalSection']]]
 ];

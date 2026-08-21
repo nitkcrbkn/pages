@@ -100,22 +100,34 @@ $(document).ready(function(){initNavTree('d6/d81/IM920sL_8h.html','../../'); ini
 
 <p>IM920sLを操作するためのクラス  
 <a href="#details">[詳解]</a></p>
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d3/d78/uart__manager_8h.html">platform/uart_manager.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d60/utils_8h.html">platform/utils.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 IM920sL.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/dc2/IM920sL_8h__incl.png" border="0" usemap="#amodules_2platform_2IM920sL_8h" alt=""/></div>
 <map name="amodules_2platform_2IM920sL_8h" id="amodules_2platform_2IM920sL_8h">
-<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="111,5,297,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,67,104"/>
-<area shape="rect" title=" " alt="" coords="91,79,149,104"/>
-<area shape="rect" title=" " alt="" coords="173,79,235,104"/>
-<area shape="rect" title=" " alt="" coords="259,79,314,104"/>
-<area shape="rect" title=" " alt="" coords="339,79,427,104"/>
+<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="329,5,515,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,71,104"/>
+<area shape="rect" title=" " alt="" coords="74,152,135,177"/>
+<area shape="rect" title=" " alt="" coords="685,152,743,177"/>
+<area shape="rect" title=" " alt="" coords="519,79,581,104"/>
+<area shape="rect" title=" " alt="" coords="605,79,660,104"/>
+<area shape="rect" title=" " alt="" coords="685,79,773,104"/>
+<area shape="rect" href="../../d3/d78/uart__manager_8h.html" title=" " alt="" coords="282,79,445,104"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="146,79,253,104"/>
+<area shape="rect" title=" " alt="" coords="336,152,396,177"/>
+<area shape="rect" title=" " alt="" coords="421,152,487,177"/>
+<area shape="rect" title=" " alt="" coords="512,152,591,177"/>
+<area shape="rect" title=" " alt="" coords="615,152,661,177"/>
+<area shape="rect" title=" " alt="" coords="250,152,311,177"/>
+<area shape="rect" title=" " alt="" coords="160,152,225,177"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -123,8 +135,9 @@ IM920sL.h の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dbc/IM920sL_8h__dep__incl.png" border="0" usemap="#amodules_2platform_2IM920sL_8hdep" alt=""/></div>
 <map name="amodules_2platform_2IM920sL_8hdep" id="amodules_2platform_2IM920sL_8hdep">
-<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="11,5,197,31"/>
-<area shape="rect" href="../../d9/dc2/Dualsense_8h.html" title=" " alt="" coords="5,79,203,104"/>
+<area shape="rect" title="IM920sLを操作するためのクラス" alt="" coords="22,5,209,31"/>
+<area shape="rect" href="../../d9/dc2/Dualsense_8h.html" title="IM920sL経由でDualSense入力を受信するクラス" alt="" coords="17,79,214,104"/>
+<area shape="rect" href="../../d5/d0e/DualsenseMonitor_8h.html" title="DualSenseのSTREAMデバッグ表示" alt="" coords="5,152,225,177"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -139,6 +152,8 @@ IM920sL.h の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
+<tr class="memitem:d2/d9f/namespacePS5"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9f/namespacePS5.html">PS5</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/d22/namespaceIM920sL"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html">IM920sL</a></td></tr>
 <tr class="memdesc:da/d22/namespaceIM920sL"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLを扱うためのライブラリ <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +166,12 @@ IM920sL.h の依存先関係図:</div>
 <tr class="memitem:a43037d2fae5272adb4cab5e85d2ee884"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">IM920sL::PacketCallBack</a> = void(*)(const Packet &amp;packet)</td></tr>
 <tr class="memdesc:a43037d2fae5272adb4cab5e85d2ee884"><td class="mdescLeft">&#160;</td><td class="mdescRight">パース済み受信パケットのコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a43037d2fae5272adb4cab5e85d2ee884">[詳解]</a><br /></td></tr>
 <tr class="separator:a43037d2fae5272adb4cab5e85d2ee884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f61b19e1041ee66bc5ed9be4114947"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a74f61b19e1041ee66bc5ed9be4114947">IM920sL::PacketCallBackWithContext</a> = void(*)(void *owner, const Packet &amp;packet)</td></tr>
+<tr class="memdesc:a74f61b19e1041ee66bc5ed9be4114947"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテキストを伴って受信パケットを処理するコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a74f61b19e1041ee66bc5ed9be4114947">[詳解]</a><br /></td></tr>
+<tr class="separator:a74f61b19e1041ee66bc5ed9be4114947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f5f3338039b84148ea3c7fd4342a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">IM920sL::LatestPacketCallBackWithContext</a> = void(*)(void *owner, uint16_t senderNode, std::string_view rawPayload, uint32_t receivedAtMs)</td></tr>
+<tr class="memdesc:a539f5f3338039b84148ea3c7fd4342a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQ内で受信完了パケットを処理するコールバックです。  <a href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">[詳解]</a><br /></td></tr>
+<tr class="separator:a539f5f3338039b84148ea3c7fd4342a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLを操作するためのクラス </p>

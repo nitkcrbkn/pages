@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['telemetryt_0',['TelemetryT',['../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069',1,'telem_controller.hpp']]]
+  ['resettype_0',['ResetType',['../d3/da4/classproto__can_1_1Master.html#ac7dc124d36fe07a2c7771e2d6a88a2dd',1,'proto_can::Master']]]
 ];

@@ -11,7 +11,7 @@ var searchData=
   ['sendframe_8',['sendFrame',['../d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff',1,'CanSystem::CanManager']]],
   ['sendspeed_9',['sendSpeed',['../da/d4c/classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b',1,'Motoron::Master']]],
   ['set_10',['set',['../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a',1,'GPIO_Mgr::set(int index, bool value)'],['../d6/d4e/classGPIO__Mgr.html#a7d5d165172ae56a5ab3c6b850d972a4a',1,'GPIO_Mgr::set(int index, bool value)'],['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#aa228c10ae76a9e330f72f3373bd1d14f',1,'solenoid_ctrl::SolenoidMaster::set()']]],
-  ['set_5fcallback_11',['set_callback',['../dd/d1a/classUartManager.html#ae36576242fde860d2aa1cc6a4f4ee0ae',1,'UartManager']]],
+  ['set_5fcallback_11',['set_callback',['../dd/d1a/classUartManager.html#adaec0f2ea951aff6e87d60aec63ba750',1,'UartManager::set_callback(void *owner, ContextCallback cb) noexcept'],['../dd/d1a/classUartManager.html#ae36576242fde860d2aa1cc6a4f4ee0ae',1,'UartManager::set_callback(std::function&lt; void(uint8_t *, size_t)&gt; cb)']]],
   ['set_5fdt_12',['set_dt',['../d8/da9/classPID.html#a534610d4424ff511dd5b29b776d1df7c',1,'PID']]],
   ['set_5fpulse_5fwidth_13',['set_pulse_width',['../d5/db3/classTimerMgr.html#aff7dfbff50e1b8a40027b4ba8d802e1f',1,'TimerMgr']]],
   ['set_5fwriter_14',['set_writer',['../d9/d24/classLogLite.html#a19d4811b10ac8704aa60a06913ffe6f0',1,'LogLite']]],
@@ -33,8 +33,8 @@ var searchData=
   ['setmaxacceleration_30',['setMaxAcceleration',['../df/d66/classMotionMode.html#a27f1d72e7dd2fbe6f9a90e581ba4c2a0',1,'MotionMode']]],
   ['setmaxjerk_31',['setMaxJerk',['../df/d66/classMotionMode.html#af0d6a92520246b2acafae5e5d71837df',1,'MotionMode']]],
   ['setmaxvelocity_32',['setMaxVelocity',['../df/d66/classMotionMode.html#a695eebfecc85ba14522160e8a2786c2c',1,'MotionMode']]],
-  ['setmessagetype_33',['setMessageType',['../df/db1/classproto__can_1_1ProtocolHeader.html#af169e5345ff433d5acbd626081eb7587',1,'proto_can::ProtocolHeader::setMessageType()'],['../d9/d34/classproto__can_1_1MessageID.html#a4e643640d662edce5a2443b59038daae',1,'proto_can::MessageID::setMessageType()']]],
-  ['setmode_34',['setMode',['../df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39',1,'MotionMode::setMode()'],['../d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5',1,'Motion::setMode()']]],
+  ['setmessagetype_33',['setMessageType',['../d9/d34/classproto__can_1_1MessageID.html#a4e643640d662edce5a2443b59038daae',1,'proto_can::MessageID::setMessageType()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#af169e5345ff433d5acbd626081eb7587',1,'proto_can::ProtocolHeader::setMessageType()']]],
+  ['setmode_34',['setMode',['../d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5',1,'Motion::setMode()'],['../df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39',1,'MotionMode::setMode()']]],
   ['setnetworkmode_35',['setNetworkMode',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1ef5879468233c3d43019fec0ccce2a1',1,'IM920sL::BaseIM920sL']]],
   ['setnodenumber_36',['setNodeNumber',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aa9a45c809be6e872105cc722d628f9bd',1,'IM920sL::BaseIM920sL']]],
   ['setnumber_37',['setNumber',['../dd/d82/classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef',1,'proto_can::DeviceID']]],
@@ -45,7 +45,7 @@ var searchData=
   ['setprofile_42',['setProfile',['../d8/da9/classPID.html#a18baaf6164898825126c48749ab16168',1,'PID']]],
   ['setsafetyfactor_43',['setSafetyFactor',['../d4/d2e/classDJI_1_1ESC.html#a9887467af398b47c08e54dcc150e2ac7',1,'DJI::ESC']]],
   ['setspeed_44',['setSpeed',['../da/d4c/classMotoron_1_1Master.html#a3b62b56fd67f7b5fc1d1f77603850969',1,'Motoron::Master']]],
-  ['settimeout_45',['setTimeout',['../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd',1,'DJI::ESC']]],
+  ['settimeout_45',['setTimeout',['../d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd',1,'DJI::ESC::setTimeout()'],['../d7/dea/classPS5_1_1ControllerRegistry.html#ac4f6fec758eebbd3c7d33b72ab449f8b',1,'PS5::ControllerRegistry::setTimeout()'],['../d7/db3/classPS5_1_1DualSense.html#a4545ebcecdaa4a155300268744c34377',1,'PS5::DualSense::setTimeout()']]],
   ['settimestep_46',['setTimeStep',['../dc/d22/classstdr_1_1PID.html#a728ad6a38d6ac894d7f1a7474fa65c9c',1,'stdr::PID']]],
   ['settxheader_47',['setTxHeader',['../d1/d4a/classCanSystem_1_1CanManager.html#a1ba58f13515397217b181cfac9023b00',1,'CanSystem::CanManager']]],
   ['setvelocitymode_48',['setVelocityMode',['../d1/d3c/classMotion.html#a07b78ef3567b63e9266630496b650fe6',1,'Motion']]],
@@ -57,5 +57,6 @@ var searchData=
   ['solenoidmaster_54',['SolenoidMaster',['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a51fb0cedf6bb9716589a2a70808362d6',1,'solenoid_ctrl::SolenoidMaster']]],
   ['startgroupregistration_55',['startGroupRegistration',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1eb7a0a9113247ddb976e16b83764ec0',1,'IM920sL::BaseIM920sL']]],
   ['state_56',['state',['../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04',1,'GPIO_Mgr::state() const'],['../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04',1,'GPIO_Mgr::state() const']]],
-  ['streamtxrxstats_57',['streamTxRxStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82',1,'CanSystem::CanErrorTracker']]]
+  ['statistics_57',['statistics',['../d7/db3/classPS5_1_1DualSense.html#a6ef20abc7c6127431fcdc8f1cda3b940',1,'PS5::DualSense']]],
+  ['streamtxrxstats_58',['streamTxRxStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82',1,'CanSystem::CanErrorTracker']]]
 ];

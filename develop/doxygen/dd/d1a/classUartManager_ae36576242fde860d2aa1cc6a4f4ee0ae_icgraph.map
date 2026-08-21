@@ -1,4 +1,5 @@
 <map id="UartManager::set_callback" name="UartManager::set_callback">
-<area shape="rect" id="node1" title=" " alt="" coords="208,5,384,31"/>
-<area shape="rect" id="node2" href="$d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" id="node1" title="UART受信コールバックを登録します。" alt="" coords="213,42,389,67"/>
+<area shape="rect" id="node2" href="$d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8432e03024beca9f356aeef056313be8" title="IM920sLをUARTへ関連付けます。" alt="" coords="5,5,165,45"/>
+<area shape="rect" id="node3" href="$d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="8,70,163,95"/>
 </map>

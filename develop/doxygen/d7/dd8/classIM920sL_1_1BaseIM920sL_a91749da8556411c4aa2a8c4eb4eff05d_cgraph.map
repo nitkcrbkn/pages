@@ -1,4 +1,5 @@
 <map id="IM920sL::BaseIM920sL::sendBroadcast" name="IM920sL::BaseIM920sL::sendBroadcast">
 <area shape="rect" id="node1" title="DCIOモードでバイナリデータをブロードキャスト送信します。" alt="" coords="5,5,165,45"/>
 <area shape="rect" id="node2" href="$d7/dd8/classIM920sL_1_1BaseIM920sL.html#a02a5f429201c575a12718eda469b5569" title="IM920sLコマンドを1行送信します。" alt="" coords="213,5,373,45"/>
+<area shape="rect" id="node3" href="$dd/d1a/classUartManager.html#a920db1d38f267b6b6ad8599a5111f772" title=" " alt="" coords="421,13,552,38"/>
 </map>
