@@ -57,5 +57,5 @@ var searchData=
   ['ps_54',['PS',['../d6/de5/structPS5_1_1Button.html#a192d86ddd19554000e91b771cf64f813',1,'PS5::Button']]],
   ['ps5_55',['PS5',['../d2/d9f/namespacePS5.html',1,'']]],
   ['pwm_56',['pwm',['../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b',1,'GPIO_Mgr::pwm(int duty_width, int period, int duration_ms, uint8_t index=0)'],['../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b',1,'GPIO_Mgr::pwm(int duty_width, int period, int duration_ms, uint8_t index=0)']]],
-  ['pwm_5fdebug_5finfo_57',['PWM_Debug_Info',['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr']]]
+  ['pwm_5fdebug_5finfo_57',['PWM_Debug_Info',['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr::PWM_Debug_Info(void)'],['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr::PWM_Debug_Info(void)']]]
 ];

@@ -22,5 +22,5 @@ var searchData=
   ['process_19',['process',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f',1,'IM920sL::BaseIM920sL']]],
   ['protocolheader_20',['ProtocolHeader',['../df/db1/classproto__can_1_1ProtocolHeader.html#a1a71ff4f819f26f30c12f9d82efb7208',1,'proto_can::ProtocolHeader::ProtocolHeader()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#a8f6a018a208a63a2bef250c705c016f1',1,'proto_can::ProtocolHeader::ProtocolHeader(uint8_t version, DeviceType deviceType, uint8_t deviceNumber, MessageType messageType, uint8_t flags, uint16_t size)']]],
   ['pwm_21',['pwm',['../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b',1,'GPIO_Mgr::pwm(int duty_width, int period, int duration_ms, uint8_t index=0)'],['../d6/d4e/classGPIO__Mgr.html#ad0b6295086faf11c826f718c076bc64b',1,'GPIO_Mgr::pwm(int duty_width, int period, int duration_ms, uint8_t index=0)']]],
-  ['pwm_5fdebug_5finfo_22',['PWM_Debug_Info',['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr']]]
+  ['pwm_5fdebug_5finfo_22',['PWM_Debug_Info',['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr::PWM_Debug_Info(void)'],['../d5/db3/classTimerMgr.html#a5d8972a089fd6741ce6dcc4990cce266',1,'TimerMgr::PWM_Debug_Info(void)']]]
 ];

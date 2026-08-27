@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "abcdefhimnoprstuv",
   9: "p",
   10: "_cdlmpr",
-  11: "cpst"
+  11: "clpst"
 };
 
 var indexSectionNames =

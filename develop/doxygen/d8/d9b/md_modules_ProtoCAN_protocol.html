@@ -93,16 +93,16 @@ $(document).ready(function(){initNavTree('d8/d9b/md_modules_ProtoCAN_protocol.ht
   <div class="headertitle"><div class="title">CANbus </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md9"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md23"></a>
 システム構成図</h1>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 CANbus ノード構成</h2>
 <div class="fragment"><div class="line">CANbus</div>
 <div class="line">  ├── G4 ─(uart)─ PC</div>
 <div class="line">  ├── F0</div>
 <div class="line">  ├── F0</div>
 <div class="line">  └── F0</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
 ソフトウェアレイヤ構成（右側）</h2>
 <ul>
 <li>API</li>
@@ -111,7 +111,7 @@ CANbus ノード構成</h2>
 <li>CAN</li>
 <li>HAL</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 コードスニペット</h1>
 <p >Messenger </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> frame_receive_cb(MessageID msg_id, RawMessage raw) {</div>
 <div class="line">send(MessageID msg_id, T msg) -&gt; <span class="keywordflow">return</span> frameLayer.send(msg_id, raw);</div>
@@ -123,7 +123,7 @@ CANbus ノード構成</h2>
 <div class="line">    uint8_t data[BUFF_SIZE];</div>
 <div class="line">    <span class="keywordtype">size_t</span> size;</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 PC &lt;-&gt; G4 やること</h1>
 <blockquote class="doxtable">
 <p >&zwj;ブロードキャストなので注意 </p>
