@@ -34,7 +34,7 @@ var searchData=
   ['setmaxjerk_31',['setMaxJerk',['../df/d66/classMotionMode.html#af0d6a92520246b2acafae5e5d71837df',1,'MotionMode']]],
   ['setmaxvelocity_32',['setMaxVelocity',['../df/d66/classMotionMode.html#a695eebfecc85ba14522160e8a2786c2c',1,'MotionMode']]],
   ['setmessagetype_33',['setMessageType',['../d9/d34/classproto__can_1_1MessageID.html#a4e643640d662edce5a2443b59038daae',1,'proto_can::MessageID::setMessageType()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#af169e5345ff433d5acbd626081eb7587',1,'proto_can::ProtocolHeader::setMessageType()']]],
-  ['setmode_34',['setMode',['../df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39',1,'MotionMode::setMode()'],['../d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5',1,'Motion::setMode()']]],
+  ['setmode_34',['setMode',['../d1/d3c/classMotion.html#a802de58b9e396143d865b5e74a3ea0a5',1,'Motion::setMode()'],['../df/d66/classMotionMode.html#aed52584c631c55a756632c7fa65f4b39',1,'MotionMode::setMode()']]],
   ['setnetworkmode_35',['setNetworkMode',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1ef5879468233c3d43019fec0ccce2a1',1,'IM920sL::BaseIM920sL']]],
   ['setnodenumber_36',['setNodeNumber',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aa9a45c809be6e872105cc722d628f9bd',1,'IM920sL::BaseIM920sL']]],
   ['setnumber_37',['setNumber',['../dd/d82/classproto__can_1_1DeviceID.html#a21576ef7da6fe9d0a419e473853fe4ef',1,'proto_can::DeviceID']]],
@@ -57,6 +57,7 @@ var searchData=
   ['solenoidmaster_54',['SolenoidMaster',['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a51fb0cedf6bb9716589a2a70808362d6',1,'solenoid_ctrl::SolenoidMaster']]],
   ['startgroupregistration_55',['startGroupRegistration',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1eb7a0a9113247ddb976e16b83764ec0',1,'IM920sL::BaseIM920sL']]],
   ['state_56',['state',['../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04',1,'GPIO_Mgr::state() const'],['../d6/d4e/classGPIO__Mgr.html#a38e64fd7fc78cc4161e8e7a8a5179c04',1,'GPIO_Mgr::state() const']]],
-  ['statistics_57',['statistics',['../d7/db3/classPS5_1_1DualSense.html#a6ef20abc7c6127431fcdc8f1cda3b940',1,'PS5::DualSense']]],
-  ['streamtxrxstats_58',['streamTxRxStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82',1,'CanSystem::CanErrorTracker']]]
+  ['static_5fcast_57',['static_cast',['../dd/d1a/classUartManager.html#a5e72c9d46fac7fc95b39ba2e28ea5e2c',1,'UartManager']]],
+  ['statistics_58',['statistics',['../d7/db3/classPS5_1_1DualSense.html#a6ef20abc7c6127431fcdc8f1cda3b940',1,'PS5::DualSense']]],
+  ['streamtxrxstats_59',['streamTxRxStats',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82',1,'CanSystem::CanErrorTracker']]]
 ];

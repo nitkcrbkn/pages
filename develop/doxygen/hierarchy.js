@@ -23,6 +23,7 @@ var hierarchy =
     [ "PS5::ControllerRegistry< MaxNodes >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
     [ "PS5::ControllerRegistry< 8 >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
     [ "PS5::ControllerRegistry< MaxNodes >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
+    [ "CriticalSection", "d2/dd9/classCriticalSection.html", null ],
     [ "DJI::CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", null ],
     [ "proto_can::Device< DeviceTYPE >", "d2/deb/classproto__can_1_1Device.html", null ],
     [ "proto_can::Device< PC::DeviceType::SOLENOID >", "d2/deb/classproto__can_1_1Device.html", null ],

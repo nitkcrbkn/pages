@@ -21,5 +21,5 @@ var searchData=
   ['controllerregistry_18',['ControllerRegistry',['../d7/dea/classPS5_1_1ControllerRegistry.html#acc1b94458a09023a06b5553ef622f079',1,'PS5::ControllerRegistry::ControllerRegistry()'],['../d2/d9f/namespacePS5.html#aa33b79cee682f6d270275fea0efc1d0e',1,'PS5::ControllerRegistry()']]],
   ['correctionisblocked_19',['correctionIsBlocked',['../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8',1,'AMTEncoderBase']]],
   ['countsperrevolution_20',['countsPerRevolution',['../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b',1,'AMTEncoderBase']]],
-  ['criticalsection_21',['CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html#a506f6db4c8f328d6f6fab1e77e39df64',1,'DJI::CriticalSection']]]
+  ['criticalsection_21',['CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html#a506f6db4c8f328d6f6fab1e77e39df64',1,'DJI::CriticalSection::CriticalSection()'],['../d2/dd9/classCriticalSection.html#a7749425577cdeee2d32815e63d96e9ff',1,'CriticalSection::CriticalSection()'],['../d2/dd9/classCriticalSection.html#ab1710fdac94ff593dbe298d03b70de66',1,'CriticalSection::CriticalSection(const CriticalSection &amp;)=delete']]]
 ];

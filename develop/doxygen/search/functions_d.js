@@ -17,7 +17,7 @@ var searchData=
   ['print_5fhistory_14',['print_history',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a053624d059da405b53696553494556e0',1,'CanSystem::MockCanProfile']]],
   ['print_5fstate_15',['print_state',['../df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5',1,'AMTEncoderExti::print_state()'],['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#aa95e930a0df79ae14e39ed7d68224ec6',1,'solenoid_ctrl::SolenoidMaster::print_state()']]],
   ['printbutton_16',['printButton',['../da/de0/classPS5_1_1DualSenseMonitor.html#a71395cfe1420c25630f7e2b02c93b13f',1,'PS5::DualSenseMonitor']]],
-  ['printf_17',['printf',['../dd/d1a/classUartManager.html#a802edce5be8d434d4e802ada4bc8d4b1',1,'UartManager']]],
+  ['printf_17',['printf',['../dd/d1a/classUartManager.html#a9b04fc7dc8fd05fa11985ea28571f2b1',1,'UartManager']]],
   ['printhex_18',['printHex',['../d2/d4a/structCanSystem_1_1CANMessage.html#acbeac53465dce1d757def3f131ef6c3c',1,'CanSystem::CANMessage::printHex()'],['../df/d58/structproto__can_1_1RawMessage.html#abcd6b708fe175025714bd388aa697102',1,'proto_can::RawMessage::printHex()']]],
   ['process_19',['process',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f',1,'IM920sL::BaseIM920sL']]],
   ['protocolheader_20',['ProtocolHeader',['../df/db1/classproto__can_1_1ProtocolHeader.html#a1a71ff4f819f26f30c12f9d82efb7208',1,'proto_can::ProtocolHeader::ProtocolHeader()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#a8f6a018a208a63a2bef250c705c016f1',1,'proto_can::ProtocolHeader::ProtocolHeader(uint8_t version, DeviceType deviceType, uint8_t deviceNumber, MessageType messageType, uint8_t flags, uint16_t size)']]],

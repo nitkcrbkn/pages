@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html" title="デバイス側ノード。コマンドを受信してGPIOに反映し、状態を定期送信する。" alt="" coords="5,5,213,45"/>
+<area shape="rect" id="node1" href="$dd/de0/structPS5_1_1DualSenseStatistics.html" title="DualSense受信処理の累積統計です。" alt="" coords="5,5,176,31"/>
 </map>

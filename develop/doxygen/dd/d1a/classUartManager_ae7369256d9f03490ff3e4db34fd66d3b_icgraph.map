@@ -1,5 +1,5 @@
 <map id="UartManager::receive" name="UartManager::receive">
-<area shape="rect" id="node1" title=" " alt="" coords="213,35,359,60"/>
+<area shape="rect" id="node1" title="割り込みでUART受信を開始します。" alt="" coords="213,35,359,60"/>
 <area shape="rect" id="node2" href="$d0/d45/classCommandReceiver.html#a7c8867cea0db7ab4651456bac1bf810a" title=" " alt="" coords="8,5,163,31"/>
 <area shape="rect" id="node3" href="$d7/dd8/classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f" title="1バイトのUART割り込み受信を開始します。" alt="" coords="5,55,165,95"/>
 </map>

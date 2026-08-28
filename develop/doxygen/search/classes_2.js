@@ -11,5 +11,5 @@ var searchData=
   ['controllerregistry_8',['ControllerRegistry',['../d7/dea/classPS5_1_1ControllerRegistry.html',1,'PS5']]],
   ['controllerregistry_3c_208_20_3e_9',['ControllerRegistry&lt; 8 &gt;',['../d7/dea/classPS5_1_1ControllerRegistry.html',1,'PS5']]],
   ['controllerregistry_3c_20maxnodes_20_3e_10',['ControllerRegistry&lt; MaxNodes &gt;',['../d7/dea/classPS5_1_1ControllerRegistry.html',1,'PS5']]],
-  ['criticalsection_11',['CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html',1,'DJI']]]
+  ['criticalsection_11',['CriticalSection',['../d2/dd9/classCriticalSection.html',1,'CriticalSection'],['../db/d04/classDJI_1_1CriticalSection.html',1,'DJI::CriticalSection']]]
 ];

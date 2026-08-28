@@ -1,5 +1,5 @@
 <map id="CommandReceiver::init" name="CommandReceiver::init">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,160,56"/>
-<area shape="rect" id="node2" href="$dd/d1a/classUartManager.html#ae7369256d9f03490ff3e4db34fd66d3b" title=" " alt="" coords="223,5,369,31"/>
+<area shape="rect" id="node2" href="$dd/d1a/classUartManager.html#ae7369256d9f03490ff3e4db34fd66d3b" title="割り込みでUART受信を開始します。" alt="" coords="223,5,369,31"/>
 <area shape="rect" id="node3" href="$dd/d1a/classUartManager.html#ae36576242fde860d2aa1cc6a4f4ee0ae" title="UART受信コールバックを登録します。" alt="" coords="208,55,384,80"/>
 </map>
