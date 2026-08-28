@@ -1,5 +1,5 @@
 <map id="CanSystem::CanErrorTracker::addIdSend" name="CanSystem::CanErrorTracker::addIdSend">
 <area shape="rect" id="node1" title=" " alt="" coords="437,5,627,45"/>
-<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff" title="ヘッダを直接指定して送信する（上位 API）" alt="" coords="221,5,389,45"/>
-<area shape="rect" id="node3" href="$d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba" title="ID とデータを指定して送信する（簡易 API）" alt="" coords="5,5,173,45"/>
+<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff" title=" " alt="" coords="221,5,389,45"/>
+<area shape="rect" id="node3" href="$d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba" title="送信する" alt="" coords="5,5,173,45"/>
 </map>

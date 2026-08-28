@@ -25,75 +25,74 @@
 var NAVTREE =
 [
   [ "STM32System", "index.html", [
-    [ "Quick Start", "index.html#autotoc_md50", [
-      [ "全体構造の概要", "index.html#autotoc_md51", null ],
-      [ "ソフトのインストール", "index.html#autotoc_md52", [
-        [ "CubeMX", "index.html#autotoc_md53", null ],
-        [ "シリアルモニタ", "index.html#autotoc_md54", null ],
-        [ "docker", "index.html#autotoc_md55", null ]
+    [ "Quick Start", "index.html#autotoc_md51", [
+      [ "全体構造の概要", "index.html#autotoc_md52", null ],
+      [ "ソフトのインストール", "index.html#autotoc_md53", [
+        [ "CubeMX", "index.html#autotoc_md54", null ],
+        [ "シリアルモニタ", "index.html#autotoc_md55", null ],
+        [ "docker", "index.html#autotoc_md56", null ]
       ] ],
-      [ "使用方法", "index.html#autotoc_md56", null ],
-      [ "clone", "index.html#autotoc_md57", null ],
-      [ "dockerビルド環境のビルド", "index.html#autotoc_md58", null ],
-      [ "HALを生成する", "index.html#autotoc_md59", null ],
-      [ "ビルドして書き込み", "index.html#autotoc_md60", [
-        [ "コマンドとオプション", "index.html#autotoc_md61", null ],
-        [ "clogスケッチのNucleoG474REへの書き込み", "index.html#autotoc_md62", null ],
-        [ "その他スケッチの書き込み", "index.html#autotoc_md63", null ],
-        [ "よくあるトラブルシューティング", "index.html#autotoc_md64", null ]
+      [ "使用方法", "index.html#autotoc_md57", null ],
+      [ "clone", "index.html#autotoc_md58", null ],
+      [ "dockerビルド環境のビルド", "index.html#autotoc_md59", null ],
+      [ "HALを生成する", "index.html#autotoc_md60", null ],
+      [ "ビルドして書き込み", "index.html#autotoc_md61", [
+        [ "コマンドとオプション", "index.html#autotoc_md62", null ],
+        [ "clogスケッチのNucleoG474REへの書き込み", "index.html#autotoc_md63", null ],
+        [ "その他スケッチの書き込み", "index.html#autotoc_md64", null ],
+        [ "よくあるトラブルシューティング", "index.html#autotoc_md65", null ]
       ] ]
     ] ],
-    [ "スケッチ新規作成", "index.html#autotoc_md65", [
-      [ "appMain.cpp", "index.html#autotoc_md66", null ],
-      [ "config.h", "index.html#autotoc_md67", null ],
-      [ "callbacks.h", "index.html#autotoc_md68", null ]
+    [ "スケッチ新規作成", "index.html#autotoc_md66", [
+      [ "appMain.cpp", "index.html#autotoc_md67", null ],
+      [ "config.h", "index.html#autotoc_md68", null ],
+      [ "callbacks.h", "index.html#autotoc_md69", null ]
     ] ],
-    [ "新規repo作成", "index.html#autotoc_md69", [
-      [ "git", "index.html#autotoc_md70", null ],
-      [ "CubeMX", "index.html#autotoc_md71", [
-        [ "手順", "index.html#autotoc_md72", null ]
+    [ "新規repo作成", "index.html#autotoc_md70", [
+      [ "git", "index.html#autotoc_md71", null ],
+      [ "CubeMX", "index.html#autotoc_md72", [
+        [ "手順", "index.html#autotoc_md73", null ]
       ] ],
-      [ "cmake", "index.html#autotoc_md73", null ],
-      [ "target handler", "index.html#autotoc_md74", null ],
-      [ "quick start", "index.html#autotoc_md75", null ]
+      [ "cmake", "index.html#autotoc_md74", null ],
+      [ "target handler", "index.html#autotoc_md75", null ],
+      [ "quick start", "index.html#autotoc_md76", null ]
     ] ],
-    [ "STM32 との通信", "index.html#autotoc_md76", null ],
-    [ "TEST", "index.html#autotoc_md77", [
-      [ "ビルドテスト", "index.html#autotoc_md78", null ]
+    [ "STM32 との通信", "index.html#autotoc_md77", null ],
+    [ "TEST", "index.html#autotoc_md78", [
+      [ "ビルドテスト", "index.html#autotoc_md79", null ]
     ] ],
-    [ "Folder Structure", "index.html#autotoc_md79", [
-      [ "lib一覧", "index.html#autotoc_md80", null ],
-      [ "module一覧", "index.html#autotoc_md81", null ]
+    [ "Folder Structure", "index.html#autotoc_md80", [
+      [ "lib一覧", "index.html#autotoc_md81", null ],
+      [ "module一覧", "index.html#autotoc_md82", null ]
     ] ],
-    [ "Document Structure", "index.html#autotoc_md82", [
-      [ "既存Documents", "index.html#autotoc_md83", null ]
+    [ "Document Structure", "index.html#autotoc_md83", [
+      [ "既存Documents", "index.html#autotoc_md84", null ]
     ] ],
-    [ "Usage Guide", "index.html#autotoc_md84", [
-      [ "Include Path", "index.html#autotoc_md85", null ],
-      [ "Clog (ロギングシステム)", "index.html#autotoc_md86", [
-        [ "重要な注意点", "index.html#autotoc_md87", null ]
+    [ "Usage Guide", "index.html#autotoc_md85", [
+      [ "Include Path", "index.html#autotoc_md86", null ],
+      [ "Clog (ロギングシステム)", "index.html#autotoc_md87", [
+        [ "重要な注意点", "index.html#autotoc_md88", null ]
       ] ]
     ] ],
-    [ "Architecture", "index.html#autotoc_md88", [
-      [ "設計思想", "index.html#autotoc_md89", [
-        [ "フォルダ構造とレイヤーの対応", "index.html#autotoc_md90", null ],
-        [ "レイヤー詳細", "index.html#autotoc_md91", null ]
+    [ "Architecture", "index.html#autotoc_md89", [
+      [ "設計思想", "index.html#autotoc_md90", [
+        [ "フォルダ構造とレイヤーの対応", "index.html#autotoc_md91", null ],
+        [ "レイヤー詳細", "index.html#autotoc_md92", null ]
       ] ],
-      [ "モジュール開発", "index.html#autotoc_md92", [
-        [ "用語の定義", "index.html#autotoc_md93", null ],
-        [ "新規モジュール追加", "index.html#autotoc_md94", null ]
+      [ "モジュール開発", "index.html#autotoc_md93", [
+        [ "用語の定義", "index.html#autotoc_md94", null ],
+        [ "新規モジュール追加", "index.html#autotoc_md95", null ]
       ] ]
     ] ],
-    [ "Best Practices / Guidelines", "index.html#autotoc_md95", [
-      [ "コーディング規約", "index.html#autotoc_md96", null ],
-      [ "ライブラリ実装方針", "index.html#autotoc_md97", null ],
-      [ "エラー処理", "index.html#autotoc_md98", null ],
-      [ "メモリ管理", "index.html#autotoc_md99", [
-        [ "F0 マイコンの制限", "index.html#autotoc_md100", null ]
+    [ "Best Practices / Guidelines", "index.html#autotoc_md96", [
+      [ "コーディング規約", "index.html#autotoc_md97", null ],
+      [ "ライブラリ実装方針", "index.html#autotoc_md98", null ],
+      [ "エラー処理", "index.html#autotoc_md99", null ],
+      [ "メモリ管理", "index.html#autotoc_md100", [
+        [ "F0 マイコンの制限", "index.html#autotoc_md101", null ]
       ] ],
-      [ "パフォーマンス", "index.html#autotoc_md101", null ]
+      [ "パフォーマンス", "index.html#autotoc_md102", null ]
     ] ],
-    [ "詳細実装", "index.html#autotoc_md102", null ],
     [ "CAN Profile 命名規則", "d3/d50/md_modules_CanSystem_profile_README.html", [
       [ "Features", "d3/d50/md_modules_CanSystem_profile_README.html#autotoc_md1", null ],
       [ "命名方針", "d3/d50/md_modules_CanSystem_profile_README.html#autotoc_md2", null ]
@@ -102,52 +101,53 @@ var NAVTREE =
       [ "設計思想と概念", "df/df4/md_modules_CanSystem_README.html#autotoc_md4", null ],
       [ "Quick Start", "df/df4/md_modules_CanSystem_README.html#autotoc_md5", [
         [ "プロファイル選択", "df/df4/md_modules_CanSystem_README.html#autotoc_md6", null ],
-        [ "使い方", "df/df4/md_modules_CanSystem_README.html#autotoc_md7", null ]
+        [ "使い方", "df/df4/md_modules_CanSystem_README.html#autotoc_md7", null ],
+        [ "エラー検出・自動復旧", "df/df4/md_modules_CanSystem_README.html#autotoc_md8", null ]
       ] ],
-      [ "詳細設計", "df/df4/md_modules_CanSystem_README.html#autotoc_md8", [
-        [ "レイヤー構造と責務", "df/df4/md_modules_CanSystem_README.html#autotoc_md9", null ],
-        [ "アーキテクチャ", "df/df4/md_modules_CanSystem_README.html#autotoc_md10", null ],
-        [ "受信フロー", "df/df4/md_modules_CanSystem_README.html#autotoc_md11", null ]
+      [ "詳細設計", "df/df4/md_modules_CanSystem_README.html#autotoc_md9", [
+        [ "レイヤー構造と責務", "df/df4/md_modules_CanSystem_README.html#autotoc_md10", null ],
+        [ "アーキテクチャ", "df/df4/md_modules_CanSystem_README.html#autotoc_md11", null ],
+        [ "受信フロー", "df/df4/md_modules_CanSystem_README.html#autotoc_md12", null ]
       ] ],
-      [ "テスト (MockCanProfile)", "df/df4/md_modules_CanSystem_README.html#autotoc_md12", null ]
+      [ "テスト (MockCanProfile)", "df/df4/md_modules_CanSystem_README.html#autotoc_md13", null ]
     ] ],
     [ "lite", "d7/d2b/md_modules_lite_README.html", [
-      [ "設計思想と概念", "d7/d2b/md_modules_lite_README.html#autotoc_md14", [
-        [ "共通原則: ヒープ不使用", "d7/d2b/md_modules_lite_README.html#autotoc_md15", null ]
+      [ "設計思想と概念", "d7/d2b/md_modules_lite_README.html#autotoc_md15", [
+        [ "共通原則: ヒープ不使用", "d7/d2b/md_modules_lite_README.html#autotoc_md16", null ]
       ] ],
-      [ "lite logger", "d7/d2b/md_modules_lite_README.html#autotoc_md16", null ]
+      [ "lite logger", "d7/d2b/md_modules_lite_README.html#autotoc_md17", null ]
     ] ],
     [ "CANbus", "d8/d9b/md_modules_ProtoCAN_protocol.html", [
-      [ "システム構成図", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md23", [
-        [ "CANbus ノード構成", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md24", null ],
-        [ "ソフトウェアレイヤ構成（右側）", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md25", null ]
+      [ "システム構成図", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md24", [
+        [ "CANbus ノード構成", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md25", null ],
+        [ "ソフトウェアレイヤ構成（右側）", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md26", null ]
       ] ],
-      [ "コードスニペット", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md26", null ],
-      [ "PC <-> G4 やること", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md28", null ]
+      [ "コードスニペット", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md27", null ],
+      [ "PC <-> G4 やること", "d8/d9b/md_modules_ProtoCAN_protocol.html#autotoc_md29", null ]
     ] ],
     [ "ProtoCAN", "d1/dd8/md_modules_ProtoCAN_README.html", [
-      [ "設計思想と概念", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md30", null ],
-      [ "Quick Start", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md31", [
-        [ "実行方法", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md32", null ]
+      [ "設計思想と概念", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md31", null ],
+      [ "Quick Start", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md32", [
+        [ "実行方法", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md33", null ]
       ] ],
-      [ "新規デバイス登録手順", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md33", null ],
-      [ "詳細設計", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md34", [
-        [ "レイヤー構造と責務", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md35", null ],
-        [ "フォルダ構造", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md36", null ],
-        [ "アーキテクチャ", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md37", null ]
+      [ "新規デバイス登録手順", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md34", null ],
+      [ "詳細設計", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md35", [
+        [ "レイヤー構造と責務", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md36", null ],
+        [ "フォルダ構造", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md37", null ],
+        [ "アーキテクチャ", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md38", null ]
       ] ],
-      [ "CANプロトコル概要", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md38", [
-        [ "1. 概要", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md39", null ],
-        [ "2. CAN拡張ID構成(29bit)", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md40", [
-          [ "DeviceID定義", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md41", null ],
-          [ "フィールド詳細", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md42", null ]
+      [ "CANプロトコル概要", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md39", [
+        [ "1. 概要", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md40", null ],
+        [ "2. CAN拡張ID構成(29bit)", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md41", [
+          [ "DeviceID定義", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md42", null ],
+          [ "フィールド詳細", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md43", null ]
         ] ],
-        [ "3. メッセージ種類", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md43", null ],
-        [ "4. プロトコル動作", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md44", [
-          [ "フレーム構造", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md45", null ],
-          [ "フレーム分割", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md46", null ],
-          [ "欠損検出", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md47", null ],
-          [ "特徴", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md48", null ]
+        [ "3. メッセージ種類", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md44", null ],
+        [ "4. プロトコル動作", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md45", [
+          [ "フレーム構造", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md46", null ],
+          [ "フレーム分割", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md47", null ],
+          [ "欠損検出", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md48", null ],
+          [ "特徴", "d1/dd8/md_modules_ProtoCAN_README.html#autotoc_md49", null ]
         ] ]
       ] ]
     ] ],
@@ -191,11 +191,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/de2/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOCK__MOTOR_01_4.html",
-"d6/de5/structPS5_1_1Button.html#a544b6234db8f648e66766611dd14a361",
-"d8/dd9/classproto__can_1_1Messenger.html#a5285ff394f71b62a307f421ba0ed1036",
-"dc/d22/classstdr_1_1PID.html#ab604d2b35afb225d3890d6efb4b6d7d8",
-"df/d66/classMotionMode.html#a27f1d72e7dd2fbe6f9a90e581ba4c2a0"
+"d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a902b0d55fddef6f8d651fe1035b7d4bd",
+"d6/de5/structPS5_1_1Button.html",
+"d8/da9/classPID.html#a74179ad126a72b91a067add5547ab6c7",
+"db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7",
+"df/d05/CanState_8hpp.html#ab5ffcf81f4e20b71b41cd085734d9f31a526d688f37a86d3c3f27d0c5016eb71d"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

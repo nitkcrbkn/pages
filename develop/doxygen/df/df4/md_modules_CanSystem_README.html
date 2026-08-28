@@ -142,9 +142,13 @@ Quick Start</h1>
 <p ><code>stream_pos</code> は Clog の <code>STREAM</code> 行スロットの開始位置です。CanSystem は状態表示にこれを起点に複数スロットを使います。 <br  />
  FDCANは3行<code>stream_pos</code>: クイック統計 / <code>stream_pos+1</code>: TxRx 統計 / <code>stream_pos+2</code>: 設定。コンストラクタで設定表示を指定できます。</p>
 <p >利用者は <code>register_cb()</code> で <code>std::function&lt;void(const CANMessage&amp;)&gt;</code> を任意個登録できます。全てのフレームがそれぞれのcbに渡されるためcb上部でcan IDでフィルターします。</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md8"></a>
+エラー検出・自動復旧</h2>
+<p ><code>check_is_error()</code> でバスエラー状態を確認できます。自動復旧（Bus-Off等からの再起動）は <code>new_state_print()</code>（状態表示用、統計出力のみを行う）からは呼ばれないため、復旧させたい場合はmain loop等から <code>restart_handler()</code> を明示的に周期呼び出ししてください。<code>restart_handler()</code> は内部で <code>RETRY_AFTER</code> 間隔を空けてから <code>check_is_error()</code> を確認し、エラーなら <code>restart()</code>（FDCANは失敗時さらに <code>force_restart()</code>）を実行します。</p>
+<p ><code>NO_CAN_TRACKER</code> を定義すると、<code>CanManager</code>（Classic CAN）は <code>CanErrorTracker</code>（ID統計・文字列整形込みの重いトラッカー）を使わず、HALレジスタ（<code>ESR</code>）を直接読む軽量な <code>check_is_error()</code> に切り替わります（Flash/RAM制約の厳しいターゲット向け）。<code>NO_CAN_TRACKER</code> 時は <code>new_state_print()</code>（統計表示）自体が存在しなくなりますが、<code>check_is_error()</code>/<code>restart_handler()</code> は引き続き使えます。**<code>NO_CAN_TRACKER</code> は FDCAN（<code>FdCanManager</code>）と併用できません**（<code>USE_FDCAN</code> と同時定義するとコンパイルエラーになります）。</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
 詳細設計</h1>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 レイヤー構造と責務</h2>
 <p ><a class="el" href="../../d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> は 3 系統のディレクトリで構成されます。</p>
 <ul>
@@ -152,7 +156,7 @@ Quick Start</h1>
 <li><b>profile/</b> : 具象クラス群。core の実装基底を継承し、フィルタと送信ヘッダを具体的に設定 (<code>setConfig</code> / <code>setInterrupt</code>) する</li>
 <li><b>support/</b> : 状態監視。エラーカウンタ・バス状態・ID 統計を収集し、fdcan/canで統一してClog STREAM 向けの表示文字列を生成する</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 アーキテクチャ</h2>
 <p ><a class="el" href="../../d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> 内部のレイヤーとスタックにおける位置づけ:</p>
 <table class="markdownTable">
@@ -167,14 +171,14 @@ Quick Start</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">HAL   </td><td class="markdownTableBodyNone">STM32 HAL (<code>HAL_FDCAN_*</code> / <code>HAL_CAN_*</code>)   </td><td class="markdownTableBodyNone">ペリフェラルレジスタ操作   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 受信フロー</h2>
 <ol type="1">
 <li>CAN ペリフェラルが RxFIFO に格納 → 受信割り込み発生</li>
 <li>HAL の登録された静的関数 <code>onMsgReceived()</code> が呼び出される。(fdcanは間にもう一つある)</li>
 <li><code>CANMessage(Identifier, RxData, DataLength)</code> を生成し<code>invoke_cbs()</code>が実行される</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 テスト (MockCanProfile)</h1>
 <p ><code>MockCanProfile</code> は <code>ICanController</code> を実装したモックで、ホスト上の単体テストやcanを使用しないで実機動作をさせるときに使います。<code>initCan</code> / <code>setConfig</code> / <code>setInterrupt</code> は何もせず、<code>send()</code> は送信履歴に積むだけです。ループバックを有効にすると、<code>send()</code> したメッセージが即座に自身の受信コールバックに配信されます。 </p>
 </div></div><!-- contents -->

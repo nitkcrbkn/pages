@@ -93,16 +93,16 @@ $(document).ready(function(){initNavTree('d8/d9b/md_modules_ProtoCAN_protocol.ht
   <div class="headertitle"><div class="title">CANbus </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md23"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md24"></a>
 システム構成図</h1>
-<h2><a class="anchor" id="autotoc_md24"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 CANbus ノード構成</h2>
 <div class="fragment"><div class="line">CANbus</div>
 <div class="line">  ├── G4 ─(uart)─ PC</div>
 <div class="line">  ├── F0</div>
 <div class="line">  ├── F0</div>
 <div class="line">  └── F0</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md26"></a>
 ソフトウェアレイヤ構成（右側）</h2>
 <ul>
 <li>API</li>
@@ -111,19 +111,19 @@ CANbus ノード構成</h2>
 <li>CAN</li>
 <li>HAL</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 コードスニペット</h1>
 <p >Messenger </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> frame_receive_cb(MessageID msg_id, RawMessage raw) {</div>
 <div class="line">send(MessageID msg_id, T msg) -&gt; <span class="keywordflow">return</span> frameLayer.send(msg_id, raw);</div>
 </div><!-- fragment --><p> FrameLayer </p><div class="fragment"><div class="line">canMgr.send(header.toRaw(), &amp;raw.data[offset], chunk_size)</div>
 <div class="line"><span class="keywordtype">void</span> read_cb(<span class="keyword">const</span> <a class="code hl_struct" href="../../d2/d4a/structCanSystem_1_1CANMessage.html">CanSystem::CANMessage</a>&amp; can_msg) {</div>
-<div class="ttc" id="astructCanSystem_1_1CANMessage_html"><div class="ttname"><a href="../../d2/d4a/structCanSystem_1_1CANMessage.html">CanSystem::CANMessage</a></div><div class="ttdef"><b>Definition:</b> CanInterfaces.hpp:10</div></div>
+<div class="ttc" id="astructCanSystem_1_1CANMessage_html"><div class="ttname"><a href="../../d2/d4a/structCanSystem_1_1CANMessage.html">CanSystem::CANMessage</a></div><div class="ttdef"><b>Definition:</b> CanInterfaces.hpp:15</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="keyword">struct </span>CANMessage {</div>
 <div class="line">    uint32_t id;</div>
 <div class="line">    uint8_t data[BUFF_SIZE];</div>
 <div class="line">    <span class="keywordtype">size_t</span> size;</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
 PC &lt;-&gt; G4 やること</h1>
 <blockquote class="doxtable">
 <p >&zwj;ブロードキャストなので注意 </p>

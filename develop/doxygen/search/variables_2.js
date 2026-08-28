@@ -9,7 +9,7 @@ var searchData=
   ['correction_5fmode_5f_6',['correction_mode_',['../db/d69/classAMTEncoderBase.html#aca13833d278a8da5c395761eec856fb3',1,'AMTEncoderBase']]],
   ['correction_5foffset_5f_7',['correction_offset_',['../db/d69/classAMTEncoderBase.html#a9d29f79ed550500e7589d0ae499ce1cc',1,'AMTEncoderBase']]],
   ['correction_5fpending_5f_8',['correction_pending_',['../db/d69/classAMTEncoderBase.html#a9eafad22e19b92f260cc6a82000d41e2',1,'AMTEncoderBase']]],
-  ['count_9',['count',['../de/df2/structCanSystem_1_1IdStats.html#aca293237b2fd731f5cce02ca7f33d5d1',1,'CanSystem::IdStats']]],
+  ['count_9',['count',['../d2/de5/structCanSystem_1_1ValidSizes.html#ae64597bac7588316a0e2d89e300a201e',1,'CanSystem::ValidSizes::count()'],['../d7/d4f/structCanSystem_1_1IdEntry.html#afd88cdf8cab40bc0acb4f2b5a7102073',1,'CanSystem::IdEntry::count()']]],
   ['create_10',['CREATE',['../d6/de5/structPS5_1_1Button.html#a009852c5df9ca9d7e99a09244849212d',1,'PS5::Button']]],
   ['cross_11',['CROSS',['../d6/de5/structPS5_1_1Button.html#aacf90eac35bdf432bba93310713b6347',1,'PS5::Button']]]
 ];

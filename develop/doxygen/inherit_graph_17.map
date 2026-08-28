@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d2/dd9/classCriticalSection.html" title="PRIMASKを保存しIRQを無効化するスコープガード" alt="" coords="5,5,112,31"/>
+<area shape="rect" id="node1" href="$d0/d45/classCommandReceiver.html" title="UART受信コールバックの所有・フレーム解析・Commandデシリアライズを行うクラス" alt="" coords="5,5,177,45"/>
 </map>

@@ -27,7 +27,8 @@ var searchData=
   ['resetvelocityprofile_24',['resetVelocityProfile',['../d1/d3c/classMotion.html#a376cef6ccd6c86c3ca58795f59197b8b',1,'Motion']]],
   ['resetzeroposition_25',['resetZeroPosition',['../d4/d2e/classDJI_1_1ESC.html#a28ed2677d59d8e86d5265aaee949308d',1,'DJI::ESC']]],
   ['restart_26',['restart',['../d6/dca/classCanSystem_1_1ICanController.html#aa77d5f85e32a79d651e7bd1d872c4a79',1,'CanSystem::ICanController::restart()'],['../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3',1,'CanSystem::CanManager::restart()'],['../d9/d76/classCanSystem_1_1MockCanProfile.html#a3783babd06f218582ce6c7c819f0bf2c',1,'CanSystem::MockCanProfile::restart()']]],
-  ['revolutions_27',['revolutions',['../db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a',1,'AMTEncoderBase']]],
-  ['rpm_28',['rpm',['../db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190',1,'AMTEncoderBase']]],
-  ['run_29',['run',['../dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854',1,'stdr::PID']]]
+  ['restart_5fhandler_27',['restart_handler',['../d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03',1,'CanSystem::CanManager']]],
+  ['revolutions_28',['revolutions',['../db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a',1,'AMTEncoderBase']]],
+  ['rpm_29',['rpm',['../db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190',1,'AMTEncoderBase']]],
+  ['run_30',['run',['../dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854',1,'stdr::PID']]]
 ];

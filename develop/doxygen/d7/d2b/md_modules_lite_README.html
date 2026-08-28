@@ -95,12 +95,12 @@ $(document).ready(function(){initNavTree('d7/d2b/md_modules_lite_README.html','.
 <div class="contents">
 <div class="textblock"><p >lite は、**軽量モジュール群**です。通常の Clog（ロギング）や <a class="el" href="../../d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> はコードサイズが大きく F0 には収まりますが、他のライブラリをいれると圧迫されてくるため作成されました。</p>
 <p >もともとは RAM/Flash 削減を狙って ETL（Embedded Template Library）ベースで作られましたが、実測では効果が見られませんでした（ETL は省サイズよりも安全性・堅牢性を重視したライブラリである模様）。 リポジトリの ETL サブモジュールも削除されています。<code>gpio.h</code> のみ旧 ETL 実装のまま残っていますが、サブモジュール削除により現状ビルド不可放置されてます。</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 設計思想と概念</h1>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 共通原則: ヒープ不使用</h2>
 <p >lite の全コンポーネントは <code>new</code> / <code>malloc</code> を使いません。ログのフォーマットはスタック上の固定長バッファで行います。 これはメモリの重なる再確保によるメモリフラグメンテーションがメモリコリジョンを起こす可能性を高めるためです。 メモリコリジョンが起きるとサイレントにハードファルトし停止します。F0でコードが停止した場合はメモリ不足を疑うと良いでしょう。</p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 lite logger</h1>
 <p ><code>[LEVEL <a href="file:line">file:line</a>]</code> + 本文でフォーマットされます。色はありません。 <br  />
  使い方<code>examples/litelog/</code>を参照してください <br  />

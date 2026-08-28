@@ -1,0 +1,4 @@
+<map id="CanSystem::CanManager::check_is_error" name="CanSystem::CanManager::check_is_error">
+<area shape="rect" id="node1" title="error発生時にrestartするかを決める。" alt="" coords="221,5,389,45"/>
+<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03" title="エラー時の自動復旧トリガー" alt="" coords="5,5,173,45"/>
+</map>

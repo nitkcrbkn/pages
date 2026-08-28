@@ -1,4 +1,4 @@
 <map id="CanSystem::MockCanProfile::send" name="CanSystem::MockCanProfile::send">
 <area shape="rect" id="node1" title="データ送信" alt="" coords="5,5,192,45"/>
-<area shape="rect" id="node2" href="$d9/d76/classCanSystem_1_1MockCanProfile.html#a5924520b103943279dc972adaa6f1796" title="idを指定しない場合はmyStdIdが使用される。また指定した後resetされる。" alt="" coords="240,5,427,45"/>
+<area shape="rect" id="node2" href="$d9/d76/classCanSystem_1_1MockCanProfile.html#a5924520b103943279dc972adaa6f1796" title="登録済みコールバックを全て呼び出す" alt="" coords="240,5,427,45"/>
 </map>

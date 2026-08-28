@@ -55,7 +55,7 @@ var hierarchy =
     [ "ICanManager", null, [
       [ "CanSystem::CanManager", "d1/d4a/classCanSystem_1_1CanManager.html", null ]
     ] ],
-    [ "CanSystem::IdStats", "de/df2/structCanSystem_1_1IdStats.html", null ],
+    [ "CanSystem::IdEntry", "d7/d4f/structCanSystem_1_1IdEntry.html", null ],
     [ "LogLite", "d9/d24/classLogLite.html", null ],
     [ "Motoron::Master", "da/d4c/classMotoron_1_1Master.html", null ],
     [ "proto_can::Master", "d3/da4/classproto__can_1_1Master.html", null ],
@@ -81,5 +81,6 @@ var hierarchy =
     [ "TimerMgr", "d5/db3/classTimerMgr.html", null ],
     [ "CanSystem::TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", null ],
     [ "CanSystem::MockCanProfile::TxRecord", "d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html", null ],
-    [ "UartManager", "dd/d1a/classUartManager.html", null ]
+    [ "UartManager", "dd/d1a/classUartManager.html", null ],
+    [ "CanSystem::ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", null ]
 ];

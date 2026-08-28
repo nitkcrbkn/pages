@@ -8,10 +8,11 @@ var annotated_dup =
       [ "CANStatus", "d7/db6/structCanSystem_1_1CANStatus.html", "d7/db6/structCanSystem_1_1CANStatus" ],
       [ "ErrorCounters", "df/d6b/structCanSystem_1_1ErrorCounters.html", "df/d6b/structCanSystem_1_1ErrorCounters" ],
       [ "ICanController", "d6/dca/classCanSystem_1_1ICanController.html", "d6/dca/classCanSystem_1_1ICanController" ],
-      [ "IdStats", "de/df2/structCanSystem_1_1IdStats.html", "de/df2/structCanSystem_1_1IdStats" ],
+      [ "IdEntry", "d7/d4f/structCanSystem_1_1IdEntry.html", "d7/d4f/structCanSystem_1_1IdEntry" ],
       [ "MockCanProfile", "d9/d76/classCanSystem_1_1MockCanProfile.html", "d9/d76/classCanSystem_1_1MockCanProfile" ],
       [ "SoftwareErrorFlags", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags" ],
-      [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ]
+      [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ],
+      [ "ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", "d2/de5/structCanSystem_1_1ValidSizes" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
       [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],

@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['x_0',['x',['../classrobot_1_1xyz__f.html#aa01cd02e26454545e09ce65b53e193b6',1,'robot::xyz_f::x()'],['../classrobot_1_1xyz__i.html#a4777ce9ba32c55c3479ad44626dc936e',1,'robot::xyz_i::x()']]],
-  ['x_1',['X',['../classrobot_1_1xyz__f.html#a62d11ed3321976183222a4eabcf6c178a02129bb861061d1a052c592e2dc6b383',1,'robot::xyz_f::X()'],['../classrobot_1_1xyz__i.html#aad87779ab2c65fbd5d594cb59c892b3da02129bb861061d1a052c592e2dc6b383',1,'robot::xyz_i::X()']]],
-  ['x_5fname_2',['X_NAME',['../classrobot_1_1xyz__f.html#aa605d1d61fe6d808783d815b0819e38f',1,'robot::xyz_f::X_NAME()'],['../classrobot_1_1xyz__i.html#a35382c1ef8e66974a661768850a4cce6',1,'robot::xyz_i::X_NAME()']]],
-  ['xyz_5ff_3',['xyz_f',['../classrobot_1_1xyz__f.html',1,'robot::xyz_f'],['../classrobot_1_1xyz__f.html#a76d7546c7e316ece7fe852da18ea7e0c',1,'robot::xyz_f::xyz_f()=default'],['../classrobot_1_1xyz__f.html#af569060f7161233c639b651e2048c7ed',1,'robot::xyz_f::xyz_f(const xyz_f &amp;rhs)'],['../classrobot_1_1xyz__f.html#ab1afbc4e8dca1ceb4478a20de2c2a5d9',1,'robot::xyz_f::xyz_f(const xyz_f &amp;&amp;rhs) noexcept']]],
-  ['xyz_5fi_4',['xyz_i',['../classrobot_1_1xyz__i.html',1,'robot::xyz_i'],['../classrobot_1_1xyz__i.html#ab9cb85fa6de38ccdbb23fa808b06ed24',1,'robot::xyz_i::xyz_i()=default'],['../classrobot_1_1xyz__i.html#af41f6ebc4949ee99f60ea3f99aaacfab',1,'robot::xyz_i::xyz_i(const xyz_i &amp;rhs)'],['../classrobot_1_1xyz__i.html#a3d1079a1f11246e6635c5d00c7f5c62b',1,'robot::xyz_i::xyz_i(const xyz_i &amp;&amp;rhs) noexcept']]]
+  ['_7eabstractcontroller_0',['~AbstractController',['../d0/d5c/classAbstractController.html#a1b4074d4b0aa29f48f90ff247e3f0c4b',1,'AbstractController']]],
+  ['_7eamtencoderbase_1',['~AMTEncoderBase',['../db/d69/classAMTEncoderBase.html#aa4c05c637881b3f78c3cbe641682c44f',1,'AMTEncoderBase']]],
+  ['_7ebaseim920sl_2',['~BaseIM920sL',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8b9bbc662d3db4bde25b7b90885e4dae',1,'IM920sL::BaseIM920sL']]],
+  ['_7ecriticalsection_3',['~CriticalSection',['../db/d04/classDJI_1_1CriticalSection.html#ad81b83548e560e1e1c920a1877f9a27c',1,'DJI::CriticalSection::~CriticalSection()'],['../d2/dd9/classCriticalSection.html#a8f10b99e9550811be81a0ca409171bcc',1,'CriticalSection::~CriticalSection()']]],
+  ['_7edualsense_4',['~DualSense',['../d7/db3/classPS5_1_1DualSense.html#ad8ff9f525425b09f04d733988cb249c5',1,'PS5::DualSense']]],
+  ['_7eicancontroller_5',['~ICanController',['../d6/dca/classCanSystem_1_1ICanController.html#a3d848e160eb3f1d2a94b05338674b3d4',1,'CanSystem::ICanController']]],
+  ['_7emockcanprofile_6',['~MockCanProfile',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a270cb7be30e2bbb4d2c00710c6597e21',1,'CanSystem::MockCanProfile']]],
+  ['_7euartmanager_7',['~UartManager',['../dd/d1a/classUartManager.html#ada3be903d853fb64dae51a2e1ff714bb',1,'UartManager']]]
 ];

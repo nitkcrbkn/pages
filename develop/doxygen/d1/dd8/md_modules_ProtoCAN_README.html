@@ -94,23 +94,23 @@ $(document).ready(function(){initNavTree('d1/dd8/md_modules_ProtoCAN_README.html
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >ProtoCAN は、CAN バス通信上でプロトコルバッファを使用したデバイス間通信を実現する C++ ライブラリです。1000行のコードで、型安全性と柔軟性を両立させた通信システムを提供します。</p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 設計思想と概念</h1>
 <p >CANバスは本質的にブロードキャスト通信です。送信されたメッセージは物理的に全ノードに届き、各ノードはCAN IDを見て自分宛かを判断します。中央集権型から完全分散型まであらゆるネットワーク構成に対応できる設計になっています。 DeviceIDはデバイス種類とデバイス番号の組み合わせを指し重複はないです。 ProtoCANはMasterとDeviceという2つのAPIを提供しますが、これは物理的な制約ではなく使いやすさのための概念的な分類です。Masterは任意のデバイスに命令を送り、任意のデバイスからデータを受信します。DeviceはDeviceIDを持ち、自身のデータを送信し、自分宛の命令を受け取ります。しかし、DeviceIDを持つノードが他のデバイスに命令を送ることも、MasterがDeviceIDを持って自身のデータを送信することも自由です。一つのノードがMasterとDeviceの両方のAPIを使って複数の役割を果たすことも自然にできます。具体的には使用するネットワーク構成に依存します。</p>
 <p >ProtoCANは現在4種類のメッセージタイプを定義しており、将来さらに追加可能です。「制御命令(Command)」は特定のDeviceIDに向けた操作指示、「データ送信(Data)」はDeviceIDを持つノードからの状態報告、「要求命令(Request)」は状態情報の問い合わせ、「応答送信(Reply)」はRequestに対する返答です。この中でCommandとDataだけが特殊で、デバイス種類ごとに異なるProtocol Buffersスキーマを使用します。RequestやReplyなど他のメッセージタイプは全デバイス共通のスキーマです。</p>
 <p >型安全性はDeviceID経由でデバイス種類をデバイスカタログで探し、そのデバイスが使用するDataスキーマとCommandスキーマがコンパイル時に決定されます。デバイスカタログがDeviceTypeと各スキーマを紐付けるため、IDEの補完機能も効き、新しいデバイス種類が増えてもタイプセーフに扱えます。</p>
-<h1><a class="anchor" id="autotoc_md31"></a>
+<h1><a class="anchor" id="autotoc_md32"></a>
 Quick Start</h1>
 <p ><a href="../../app/modules/ProtoCAN/api">apiフォルダ</a>に全てのAPIのコードがある。 拡張CANIDを使用しているため<code>ext</code>を含むprofile以外使えない FdCanCompatExtProfile、CanExtProfileなど。 今はまだfdcanのみ対応でありcanで使うことはできない。</p>
 <p >ネットワークシステムであるためスレッドに分けて割り込みをを使って見た例が<a href="../../app/test/scratch/motor_proto.cpp">motor_proto.cpp</a>に また簡単にシングルプロセスでデータ送信とマスターでの受け取りの例が<a href="../../app/test/scratch/protocan.cpp">protocan.cpp</a>に書かれている。</p>
-<h2><a class="anchor" id="autotoc_md32"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 実行方法</h2>
 <ol type="1">
 <li><code>cd app/test/</code></li>
 <li><code>make gen_proto</code>を実行</li>
 <li><code>make scratch FILE=protocan</code>また <code>make scratch FILE=motor_proto</code></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md34"></a>
 新規デバイス登録手順</h1>
 <ol type="1">
 <li><code>ProtoCAN/common/protocol_types</code>にてDeviceTypeに追加</li>
@@ -148,16 +148,16 @@ Quick Start</h1>
 <div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983"><div class="ttname"><a href="../../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983">proto_can::DeviceType</a></div><div class="ttdeci">DeviceType</div><div class="ttdef"><b>Definition:</b> protocol_types.hpp:41</div></div>
 <div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a"><div class="ttname"><a href="../../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a">proto_can::DeviceType::MOTOR</a></div><div class="ttdeci">@ MOTOR</div></div>
 <div class="ttc" id="anamespaceproto__can_html_ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908"><div class="ttname"><a href="../../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908">proto_can::DeviceType::SENSOR</a></div><div class="ttdeci">@ SENSOR</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md34"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md35"></a>
 詳細設計</h1>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 レイヤー構造と責務</h2>
 <p >ProtoCANは3つのレイヤーで構成され、各レイヤーは明確に分離された責務を持ちます。</p>
 <p >**API層**は、デバイス種類(DeviceType)とメッセージ種類(MessageType)の2つの情報からスキーマを特定します。DataとCommandはデバイスカタログを参照してコンパイル時に型を決定し、RequestやReplyなど他のメッセージ種類は全デバイス共通スキーマとしてハードコードされています。スキーマ型とメッセージオブジェクトをそのままMessenger層へ渡します。</p>
 <p >**Messenger層**は、受け取った型付きメッセージオブジェクトをProtocol Buffersでシリアライズし、rawバイトデータに変換してFrameLayer層へ渡します。受信時は逆に、FrameLayer層から受け取ったrawバイトデータを指定された型でデシリアライズします。<code>send&lt;T&gt;(MessageID, T data)</code>と<code>read&lt;T&gt;(MessageID, T&amp; data)</code>というテンプレート関数により、型安全性を保ちながらシリアライゼーションを完全にProtocol Buffersへ委譲しています。</p>
 <p >**FrameLayer層**は、rawバイトデータとCAN拡張IDから実際のCANフレームを構築します。送信時は最大フレームサイズ(8/64byte)に応じてデータを分割し、header-flagを設定してCanSystemへ渡します。受信時は複数フレームを同一メッセージIDでキャッシュし、size分のデータが揃ったら結合してMessenger層へ返します。フレーム欠損検出も担当し、新しいheaderフレームが来た際に前のメッセージが未完成なら破棄します。現在はフレーム未完は握りつぶしています。</p>
 <p >CAN拡張ID(29bit)に全てのルーティング情報を詰め込むことで、データ部分は純粋なProtocol Buffersのシリアライズデータのみになります。この分離により、シリアライズ/デシリアライズの詳細はProtocol Buffersに完全に委譲され、スキーマ変更への対応が容易です。フレーム分割も自動的に処理されるため、アプリケーションコードは最大1024byteまでのメッセージを単一の送受信として扱えます。</p>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 フォルダ構造</h2>
 <div class="fragment"><div class="line">.</div>
 <div class="line">├── README.md</div>
@@ -174,7 +174,7 @@ Quick Start</h1>
 <div class="line">│   ├── frame_header.hpp   # CAN ID ヘッダー管理</div>
 <div class="line">│   └── messenger.hpp      # メッセージ送受信管理</div>
 <div class="line">└── proto_can.hpp           # メインヘッダー</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
 アーキテクチャ</h2>
 <p >4レイヤー階層を採用し,CAN以外の上位3レイヤーがこのmoduleで実装されている。</p>
 <table class="markdownTable">
@@ -213,9 +213,9 @@ Quick Start</h1>
 <li><a class="el" href="../../d8/dd9/classproto__can_1_1Messenger.html#afbd22ac1c12ea9dd10d93c8e3c37e8bb">proto_can::Messenger::frame_receive_cb</a></li>
 <li>proto_can::API::多数、(reset,reply,invoke_cbs等)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 CANプロトコル概要</h1>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md40"></a>
 1. 概要</h2>
 <p >CAN拡張ID(29bit)とProtocol Buffersを用いたデバイス間通信システム。</p>
 <p ><b>対象デバイス</b></p><ul>
@@ -223,17 +223,17 @@ CANプロトコル概要</h1>
 <li>センサー基盤 など</li>
 </ul>
 <p >各デバイスタイプごとに個別の&lt;tt&gt;.protoスキーマファイルを用意。coreと共有して持つ。</p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 2. CAN拡張ID構成(29bit)</h2>
 <div class="fragment"><div class="line">[version 2bit][デバイス種類ID 5bit][デバイス番号ID 4bit][message type 4bit][flags 4bit][size 10bit]</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md41"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md42"></a>
 DeviceID定義</h3>
 <ul>
 <li>完全なDeviceID = <code>[デバイス種類ID 5bit][デバイス番号ID 4bit]</code> (9bit)</li>
 <li>最大512デバイス (32種類 × 各16台)</li>
 <li>デバイス番号は4P DIPスイッチで基盤から設定する</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md42"></a>
+<h3><a class="anchor" id="autotoc_md43"></a>
 フィールド詳細</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -252,7 +252,7 @@ DeviceID定義</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>size</b>   </td><td class="markdownTableBodyNone">10bit   </td><td class="markdownTableBodyNone">0-1024   </td><td class="markdownTableBodyNone">protobufメッセージ全体のバイト数   </td><td class="markdownTableBodyNone">-   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md43"></a>
+<h2><a class="anchor" id="autotoc_md44"></a>
 3. メッセージ種類</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -271,9 +271,9 @@ DeviceID定義</h3>
  <code>状態要求命令</code>に対して<code>応答送信</code>が送られる <br  />
 </p>
 <p >DeviceIDとメッセージ種類でスキーマを特定できる必要がある。</p>
-<h2><a class="anchor" id="autotoc_md44"></a>
+<h2><a class="anchor" id="autotoc_md45"></a>
 4. プロトコル動作</h2>
-<h3><a class="anchor" id="autotoc_md45"></a>
+<h3><a class="anchor" id="autotoc_md46"></a>
 フレーム構造</h3>
 <p ><b>CANフレーム構成</b></p>
 <ul>
@@ -281,7 +281,7 @@ DeviceID定義</h3>
 <li>メッセージID = <code>[vertion][DeviceID][メッセージタイプ]</code> 15bit</li>
 </ul>
 <p >拡張IDに全てのヘッダ情報が含まれるため、データは純粋にProtocol Buffersのシリアライズデータのみを格納する。</p>
-<h3><a class="anchor" id="autotoc_md46"></a>
+<h3><a class="anchor" id="autotoc_md47"></a>
 フレーム分割</h3>
 <p ><b>単一フレーム</b></p><ul>
 <li>データが8/64Byte以下のときは単一フレームで送信する</li>
@@ -294,11 +294,11 @@ DeviceID定義</h3>
 <li>メッセージIDが異なるフレームは独立したメッセージとして扱われる</li>
 </ul>
 <p >このフレーム分割より最大1024Byteまで送信可能になる。(sizeが10bitのため)</p>
-<h3><a class="anchor" id="autotoc_md47"></a>
+<h3><a class="anchor" id="autotoc_md48"></a>
 欠損検出</h3>
 <p >同一メッセージIDで、受信データ量がsize未満の状態で新たにheader-flag=1のフレームを受信したとき、前のメッセージ欠損したことになる。 <br  />
  あるメッセージを受信している間他のメッセージを受信しても順序は保たれるためすべて追跡していれば問題ない。</p>
-<h3><a class="anchor" id="autotoc_md48"></a>
+<h3><a class="anchor" id="autotoc_md49"></a>
 特徴</h3>
 <ul>
 <li>CAN IDのみで全ヘッダ情報を取得可能</li>
