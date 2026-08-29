@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
 <tr class="memitem:a94d928c60da9a47274cfec563c879b7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a94d928c60da9a47274cfec563c879b7c">unregisterPacketCallback</a> (void *owner) noexcept</td></tr>
 <tr class="memdesc:a94d928c60da9a47274cfec563c879b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したコンテキストのパケットコールバックを解除します。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a94d928c60da9a47274cfec563c879b7c">[詳解]</a><br /></td></tr>
 <tr class="separator:a94d928c60da9a47274cfec563c879b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2d55a50a51f60be3952aa1f854ebc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7c2d55a50a51f60be3952aa1f854ebc9">registerLatestPacketCallback</a> (void *owner, <a class="el" href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">LatestPacketCallBackWithContext</a> cb) noexcept</td></tr>
+<tr class="memitem:a7c2d55a50a51f60be3952aa1f854ebc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7c2d55a50a51f60be3952aa1f854ebc9">registerLatestPacketCallback</a> (void *owner, <a class="el" href="../../da/d22/namespaceIM920sL.html#ab1b6dcd062d316a77945abc25e0f2dbc">LatestPacketCallBackWithContext</a> cb) noexcept</td></tr>
 <tr class="memdesc:a7c2d55a50a51f60be3952aa1f854ebc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node別データの受信完了時に呼ぶIRQコールバックを登録します。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7c2d55a50a51f60be3952aa1f854ebc9">[詳解]</a><br /></td></tr>
 <tr class="separator:a7c2d55a50a51f60be3952aa1f854ebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21df4d246090ca077f2778be847b90da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a21df4d246090ca077f2778be847b90da">receiveOverflowed</a> () const</td></tr>
@@ -164,6 +164,9 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
 <tr class="memitem:aafd4c5bfcf885af20fc2d9de48c0495f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f">process</a> ()</td></tr>
 <tr class="memdesc:aafd4c5bfcf885af20fc2d9de48c0495f"><td class="mdescLeft">&#160;</td><td class="mdescRight">完成済みの受信行を1行解析し、コールバックをメイン文脈で実行します。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f">[詳解]</a><br /></td></tr>
 <tr class="separator:aafd4c5bfcf885af20fc2d9de48c0495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec594a344e1a70e1f1e3717da599c1b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#abec594a344e1a70e1f1e3717da599c1b">processPending</a> ()</td></tr>
+<tr class="memdesc:abec594a344e1a70e1f1e3717da599c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">呼び出し開始時点で通常FIFOに保存されている受信行をすべて処理します。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#abec594a344e1a70e1f1e3717da599c1b">[詳解]</a><br /></td></tr>
+<tr class="separator:abec594a344e1a70e1f1e3717da599c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e61147e50edde843658f4c2e509f9ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a3e61147e50edde843658f4c2e509f9ff">read</a> ()</td></tr>
 <tr class="memdesc:a3e61147e50edde843658f4c2e509f9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">従来形式で解析した直近の受信値を取得します。  <a href="../../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a3e61147e50edde843658f4c2e509f9ff">[詳解]</a><br /></td></tr>
 <tr class="separator:a3e61147e50edde843658f4c2e509f9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +179,7 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >IM920sLで受信するためのクラスです。 </p>
-<p >UartManagerで割り込み受信を継続し、process()をメインループから 呼んで完成済みの受信行を解析します。Node別受信コールバックを登録した場合、 データ行は受信完了時にIRQ内から直接コールバックへ渡します。 </p>
+<p >UartManagerで割り込み受信を継続し、process()またはprocessPending()を メインループから呼んで完成済みの受信行を解析します。Node別受信コールバックを 登録した場合、データ行は受信完了時にIRQ内から直接コールバックへ渡します。 </p>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="a8432e03024beca9f356aeef056313be8" name="a8432e03024beca9f356aeef056313be8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8432e03024beca9f356aeef056313be8">&#9670;&#160;</a></span>BaseIM920sL() <span class="overload">[1/3]</span></h2>
@@ -467,6 +470,35 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
 
 </div>
 </div>
+<a id="abec594a344e1a70e1f1e3717da599c1b" name="abec594a344e1a70e1f1e3717da599c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abec594a344e1a70e1f1e3717da599c1b">&#9670;&#160;</a></span>processPending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t IM920sL::BaseIM920sL::processPending </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>呼び出し開始時点で通常FIFOに保存されている受信行をすべて処理します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>FIFOから取り出して処理した行数です。</dd></dl>
+<p>呼び出し開始時のFIFO件数を処理上限とします。処理中に新しく受信した行は 今回の処理対象には含めず、次回のprocessPending()で処理します。各行はFIFOから 取り出した後、IRQを有効に戻してから解析・callbackを実行します。非packet行が 途中にあっても処理を継続します。 </p><dl class="section note"><dt>覚え書き</dt><dd>割り込みハンドラからは呼ばないでください。 </dd></dl>
+
+</div>
+</div>
 <a id="a3e61147e50edde843658f4c2e509f9ff" name="a3e61147e50edde843658f4c2e509f9ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e61147e50edde843658f4c2e509f9ff">&#9670;&#160;</a></span>read()</h2>
 
@@ -541,7 +573,7 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d22/namespaceIM920sL.html#a539f5f3338039b84148ea3c7fd4342a0">LatestPacketCallBackWithContext</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../da/d22/namespaceIM920sL.html#ab1b6dcd062d316a77945abc25e0f2dbc">LatestPacketCallBackWithContext</a>&#160;</td>
           <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
@@ -561,11 +593,11 @@ $(document).ready(function(){initNavTree('d7/dd8/classIM920sL_1_1BaseIM920sL.htm
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">owner</td><td>コールバックの第1引数として渡すポインタ </td></tr>
-    <tr><td class="paramname">cb</td><td>IRQ内で受信パケットを処理するコールバック</td></tr>
+    <tr><td class="paramname">cb</td><td>IRQ内で受信パケットを処理するコールバック。trueを返すと パケットを消費し、falseを返すと通常FIFOへ格納します。</td></tr>
   </table>
   </dd>
 </dl>
-<p>登録中はIM920sLデータ行を通常FIFOへ格納せず、このコールバックへ 渡します。コマンド応答などの非データ行は通常FIFOへ格納します。 </p>
+<p>コマンド応答などの非データ行は通常FIFOへ格納します。 </p>
 
 </div>
 </div>

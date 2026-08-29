@@ -10,6 +10,7 @@ var namespacePS5 =
     [ "DualSense", "d2/d9f/namespacePS5.html#a3a3b7c24be829d9c707842df2fd8856e", null ],
     [ "DualSense", "d2/d9f/namespacePS5.html#aea0f684e8e9f87f7aeefade014aff521", null ],
     [ "DualSense", "d2/d9f/namespacePS5.html#acf6f01674aa5262f77e213a961221678", null ],
+    [ "DualSense", "d2/d9f/namespacePS5.html#a280eb38172a76d0fea6bc90a250c438f", null ],
     [ "ANALOG_MAX", "d2/d9f/namespacePS5.html#a8790a2bf0698a532e1e9445057a92c8e", null ],
     [ "ANALOG_MIN", "d2/d9f/namespacePS5.html#aa4506cc16e11fcbe1779d9a8902148d0", null ],
     [ "NO_TIMEOUT", "d2/d9f/namespacePS5.html#a2876b0c4ae9605b5e5ab21df8ec9c270", null ],

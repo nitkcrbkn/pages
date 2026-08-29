@@ -9,6 +9,7 @@ var classIM920sL_1_1BaseIM920sL =
     [ "operator=", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a874c3d7d981ff73d9a43e3c67190169f", null ],
     [ "operator=", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a807149694d93c0ed232793ddc9c17fd5", null ],
     [ "process", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f", null ],
+    [ "processPending", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#abec594a344e1a70e1f1e3717da599c1b", null ],
     [ "read", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a3e61147e50edde843658f4c2e509f9ff", null ],
     [ "receiveOverflowed", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a21df4d246090ca077f2778be847b90da", null ],
     [ "registerLatestPacketCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7c2d55a50a51f60be3952aa1f854ebc9", null ],

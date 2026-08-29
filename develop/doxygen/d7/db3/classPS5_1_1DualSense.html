@@ -108,12 +108,15 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
 <tr class="memitem:aed68e25ef82c8480dfa210fb5c594ac6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6">TimeSource</a> = uint32_t(*)()</td></tr>
 <tr class="memdesc:aed68e25ef82c8480dfa210fb5c594ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のミリ秒時刻を返す関数です。  <a href="../../d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6">[詳解]</a><br /></td></tr>
 <tr class="separator:aed68e25ef82c8480dfa210fb5c594ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe608bc49e128209998d243357b89804"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804">NodeFilter</a> = bool(*)(uint16_t senderNode)</td></tr>
+<tr class="memdesc:abe608bc49e128209998d243357b89804"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSenseとして処理する送信元Nodeを判定する関数です。  <a href="../../d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804">[詳解]</a><br /></td></tr>
+<tr class="separator:abe608bc49e128209998d243357b89804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:a7220e02bc1abd7d624ce90aa37978d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a7220e02bc1abd7d624ce90aa37978d85">DualSense</a> (Radio &amp;radio, uint32_t communicationTimeoutMs=500, <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6">TimeSource</a> timeSource=<a class="el" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis</a>)</td></tr>
-<tr class="memdesc:a7220e02bc1abd7d624ce90aa37978d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSense受信機を構築します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#a7220e02bc1abd7d624ce90aa37978d85">[詳解]</a><br /></td></tr>
-<tr class="separator:a7220e02bc1abd7d624ce90aa37978d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c1bc4efc29719bbcbb3e2009e83d12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a42c1bc4efc29719bbcbb3e2009e83d12">DualSense</a> (Radio &amp;radio, uint32_t communicationTimeoutMs=500, <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6">TimeSource</a> timeSource=<a class="el" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis</a>, <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804">NodeFilter</a> nodeFilter=nullptr)</td></tr>
+<tr class="memdesc:a42c1bc4efc29719bbcbb3e2009e83d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">DualSense受信機を構築します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#a42c1bc4efc29719bbcbb3e2009e83d12">[詳解]</a><br /></td></tr>
+<tr class="separator:a42c1bc4efc29719bbcbb3e2009e83d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ff9f525425b09f04d733988cb249c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#ad8ff9f525425b09f04d733988cb249c5">~DualSense</a> () noexcept</td></tr>
 <tr class="memdesc:ad8ff9f525425b09f04d733988cb249c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録した受信コールバックを解除します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#ad8ff9f525425b09f04d733988cb249c5">[詳解]</a><br /></td></tr>
 <tr class="separator:ad8ff9f525425b09f04d733988cb249c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +128,7 @@ $(document).ready(function(){initNavTree('d7/db3/classPS5_1_1DualSense.html','..
 <tr class="memdesc:adc698ea95c409d2f82298fe7b271f033"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLの1バイト受信を開始します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#adc698ea95c409d2f82298fe7b271f033">[詳解]</a><br /></td></tr>
 <tr class="separator:adc698ea95c409d2f82298fe7b271f033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16d0dfd2a5080ed03d4a7442877501e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#ad16d0dfd2a5080ed03d4a7442877501e">poll</a> ()</td></tr>
-<tr class="memdesc:ad16d0dfd2a5080ed03d4a7442877501e"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLの通常FIFOに保存された非データ行を1行処理します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#ad16d0dfd2a5080ed03d4a7442877501e">[詳解]</a><br /></td></tr>
+<tr class="memdesc:ad16d0dfd2a5080ed03d4a7442877501e"><td class="mdescLeft">&#160;</td><td class="mdescRight">IM920sLの通常FIFOに呼び出し開始時点で蓄積されている受信行を処理します。  <a href="../../d7/db3/classPS5_1_1DualSense.html#ad16d0dfd2a5080ed03d4a7442877501e">[詳解]</a><br /></td></tr>
 <tr class="separator:ad16d0dfd2a5080ed03d4a7442877501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4545ebcecdaa4a155300268744c34377"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#a4545ebcecdaa4a155300268744c34377">setTimeout</a> (uint16_t senderNode, uint32_t timeoutMs) noexcept</td></tr>
 <tr class="memdesc:a4545ebcecdaa4a155300268744c34377"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定Nodeの通信タイムアウトを上書きします。  <a href="../../d7/db3/classPS5_1_1DualSense.html#a4545ebcecdaa4a155300268744c34377">[詳解]</a><br /></td></tr>
@@ -158,12 +161,31 @@ class PS5::DualSense&lt; MaxNodes, Radio &gt;</div><p >ArduinoSystem互換のDua
 <dl class="tparams"><dt>テンプレート引数</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">MaxNodes</td><td>同時に管理できる最大Node数 </td></tr>
-    <tr><td class="paramname">Radio</td><td>IM920sL互換の受信インターフェース型</td></tr>
+    <tr><td class="paramname">Radio</td><td>IM920sL互換の受信インターフェース型。poll()では Radio::processPending()を使用します。</td></tr>
   </table>
   </dd>
 </dl>
-<p>受信した10バイト形式のデータを受信完了時に復号し、送信元ノードごとの状態を ControllerRegistryへ登録します。get()とisConnected()は参照時の現在時刻で 対象ノードのタイムアウトを判定します。 </p>
+<p>NodeFilterで担当と判定された10バイト形式のデータを受信完了時に復号し、 送信元ノードごとの状態をControllerRegistryへ登録します。get()とisConnected() は参照時の現在時刻で対象ノードのタイムアウトを判定します。 </p>
 </div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="abe608bc49e128209998d243357b89804" name="abe608bc49e128209998d243357b89804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe608bc49e128209998d243357b89804">&#9670;&#160;</a></span>NodeFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t MaxNodes = 8, typename Radio  = IM920sL::BaseIM920sL&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html">PS5::DualSense</a>&lt; MaxNodes, Radio &gt;::NodeFilter =  bool (*)(uint16_t senderNode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DualSenseとして処理する送信元Nodeを判定する関数です。 </p>
+<dl class="section warning"><dt>警告</dt><dd>UART受信割り込み内から呼ばれるため、動的メモリ確保、待機処理、 重い処理を行わないでください。 </dd></dl>
+
+</div>
+</div>
 <a id="aed68e25ef82c8480dfa210fb5c594ac6" name="aed68e25ef82c8480dfa210fb5c594ac6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed68e25ef82c8480dfa210fb5c594ac6">&#9670;&#160;</a></span>TimeSource</h2>
 
@@ -183,8 +205,8 @@ template&lt;size_t MaxNodes = 8, typename Radio  = IM920sL::BaseIM920sL&gt; </di
 </div>
 </div>
 <h2 class="groupheader">構築子と解体子</h2>
-<a id="a7220e02bc1abd7d624ce90aa37978d85" name="a7220e02bc1abd7d624ce90aa37978d85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7220e02bc1abd7d624ce90aa37978d85">&#9670;&#160;</a></span>DualSense() <span class="overload">[1/2]</span></h2>
+<a id="a42c1bc4efc29719bbcbb3e2009e83d12" name="a42c1bc4efc29719bbcbb3e2009e83d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42c1bc4efc29719bbcbb3e2009e83d12">&#9670;&#160;</a></span>DualSense() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +232,13 @@ template&lt;size_t MaxNodes = 8, typename Radio  = IM920sL::BaseIM920sL&gt; </di
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6">TimeSource</a>&#160;</td>
-          <td class="paramname"><em>timeSource</em> = <code><a class="el" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis</a></code>&#160;</td>
+          <td class="paramname"><em>timeSource</em> = <code><a class="el" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804">NodeFilter</a>&#160;</td>
+          <td class="paramname"><em>nodeFilter</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -230,11 +258,12 @@ template&lt;size_t MaxNodes = 8, typename Radio  = IM920sL::BaseIM920sL&gt; </di
   <table class="params">
     <tr><td class="paramname">radio</td><td>IM920sL受信機。DualSenseより長く保持してください。 </td></tr>
     <tr><td class="paramname">communicationTimeoutMs</td><td>無通信時に中立化する時間[ms] </td></tr>
-    <tr><td class="paramname">timeSource</td><td>現在の単調増加時刻[ms]を返す関数</td></tr>
+    <tr><td class="paramname">timeSource</td><td>現在の単調増加時刻[ms]を返す関数 </td></tr>
+    <tr><td class="paramname">nodeFilter</td><td>DualSenseとして処理する送信元Nodeの判定関数。 nullptrの場合は全Nodeを処理します。</td></tr>
   </table>
   </dd>
 </dl>
-<p>communicationTimeoutMsが0の場合、受信した入力は同じ時刻の タイムアウト判定で中立化されます。 </p>
+<p>communicationTimeoutMsが0の場合、受信した入力は同じ時刻の タイムアウト判定で中立化されます。担当外NodeのパケットはIM920sLの 通常受信経路へ戻されます。 </p>
 
 </div>
 </div>
@@ -576,8 +605,8 @@ template&lt;size_t MaxNodes = 8, typename Radio  = IM920sL::BaseIM920sL&gt; </di
 </table>
 </div><div class="memdoc">
 
-<p>IM920sLの通常FIFOに保存された非データ行を1行処理します。 </p>
-<p >コントローラー入力とtimeoutの更新はpoll()に依存しません。 </p>
+<p>IM920sLの通常FIFOに呼び出し開始時点で蓄積されている受信行を処理します。 </p>
+<p >DualSense担当外Nodeのデータ行やIM920sLのコマンド応答などを処理します。 <a class="el" href="../../d7/db3/classPS5_1_1DualSense.html#ad16d0dfd2a5080ed03d4a7442877501e" title="IM920sLの通常FIFOに呼び出し開始時点で蓄積されている受信行を処理します。">poll()</a>の実行中に新しくFIFOへ追加された行は次回のpoll()で処理します。DualSense 担当Nodeの入力更新やtimeout判定はpoll()に依存しません。 </p>
 
 </div>
 </div>

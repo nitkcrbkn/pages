@@ -1,7 +1,8 @@
 var classPS5_1_1DualSense =
 [
+    [ "NodeFilter", "d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804", null ],
     [ "TimeSource", "d7/db3/classPS5_1_1DualSense.html#aed68e25ef82c8480dfa210fb5c594ac6", null ],
-    [ "DualSense", "d7/db3/classPS5_1_1DualSense.html#a7220e02bc1abd7d624ce90aa37978d85", null ],
+    [ "DualSense", "d7/db3/classPS5_1_1DualSense.html#a42c1bc4efc29719bbcbb3e2009e83d12", null ],
     [ "~DualSense", "d7/db3/classPS5_1_1DualSense.html#ad8ff9f525425b09f04d733988cb249c5", null ],
     [ "DualSense", "d7/db3/classPS5_1_1DualSense.html#af223271ab66b5c42beab5b7c2bf1a807", null ],
     [ "clearReceiveOverflow", "d7/db3/classPS5_1_1DualSense.html#af6467b9771534889ed584d1eaf12d906", null ],
