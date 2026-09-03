@@ -1,0 +1,3 @@
+<map id="UartManager::write" name="UartManager::write">
+<area shape="rect" id="node1" title="フォーマットなしで文字列をそのまま送信します。" alt="" coords="5,29,136,55"/>
+</map>

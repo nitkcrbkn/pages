@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['scurve_0',['SCurve',['../d3/d3a/motion_8hpp.html#ae5463507f115f3f36a28277995cf711ba98f1ffad91b7595a2f4d738c44176806',1,'motion.hpp']]],
-  ['second_1',['SECOND',['../dc/d65/namespaceproto__can.html#a294eb959cdcd1d2626a32ade4184e698a2200becb80f0019c4a2ccecec350d0db',1,'proto_can']]],
-  ['sensor_2',['SENSOR',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a72700b6ac14b90435377dcbaeb77e908',1,'proto_can']]],
-  ['setcurrenterror_3',['SetCurrentError',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cab6809b85aeee44b9074843bdef4b9553',1,'DJI']]],
-  ['size_4',['SIZE',['../dc/d65/namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0a62e5cef85d46f1a5a2144d9fd463b79e',1,'proto_can']]],
-  ['solenoid_5',['SOLENOID',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983aa47524fdf667e74db7623a394212fcc8',1,'proto_can']]],
-  ['stopped_6',['Stopped',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cac23e2b09ebe6bf4cb5e2a9abe85c0be2',1,'DJI']]],
-  ['stufferror_7',['StuffError',['../d2/dc4/namespaceCanSystem.html#aa1f64e659dad06465614e7ece30db045afccba04a80cc453339af08c391cb24c0',1,'CanSystem']]]
+  ['ready_0',['Ready',['../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31ae7d31fc0602fb2ede144d18cdffd816b',1,'CanSystem']]],
+  ['request_1',['REQUEST',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216aad6c35880c58d97c03d60a6ad0f23737',1,'proto_can']]],
+  ['reset_2',['Reset',['../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a526d688f37a86d3c3f27d0c5016eb71d',1,'CanSystem']]],
+  ['reset_3',['RESET',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216ab5859d8721cfdc0312b2838b9c985bc1',1,'proto_can']]],
+  ['response_4',['RESPONSE',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216a4fa1a4d2e48aa765093ca6aae57a5150',1,'proto_can']]],
+  ['reverse_5',['Reverse',['../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9a67f115c1fddc4ce1aeb1c754001585bc',1,'AMTEncoderBase::Reverse()'],['../d0/d0c/amt__base_8h.html#a91519aa051e040f781d489302a630d39a67f115c1fddc4ce1aeb1c754001585bc',1,'Reverse():&#160;amt_base.h']]],
+  ['robomas_6',['ROBOMAS',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983abd377d731b0ccb183c03c570a2a3cf90',1,'proto_can']]],
+  ['running_7',['Running',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca5bda814c4aedb126839228f1a3d92f09',1,'DJI']]]
 ];

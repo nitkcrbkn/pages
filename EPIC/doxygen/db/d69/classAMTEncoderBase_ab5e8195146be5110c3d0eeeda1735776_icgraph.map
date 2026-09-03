@@ -1,0 +1,7 @@
+<map id="AMTEncoderBase::positionCount" name="AMTEncoderBase::positionCount">
+<area shape="rect" id="node1" title="補正後のPosition Countを原子的に返す。" alt="" coords="697,23,876,63"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0" title="Position Countを1回転内のphaseへ変換して返す。" alt="" coords="447,5,649,31"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a" title="Position Count基準の累積回転数を返す。" alt="" coords="203,56,399,81"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7" title="Position Count基準の角度を返す。" alt="" coords="219,7,383,32"/>
+<area shape="rect" id="node4" href="$df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="5,25,155,65"/>
+</map>

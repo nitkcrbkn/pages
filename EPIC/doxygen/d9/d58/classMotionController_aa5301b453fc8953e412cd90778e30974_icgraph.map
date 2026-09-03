@@ -1,4 +1,4 @@
 <map id="MotionController::calculateVelocity" name="MotionController::calculateVelocity">
-<area shape="rect" id="node1" title=" " alt="" coords="219,5,393,45"/>
+<area shape="rect" id="node1" title="速度PIDを 1 ステップ実行する" alt="" coords="219,5,393,45"/>
 <area shape="rect" id="node2" href="$d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1" title=" " alt="" coords="5,13,171,38"/>
 </map>

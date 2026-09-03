@@ -114,21 +114,27 @@ CanSystem::ICanController の継承関係図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a3d848e160eb3f1d2a94b05338674b3d4"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a3d848e160eb3f1d2a94b05338674b3d4">~ICanController</a> ()=default</td></tr>
-<tr class="memdesc:a3d848e160eb3f1d2a94b05338674b3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">fdcanもcan互換にしてある。そのままcanが始まる。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a3d848e160eb3f1d2a94b05338674b3d4">[詳解]</a><br /></td></tr>
 <tr class="separator:a3d848e160eb3f1d2a94b05338674b3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6989bd59d43fae2c1d6e494fc055b9a8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a6989bd59d43fae2c1d6e494fc055b9a8">initCan</a> (const char *_name, int _stream_pos, bool _restart_on_error, bool _show_config)=0</td></tr>
-<tr class="separator:a6989bd59d43fae2c1d6e494fc055b9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cce95936f3abb54916401062daa9103"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d2/de5/structCanSystem_1_1ValidSizes.html">ValidSizes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a7cce95936f3abb54916401062daa9103">getValidSizes</a> () const =0</td></tr>
+<tr class="memdesc:a7cce95936f3abb54916401062daa9103"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title="送信する">send()</a>で使用可能なデータサイズ一覧を取得する  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a7cce95936f3abb54916401062daa9103">[詳解]</a><br /></td></tr>
+<tr class="separator:a7cce95936f3abb54916401062daa9103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbe6ed1d308ed60ac2c16eb8572a963"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a1fbe6ed1d308ed60ac2c16eb8572a963">initCan</a> (const char *_name, int _stream_pos, bool _show_config)=0</td></tr>
+<tr class="memdesc:a1fbe6ed1d308ed60ac2c16eb8572a963"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化する。fdcanもcan互換にしてある。そのままcanが始まる。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a1fbe6ed1d308ed60ac2c16eb8572a963">[詳解]</a><br /></td></tr>
+<tr class="separator:a1fbe6ed1d308ed60ac2c16eb8572a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8e4e4e3fb0e3423238ee17022b59955"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#ad8e4e4e3fb0e3423238ee17022b59955">setInterrupt</a> (void)=0</td></tr>
-<tr class="memdesc:ad8e4e4e3fb0e3423238ee17022b59955"><td class="mdescLeft">&#160;</td><td class="mdescRight">fdcanもcan互換にしてある。再度TxHeaderとfilterを設定する。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#ad8e4e4e3fb0e3423238ee17022b59955">[詳解]</a><br /></td></tr>
+<tr class="memdesc:ad8e4e4e3fb0e3423238ee17022b59955"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信割り込みを有効化する  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#ad8e4e4e3fb0e3423238ee17022b59955">[詳解]</a><br /></td></tr>
 <tr class="separator:ad8e4e4e3fb0e3423238ee17022b59955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b91465b42d2d03caae190f40aaa98f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a01b91465b42d2d03caae190f40aaa98f">setConfig</a> (void)=0</td></tr>
+<tr class="memdesc:a01b91465b42d2d03caae190f40aaa98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">フィルタ・送信ヘッダを設定する。fdcanもcan互換にしてある。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a01b91465b42d2d03caae190f40aaa98f">[詳解]</a><br /></td></tr>
 <tr class="separator:a01b91465b42d2d03caae190f40aaa98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92e3d0b13cfa08b2d2ab6929d6558b20"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a92e3d0b13cfa08b2d2ab6929d6558b20">register_cb</a> (<a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa552fbb0626292312e4f0baa32f304f5">FnCallBack</a> callback)=0</td></tr>
+<tr class="memdesc:a92e3d0b13cfa08b2d2ab6929d6558b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">受信コールバックを登録する  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a92e3d0b13cfa08b2d2ab6929d6558b20">[詳解]</a><br /></td></tr>
 <tr class="separator:a92e3d0b13cfa08b2d2ab6929d6558b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3d90afee67bc8b592c6888d37f4d86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#ace3d90afee67bc8b592c6888d37f4d86">invoke_cbs</a> (const <a class="el" href="../../d2/d4a/structCanSystem_1_1CANMessage.html">CANMessage</a> &amp;message)=0</td></tr>
-<tr class="memdesc:ace3d90afee67bc8b592c6888d37f4d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">idを指定しない場合はmyStdIdが使用される。また指定した後resetされる。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#ace3d90afee67bc8b592c6888d37f4d86">[詳解]</a><br /></td></tr>
+<tr class="memdesc:ace3d90afee67bc8b592c6888d37f4d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録済みコールバックを全て呼び出す  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#ace3d90afee67bc8b592c6888d37f4d86">[詳解]</a><br /></td></tr>
 <tr class="separator:ace3d90afee67bc8b592c6888d37f4d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea0009f60e51e971a3f3a1b70762343"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343">send</a> (uint32_t id, uint8_t *data, uint32_t size=8)=0</td></tr>
+<tr class="memdesc:a8ea0009f60e51e971a3f3a1b70762343"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信する  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343">[詳解]</a><br /></td></tr>
 <tr class="separator:a8ea0009f60e51e971a3f3a1b70762343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa77d5f85e32a79d651e7bd1d872c4a79"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#aa77d5f85e32a79d651e7bd1d872c4a79">restart</a> (void)=0</td></tr>
 <tr class="memdesc:aa77d5f85e32a79d651e7bd1d872c4a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">canStopしてからinitする。  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#aa77d5f85e32a79d651e7bd1d872c4a79">[詳解]</a><br /></td></tr>
@@ -160,13 +166,57 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>fdcanもcan互換にしてある。そのままcanが始まる。 </p>
-
 </div>
 </div>
 <h2 class="groupheader">関数詳解</h2>
-<a id="a6989bd59d43fae2c1d6e494fc055b9a8" name="a6989bd59d43fae2c1d6e494fc055b9a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6989bd59d43fae2c1d6e494fc055b9a8">&#9670;&#160;</a></span>initCan()</h2>
+<a id="a7cce95936f3abb54916401062daa9103" name="a7cce95936f3abb54916401062daa9103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cce95936f3abb54916401062daa9103">&#9670;&#160;</a></span>getValidSizes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d2/de5/structCanSystem_1_1ValidSizes.html">ValidSizes</a> CanSystem::ICanController::getValidSizes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html#a8ea0009f60e51e971a3f3a1b70762343" title="送信する">send()</a>で使用可能なデータサイズ一覧を取得する </p>
+<dl class="section return"><dt>戻り値</dt><dd>昇順に並んだ有効サイズ（バイト）のビュー </dd></dl>
+
+<p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a47c97485b9c49c6785514f7778887971">CanSystem::MockCanProfile</a>で実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/dca/classCanSystem_1_1ICanController_a7cce95936f3abb54916401062daa9103_icgraph.png" border="0" usemap="#ad6/dca/classCanSystem_1_1ICanController_a7cce95936f3abb54916401062daa9103_icgraph" alt=""/></div>
+<map name="ad6/dca/classCanSystem_1_1ICanController_a7cce95936f3abb54916401062daa9103_icgraph" id="ad6/dca/classCanSystem_1_1ICanController_a7cce95936f3abb54916401062daa9103_icgraph">
+<area shape="rect" title="send()で使用可能なデータサイズ一覧を取得する" alt="" coords="823,101,1000,141"/>
+<area shape="rect" href="../../d6/d2e/classproto__can_1_1FrameLayer.html#ae6b7acaba683fa57ad448b3cbe2c1b10" title=" " alt="" coords="620,101,775,141"/>
+<area shape="rect" href="../../d8/dd9/classproto__can_1_1Messenger.html#a4cba9af15dbb805fa77e7d028cc82afa" title=" " alt="" coords="423,101,572,141"/>
+<area shape="rect" href="../../d3/da4/classproto__can_1_1Master.html#a07b339a16e48a395b934d902ad4a09b1" title="指定デバイスにステータス要求を送る" alt="" coords="244,5,375,45"/>
+<area shape="rect" href="../../d3/da4/classproto__can_1_1Master.html#a0c0b6749264ae17a9bdcda8762da2dd7" title=" " alt="" coords="244,69,375,109"/>
+<area shape="rect" href="../../d3/da4/classproto__can_1_1Master.html#ab51b37287c92b6b00db936f3d681a52b" title="指定デバイスに Command を送信する" alt="" coords="244,133,375,173"/>
+<area shape="rect" href="../../d2/deb/classproto__can_1_1Device.html#aea37529ec65085915e3c62c0a4f0652e" title="自デバイスの状態データを送信する" alt="" coords="244,197,375,237"/>
+<area shape="rect" href="../../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a27191cd8ad207b2cf9d054024bf554b5" title="現在のコマンド状態をスレーブへ送信する" alt="" coords="5,133,196,173"/>
+<area shape="rect" href="../../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a981dc57820e261be95013fd0e4d16716" title="メインループから毎サイクル呼ぶ。 send_rate_ms 経過していれば現在のGPIO状態を送信する。" alt="" coords="5,197,196,237"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1fbe6ed1d308ed60ac2c16eb8572a963" name="a1fbe6ed1d308ed60ac2c16eb8572a963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbe6ed1d308ed60ac2c16eb8572a963">&#9670;&#160;</a></span>initCan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,12 +240,6 @@ CanSystem::ICanController の継承関係図</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_restart_on_error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>_show_config</em>&#160;</td>
         </tr>
         <tr>
@@ -211,7 +255,20 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a16d5ca1f70914d14c358a3e0e15631a8">CanSystem::MockCanProfile</a>で実装されています。</p>
+<p>初期化する。fdcanもcan互換にしてある。そのままcanが始まる。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_name</td><td>識別名 </td></tr>
+    <tr><td class="paramname">_stream_pos</td><td>ストリーム出力位置 </td></tr>
+    <tr><td class="paramname">_show_config</td><td>設定を表示するか </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 初期化成功 </dd>
+<dd>
+false 初期化失敗 </dd></dl>
+
+<p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#acdaafd206d460019b243b07b88fea916">CanSystem::MockCanProfile</a>で実装されています。</p>
 
 </div>
 </div>
@@ -239,7 +296,13 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>idを指定しない場合はmyStdIdが使用される。また指定した後resetされる。 </p>
+<p>登録済みコールバックを全て呼び出す </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>配信するメッセージ </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a5924520b103943279dc972adaa6f1796">CanSystem::MockCanProfile</a>で実装されています。</p>
 
@@ -269,13 +332,21 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p>受信コールバックを登録する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>受信時に呼ばれる関数オブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a9e6d5fed3da7499b79d54ba7e11f83fb">CanSystem::MockCanProfile</a>で実装されています。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dca/classCanSystem_1_1ICanController_a92e3d0b13cfa08b2d2ab6929d6558b20_icgraph.png" border="0" usemap="#ad6/dca/classCanSystem_1_1ICanController_a92e3d0b13cfa08b2d2ab6929d6558b20_icgraph" alt=""/></div>
 <map name="ad6/dca/classCanSystem_1_1ICanController_a92e3d0b13cfa08b2d2ab6929d6558b20_icgraph" id="ad6/dca/classCanSystem_1_1ICanController_a92e3d0b13cfa08b2d2ab6929d6558b20_icgraph">
-<area shape="rect" title=" " alt="" coords="208,5,385,45"/>
+<area shape="rect" title="受信コールバックを登録する" alt="" coords="208,5,385,45"/>
 <area shape="rect" href="../../d6/d2e/classproto__can_1_1FrameLayer.html#a30d95a94a0e7f572323c2eb82d2ac5cf" title=" " alt="" coords="5,5,160,45"/>
 </map>
 </div>
@@ -307,6 +378,9 @@ CanSystem::ICanController の継承関係図</div>
 </div><div class="memdoc">
 
 <p>canStopしてからinitする。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 再起動成功 </dd>
+<dd>
+false 再起動失敗 </dd></dl>
 
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a3783babd06f218582ce6c7c819f0bf2c">CanSystem::MockCanProfile</a>で実装されています。</p>
 
@@ -352,13 +426,26 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p>送信する </p>
+<p >idを指定しない場合はmyStdIdが使用される。また指定した後resetされる。 </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>送信 CAN ID </td></tr>
+    <tr><td class="paramname">data</td><td>送信データポインタ </td></tr>
+    <tr><td class="paramname">size</td><td>データサイズ（省略時 8） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 送信成功 </dd>
+<dd>
+false 送信失敗 </dd></dl>
+
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a04d4b4c7e3e9ba993547398beeebb2f2">CanSystem::MockCanProfile</a>で実装されています。</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d6/dca/classCanSystem_1_1ICanController_a8ea0009f60e51e971a3f3a1b70762343_icgraph.png" border="0" usemap="#ad6/dca/classCanSystem_1_1ICanController_a8ea0009f60e51e971a3f3a1b70762343_icgraph" alt=""/></div>
 <map name="ad6/dca/classCanSystem_1_1ICanController_a8ea0009f60e51e971a3f3a1b70762343_icgraph" id="ad6/dca/classCanSystem_1_1ICanController_a8ea0009f60e51e971a3f3a1b70762343_icgraph">
-<area shape="rect" title=" " alt="" coords="855,159,1032,199"/>
+<area shape="rect" title="送信する" alt="" coords="855,159,1032,199"/>
 <area shape="rect" href="../../d6/d2e/classproto__can_1_1FrameLayer.html#ae6b7acaba683fa57ad448b3cbe2c1b10" title=" " alt="" coords="636,101,791,141"/>
 <area shape="rect" href="../../d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="638,166,789,191"/>
 <area shape="rect" href="../../da/d4c/classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b" title="CANデータの送信を行う" alt="" coords="620,215,807,241"/>
@@ -398,6 +485,8 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
+<p>フィルタ・送信ヘッダを設定する。fdcanもcan互換にしてある。 </p>
+
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#ab538700f194452af1e4b32df82e71082">CanSystem::MockCanProfile</a>で実装されています。</p>
 
 </div>
@@ -426,7 +515,10 @@ CanSystem::ICanController の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p>fdcanもcan互換にしてある。再度TxHeaderとfilterを設定する。 </p>
+<p>受信割り込みを有効化する </p>
+<dl class="section return"><dt>戻り値</dt><dd>true 成功 </dd>
+<dd>
+false 失敗 </dd></dl>
 
 <p><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#a20a75be6bf851011c8fc5580153dfaeb">CanSystem::MockCanProfile</a>で実装されています。</p>
 

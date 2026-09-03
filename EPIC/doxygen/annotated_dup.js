@@ -8,10 +8,11 @@ var annotated_dup =
       [ "CANStatus", "d7/db6/structCanSystem_1_1CANStatus.html", "d7/db6/structCanSystem_1_1CANStatus" ],
       [ "ErrorCounters", "df/d6b/structCanSystem_1_1ErrorCounters.html", "df/d6b/structCanSystem_1_1ErrorCounters" ],
       [ "ICanController", "d6/dca/classCanSystem_1_1ICanController.html", "d6/dca/classCanSystem_1_1ICanController" ],
-      [ "IdStats", "de/df2/structCanSystem_1_1IdStats.html", "de/df2/structCanSystem_1_1IdStats" ],
+      [ "IdEntry", "d7/d4f/structCanSystem_1_1IdEntry.html", "d7/d4f/structCanSystem_1_1IdEntry" ],
       [ "MockCanProfile", "d9/d76/classCanSystem_1_1MockCanProfile.html", "d9/d76/classCanSystem_1_1MockCanProfile" ],
       [ "SoftwareErrorFlags", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags" ],
-      [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ]
+      [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ],
+      [ "ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", "d2/de5/structCanSystem_1_1ValidSizes" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
       [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
@@ -19,7 +20,8 @@ var annotated_dup =
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],
     [ "IM920sL", "da/d22/namespaceIM920sL.html", [
-      [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", "d7/dd8/classIM920sL_1_1BaseIM920sL" ]
+      [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", "d7/dd8/classIM920sL_1_1BaseIM920sL" ],
+      [ "Packet", "db/d29/structIM920sL_1_1Packet.html", "db/d29/structIM920sL_1_1Packet" ]
     ] ],
     [ "Motoron", "d5/d02/namespaceMotoron.html", [
       [ "Master", "da/d4c/classMotoron_1_1Master.html", "da/d4c/classMotoron_1_1Master" ]
@@ -42,7 +44,11 @@ var annotated_dup =
     ] ],
     [ "PS5", "d2/d9f/namespacePS5.html", [
       [ "Button", "d6/de5/structPS5_1_1Button.html", "d6/de5/structPS5_1_1Button" ],
-      [ "DualSense", "d7/db3/classPS5_1_1DualSense.html", "d7/db3/classPS5_1_1DualSense" ]
+      [ "ControllerCodec", "de/d75/classPS5_1_1ControllerCodec.html", null ],
+      [ "ControllerRegistry", "d7/dea/classPS5_1_1ControllerRegistry.html", "d7/dea/classPS5_1_1ControllerRegistry" ],
+      [ "DualSense", "d7/db3/classPS5_1_1DualSense.html", "d7/db3/classPS5_1_1DualSense" ],
+      [ "DualSenseMonitor", "da/de0/classPS5_1_1DualSenseMonitor.html", "da/de0/classPS5_1_1DualSenseMonitor" ],
+      [ "DualSenseStatistics", "dd/de0/structPS5_1_1DualSenseStatistics.html", "dd/de0/structPS5_1_1DualSenseStatistics" ]
     ] ],
     [ "solenoid_ctrl", "db/d2d/namespacesolenoid__ctrl.html", [
       [ "SolenoidDevice", "dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html", "dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice" ],
@@ -51,9 +57,12 @@ var annotated_dup =
     [ "stdr", "d5/dc4/namespacestdr.html", [
       [ "PID", "dc/d22/classstdr_1_1PID.html", "dc/d22/classstdr_1_1PID" ]
     ] ],
-    [ "AMT10", "d4/d48/classAMT10.html", "d4/d48/classAMT10" ],
+    [ "AbstractController", "d0/d5c/classAbstractController.html", "d0/d5c/classAbstractController" ],
+    [ "AMTEncoderBase", "db/d69/classAMTEncoderBase.html", "db/d69/classAMTEncoderBase" ],
+    [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", "df/d9b/classAMTEncoderExti" ],
     [ "BitRange", "d6/d01/structBitRange.html", "d6/d01/structBitRange" ],
     [ "CommandReceiver", "d0/d45/classCommandReceiver.html", "d0/d45/classCommandReceiver" ],
+    [ "CriticalSection", "d2/dd9/classCriticalSection.html", "d2/dd9/classCriticalSection" ],
     [ "FormatStr", "de/d83/structFormatStr.html", "de/d83/structFormatStr" ],
     [ "GPIO_Mgr", "d6/d4e/classGPIO__Mgr.html", "d6/d4e/classGPIO__Mgr" ],
     [ "GPIOConfig", "d4/dff/structGPIOConfig.html", "d4/dff/structGPIOConfig" ],

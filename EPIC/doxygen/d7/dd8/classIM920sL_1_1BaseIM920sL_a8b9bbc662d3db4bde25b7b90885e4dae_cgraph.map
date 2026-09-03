@@ -1,0 +1,4 @@
+<map id="IM920sL::BaseIM920sL::~BaseIM920sL" name="IM920sL::BaseIM920sL::~BaseIM920sL">
+<area shape="rect" id="node1" title="UartManagerに登録した受信コールバックを解除します。" alt="" coords="5,5,165,45"/>
+<area shape="rect" id="node2" href="$dd/d1a/classUartManager.html#aae5ea5fa9d1dc58a71aac1291c51a022" title="指定した登録元のUART受信コールバックを解除します。" alt="" coords="213,5,344,45"/>
+</map>

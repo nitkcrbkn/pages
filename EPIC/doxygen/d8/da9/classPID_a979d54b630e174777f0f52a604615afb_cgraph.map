@@ -1,0 +1,4 @@
+<map id="PID::update_goal" name="PID::update_goal">
+<area shape="rect" id="node1" title="目標値を設定する" alt="" coords="5,5,125,31"/>
+<area shape="rect" id="node2" href="$d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10" title="[lo, hi] にクランプする。lo &gt; hi の場合の挙動は未定義扱い" alt="" coords="173,5,292,31"/>
+</map>

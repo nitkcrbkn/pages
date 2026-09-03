@@ -1,15 +1,5 @@
 var searchData=
 [
-  ['pgain_0',['pGain',['../d4/d2c/structPIDGain.html#a3a90c5873a25f326c1d7a86bf97dbda8',1,'PIDGain']]],
-  ['pidconfig_1',['pidConfig',['../d8/daf/structPIDProfile.html#a9edea5ebafbb8ab55afa930afb87923a',1,'PIDProfile']]],
-  ['pidgain_2',['pidGain',['../d8/daf/structPIDProfile.html#ad18c731130a7c3ff2a3e210f5331b179',1,'PIDProfile']]],
-  ['pin_3',['pin',['../d4/dff/structGPIOConfig.html#ac7d7f1c0c928eacc0b360e1d69d3e47e',1,'GPIOConfig']]],
-  ['pin_5fa_4',['PIN_A',['../d4/d48/classAMT10.html#ad7a57142ecda9f16764f249f5a70c83b',1,'AMT10']]],
-  ['pin_5fb_5',['PIN_B',['../d4/d48/classAMT10.html#a6d4a64dfa0de158aabe5537361430e5c',1,'AMT10']]],
-  ['pin_5fx_6',['PIN_X',['../d4/d48/classAMT10.html#adae48e1a05d1a33ee68671443cbe6816',1,'AMT10']]],
-  ['pitch_7',['Pitch',['../d6/de5/structPS5_1_1Button.html#a1ab27feecce0e284d6e04c3c6f8c2af0',1,'PS5::Button']]],
-  ['port_8',['port',['../d4/dff/structGPIOConfig.html#a66624b47b76682c2ff57dc696bf3eea0',1,'GPIOConfig']]],
-  ['prescaler_9',['prescaler',['../de/da9/structCanSystem_1_1TimingConfig.html#a0f19d7b9287a98c4ef2dec21d54b0e5a',1,'CanSystem::TimingConfig']]],
-  ['protocol_5fstatus_5fregister_10',['protocol_status_register',['../d7/db6/structCanSystem_1_1CANStatus.html#af1401fd6edd64e7b393f4cdf5b8fb980',1,'CanSystem::CANStatus']]],
-  ['ps_11',['PS',['../d6/de5/structPS5_1_1Button.html#a192d86ddd19554000e91b771cf64f813',1,'PS5::Button']]]
+  ['offset_0',['offset',['../d6/d01/structBitRange.html#a58f40fc8693322258286f0c30cd5c835',1,'BitRange']]],
+  ['options_1',['OPTIONS',['../d6/de5/structPS5_1_1Button.html#a209b8087ded2e3b3c09a69d1b7b2977a',1,'PS5::Button']]]
 ];

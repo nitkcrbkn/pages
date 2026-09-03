@@ -1,5 +1,5 @@
 <map id="CanSystem::CanManager::newStatePrint" name="CanSystem::CanManager::newStatePrint">
-<area shape="rect" id="node1" title=" " alt="" coords="5,37,173,77"/>
+<area shape="rect" id="node1" title="状態表示を更新する" alt="" coords="5,37,173,77"/>
 <area shape="rect" id="node2" href="$d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82" title=" " alt="" coords="221,5,411,45"/>
 <area shape="rect" id="node3" href="$d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="221,69,411,109"/>
 <area shape="rect" id="node4" href="$d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="459,69,620,109"/>

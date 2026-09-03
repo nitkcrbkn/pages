@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['telemetryt_0',['TelemetryT',['../da/d5f/telem__controller_8hpp.html#a17a9cea2ad816b777521ad1804426069',1,'telem_controller.hpp']]]
+  ['nodefilter_0',['NodeFilter',['../d7/db3/classPS5_1_1DualSense.html#abe608bc49e128209998d243357b89804',1,'PS5::DualSense']]]
 ];

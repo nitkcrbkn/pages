@@ -1,0 +1,4 @@
+<map id="AMTEncoderBase" name="AMTEncoderBase">
+<area shape="rect" id="node1" title="AMTの各backendで共通の位置・インデックス・速度モデル。" alt="" coords="5,5,132,31"/>
+<area shape="rect" id="node2" href="$df/d9b/classAMTEncoderExti.html" title="GPIO EXTIでquadratureを解読するbackend。" alt="" coords="9,79,128,104"/>
+</map>

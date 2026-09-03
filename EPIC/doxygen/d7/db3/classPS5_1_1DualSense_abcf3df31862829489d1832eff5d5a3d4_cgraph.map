@@ -1,0 +1,4 @@
+<map id="PS5::DualSense::nodeAt" name="PS5::DualSense::nodeAt">
+<area shape="rect" id="node1" title="登録済みノードを添字で返します。範囲外は0です。" alt="" coords="5,13,168,38"/>
+<area shape="rect" id="node2" href="$d7/dea/classPS5_1_1ControllerRegistry.html#a5a59fc128f6ac96d5112fbc1de029105" title="登録済みノードを添字で返します。範囲外は0です。" alt="" coords="216,5,371,45"/>
+</map>

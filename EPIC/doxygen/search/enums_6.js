@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['profiletype_0',['ProfileType',['../d3/d3a/motion_8hpp.html#ae5463507f115f3f36a28277995cf711b',1,'motion.hpp']]]
+  ['messagetype_0',['MessageType',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216',1,'proto_can']]],
+  ['motorstate_1',['MotorState',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5c',1,'DJI']]]
 ];

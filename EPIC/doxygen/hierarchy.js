@@ -1,6 +1,15 @@
 var hierarchy =
 [
-    [ "AMT10", "d4/d48/classAMT10.html", null ],
+    [ "AbstractController< InputType, OutputType >", "d0/d5c/classAbstractController.html", [
+      [ "PID< VelocityType, OutputType >", "d8/da9/classPID.html", null ],
+      [ "PID< PositionType, VelocityType >", "d8/da9/classPID.html", null ],
+      [ "PID< InputType, OutputType >", "d8/da9/classPID.html", null ]
+    ] ],
+    [ "AbstractController< PositionType, VelocityType >", "d0/d5c/classAbstractController.html", null ],
+    [ "AbstractController< VelocityType, OutputType >", "d0/d5c/classAbstractController.html", null ],
+    [ "AMTEncoderBase", "db/d69/classAMTEncoderBase.html", [
+      [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", null ]
+    ] ],
     [ "IM920sL::BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", null ],
     [ "BitRange", "d6/d01/structBitRange.html", null ],
     [ "PS5::Button", "d6/de5/structPS5_1_1Button.html", null ],
@@ -10,6 +19,11 @@ var hierarchy =
     [ "CanSystem::CANMessage", "d2/d4a/structCanSystem_1_1CANMessage.html", null ],
     [ "CanSystem::CANStatus", "d7/db6/structCanSystem_1_1CANStatus.html", null ],
     [ "CommandReceiver< MAX_SIZE >", "d0/d45/classCommandReceiver.html", null ],
+    [ "PS5::ControllerCodec", "de/d75/classPS5_1_1ControllerCodec.html", null ],
+    [ "PS5::ControllerRegistry< MaxNodes >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
+    [ "PS5::ControllerRegistry< 8 >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
+    [ "PS5::ControllerRegistry< MaxNodes >", "d7/dea/classPS5_1_1ControllerRegistry.html", null ],
+    [ "CriticalSection", "d2/dd9/classCriticalSection.html", null ],
     [ "DJI::CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", null ],
     [ "proto_can::Device< DeviceTYPE >", "d2/deb/classproto__can_1_1Device.html", null ],
     [ "proto_can::Device< PC::DeviceType::SOLENOID >", "d2/deb/classproto__can_1_1Device.html", null ],
@@ -21,7 +35,10 @@ var hierarchy =
     [ "proto_can::DeviceSchema< DeviceType::MOTOR >", "d5/d25/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html", null ],
     [ "proto_can::DeviceSchema< DeviceType::SENSOR >", "dd/d4e/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html", null ],
     [ "proto_can::DeviceSchema< DeviceType::SOLENOID >", "d0/d8c/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SOLENOID_01_4.html", null ],
-    [ "PS5::DualSense", "d7/db3/classPS5_1_1DualSense.html", null ],
+    [ "PS5::DualSense< MaxNodes, Radio >", "d7/db3/classPS5_1_1DualSense.html", null ],
+    [ "PS5::DualSense< 8 >", "d7/db3/classPS5_1_1DualSense.html", null ],
+    [ "PS5::DualSenseMonitor< MaxNodes >", "da/de0/classPS5_1_1DualSenseMonitor.html", null ],
+    [ "PS5::DualSenseStatistics", "dd/de0/structPS5_1_1DualSenseStatistics.html", null ],
     [ "CanSystem::ErrorCounters", "df/d6b/structCanSystem_1_1ErrorCounters.html", null ],
     [ "DJI::ESC", "d4/d2e/classDJI_1_1ESC.html", null ],
     [ "DJI::ESCData", "d2/df4/structDJI_1_1ESCData.html", null ],
@@ -38,7 +55,7 @@ var hierarchy =
     [ "ICanManager", null, [
       [ "CanSystem::CanManager", "d1/d4a/classCanSystem_1_1CanManager.html", null ]
     ] ],
-    [ "CanSystem::IdStats", "de/df2/structCanSystem_1_1IdStats.html", null ],
+    [ "CanSystem::IdEntry", "d7/d4f/structCanSystem_1_1IdEntry.html", null ],
     [ "LogLite", "d9/d24/classLogLite.html", null ],
     [ "Motoron::Master", "da/d4c/classMotoron_1_1Master.html", null ],
     [ "proto_can::Master", "d3/da4/classproto__can_1_1Master.html", null ],
@@ -50,10 +67,8 @@ var hierarchy =
     [ "MotionMode< PositionType >", "df/d66/classMotionMode.html", null ],
     [ "MotionMode< VelocityType >", "df/d66/classMotionMode.html", null ],
     [ "proto_can::NoSchema", "de/d88/structproto__can_1_1NoSchema.html", null ],
-    [ "PID< InputType, OutputType >", "d8/da9/classPID.html", null ],
+    [ "IM920sL::Packet", "db/d29/structIM920sL_1_1Packet.html", null ],
     [ "stdr::PID", "dc/d22/classstdr_1_1PID.html", null ],
-    [ "PID< PositionType, VelocityType >", "d8/da9/classPID.html", null ],
-    [ "PID< VelocityType, OutputType >", "d8/da9/classPID.html", null ],
     [ "PIDConfig", "dc/df1/structPIDConfig.html", null ],
     [ "PIDGain", "d4/d2c/structPIDGain.html", null ],
     [ "PIDProfile", "d8/daf/structPIDProfile.html", null ],
@@ -66,5 +81,6 @@ var hierarchy =
     [ "TimerMgr", "d5/db3/classTimerMgr.html", null ],
     [ "CanSystem::TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", null ],
     [ "CanSystem::MockCanProfile::TxRecord", "d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html", null ],
-    [ "UartManager", "dd/d1a/classUartManager.html", null ]
+    [ "UartManager", "dd/d1a/classUartManager.html", null ],
+    [ "CanSystem::ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", null ]
 ];

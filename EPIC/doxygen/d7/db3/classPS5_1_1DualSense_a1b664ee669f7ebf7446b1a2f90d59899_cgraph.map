@@ -1,0 +1,4 @@
+<map id="PS5::DualSense::get" name="PS5::DualSense::get">
+<area shape="rect" id="node1" title="timeoutを反映してから指定ノードの入力を返します。" alt="" coords="5,5,145,31"/>
+<area shape="rect" id="node2" href="$d7/dea/classPS5_1_1ControllerRegistry.html#a95d77ef8ddf937e38607a1d8daffa12f" title="指定時刻でタイムアウトを判定してからノードの入力を返します。" alt="" coords="193,5,372,31"/>
+</map>

@@ -94,10 +94,14 @@ $(document).ready(function(){initNavTree('df/d9b/CanInterfaces_8hpp.html','../..
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a> &#124;
 <a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
 <a href="#var-members">変数</a>  </div>
   <div class="headertitle"><div class="title">CanInterfaces.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>CAN/FDCAN共通インターフェース群の定義  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &lt;Clog/api.hpp&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
@@ -107,7 +111,7 @@ CanInterfaces.hpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d91/CanInterfaces_8hpp__incl.png" border="0" usemap="#amodules_2CanSystem_2core_2CanInterfaces_8hpp" alt=""/></div>
 <map name="amodules_2CanSystem_2core_2CanInterfaces_8hpp" id="amodules_2CanSystem_2core_2CanInterfaces_8hpp">
-<area shape="rect" title=" " alt="" coords="124,5,295,45"/>
+<area shape="rect" title="CAN/FDCAN共通インターフェース群の定義" alt="" coords="124,5,295,45"/>
 <area shape="rect" title=" " alt="" coords="5,93,99,119"/>
 <area shape="rect" title=" " alt="" coords="123,93,202,119"/>
 <area shape="rect" title=" " alt="" coords="227,93,288,119"/>
@@ -119,9 +123,9 @@ CanInterfaces.hpp の依存先関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d62/CanInterfaces_8hpp__dep__incl.png" border="0" usemap="#amodules_2CanSystem_2core_2CanInterfaces_8hppdep" alt=""/></div>
 <map name="amodules_2CanSystem_2core_2CanInterfaces_8hppdep" id="amodules_2CanSystem_2core_2CanInterfaces_8hppdep">
-<area shape="rect" title=" " alt="" coords="515,5,685,45"/>
+<area shape="rect" title="CAN/FDCAN共通インターフェース群の定義" alt="" coords="515,5,685,45"/>
 <area shape="rect" href="../../df/dfc/CanSystem_8hpp.html" title=" " alt="" coords="5,189,243,214"/>
-<area shape="rect" href="../../de/d25/CanManager_8hpp.html" title=" " alt="" coords="119,93,289,133"/>
+<area shape="rect" href="../../de/d25/CanManager_8hpp.html" title="Classic CAN 管理基底クラスの定義" alt="" coords="119,93,289,133"/>
 <area shape="rect" href="../../de/dd3/MockCanProfile_8hpp.html" title=" " alt="" coords="314,93,494,133"/>
 <area shape="rect" href="../../dd/d37/frame__builder_8hpp.html" title=" " alt="" coords="519,93,681,133"/>
 <area shape="rect" href="../../d2/d80/messenger_8hpp.html" title=" " alt="" coords="580,181,743,221"/>
@@ -139,6 +143,9 @@ CanInterfaces.hpp の依存先関係図:</div>
 クラス</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4a/structCanSystem_1_1CANMessage.html">CanSystem::CANMessage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de5/structCanSystem_1_1ValidSizes.html">CanSystem::ValidSizes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">send()で有効なデータサイズ一覧を表す非所有ビュー  <a href="../../d2/de5/structCanSystem_1_1ValidSizes.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html">CanSystem::ICanController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN通信の基本インターフェース canとfdcanに共通する基本的な送受信、初期化、設定リセットなどの機能を提供する。 高度な設定などにアクセスするには各特化したinterfaceが必要  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +161,23 @@ CanInterfaces.hpp の依存先関係図:</div>
 <tr class="memitem:aa552fbb0626292312e4f0baa32f304f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa552fbb0626292312e4f0baa32f304f5">CanSystem::FnCallBack</a> = std::function&lt; void(const CANMessage &amp;msg)&gt;</td></tr>
 <tr class="separator:aa552fbb0626292312e4f0baa32f304f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c">CanSystem::CanMode</a> { <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cad35b51b639528d580362ca7042de6a0e">CanSystem::Classic</a>
+, <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cac74e6a6a3303bf31632114bbc7b1a1c2">CanSystem::Fd</a>
+ }</td></tr>
+<tr class="memdesc:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN(Classic)かFDCANかを表す区分。send()の有効サイズ以外にも 実装が特性を切り替えたい箇所全般で使えるよう汎用名にしてある。  <a href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c">[詳解]</a><br /></td></tr>
+<tr class="separator:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
 <tr class="memitem:a021af703669a4b190df9175b8fe97569"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a021af703669a4b190df9175b8fe97569">CanSystem::BUFF_SIZE</a> = 64</td></tr>
 <tr class="separator:a021af703669a4b190df9175b8fe97569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >CAN/FDCAN共通インターフェース群の定義 </p>
+<dl class="section author"><dt>著者</dt><dd>Ren Toda </dd></dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

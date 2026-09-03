@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" id="node1" href="$d6/dca/classCanSystem_1_1ICanController.html" title="CAN通信の基本インターフェース canとfdcanに共通する基本的な送受信、初期化、設定リセットなどの機能を提供する。 高度な設定などにアクセスするには各特化したinterfaceが必要" alt="" coords="5,5,183,31"/>
+<area shape="rect" id="node2" href="$d9/d76/classCanSystem_1_1MockCanProfile.html" title="テスト用CAN通信プロファイル" alt="" coords="231,5,417,31"/>
 </map>

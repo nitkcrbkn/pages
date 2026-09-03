@@ -1,0 +1,6 @@
+<map id="AMTEncoderBase::revolutions" name="AMTEncoderBase::revolutions">
+<area shape="rect" id="node1" title="Position Count基準の累積回転数を返す。" alt="" coords="5,45,201,70"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="249,5,441,45"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776" title="補正後のPosition Countを原子的に返す。" alt="" coords="256,69,435,109"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="489,77,700,102"/>
+</map>

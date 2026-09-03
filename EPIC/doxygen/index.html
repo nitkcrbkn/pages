@@ -101,107 +101,302 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><a href="https://nitkcrbkn.github.io/pages/EPIC/coverage/">EPIC-coverage</a></li>
 </ul>
 <p >STM32 マイコン用のロボット制御システム。HAL 依存を分離したモジュラーアーキテクチャを採用し、ロギング・CAN 通信・デバッグストリーム機能を提供する。</p>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Quick Start</h1>
-<p >環境構築から STM32 への書き込み、動作確認までの手順を示す。 STM32CubeIDEを使用する方法とdockerビルド環境を使う方法がある。 dockerのほうがサポートしてされてるがSTM32CubeIDEでは動かない可能性がある。</p>
-<h2><a class="anchor" id="autotoc_md37"></a>
-docker</h2>
-<h3><a class="anchor" id="autotoc_md38"></a>
-clone</h3>
-<div class="fragment"><div class="line">git clone https://github.com/nitkcrbkn/STM32System</div>
-<div class="line">git submodule init</div>
-<div class="line">git submodule update</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md39"></a>
-dockerビルド環境のビルド</h3>
-<p ><a href="https://github.com/nitkcrbkn/stm32-docker-flash">stm32-docker-flash</a>のrepoにコードがある。 このプロジェクトではstm32-docker-flash/README 詳細が書かれているが、細かい動作は[Makefile](Makefile)の基準によって変わる。</p>
+<h2><a class="anchor" id="autotoc_md52"></a>
+全体構造の概要</h2>
+<p >STM32System は各ロボットプロジェクトに **git サブモジュールとして <code>app/</code> に配置**して使う共有ライブラリである。 <br  />
+ そのため、STM32を用いた開発はこのリポジトリ内のコードだけでは完結しない。具体的には以下のパーツがシステムを構成する。</p><ul>
+<li>STM32 HALドライバ <br  />
+ STM32に関する基本機能を提供するソフトウェア。STマイクロが提供しており、マイコンボードごとの差を吸収してくれる。 <br  />
+ チップとピンレイアウトごとにそれぞれ個別で&lt;tt&gt;.iocファイル(設定ファイル)が必要であり、これをターゲットと呼ぶ。</li>
+<li>STM32System <br  />
+ このrepoであり、STM32 HALドライバを利用しロボットの制御に関する様々な機能をSTM32上で実現するシステム。 <br  />
+ ロギングやPID制御、各種モーターへの指令を送るライブラリなどで構成される。</li>
+<li>ビルド&amp;書き込みシステム <br  />
+ STM32 HALドライバ + STM32System をビルドしSTM32へ書き込む役割を持つ。 <br  />
+ dockerベースの<a href="https://github.com/nitkcrbkn/stm32-docker-flash">stm32-docker-flash</a>を使用する。</li>
+</ul>
+<p >これらのパーツを適切に配置した上でファイルを編集・コマンドを実行する必要がある。 <br  />
+ そのため、STM32Sysの開発・ロボットのプログラム開発・動作確認・書き込み等あらゆる操作は、STM32Sysを持つrepoで行う。一般の実験やテストは<a href="https://github.com/nitkcrbkn/STM32_node"><code>STM32_node</code></a> リポジトリを使用する(このQuickStartでも<code>STM32_node</code>リポジトリで例示する)。</p>
+<h2><a class="anchor" id="autotoc_md53"></a>
+ソフトのインストール</h2>
+<p >Docker、STM32CubeMX、シリアルモニタが必要である。 OSはLinuxであれば良い、Windows11でWSL環境のUbuntuがあるものとしている。 ただし直接Linuxを使用したほうが楽。</p>
+<h3><a class="anchor" id="autotoc_md54"></a>
+CubeMX</h3>
+<p >STM32CubeMXは、<a href="https://www.st.com/ja/development-tools/stm32cubemx.html">公式サイト</a>からダウンロードする。CubeMX2は互換性がない。 <br  />
+ MySTへのログインが求められたりしてめんどくさいが、自分のOSに合わせたものを選択してダウンロードする。 <br  />
+ zipファイルをダウンロードしたら解凍し、中に入っている<code>SetupSTM32CubeMX-(バージョン名)</code>を実行する。当然、バージョン名のところはバージョンによって異なる。</p>
+<div class="fragment"><div class="line">sudo apt install unzip</div>
+<div class="line">unzip SetupSTM32CubeMX-(環境によって変わる).zip</div>
+<div class="line">./SetupSTM32CubeMX-(バージョン名)</div>
+</div><!-- fragment --><p> GUIが出てくるので、後は同意とnextを繰り返す。</p>
+<h3><a class="anchor" id="autotoc_md55"></a>
+シリアルモニタ</h3>
+<p >コマンドラインで使用できるpicocomを導入する。 <br  />
+ Windowsの場合は、シリアルモニタにTeraTermを使用すれば良い。 </p><div class="fragment"><div class="line">sudo apt install picocom</div>
+</div><!-- fragment --><p> 実行には以下のコマンドを使用する。抜けるときは<code>Ctrl+A</code> → <code>Ctrl+X</code>である。 </p><div class="fragment"><div class="line">sudo picocom -b 115200 /dev/ttyACM0</div>
+</div><!-- fragment --><p> <code>~/.bashrc</code>(Ubuntu標準)または<code>~/.zshrc</code>に以下のように記載することで、<code>clog</code>と入力するだけで開くことができ便利である。<code>/dev/ttyACM0</code>を記載しないことで、柔軟性を上げるのもありである。 </p><div class="fragment"><div class="line">alias clog=&quot;sudo picocom -b 115200 /dev/ttyACM0&quot;</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md56"></a>
+docker</h3>
+<p >以下のコマンドをターミナルで実行する。Dockerの競合するパッケージを一度削除するが、既存のイメージ、コンテナ、ボリューム、ネットワークは削除されない。 </p><div class="fragment"><div class="line">sudo apt remove $(dpkg --get-selections \</div>
+<div class="line">  docker.io \</div>
+<div class="line">  docker-compose \</div>
+<div class="line">  docker-compose-v2 \</div>
+<div class="line">  docker-doc \</div>
+<div class="line">  docker-buildx \</div>
+<div class="line">  podman-docker \</div>
+<div class="line">  containerd \</div>
+<div class="line">  runc |</div>
+<div class="line">  cut -f1)</div>
+<div class="line">sudo apt update</div>
+<div class="line">sudo apt install -y ca-certificates curl</div>
+<div class="line"> </div>
+<div class="line">sudo install -m 0755 -d /etc/apt/keyrings</div>
+<div class="line"> </div>
+<div class="line">sudo curl -fsSL \</div>
+<div class="line">  https://download.docker.com/linux/ubuntu/gpg \</div>
+<div class="line">  -o /etc/apt/keyrings/docker.asc</div>
+<div class="line"> </div>
+<div class="line">sudo chmod a+r /etc/apt/keyrings/docker.asc</div>
+<div class="line"> </div>
+<div class="line">sudo tee /etc/apt/sources.list.d/docker.sources &gt; /dev/null &lt;&lt;EOF</div>
+<div class="line">Types: deb</div>
+<div class="line">URIs: https://download.docker.com/linux/ubuntu</div>
+<div class="line">Suites: $(. /etc/os-release &amp;&amp; echo &quot;${UBUNTU_CODENAME:-$VERSION_CODENAME}&quot;)</div>
+<div class="line">Components: stable</div>
+<div class="line">Architectures: $(dpkg --print-architecture)</div>
+<div class="line">Signed-By: /etc/apt/keyrings/docker.asc</div>
+<div class="line">EOF</div>
+<div class="line"> </div>
+<div class="line">sudo apt update</div>
+<div class="line">sudo apt install -y --no-install-recommends \</div>
+<div class="line">  docker-ce \</div>
+<div class="line">  docker-ce-cli \</div>
+<div class="line">  containerd.io \</div>
+<div class="line">  docker-buildx-plugin</div>
+</div><!-- fragment --><p >これで導入が終わるはず。終わったら、以下を実行する。 </p><div class="fragment"><div class="line">sudo systemctl status docker</div>
+</div><!-- fragment --><p> これで<code>active (running)</code>と表示されれば起動している(<code>q</code>キーで抜けられる)。止まっている場合、 </p><div class="fragment"><div class="line">sudo systemctl start docker</div>
+</div><!-- fragment --><p> で解決する。テスト用コンテナを試しに動かしてみると、 </p><div class="fragment"><div class="line">sudo docker run hello-world</div>
+</div><!-- fragment --><p> で<code>Hello from Docker!</code>から始まる長文が出れば成功である。毎回<code>sudo</code>を使うのがめんどくさいということであれば、 </p><div class="fragment"><div class="line">sudo usermod -aG docker &quot;$USER&quot;</div>
+</div><!-- fragment --><p> を実行してログアウト→サインインを行う。共有のPCでは推奨されない。ここから先の説明では<code>sudo</code>を省略する。</p>
+<h2><a class="anchor" id="autotoc_md57"></a>
+使用方法</h2>
+<p >環境構築から STM32 への書き込み、動作確認までの手順を示す。 ビルド・書き込み・デバッグは docker ベースの<code>stm32-flash</code>ツールに統一されている。 STM32CubeIDEはサポートされていない。 ここではstm32sysをすでに持つプロジェクトのrepoを使用する方法について示す。新規repoの作成は<code>新規repo作成</code>を参照のこと。</p>
+<h2><a class="anchor" id="autotoc_md58"></a>
+clone</h2>
+<p >submodule含めてクローンする。 </p><div class="fragment"><div class="line">git clone --recurse-submodules https://github.com/nitkcrbkn/STM32_node.git</div>
+<div class="line">cd STM32_node</div>
+</div><!-- fragment --><p> もし間違って普通にcloneしてしまった場合は </p><div class="fragment"><div class="line">cd STM32_node</div>
+<div class="line">git submodule update --init --recursive</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md59"></a>
+dockerビルド環境のビルド</h2>
+<p ><a href="https://github.com/nitkcrbkn/stm32-docker-flash">stm32-docker-flash</a>のrepoにコードがある。 このビルドシステムの詳細はstm32-docker-flash/READMEに書かれている。</p>
 <div class="fragment"><div class="line">cd app/lib/stm32-docker-flash</div>
 <div class="line">docker build -t stm32-flash .</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md40"></a>
-STM32用プロジェクトビルド</h3>
-<div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
-<div class="line">    stm32-flash bash /app/build.sh</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md41"></a>
-書き込み</h3>
-<div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
-<div class="line">    --privileged --device=/dev/ttyACM0 \</div>
-<div class="line">    stm32-flash bash /app/flash.sh</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md42"></a>
-Debug</h2>
-<p >以下のコマンドでTUIのデバッガを開く。IDEのデバッガを使用する方法はREADMEを確認。 </p><div class="fragment"><div class="line">docker run --rm -v $(pwd):/workspace \</div>
-<div class="line">    --privileged --device=/dev/ttyACM0 \</div>
-<div class="line">    stm32-flash bash /app/debug.sh</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
-CubeIDE</h2>
-<h3><a class="anchor" id="autotoc_md44"></a>
-1. プロジェクトのクローンとセットアップ</h3>
-<div class="fragment"><div class="line">git clone https://github.com/nitkcrbkn/STM32System</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md45"></a>
-2. STM32CubeIDE でプロジェクト作成</h3>
-<p ><code>File -&gt; Import -&gt; Import from existing STM32CubeMX configuration File (.ioc)</code></p>
-<h3><a class="anchor" id="autotoc_md46"></a>
-3. コードの移動と設定</h3>
-<ul>
-<li>新しく生成された CubeIDE 管理下の <code>STM32System/</code> に、clone した repo の <code>.git/</code> を移動</li>
-<li>IDE または console で目的のブランチへ checkout</li>
-<li><p class="startli">submodule を更新:</p>
-<div class="fragment"><div class="line">git submodule init</div>
-<div class="line">git submodule update</div>
-</div><!-- fragment --></li>
-<li><p class="startli"><code>main.c</code> に以下を追加:</p>
-<div class="fragment"><div class="line">{c++}</div>
-<div class="line"> /* USER CODE BEGIN PFP */</div>
-<div class="line"> void app_main(void);</div>
-<div class="line"> /* USER CODE END PFP */</div>
-</div><!-- fragment --><div class="fragment"><div class="line">{c++}</div>
-<div class="line"> /* USER CODE BEGIN WHILE */</div>
-<div class="line"> app_main();</div>
-<div class="line"> /* USER CODE END WHILE */</div>
-</div><!-- fragment --></li>
+</div><!-- fragment --><p >ホストの <code>stm32-flash</code> コマンドは、このイメージを <code>docker run</code> するラッパーである。 <code>~/.bashrc</code>(Ubuntu標準)または<code>~/.zshrc</code>の末尾に以下を追加することで、以降は <code>stm32-flash &lt;command&gt;</code> として利用できる。複数デバイス同時接続でのデバイスの指定書き込みはサポートしていない。</p>
+<div class="fragment"><div class="line">alias stm32-flash=&#39;docker run --rm -it -v $(pwd):/workspace --privileged --device=/dev/ttyACM0 --network host stm32-flash&#39;</div>
+</div><!-- fragment --><p >zshでのTAB補完版のエイリアスはstm32-docker-flash/READMEに書かれている </p><div class="fragment"><div class="line">stm32-flash --help</div>
+</div><!-- fragment --><p> と打つことでヘルプを見ることができる。</p>
+<h2><a class="anchor" id="autotoc_md60"></a>
+HALを生成する</h2>
+<p >STM32CubeMXを起動し、<code>File → load project</code>から<code>STM32_node</code>(或いは別途用意したリポジトリ)内の使用するチップのディレクトリ内の&lt;tt&gt;.iocファイルを選択する。 <br  />
+ 例えば、<code>STM32_node</code>リポジトリ内で<code>STM32G474RE</code>を使うのであれば<code>G4/g4_node_dev.ioc</code>を選択する。このファイル名は、プロジェクト名及び使用するマイコンで決定される(詳細は新規repo作成の項を参照のこと)。 <br  />
+</p>
+<p >警告が出たら<code>continue</code>で継続する。初回などダウンロードが発生する場合や、STアカウント関連の諸々、ライセンスの同意などがある場合があるので適宜進める。 <br  />
+ 完了したら、右上の<code>GENERATE CODE</code>をクリックしてコードを生成する。これでHALの生成は完了である。</p>
+<p >次に，HALで生成したコードとSTM32Sysを連携させる。<code>チップのディレクトリ/Core/Src/main.c</code>を開く。ここでいうチップのディレクトリとは先程HALを生成したディレクトリのことである。CubeMXによるコードの再生成後も変更が保持されるように、<code>USER CODE BEGIN Includes</code>と<code>USER CODE END Includes</code>の間へ<code>app_main</code>の宣言を追加する。 </p><div class="fragment"><div class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></div>
+<div class="line"><span class="keywordtype">int</span> app_main(<span class="keywordtype">void</span>);</div>
+<div class="line"><span class="comment">/* USER CODE END Includes */</span></div>
+</div><!-- fragment --><p> また、<code>while(1)</code>の中，<code>USER CODE END WHILE</code>よりも上の部分に<code>app_main</code>の実行を入れる。 </p><div class="fragment"><div class="line"><span class="keywordflow">while</span> (1)</div>
+<div class="line">{</div>
+<div class="line">  app_main();</div>
+<div class="line">  </div>
+<div class="line">  <span class="comment">/* USER CODE END WHILE */</span></div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">/* USER CODE BEGIN 3 */</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md61"></a>
+ビルドして書き込み</h2>
+<h3><a class="anchor" id="autotoc_md62"></a>
+コマンドとオプション</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">コマンド   </th><th class="markdownTableHeadNone">説明   </th><th class="markdownTableHeadNone">ビルド設定    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>flash</code>   </td><td class="markdownTableBodyNone">ビルド・書き込み   </td><td class="markdownTableBodyNone">Release    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>debug</code>   </td><td class="markdownTableBodyNone">TUI GDB / OpenOCD サーバー   </td><td class="markdownTableBodyNone">Debug    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>info</code>   </td><td class="markdownTableBodyNone">接続中のボード情報を表示   </td><td class="markdownTableBodyNone">-    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>bash</code>   </td><td class="markdownTableBodyNone"><code>lib.sh</code> を読み込んだデバッグ用シェルを起動   </td><td class="markdownTableBodyNone">-   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">オプション   </th><th class="markdownTableHeadNone">説明    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>--setup-full</code>   </td><td class="markdownTableBodyNone">configure + proto_env + gen_proto を一括実行    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>-s, --setup-cmake</code>   </td><td class="markdownTableBodyNone">cmake configure のみ実行    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-p, --proto-gen</code>   </td><td class="markdownTableBodyNone">gen_proto ターゲットを実行    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>-e, --proto-env</code>   </td><td class="markdownTableBodyNone">proto_env ターゲットを実行    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-b, --build-only</code>   </td><td class="markdownTableBodyNone">build を実行（<code>-f</code> 無指定なら flash しない）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>-f, --flash-only</code>   </td><td class="markdownTableBodyNone">flash を実行（<code>-b</code> 無指定なら build しない）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-c, --clean</code>   </td><td class="markdownTableBodyNone">クリーンビルド（build ディレクトリを削除して再構成）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>--server</code>   </td><td class="markdownTableBodyNone"><code>[debug のみ]</code> OpenOCD サーバーを起動（IDE 接続用）    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>-t, --target TARGET</code>   </td><td class="markdownTableBodyNone">対象ディレクトリ（例: <code>G4_bare</code>, <code>G4_dev</code>, <code>F0_bare</code>）    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>-k, --sketch SKETCH</code>   </td><td class="markdownTableBodyNone">ソースディレクトリのパス（<code>./</code> 相対）   </td></tr>
+</table>
+<p >何もフラグを指定しない場合のみ <code>build → flash</code> が自動的に実行される。何か1つでも明示指定すると、指定されたステージだけが実行される。</p>
+<h3><a class="anchor" id="autotoc_md63"></a>
+clogスケッチのNucleoG474REへの書き込み</h3>
+<p >ルートディレクトリ(<code>STM32_node</code>リポジトリを使っているならば<code>STM32_node</code>ディレクトリ)で以下のコマンドを実行する。 </p><div class="fragment"><div class="line">stm32-flash flash -t G4 -k app/examples/clog</div>
+</div><!-- fragment --><p> これは、G4をターゲットにし、exampleスケッチの1つであるclogをビルド・書き込みするコマンドである。STMが生きているかどうかの確認など基本的な動作確認にはこの<code>clog</code>がオススメである。 うまく書き込めない場合は少し下の「よくあるトラブルシューティング」を参考のこと。</p>
+<p >NucleoG474REに書き込んだ上で、picocom等のシリアルモニタを起動(設定済みならば<code>clog</code>コマンド)し、Nucleo上のRESETボタンを押すことでlogが表示されれば成功である。</p>
+<h3><a class="anchor" id="autotoc_md64"></a>
+その他スケッチの書き込み</h3>
+<p >exampleスケッチは他にも存在し、<code>ls app/examples/</code>で確認ができる(このコマンドで表示されるディレクトリがスケッチ名である)。他のexampleスケッチを書き込みたい場合、 </p><div class="fragment"><div class="line">stm32-flash flash -t G4 -k app/examples/&lt;スケッチパス&gt;</div>
+</div><!-- fragment --><p> でビルドが可能である。また、<code>G4</code>を別のチップに置き換えることで別のチップにも書き込むことができる(もちろん、CubeMXでのHAL生成はチップごとに行う必要がある)。</p>
+<p >そして、実際の開発においては<code>sketches</code>ディレクトリにスケッチを配置する。 </p><div class="fragment"><div class="line">stm32-flash flash -t G4 -k &lt;スケッチパス&gt;</div>
+</div><!-- fragment --><p> とすることでビルドと書き込みが可能である。</p>
+<h3><a class="anchor" id="autotoc_md65"></a>
+よくあるトラブルシューティング</h3>
+<p >うまく書き込めない場合は </p><div class="fragment"><div class="line">stm32-flash info</div>
+</div><!-- fragment --><p> を実行すると、現在接続中のSTM32が一覧表示される。この中に表示されなければ、接続の問題(USBケーブルがデータ転送に対応してないなど)である可能性がある。</p>
+<p >2回目以降の実行ではビルドは差分のみ行うことになるが、稀に差分ビルドでは問題が生じることがある。その場合、クリーン<code>-c</code>オプションをつけ </p><div class="fragment"><div class="line">stm32-flash flash -t G4 -k app/examples/clog -c</div>
+</div><!-- fragment --><p> などとすれば良い。</p>
+<h1><a class="anchor" id="autotoc_md66"></a>
+スケッチ新規作成</h1>
+<p >一番似ている他のスケッチをコピーしてそれを編集して書くと良い。 </p>
+<h2><a class="anchor" id="autotoc_md67"></a>
+appMain.cpp</h2>
+<p >以下の順番で構成される</p><ul>
+<li>target handler</li>
+<li>config</li>
+<li>include</li>
+<li>setup</li>
+<li>関数</li>
+<li>app_main + 無限ループ</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md47"></a>
-4. コード生成とビルド</h3>
-<p >CubeMX (CubeIDE 組み込み) で <code>.ioc</code> を開き、code generation を実行する。</p>
-<h3><a class="anchor" id="autotoc_md48"></a>
-5. STM32 への書き込み</h3>
-<ul>
-<li>STM32 を接続</li>
-<li><code>STM32CubeIDE -&gt; Project Explorer -&gt; right click -&gt; Run as -&gt; STM32 C/C++ Application</code></li>
+<h2><a class="anchor" id="autotoc_md68"></a>
+config.h</h2>
+<p >いくつかのconfigは無いとコンパイルが失敗する。</p>
+<h2><a class="anchor" id="autotoc_md69"></a>
+callbacks.h</h2>
+<p >HAL側でweak定義されている割り込み関数を定義する。</p>
+<h1><a class="anchor" id="autotoc_md70"></a>
+新規repo作成</h1>
+<p >ターゲット: <code>.ioc</code>に紐付けられて作成される。基板＊pinマッピング事に用意する。ソースコードを含まない。 スケッチ: <code>appMain.cpp</code>, <code>config.h</code>, <code>callbacks.h</code>を含む、ひとかたまりのアプリケーションコード。</p>
+<p >stm32sysを使うプロジェクトは、通常複数のターゲットと複数のスケッチを持つ。最低限必要なのは、開発用のnucleo基板向けターゲットと、実基板のチップ向けターゲットの2つ。 さらにマスター・スレイブ構成などで基板またはpinマッピングが異なる場合は追加でターゲットが増えるため、この場合は合計4つのターゲットが必要になる。 stm32sysに追加したライブラリの使用例は<code>app/examples/</code>に、プロジェクト固有のスケッチは<code>./sketches</code>に配置することを推奨する。</p>
+<h2><a class="anchor" id="autotoc_md71"></a>
+git</h2>
+<p >git初期化 </p><div class="fragment"><div class="line">git init</div>
+</div><!-- fragment --><p> submoduleとしてstm32 sysを追加 STM32System </p><div class="fragment"><div class="line">git submodule add -b develop  https://github.com/nitkcrbkn/STM32System app</div>
+</div><!-- fragment --><p> submoduleを初期化して再帰的に更新。(内部にもまたsubmoduleが複数含まれているため) </p><div class="fragment"><div class="line">git submodule update --init --recursive   </div>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md72"></a>
+CubeMX</h2>
+<p >Project名を決める。これはターゲットフォルダ名および <code>.ioc</code> ファイル名と同一になる。</p>
+<p >ビルドシステムがフォルダ名の先頭部分からフラッシュ設定を判定する仕様のため、 ターゲットフォルダ名は先頭にチップ種類を示す接頭辞を付ける必要がある。 チップ種類は"アルファベット1文字 + 数字1桁"で表され、大文字・小文字は区別されない。 つまりstm32g474の最低限のプロジェクト名は <code>g4</code>または<code>G4</code> となり、付け足す場合は <code>g4_something</code> の形になる。</p>
+<p >また、&lt;tt&gt;.ioc ファイルからプロジェクトがNucleoボード用かチップ実装用かを見分けられるよう、 以下の命名方式を推奨する。</p>
+<p ><code>[チップ種類]_[プロジェクト名]_[chip or dev]</code></p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">チップ   </th><th class="markdownTableHeadNone">チップ種類   </th><th class="markdownTableHeadNone">フォルダ名の例    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">stm32g474   </td><td class="markdownTableBodyNone">g4   </td><td class="markdownTableBodyNone"><code>g4</code>, <code>G4_robomas_dev</code>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">stm32f013   </td><td class="markdownTableBodyNone">f0   </td><td class="markdownTableBodyNone"><code>f0</code>, <code>F0_amt_chip</code>   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md73"></a>
+手順</h3>
+<ol type="1">
+<li>CubeMXで新規プロジェクトを、対象となるすべてのターゲット事に作成する。</li>
+<li><code>File -&gt; New Project</code> で新規プロジェクトを作成する。</li>
+<li><code>Commercial Part Number</code> にMCUの型番を入力し、対象のチップ／Nucleoを選択する。</li>
+<li>IOC編集画面が開いたら <code>Project Manager -&gt; Project</code> へ移動する。</li>
+<li><code>Toolchain / IDE</code> を <code>CMake</code> に変更する。</li>
+<li><code>Project Name</code> に <code>f0_amt_dev</code> などのプロジェクト名を入力する。</li>
+<li><code>Project Location</code> で <code>Browse</code> を押し、新規作成したrepoを選択する。</li>
+<li>右上の <code>Generate</code> でHALコードとCMakeファイルを自動生成する。</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md74"></a>
+cmake</h2>
+<p >ターゲット事に<code>stm32flash</code>に対応させるため<code>[ターゲット]/CMakeLists.txt</code>を編集する。</p>
+<p >app/lib/stm32-docker-flash/new.mdと既存のCMakeListsを参照してチップ事に書く。 チップごとにほとんど変わらず、ピンレイアウトが変わるだけであれば使い回すことも可能である。</p>
+<p >ビルド条件やその他の設定はここで通常のようにいじる。例えば軽量化のために浮動小数点数printfを含まない、Include pathを追加等。</p>
+<h2><a class="anchor" id="autotoc_md75"></a>
+target handler</h2>
+<p ><code>[ターゲット]/target_handler.h</code>には以下の内容を含み作成する。</p><ul>
+<li><code>#define [target]</code> で G4やF0など</li>
+<li><code># extern</code>以下には<code>[ターゲット]/Core/Src/main.c</code>の<code>/* Private variables</code>のすべてのハンドラーに<code>extern</code>をつけたものを追加</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md49"></a>
+<p >stm32-flash<code>は指定ターゲットの</code>target_handler.h<code>を全てのC++ファイルのインクルードを追加してコンパイルするため、</code>app_main.cpp`に書く必要はない。</p>
+<div class="fragment"><div class="line">#pragma once </div>
+<div class="line">#define [target] # スケッチでチップの違いを吸収する場合のため</div>
+<div class="line">#include &quot;main.h&quot; # すべてのHALライブラリをいれる </div>
+<div class="line"> </div>
+<div class="line"># extern</div>
+<div class="line"> </div>
+<div class="line">// app_mainがc言語のmain関数より実行できるように</div>
+<div class="line">#ifdef __cplusplus</div>
+<div class="line">extern &quot;C&quot; {</div>
+<div class="line">#endif</div>
+<div class="line"> </div>
+<div class="line">int app_main(void);</div>
+<div class="line"> </div>
+<div class="line">#ifdef __cplusplus</div>
+<div class="line">}</div>
+<div class="line">#endif</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md76"></a>
+quick start</h2>
+<p >quick startのエントリーポイント追加をすべてのターゲット事に実行</p>
+<h1><a class="anchor" id="autotoc_md77"></a>
 STM32 との通信</h1>
 <ul>
 <li>Tera Term などの Terminal ソフトで STM32 の COM ポートを bitrate 115200 で開く</li>
 <li>Break Signal を送信して再起動する</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md78"></a>
 TEST</h1>
-<p >testについてはapp/test/README.mdを確認すること。</p>
-<h1><a class="anchor" id="autotoc_md51"></a>
+<p >testについてはtest/README.mdを確認すること。</p>
+<h2><a class="anchor" id="autotoc_md79"></a>
+ビルドテスト</h2>
+<p >を実行することで、全てのターゲット事に全てのexampleビルドしビルドが通るか確認可能。</p>
+<h1><a class="anchor" id="autotoc_md80"></a>
 Folder Structure</h1>
-<p >プロジェクトの構造と各ディレクトリの役割を示す。</p>
+<p >プロジェクトの構造と各ディレクトリの役割を示す（パスはライブラリリポジトリのルート基準。プロジェクトに組み込むと全体が <code>app/</code> 配下にマウントされる）。</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone">file   </th><th class="markdownTableHeadNone">役割   </th><th class="markdownTableHeadNone">備考    </th></tr>
+<th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone">file   </th><th class="markdownTableHeadNone">役割    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app   </td><td class="markdownTableBodyNone">appMain.cpp   </td><td class="markdownTableBodyNone">ロボット制御コード。初期化処理とメインループ   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<td class="markdownTableBodyNone">examples/&lt;name&gt;   </td><td class="markdownTableBodyNone">appMain.cpp   </td><td class="markdownTableBodyNone">ロボット制御コード（app 層）。初期化処理とメインループ    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">appMain.h   </td><td class="markdownTableBodyNone"><code>app_main()</code> プロトタイプ宣言／C/C++リンク保証   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">callbacks.h   </td><td class="markdownTableBodyNone">HAL 提供の weak コールバック実装    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">config.h   </td><td class="markdownTableBodyNone">汎用定数・設定値定義   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">config.h   </td><td class="markdownTableBodyNone">汎用定数・設定値定義    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">app/lib   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">git submodule 配置   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<td class="markdownTableBodyNone">lib   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">git submodule 配置    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app/module   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">複数ファイル構成のライブラリ   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">modules   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">複数ファイル構成のライブラリ    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">logic/   </td><td class="markdownTableBodyNone">ビジネスロジック層   </td><td class="markdownTableBodyNone">HAL 依存無し    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">logic/   </td><td class="markdownTableBodyNone">ビジネスロジック層（単一ファイル）    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">platform/   </td><td class="markdownTableBodyNone">HAL 依存インターフェースアダプタ層   </td><td class="markdownTableBodyNone">HAL 依存    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">platform/   </td><td class="markdownTableBodyNone">HAL 依存インターフェースアダプタ層（単一ファイル）    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応">platform/utils.h</a>   </td><td class="markdownTableBodyNone">Arduino 互換関数／HAL ラッパー   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><a class="el" href="d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応">platform/utils.h</a>   </td><td class="markdownTableBodyNone">Arduino 互換関数／HAL ラッパー    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app/test   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">テスト用コード。HAL 依存が強いと不可   </td><td class="markdownTableBodyNone">HAL 依存無し   </td></tr>
+<td class="markdownTableBodyNone">test   </td><td class="markdownTableBodyNone">/   </td><td class="markdownTableBodyNone">テスト用コード。HAL 依存が強いと不可   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<h2><a class="anchor" id="autotoc_md81"></a>
 lib一覧</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -215,9 +410,11 @@ lib一覧</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">embeddedproto   </td><td class="markdownTableBodyNone">組み込み向けProtocol Buffers実装    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">protocol   </td><td class="markdownTableBodyNone">Protobufスキーマ管理（&lt;tt&gt;.proto、コンパイル済みコード、Embedded Proto ラッパー）    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">stm32-docker-flash   </td><td class="markdownTableBodyNone">STM32用Dockerビルド・書き込み環境   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md53"></a>
+<h2><a class="anchor" id="autotoc_md82"></a>
 module一覧</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -225,114 +422,83 @@ module一覧</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a class="el" href="d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a>   </td><td class="markdownTableBodyNone">CAN/FDCAN通信システム   </td><td class="markdownTableBodyNone">CAN/FDCANの抽象化、送受信、フィルタ設定    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">lite   </td><td class="markdownTableBodyNone">F0（32KB）向け軽量モジュール群   </td><td class="markdownTableBodyNone">LogLite（ロギング）、GPIO_Mgr、TimerMgr。ヒープ不使用（詳細は <a class="el" href="d7/d2b/md_modules_lite_README.html">modules/lite/README.md</a>）    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">logic   </td><td class="markdownTableBodyNone">単一ファイルライブラリ   </td><td class="markdownTableBodyNone">ビジネスロジック、アルゴリズム    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">platform   </td><td class="markdownTableBodyNone">単一ファイルライブラリ   </td><td class="markdownTableBodyNone">HALラッパー（utils.h等）、Arduino互換関数    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ProtoCAN   </td><td class="markdownTableBodyNone">Protocol Buffer通信   </td><td class="markdownTableBodyNone">Master/Device API、request/response、reset制御    </td></tr>
+<td class="markdownTableBodyNone">platform   </td><td class="markdownTableBodyNone">単一ファイルライブラリ   </td><td class="markdownTableBodyNone">HALラッパー（utils.h等）、Arduino互換関数    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">protocol   </td><td class="markdownTableBodyNone">Protobufスキーマ管理   </td><td class="markdownTableBodyNone">.protoファイル、コンパイル済みコード、Embedded Protoラッパー   </td></tr>
+<td class="markdownTableBodyNone">ProtoCAN   </td><td class="markdownTableBodyNone">Protocol Buffer通信   </td><td class="markdownTableBodyNone">Master/Device API、request/response、reset制御   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<h1><a class="anchor" id="autotoc_md83"></a>
 Document Structure</h1>
 <p >各ライブラリのドキュメント配置を示す。</p>
 <ul>
 <li><code>lib/*/README.md</code>: 各 submodule リポジトリの README</li>
-<li><code>module/*/README.md</code>: Quick Start と Implementation/Architecture を記載</li>
+<li><code>modules/*/README.md</code>: Quick Start と Implementation/Architecture を記載</li>
 <li>詳細 API 仕様: doxygen コメントで記述する</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md55"></a>
-Usage Guide</h1>
-<p >各モジュールの基本的な使い方を示す。詳細な API 仕様は doxygen を参照のこと。</p>
-<h2><a class="anchor" id="autotoc_md56"></a>
-Include Path</h2>
-<p ><code>module</code> および <code>lib</code> は include に含まれているため <code>&lt;logic/&gt;</code> などで include 可能。 追加の include が必要な場合は以下の設定を行う。 <code>Project -&gt; Properties -&gt; C/C++ build -&gt; setting -&gt; MCU/MPU GCC compiler -&gt; include paths</code> ここに Debug/folder からの相対パスを追加する（例: <code>../app/lib/etl/include/</code>）。</p>
-<h2><a class="anchor" id="autotoc_md57"></a>
-Clog (ロギングシステム)</h2>
-<p >printf スタイルのロギングと色付き出力機能を提供する。</p>
-<h3><a class="anchor" id="autotoc_md58"></a>
-基本的な使い方</h3>
-<p >各 project ごとに <code>Logger.hpp</code> を <code>logic/</code> に配置する。ここでマクロ API の生成と設定を行う。 <code>CLog::LogDirector&amp; get_logger()</code> により最低の loglvl と出力先（複数可）を設定できる。</p>
-<h3><a class="anchor" id="autotoc_md59"></a>
-ロギングマクロ</h3>
+<h2><a class="anchor" id="autotoc_md84"></a>
+既存Documents</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">マクロ   </th><th class="markdownTableHeadNone">log lvl    </th></tr>
+<th class="markdownTableHeadNone">項目   </th><th class="markdownTableHeadNone">リンク   </th><th class="markdownTableHeadNone">説明    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LOGD   </td><td class="markdownTableBodyNone">debug    </td></tr>
+<td class="markdownTableBodyNone">Doxygen   </td><td class="markdownTableBodyNone"><a href="https://nitkcrbkn.github.io/pages/develop/doxygen/">API ドキュメント</a>   </td><td class="markdownTableBodyNone">生成された API リファレンス    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LOGI   </td><td class="markdownTableBodyNone">info    </td></tr>
+<td class="markdownTableBodyNone">Test Coverage   </td><td class="markdownTableBodyNone"><a href="https://nitkcrbkn.github.io/pages/develop/coverage/">Coverage Report</a>   </td><td class="markdownTableBodyNone">テストカバレッジレポート    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LOGW   </td><td class="markdownTableBodyNone">warning    </td></tr>
+<td class="markdownTableBodyNone">Test README   </td><td class="markdownTableBodyNone">test/README.md   </td><td class="markdownTableBodyNone">テスト実行方法    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LOGE   </td><td class="markdownTableBodyNone">error   </td></tr>
+<td class="markdownTableBodyNone">stm32flash README   </td><td class="markdownTableBodyNone">stm32-docker-flash/README.md   </td><td class="markdownTableBodyNone">ビルド・書き込みツール詳細   </td></tr>
 </table>
-<p >使用方法: <code>LOG*(const char* format, ...)</code></p>
-<ul>
-<li>printf と同様に C 言語 format が利用可能</li>
-<li>マクロ内で cTag のコンパイル時検証と cformat を実行する</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md60"></a>
-色付きログ</h3>
-<p >パイプ (<code>|</code>) と Color Tag（cTag）で文字色を指定可能。 使用可能な色は <code>log_type.hpp</code> の <code>ASCII_COLORS</code> を参照する。</p>
+<h1><a class="anchor" id="autotoc_md85"></a>
+Usage Guide</h1>
+<p >各モジュールの基本的な使い方を示す。詳細な API 仕様は doxygen を参照のこと。</p>
+<h2><a class="anchor" id="autotoc_md86"></a>
+Include Path</h2>
+<p ><code>modules</code> および <code>lib</code> はビルドシステム（CMake）の include パスに登録されているため、<code>&lt;logic/...&gt;</code> や <code>&lt;CanSystem/...&gt;</code> のように include 可能。 追加の include パスが必要な場合は、対象ターゲットの <code>CMakeLists.txt</code> に <code>target_include_directories()</code> でディレクトリを追加する（例: <code>app/lib/etl/include/</code>）。</p>
+<h2><a class="anchor" id="autotoc_md87"></a>
+Clog (ロギングシステム)</h2>
+<p >printf スタイルのロギングと色付き出力機能を提供する。 パイプ (<code>|</code>) と Color Tag（cTag）で文字色を指定可能。 使用可能な色は <code>log_type.hpp</code> の <code>ASCII_COLORS</code> を参照する。</p>
 <p ><b>使用例:</b></p>
 <div class="fragment"><div class="line"> {c++}</div>
 <div class="line">LOGI(&quot;g|green text| normal text y|yellow|&quot;);</div>
-</div><!-- fragment --><p ><b>バリデーション:</b></p>
-<ul>
-<li>コンパイル時: パイプの偶数個チェック、cTag が 0-1 または a-z かを検証</li>
-<li>ランタイム時: cFormat 後の文字列についてパイプと cTag を検証</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md61"></a>
-STREAM (split screen)</h2>
-<p >複数チャンネルのリアルタイムデータを画面に対して指定行へ固定表示する。通常の LOG と共用可能。</p>
-<h3><a class="anchor" id="autotoc_md62"></a>
-セットアップ</h3>
-<p >起動時に必ず以下を実行する。</p>
-<div class="fragment"><div class="line"> {c++}</div>
-<div class="line">STREAM_SETUP(CH_COUNT);  // config.h の enum LogChannel の CH_COUNT を渡す</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md63"></a>
-データ出力</h3>
-<div class="fragment"><div class="line"> {c++}</div>
 <div class="line">STREAM(CH_index, const char* format, ...);</div>
-</div><!-- fragment --><ul>
-<li>config.h の LogChannel を index で指定する</li>
-<li>C 言語の format が利用可能</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md64"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md88"></a>
 重要な注意点</h3>
 <ul>
 <li><b>接続するたびに再起動すること</b>: 起動時のみ console format ASCII を送信する</li>
 <li><b>割り込み中に printf を使用しない</b>: CAN 送受信を阻害し console format の崩れを引き起こす</li>
 <li><b>F0 マイコンでは使用不可</b>: 32kb の FLASH RAM 制限により lite module を利用すること</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md65"></a>
+<h1><a class="anchor" id="autotoc_md89"></a>
 Architecture</h1>
 <p >システムの設計思想とモジュール開発者向け情報を示す。</p>
-<h2><a class="anchor" id="autotoc_md66"></a>
+<h2><a class="anchor" id="autotoc_md90"></a>
 設計思想</h2>
-<p >STM32System は HAL 依存コードと非依存コードを分離したレイヤーアーキテクチャを採用している。ただし STM32 HAL の特性上、HAL 非依存とは「HAL を直接呼び出さない」ことを意味し、完全な独立性を持つわけではない。</p>
+<p >STM32System は HAL 依存コードと非依存コードを分離したレイヤーアーキテクチャを採用している。ただしヘッダーオンリーであり、STM32 HALの特性上、HAL 非依存とは「HAL を直接呼び出さない」ことを意味し、完全な独立性を持つわけではない。</p>
 <p >システムは 3 つの主要レイヤーで構成される。logic 層はビジネスロジックを担当し HAL 非依存、platform 層は HAL へのアダプタとして機能し HAL 依存、app 層はロボット制御の実装を担い HAL を直接使わず他層を経由する。</p>
-<p ><code>modules</code> フォルダには複数ファイルからなる自作ライブラリ（各 module と呼ぶ）を配置する。CanSystem など HAL 依存が強い module は独立したフォルダを持つ。<code>module/logic/</code> と <code>module/platform/</code> には単一ファイルの小規模ライブラリを依存性に応じて配置する。<code>lib</code> フォルダには HAL 非依存の純粋な外部ライブラリを git submodule として配置する。</p>
-<p >すべてのライブラリは基本的に header only で実装されており、<code>app/appMain.cpp</code> が唯一の非ヘッダーコードである。これにより管理を簡素化し、ArduinoSys との互換性を高めている。</p>
-<h3><a class="anchor" id="autotoc_md67"></a>
+<p ><code>modules</code> フォルダには複数ファイルからなる自作ライブラリ（各 module と呼ぶ）を配置する。CanSystem など HAL 依存が強い module は独立したフォルダを持つ。<code>modules/logic/</code> と <code>modules/platform/</code> には単一ファイルの小規模ライブラリを依存性に応じて配置する。<code>lib</code> フォルダには HAL 非依存の純粋な外部ライブラリを git submodule として配置する。</p>
+<p >すべてのライブラリは基本的に header only で実装されており、各プロジェクトの <code>appMain.cpp</code> が唯一の非ヘッダーコードである。これにより管理を簡素化し、ArduinoSys との互換性を高めている。</p>
+<h3><a class="anchor" id="autotoc_md91"></a>
 フォルダ構造とレイヤーの対応</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">path   </th><th class="markdownTableHeadNone">layer   </th><th class="markdownTableHeadNone">HAL 依存   </th><th class="markdownTableHeadNone">説明    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app/   </td><td class="markdownTableBodyNone">app 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">ロボット制御コード（appMain.cpp 等）    </td></tr>
+<td class="markdownTableBodyNone">examples/&lt;name&gt;/   </td><td class="markdownTableBodyNone">app 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">ロボット制御コード（appMain.cpp 等）    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">app/module/logic/*   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">単一ファイルのビジネスロジックライブラリ    </td></tr>
+<td class="markdownTableBodyNone">modules/logic/*   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">無し   </td><td class="markdownTableBodyNone">単一ファイルのビジネスロジックライブラリ    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app/module/platform/*   </td><td class="markdownTableBodyNone">platform 層   </td><td class="markdownTableBodyNone">有り   </td><td class="markdownTableBodyNone">単一ファイルの HAL アダプタライブラリ    </td></tr>
+<td class="markdownTableBodyNone">modules/platform/*   </td><td class="markdownTableBodyNone">platform 層   </td><td class="markdownTableBodyNone">有り   </td><td class="markdownTableBodyNone">単一ファイルの HAL アダプタライブラリ    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">app/modules/*/   </td><td class="markdownTableBodyNone">（※）   </td><td class="markdownTableBodyNone">混在   </td><td class="markdownTableBodyNone">複数ファイル構成の自作ライブラリ（module）    </td></tr>
+<td class="markdownTableBodyNone">modules/*/   </td><td class="markdownTableBodyNone">（※）   </td><td class="markdownTableBodyNone">混在   </td><td class="markdownTableBodyNone">複数ファイル構成の自作ライブラリ（module）    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">app/lib/   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">完全無し   </td><td class="markdownTableBodyNone">外部ライブラリ（git submodule）   </td></tr>
+<td class="markdownTableBodyNone">lib/   </td><td class="markdownTableBodyNone">logic 層   </td><td class="markdownTableBodyNone">完全無し   </td><td class="markdownTableBodyNone">外部ライブラリ（git submodule）   </td></tr>
 </table>
 <p >※ logic と platform が混在する場合あり</p>
-<h3><a class="anchor" id="autotoc_md68"></a>
+<h3><a class="anchor" id="autotoc_md92"></a>
 レイヤー詳細</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -344,33 +510,33 @@ Architecture</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">platform 層   </td><td class="markdownTableBodyNone">HAL へのアダプタ、ハードウェア抽象化   </td><td class="markdownTableBodyNone">logic 層、HAL に依存可   </td><td class="markdownTableBodyNone">HAL API を直接呼び出す必要がある処理   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md93"></a>
 モジュール開発</h2>
-<h3><a class="anchor" id="autotoc_md70"></a>
+<h3><a class="anchor" id="autotoc_md94"></a>
 用語の定義</h3>
 <ul>
 <li><b>ライブラリ</b>: 再利用可能な機能をまとめたコード集合。単一ファイルまたは複数ファイルで構成される。基本的に header only で実装</li>
-<li><b>modules（フォルダ）</b>: <code>app/modules/</code> ディレクトリ。複数ファイルからなる自作ライブラリを配置</li>
+<li><b>modules（フォルダ）</b>: <code>modules/</code> ディレクトリ。複数ファイルからなる自作ライブラリを配置</li>
 <li><b>module（ライブラリ）</b>: <code>modules/</code> 内の各独立フォルダ（例: CanSystem/）。複数のソースやヘッダーで構成され特定の機能を提供する単位</li>
-<li><b>logic/（フォルダ）</b>: <code>app/module/logic/</code> ディレクトリ。HAL 非依存の単一ファイルライブラリを配置</li>
-<li><b>platform/（フォルダ）</b>: <code>app/module/platform/</code> ディレクトリ。HAL 依存の単一ファイルライブラリを配置</li>
-<li><b>lib/（フォルダ）</b>: <code>app/lib/</code> ディレクトリ。git submodule として管理される外部ライブラリを配置。すべて HAL 非依存</li>
-<li><b>単一ファイルライブラリ</b>: 1 つの .h や .hpp ファイルで完結する小規模ライブラリ。<code>module/logic/</code> または <code>module/platform/</code> に直接配置</li>
+<li><b>logic/（フォルダ）</b>: <code>modules/logic/</code> ディレクトリ。HAL 非依存の単一ファイルライブラリを配置</li>
+<li><b>platform/（フォルダ）</b>: <code>modules/platform/</code> ディレクトリ。HAL 依存の単一ファイルライブラリを配置</li>
+<li><b>lib/（フォルダ）</b>: <code>lib/</code> ディレクトリ。git submodule として管理される外部ライブラリを配置。すべて HAL 非依存</li>
+<li><b>単一ファイルライブラリ</b>: 1 つの .h や .hpp ファイルで完結する小規模ライブラリ。<code>modules/logic/</code> または <code>modules/platform/</code> に直接配置</li>
 <li><b>複数ファイルライブラリ</b>: 複数ソースで構成される中〜大規模ライブラリ。独立したフォルダ（module）として管理</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md71"></a>
+<h3><a class="anchor" id="autotoc_md95"></a>
 新規モジュール追加</h3>
 <ol type="1">
 <li><p class="startli"><b>配置場所の決定</b> 単一ファイルライブラリ:</p><ul>
-<li>HAL 非依存 → <code>app/module/logic/</code></li>
-<li>HAL 依存 → <code>app/module/platform/</code></li>
+<li>HAL 非依存 → <code>modules/logic/</code></li>
+<li>HAL 依存 → <code>modules/platform/</code></li>
 </ul>
 <p class="startli">複数ファイルライブラリ:</p><ul>
-<li>自作ライブラリ → <code>app/modules/&lt;module名&gt;/</code>（独立フォルダとして管理）</li>
-<li>外部ライブラリ → <code>app/lib/&lt;module名&gt;/</code>（git submodule として追加）</li>
+<li>自作ライブラリ → <code>modules/&lt;module名&gt;/</code>（独立フォルダとして管理）</li>
+<li>外部ライブラリ → <code>lib/&lt;module名&gt;/</code>（git submodule として追加）</li>
 </ul>
 </li>
-<li><b>インクルードパスの追加</b> 必要に応じて以下を設定する。 <code>Project -&gt; Properties -&gt; C/C++ build -&gt; setting -&gt; MCU/MPU GCC compiler -&gt; include paths</code> Debug/folder からの相対パスで追加（例: <code>../app/lib/etl/include/</code>）</li>
+<li><b>インクルードパスの追加</b> <code>modules/</code> と <code>lib/</code> は既定で include パスに登録されている。追加が必要な場合は、対象ターゲットの <code>CMakeLists.txt</code> に <code>target_include_directories()</code> でディレクトリを追加する（例: <code>app/lib/etl/include/</code>）。</li>
 <li><p class="startli">**git submodule 管理**（外部ライブラリの場合）</p>
 <div class="fragment"><div class="line">git submodule add &lt;repository-url&gt; app/lib/&lt;module-name&gt;</div>
 <div class="line">cd app/lib/&lt;module-name&gt;</div>
@@ -378,10 +544,10 @@ Architecture</h1>
 <div class="line">git checkout &lt;target branch&gt;</div>
 </div><!-- fragment --></li>
 </ol>
-<h1><a class="anchor" id="autotoc_md72"></a>
+<h1><a class="anchor" id="autotoc_md96"></a>
 Best Practices / Guidelines</h1>
 <p >ライブラリ開発とコード記述における推奨事項をまとめる。</p>
-<h2><a class="anchor" id="autotoc_md73"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 コーディング規約</h2>
 <p ><b>命名規則:</b></p>
 <ul>
@@ -398,7 +564,7 @@ Best Practices / Guidelines</h1>
 </ul>
 <p ><b>インクルードガード:</b></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md74"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md98"></a>
 ライブラリ実装方針</h2>
 <p ><b>Header-only 原則:</b></p>
 <ul>
@@ -429,7 +595,7 @@ Best Practices / Guidelines</h1>
 <li>初期実装: <code>&lt;platform/Callbacks.h&gt;</code> に HAL 提供の weak 関数を記述</li>
 <li>柔軟性が必要な場合: クラス内で自動コールバック登録/検索機能を実装</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md75"></a>
+<h2><a class="anchor" id="autotoc_md99"></a>
 エラー処理</h2>
 <p ><b>戻り値:</b></p>
 <ul>
@@ -446,7 +612,7 @@ Best Practices / Guidelines</h1>
 <li>エラー発生時は必ず <code><a class="el" href="d1/d8c/logger_8h.html#ae08358ff7da64345ad674296a5957823">LOGE()</a></code> でエラー内容を記録する</li>
 <li>デバッグ情報として原因特定に利用する</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md76"></a>
+<h2><a class="anchor" id="autotoc_md100"></a>
 メモリ管理</h2>
 <p ><b>動的確保の禁止:</b></p>
 <ul>
@@ -463,56 +629,18 @@ Best Practices / Guidelines</h1>
 <li>F0 マイコン: ETL（Embedded Template Library）の使用を必須とする</li>
 <li>他マイコン: STL 使用可（将来的に ETL へ移行予定）</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md77"></a>
+<h3><a class="anchor" id="autotoc_md101"></a>
 F0 マイコンの制限</h3>
-<p >F0 マイコンは 32KB の FLASH ROM 制約があるため、通常の <a class="el" href="d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> や Clog ではなく lite module を使用する（詳細は <code>module/lite/README.md</code> を参照）。</p>
+<p >F0 マイコンは 32KB の FLASH ROM 制約があるため、通常の <a class="el" href="d2/dc4/namespaceCanSystem.html" title="元のchecker config:">CanSystem</a> や Clog ではなく lite module を使用する（詳細は <a class="el" href="d7/d2b/md_modules_lite_README.html">modules/lite/README.md</a> を参照）。</p>
 <p >lite module を使用しても機能追加により 32KB に近づくと HardFault エラー（強制停止）が発生する場合がある。F0 マイコンでは STL を避け ETL の使用を推奨する。</p>
-<h2><a class="anchor" id="autotoc_md78"></a>
+<h2><a class="anchor" id="autotoc_md102"></a>
 パフォーマンス</h2>
 <p ><b>割り込み内処理:</b></p>
 <ul>
 <li>処理は最小限に抑える</li>
 <li>メモリ操作や再割り込みを発生させる処理（<code><a class="el" href="d5/d60/utils_8h.html#a7f2dfce1046bdd2a2b753643726c2346">delay()</a></code> など）は強制停止につながる</li>
-<li><code>printf</code> は非推奨</li>
+<li><code>printf</code> は非推奨 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md79"></a>
-詳細実装</h1>
-<h3><a class="anchor" id="autotoc_md80"></a>
-Clog 実装詳細</h3>
-<ul>
-<li>各 project ごとに <code>Logger.hpp</code> を配置し設定と API 提供が行われる</li>
-<li>マクロ API はコンパイル時とランタイム時の二段階で検証を行う</li>
-<li>cTag（Color Tag）により色付きログを実現する</li>
-<li>現状は自由度が高すぎるため今後変更予定</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md81"></a>
-CanSystem 実装詳細</h3>
-<p ><b>インターフェース設計:</b></p>
-<ul>
-<li><code>ICanController</code>: CAN/FDCAN 共通の基本インターフェース</li>
-<li><code>IFdcanMgr</code>: FDCAN 固有機能</li>
-<li><code>ICanMgr</code>: CAN 固有機能</li>
-</ul>
-<p ><b>実装構造:</b></p>
-<ul>
-<li><code><a class="el" href="df/d9b/CanInterfaces_8hpp.html">CanInterfaces.hpp</a></code>: 全関数プロトタイプ</li>
-<li><code>abstract/</code>: 実装コード（命名変更予定）</li>
-<li><code>impl/</code>: profile 定義（CAN 割り込み設定、TxHeader、sFilterConfig）</li>
-</ul>
-<p ><b>デフォルト profile:</b></p>
-<ul>
-<li>CAN: 全 ID パス設定</li>
-<li>FDCAN: 全 ID パス設定</li>
-<li>FDCAN 互換 CAN: 全 ID パス設定</li>
-</ul>
-<p ><b>カスタム profile:</b> 新規作成するか、既存 profile の config を取得・編集・再適用する</p>
-<h3><a class="anchor" id="autotoc_md82"></a>
-ライブラリ内使用</h3>
-<ul>
-<li><code>ICanController&amp;</code>: CAN/FDCAN 共通機能（推奨）</li>
-<li><code>IFdcanMgr&amp;</code> または <code>ICanMgr&amp;</code>: プロトコル固有機能を追加利用可能</li>
-</ul>
-<p ><code>ICanController</code> を使用することで CAN/FDCAN に依存しない汎用ライブラリを実現できる。 </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

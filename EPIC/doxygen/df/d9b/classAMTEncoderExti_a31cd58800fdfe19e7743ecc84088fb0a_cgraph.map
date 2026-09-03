@@ -1,0 +1,12 @@
+<map id="AMTEncoderExti::handleExti" name="AMTEncoderExti::handleExti">
+<area shape="rect" id="node1" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="5,97,188,123"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#ad7a9880f3a6dc1e3a9db9dedcac8cde3" title=" " alt="" coords="246,12,429,37"/>
+<area shape="rect" id="node4" href="$d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="271,72,403,97"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#af6fc3eed2c5862cf14d963cf5ad3db4c" title=" " alt="" coords="236,121,439,147"/>
+<area shape="rect" id="node10" href="$d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="280,171,395,196"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="487,5,697,31"/>
+<area shape="rect" id="node6" href="$db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8" title=" " alt="" coords="497,55,687,95"/>
+<area shape="rect" id="node7" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="496,119,688,159"/>
+<area shape="rect" id="node8" href="$db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d" title=" " alt="" coords="503,183,681,223"/>
+<area shape="rect" id="node9" href="$db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9" title=" " alt="" coords="493,247,691,287"/>
+</map>
