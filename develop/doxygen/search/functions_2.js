@@ -1,7 +1,7 @@
 var searchData=
 [
   ['c_5fstr_0',['c_str',['../de/d83/structFormatStr.html#a300a70e69ebe28fc7ee8b6fd2e31a591',1,'FormatStr']]],
-  ['calculate_1',['calculate',['../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8',1,'MotionMode']]],
+  ['calculate_1',['calculate',['../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8',1,'MotionMode::calculate()'],['../d0/d5c/classAbstractController.html#af6d828d807337414223e0e926eb966a3',1,'AbstractController::calculate()'],['../d8/da9/classPID.html#a5fe5da902fae11bb15d52dbc7f24ec6a',1,'PID::calculate()']]],
   ['calculateposition_2',['calculatePosition',['../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8',1,'MotionController::calculatePosition()'],['../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62',1,'Motion::calculatePosition()']]],
   ['calculatevelocity_3',['calculateVelocity',['../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974',1,'MotionController::calculateVelocity()'],['../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1',1,'Motion::calculateVelocity()']]],
   ['cancelindexcorrection_4',['cancelIndexCorrection',['../db/d69/classAMTEncoderBase.html#ab4d28bd6d3c2b7d271b98a842d3cfa07',1,'AMTEncoderBase']]],
@@ -13,12 +13,12 @@ var searchData=
   ['clamp_10',['clamp',['../d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10',1,'pid_detail']]],
   ['clear_11',['clear',['../dd/d48/classsolenoid__ctrl_1_1SolenoidMaster.html#a039e63b64eede511a9860a2fc8fbc8a3',1,'solenoid_ctrl::SolenoidMaster']]],
   ['clear_5fcallback_12',['clear_callback',['../dd/d1a/classUartManager.html#aae5ea5fa9d1dc58a71aac1291c51a022',1,'UartManager']]],
-  ['clearreceiveoverflow_13',['clearReceiveOverflow',['../d7/db3/classPS5_1_1DualSense.html#af6467b9771534889ed584d1eaf12d906',1,'PS5::DualSense::clearReceiveOverflow()'],['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9ed01136d8205eeccd810c874e57191c',1,'IM920sL::BaseIM920sL::clearReceiveOverflow()']]],
+  ['clearreceiveoverflow_13',['clearReceiveOverflow',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9ed01136d8205eeccd810c874e57191c',1,'IM920sL::BaseIM920sL::clearReceiveOverflow()'],['../d7/db3/classPS5_1_1DualSense.html#af6467b9771534889ed584d1eaf12d906',1,'PS5::DualSense::clearReceiveOverflow()']]],
   ['clearstatistics_14',['clearStatistics',['../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a18fbbffa33ed077b78f38060da0c9932',1,'CanSystem::CanErrorTracker']]],
   ['cleartxhistory_15',['clearTxHistory',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a8b48b801d02ce44802cbd44148e1248a',1,'CanSystem::MockCanProfile']]],
   ['commandreceiver_16',['CommandReceiver',['../d0/d45/classCommandReceiver.html#a40b44377614b2b192555076121644d62',1,'CommandReceiver']]],
   ['constrain_17',['constrain',['../d5/d60/utils_8h.html#af51f77ee2a344560d736adf48c3a0c55',1,'utils.h']]],
-  ['controllercount_18',['controllerCount',['../d7/db3/classPS5_1_1DualSense.html#a18a699fa0cc6dcde505a019b1d512146',1,'PS5::DualSense::controllerCount()'],['../d7/dea/classPS5_1_1ControllerRegistry.html#ae5f4d9b6ccb93c50cfc6d114c9962f6e',1,'PS5::ControllerRegistry::controllerCount() const noexcept']]],
+  ['controllercount_18',['controllerCount',['../d7/dea/classPS5_1_1ControllerRegistry.html#ae5f4d9b6ccb93c50cfc6d114c9962f6e',1,'PS5::ControllerRegistry::controllerCount()'],['../d7/db3/classPS5_1_1DualSense.html#a18a699fa0cc6dcde505a019b1d512146',1,'PS5::DualSense::controllerCount()']]],
   ['controllerregistry_19',['ControllerRegistry',['../d7/dea/classPS5_1_1ControllerRegistry.html#acc1b94458a09023a06b5553ef622f079',1,'PS5::ControllerRegistry::ControllerRegistry()'],['../d2/d9f/namespacePS5.html#aa33b79cee682f6d270275fea0efc1d0e',1,'PS5::ControllerRegistry()']]],
   ['correctionisblocked_20',['correctionIsBlocked',['../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8',1,'AMTEncoderBase']]],
   ['countsperrevolution_21',['countsPerRevolution',['../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b',1,'AMTEncoderBase']]],

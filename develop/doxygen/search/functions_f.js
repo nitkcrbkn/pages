@@ -19,7 +19,7 @@ var searchData=
   ['setconfig_16',['setConfig',['../d6/dca/classCanSystem_1_1ICanController.html#a01b91465b42d2d03caae190f40aaa98f',1,'CanSystem::ICanController::setConfig()'],['../d9/d76/classCanSystem_1_1MockCanProfile.html#ab538700f194452af1e4b32df82e71082',1,'CanSystem::MockCanProfile::setConfig()'],['../d8/da9/classPID.html#aab42cc6fa8947f822354895e352eb98e',1,'PID::setConfig()']]],
   ['setconfigfilter_17',['setConfigFilter',['../d1/d4a/classCanSystem_1_1CanManager.html#a89b04238b33257215ac21a902bffbda7',1,'CanSystem::CanManager']]],
   ['setcurrent_18',['setCurrent',['../d4/d2e/classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556',1,'DJI::ESC']]],
-  ['setcurrentlimit_19',['setCurrentLimit',['../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895',1,'DJI::ESC']]],
+  ['setcurrentlimit_19',['setCurrentLimit',['../d4/d2e/classDJI_1_1ESC.html#af8743d810f2c99d3a937a0a4225514d4',1,'DJI::ESC']]],
   ['setdeviceid_20',['setDeviceID',['../d9/d34/classproto__can_1_1MessageID.html#a3723a47b4d730c476c8598828817ac6a',1,'proto_can::MessageID']]],
   ['setdevicenumber_21',['setDeviceNumber',['../d9/d34/classproto__can_1_1MessageID.html#a931f5a25720a155c474e56a642fe404c',1,'proto_can::MessageID']]],
   ['setdevicetype_22',['setDeviceType',['../d9/d34/classproto__can_1_1MessageID.html#a784e1f88bcba631ebc911f76640b2fe9',1,'proto_can::MessageID::setDeviceType()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#ae014f84485e8e0e184a25813feb3b45f',1,'proto_can::ProtocolHeader::setDeviceType(DeviceType type)']]],

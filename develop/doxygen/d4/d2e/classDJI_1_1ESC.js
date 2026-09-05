@@ -2,7 +2,7 @@ var classDJI_1_1ESC =
 [
     [ "ESC", "d4/d2e/classDJI_1_1ESC.html#a5ee5b147d4e6188e8bce0462698845c6", null ],
     [ "displayDebugInfo", "d4/d2e/classDJI_1_1ESC.html#af488713d799bed458d1cf011303dda31", null ],
-    [ "get", "d4/d2e/classDJI_1_1ESC.html#a43db472f35d4d8838fb54272206dd771", null ],
+    [ "get", "d4/d2e/classDJI_1_1ESC.html#aecb1d5d4bceedba336b09eb4ca136002", null ],
     [ "getConsumed", "d4/d2e/classDJI_1_1ESC.html#ae2f24e855bfcf41f1b49b6976c1a350f", null ],
     [ "getPosition", "d4/d2e/classDJI_1_1ESC.html#aae29a396b71bf9cbf1cb2a659e37f0e8", null ],
     [ "getRequested", "d4/d2e/classDJI_1_1ESC.html#ad0d3f31e18c7f7fa5c7c6964ae1eae36", null ],
@@ -13,7 +13,7 @@ var classDJI_1_1ESC =
     [ "resetZeroPosition", "d4/d2e/classDJI_1_1ESC.html#a28ed2677d59d8e86d5265aaee949308d", null ],
     [ "sendCurrent", "d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689", null ],
     [ "setCurrent", "d4/d2e/classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556", null ],
-    [ "setCurrentLimit", "d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895", null ],
+    [ "setCurrentLimit", "d4/d2e/classDJI_1_1ESC.html#af8743d810f2c99d3a937a0a4225514d4", null ],
     [ "setSafetyFactor", "d4/d2e/classDJI_1_1ESC.html#a9887467af398b47c08e54dcc150e2ac7", null ],
     [ "setTimeout", "d4/d2e/classDJI_1_1ESC.html#aa2d02dda1294dbca760e13bb8da91dbd", null ]
 ];

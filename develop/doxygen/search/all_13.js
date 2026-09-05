@@ -5,7 +5,7 @@ var searchData=
   ['unknown_2',['Unknown',['../d2/dc4/namespaceCanSystem.html#ab5ffcf81f4e20b71b41cd085734d9f31a88183b946cc5f0e8c96b2e66e1c74a7e',1,'CanSystem']]],
   ['unregisterpacketcallback_3',['unregisterPacketCallback',['../d7/dd8/classIM920sL_1_1BaseIM920sL.html#a94d928c60da9a47274cfec563c879b7c',1,'IM920sL::BaseIM920sL']]],
   ['up_4',['UP',['../d6/de5/structPS5_1_1Button.html#a8c44b2ac37e7463bc1a34ba993e89a95',1,'PS5::Button']]],
-  ['update_5',['update',['../d7/dea/classPS5_1_1ControllerRegistry.html#a8f1e7e665562207e705fa8336fa6edf6',1,'PS5::ControllerRegistry::update()'],['../d0/d5c/classAbstractController.html#adf7aff0920897d2d7ce991d380f444c2',1,'AbstractController::update()']]],
+  ['update_5',['update',['../d7/dea/classPS5_1_1ControllerRegistry.html#a8f1e7e665562207e705fa8336fa6edf6',1,'PS5::ControllerRegistry::update()'],['../d0/d5c/classAbstractController.html#aeed6f1f379ed09364e64facec9c4371c',1,'AbstractController::update()']]],
   ['update_5fdip_6',['update_dip',['../dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a62dfbee59be5fd849c13f14ee83b00f0',1,'solenoid_ctrl::SolenoidDevice']]],
   ['update_5fgoal_7',['update_goal',['../d0/d5c/classAbstractController.html#af38b47b909288706b32de4926e8c53fc',1,'AbstractController::update_goal()'],['../d8/da9/classPID.html#a979d54b630e174777f0f52a604615afb',1,'PID::update_goal()']]],
   ['update_5fstate_8',['update_state',['../d0/d5c/classAbstractController.html#ac2edff7b7c20ce8c00af7c85126246af',1,'AbstractController::update_state()'],['../d8/da9/classPID.html#accb56bf322ced6ad4eaf1ca0ec45e212',1,'PID::update_state()']]],

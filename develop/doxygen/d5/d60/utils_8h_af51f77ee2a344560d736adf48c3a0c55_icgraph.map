@@ -2,5 +2,5 @@
 <area shape="rect" id="node1" title=" " alt="" coords="223,55,297,80"/>
 <area shape="rect" id="node2" href="$dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="42,5,138,31"/>
 <area shape="rect" id="node3" href="$d4/d2e/classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556" title="指定したモーター番号のモーターに速度を設定する。" alt="" coords="20,55,160,80"/>
-<area shape="rect" id="node4" href="$d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895" title="電流のソフト上下限(mA)を設定。setCurrent()のクランプに使用。" alt="" coords="5,104,175,129"/>
+<area shape="rect" id="node4" href="$d4/d2e/classDJI_1_1ESC.html#af8743d810f2c99d3a937a0a4225514d4" title="電流のソフト上下限(mA)を設定。setCurrent()のクランプに使用。" alt="" coords="5,104,175,129"/>
 </map>

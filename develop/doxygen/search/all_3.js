@@ -11,7 +11,7 @@ var searchData=
   ['c620_5fmin_5fcurrent_8',['C620_MIN_CURRENT',['../dd/d00/DJI_8h.html#a2c70982fdd9d1eca70b3a683ec747b22',1,'DJI.h']]],
   ['c620_5fscale_5ffactor_9',['C620_SCALE_FACTOR',['../dd/d00/DJI_8h.html#ad29b21606f7d8e21d4a580decefb5aa1',1,'DJI.h']]],
   ['c_5fstr_10',['c_str',['../de/d83/structFormatStr.html#a300a70e69ebe28fc7ee8b6fd2e31a591',1,'FormatStr']]],
-  ['calculate_11',['calculate',['../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8',1,'MotionMode']]],
+  ['calculate_11',['calculate',['../d8/da9/classPID.html#a5fe5da902fae11bb15d52dbc7f24ec6a',1,'PID::calculate()'],['../d0/d5c/classAbstractController.html#af6d828d807337414223e0e926eb966a3',1,'AbstractController::calculate()'],['../df/d66/classMotionMode.html#a60faa8b8ccf2d0ca7d683544ab6fb7a8',1,'MotionMode::calculate()']]],
   ['calculateposition_12',['calculatePosition',['../d1/d3c/classMotion.html#a2ddd42e66702121702c0d40b4dc87f62',1,'Motion::calculatePosition()'],['../d9/d58/classMotionController.html#ac6a4cfe4631a0b307209a95b944e34e8',1,'MotionController::calculatePosition()']]],
   ['calculatevelocity_13',['calculateVelocity',['../d1/d3c/classMotion.html#a2fe3e0826e5028135d08e7fc01c932f1',1,'Motion::calculateVelocity()'],['../d9/d58/classMotionController.html#aa5301b453fc8953e412cd90778e30974',1,'MotionController::calculateVelocity()']]],
   ['callback_14',['CallBack',['../da/db0/namespaceDJI.html#a243fc206fcf72f9e9452fd3a00679014',1,'DJI::CallBack()'],['../da/d22/namespaceIM920sL.html#ae9328138ed0e4f7089428eed9e4402c1',1,'IM920sL::CallBack()']]],

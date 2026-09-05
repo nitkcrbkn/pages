@@ -25,7 +25,7 @@ var searchData=
   ['setconfigfilter_22',['setConfigFilter',['../d1/d4a/classCanSystem_1_1CanManager.html#a89b04238b33257215ac21a902bffbda7',1,'CanSystem::CanManager']]],
   ['setcurrent_23',['setCurrent',['../d4/d2e/classDJI_1_1ESC.html#a40d5586fcd956a45de51dfe6a88dd556',1,'DJI::ESC']]],
   ['setcurrenterror_24',['SetCurrentError',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5cab6809b85aeee44b9074843bdef4b9553',1,'DJI']]],
-  ['setcurrentlimit_25',['setCurrentLimit',['../d4/d2e/classDJI_1_1ESC.html#ad317d76968041b7b2ff8464fc58f7895',1,'DJI::ESC']]],
+  ['setcurrentlimit_25',['setCurrentLimit',['../d4/d2e/classDJI_1_1ESC.html#af8743d810f2c99d3a937a0a4225514d4',1,'DJI::ESC']]],
   ['setdeviceid_26',['setDeviceID',['../d9/d34/classproto__can_1_1MessageID.html#a3723a47b4d730c476c8598828817ac6a',1,'proto_can::MessageID']]],
   ['setdevicenumber_27',['setDeviceNumber',['../d9/d34/classproto__can_1_1MessageID.html#a931f5a25720a155c474e56a642fe404c',1,'proto_can::MessageID']]],
   ['setdevicetype_28',['setDeviceType',['../d9/d34/classproto__can_1_1MessageID.html#a784e1f88bcba631ebc911f76640b2fe9',1,'proto_can::MessageID::setDeviceType()'],['../df/db1/classproto__can_1_1ProtocolHeader.html#ae014f84485e8e0e184a25813feb3b45f',1,'proto_can::ProtocolHeader::setDeviceType(DeviceType type)']]],

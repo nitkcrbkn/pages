@@ -144,7 +144,7 @@ Quick Start</h1>
 <p >利用者は <code>register_cb()</code> で <code>std::function&lt;void(const CANMessage&amp;)&gt;</code> を任意個登録できます。全てのフレームがそれぞれのcbに渡されるためcb上部でcan IDでフィルターします。</p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 エラー検出・自動復旧</h2>
-<p ><code>check_is_error()</code> でバスエラー状態を確認できます。自動復旧（Bus-Off等からの再起動）は <code>new_state_print()</code>（状態表示用、統計出力のみを行う）からは呼ばれないため、復旧させたい場合はmain loop等から <code>restart_handler()</code> を明示的に周期呼び出ししてください。<code>restart_handler()</code> は内部で <code>RETRY_AFTER</code> 間隔を空けてから <code>check_is_error()</code> を確認し、エラーなら <code>restart()</code>（FDCANは失敗時さらに <code>force_restart()</code>）を実行します。</p>
+<p ><code>check_is_error()</code> でバスエラー状態を確認できます。自動復旧（Bus-Off等からの再起動）は <code>new_state_print()</code>（状態表示用、統計出力のみを行う）からは呼ばれないため、復旧させたい場合はmain loop等から <code>restart_handler()</code> を明示的に周期呼び出ししてください。<code>restart_handler()</code> は内部で <code>CAN_RESTART_INTERVAL_MS</code> 間隔を空けてから <code>check_is_error()</code> を確認し、エラーなら <code>restart()</code>（FDCANは失敗時さらに <code>force_restart()</code>）を実行します。</p>
 <p ><code>NO_CAN_TRACKER</code> を定義すると、<code>CanManager</code>（Classic CAN）は <code>CanErrorTracker</code>（ID統計・文字列整形込みの重いトラッカー）を使わず、HALレジスタ（<code>ESR</code>）を直接読む軽量な <code>check_is_error()</code> に切り替わります（Flash/RAM制約の厳しいターゲット向け）。<code>NO_CAN_TRACKER</code> 時は <code>new_state_print()</code>（統計表示）自体が存在しなくなりますが、<code>check_is_error()</code>/<code>restart_handler()</code> は引き続き使えます。**<code>NO_CAN_TRACKER</code> は FDCAN（<code>FdCanManager</code>）と併用できません**（<code>USE_FDCAN</code> と同時定義するとコンパイルエラーになります）。</p>
 <h1><a class="anchor" id="autotoc_md9"></a>
 詳細設計</h1>
