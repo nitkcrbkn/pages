@@ -831,13 +831,13 @@ $(document).ready(function(){initNavTree('dd/d1a/classUartManager.html','../../'
 </div><div class="memdoc">
 
 <p>フォーマットなしで文字列をそのまま送信します。 </p>
-<dl class="params"><dt>引数</dt><dd>
+<p >uint16_tを超える長さの文字列は拒否します </p><dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>送信文字列 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>int </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>int 送信できたバイト数、失敗時は-1 </dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">

@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('d1/d4a/classCanSystem_1_1CanManager.ht
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#pub-methods">公開メンバ関数</a> &#124;
 <a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
 <a href="#pro-attribs">限定公開変数類</a> &#124;
 <a href="../../d6/d5f/classCanSystem_1_1CanManager-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">CanSystem::CanManager クラス</div></div>
@@ -148,12 +149,6 @@ CanSystem::CanManager 連携図</div>
 <tr class="separator:aa0ef03d5959e21153acb82ac302b3d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe49b4c5ffadcabcbd958b2df04a91ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/de5/structCanSystem_1_1ValidSizes.html">ValidSizes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#afe49b4c5ffadcabcbd958b2df04a91ff">getValidSizes</a> () const override</td></tr>
 <tr class="separator:afe49b4c5ffadcabcbd958b2df04a91ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6cd2f1dcebdf1ac54ff454f5071c7cf"><td class="memItemLeft" align="right" valign="top">CAN_TxHeaderTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ae6cd2f1dcebdf1ac54ff454f5071c7cf">getCanTxHeader</a> (void) override</td></tr>
-<tr class="separator:ae6cd2f1dcebdf1ac54ff454f5071c7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba58f13515397217b181cfac9023b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a1ba58f13515397217b181cfac9023b00">setTxHeader</a> (CAN_TxHeaderTypeDef txHeader) override</td></tr>
-<tr class="separator:a1ba58f13515397217b181cfac9023b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb4788525dbadeae56c7b00ea65016f"><td class="memItemLeft" align="right" valign="top">CAN_FilterTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#adbb4788525dbadeae56c7b00ea65016f">getCanFilterConfig</a> (void) override</td></tr>
-<tr class="separator:adbb4788525dbadeae56c7b00ea65016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b04238b33257215ac21a902bffbda7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a89b04238b33257215ac21a902bffbda7">setConfigFilter</a> (CAN_FilterTypeDef filterConfig) override</td></tr>
 <tr class="separator:a89b04238b33257215ac21a902bffbda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bd0dde9eb0d5a9833e64d15f067d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a85bd0dde9eb0d5a9833e64d15f067d04">register_cb</a> (<a class="el" href="../../d2/dc4/namespaceCanSystem.html#aa552fbb0626292312e4f0baa32f304f5">FnCallBack</a> cb) override</td></tr>
@@ -166,8 +161,6 @@ CanSystem::CanManager 連携図</div>
 <tr class="memitem:ab52d8a313660ed401fad419927967fba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba">send</a> (uint32_t id, uint8_t *data, uint32_t size=8) override</td></tr>
 <tr class="memdesc:ab52d8a313660ed401fad419927967fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">送信する   <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba">[詳解]</a><br /></td></tr>
 <tr class="separator:ab52d8a313660ed401fad419927967fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cace8f8fa2164322602bf36ea968ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff">sendFrame</a> (CAN_TxHeaderTypeDef *txHeader, uint8_t *txData) override</td></tr>
-<tr class="separator:a42cace8f8fa2164322602bf36ea968ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc7c2d4cb7e1830fcbb7bf97a08d0fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe">check_is_error</a> ()</td></tr>
 <tr class="memdesc:a0cc7c2d4cb7e1830fcbb7bf97a08d0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">error発生時にrestartするかを決める。  <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe">[詳解]</a><br /></td></tr>
 <tr class="separator:a0cc7c2d4cb7e1830fcbb7bf97a08d0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +175,12 @@ CanSystem::CanManager 連携図</div>
 静的公開変数類</h2></td></tr>
 <tr class="memitem:a429b7e3f66cc05a59c3a79575708958a"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a429b7e3f66cc05a59c3a79575708958a">kCanValidSizes</a> [8] = {1, 2, 3, 4, 5, 6, 7, 8}</td></tr>
 <tr class="separator:a429b7e3f66cc05a59c3a79575708958a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:afb7fe3d70c341ac94e5e65121f4be815"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#afb7fe3d70c341ac94e5e65121f4be815">sendFrame</a> (CAN_TxHeaderTypeDef *txHeader, uint8_t *txData)</td></tr>
+<tr class="memdesc:afb7fe3d70c341ac94e5e65121f4be815"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘッダを直接指定して送信する  <a href="../../d1/d4a/classCanSystem_1_1CanManager.html#afb7fe3d70c341ac94e5e65121f4be815">[詳解]</a><br /></td></tr>
+<tr class="separator:afb7fe3d70c341ac94e5e65121f4be815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 限定公開変数類</h2></td></tr>
@@ -310,8 +309,9 @@ false 正常状態 </dd></dl>
 <div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_a0cc7c2d4cb7e1830fcbb7bf97a08d0fe_cgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_a0cc7c2d4cb7e1830fcbb7bf97a08d0fe_cgraph" alt=""/></div>
 <map name="ad1/d4a/classCanSystem_1_1CanManager_a0cc7c2d4cb7e1830fcbb7bf97a08d0fe_cgraph" id="ad1/d4a/classCanSystem_1_1CanManager_a0cc7c2d4cb7e1830fcbb7bf97a08d0fe_cgraph">
 <area shape="rect" title="error発生時にrestartするかを決める。" alt="" coords="5,69,173,109"/>
-<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="221,40,411,80"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="221,12,411,52"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="459,69,620,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="221,127,411,167"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="675,5,836,45"/>
 <area shape="rect" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="668,69,843,109"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="675,133,836,173"/>
@@ -327,58 +327,6 @@ false 正常状態 </dd></dl>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03" title="エラー時の自動復旧トリガー" alt="" coords="5,5,173,45"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="adbb4788525dbadeae56c7b00ea65016f" name="adbb4788525dbadeae56c7b00ea65016f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbb4788525dbadeae56c7b00ea65016f">&#9670;&#160;</a></span>getCanFilterConfig()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">CAN_FilterTypeDef CanSystem::CanManager::getCanFilterConfig </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6cd2f1dcebdf1ac54ff454f5071c7cf" name="ae6cd2f1dcebdf1ac54ff454f5071c7cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6cd2f1dcebdf1ac54ff454f5071c7cf">&#9670;&#160;</a></span>getCanTxHeader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">CAN_TxHeaderTypeDef CanSystem::CanManager::getCanTxHeader </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -759,19 +707,19 @@ false 再起動失敗 </dd></dl>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_ae5b1649331355f4410c1540b33e50e03_cgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_ae5b1649331355f4410c1540b33e50e03_cgraph" alt=""/></div>
 <map name="ad1/d4a/classCanSystem_1_1CanManager_ae5b1649331355f4410c1540b33e50e03_cgraph" id="ad1/d4a/classCanSystem_1_1CanManager_ae5b1649331355f4410c1540b33e50e03_cgraph">
-<area shape="rect" title="エラー時の自動復旧トリガー" alt="" coords="5,96,173,136"/>
-<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe" title="error発生時にrestartするかを決める。" alt="" coords="437,45,605,85"/>
-<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="279,103,331,129"/>
-<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="canStopしてからinitする。" alt="" coords="221,153,389,193"/>
+<area shape="rect" title="エラー時の自動復旧トリガー" alt="" coords="5,121,173,161"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe" title="error発生時にrestartするかを決める。" alt="" coords="437,71,605,111"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="279,129,331,154"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="canStopしてからinitする。" alt="" coords="221,179,389,219"/>
 <area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27" title=" " alt="" coords="653,13,843,53"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4" title=" " alt="" coords="905,69,1067,109"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="653,128,843,168"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f" title=" " alt="" coords="1136,5,1297,45"/>
 <area shape="rect" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html#a44ce40a29e398ed7476c0cf667c8912f" title=" " alt="" coords="1129,69,1304,109"/>
 <area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b" title=" " alt="" coords="1136,133,1297,173"/>
 <area shape="rect" href="../../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08" title=" " alt="" coords="1352,133,1527,173"/>
-<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="437,153,605,193"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="437,179,605,219"/>
 <area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a83b21c062dd3d0b49312ccc4d3955853" title=" " alt="" coords="653,193,843,233"/>
-<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="653,128,843,168"/>
 <area shape="rect" href="../../de/da9/structCanSystem_1_1TimingConfig.html#abd30d5d1b68657efcdd9c0a33531ce8b" title=" " alt="" coords="901,139,1071,179"/>
 <area shape="rect" href="../../de/da9/structCanSystem_1_1TimingConfig.html#a5f7eaf231181aedbe85f9556cda4cf42" title=" " alt="" coords="1131,197,1302,237"/>
 <area shape="rect" href="../../de/da9/structCanSystem_1_1TimingConfig.html#a9058d934691285421b11be390678f68a" title=" " alt="" coords="891,253,1081,293"/>
@@ -832,14 +780,14 @@ false 再起動失敗 </dd></dl>
 <dl class="section return"><dt>戻り値</dt><dd>true 送信成功 </dd>
 <dd>
 false 送信失敗 </dd></dl>
-<p>TxHeader.StdId / DLC を書き換えてから <a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff">sendFrame()</a> を呼ぶ。size は 1〜8 バイトのみ対応。 </p>
+<p>TxHeader.StdId / DLC を書き換えてから <a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#afb7fe3d70c341ac94e5e65121f4be815" title="ヘッダを直接指定して送信する">sendFrame()</a> を呼ぶ。size は 1〜8 バイトのみ対応。 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_ab52d8a313660ed401fad419927967fba_cgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_ab52d8a313660ed401fad419927967fba_cgraph" alt=""/></div>
 <map name="ad1/d4a/classCanSystem_1_1CanManager_ab52d8a313660ed401fad419927967fba_cgraph" id="ad1/d4a/classCanSystem_1_1CanManager_ab52d8a313660ed401fad419927967fba_cgraph">
 <area shape="rect" title="送信する" alt="" coords="5,35,173,75"/>
-<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff" title=" " alt="" coords="221,35,389,75"/>
+<area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#afb7fe3d70c341ac94e5e65121f4be815" title="ヘッダを直接指定して送信する" alt="" coords="221,35,389,75"/>
 <area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae43499956d51725021b59f53a54b2054" title=" " alt="" coords="437,5,627,45"/>
 <area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="506,70,558,95"/>
 </map>
@@ -847,8 +795,8 @@ false 送信失敗 </dd></dl>
 
 </div>
 </div>
-<a id="a42cace8f8fa2164322602bf36ea968ff" name="a42cace8f8fa2164322602bf36ea968ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42cace8f8fa2164322602bf36ea968ff">&#9670;&#160;</a></span>sendFrame()</h2>
+<a id="afb7fe3d70c341ac94e5e65121f4be815" name="afb7fe3d70c341ac94e5e65121f4be815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb7fe3d70c341ac94e5e65121f4be815">&#9670;&#160;</a></span>sendFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -876,18 +824,19 @@ false 送信失敗 </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>ヘッダを直接指定して送信する </p>
+<p ><a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba" title="送信する">send()</a>内部専用。sizeの妥当性はsendFrame()で検証済みである </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_cgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_cgraph" alt=""/></div>
-<map name="ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_cgraph" id="ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,173,75"/>
+<div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_cgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_cgraph" alt=""/></div>
+<map name="ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_cgraph" id="ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_cgraph">
+<area shape="rect" title="ヘッダを直接指定して送信する" alt="" coords="5,35,173,75"/>
 <area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae43499956d51725021b59f53a54b2054" title=" " alt="" coords="221,5,411,45"/>
 <area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="290,70,342,95"/>
 </map>
@@ -895,9 +844,9 @@ false 送信失敗 </dd></dl>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_icgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_icgraph" alt=""/></div>
-<map name="ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_icgraph" id="ad1/d4a/classCanSystem_1_1CanManager_a42cace8f8fa2164322602bf36ea968ff_icgraph">
-<area shape="rect" title=" " alt="" coords="221,5,389,45"/>
+<div class="center"><img src="../../d1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_icgraph.png" border="0" usemap="#ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_icgraph" alt=""/></div>
+<map name="ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_icgraph" id="ad1/d4a/classCanSystem_1_1CanManager_afb7fe3d70c341ac94e5e65121f4be815_icgraph">
+<area shape="rect" title="ヘッダを直接指定して送信する" alt="" coords="221,5,389,45"/>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba" title="送信する" alt="" coords="5,5,173,45"/>
 </map>
 </div>
@@ -947,32 +896,6 @@ false 送信失敗 </dd></dl>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>fifoid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1ba58f13515397217b181cfac9023b00" name="a1ba58f13515397217b181cfac9023b00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba58f13515397217b181cfac9023b00">&#9670;&#160;</a></span>setTxHeader()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CanSystem::CanManager::setTxHeader </td>
-          <td>(</td>
-          <td class="paramtype">CAN_TxHeaderTypeDef&#160;</td>
-          <td class="paramname"><em>txHeader</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

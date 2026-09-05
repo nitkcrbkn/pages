@@ -1,4 +1,5 @@
 <map id="CanSystem::MockCanProfile::send" name="CanSystem::MockCanProfile::send">
-<area shape="rect" id="node1" title="データ送信" alt="" coords="5,5,192,45"/>
-<area shape="rect" id="node2" href="$d9/d76/classCanSystem_1_1MockCanProfile.html#a5924520b103943279dc972adaa6f1796" title="登録済みコールバックを全て呼び出す" alt="" coords="240,5,427,45"/>
+<area shape="rect" id="node1" title="データ送信" alt="" coords="5,37,192,77"/>
+<area shape="rect" id="node2" href="$d9/d76/classCanSystem_1_1MockCanProfile.html#a47c97485b9c49c6785514f7778887971" title="send()で使用可能なデータサイズ一覧を取得する" alt="" coords="240,5,427,45"/>
+<area shape="rect" id="node3" href="$d9/d76/classCanSystem_1_1MockCanProfile.html#a405c0b5625e22b099d72f5879e1ac565" title="登録済みコールバックを全て呼び出す" alt="" coords="240,69,427,109"/>
 </map>

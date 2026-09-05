@@ -11,7 +11,7 @@
 <area shape="rect" id="node11" href="$dc/d22/classstdr_1_1PID.html#a44884cd03a2a9a68e58d5cef61e35854" title=" " alt="" coords="269,476,365,501"/>
 <area shape="rect" id="node12" href="$dd/d8e/classsolenoid__ctrl_1_1SolenoidDevice.html#a981dc57820e261be95013fd0e4d16716" title="メインループから毎サイクル呼ぶ。 send_rate_ms 経過していれば現在のGPIO状態を送信する。" alt="" coords="221,526,412,566"/>
 <area shape="rect" id="node13" href="$d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="241,591,392,616"/>
-<area shape="rect" id="node14" href="$d1/d4a/classCanSystem_1_1CanManager.html#a42cace8f8fa2164322602bf36ea968ff" title=" " alt="" coords="233,641,401,681"/>
+<area shape="rect" id="node14" href="$d1/d4a/classCanSystem_1_1CanManager.html#afb7fe3d70c341ac94e5e65121f4be815" title="ヘッダを直接指定して送信する" alt="" coords="233,641,401,681"/>
 <area shape="rect" id="node4" href="$d0/dc3/classTelemSender.html#a37ae8f5165db6c4f0c2ec4772a545737" title="ログ文字列を format + send する" alt="" coords="11,55,168,80"/>
 <area shape="rect" id="node15" href="$d1/d4a/classCanSystem_1_1CanManager.html#ab52d8a313660ed401fad419927967fba" title="送信する" alt="" coords="5,641,173,681"/>
 </map>

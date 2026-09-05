@@ -1,7 +1,8 @@
 <map id="CanSystem::CanErrorTracker::updateStatus" name="CanSystem::CanErrorTracker::updateStatus">
-<area shape="rect" id="node1" title=" " alt="" coords="653,37,843,77"/>
-<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="437,5,605,45"/>
-<area shape="rect" id="node5" href="$d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title="状態表示を更新する" alt="" coords="437,69,605,109"/>
-<area shape="rect" id="node3" href="$d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="canStopしてからinitする。" alt="" coords="221,5,389,45"/>
-<area shape="rect" id="node4" href="$d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03" title="エラー時の自動復旧トリガー" alt="" coords="5,5,173,45"/>
+<area shape="rect" id="node1" title=" " alt="" coords="653,67,843,107"/>
+<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe" title="error発生時にrestartするかを決める。" alt="" coords="221,5,389,45"/>
+<area shape="rect" id="node4" href="$d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="437,67,605,107"/>
+<area shape="rect" id="node6" href="$d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title="状態表示を更新する" alt="" coords="437,131,605,171"/>
+<area shape="rect" id="node3" href="$d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03" title="エラー時の自動復旧トリガー" alt="" coords="5,37,173,77"/>
+<area shape="rect" id="node5" href="$d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="canStopしてからinitする。" alt="" coords="221,69,389,109"/>
 </map>
