@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-08-29 05:21:18</td>
+            <td class="headerValue">2026-09-05 01:08:34</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryLo">72.0&nbsp;%</td>
@@ -206,9 +206,9 @@
 <span id="L128"><span class="lineNum">     128</span>                 :             :      * @brief 制御演算を実行し、制御値を返す</span>
 <span id="L129"><span class="lineNum">     129</span>                 :             :      * @return 出力値(OutputType)</span>
 <span id="L130"><span class="lineNum">     130</span>                 :             :      */</span>
-<span id="L131"><span class="lineNum">     131</span>                 :<span class="tlaGNC">        1100 :     OutputType tick() override {</span></span>
+<span id="L131"><span class="lineNum">     131</span>                 :<span class="tlaGNC">        1100 :     OutputType calculate() override {</span></span>
 <span id="L132"><span class="lineNum">     132</span>                 :<span class="tlaGNC">        1100 :         const float dt = updateDt();</span></span>
-<span id="L133"><span class="lineNum">     133</span>   [<span class="tlaGBC" title="Branch 0 was taken 1100 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 60 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1040 times"> + </span>]:<span class="tlaGNC">        1100 :         const bool validDt = std::isfinite(dt) &amp;&amp; (dt &gt; 0.0f);</span></span>
+<span id="L133"><span class="lineNum">     133</span>   [<span class="tlaGBC" title="Branch 0 was taken 1100 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 62 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1038 times"> + </span>]:<span class="tlaGNC">        1100 :         const bool validDt = std::isfinite(dt) &amp;&amp; (dt &gt; 0.0f);</span></span>
 <span id="L134"><span class="lineNum">     134</span>                 :             : </span>
 <span id="L135"><span class="lineNum">     135</span>                 :<span class="tlaGNC">        1100 :         const float err = computeError();</span></span>
 <span id="L136"><span class="lineNum">     136</span>                 :             : </span>
@@ -288,11 +288,11 @@
 <span id="L210"><span class="lineNum">     210</span>                 :             : </span>
 <span id="L211"><span class="lineNum">     211</span>                 :             :     /** @brief D項(フィードバックベース微分)を計算する。初回/無効dt時は0 */</span>
 <span id="L212"><span class="lineNum">     212</span>                 :<span class="tlaGNC">        1100 :     float computeDerivative(bool validDt, float dt) const noexcept {</span></span>
-<span id="L213"><span class="lineNum">     213</span>   [<span class="tlaGBC" title="Branch 0 was taken 60 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1040 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 32 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 28 times"> + </span>]:<span class="tlaGNC">        1100 :         if(!validDt || !_hasLastFeedback) {</span></span>
-<span id="L214"><span class="lineNum">     214</span>                 :<span class="tlaGNC">        1072 :             return 0.0f;</span></span>
+<span id="L213"><span class="lineNum">     213</span>   [<span class="tlaGBC" title="Branch 0 was taken 62 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1038 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 32 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 30 times"> + </span>]:<span class="tlaGNC">        1100 :         if(!validDt || !_hasLastFeedback) {</span></span>
+<span id="L214"><span class="lineNum">     214</span>                 :<span class="tlaGNC">        1070 :             return 0.0f;</span></span>
 <span id="L215"><span class="lineNum">     215</span>                 :             :         }</span>
-<span id="L216"><span class="lineNum">     216</span>                 :<span class="tlaGNC">          28 :         return -_pidProfile.pidGain.dGain * (_feedback - _state.lastFeedback) /</span></span>
-<span id="L217"><span class="lineNum">     217</span>                 :<span class="tlaGNC">          28 :                dt;</span></span>
+<span id="L216"><span class="lineNum">     216</span>                 :<span class="tlaGNC">          30 :         return -_pidProfile.pidGain.dGain * (_feedback - _state.lastFeedback) /</span></span>
+<span id="L217"><span class="lineNum">     217</span>                 :<span class="tlaGNC">          30 :                dt;</span></span>
 <span id="L218"><span class="lineNum">     218</span>                 :             :     }</span>
 <span id="L219"><span class="lineNum">     219</span>                 :             : </span>
 <span id="L220"><span class="lineNum">     220</span>                 :             :     /**</span>

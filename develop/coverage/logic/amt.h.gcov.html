@@ -32,12 +32,12 @@
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntryHi">96.2&nbsp;%</td>
-            <td class="headerCovTableEntry">264</td>
-            <td class="headerCovTableEntry">254</td>
+            <td class="headerCovTableEntry">263</td>
+            <td class="headerCovTableEntry">253</td>
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-08-29 05:21:18</td>
+            <td class="headerValue">2026-09-05 01:08:34</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
@@ -103,275 +103,275 @@
 <span id="L25"><span class="lineNum">      25</span>                 :<span class="tlaGNC tlaBgGNC">          25 :     void refreshRawCount() override {}</span></span>
 <span id="L26"><span class="lineNum">      26</span>                 :<span class="tlaGNC">          42 :     void resetBackend() override {</span></span>
 <span id="L27"><span class="lineNum">      27</span>         [<span class="tlaGBC" title="Branch 0 was taken 6 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 36 times"> + </span>]:<span class="tlaGNC">          42 :         if(initialized_)</span></span>
-<span id="L28"><span class="lineNum">      28</span>                 :<span class="tlaGNC">           6 :             previous_ab_ = static_cast&lt;uint8_t&gt;(</span></span>
-<span id="L29"><span class="lineNum">      29</span>   [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 6 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span>]:<span class="tlaGNC">          12 :                 (gpio_.read(PIN_A) ? 2U : 0U) |</span></span>
-<span id="L30"><span class="lineNum">      30</span>                 :<span class="tlaGNC">           6 :                 (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
-<span id="L31"><span class="lineNum">      31</span>                 :<span class="tlaGNC">          42 :         x_count_ = a_count_ = b_count_ = 0;</span></span>
-<span id="L32"><span class="lineNum">      32</span>                 :<span class="tlaGNC">          42 :     }</span></span>
-<span id="L33"><span class="lineNum">      33</span>                 :             : </span>
-<span id="L34"><span class="lineNum">      34</span>                 :             : public:</span>
-<span id="L35"><span class="lineNum">      35</span>                 :             :     static constexpr int PIN_X = 0;</span>
-<span id="L36"><span class="lineNum">      36</span>                 :             :     static constexpr int PIN_A = 1;</span>
-<span id="L37"><span class="lineNum">      37</span>                 :             :     static constexpr int PIN_B = 2;</span>
-<span id="L38"><span class="lineNum">      38</span>                 :             : </span>
-<span id="L39"><span class="lineNum">      39</span>                 :             :     /**</span>
-<span id="L40"><span class="lineNum">      40</span>                 :             :      * @brief EXTI backendを構築する。ハードウェアはまだ読まない。</span>
-<span id="L41"><span class="lineNum">      41</span>                 :             :      * @param gpio X, A, Bの順で登録済みのGPIO manager。</span>
-<span id="L42"><span class="lineNum">      42</span>                 :             :      * @param ppr 1回転当たりのパルス数。</span>
-<span id="L43"><span class="lineNum">      43</span>                 :             :      */</span>
-<span id="L44"><span class="lineNum">      44</span>                 :<span class="tlaGNC">          39 :     explicit AMTEncoderExti(GPIO_Mgr&lt;3&gt;&amp; gpio, uint16_t ppr)</span></span>
-<span id="L45"><span class="lineNum">      45</span>                 :<span class="tlaGNC">          39 :         : AMTEncoderBase(ppr), gpio_(gpio), previous_ab_(0) {}</span></span>
-<span id="L46"><span class="lineNum">      46</span>                 :             : </span>
-<span id="L47"><span class="lineNum">      47</span>                 :             :     AMTEncoderExti(const AMTEncoderExti&amp;) = delete;</span>
-<span id="L48"><span class="lineNum">      48</span>                 :             :     AMTEncoderExti&amp; operator=(const AMTEncoderExti&amp;) = delete;</span>
-<span id="L49"><span class="lineNum">      49</span>                 :             :     AMTEncoderExti(AMTEncoderExti&amp;&amp;) = delete;</span>
-<span id="L50"><span class="lineNum">      50</span>                 :             :     AMTEncoderExti&amp; operator=(AMTEncoderExti&amp;&amp;) = delete;</span>
-<span id="L51"><span class="lineNum">      51</span>                 :             : </span>
-<span id="L52"><span class="lineNum">      52</span>                 :             :     /**</span>
-<span id="L53"><span class="lineNum">      53</span>                 :             :      * @brief 初期A/B状態を同期する。</span>
-<span id="L54"><span class="lineNum">      54</span>                 :             :      * @return 初期化に成功した場合true。</span>
-<span id="L55"><span class="lineNum">      55</span>                 :             :      */</span>
-<span id="L56"><span class="lineNum">      56</span>                 :<span class="tlaGNC">          39 :     bool begin() {</span></span>
-<span id="L57"><span class="lineNum">      57</span>                 :<span class="tlaGNC">          39 :         const uint16_t x = gpio_.get_pin(PIN_X);</span></span>
-<span id="L58"><span class="lineNum">      58</span>                 :<span class="tlaGNC">          39 :         const uint16_t a = gpio_.get_pin(PIN_A);</span></span>
-<span id="L59"><span class="lineNum">      59</span>                 :<span class="tlaGNC">          39 :         const uint16_t b = gpio_.get_pin(PIN_B);</span></span>
-<span id="L60"><span class="lineNum">      60</span>   [<span class="tlaGBC" title="Branch 0 was taken 39 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 38 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          77 :         if(initialized_ || ppr_ == 0U || gpio_.get_port(PIN_X) == nullptr ||</span></span>
+<span id="L28"><span class="lineNum">      28</span>   [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 6 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span>]:<span class="tlaGNC">          12 :             previous_ab_ = static_cast&lt;uint8_t&gt;((gpio_.read(PIN_A) ? 2U : 0U) |</span></span>
+<span id="L29"><span class="lineNum">      29</span>                 :<span class="tlaGNC">           6 :                                                 (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
+<span id="L30"><span class="lineNum">      30</span>                 :<span class="tlaGNC">          42 :         x_count_ = a_count_ = b_count_ = 0;</span></span>
+<span id="L31"><span class="lineNum">      31</span>                 :<span class="tlaGNC">          42 :     }</span></span>
+<span id="L32"><span class="lineNum">      32</span>                 :             : </span>
+<span id="L33"><span class="lineNum">      33</span>                 :             : public:</span>
+<span id="L34"><span class="lineNum">      34</span>                 :             :     static constexpr int PIN_X = 0;</span>
+<span id="L35"><span class="lineNum">      35</span>                 :             :     static constexpr int PIN_A = 1;</span>
+<span id="L36"><span class="lineNum">      36</span>                 :             :     static constexpr int PIN_B = 2;</span>
+<span id="L37"><span class="lineNum">      37</span>                 :             : </span>
+<span id="L38"><span class="lineNum">      38</span>                 :             :     /**</span>
+<span id="L39"><span class="lineNum">      39</span>                 :             :      * @brief EXTI backendを構築する。ハードウェアはまだ読まない。</span>
+<span id="L40"><span class="lineNum">      40</span>                 :             :      * @param gpio X, A, Bの順で登録済みのGPIO manager。</span>
+<span id="L41"><span class="lineNum">      41</span>                 :             :      * @param ppr 1回転当たりのパルス数。</span>
+<span id="L42"><span class="lineNum">      42</span>                 :             :      */</span>
+<span id="L43"><span class="lineNum">      43</span>                 :<span class="tlaGNC">          39 :     explicit AMTEncoderExti(GPIO_Mgr&lt;3&gt;&amp; gpio, uint16_t ppr)</span></span>
+<span id="L44"><span class="lineNum">      44</span>                 :<span class="tlaGNC">          39 :         : AMTEncoderBase(ppr), gpio_(gpio), previous_ab_(0) {}</span></span>
+<span id="L45"><span class="lineNum">      45</span>                 :             : </span>
+<span id="L46"><span class="lineNum">      46</span>                 :             :     AMTEncoderExti(const AMTEncoderExti&amp;) = delete;</span>
+<span id="L47"><span class="lineNum">      47</span>                 :             :     AMTEncoderExti&amp; operator=(const AMTEncoderExti&amp;) = delete;</span>
+<span id="L48"><span class="lineNum">      48</span>                 :             :     AMTEncoderExti(AMTEncoderExti&amp;&amp;) = delete;</span>
+<span id="L49"><span class="lineNum">      49</span>                 :             :     AMTEncoderExti&amp; operator=(AMTEncoderExti&amp;&amp;) = delete;</span>
+<span id="L50"><span class="lineNum">      50</span>                 :             : </span>
+<span id="L51"><span class="lineNum">      51</span>                 :             :     /**</span>
+<span id="L52"><span class="lineNum">      52</span>                 :             :      * @brief 初期A/B状態を同期する。</span>
+<span id="L53"><span class="lineNum">      53</span>                 :             :      * @return 初期化に成功した場合true。</span>
+<span id="L54"><span class="lineNum">      54</span>                 :             :      */</span>
+<span id="L55"><span class="lineNum">      55</span>                 :<span class="tlaGNC">          39 :     bool begin() {</span></span>
+<span id="L56"><span class="lineNum">      56</span>                 :<span class="tlaGNC">          39 :         const uint16_t x = gpio_.get_pin(PIN_X);</span></span>
+<span id="L57"><span class="lineNum">      57</span>                 :<span class="tlaGNC">          39 :         const uint16_t a = gpio_.get_pin(PIN_A);</span></span>
+<span id="L58"><span class="lineNum">      58</span>                 :<span class="tlaGNC">          39 :         const uint16_t b = gpio_.get_pin(PIN_B);</span></span>
+<span id="L59"><span class="lineNum">      59</span>   [<span class="tlaGBC" title="Branch 0 was taken 39 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 38 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          77 :         if(initialized_ || ppr_ == 0U || gpio_.get_port(PIN_X) == nullptr ||</span></span>
 <span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 38 times"> + </span><span class="tlaUNC" title="Branch 5 was not taken"> - </span>]
-<span id="L61"><span class="lineNum">      61</span>         [<span class="tlaGBC" title="Branch 0 was taken 38 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          76 :            gpio_.get_port(PIN_A) == nullptr || gpio_.get_port(PIN_B) == nullptr ||</span></span>
-<span id="L62"><span class="lineNum">      62</span>         [<span class="tlaGBC" title="Branch 0 was taken 36 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">          38 :            !validExtiPin(x) ||</span></span>
-<span id="L63"><span class="lineNum">      63</span>   [<span class="tlaGBC" title="Branch 0 was taken 39 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 36 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">          78 :            !validExtiPin(a) || !validExtiPin(b) || x == a || x == b || a == b)</span></span>
+<span id="L60"><span class="lineNum">      60</span>         [<span class="tlaGBC" title="Branch 0 was taken 38 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          76 :            gpio_.get_port(PIN_A) == nullptr ||</span></span>
+<span id="L61"><span class="lineNum">      61</span>         [<span class="tlaGBC" title="Branch 0 was taken 36 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span>]:<span class="tlaGNC">          76 :            gpio_.get_port(PIN_B) == nullptr || !validExtiPin(x) ||</span></span>
+<span id="L62"><span class="lineNum">      62</span>   [<span class="tlaGBC" title="Branch 0 was taken 39 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 36 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">          78 :            !validExtiPin(a) || !validExtiPin(b) || x == a || x == b || a == b)</span></span>
 <span class="lineNum">        </span> <span class="tlaGBC" title="Branch 4 was taken 36 times"> + </span><span class="tlaUNC" title="Branch 5 was not taken"> - </span><span class="tlaGBC" title="Branch 6 was taken 35 times"> + </span><span class="tlaGBC" title="Branch 7 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 8 was taken 35 times"> + </span> 
 <span class="lineNum">        </span>    <span class="tlaUNC" title="Branch 9 was not taken"> - </span><span class="tlaUNC" title="Branch 10 was not taken"> - </span><span class="tlaGBC" title="Branch 11 was taken 35 times"> + </span><span class="tlaGBC" title="Branch 12 was taken 4 times"> + </span> 
 <span class="lineNum">        </span>             <span class="tlaGBC" title="Branch 13 was taken 35 times"> + </span>]
-<span id="L64"><span class="lineNum">      64</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
-<span id="L65"><span class="lineNum">      65</span>                 :<span class="tlaGNC">          35 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L66"><span class="lineNum">      66</span>                 :<span class="tlaGNC">          35 :         __disable_irq();</span></span>
-<span id="L67"><span class="lineNum">      67</span>                 :<span class="tlaGNC">          35 :         resetCoreState();</span></span>
-<span id="L68"><span class="lineNum">      68</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 26 times"> + </span>]:<span class="tlaGNC">          70 :         previous_ab_ = static_cast&lt;uint8_t&gt;((gpio_.read(PIN_A) ? 2U : 0U) |</span></span>
-<span id="L69"><span class="lineNum">      69</span>                 :<span class="tlaGNC">          35 :                                             (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
-<span id="L70"><span class="lineNum">      70</span>                 :<span class="tlaGNC">          35 :         initialized_ = true;</span></span>
-<span id="L71"><span class="lineNum">      71</span>         [<span class="tlaGBC" title="Branch 0 was taken 35 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          35 :         if(!primask) __enable_irq();</span></span>
-<span id="L72"><span class="lineNum">      72</span>                 :<span class="tlaGNC">          35 :         return true;</span></span>
-<span id="L73"><span class="lineNum">      73</span>                 :             :     }</span>
-<span id="L74"><span class="lineNum">      74</span>                 :             : </span>
-<span id="L75"><span class="lineNum">      75</span>                 :             :     /**</span>
-<span id="L76"><span class="lineNum">      76</span>                 :             :      * @brief HAL GPIO EXTI callbackからeventを渡す。</span>
-<span id="L77"><span class="lineNum">      77</span>                 :             :      * @param gpio_pin 変化したGPIO pin mask。</span>
-<span id="L78"><span class="lineNum">      78</span>                 :             :      */</span>
-<span id="L79"><span class="lineNum">      79</span>                 :<span class="tlaGNC">       12961 :     void handleExti(uint16_t gpio_pin) {</span></span>
-<span id="L80"><span class="lineNum">      80</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 12957 times"> + </span>]:<span class="tlaGNC">       12961 :         if(!initialized_) return;</span></span>
-<span id="L81"><span class="lineNum">      81</span>                 :<span class="tlaGNC">       12957 :         const bool is_x = gpio_pin == gpio_.get_pin(PIN_X);</span></span>
-<span id="L82"><span class="lineNum">      82</span>                 :<span class="tlaGNC">       12957 :         const bool is_a = gpio_pin == gpio_.get_pin(PIN_A);</span></span>
-<span id="L83"><span class="lineNum">      83</span>                 :<span class="tlaGNC">       12957 :         const bool is_b = gpio_pin == gpio_.get_pin(PIN_B);</span></span>
-<span id="L84"><span class="lineNum">      84</span>   [<span class="tlaGBC" title="Branch 0 was taken 12943 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 6463 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 6480 times"> + </span> :<span class="tlaGNC">       12957 :         if(!is_x &amp;&amp; !is_a &amp;&amp; !is_b) return;</span></span>
+<span id="L63"><span class="lineNum">      63</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
+<span id="L64"><span class="lineNum">      64</span>                 :<span class="tlaGNC">          35 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L65"><span class="lineNum">      65</span>                 :<span class="tlaGNC">          35 :         __disable_irq();</span></span>
+<span id="L66"><span class="lineNum">      66</span>                 :<span class="tlaGNC">          35 :         resetCoreState();</span></span>
+<span id="L67"><span class="lineNum">      67</span>   [<span class="tlaGBC" title="Branch 0 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 9 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 26 times"> + </span>]:<span class="tlaGNC">          70 :         previous_ab_ = static_cast&lt;uint8_t&gt;((gpio_.read(PIN_A) ? 2U : 0U) |</span></span>
+<span id="L68"><span class="lineNum">      68</span>                 :<span class="tlaGNC">          35 :                                             (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
+<span id="L69"><span class="lineNum">      69</span>                 :<span class="tlaGNC">          35 :         initialized_ = true;</span></span>
+<span id="L70"><span class="lineNum">      70</span>         [<span class="tlaGBC" title="Branch 0 was taken 35 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          35 :         if(!primask) __enable_irq();</span></span>
+<span id="L71"><span class="lineNum">      71</span>                 :<span class="tlaGNC">          35 :         return true;</span></span>
+<span id="L72"><span class="lineNum">      72</span>                 :             :     }</span>
+<span id="L73"><span class="lineNum">      73</span>                 :             : </span>
+<span id="L74"><span class="lineNum">      74</span>                 :             :     /**</span>
+<span id="L75"><span class="lineNum">      75</span>                 :             :      * @brief HAL GPIO EXTI callbackからeventを渡す。</span>
+<span id="L76"><span class="lineNum">      76</span>                 :             :      * @param gpio_pin 変化したGPIO pin mask。</span>
+<span id="L77"><span class="lineNum">      77</span>                 :             :      */</span>
+<span id="L78"><span class="lineNum">      78</span>                 :<span class="tlaGNC">       12961 :     void handleExti(uint16_t gpio_pin) {</span></span>
+<span id="L79"><span class="lineNum">      79</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 12957 times"> + </span>]:<span class="tlaGNC">       12961 :         if(!initialized_) return;</span></span>
+<span id="L80"><span class="lineNum">      80</span>                 :<span class="tlaGNC">       12957 :         const bool is_x = gpio_pin == gpio_.get_pin(PIN_X);</span></span>
+<span id="L81"><span class="lineNum">      81</span>                 :<span class="tlaGNC">       12957 :         const bool is_a = gpio_pin == gpio_.get_pin(PIN_A);</span></span>
+<span id="L82"><span class="lineNum">      82</span>                 :<span class="tlaGNC">       12957 :         const bool is_b = gpio_pin == gpio_.get_pin(PIN_B);</span></span>
+<span id="L83"><span class="lineNum">      83</span>   [<span class="tlaGBC" title="Branch 0 was taken 12943 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 6463 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 6480 times"> + </span> :<span class="tlaGNC">       12957 :         if(!is_x &amp;&amp; !is_a &amp;&amp; !is_b) return;</span></span>
 <span class="lineNum">        </span>          <span class="tlaUNC" title="Branch 4 was not taken"> - </span><span class="tlaGBC" title="Branch 5 was taken 6463 times"> + </span>]
-<span id="L85"><span class="lineNum">      85</span>                 :             : </span>
-<span id="L86"><span class="lineNum">      86</span>         [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 12943 times"> + </span>]:<span class="tlaGNC">       12957 :         if(is_x) {</span></span>
-<span id="L87"><span class="lineNum">      87</span>                 :<span class="tlaGNC">          14 :             const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L88"><span class="lineNum">      88</span>                 :<span class="tlaGNC">          14 :             __disable_irq();</span></span>
-<span id="L89"><span class="lineNum">      89</span>                 :<span class="tlaGNC">          14 :             ++x_count_;</span></span>
-<span id="L90"><span class="lineNum">      90</span>                 :<span class="tlaGNC">          14 :             handleIndex();</span></span>
-<span id="L91"><span class="lineNum">      91</span>         [<span class="tlaGBC" title="Branch 0 was taken 13 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">          14 :             if(!primask) __enable_irq();</span></span>
-<span id="L92"><span class="lineNum">      92</span>                 :<span class="tlaGNC">          14 :             return;</span></span>
-<span id="L93"><span class="lineNum">      93</span>                 :             :         }</span>
-<span id="L94"><span class="lineNum">      94</span>                 :<span class="tlaGNC">       12943 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L95"><span class="lineNum">      95</span>                 :<span class="tlaGNC">       12943 :         __disable_irq();</span></span>
-<span id="L96"><span class="lineNum">      96</span>         [<span class="tlaGBC" title="Branch 0 was taken 6480 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6463 times"> + </span>]:<span class="tlaGNC">       12943 :         if(is_a) ++a_count_;</span></span>
-<span id="L97"><span class="lineNum">      97</span>         [<span class="tlaGBC" title="Branch 0 was taken 6463 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6480 times"> + </span>]:<span class="tlaGNC">       12943 :         if(is_b) ++b_count_;</span></span>
-<span id="L98"><span class="lineNum">      98</span>                 :             : </span>
-<span id="L99"><span class="lineNum">      99</span>                 :             :         const uint8_t current = static_cast&lt;uint8_t&gt;(</span>
-<span id="L100"><span class="lineNum">     100</span>   [<span class="tlaGBC" title="Branch 0 was taken 6472 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6471 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 6473 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 6470 times"> + </span>]:<span class="tlaGNC">       12943 :             (gpio_.read(PIN_A) ? 2U : 0U) | (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
-<span id="L101"><span class="lineNum">     101</span>                 :             :         // Table indexed by previous AB followed by current AB. Invalid</span>
-<span id="L102"><span class="lineNum">     102</span>                 :             :         // two-bit transitions contribute zero instead of guessing a direction.</span>
-<span id="L103"><span class="lineNum">     103</span>                 :             :         static constexpr int8_t transition[16] = {</span>
-<span id="L104"><span class="lineNum">     104</span>                 :             :             0, -1, 1, 0, 1, 0, 0, -1,</span>
-<span id="L105"><span class="lineNum">     105</span>                 :             :             -1, 0, 0, 1, 0, 1, -1, 0};</span>
-<span id="L106"><span class="lineNum">     106</span>                 :<span class="tlaGNC">       12943 :         const int8_t delta = transition[(previous_ab_ &lt;&lt; 2U) | current];</span></span>
-<span id="L107"><span class="lineNum">     107</span>                 :<span class="tlaGNC">       12943 :         previous_ab_ = current;</span></span>
-<span id="L108"><span class="lineNum">     108</span>                 :<span class="tlaGNC">       12943 :         raw_count_ = addInt32(raw_count_, delta);</span></span>
-<span id="L109"><span class="lineNum">     109</span>         [<span class="tlaGBC" title="Branch 0 was taken 4600 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8343 times"> + </span>]:<span class="tlaGNC">       12943 :         if(delta &gt; 0) direction_ = Direction::Forward;</span></span>
-<span id="L110"><span class="lineNum">     110</span>         [<span class="tlaGBC" title="Branch 0 was taken 8334 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4609 times"> + </span>]:<span class="tlaGNC">       12943 :         if(delta &lt; 0) direction_ = Direction::Reverse;</span></span>
-<span id="L111"><span class="lineNum">     111</span>         [<span class="tlaGBC" title="Branch 0 was taken 12943 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       12943 :         if(!primask) __enable_irq();</span></span>
-<span id="L112"><span class="lineNum">     112</span>                 :             :     }</span>
-<span id="L113"><span class="lineNum">     113</span>                 :             : </span>
-<span id="L114"><span class="lineNum">     114</span>                 :             :     /** begin/reset後のX相エッジ数を返す。 */</span>
-<span id="L115"><span class="lineNum">     115</span>                 :             :     uint32_t indexEdgeCount() const { return x_count_; }</span>
-<span id="L116"><span class="lineNum">     116</span>                 :             :     /** begin/reset後のA相エッジ数を返す。 */</span>
-<span id="L117"><span class="lineNum">     117</span>                 :<span class="tlaGNC">           2 :     uint32_t phaseAEdgeCount() const { return a_count_; }</span></span>
-<span id="L118"><span class="lineNum">     118</span>                 :             :     /** begin/reset後のB相エッジ数を返す。 */</span>
-<span id="L119"><span class="lineNum">     119</span>                 :<span class="tlaGNC">           2 :     uint32_t phaseBEdgeCount() const { return b_count_; }</span></span>
-<span id="L120"><span class="lineNum">     120</span>                 :             : </span>
-<span id="L121"><span class="lineNum">     121</span>                 :             :     /**</span>
-<span id="L122"><span class="lineNum">     122</span>                 :             :      * @brief 現在状態を1回だけ更新し、一貫したsnapshotを出力する。</span>
-<span id="L123"><span class="lineNum">     123</span>                 :             :      * @param use_log trueならLOGD、falseならCH_LOG streamへ出力する。</span>
-<span id="L124"><span class="lineNum">     124</span>                 :             :      */</span>
-<span id="L125"><span class="lineNum">     125</span>                 :             :     void print_state(bool use_log = false) {</span>
-<span id="L126"><span class="lineNum">     126</span>                 :             :         refresh();</span>
-<span id="L127"><span class="lineNum">     127</span>                 :             :         const uint32_t primask = __get_PRIMASK();</span>
-<span id="L128"><span class="lineNum">     128</span>                 :             :         __disable_irq();</span>
-<span id="L129"><span class="lineNum">     129</span>                 :             :         const int32_t raw = raw_count_;</span>
-<span id="L130"><span class="lineNum">     130</span>                 :             :         const int32_t correction = correction_offset_;</span>
-<span id="L131"><span class="lineNum">     131</span>                 :             :         const Direction direction_snapshot = direction_;</span>
-<span id="L132"><span class="lineNum">     132</span>                 :             :         const bool indexed = indexed_;</span>
-<span id="L133"><span class="lineNum">     133</span>                 :             :         const float rpm = rpm_;</span>
-<span id="L134"><span class="lineNum">     134</span>                 :             :         if(!primask) __enable_irq();</span>
-<span id="L135"><span class="lineNum">     135</span>                 :             :         const int32_t position = checkedInt32(</span>
-<span id="L136"><span class="lineNum">     136</span>                 :             :             static_cast&lt;int64_t&gt;(raw) + correction);</span>
-<span id="L137"><span class="lineNum">     137</span>                 :             :         const int32_t cpr = static_cast&lt;int32_t&gt;(countsPerRevolution());</span>
-<span id="L138"><span class="lineNum">     138</span>                 :             :         const int32_t phase = cpr == 0 ? 0 : positiveModulo(position, cpr);</span>
-<span id="L139"><span class="lineNum">     139</span>                 :             :         const float angle = cpr == 0 ? 0.0f</span>
-<span id="L140"><span class="lineNum">     140</span>                 :             :                                      : static_cast&lt;float&gt;(phase) * 360.0f / cpr;</span>
-<span id="L141"><span class="lineNum">     141</span>                 :             :         const float revolutions = cpr == 0 ? 0.0f</span>
-<span id="L142"><span class="lineNum">     142</span>                 :             :             : static_cast&lt;float&gt;(position) / cpr;</span>
-<span id="L143"><span class="lineNum">     143</span>                 :             :         const char* dir = direction_snapshot == Direction::Forward ? &quot;FWD&quot;</span>
-<span id="L144"><span class="lineNum">     144</span>                 :             :                           : direction_snapshot == Direction::Reverse ? &quot;REV&quot; : &quot;---&quot;;</span>
-<span id="L145"><span class="lineNum">     145</span>                 :             :         (void)dir;</span>
-<span id="L146"><span class="lineNum">     146</span>                 :             :         if(use_log)</span>
-<span id="L147"><span class="lineNum">     147</span>                 :             :             LOGD(&quot;AMT | raw:%7ld pos:%7ld ang:%6.2f rev:%7.3f rpm:%7.1f dir:%s idx:%d\n&quot;,</span>
-<span id="L148"><span class="lineNum">     148</span>                 :             :                  (long)raw, (long)position, angle, revolutions,</span>
-<span id="L149"><span class="lineNum">     149</span>                 :             :                  rpm, dir, (int)indexed);</span>
-<span id="L150"><span class="lineNum">     150</span>                 :             :         else</span>
-<span id="L151"><span class="lineNum">     151</span>                 :             :             STREAM(CH_LOG,</span>
-<span id="L152"><span class="lineNum">     152</span>                 :             :                    &quot;AMT | raw:%7ld pos:%7ld ang:%6.2f rev:%7.3f rpm:%7.1f dir:%s idx:%d\n&quot;,</span>
-<span id="L153"><span class="lineNum">     153</span>                 :             :                    (long)raw, (long)position, angle, revolutions,</span>
-<span id="L154"><span class="lineNum">     154</span>                 :             :                    rpm, dir, (int)indexed);</span>
-<span id="L155"><span class="lineNum">     155</span>                 :             :     }</span>
-<span id="L156"><span class="lineNum">     156</span>                 :             : };</span>
-<span id="L157"><span class="lineNum">     157</span>                 :             : </span>
-<span id="L158"><span class="lineNum">     158</span>                 :             : #if defined(HAL_TIM_MODULE_ENABLED)</span>
-<span id="L159"><span class="lineNum">     159</span>                 :             : /**</span>
-<span id="L160"><span class="lineNum">     160</span>                 :             :  * @brief Timer Encoder ModeでA/B相を計数するbackend。</span>
-<span id="L161"><span class="lineNum">     161</span>                 :             :  * @note CubeMXでEncoder Mode TI1/TI2に初期化済みで、AMT専用のTimerを受け取る。</span>
-<span id="L162"><span class="lineNum">     162</span>                 :             :  *       CH1/CH2はA/B相、X相はGPIO EXTIで使用する。ライブラリはCubeMXの</span>
-<span id="L163"><span class="lineNum">     163</span>                 :             :  *       register設定を全面的には再検証せず、最低限のcapabilityだけを確認する。</span>
-<span id="L164"><span class="lineNum">     164</span>                 :             :  */</span>
-<span id="L165"><span class="lineNum">     165</span>                 :             : class AMTEncoderTimer : public AMTEncoderBase {</span>
-<span id="L166"><span class="lineNum">     166</span>                 :             : public:</span>
-<span id="L167"><span class="lineNum">     167</span>                 :             :     /** @brief Position Trigger発火時に呼ばれるcallback型。 */</span>
-<span id="L168"><span class="lineNum">     168</span>                 :             :     using PositionCallback = void (*)(void* context);</span>
-<span id="L169"><span class="lineNum">     169</span>                 :             : </span>
-<span id="L170"><span class="lineNum">     170</span>                 :             : private:</span>
-<span id="L171"><span class="lineNum">     171</span>                 :             :     struct CompareChannelInfo {</span>
-<span id="L172"><span class="lineNum">     172</span>                 :             :         uint32_t channel;</span>
-<span id="L173"><span class="lineNum">     173</span>                 :             :         uint32_t interrupt_mask;</span>
-<span id="L174"><span class="lineNum">     174</span>                 :             :         HAL_TIM_ActiveChannel active_channel;</span>
-<span id="L175"><span class="lineNum">     175</span>                 :             :     };</span>
-<span id="L176"><span class="lineNum">     176</span>                 :             : </span>
-<span id="L177"><span class="lineNum">     177</span>                 :             :     TIM_HandleTypeDef&amp; timer_;</span>
-<span id="L178"><span class="lineNum">     178</span>                 :             :     GPIO_Mgr&lt;1&gt;&amp; index_gpio_;</span>
-<span id="L179"><span class="lineNum">     179</span>                 :             :     uint32_t compare_channel_;</span>
-<span id="L180"><span class="lineNum">     180</span>                 :             :     bool timer_is_32_bit_ = false;</span>
-<span id="L181"><span class="lineNum">     181</span>                 :             :     volatile bool initialized_ = false;</span>
-<span id="L182"><span class="lineNum">     182</span>                 :             :     int32_t wrap_count_ = 0;</span>
-<span id="L183"><span class="lineNum">     183</span>                 :             :     volatile bool trigger_armed_ = false;</span>
-<span id="L184"><span class="lineNum">     184</span>                 :             :     int32_t trigger_target_raw_ = 0;</span>
-<span id="L185"><span class="lineNum">     185</span>                 :             :     TriggerDirection trigger_direction_ = TriggerDirection::Any;</span>
-<span id="L186"><span class="lineNum">     186</span>                 :             :     PositionCallback trigger_callback_ = nullptr;</span>
-<span id="L187"><span class="lineNum">     187</span>                 :             :     void* trigger_context_ = nullptr;</span>
-<span id="L188"><span class="lineNum">     188</span>                 :             : </span>
-<span id="L189"><span class="lineNum">     189</span>                 :<span class="tlaGNC">         150 :     bool resolveCompareChannel(uint32_t channel,</span></span>
-<span id="L190"><span class="lineNum">     190</span>                 :             :                                CompareChannelInfo&amp; info) const {</span>
-<span id="L191"><span class="lineNum">     191</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 150 times"> + </span>]:<span class="tlaGNC">         150 :         if(timer_.Instance == nullptr) return false;</span></span>
-<span id="L192"><span class="lineNum">     192</span>         [<span class="tlaGBC" title="Branch 0 was taken 132 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 18 times"> + </span>]:<span class="tlaGNC">         150 :         if(channel == TIM_CHANNEL_3) {</span></span>
-<span id="L193"><span class="lineNum">     193</span>                 :<span class="tlaGNC">         132 :             info = {TIM_CHANNEL_3, TIM_IT_CC3, HAL_TIM_ACTIVE_CHANNEL_3};</span></span>
-<span id="L194"><span class="lineNum">     194</span>                 :<span class="tlaGNC">         132 :             return IS_TIM_CC3_INSTANCE(timer_.Instance);</span></span>
-<span id="L195"><span class="lineNum">     195</span>                 :             :         }</span>
-<span id="L196"><span class="lineNum">     196</span>         [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span>]:<span class="tlaGNC">          18 :         if(channel == TIM_CHANNEL_4) {</span></span>
-<span id="L197"><span class="lineNum">     197</span>                 :<span class="tlaGNC">          14 :             info = {TIM_CHANNEL_4, TIM_IT_CC4, HAL_TIM_ACTIVE_CHANNEL_4};</span></span>
-<span id="L198"><span class="lineNum">     198</span>                 :<span class="tlaGNC">          14 :             return IS_TIM_CC4_INSTANCE(timer_.Instance);</span></span>
-<span id="L199"><span class="lineNum">     199</span>                 :             :         }</span>
-<span id="L200"><span class="lineNum">     200</span>                 :<span class="tlaGNC">           4 :         return false;</span></span>
-<span id="L201"><span class="lineNum">     201</span>                 :             :     }</span>
-<span id="L202"><span class="lineNum">     202</span>                 :             : </span>
-<span id="L203"><span class="lineNum">     203</span>                 :<span class="tlaGNC">          17 :     Direction hardwareDirection() const {</span></span>
-<span id="L204"><span class="lineNum">     204</span>                 :<span class="tlaGNC">          17 :         return __HAL_TIM_IS_TIM_COUNTING_DOWN(&amp;timer_) ? Direction::Reverse</span></span>
-<span id="L205"><span class="lineNum">     205</span>                 :<span class="tlaGNC">          17 :                                                        : Direction::Forward;</span></span>
-<span id="L206"><span class="lineNum">     206</span>                 :             :     }</span>
-<span id="L207"><span class="lineNum">     207</span>                 :             : </span>
-<span id="L208"><span class="lineNum">     208</span>                 :             :     static constexpr int64_t COUNTER16_MODULUS =</span>
-<span id="L209"><span class="lineNum">     209</span>                 :             :         static_cast&lt;int64_t&gt;(UINT16_MAX) + 1;</span>
-<span id="L210"><span class="lineNum">     210</span>                 :             :     static constexpr uint32_t COUNTER16_HALF_RANGE =</span>
-<span id="L211"><span class="lineNum">     211</span>                 :             :         static_cast&lt;uint32_t&gt;(COUNTER16_MODULUS / 2);</span>
-<span id="L212"><span class="lineNum">     212</span>                 :             : </span>
-<span id="L213"><span class="lineNum">     213</span>                 :<span class="tlaGNC">       65564 :     static int32_t pendingWrapDelta(uint16_t counter) {</span></span>
-<span id="L214"><span class="lineNum">     214</span>                 :             :         // UIF does not retain the direction at the boundary. The counter half</span>
-<span id="L215"><span class="lineNum">     215</span>                 :             :         // identifies the boundary most recently crossed even if DIR changes</span>
-<span id="L216"><span class="lineNum">     216</span>                 :             :         // before the Update callback runs.</span>
-<span id="L217"><span class="lineNum">     217</span>         [<span class="tlaGBC" title="Branch 0 was taken 32785 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32779 times"> + </span>]:<span class="tlaGNC">       65564 :         return counter &lt; COUNTER16_HALF_RANGE ? 1 : -1;</span></span>
-<span id="L218"><span class="lineNum">     218</span>                 :             :     }</span>
-<span id="L219"><span class="lineNum">     219</span>                 :             : </span>
-<span id="L220"><span class="lineNum">     220</span>                 :<span class="tlaGNC">          23 :     static int32_t signedCounter32(uint32_t counter) {</span></span>
-<span id="L221"><span class="lineNum">     221</span>         [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 13 times"> + </span>]:<span class="tlaGNC">          23 :         if(counter &lt;= static_cast&lt;uint32_t&gt;(INT32_MAX))</span></span>
-<span id="L222"><span class="lineNum">     222</span>                 :<span class="tlaGNC">          10 :             return static_cast&lt;int32_t&gt;(counter);</span></span>
-<span id="L223"><span class="lineNum">     223</span>                 :<span class="tlaGNC">          13 :         return checkedInt32(static_cast&lt;int64_t&gt;(counter) -</span></span>
-<span id="L224"><span class="lineNum">     224</span>                 :<span class="tlaGNC">          13 :                             (static_cast&lt;int64_t&gt;(UINT32_MAX) + 1));</span></span>
-<span id="L225"><span class="lineNum">     225</span>                 :             :     }</span>
-<span id="L226"><span class="lineNum">     226</span>                 :             : </span>
-<span id="L227"><span class="lineNum">     227</span>                 :<span class="tlaGNC">          44 :     bool instanceSupportsEncoder() const {</span></span>
-<span id="L228"><span class="lineNum">     228</span>         [<span class="tlaGBC" title="Branch 0 was taken 44 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          88 :         return timer_.Instance != nullptr &amp;&amp;</span></span>
-<span id="L229"><span class="lineNum">     229</span>         [<span class="tlaGBC" title="Branch 0 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">          88 :                IS_TIM_ENCODER_INTERFACE_INSTANCE(timer_.Instance);</span></span>
-<span id="L230"><span class="lineNum">     230</span>                 :             :     }</span>
-<span id="L231"><span class="lineNum">     231</span>                 :             : </span>
-<span id="L232"><span class="lineNum">     232</span>                 :             :     /** Snapshot without consuming UIF, which is owned by the Update callback. */</span>
-<span id="L233"><span class="lineNum">     233</span>                 :<span class="tlaGNC">       32940 :     void snapshotRawCount() {</span></span>
-<span id="L234"><span class="lineNum">     234</span>                 :<span class="tlaGNC">       32940 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L235"><span class="lineNum">     235</span>                 :<span class="tlaGNC">       32940 :         __disable_irq();</span></span>
-<span id="L236"><span class="lineNum">     236</span>                 :<span class="tlaGNC">       32940 :         const int32_t previous = raw_count_;</span></span>
-<span id="L237"><span class="lineNum">     237</span>         [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32918 times"> + </span>]:<span class="tlaGNC">       32940 :         if(timer_is_32_bit_) {</span></span>
-<span id="L238"><span class="lineNum">     238</span>                 :<span class="tlaGNC">          22 :             raw_count_ = signedCounter32(</span></span>
-<span id="L239"><span class="lineNum">     239</span>                 :<span class="tlaGNC">          22 :                 static_cast&lt;uint32_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_)));</span></span>
-<span id="L240"><span class="lineNum">     240</span>                 :             :         } else {</span>
-<span id="L241"><span class="lineNum">     241</span>                 :<span class="tlaGNC">       32918 :             int64_t effective_wrap = wrap_count_;</span></span>
-<span id="L242"><span class="lineNum">     242</span>                 :<span class="tlaGNC">       32918 :             bool update_pending =</span></span>
-<span id="L243"><span class="lineNum">     243</span>                 :<span class="tlaGNC">       32918 :                 __HAL_TIM_GET_FLAG(&amp;timer_, TIM_FLAG_UPDATE) != 0U;</span></span>
-<span id="L244"><span class="lineNum">     244</span>                 :<span class="tlaGNC">       32918 :             uint32_t current =</span></span>
-<span id="L245"><span class="lineNum">     245</span>                 :<span class="tlaGNC">       32918 :                 static_cast&lt;uint16_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
-<span id="L246"><span class="lineNum">     246</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32910 times"> + </span>]:<span class="tlaGNC">       32918 :             if(update_pending)</span></span>
-<span id="L247"><span class="lineNum">     247</span>                 :<span class="tlaGNC">           8 :                 effective_wrap += pendingWrapDelta(</span></span>
-<span id="L248"><span class="lineNum">     248</span>                 :             :                     static_cast&lt;uint16_t&gt;(current));</span>
-<span id="L249"><span class="lineNum">     249</span>                 :             :             // Account provisionally if wrap occurred between flag and CNT.</span>
-<span id="L250"><span class="lineNum">     250</span>                 :             :             // Do not clear UIF: HAL may already have saved itflag and remains</span>
-<span id="L251"><span class="lineNum">     251</span>                 :             :             // solely responsible for the subsequent Update callback.</span>
-<span id="L252"><span class="lineNum">     252</span>         [<span class="tlaGBC" title="Branch 0 was taken 32910 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8 times"> + </span>]:<span class="tlaGNC">       32918 :             if(!update_pending &amp;&amp;</span></span>
-<span id="L253"><span class="lineNum">     253</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 32910 times"> + </span>]:<span class="tlaGNC">       32910 :                __HAL_TIM_GET_FLAG(&amp;timer_, TIM_FLAG_UPDATE) != 0U) {</span></span>
-<span id="L254"><span class="lineNum">     254</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 current = static_cast&lt;uint16_t&gt;(</span></span>
-<span id="L255"><span class="lineNum">     255</span>                 :<span class="tlaUNC">           0 :                     __HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
-<span id="L256"><span class="lineNum">     256</span>                 :<span class="tlaUNC">           0 :                 effective_wrap += pendingWrapDelta(</span></span>
-<span id="L257"><span class="lineNum">     257</span>                 :             :                     static_cast&lt;uint16_t&gt;(current));</span>
-<span id="L258"><span class="lineNum">     258</span>                 :             :             }</span>
-<span id="L259"><span class="lineNum">     259</span>                 :<span class="tlaGNC tlaBgGNC">       32918 :             const int64_t extended =</span></span>
-<span id="L260"><span class="lineNum">     260</span>                 :<span class="tlaGNC">       32918 :                 effective_wrap * COUNTER16_MODULUS + current;</span></span>
-<span id="L261"><span class="lineNum">     261</span>                 :<span class="tlaGNC">       32918 :             raw_count_ = checkedInt32(extended);</span></span>
-<span id="L262"><span class="lineNum">     262</span>                 :             :         }</span>
-<span id="L263"><span class="lineNum">     263</span>         [<span class="tlaGBC" title="Branch 0 was taken 53 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32887 times"> + </span>]:<span class="tlaGNC">       32940 :         if(raw_count_ &gt; previous) direction_ = Direction::Forward;</span></span>
-<span id="L264"><span class="lineNum">     264</span>         [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32915 times"> + </span>]:<span class="tlaGNC">       32940 :         if(raw_count_ &lt; previous) direction_ = Direction::Reverse;</span></span>
-<span id="L265"><span class="lineNum">     265</span>         [<span class="tlaGBC" title="Branch 0 was taken 32873 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 67 times"> + </span>]:<span class="tlaGNC">       32940 :         if(!primask) __enable_irq();</span></span>
-<span id="L266"><span class="lineNum">     266</span>                 :<span class="tlaGNC">       32940 :     }</span></span>
-<span id="L267"><span class="lineNum">     267</span>                 :             : </span>
-<span id="L268"><span class="lineNum">     268</span>                 :<span class="tlaGNC">       32904 :     void refreshRawCount() override {</span></span>
-<span id="L269"><span class="lineNum">     269</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 32904 times"> + </span>]:<span class="tlaGNC">       32904 :         if(!initialized_) return;</span></span>
-<span id="L270"><span class="lineNum">     270</span>                 :<span class="tlaGNC">       32904 :         snapshotRawCount();</span></span>
-<span id="L271"><span class="lineNum">     271</span>                 :             :     }</span>
-<span id="L272"><span class="lineNum">     272</span>                 :<span class="tlaGNC">          30 :     bool correctionIsBlocked() const override { return trigger_armed_; }</span></span>
-<span id="L273"><span class="lineNum">     273</span>                 :<span class="tlaGNC">          45 :     void resetBackend() override {</span></span>
-<span id="L274"><span class="lineNum">     274</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 45 times"> + </span>]:<span class="tlaGNC">          45 :         if(!initialized_) return;</span></span>
-<span id="L275"><span class="lineNum">     275</span>                 :<span class="tlaGNC">          45 :         cancelPositionTrigger();</span></span>
-<span id="L276"><span class="lineNum">     276</span>                 :<span class="tlaGNC">          45 :         __HAL_TIM_SET_COUNTER(&amp;timer_, 0);</span></span>
-<span id="L277"><span class="lineNum">     277</span>                 :<span class="tlaGNC">          45 :         __HAL_TIM_CLEAR_FLAG(&amp;timer_, TIM_FLAG_UPDATE);</span></span>
-<span id="L278"><span class="lineNum">     278</span>                 :<span class="tlaGNC">          45 :         wrap_count_ = 0;</span></span>
-<span id="L279"><span class="lineNum">     279</span>                 :             :     }</span>
-<span id="L280"><span class="lineNum">     280</span>                 :             : </span>
-<span id="L281"><span class="lineNum">     281</span>                 :             : public:</span>
-<span id="L282"><span class="lineNum">     282</span>                 :             :     /**</span>
-<span id="L283"><span class="lineNum">     283</span>                 :             :      * @brief Timer backendを構築する。ハードウェアはbegin()まで読まない。</span>
-<span id="L284"><span class="lineNum">     284</span>                 :             :      * @param timer CubeMXでEncoder Mode TI1/TI2に初期化するTimer handle。</span>
-<span id="L285"><span class="lineNum">     285</span>                 :             :      * @param index_gpio X相に使用するGPIO manager。</span>
-<span id="L286"><span class="lineNum">     286</span>                 :             :      * @param ppr 1回転当たりのパルス数。</span>
-<span id="L287"><span class="lineNum">     287</span>                 :             :      * @param compare_channel この実装/MCUでPosition Trigger対応と判定される</span>
-<span id="L288"><span class="lineNum">     288</span>                 :             :      *                        Compare channel。現在のG4/F0実装ではCH3またはCH4。</span>
-<span id="L289"><span class="lineNum">     289</span>                 :             :      */</span>
-<span id="L290"><span class="lineNum">     290</span>                 :<span class="tlaGNC">          50 :     explicit AMTEncoderTimer(TIM_HandleTypeDef&amp; timer,</span></span>
-<span id="L291"><span class="lineNum">     291</span>                 :             :                              GPIO_Mgr&lt;1&gt;&amp; index_gpio,</span>
+<span id="L84"><span class="lineNum">      84</span>                 :             : </span>
+<span id="L85"><span class="lineNum">      85</span>         [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 12943 times"> + </span>]:<span class="tlaGNC">       12957 :         if(is_x) {</span></span>
+<span id="L86"><span class="lineNum">      86</span>                 :<span class="tlaGNC">          14 :             const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L87"><span class="lineNum">      87</span>                 :<span class="tlaGNC">          14 :             __disable_irq();</span></span>
+<span id="L88"><span class="lineNum">      88</span>                 :<span class="tlaGNC">          14 :             ++x_count_;</span></span>
+<span id="L89"><span class="lineNum">      89</span>                 :<span class="tlaGNC">          14 :             handleIndex();</span></span>
+<span id="L90"><span class="lineNum">      90</span>         [<span class="tlaGBC" title="Branch 0 was taken 13 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">          14 :             if(!primask) __enable_irq();</span></span>
+<span id="L91"><span class="lineNum">      91</span>                 :<span class="tlaGNC">          14 :             return;</span></span>
+<span id="L92"><span class="lineNum">      92</span>                 :             :         }</span>
+<span id="L93"><span class="lineNum">      93</span>                 :<span class="tlaGNC">       12943 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L94"><span class="lineNum">      94</span>                 :<span class="tlaGNC">       12943 :         __disable_irq();</span></span>
+<span id="L95"><span class="lineNum">      95</span>         [<span class="tlaGBC" title="Branch 0 was taken 6480 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6463 times"> + </span>]:<span class="tlaGNC">       12943 :         if(is_a) ++a_count_;</span></span>
+<span id="L96"><span class="lineNum">      96</span>         [<span class="tlaGBC" title="Branch 0 was taken 6463 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6480 times"> + </span>]:<span class="tlaGNC">       12943 :         if(is_b) ++b_count_;</span></span>
+<span id="L97"><span class="lineNum">      97</span>                 :             : </span>
+<span id="L98"><span class="lineNum">      98</span>                 :             :         const uint8_t current = static_cast&lt;uint8_t&gt;(</span>
+<span id="L99"><span class="lineNum">      99</span>   [<span class="tlaGBC" title="Branch 0 was taken 6472 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 6471 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 6473 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 6470 times"> + </span>]:<span class="tlaGNC">       12943 :             (gpio_.read(PIN_A) ? 2U : 0U) | (gpio_.read(PIN_B) ? 1U : 0U));</span></span>
+<span id="L100"><span class="lineNum">     100</span>                 :             :         // Table indexed by previous AB followed by current AB. Invalid</span>
+<span id="L101"><span class="lineNum">     101</span>                 :             :         // two-bit transitions contribute zero instead of guessing a direction.</span>
+<span id="L102"><span class="lineNum">     102</span>                 :             :         static constexpr int8_t transition[16] = {0,  -1, 1, 0, 1, 0, 0,  -1,</span>
+<span id="L103"><span class="lineNum">     103</span>                 :             :                                                   -1, 0,  0, 1, 0, 1, -1, 0};</span>
+<span id="L104"><span class="lineNum">     104</span>                 :<span class="tlaGNC">       12943 :         const int8_t delta = transition[(previous_ab_ &lt;&lt; 2U) | current];</span></span>
+<span id="L105"><span class="lineNum">     105</span>                 :<span class="tlaGNC">       12943 :         previous_ab_ = current;</span></span>
+<span id="L106"><span class="lineNum">     106</span>                 :<span class="tlaGNC">       12943 :         raw_count_ = addInt32(raw_count_, delta);</span></span>
+<span id="L107"><span class="lineNum">     107</span>         [<span class="tlaGBC" title="Branch 0 was taken 4600 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8343 times"> + </span>]:<span class="tlaGNC">       12943 :         if(delta &gt; 0) direction_ = Direction::Forward;</span></span>
+<span id="L108"><span class="lineNum">     108</span>         [<span class="tlaGBC" title="Branch 0 was taken 8334 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4609 times"> + </span>]:<span class="tlaGNC">       12943 :         if(delta &lt; 0) direction_ = Direction::Reverse;</span></span>
+<span id="L109"><span class="lineNum">     109</span>         [<span class="tlaGBC" title="Branch 0 was taken 12943 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       12943 :         if(!primask) __enable_irq();</span></span>
+<span id="L110"><span class="lineNum">     110</span>                 :             :     }</span>
+<span id="L111"><span class="lineNum">     111</span>                 :             : </span>
+<span id="L112"><span class="lineNum">     112</span>                 :             :     /** begin/reset後のX相エッジ数を返す。 */</span>
+<span id="L113"><span class="lineNum">     113</span>                 :             :     uint32_t indexEdgeCount() const { return x_count_; }</span>
+<span id="L114"><span class="lineNum">     114</span>                 :             :     /** begin/reset後のA相エッジ数を返す。 */</span>
+<span id="L115"><span class="lineNum">     115</span>                 :<span class="tlaGNC">           2 :     uint32_t phaseAEdgeCount() const { return a_count_; }</span></span>
+<span id="L116"><span class="lineNum">     116</span>                 :             :     /** begin/reset後のB相エッジ数を返す。 */</span>
+<span id="L117"><span class="lineNum">     117</span>                 :<span class="tlaGNC">           2 :     uint32_t phaseBEdgeCount() const { return b_count_; }</span></span>
+<span id="L118"><span class="lineNum">     118</span>                 :             : </span>
+<span id="L119"><span class="lineNum">     119</span>                 :             :     /**</span>
+<span id="L120"><span class="lineNum">     120</span>                 :             :      * @brief 現在状態を1回だけ更新し、一貫したsnapshotを出力する。</span>
+<span id="L121"><span class="lineNum">     121</span>                 :             :      * @param use_log trueならLOGD、falseならCH_LOG streamへ出力する。</span>
+<span id="L122"><span class="lineNum">     122</span>                 :             :      */</span>
+<span id="L123"><span class="lineNum">     123</span>                 :             :     void print_state(bool use_log = false) {</span>
+<span id="L124"><span class="lineNum">     124</span>                 :             :         refresh();</span>
+<span id="L125"><span class="lineNum">     125</span>                 :             :         const uint32_t primask = __get_PRIMASK();</span>
+<span id="L126"><span class="lineNum">     126</span>                 :             :         __disable_irq();</span>
+<span id="L127"><span class="lineNum">     127</span>                 :             :         const int32_t raw = raw_count_;</span>
+<span id="L128"><span class="lineNum">     128</span>                 :             :         const int32_t correction = correction_offset_;</span>
+<span id="L129"><span class="lineNum">     129</span>                 :             :         const Direction direction_snapshot = direction_;</span>
+<span id="L130"><span class="lineNum">     130</span>                 :             :         const bool indexed = indexed_;</span>
+<span id="L131"><span class="lineNum">     131</span>                 :             :         const float rpm = rpm_;</span>
+<span id="L132"><span class="lineNum">     132</span>                 :             :         if(!primask) __enable_irq();</span>
+<span id="L133"><span class="lineNum">     133</span>                 :             :         const int32_t position =</span>
+<span id="L134"><span class="lineNum">     134</span>                 :             :             checkedInt32(static_cast&lt;int64_t&gt;(raw) + correction);</span>
+<span id="L135"><span class="lineNum">     135</span>                 :             :         const int32_t cpr = static_cast&lt;int32_t&gt;(countsPerRevolution());</span>
+<span id="L136"><span class="lineNum">     136</span>                 :             :         const int32_t phase = cpr == 0 ? 0 : positiveModulo(position, cpr);</span>
+<span id="L137"><span class="lineNum">     137</span>                 :             :         const float angle =</span>
+<span id="L138"><span class="lineNum">     138</span>                 :             :             cpr == 0 ? 0.0f : static_cast&lt;float&gt;(phase) * 360.0f / cpr;</span>
+<span id="L139"><span class="lineNum">     139</span>                 :             :         const float revolutions =</span>
+<span id="L140"><span class="lineNum">     140</span>                 :             :             cpr == 0 ? 0.0f : static_cast&lt;float&gt;(position) / cpr;</span>
+<span id="L141"><span class="lineNum">     141</span>                 :             :         const char* dir = direction_snapshot == Direction::Forward   ? &quot;FWD&quot;</span>
+<span id="L142"><span class="lineNum">     142</span>                 :             :                           : direction_snapshot == Direction::Reverse ? &quot;REV&quot;</span>
+<span id="L143"><span class="lineNum">     143</span>                 :             :                                                                      : &quot;---&quot;;</span>
+<span id="L144"><span class="lineNum">     144</span>                 :             :         (void)dir;</span>
+<span id="L145"><span class="lineNum">     145</span>                 :             :         if(use_log)</span>
+<span id="L146"><span class="lineNum">     146</span>                 :             :             LOGD(</span>
+<span id="L147"><span class="lineNum">     147</span>                 :             :                 &quot;AMT | raw:%7ld pos:%7ld ang:%6.2f rev:%7.3f rpm:%7.1f dir:%s &quot;</span>
+<span id="L148"><span class="lineNum">     148</span>                 :             :                 &quot;idx:%d\n&quot;,</span>
+<span id="L149"><span class="lineNum">     149</span>                 :             :                 (long)raw, (long)position, angle, revolutions, rpm, dir,</span>
+<span id="L150"><span class="lineNum">     150</span>                 :             :                 (int)indexed);</span>
+<span id="L151"><span class="lineNum">     151</span>                 :             :         else</span>
+<span id="L152"><span class="lineNum">     152</span>                 :             :             STREAM(CH_LOG,</span>
+<span id="L153"><span class="lineNum">     153</span>                 :             :                    &quot;AMT | raw:%7ld pos:%7ld ang:%6.2f rev:%7.3f rpm:%7.1f &quot;</span>
+<span id="L154"><span class="lineNum">     154</span>                 :             :                    &quot;dir:%s idx:%d\n&quot;,</span>
+<span id="L155"><span class="lineNum">     155</span>                 :             :                    (long)raw, (long)position, angle, revolutions, rpm, dir,</span>
+<span id="L156"><span class="lineNum">     156</span>                 :             :                    (int)indexed);</span>
+<span id="L157"><span class="lineNum">     157</span>                 :             :     }</span>
+<span id="L158"><span class="lineNum">     158</span>                 :             : };</span>
+<span id="L159"><span class="lineNum">     159</span>                 :             : </span>
+<span id="L160"><span class="lineNum">     160</span>                 :             : #if defined(HAL_TIM_MODULE_ENABLED)</span>
+<span id="L161"><span class="lineNum">     161</span>                 :             : /**</span>
+<span id="L162"><span class="lineNum">     162</span>                 :             :  * @brief Timer Encoder ModeでA/B相を計数するbackend。</span>
+<span id="L163"><span class="lineNum">     163</span>                 :             :  * @note CubeMXでEncoder Mode TI1/TI2に初期化済みで、AMT専用のTimerを受け取る。</span>
+<span id="L164"><span class="lineNum">     164</span>                 :             :  *       CH1/CH2はA/B相、X相はGPIO EXTIで使用する。ライブラリはCubeMXの</span>
+<span id="L165"><span class="lineNum">     165</span>                 :             :  *       register設定を全面的には再検証せず、最低限のcapabilityだけを確認する。</span>
+<span id="L166"><span class="lineNum">     166</span>                 :             :  */</span>
+<span id="L167"><span class="lineNum">     167</span>                 :             : class AMTEncoderTimer : public AMTEncoderBase {</span>
+<span id="L168"><span class="lineNum">     168</span>                 :             : public:</span>
+<span id="L169"><span class="lineNum">     169</span>                 :             :     /** @brief Position Trigger発火時に呼ばれるcallback型。 */</span>
+<span id="L170"><span class="lineNum">     170</span>                 :             :     using PositionCallback = void (*)(void* context);</span>
+<span id="L171"><span class="lineNum">     171</span>                 :             : </span>
+<span id="L172"><span class="lineNum">     172</span>                 :             : private:</span>
+<span id="L173"><span class="lineNum">     173</span>                 :             :     struct CompareChannelInfo {</span>
+<span id="L174"><span class="lineNum">     174</span>                 :             :         uint32_t channel;</span>
+<span id="L175"><span class="lineNum">     175</span>                 :             :         uint32_t interrupt_mask;</span>
+<span id="L176"><span class="lineNum">     176</span>                 :             :         HAL_TIM_ActiveChannel active_channel;</span>
+<span id="L177"><span class="lineNum">     177</span>                 :             :     };</span>
+<span id="L178"><span class="lineNum">     178</span>                 :             : </span>
+<span id="L179"><span class="lineNum">     179</span>                 :             :     TIM_HandleTypeDef&amp; timer_;</span>
+<span id="L180"><span class="lineNum">     180</span>                 :             :     GPIO_Mgr&lt;1&gt;&amp; index_gpio_;</span>
+<span id="L181"><span class="lineNum">     181</span>                 :             :     uint32_t compare_channel_;</span>
+<span id="L182"><span class="lineNum">     182</span>                 :             :     bool timer_is_32_bit_ = false;</span>
+<span id="L183"><span class="lineNum">     183</span>                 :             :     volatile bool initialized_ = false;</span>
+<span id="L184"><span class="lineNum">     184</span>                 :             :     int32_t wrap_count_ = 0;</span>
+<span id="L185"><span class="lineNum">     185</span>                 :             :     volatile bool trigger_armed_ = false;</span>
+<span id="L186"><span class="lineNum">     186</span>                 :             :     int32_t trigger_target_raw_ = 0;</span>
+<span id="L187"><span class="lineNum">     187</span>                 :             :     TriggerDirection trigger_direction_ = TriggerDirection::Any;</span>
+<span id="L188"><span class="lineNum">     188</span>                 :             :     PositionCallback trigger_callback_ = nullptr;</span>
+<span id="L189"><span class="lineNum">     189</span>                 :             :     void* trigger_context_ = nullptr;</span>
+<span id="L190"><span class="lineNum">     190</span>                 :             : </span>
+<span id="L191"><span class="lineNum">     191</span>                 :<span class="tlaGNC">         150 :     bool resolveCompareChannel(uint32_t channel,</span></span>
+<span id="L192"><span class="lineNum">     192</span>                 :             :                                CompareChannelInfo&amp; info) const {</span>
+<span id="L193"><span class="lineNum">     193</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 150 times"> + </span>]:<span class="tlaGNC">         150 :         if(timer_.Instance == nullptr) return false;</span></span>
+<span id="L194"><span class="lineNum">     194</span>         [<span class="tlaGBC" title="Branch 0 was taken 132 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 18 times"> + </span>]:<span class="tlaGNC">         150 :         if(channel == TIM_CHANNEL_3) {</span></span>
+<span id="L195"><span class="lineNum">     195</span>                 :<span class="tlaGNC">         132 :             info = {TIM_CHANNEL_3, TIM_IT_CC3, HAL_TIM_ACTIVE_CHANNEL_3};</span></span>
+<span id="L196"><span class="lineNum">     196</span>                 :<span class="tlaGNC">         132 :             return IS_TIM_CC3_INSTANCE(timer_.Instance);</span></span>
+<span id="L197"><span class="lineNum">     197</span>                 :             :         }</span>
+<span id="L198"><span class="lineNum">     198</span>         [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span>]:<span class="tlaGNC">          18 :         if(channel == TIM_CHANNEL_4) {</span></span>
+<span id="L199"><span class="lineNum">     199</span>                 :<span class="tlaGNC">          14 :             info = {TIM_CHANNEL_4, TIM_IT_CC4, HAL_TIM_ACTIVE_CHANNEL_4};</span></span>
+<span id="L200"><span class="lineNum">     200</span>                 :<span class="tlaGNC">          14 :             return IS_TIM_CC4_INSTANCE(timer_.Instance);</span></span>
+<span id="L201"><span class="lineNum">     201</span>                 :             :         }</span>
+<span id="L202"><span class="lineNum">     202</span>                 :<span class="tlaGNC">           4 :         return false;</span></span>
+<span id="L203"><span class="lineNum">     203</span>                 :             :     }</span>
+<span id="L204"><span class="lineNum">     204</span>                 :             : </span>
+<span id="L205"><span class="lineNum">     205</span>                 :<span class="tlaGNC">          17 :     Direction hardwareDirection() const {</span></span>
+<span id="L206"><span class="lineNum">     206</span>                 :<span class="tlaGNC">          17 :         return __HAL_TIM_IS_TIM_COUNTING_DOWN(&amp;timer_) ? Direction::Reverse</span></span>
+<span id="L207"><span class="lineNum">     207</span>                 :<span class="tlaGNC">          17 :                                                        : Direction::Forward;</span></span>
+<span id="L208"><span class="lineNum">     208</span>                 :             :     }</span>
+<span id="L209"><span class="lineNum">     209</span>                 :             : </span>
+<span id="L210"><span class="lineNum">     210</span>                 :             :     static constexpr int64_t COUNTER16_MODULUS =</span>
+<span id="L211"><span class="lineNum">     211</span>                 :             :         static_cast&lt;int64_t&gt;(UINT16_MAX) + 1;</span>
+<span id="L212"><span class="lineNum">     212</span>                 :             :     static constexpr uint32_t COUNTER16_HALF_RANGE =</span>
+<span id="L213"><span class="lineNum">     213</span>                 :             :         static_cast&lt;uint32_t&gt;(COUNTER16_MODULUS / 2);</span>
+<span id="L214"><span class="lineNum">     214</span>                 :             : </span>
+<span id="L215"><span class="lineNum">     215</span>                 :<span class="tlaGNC">       65564 :     static int32_t pendingWrapDelta(uint16_t counter) {</span></span>
+<span id="L216"><span class="lineNum">     216</span>                 :             :         // UIF does not retain the direction at the boundary. The counter half</span>
+<span id="L217"><span class="lineNum">     217</span>                 :             :         // identifies the boundary most recently crossed even if DIR changes</span>
+<span id="L218"><span class="lineNum">     218</span>                 :             :         // before the Update callback runs.</span>
+<span id="L219"><span class="lineNum">     219</span>         [<span class="tlaGBC" title="Branch 0 was taken 32785 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32779 times"> + </span>]:<span class="tlaGNC">       65564 :         return counter &lt; COUNTER16_HALF_RANGE ? 1 : -1;</span></span>
+<span id="L220"><span class="lineNum">     220</span>                 :             :     }</span>
+<span id="L221"><span class="lineNum">     221</span>                 :             : </span>
+<span id="L222"><span class="lineNum">     222</span>                 :<span class="tlaGNC">          23 :     static int32_t signedCounter32(uint32_t counter) {</span></span>
+<span id="L223"><span class="lineNum">     223</span>         [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 13 times"> + </span>]:<span class="tlaGNC">          23 :         if(counter &lt;= static_cast&lt;uint32_t&gt;(INT32_MAX))</span></span>
+<span id="L224"><span class="lineNum">     224</span>                 :<span class="tlaGNC">          10 :             return static_cast&lt;int32_t&gt;(counter);</span></span>
+<span id="L225"><span class="lineNum">     225</span>                 :<span class="tlaGNC">          13 :         return checkedInt32(static_cast&lt;int64_t&gt;(counter) -</span></span>
+<span id="L226"><span class="lineNum">     226</span>                 :<span class="tlaGNC">          13 :                             (static_cast&lt;int64_t&gt;(UINT32_MAX) + 1));</span></span>
+<span id="L227"><span class="lineNum">     227</span>                 :             :     }</span>
+<span id="L228"><span class="lineNum">     228</span>                 :             : </span>
+<span id="L229"><span class="lineNum">     229</span>                 :<span class="tlaGNC">          44 :     bool instanceSupportsEncoder() const {</span></span>
+<span id="L230"><span class="lineNum">     230</span>         [<span class="tlaGBC" title="Branch 0 was taken 44 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          88 :         return timer_.Instance != nullptr &amp;&amp;</span></span>
+<span id="L231"><span class="lineNum">     231</span>         [<span class="tlaGBC" title="Branch 0 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span>]:<span class="tlaGNC">          88 :                IS_TIM_ENCODER_INTERFACE_INSTANCE(timer_.Instance);</span></span>
+<span id="L232"><span class="lineNum">     232</span>                 :             :     }</span>
+<span id="L233"><span class="lineNum">     233</span>                 :             : </span>
+<span id="L234"><span class="lineNum">     234</span>                 :             :     /** Snapshot without consuming UIF, which is owned by the Update callback. */</span>
+<span id="L235"><span class="lineNum">     235</span>                 :<span class="tlaGNC">       32940 :     void snapshotRawCount() {</span></span>
+<span id="L236"><span class="lineNum">     236</span>                 :<span class="tlaGNC">       32940 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L237"><span class="lineNum">     237</span>                 :<span class="tlaGNC">       32940 :         __disable_irq();</span></span>
+<span id="L238"><span class="lineNum">     238</span>                 :<span class="tlaGNC">       32940 :         const int32_t previous = raw_count_;</span></span>
+<span id="L239"><span class="lineNum">     239</span>         [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32918 times"> + </span>]:<span class="tlaGNC">       32940 :         if(timer_is_32_bit_) {</span></span>
+<span id="L240"><span class="lineNum">     240</span>                 :<span class="tlaGNC">          22 :             raw_count_ = signedCounter32(</span></span>
+<span id="L241"><span class="lineNum">     241</span>                 :<span class="tlaGNC">          22 :                 static_cast&lt;uint32_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_)));</span></span>
+<span id="L242"><span class="lineNum">     242</span>                 :             :         } else {</span>
+<span id="L243"><span class="lineNum">     243</span>                 :<span class="tlaGNC">       32918 :             int64_t effective_wrap = wrap_count_;</span></span>
+<span id="L244"><span class="lineNum">     244</span>                 :<span class="tlaGNC">       32918 :             bool update_pending =</span></span>
+<span id="L245"><span class="lineNum">     245</span>                 :<span class="tlaGNC">       32918 :                 __HAL_TIM_GET_FLAG(&amp;timer_, TIM_FLAG_UPDATE) != 0U;</span></span>
+<span id="L246"><span class="lineNum">     246</span>                 :<span class="tlaGNC">       32918 :             uint32_t current =</span></span>
+<span id="L247"><span class="lineNum">     247</span>                 :<span class="tlaGNC">       32918 :                 static_cast&lt;uint16_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
+<span id="L248"><span class="lineNum">     248</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32910 times"> + </span>]:<span class="tlaGNC">       32918 :             if(update_pending)</span></span>
+<span id="L249"><span class="lineNum">     249</span>                 :<span class="tlaGNC">           8 :                 effective_wrap +=</span></span>
+<span id="L250"><span class="lineNum">     250</span>                 :<span class="tlaGNC">           8 :                     pendingWrapDelta(static_cast&lt;uint16_t&gt;(current));</span></span>
+<span id="L251"><span class="lineNum">     251</span>                 :             :             // Account provisionally if wrap occurred between flag and CNT.</span>
+<span id="L252"><span class="lineNum">     252</span>                 :             :             // Do not clear UIF: HAL may already have saved itflag and remains</span>
+<span id="L253"><span class="lineNum">     253</span>                 :             :             // solely responsible for the subsequent Update callback.</span>
+<span id="L254"><span class="lineNum">     254</span>         [<span class="tlaGBC" title="Branch 0 was taken 32910 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 8 times"> + </span>]:<span class="tlaGNC">       32918 :             if(!update_pending &amp;&amp;</span></span>
+<span id="L255"><span class="lineNum">     255</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 32910 times"> + </span>]:<span class="tlaGNC">       32910 :                __HAL_TIM_GET_FLAG(&amp;timer_, TIM_FLAG_UPDATE) != 0U) {</span></span>
+<span id="L256"><span class="lineNum">     256</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 current = static_cast&lt;uint16_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
+<span id="L257"><span class="lineNum">     257</span>                 :<span class="tlaUNC">           0 :                 effective_wrap +=</span></span>
+<span id="L258"><span class="lineNum">     258</span>                 :<span class="tlaUNC">           0 :                     pendingWrapDelta(static_cast&lt;uint16_t&gt;(current));</span></span>
+<span id="L259"><span class="lineNum">     259</span>                 :             :             }</span>
+<span id="L260"><span class="lineNum">     260</span>                 :<span class="tlaGNC tlaBgGNC">       32918 :             const int64_t extended =</span></span>
+<span id="L261"><span class="lineNum">     261</span>                 :<span class="tlaGNC">       32918 :                 effective_wrap * COUNTER16_MODULUS + current;</span></span>
+<span id="L262"><span class="lineNum">     262</span>                 :<span class="tlaGNC">       32918 :             raw_count_ = checkedInt32(extended);</span></span>
+<span id="L263"><span class="lineNum">     263</span>                 :             :         }</span>
+<span id="L264"><span class="lineNum">     264</span>         [<span class="tlaGBC" title="Branch 0 was taken 53 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32887 times"> + </span>]:<span class="tlaGNC">       32940 :         if(raw_count_ &gt; previous) direction_ = Direction::Forward;</span></span>
+<span id="L265"><span class="lineNum">     265</span>         [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32915 times"> + </span>]:<span class="tlaGNC">       32940 :         if(raw_count_ &lt; previous) direction_ = Direction::Reverse;</span></span>
+<span id="L266"><span class="lineNum">     266</span>         [<span class="tlaGBC" title="Branch 0 was taken 32873 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 67 times"> + </span>]:<span class="tlaGNC">       32940 :         if(!primask) __enable_irq();</span></span>
+<span id="L267"><span class="lineNum">     267</span>                 :<span class="tlaGNC">       32940 :     }</span></span>
+<span id="L268"><span class="lineNum">     268</span>                 :             : </span>
+<span id="L269"><span class="lineNum">     269</span>                 :<span class="tlaGNC">       32904 :     void refreshRawCount() override {</span></span>
+<span id="L270"><span class="lineNum">     270</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 32904 times"> + </span>]:<span class="tlaGNC">       32904 :         if(!initialized_) return;</span></span>
+<span id="L271"><span class="lineNum">     271</span>                 :<span class="tlaGNC">       32904 :         snapshotRawCount();</span></span>
+<span id="L272"><span class="lineNum">     272</span>                 :             :     }</span>
+<span id="L273"><span class="lineNum">     273</span>                 :<span class="tlaGNC">          30 :     bool correctionIsBlocked() const override { return trigger_armed_; }</span></span>
+<span id="L274"><span class="lineNum">     274</span>                 :<span class="tlaGNC">          45 :     void resetBackend() override {</span></span>
+<span id="L275"><span class="lineNum">     275</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 45 times"> + </span>]:<span class="tlaGNC">          45 :         if(!initialized_) return;</span></span>
+<span id="L276"><span class="lineNum">     276</span>                 :<span class="tlaGNC">          45 :         cancelPositionTrigger();</span></span>
+<span id="L277"><span class="lineNum">     277</span>                 :<span class="tlaGNC">          45 :         __HAL_TIM_SET_COUNTER(&amp;timer_, 0);</span></span>
+<span id="L278"><span class="lineNum">     278</span>                 :<span class="tlaGNC">          45 :         __HAL_TIM_CLEAR_FLAG(&amp;timer_, TIM_FLAG_UPDATE);</span></span>
+<span id="L279"><span class="lineNum">     279</span>                 :<span class="tlaGNC">          45 :         wrap_count_ = 0;</span></span>
+<span id="L280"><span class="lineNum">     280</span>                 :             :     }</span>
+<span id="L281"><span class="lineNum">     281</span>                 :             : </span>
+<span id="L282"><span class="lineNum">     282</span>                 :             : public:</span>
+<span id="L283"><span class="lineNum">     283</span>                 :             :     /**</span>
+<span id="L284"><span class="lineNum">     284</span>                 :             :      * @brief Timer backendを構築する。ハードウェアはbegin()まで読まない。</span>
+<span id="L285"><span class="lineNum">     285</span>                 :             :      * @param timer CubeMXでEncoder Mode TI1/TI2に初期化するTimer handle。</span>
+<span id="L286"><span class="lineNum">     286</span>                 :             :      * @param index_gpio X相に使用するGPIO manager。</span>
+<span id="L287"><span class="lineNum">     287</span>                 :             :      * @param ppr 1回転当たりのパルス数。</span>
+<span id="L288"><span class="lineNum">     288</span>                 :             :      * @param compare_channel この実装/MCUでPosition Trigger対応と判定される</span>
+<span id="L289"><span class="lineNum">     289</span>                 :             :      *                        Compare channel。現在のG4/F0実装ではCH3またはCH4。</span>
+<span id="L290"><span class="lineNum">     290</span>                 :             :      */</span>
+<span id="L291"><span class="lineNum">     291</span>                 :<span class="tlaGNC">          50 :     explicit AMTEncoderTimer(TIM_HandleTypeDef&amp; timer, GPIO_Mgr&lt;1&gt;&amp; index_gpio,</span></span>
 <span id="L292"><span class="lineNum">     292</span>                 :             :                              uint16_t ppr,</span>
 <span id="L293"><span class="lineNum">     293</span>                 :             :                              uint32_t compare_channel = TIM_CHANNEL_3)</span>
 <span id="L294"><span class="lineNum">     294</span>                 :<span class="tlaGNC">         100 :         : AMTEncoderBase(ppr), timer_(timer), index_gpio_(index_gpio),</span></span>
@@ -417,250 +417,246 @@
 <span id="L333"><span class="lineNum">     333</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 46 times"> + </span>]:<span class="tlaGNC">          47 :            (timer_.Instance-&gt;CR1 &amp; TIM_CR1_CEN) != 0U)</span></span>
 <span id="L334"><span class="lineNum">     334</span>                 :<span class="tlaGNC">           3 :             return false;</span></span>
 <span id="L335"><span class="lineNum">     335</span>                 :<span class="tlaGNC">          46 :         if(index_gpio_.get_port(0) == nullptr ||</span></span>
-<span id="L336"><span class="lineNum">     336</span>   [<span class="tlaGBC" title="Branch 0 was taken 45 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 44 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          90 :            !validExtiPin(index_gpio_.get_pin(0)) ||</span></span>
-<span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 3 times"> + </span><span class="tlaGBC" title="Branch 5 was taken 43 times"> + </span>]
-<span id="L337"><span class="lineNum">     337</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 43 times"> + </span>]:<span class="tlaGNC">          44 :            !instanceSupportsEncoder())</span></span>
-<span id="L338"><span class="lineNum">     338</span>                 :<span class="tlaGNC">           3 :             return false;</span></span>
-<span id="L339"><span class="lineNum">     339</span>                 :             : </span>
-<span id="L340"><span class="lineNum">     340</span>                 :<span class="tlaGNC">          43 :         timer_is_32_bit_ = IS_TIM_32B_COUNTER_INSTANCE(timer_.Instance);</span></span>
-<span id="L341"><span class="lineNum">     341</span>                 :<span class="tlaGNC">          43 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L342"><span class="lineNum">     342</span>                 :<span class="tlaGNC">          43 :         __disable_irq();</span></span>
-<span id="L343"><span class="lineNum">     343</span>                 :<span class="tlaGNC">          43 :         initialized_ = true;</span></span>
-<span id="L344"><span class="lineNum">     344</span>                 :             :         // Keep CubeMX's static Timer configuration unchanged. resetBackend()</span>
-<span id="L345"><span class="lineNum">     345</span>                 :             :         // resets only AMT runtime state and discards a stale pending UIF.</span>
-<span id="L346"><span class="lineNum">     346</span>                 :<span class="tlaGNC">          43 :         AMTEncoderBase::reset();</span></span>
-<span id="L347"><span class="lineNum">     347</span>                 :             :         // UIE is AMT runtime state for 16-bit software wrap tracking.</span>
-<span id="L348"><span class="lineNum">     348</span>         [<span class="tlaGBC" title="Branch 0 was taken 38 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          43 :         if(!timer_is_32_bit_) {</span></span>
-<span id="L349"><span class="lineNum">     349</span>                 :<span class="tlaGNC">          38 :             __HAL_TIM_ENABLE_IT(&amp;timer_, TIM_IT_UPDATE);</span></span>
-<span id="L350"><span class="lineNum">     350</span>                 :             :         }</span>
-<span id="L351"><span class="lineNum">     351</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 42 times"> + </span>]:<span class="tlaGNC">          43 :         if(HAL_TIM_Encoder_Start(&amp;timer_, TIM_CHANNEL_ALL) != HAL_OK) {</span></span>
-<span id="L352"><span class="lineNum">     352</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!timer_is_32_bit_) __HAL_TIM_DISABLE_IT(&amp;timer_, TIM_IT_UPDATE);</span></span>
-<span id="L353"><span class="lineNum">     353</span>                 :<span class="tlaGNC">           1 :             initialized_ = false;</span></span>
-<span id="L354"><span class="lineNum">     354</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!primask) __enable_irq();</span></span>
-<span id="L355"><span class="lineNum">     355</span>                 :<span class="tlaGNC">           1 :             return false;</span></span>
-<span id="L356"><span class="lineNum">     356</span>                 :             :         }</span>
-<span id="L357"><span class="lineNum">     357</span>         [<span class="tlaGBC" title="Branch 0 was taken 42 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          42 :         if(!primask) __enable_irq();</span></span>
-<span id="L358"><span class="lineNum">     358</span>                 :<span class="tlaGNC">          42 :         return true;</span></span>
-<span id="L359"><span class="lineNum">     359</span>                 :             :     }</span>
-<span id="L360"><span class="lineNum">     360</span>                 :             : </span>
-<span id="L361"><span class="lineNum">     361</span>                 :             :     /** begin()が成功済みか返す。 */</span>
-<span id="L362"><span class="lineNum">     362</span>                 :<span class="tlaGNC">           3 :     bool isInitialized() const { return initialized_; }</span></span>
-<span id="L363"><span class="lineNum">     363</span>                 :             : </span>
-<span id="L364"><span class="lineNum">     364</span>                 :             :     /**</span>
-<span id="L365"><span class="lineNum">     365</span>                 :             :      * @brief 指定Compare channelをPosition Triggerに専有できるか返す。</span>
-<span id="L366"><span class="lineNum">     366</span>                 :             :      * @return 対応するcompare register、CC interrupt、HAL active channel、</span>
-<span id="L367"><span class="lineNum">     367</span>                 :             :      *         Timer capabilityがそろっている場合true。</span>
-<span id="L368"><span class="lineNum">     368</span>                 :             :      */</span>
-<span id="L369"><span class="lineNum">     369</span>                 :<span class="tlaGNC">          53 :     bool supportsPositionTrigger() const {</span></span>
-<span id="L370"><span class="lineNum">     370</span>                 :<span class="tlaGNC">          53 :         CompareChannelInfo info{};</span></span>
-<span id="L371"><span class="lineNum">     371</span>   [<span class="tlaGBC" title="Branch 0 was taken 52 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 51 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">          53 :         return initialized_ &amp;&amp; resolveCompareChannel(compare_channel_, info);</span></span>
-<span id="L372"><span class="lineNum">     372</span>                 :             :     }</span>
-<span id="L373"><span class="lineNum">     373</span>                 :             : </span>
-<span id="L374"><span class="lineNum">     374</span>                 :             :     /** X相のHAL GPIO EXTI callbackからpin maskを渡す。 */</span>
-<span id="L375"><span class="lineNum">     375</span>                 :<span class="tlaGNC">          27 :     void handleExti(uint16_t gpio_pin) {</span></span>
-<span id="L376"><span class="lineNum">     376</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span>]:<span class="tlaGNC">          27 :         if(!initialized_) return;</span></span>
-<span id="L377"><span class="lineNum">     377</span>         [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          26 :         if(gpio_pin == index_gpio_.get_pin(0)) {</span></span>
-<span id="L378"><span class="lineNum">     378</span>                 :<span class="tlaGNC">          26 :             const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L379"><span class="lineNum">     379</span>                 :<span class="tlaGNC">          26 :             __disable_irq();</span></span>
-<span id="L380"><span class="lineNum">     380</span>                 :<span class="tlaGNC">          26 :             handleIndex();</span></span>
-<span id="L381"><span class="lineNum">     381</span>         [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          26 :             if(!primask) __enable_irq();</span></span>
-<span id="L382"><span class="lineNum">     382</span>                 :             :         }</span>
-<span id="L383"><span class="lineNum">     383</span>                 :             :     }</span>
-<span id="L384"><span class="lineNum">     384</span>                 :             : </span>
-<span id="L385"><span class="lineNum">     385</span>                 :             :     /**</span>
-<span id="L386"><span class="lineNum">     386</span>                 :             :      * @brief 補正後目標位置のone-shot Compare callbackを予約する。</span>
-<span id="L387"><span class="lineNum">     387</span>                 :             :      * @param target_position_count 補正後の目標Position Count。</span>
-<span id="L388"><span class="lineNum">     388</span>                 :             :      * @param direction 発火を許可する回転方向。</span>
-<span id="L389"><span class="lineNum">     389</span>                 :             :      * @param callback 目標通過時にISR contextで呼ぶ関数。</span>
-<span id="L390"><span class="lineNum">     390</span>                 :             :      * @param context callbackへそのまま渡すcontext。</span>
-<span id="L391"><span class="lineNum">     391</span>                 :             :      * @return 予約に成功した場合true。</span>
-<span id="L392"><span class="lineNum">     392</span>                 :             :      */</span>
-<span id="L393"><span class="lineNum">     393</span>                 :<span class="tlaGNC">          33 :     bool armPositionTrigger(int32_t target_position_count,</span></span>
-<span id="L394"><span class="lineNum">     394</span>                 :             :                             TriggerDirection direction,</span>
-<span id="L395"><span class="lineNum">     395</span>                 :             :                             PositionCallback callback,</span>
-<span id="L396"><span class="lineNum">     396</span>                 :             :                             void* context) {</span>
-<span id="L397"><span class="lineNum">     397</span>                 :<span class="tlaGNC">          33 :         CompareChannelInfo compare_info{};</span></span>
-<span id="L398"><span class="lineNum">     398</span>                 :<span class="tlaGNC">          65 :         if(callback == nullptr ||</span></span>
-<span id="L399"><span class="lineNum">     399</span>   [<span class="tlaGBC" title="Branch 0 was taken 32 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 27 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span> :<span class="tlaGNC">          60 :            !resolveCompareChannel(compare_channel_, compare_info) ||</span></span>
+<span id="L336"><span class="lineNum">     336</span>   [<span class="tlaGBC" title="Branch 0 was taken 45 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 44 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          46 :            !validExtiPin(index_gpio_.get_pin(0)) || !instanceSupportsEncoder())</span></span>
+<span class="lineNum">        </span>    <span class="tlaGBC" title="Branch 4 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 5 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 6 was taken 3 times"> + </span><span class="tlaGBC" title="Branch 7 was taken 43 times"> + </span>]
+<span id="L337"><span class="lineNum">     337</span>                 :<span class="tlaGNC">           3 :             return false;</span></span>
+<span id="L338"><span class="lineNum">     338</span>                 :             : </span>
+<span id="L339"><span class="lineNum">     339</span>                 :<span class="tlaGNC">          43 :         timer_is_32_bit_ = IS_TIM_32B_COUNTER_INSTANCE(timer_.Instance);</span></span>
+<span id="L340"><span class="lineNum">     340</span>                 :<span class="tlaGNC">          43 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L341"><span class="lineNum">     341</span>                 :<span class="tlaGNC">          43 :         __disable_irq();</span></span>
+<span id="L342"><span class="lineNum">     342</span>                 :<span class="tlaGNC">          43 :         initialized_ = true;</span></span>
+<span id="L343"><span class="lineNum">     343</span>                 :             :         // Keep CubeMX's static Timer configuration unchanged. resetBackend()</span>
+<span id="L344"><span class="lineNum">     344</span>                 :             :         // resets only AMT runtime state and discards a stale pending UIF.</span>
+<span id="L345"><span class="lineNum">     345</span>                 :<span class="tlaGNC">          43 :         AMTEncoderBase::reset();</span></span>
+<span id="L346"><span class="lineNum">     346</span>                 :             :         // UIE is AMT runtime state for 16-bit software wrap tracking.</span>
+<span id="L347"><span class="lineNum">     347</span>         [<span class="tlaGBC" title="Branch 0 was taken 38 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          43 :         if(!timer_is_32_bit_) {</span></span>
+<span id="L348"><span class="lineNum">     348</span>                 :<span class="tlaGNC">          38 :             __HAL_TIM_ENABLE_IT(&amp;timer_, TIM_IT_UPDATE);</span></span>
+<span id="L349"><span class="lineNum">     349</span>                 :             :         }</span>
+<span id="L350"><span class="lineNum">     350</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 42 times"> + </span>]:<span class="tlaGNC">          43 :         if(HAL_TIM_Encoder_Start(&amp;timer_, TIM_CHANNEL_ALL) != HAL_OK) {</span></span>
+<span id="L351"><span class="lineNum">     351</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!timer_is_32_bit_) __HAL_TIM_DISABLE_IT(&amp;timer_, TIM_IT_UPDATE);</span></span>
+<span id="L352"><span class="lineNum">     352</span>                 :<span class="tlaGNC">           1 :             initialized_ = false;</span></span>
+<span id="L353"><span class="lineNum">     353</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!primask) __enable_irq();</span></span>
+<span id="L354"><span class="lineNum">     354</span>                 :<span class="tlaGNC">           1 :             return false;</span></span>
+<span id="L355"><span class="lineNum">     355</span>                 :             :         }</span>
+<span id="L356"><span class="lineNum">     356</span>         [<span class="tlaGBC" title="Branch 0 was taken 42 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          42 :         if(!primask) __enable_irq();</span></span>
+<span id="L357"><span class="lineNum">     357</span>                 :<span class="tlaGNC">          42 :         return true;</span></span>
+<span id="L358"><span class="lineNum">     358</span>                 :             :     }</span>
+<span id="L359"><span class="lineNum">     359</span>                 :             : </span>
+<span id="L360"><span class="lineNum">     360</span>                 :             :     /** begin()が成功済みか返す。 */</span>
+<span id="L361"><span class="lineNum">     361</span>                 :<span class="tlaGNC">           3 :     bool isInitialized() const { return initialized_; }</span></span>
+<span id="L362"><span class="lineNum">     362</span>                 :             : </span>
+<span id="L363"><span class="lineNum">     363</span>                 :             :     /**</span>
+<span id="L364"><span class="lineNum">     364</span>                 :             :      * @brief 指定Compare channelをPosition Triggerに専有できるか返す。</span>
+<span id="L365"><span class="lineNum">     365</span>                 :             :      * @return 対応するcompare register、CC interrupt、HAL active channel、</span>
+<span id="L366"><span class="lineNum">     366</span>                 :             :      *         Timer capabilityがそろっている場合true。</span>
+<span id="L367"><span class="lineNum">     367</span>                 :             :      */</span>
+<span id="L368"><span class="lineNum">     368</span>                 :<span class="tlaGNC">          53 :     bool supportsPositionTrigger() const {</span></span>
+<span id="L369"><span class="lineNum">     369</span>                 :<span class="tlaGNC">          53 :         CompareChannelInfo info{};</span></span>
+<span id="L370"><span class="lineNum">     370</span>   [<span class="tlaGBC" title="Branch 0 was taken 52 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 51 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span>]:<span class="tlaGNC">          53 :         return initialized_ &amp;&amp; resolveCompareChannel(compare_channel_, info);</span></span>
+<span id="L371"><span class="lineNum">     371</span>                 :             :     }</span>
+<span id="L372"><span class="lineNum">     372</span>                 :             : </span>
+<span id="L373"><span class="lineNum">     373</span>                 :             :     /** X相のHAL GPIO EXTI callbackからpin maskを渡す。 */</span>
+<span id="L374"><span class="lineNum">     374</span>                 :<span class="tlaGNC">          27 :     void handleExti(uint16_t gpio_pin) {</span></span>
+<span id="L375"><span class="lineNum">     375</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span>]:<span class="tlaGNC">          27 :         if(!initialized_) return;</span></span>
+<span id="L376"><span class="lineNum">     376</span>         [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          26 :         if(gpio_pin == index_gpio_.get_pin(0)) {</span></span>
+<span id="L377"><span class="lineNum">     377</span>                 :<span class="tlaGNC">          26 :             const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L378"><span class="lineNum">     378</span>                 :<span class="tlaGNC">          26 :             __disable_irq();</span></span>
+<span id="L379"><span class="lineNum">     379</span>                 :<span class="tlaGNC">          26 :             handleIndex();</span></span>
+<span id="L380"><span class="lineNum">     380</span>         [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          26 :             if(!primask) __enable_irq();</span></span>
+<span id="L381"><span class="lineNum">     381</span>                 :             :         }</span>
+<span id="L382"><span class="lineNum">     382</span>                 :             :     }</span>
+<span id="L383"><span class="lineNum">     383</span>                 :             : </span>
+<span id="L384"><span class="lineNum">     384</span>                 :             :     /**</span>
+<span id="L385"><span class="lineNum">     385</span>                 :             :      * @brief 補正後目標位置のone-shot Compare callbackを予約する。</span>
+<span id="L386"><span class="lineNum">     386</span>                 :             :      * @param target_position_count 補正後の目標Position Count。</span>
+<span id="L387"><span class="lineNum">     387</span>                 :             :      * @param direction 発火を許可する回転方向。</span>
+<span id="L388"><span class="lineNum">     388</span>                 :             :      * @param callback 目標通過時にISR contextで呼ぶ関数。</span>
+<span id="L389"><span class="lineNum">     389</span>                 :             :      * @param context callbackへそのまま渡すcontext。</span>
+<span id="L390"><span class="lineNum">     390</span>                 :             :      * @return 予約に成功した場合true。</span>
+<span id="L391"><span class="lineNum">     391</span>                 :             :      */</span>
+<span id="L392"><span class="lineNum">     392</span>                 :<span class="tlaGNC">          33 :     bool armPositionTrigger(int32_t target_position_count,</span></span>
+<span id="L393"><span class="lineNum">     393</span>                 :             :                             TriggerDirection direction,</span>
+<span id="L394"><span class="lineNum">     394</span>                 :             :                             PositionCallback callback, void* context) {</span>
+<span id="L395"><span class="lineNum">     395</span>                 :<span class="tlaGNC">          33 :         CompareChannelInfo compare_info{};</span></span>
+<span id="L396"><span class="lineNum">     396</span>                 :<span class="tlaGNC">          65 :         if(callback == nullptr ||</span></span>
+<span id="L397"><span class="lineNum">     397</span>   [<span class="tlaGBC" title="Branch 0 was taken 32 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 27 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span> :<span class="tlaGNC">          60 :            !resolveCompareChannel(compare_channel_, compare_info) ||</span></span>
 <span class="lineNum">        </span>          <span class="tlaGBC" title="Branch 4 was taken 7 times"> + </span><span class="tlaGBC" title="Branch 5 was taken 26 times"> + </span>]
-<span id="L400"><span class="lineNum">     400</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span>]:<span class="tlaGNC">          27 :            !supportsPositionTrigger())</span></span>
-<span id="L401"><span class="lineNum">     401</span>                 :<span class="tlaGNC">           7 :             return false;</span></span>
-<span id="L402"><span class="lineNum">     402</span>                 :<span class="tlaGNC">          26 :         const uint32_t mask = compare_info.interrupt_mask;</span></span>
-<span id="L403"><span class="lineNum">     403</span>                 :             : </span>
-<span id="L404"><span class="lineNum">     404</span>                 :<span class="tlaGNC">          26 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L405"><span class="lineNum">     405</span>                 :<span class="tlaGNC">          26 :         __disable_irq();</span></span>
-<span id="L406"><span class="lineNum">     406</span>                 :             :         // Keep indexed/offset validation and armed publication atomic with</span>
-<span id="L407"><span class="lineNum">     407</span>                 :             :         // respect to the X ISR. Once armed is true, handleIndex() is blocked.</span>
-<span id="L408"><span class="lineNum">     408</span>   [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 23 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 2 times"> + </span>]:<span class="tlaGNC">          26 :         if(!initialized_ || trigger_armed_ || correction_pending_ ||</span></span>
-<span id="L409"><span class="lineNum">     409</span>   [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 22 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          52 :            !indexed_ || !supportsPositionTrigger()) {</span></span>
+<span id="L398"><span class="lineNum">     398</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 26 times"> + </span>]:<span class="tlaGNC">          27 :            !supportsPositionTrigger())</span></span>
+<span id="L399"><span class="lineNum">     399</span>                 :<span class="tlaGNC">           7 :             return false;</span></span>
+<span id="L400"><span class="lineNum">     400</span>                 :<span class="tlaGNC">          26 :         const uint32_t mask = compare_info.interrupt_mask;</span></span>
+<span id="L401"><span class="lineNum">     401</span>                 :             : </span>
+<span id="L402"><span class="lineNum">     402</span>                 :<span class="tlaGNC">          26 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L403"><span class="lineNum">     403</span>                 :<span class="tlaGNC">          26 :         __disable_irq();</span></span>
+<span id="L404"><span class="lineNum">     404</span>                 :             :         // Keep indexed/offset validation and armed publication atomic with</span>
+<span id="L405"><span class="lineNum">     405</span>                 :             :         // respect to the X ISR. Once armed is true, handleIndex() is blocked.</span>
+<span id="L406"><span class="lineNum">     406</span>   [<span class="tlaGBC" title="Branch 0 was taken 25 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 23 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 2 times"> + </span>]:<span class="tlaGNC">          26 :         if(!initialized_ || trigger_armed_ || correction_pending_ ||</span></span>
+<span id="L407"><span class="lineNum">     407</span>   [<span class="tlaGBC" title="Branch 0 was taken 26 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 22 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 1 time"> + </span> :<span class="tlaGNC">          52 :            !indexed_ || !supportsPositionTrigger()) {</span></span>
 <span class="lineNum">        </span>    <span class="tlaUNC" title="Branch 4 was not taken"> - </span><span class="tlaGBC" title="Branch 5 was taken 22 times"> + </span><span class="tlaGBC" title="Branch 6 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 7 was taken 22 times"> + </span>]
-<span id="L410"><span class="lineNum">     410</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           4 :             if(!primask) __enable_irq();</span></span>
-<span id="L411"><span class="lineNum">     411</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
-<span id="L412"><span class="lineNum">     412</span>                 :             :         }</span>
-<span id="L413"><span class="lineNum">     413</span>         [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          22 :         refreshRawCount();</span></span>
-<span id="L414"><span class="lineNum">     414</span>                 :             :         const int64_t target_raw_extended =</span>
-<span id="L415"><span class="lineNum">     415</span>                 :<span class="tlaGNC">          22 :             static_cast&lt;int64_t&gt;(target_position_count) - correction_offset_;</span></span>
-<span id="L416"><span class="lineNum">     416</span>   [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 22 times"> + </span>]:<span class="tlaGNC">          22 :         if(target_raw_extended &lt; INT32_MIN || target_raw_extended &gt; INT32_MAX) {</span></span>
-<span id="L417"><span class="lineNum">     417</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC tlaBgUNC">           0 :             if(!primask) __enable_irq();</span></span>
-<span id="L418"><span class="lineNum">     418</span>                 :<span class="tlaUNC">           0 :             return false;</span></span>
-<span id="L419"><span class="lineNum">     419</span>                 :             :         }</span>
-<span id="L420"><span class="lineNum">     420</span>                 :<span class="tlaGNC tlaBgGNC">          22 :         const int32_t target_raw = static_cast&lt;int32_t&gt;(target_raw_extended);</span></span>
-<span id="L421"><span class="lineNum">     421</span>                 :<span class="tlaGNC">          22 :         const int32_t arm_start_raw = raw_count_;</span></span>
-<span id="L422"><span class="lineNum">     422</span>                 :<span class="tlaGNC">          22 :         const Direction arm_direction =</span></span>
-<span id="L423"><span class="lineNum">     423</span>         [<span class="tlaGBC" title="Branch 0 was taken 11 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 11 times"> + </span>]:<span class="tlaGNC">          33 :             direction == TriggerDirection::Forward ? Direction::Forward</span></span>
-<span id="L424"><span class="lineNum">     424</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          11 :             : direction == TriggerDirection::Reverse ? Direction::Reverse</span></span>
-<span id="L425"><span class="lineNum">     425</span>                 :<span class="tlaGNC">           8 :             : target_raw &gt; arm_start_raw ? Direction::Forward</span></span>
-<span id="L426"><span class="lineNum">     426</span>                 :             :                                          : Direction::Reverse;</span>
-<span id="L427"><span class="lineNum">     427</span>                 :             :         // A target at or behind the current coordinate would be ambiguous: a</span>
-<span id="L428"><span class="lineNum">     428</span>                 :             :         // 16-bit CCR could otherwise fire on a later alias after an arm race.</span>
-<span id="L429"><span class="lineNum">     429</span>   [<span class="tlaGBC" title="Branch 0 was taken 18 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 16 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 2 times"> + </span>]:<span class="tlaGNC">          22 :         if((arm_direction == Direction::Forward &amp;&amp;</span></span>
-<span id="L430"><span class="lineNum">     430</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 16 times"> + </span>]:<span class="tlaGNC">          20 :             target_raw &lt;= arm_start_raw) ||</span></span>
-<span id="L431"><span class="lineNum">     431</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">           4 :            (arm_direction == Direction::Reverse &amp;&amp;</span></span>
-<span id="L432"><span class="lineNum">     432</span>                 :             :             target_raw &gt;= arm_start_raw)) {</span>
-<span id="L433"><span class="lineNum">     433</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           3 :             if(!primask) __enable_irq();</span></span>
-<span id="L434"><span class="lineNum">     434</span>                 :<span class="tlaGNC">           3 :             return false;</span></span>
-<span id="L435"><span class="lineNum">     435</span>                 :             :         }</span>
-<span id="L436"><span class="lineNum">     436</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_DISABLE_IT(&amp;timer_, mask);</span></span>
-<span id="L437"><span class="lineNum">     437</span>                 :<span class="tlaGNC">          19 :         trigger_callback_ = callback;</span></span>
-<span id="L438"><span class="lineNum">     438</span>                 :<span class="tlaGNC">          19 :         trigger_context_ = context;</span></span>
-<span id="L439"><span class="lineNum">     439</span>                 :<span class="tlaGNC">          19 :         trigger_direction_ = direction;</span></span>
-<span id="L440"><span class="lineNum">     440</span>                 :<span class="tlaGNC">          19 :         trigger_target_raw_ = target_raw;</span></span>
-<span id="L441"><span class="lineNum">     441</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_SET_COMPARE(&amp;timer_, compare_channel_,</span></span>
-<span id="L442"><span class="lineNum">     442</span>                 :             :                               static_cast&lt;uint32_t&gt;(target_raw));</span>
-<span id="L443"><span class="lineNum">     443</span>                 :             :         // Discard matches from the old CCR between disabling CCxIE and writing</span>
-<span id="L444"><span class="lineNum">     444</span>                 :             :         // the new CCR. A new-target match in this window is detected below.</span>
-<span id="L445"><span class="lineNum">     445</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_CLEAR_FLAG(&amp;timer_, mask);</span></span>
-<span id="L446"><span class="lineNum">     446</span>                 :<span class="tlaGNC">          19 :         snapshotRawCount();</span></span>
-<span id="L447"><span class="lineNum">     447</span>                 :             :         const bool target_passed =</span>
-<span id="L448"><span class="lineNum">     448</span>                 :             :             arm_direction == Direction::Forward</span>
-<span id="L449"><span class="lineNum">     449</span>         [<span class="tlaGBC" title="Branch 0 was taken 16 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          19 :                 ? raw_count_ &gt;= target_raw</span></span>
-<span id="L450"><span class="lineNum">     450</span>                 :<span class="tlaGNC">           3 :                 : raw_count_ &lt;= target_raw;</span></span>
-<span id="L451"><span class="lineNum">     451</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 18 times"> + </span>]:<span class="tlaGNC">          19 :         if(target_passed) {</span></span>
-<span id="L452"><span class="lineNum">     452</span>                 :<span class="tlaGNC">           1 :             trigger_callback_ = nullptr;</span></span>
-<span id="L453"><span class="lineNum">     453</span>                 :<span class="tlaGNC">           1 :             trigger_context_ = nullptr;</span></span>
-<span id="L454"><span class="lineNum">     454</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!primask) __enable_irq();</span></span>
-<span id="L455"><span class="lineNum">     455</span>                 :<span class="tlaGNC">           1 :             return false;</span></span>
-<span id="L456"><span class="lineNum">     456</span>                 :             :         }</span>
-<span id="L457"><span class="lineNum">     457</span>                 :<span class="tlaGNC">          18 :         trigger_armed_ = true;</span></span>
-<span id="L458"><span class="lineNum">     458</span>                 :<span class="tlaGNC">          18 :         __HAL_TIM_ENABLE_IT(&amp;timer_, mask);</span></span>
-<span id="L459"><span class="lineNum">     459</span>         [<span class="tlaGBC" title="Branch 0 was taken 18 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          18 :         if(!primask) __enable_irq();</span></span>
-<span id="L460"><span class="lineNum">     460</span>                 :<span class="tlaGNC">          18 :         return true;</span></span>
-<span id="L461"><span class="lineNum">     461</span>                 :             :     }</span>
-<span id="L462"><span class="lineNum">     462</span>                 :             : </span>
-<span id="L463"><span class="lineNum">     463</span>                 :             :     /** 予約中のPosition Triggerを取り消す。 */</span>
-<span id="L464"><span class="lineNum">     464</span>                 :<span class="tlaGNC">          46 :     void cancelPositionTrigger() {</span></span>
-<span id="L465"><span class="lineNum">     465</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 46 times"> + </span>]:<span class="tlaGNC">          46 :         if(!initialized_) {</span></span>
-<span id="L466"><span class="lineNum">     466</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             trigger_armed_ = false;</span></span>
-<span id="L467"><span class="lineNum">     467</span>                 :<span class="tlaUNC">           0 :             trigger_callback_ = nullptr;</span></span>
-<span id="L468"><span class="lineNum">     468</span>                 :<span class="tlaUNC">           0 :             trigger_context_ = nullptr;</span></span>
-<span id="L469"><span class="lineNum">     469</span>                 :<span class="tlaUNC">           0 :             return;</span></span>
-<span id="L470"><span class="lineNum">     470</span>                 :             :         }</span>
-<span id="L471"><span class="lineNum">     471</span>                 :<span class="tlaGNC tlaBgGNC">          46 :         CompareChannelInfo compare_info{};</span></span>
-<span id="L472"><span class="lineNum">     472</span>                 :<span class="tlaGNC">          46 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L473"><span class="lineNum">     473</span>                 :<span class="tlaGNC">          46 :         __disable_irq();</span></span>
-<span id="L474"><span class="lineNum">     474</span>         [<span class="tlaGBC" title="Branch 0 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          46 :         if(resolveCompareChannel(compare_channel_, compare_info))</span></span>
-<span id="L475"><span class="lineNum">     475</span>                 :<span class="tlaGNC">          43 :             __HAL_TIM_DISABLE_IT(&amp;timer_, compare_info.interrupt_mask);</span></span>
-<span id="L476"><span class="lineNum">     476</span>                 :<span class="tlaGNC">          46 :         trigger_armed_ = false;</span></span>
-<span id="L477"><span class="lineNum">     477</span>                 :<span class="tlaGNC">          46 :         trigger_callback_ = nullptr;</span></span>
-<span id="L478"><span class="lineNum">     478</span>                 :<span class="tlaGNC">          46 :         trigger_context_ = nullptr;</span></span>
-<span id="L479"><span class="lineNum">     479</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 45 times"> + </span>]:<span class="tlaGNC">          46 :         if(!primask) __enable_irq();</span></span>
-<span id="L480"><span class="lineNum">     480</span>                 :             :     }</span>
-<span id="L481"><span class="lineNum">     481</span>                 :             :     /** Position Triggerが予約中か返す。 */</span>
-<span id="L482"><span class="lineNum">     482</span>                 :<span class="tlaGNC">          22 :     bool isPositionTriggerArmed() const { return trigger_armed_; }</span></span>
-<span id="L483"><span class="lineNum">     483</span>                 :             : </span>
-<span id="L484"><span class="lineNum">     484</span>                 :             :     /**</span>
-<span id="L485"><span class="lineNum">     485</span>                 :             :      * @brief 16-bit TimerのwrapをRaw Countへ確定する。</span>
-<span id="L486"><span class="lineNum">     486</span>                 :             :      * @note 対象TimerのHAL_TIM_PeriodElapsedCallbackから必ず呼ぶ。</span>
-<span id="L487"><span class="lineNum">     487</span>                 :             :      */</span>
-<span id="L488"><span class="lineNum">     488</span>                 :<span class="tlaGNC">       65556 :     void handleUpdateInterrupt() {</span></span>
-<span id="L489"><span class="lineNum">     489</span>   [<span class="tlaGBC" title="Branch 0 was taken 65556 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 65556 times"> + </span> :<span class="tlaGNC">       65556 :         if(!initialized_ || timer_is_32_bit_) return;</span></span>
+<span id="L408"><span class="lineNum">     408</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           4 :             if(!primask) __enable_irq();</span></span>
+<span id="L409"><span class="lineNum">     409</span>                 :<span class="tlaGNC">           4 :             return false;</span></span>
+<span id="L410"><span class="lineNum">     410</span>                 :             :         }</span>
+<span id="L411"><span class="lineNum">     411</span>         [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          22 :         refreshRawCount();</span></span>
+<span id="L412"><span class="lineNum">     412</span>                 :             :         const int64_t target_raw_extended =</span>
+<span id="L413"><span class="lineNum">     413</span>                 :<span class="tlaGNC">          22 :             static_cast&lt;int64_t&gt;(target_position_count) - correction_offset_;</span></span>
+<span id="L414"><span class="lineNum">     414</span>   [<span class="tlaGBC" title="Branch 0 was taken 22 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 22 times"> + </span>]:<span class="tlaGNC">          22 :         if(target_raw_extended &lt; INT32_MIN || target_raw_extended &gt; INT32_MAX) {</span></span>
+<span id="L415"><span class="lineNum">     415</span>         [<span class="tlaUNC" title="Branch 0 was not executed"> # </span><span class="tlaUNC" title="Branch 1 was not executed"> # </span>]:<span class="tlaUNC tlaBgUNC">           0 :             if(!primask) __enable_irq();</span></span>
+<span id="L416"><span class="lineNum">     416</span>                 :<span class="tlaUNC">           0 :             return false;</span></span>
+<span id="L417"><span class="lineNum">     417</span>                 :             :         }</span>
+<span id="L418"><span class="lineNum">     418</span>                 :<span class="tlaGNC tlaBgGNC">          22 :         const int32_t target_raw = static_cast&lt;int32_t&gt;(target_raw_extended);</span></span>
+<span id="L419"><span class="lineNum">     419</span>                 :<span class="tlaGNC">          22 :         const int32_t arm_start_raw = raw_count_;</span></span>
+<span id="L420"><span class="lineNum">     420</span>                 :<span class="tlaGNC">          22 :         const Direction arm_direction =</span></span>
+<span id="L421"><span class="lineNum">     421</span>         [<span class="tlaGBC" title="Branch 0 was taken 11 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 11 times"> + </span>]:<span class="tlaGNC">          33 :             direction == TriggerDirection::Forward   ? Direction::Forward</span></span>
+<span id="L422"><span class="lineNum">     422</span>         [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          11 :             : direction == TriggerDirection::Reverse ? Direction::Reverse</span></span>
+<span id="L423"><span class="lineNum">     423</span>                 :<span class="tlaGNC">           8 :             : target_raw &gt; arm_start_raw             ? Direction::Forward</span></span>
+<span id="L424"><span class="lineNum">     424</span>                 :             :                                                      : Direction::Reverse;</span>
+<span id="L425"><span class="lineNum">     425</span>                 :             :         // A target at or behind the current coordinate would be ambiguous: a</span>
+<span id="L426"><span class="lineNum">     426</span>                 :             :         // 16-bit CCR could otherwise fire on a later alias after an arm race.</span>
+<span id="L427"><span class="lineNum">     427</span>   [<span class="tlaGBC" title="Branch 0 was taken 18 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 16 times"> + </span><span class="tlaGBC" title="Branch 3 was taken 2 times"> + </span>]:<span class="tlaGNC">          22 :         if((arm_direction == Direction::Forward &amp;&amp;</span></span>
+<span id="L428"><span class="lineNum">     428</span>         [<span class="tlaGBC" title="Branch 0 was taken 4 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 16 times"> + </span>]:<span class="tlaGNC">          20 :             target_raw &lt;= arm_start_raw) ||</span></span>
+<span id="L429"><span class="lineNum">     429</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">           4 :            (arm_direction == Direction::Reverse &amp;&amp;</span></span>
+<span id="L430"><span class="lineNum">     430</span>                 :             :             target_raw &gt;= arm_start_raw)) {</span>
+<span id="L431"><span class="lineNum">     431</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           3 :             if(!primask) __enable_irq();</span></span>
+<span id="L432"><span class="lineNum">     432</span>                 :<span class="tlaGNC">           3 :             return false;</span></span>
+<span id="L433"><span class="lineNum">     433</span>                 :             :         }</span>
+<span id="L434"><span class="lineNum">     434</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_DISABLE_IT(&amp;timer_, mask);</span></span>
+<span id="L435"><span class="lineNum">     435</span>                 :<span class="tlaGNC">          19 :         trigger_callback_ = callback;</span></span>
+<span id="L436"><span class="lineNum">     436</span>                 :<span class="tlaGNC">          19 :         trigger_context_ = context;</span></span>
+<span id="L437"><span class="lineNum">     437</span>                 :<span class="tlaGNC">          19 :         trigger_direction_ = direction;</span></span>
+<span id="L438"><span class="lineNum">     438</span>                 :<span class="tlaGNC">          19 :         trigger_target_raw_ = target_raw;</span></span>
+<span id="L439"><span class="lineNum">     439</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_SET_COMPARE(&amp;timer_, compare_channel_,</span></span>
+<span id="L440"><span class="lineNum">     440</span>                 :             :                               static_cast&lt;uint32_t&gt;(target_raw));</span>
+<span id="L441"><span class="lineNum">     441</span>                 :             :         // Discard matches from the old CCR between disabling CCxIE and writing</span>
+<span id="L442"><span class="lineNum">     442</span>                 :             :         // the new CCR. A new-target match in this window is detected below.</span>
+<span id="L443"><span class="lineNum">     443</span>                 :<span class="tlaGNC">          19 :         __HAL_TIM_CLEAR_FLAG(&amp;timer_, mask);</span></span>
+<span id="L444"><span class="lineNum">     444</span>                 :<span class="tlaGNC">          19 :         snapshotRawCount();</span></span>
+<span id="L445"><span class="lineNum">     445</span>                 :             :         const bool target_passed = arm_direction == Direction::Forward</span>
+<span id="L446"><span class="lineNum">     446</span>         [<span class="tlaGBC" title="Branch 0 was taken 16 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          19 :                                        ? raw_count_ &gt;= target_raw</span></span>
+<span id="L447"><span class="lineNum">     447</span>                 :<span class="tlaGNC">           3 :                                        : raw_count_ &lt;= target_raw;</span></span>
+<span id="L448"><span class="lineNum">     448</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 18 times"> + </span>]:<span class="tlaGNC">          19 :         if(target_passed) {</span></span>
+<span id="L449"><span class="lineNum">     449</span>                 :<span class="tlaGNC">           1 :             trigger_callback_ = nullptr;</span></span>
+<span id="L450"><span class="lineNum">     450</span>                 :<span class="tlaGNC">           1 :             trigger_context_ = nullptr;</span></span>
+<span id="L451"><span class="lineNum">     451</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">           1 :             if(!primask) __enable_irq();</span></span>
+<span id="L452"><span class="lineNum">     452</span>                 :<span class="tlaGNC">           1 :             return false;</span></span>
+<span id="L453"><span class="lineNum">     453</span>                 :             :         }</span>
+<span id="L454"><span class="lineNum">     454</span>                 :<span class="tlaGNC">          18 :         trigger_armed_ = true;</span></span>
+<span id="L455"><span class="lineNum">     455</span>                 :<span class="tlaGNC">          18 :         __HAL_TIM_ENABLE_IT(&amp;timer_, mask);</span></span>
+<span id="L456"><span class="lineNum">     456</span>         [<span class="tlaGBC" title="Branch 0 was taken 18 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">          18 :         if(!primask) __enable_irq();</span></span>
+<span id="L457"><span class="lineNum">     457</span>                 :<span class="tlaGNC">          18 :         return true;</span></span>
+<span id="L458"><span class="lineNum">     458</span>                 :             :     }</span>
+<span id="L459"><span class="lineNum">     459</span>                 :             : </span>
+<span id="L460"><span class="lineNum">     460</span>                 :             :     /** 予約中のPosition Triggerを取り消す。 */</span>
+<span id="L461"><span class="lineNum">     461</span>                 :<span class="tlaGNC">          46 :     void cancelPositionTrigger() {</span></span>
+<span id="L462"><span class="lineNum">     462</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 46 times"> + </span>]:<span class="tlaGNC">          46 :         if(!initialized_) {</span></span>
+<span id="L463"><span class="lineNum">     463</span>                 :<span class="tlaUNC tlaBgUNC">           0 :             trigger_armed_ = false;</span></span>
+<span id="L464"><span class="lineNum">     464</span>                 :<span class="tlaUNC">           0 :             trigger_callback_ = nullptr;</span></span>
+<span id="L465"><span class="lineNum">     465</span>                 :<span class="tlaUNC">           0 :             trigger_context_ = nullptr;</span></span>
+<span id="L466"><span class="lineNum">     466</span>                 :<span class="tlaUNC">           0 :             return;</span></span>
+<span id="L467"><span class="lineNum">     467</span>                 :             :         }</span>
+<span id="L468"><span class="lineNum">     468</span>                 :<span class="tlaGNC tlaBgGNC">          46 :         CompareChannelInfo compare_info{};</span></span>
+<span id="L469"><span class="lineNum">     469</span>                 :<span class="tlaGNC">          46 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L470"><span class="lineNum">     470</span>                 :<span class="tlaGNC">          46 :         __disable_irq();</span></span>
+<span id="L471"><span class="lineNum">     471</span>         [<span class="tlaGBC" title="Branch 0 was taken 43 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 3 times"> + </span>]:<span class="tlaGNC">          46 :         if(resolveCompareChannel(compare_channel_, compare_info))</span></span>
+<span id="L472"><span class="lineNum">     472</span>                 :<span class="tlaGNC">          43 :             __HAL_TIM_DISABLE_IT(&amp;timer_, compare_info.interrupt_mask);</span></span>
+<span id="L473"><span class="lineNum">     473</span>                 :<span class="tlaGNC">          46 :         trigger_armed_ = false;</span></span>
+<span id="L474"><span class="lineNum">     474</span>                 :<span class="tlaGNC">          46 :         trigger_callback_ = nullptr;</span></span>
+<span id="L475"><span class="lineNum">     475</span>                 :<span class="tlaGNC">          46 :         trigger_context_ = nullptr;</span></span>
+<span id="L476"><span class="lineNum">     476</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 45 times"> + </span>]:<span class="tlaGNC">          46 :         if(!primask) __enable_irq();</span></span>
+<span id="L477"><span class="lineNum">     477</span>                 :             :     }</span>
+<span id="L478"><span class="lineNum">     478</span>                 :             :     /** Position Triggerが予約中か返す。 */</span>
+<span id="L479"><span class="lineNum">     479</span>                 :<span class="tlaGNC">          22 :     bool isPositionTriggerArmed() const { return trigger_armed_; }</span></span>
+<span id="L480"><span class="lineNum">     480</span>                 :             : </span>
+<span id="L481"><span class="lineNum">     481</span>                 :             :     /**</span>
+<span id="L482"><span class="lineNum">     482</span>                 :             :      * @brief 16-bit TimerのwrapをRaw Countへ確定する。</span>
+<span id="L483"><span class="lineNum">     483</span>                 :             :      * @note 対象TimerのHAL_TIM_PeriodElapsedCallbackから必ず呼ぶ。</span>
+<span id="L484"><span class="lineNum">     484</span>                 :             :      */</span>
+<span id="L485"><span class="lineNum">     485</span>                 :<span class="tlaGNC">       65556 :     void handleUpdateInterrupt() {</span></span>
+<span id="L486"><span class="lineNum">     486</span>   [<span class="tlaGBC" title="Branch 0 was taken 65556 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 65556 times"> + </span> :<span class="tlaGNC">       65556 :         if(!initialized_ || timer_is_32_bit_) return;</span></span>
 <span class="lineNum">        </span>          <span class="tlaUNC" title="Branch 4 was not taken"> - </span><span class="tlaGBC" title="Branch 5 was taken 65556 times"> + </span>]
-<span id="L490"><span class="lineNum">     490</span>                 :<span class="tlaGNC">       65556 :         const uint32_t primask = __get_PRIMASK();</span></span>
-<span id="L491"><span class="lineNum">     491</span>                 :<span class="tlaGNC">       65556 :         __disable_irq();</span></span>
-<span id="L492"><span class="lineNum">     492</span>                 :<span class="tlaGNC">       65556 :         const int32_t previous = raw_count_;</span></span>
-<span id="L493"><span class="lineNum">     493</span>                 :             :         // HAL clears UIF before HAL_TIM_PeriodElapsedCallback, so a callback</span>
-<span id="L494"><span class="lineNum">     494</span>                 :             :         // itself is the authoritative indication that exactly one wrap occurred.</span>
-<span id="L495"><span class="lineNum">     495</span>                 :<span class="tlaGNC">       65556 :         const uint32_t current =</span></span>
-<span id="L496"><span class="lineNum">     496</span>                 :<span class="tlaGNC">       65556 :             static_cast&lt;uint16_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
-<span id="L497"><span class="lineNum">     497</span>                 :<span class="tlaGNC">       65556 :         wrap_count_ = addInt32(</span></span>
-<span id="L498"><span class="lineNum">     498</span>                 :             :             wrap_count_, pendingWrapDelta(static_cast&lt;uint16_t&gt;(current)));</span>
-<span id="L499"><span class="lineNum">     499</span>                 :<span class="tlaGNC">       65556 :         const int64_t extended =</span></span>
-<span id="L500"><span class="lineNum">     500</span>                 :<span class="tlaGNC">       65556 :             static_cast&lt;int64_t&gt;(wrap_count_) * COUNTER16_MODULUS + current;</span></span>
-<span id="L501"><span class="lineNum">     501</span>                 :<span class="tlaGNC">       65556 :         raw_count_ = checkedInt32(extended);</span></span>
-<span id="L502"><span class="lineNum">     502</span>         [<span class="tlaGBC" title="Branch 0 was taken 32773 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32783 times"> + </span>]:<span class="tlaGNC">       65556 :         if(raw_count_ &gt; previous) direction_ = Direction::Forward;</span></span>
-<span id="L503"><span class="lineNum">     503</span>         [<span class="tlaGBC" title="Branch 0 was taken 32778 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32778 times"> + </span>]:<span class="tlaGNC">       65556 :         if(raw_count_ &lt; previous) direction_ = Direction::Reverse;</span></span>
-<span id="L504"><span class="lineNum">     504</span>         [<span class="tlaGBC" title="Branch 0 was taken 65556 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       65556 :         if(!primask) __enable_irq();</span></span>
-<span id="L505"><span class="lineNum">     505</span>                 :             :     }</span>
-<span id="L506"><span class="lineNum">     506</span>                 :             : </span>
-<span id="L507"><span class="lineNum">     507</span>                 :             :     /**</span>
-<span id="L508"><span class="lineNum">     508</span>                 :             :      * @brief Position TriggerのCompare eventを処理する。</span>
-<span id="L509"><span class="lineNum">     509</span>                 :             :      * @note 各Compare eventを単一のHAL callback経路から渡す。</span>
-<span id="L510"><span class="lineNum">     510</span>                 :             :      * HAL_TIM_OC_DelayElapsedCallbackを推奨し、同じeventをPWM callbackから</span>
-<span id="L511"><span class="lineNum">     511</span>                 :             :      * 重複して渡さない。HALはcallback前にCC flagをclearしている。</span>
-<span id="L512"><span class="lineNum">     512</span>                 :             :      */</span>
-<span id="L513"><span class="lineNum">     513</span>                 :<span class="tlaGNC">          20 :     void handleCompareInterrupt() {</span></span>
-<span id="L514"><span class="lineNum">     514</span>                 :<span class="tlaGNC">          20 :         CompareChannelInfo compare_info{};</span></span>
-<span id="L515"><span class="lineNum">     515</span>                 :             :         // Read DIER directly instead of __HAL_TIM_GET_IT_SOURCE(). CLog leaks</span>
-<span id="L516"><span class="lineNum">     516</span>                 :             :         // ColorMap::RESET into global lookup, which makes the HAL macro's</span>
-<span id="L517"><span class="lineNum">     517</span>                 :             :         // unqualified RESET result ambiguous in a C++ translation unit.</span>
-<span id="L518"><span class="lineNum">     518</span>                 :<span class="tlaGNC">          60 :         if(!trigger_armed_ ||</span></span>
-<span id="L519"><span class="lineNum">     519</span>   [<span class="tlaGBC" title="Branch 0 was taken 20 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 20 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">          40 :            !resolveCompareChannel(compare_channel_, compare_info) ||</span></span>
+<span id="L487"><span class="lineNum">     487</span>                 :<span class="tlaGNC">       65556 :         const uint32_t primask = __get_PRIMASK();</span></span>
+<span id="L488"><span class="lineNum">     488</span>                 :<span class="tlaGNC">       65556 :         __disable_irq();</span></span>
+<span id="L489"><span class="lineNum">     489</span>                 :<span class="tlaGNC">       65556 :         const int32_t previous = raw_count_;</span></span>
+<span id="L490"><span class="lineNum">     490</span>                 :             :         // HAL clears UIF before HAL_TIM_PeriodElapsedCallback, so a callback</span>
+<span id="L491"><span class="lineNum">     491</span>                 :             :         // itself is the authoritative indication that exactly one wrap occurred.</span>
+<span id="L492"><span class="lineNum">     492</span>                 :<span class="tlaGNC">       65556 :         const uint32_t current =</span></span>
+<span id="L493"><span class="lineNum">     493</span>                 :<span class="tlaGNC">       65556 :             static_cast&lt;uint16_t&gt;(__HAL_TIM_GET_COUNTER(&amp;timer_));</span></span>
+<span id="L494"><span class="lineNum">     494</span>                 :<span class="tlaGNC">       65556 :         wrap_count_ = addInt32(</span></span>
+<span id="L495"><span class="lineNum">     495</span>                 :             :             wrap_count_, pendingWrapDelta(static_cast&lt;uint16_t&gt;(current)));</span>
+<span id="L496"><span class="lineNum">     496</span>                 :<span class="tlaGNC">       65556 :         const int64_t extended =</span></span>
+<span id="L497"><span class="lineNum">     497</span>                 :<span class="tlaGNC">       65556 :             static_cast&lt;int64_t&gt;(wrap_count_) * COUNTER16_MODULUS + current;</span></span>
+<span id="L498"><span class="lineNum">     498</span>                 :<span class="tlaGNC">       65556 :         raw_count_ = checkedInt32(extended);</span></span>
+<span id="L499"><span class="lineNum">     499</span>         [<span class="tlaGBC" title="Branch 0 was taken 32773 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32783 times"> + </span>]:<span class="tlaGNC">       65556 :         if(raw_count_ &gt; previous) direction_ = Direction::Forward;</span></span>
+<span id="L500"><span class="lineNum">     500</span>         [<span class="tlaGBC" title="Branch 0 was taken 32778 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 32778 times"> + </span>]:<span class="tlaGNC">       65556 :         if(raw_count_ &lt; previous) direction_ = Direction::Reverse;</span></span>
+<span id="L501"><span class="lineNum">     501</span>         [<span class="tlaGBC" title="Branch 0 was taken 65556 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span>]:<span class="tlaGNC">       65556 :         if(!primask) __enable_irq();</span></span>
+<span id="L502"><span class="lineNum">     502</span>                 :             :     }</span>
+<span id="L503"><span class="lineNum">     503</span>                 :             : </span>
+<span id="L504"><span class="lineNum">     504</span>                 :             :     /**</span>
+<span id="L505"><span class="lineNum">     505</span>                 :             :      * @brief Position TriggerのCompare eventを処理する。</span>
+<span id="L506"><span class="lineNum">     506</span>                 :             :      * @note 各Compare eventを単一のHAL callback経路から渡す。</span>
+<span id="L507"><span class="lineNum">     507</span>                 :             :      * HAL_TIM_OC_DelayElapsedCallbackを推奨し、同じeventをPWM callbackから</span>
+<span id="L508"><span class="lineNum">     508</span>                 :             :      * 重複して渡さない。HALはcallback前にCC flagをclearしている。</span>
+<span id="L509"><span class="lineNum">     509</span>                 :             :      */</span>
+<span id="L510"><span class="lineNum">     510</span>                 :<span class="tlaGNC">          20 :     void handleCompareInterrupt() {</span></span>
+<span id="L511"><span class="lineNum">     511</span>                 :<span class="tlaGNC">          20 :         CompareChannelInfo compare_info{};</span></span>
+<span id="L512"><span class="lineNum">     512</span>                 :             :         // Read DIER directly instead of __HAL_TIM_GET_IT_SOURCE(). CLog leaks</span>
+<span id="L513"><span class="lineNum">     513</span>                 :             :         // ColorMap::RESET into global lookup, which makes the HAL macro's</span>
+<span id="L514"><span class="lineNum">     514</span>                 :             :         // unqualified RESET result ambiguous in a C++ translation unit.</span>
+<span id="L515"><span class="lineNum">     515</span>                 :<span class="tlaGNC">          60 :         if(!trigger_armed_ ||</span></span>
+<span id="L516"><span class="lineNum">     516</span>   [<span class="tlaGBC" title="Branch 0 was taken 20 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 20 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span> :<span class="tlaGNC">          40 :            !resolveCompareChannel(compare_channel_, compare_info) ||</span></span>
 <span class="lineNum">        </span>          <span class="tlaUNC" title="Branch 4 was not taken"> - </span><span class="tlaGBC" title="Branch 5 was taken 20 times"> + </span>]
-<span id="L520"><span class="lineNum">     520</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 20 times"> + </span>]:<span class="tlaGNC">          20 :            (timer_.Instance-&gt;DIER &amp; compare_info.interrupt_mask) == 0U)</span></span>
-<span id="L521"><span class="lineNum">     521</span>                 :<span class="tlaGNC">           6 :             return;</span></span>
-<span id="L522"><span class="lineNum">     522</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 17 times"> + </span>]:<span class="tlaGNC">          20 :         if(timer_.Channel != compare_info.active_channel) return;</span></span>
-<span id="L523"><span class="lineNum">     523</span>                 :<span class="tlaGNC">          17 :         snapshotRawCount();</span></span>
-<span id="L524"><span class="lineNum">     524</span>                 :             :         // Hardware does not retain the direction at match time. Callers must</span>
-<span id="L525"><span class="lineNum">     525</span>                 :             :         // ensure direction does not reverse before this callback is serviced.</span>
-<span id="L526"><span class="lineNum">     526</span>                 :<span class="tlaGNC">          17 :         const Direction event_direction = hardwareDirection();</span></span>
-<span id="L527"><span class="lineNum">     527</span>                 :             :         int32_t event_raw;</span>
-<span id="L528"><span class="lineNum">     528</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 16 times"> + </span>]:<span class="tlaGNC">          17 :         if(timer_is_32_bit_) {</span></span>
-<span id="L529"><span class="lineNum">     529</span>                 :<span class="tlaGNC">           1 :             event_raw = signedCounter32(static_cast&lt;uint32_t&gt;(</span></span>
-<span id="L530"><span class="lineNum">     530</span>                 :<span class="tlaGNC">           1 :                 __HAL_TIM_GET_COMPARE(&amp;timer_, compare_info.channel)));</span></span>
-<span id="L531"><span class="lineNum">     531</span>                 :             :         } else {</span>
-<span id="L532"><span class="lineNum">     532</span>                 :<span class="tlaGNC">          16 :             const int32_t current_raw = raw_count_;</span></span>
-<span id="L533"><span class="lineNum">     533</span>                 :             :             const int64_t revolution_base =</span>
-<span id="L534"><span class="lineNum">     534</span>                 :<span class="tlaGNC">          16 :                 static_cast&lt;int64_t&gt;(current_raw) -</span></span>
-<span id="L535"><span class="lineNum">     535</span>                 :<span class="tlaGNC">          16 :                 positiveModulo(current_raw,</span></span>
-<span id="L536"><span class="lineNum">     536</span>                 :<span class="tlaGNC">          16 :                                static_cast&lt;int32_t&gt;(COUNTER16_MODULUS));</span></span>
-<span id="L537"><span class="lineNum">     537</span>                 :             :             const uint16_t compare = static_cast&lt;uint16_t&gt;(</span>
-<span id="L538"><span class="lineNum">     538</span>                 :<span class="tlaGNC">          16 :                 __HAL_TIM_GET_COMPARE(&amp;timer_, compare_info.channel));</span></span>
-<span id="L539"><span class="lineNum">     539</span>                 :             :             // Derive the hardware-coordinate value from the same snapshot as</span>
-<span id="L540"><span class="lineNum">     540</span>                 :             :             // current_raw. Re-reading CNT here could cross a 16-bit wrap and</span>
-<span id="L541"><span class="lineNum">     541</span>                 :             :             // create a raw/CNT pair that never existed at one instant.</span>
-<span id="L542"><span class="lineNum">     542</span>                 :             :             const uint16_t current = static_cast&lt;uint16_t&gt;(</span>
-<span id="L543"><span class="lineNum">     543</span>                 :<span class="tlaGNC">          16 :                 positiveModulo(current_raw,</span></span>
-<span id="L544"><span class="lineNum">     544</span>                 :<span class="tlaGNC">          16 :                                static_cast&lt;int32_t&gt;(COUNTER16_MODULUS)));</span></span>
-<span id="L545"><span class="lineNum">     545</span>                 :<span class="tlaGNC">          16 :             int64_t event_base = revolution_base;</span></span>
-<span id="L546"><span class="lineNum">     546</span>                 :             :             // If CNT crossed wrap after the compare match but before this</span>
-<span id="L547"><span class="lineNum">     547</span>                 :             :             // callback, the event belongs to the adjacent previous interval.</span>
-<span id="L548"><span class="lineNum">     548</span>   [<span class="tlaGBC" title="Branch 0 was taken 11 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 10 times"> + </span>]:<span class="tlaGNC">          16 :             if(event_direction == Direction::Forward &amp;&amp; current &lt; compare)</span></span>
-<span id="L549"><span class="lineNum">     549</span>                 :<span class="tlaGNC">           1 :                 event_base -= COUNTER16_MODULUS;</span></span>
-<span id="L550"><span class="lineNum">     550</span>   [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 10 times"> + </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span>]:<span class="tlaGNC">          15 :             else if(event_direction == Direction::Reverse &amp;&amp; current &gt; compare)</span></span>
-<span id="L551"><span class="lineNum">     551</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 event_base += COUNTER16_MODULUS;</span></span>
-<span id="L552"><span class="lineNum">     552</span>                 :<span class="tlaGNC tlaBgGNC">          16 :             event_raw = checkedInt32(event_base + compare);</span></span>
-<span id="L553"><span class="lineNum">     553</span>                 :             :         }</span>
-<span id="L554"><span class="lineNum">     554</span>                 :             :         // A 16-bit CCR matches once per hardware wrap. Ignore earlier/later</span>
-<span id="L555"><span class="lineNum">     555</span>                 :             :         // aliases and keep the one-shot armed for the intended cumulative turn.</span>
-<span id="L556"><span class="lineNum">     556</span>         [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 15 times"> + </span>]:<span class="tlaGNC">          17 :         if(event_raw != trigger_target_raw_) return;</span></span>
-<span id="L557"><span class="lineNum">     557</span>                 :<span class="tlaGNC">          15 :         const bool direction_matches =</span></span>
-<span id="L558"><span class="lineNum">     558</span>                 :<span class="tlaGNC">          25 :             trigger_direction_ == TriggerDirection::Any ||</span></span>
-<span id="L559"><span class="lineNum">     559</span>   [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 7 times"> + </span>]:<span class="tlaGNC">          10 :             (trigger_direction_ == TriggerDirection::Forward &amp;&amp;</span></span>
-<span id="L560"><span class="lineNum">     560</span>         [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          25 :              event_direction == Direction::Forward) ||</span></span>
-<span id="L561"><span class="lineNum">     561</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           3 :             (trigger_direction_ == TriggerDirection::Reverse &amp;&amp;</span></span>
-<span id="L562"><span class="lineNum">     562</span>                 :             :              event_direction == Direction::Reverse);</span>
-<span id="L563"><span class="lineNum">     563</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 14 times"> + </span>]:<span class="tlaGNC">          15 :         if(!direction_matches) return;</span></span>
-<span id="L564"><span class="lineNum">     564</span>                 :             : </span>
-<span id="L565"><span class="lineNum">     565</span>                 :<span class="tlaGNC">          14 :         __HAL_TIM_DISABLE_IT(&amp;timer_, compare_info.interrupt_mask);</span></span>
-<span id="L566"><span class="lineNum">     566</span>                 :<span class="tlaGNC">          14 :         PositionCallback callback = trigger_callback_;</span></span>
-<span id="L567"><span class="lineNum">     567</span>                 :<span class="tlaGNC">          14 :         void* context = trigger_context_;</span></span>
-<span id="L568"><span class="lineNum">     568</span>                 :<span class="tlaGNC">          14 :         trigger_armed_ = false;</span></span>
-<span id="L569"><span class="lineNum">     569</span>                 :<span class="tlaGNC">          14 :         trigger_callback_ = nullptr;</span></span>
-<span id="L570"><span class="lineNum">     570</span>                 :<span class="tlaGNC">          14 :         trigger_context_ = nullptr;</span></span>
-<span id="L571"><span class="lineNum">     571</span>   [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 14 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          14 :         if(callback) callback(context);</span></span>
-<span id="L572"><span class="lineNum">     572</span>                 :             :     }</span>
-<span id="L573"><span class="lineNum">     573</span>                 :             : };</span>
-<span id="L574"><span class="lineNum">     574</span>                 :             : #endif  // HAL_TIM_MODULE_ENABLED</span>
+<span id="L517"><span class="lineNum">     517</span>         [<span class="tlaUNC" title="Branch 0 was not taken"> - </span><span class="tlaGBC" title="Branch 1 was taken 20 times"> + </span>]:<span class="tlaGNC">          20 :            (timer_.Instance-&gt;DIER &amp; compare_info.interrupt_mask) == 0U)</span></span>
+<span id="L518"><span class="lineNum">     518</span>                 :<span class="tlaGNC">           6 :             return;</span></span>
+<span id="L519"><span class="lineNum">     519</span>         [<span class="tlaGBC" title="Branch 0 was taken 3 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 17 times"> + </span>]:<span class="tlaGNC">          20 :         if(timer_.Channel != compare_info.active_channel) return;</span></span>
+<span id="L520"><span class="lineNum">     520</span>                 :<span class="tlaGNC">          17 :         snapshotRawCount();</span></span>
+<span id="L521"><span class="lineNum">     521</span>                 :             :         // Hardware does not retain the direction at match time. Callers must</span>
+<span id="L522"><span class="lineNum">     522</span>                 :             :         // ensure direction does not reverse before this callback is serviced.</span>
+<span id="L523"><span class="lineNum">     523</span>                 :<span class="tlaGNC">          17 :         const Direction event_direction = hardwareDirection();</span></span>
+<span id="L524"><span class="lineNum">     524</span>                 :             :         int32_t event_raw;</span>
+<span id="L525"><span class="lineNum">     525</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 16 times"> + </span>]:<span class="tlaGNC">          17 :         if(timer_is_32_bit_) {</span></span>
+<span id="L526"><span class="lineNum">     526</span>                 :<span class="tlaGNC">           1 :             event_raw = signedCounter32(static_cast&lt;uint32_t&gt;(</span></span>
+<span id="L527"><span class="lineNum">     527</span>                 :<span class="tlaGNC">           1 :                 __HAL_TIM_GET_COMPARE(&amp;timer_, compare_info.channel)));</span></span>
+<span id="L528"><span class="lineNum">     528</span>                 :             :         } else {</span>
+<span id="L529"><span class="lineNum">     529</span>                 :<span class="tlaGNC">          16 :             const int32_t current_raw = raw_count_;</span></span>
+<span id="L530"><span class="lineNum">     530</span>                 :             :             const int64_t revolution_base =</span>
+<span id="L531"><span class="lineNum">     531</span>                 :<span class="tlaGNC">          16 :                 static_cast&lt;int64_t&gt;(current_raw) -</span></span>
+<span id="L532"><span class="lineNum">     532</span>                 :<span class="tlaGNC">          16 :                 positiveModulo(current_raw,</span></span>
+<span id="L533"><span class="lineNum">     533</span>                 :<span class="tlaGNC">          16 :                                static_cast&lt;int32_t&gt;(COUNTER16_MODULUS));</span></span>
+<span id="L534"><span class="lineNum">     534</span>                 :             :             const uint16_t compare = static_cast&lt;uint16_t&gt;(</span>
+<span id="L535"><span class="lineNum">     535</span>                 :<span class="tlaGNC">          16 :                 __HAL_TIM_GET_COMPARE(&amp;timer_, compare_info.channel));</span></span>
+<span id="L536"><span class="lineNum">     536</span>                 :             :             // Derive the hardware-coordinate value from the same snapshot as</span>
+<span id="L537"><span class="lineNum">     537</span>                 :             :             // current_raw. Re-reading CNT here could cross a 16-bit wrap and</span>
+<span id="L538"><span class="lineNum">     538</span>                 :             :             // create a raw/CNT pair that never existed at one instant.</span>
+<span id="L539"><span class="lineNum">     539</span>                 :<span class="tlaGNC">          16 :             const uint16_t current = static_cast&lt;uint16_t&gt;(positiveModulo(</span></span>
+<span id="L540"><span class="lineNum">     540</span>                 :<span class="tlaGNC">          16 :                 current_raw, static_cast&lt;int32_t&gt;(COUNTER16_MODULUS)));</span></span>
+<span id="L541"><span class="lineNum">     541</span>                 :<span class="tlaGNC">          16 :             int64_t event_base = revolution_base;</span></span>
+<span id="L542"><span class="lineNum">     542</span>                 :             :             // If CNT crossed wrap after the compare match but before this</span>
+<span id="L543"><span class="lineNum">     543</span>                 :             :             // callback, the event belongs to the adjacent previous interval.</span>
+<span id="L544"><span class="lineNum">     544</span>   [<span class="tlaGBC" title="Branch 0 was taken 11 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 10 times"> + </span>]:<span class="tlaGNC">          16 :             if(event_direction == Direction::Forward &amp;&amp; current &lt; compare)</span></span>
+<span id="L545"><span class="lineNum">     545</span>                 :<span class="tlaGNC">           1 :                 event_base -= COUNTER16_MODULUS;</span></span>
+<span id="L546"><span class="lineNum">     546</span>   [<span class="tlaGBC" title="Branch 0 was taken 5 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 10 times"> + </span><span class="tlaUNC" title="Branch 2 was not taken"> - </span><span class="tlaGBC" title="Branch 3 was taken 5 times"> + </span>]:<span class="tlaGNC">          15 :             else if(event_direction == Direction::Reverse &amp;&amp; current &gt; compare)</span></span>
+<span id="L547"><span class="lineNum">     547</span>                 :<span class="tlaUNC tlaBgUNC">           0 :                 event_base += COUNTER16_MODULUS;</span></span>
+<span id="L548"><span class="lineNum">     548</span>                 :<span class="tlaGNC tlaBgGNC">          16 :             event_raw = checkedInt32(event_base + compare);</span></span>
+<span id="L549"><span class="lineNum">     549</span>                 :             :         }</span>
+<span id="L550"><span class="lineNum">     550</span>                 :             :         // A 16-bit CCR matches once per hardware wrap. Ignore earlier/later</span>
+<span id="L551"><span class="lineNum">     551</span>                 :             :         // aliases and keep the one-shot armed for the intended cumulative turn.</span>
+<span id="L552"><span class="lineNum">     552</span>         [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 15 times"> + </span>]:<span class="tlaGNC">          17 :         if(event_raw != trigger_target_raw_) return;</span></span>
+<span id="L553"><span class="lineNum">     553</span>                 :<span class="tlaGNC">          15 :         const bool direction_matches =</span></span>
+<span id="L554"><span class="lineNum">     554</span>                 :<span class="tlaGNC">          25 :             trigger_direction_ == TriggerDirection::Any ||</span></span>
+<span id="L555"><span class="lineNum">     555</span>   [<span class="tlaGBC" title="Branch 0 was taken 8 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 2 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 3 was taken 7 times"> + </span>]:<span class="tlaGNC">          10 :             (trigger_direction_ == TriggerDirection::Forward &amp;&amp;</span></span>
+<span id="L556"><span class="lineNum">     556</span>         [<span class="tlaGBC" title="Branch 0 was taken 10 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 5 times"> + </span>]:<span class="tlaGNC">          25 :              event_direction == Direction::Forward) ||</span></span>
+<span id="L557"><span class="lineNum">     557</span>   [<span class="tlaGBC" title="Branch 0 was taken 2 times"> + </span><span class="tlaGBC" title="Branch 1 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 2 was taken 2 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">           3 :             (trigger_direction_ == TriggerDirection::Reverse &amp;&amp;</span></span>
+<span id="L558"><span class="lineNum">     558</span>                 :             :              event_direction == Direction::Reverse);</span>
+<span id="L559"><span class="lineNum">     559</span>         [<span class="tlaGBC" title="Branch 0 was taken 1 time"> + </span><span class="tlaGBC" title="Branch 1 was taken 14 times"> + </span>]:<span class="tlaGNC">          15 :         if(!direction_matches) return;</span></span>
+<span id="L560"><span class="lineNum">     560</span>                 :             : </span>
+<span id="L561"><span class="lineNum">     561</span>                 :<span class="tlaGNC">          14 :         __HAL_TIM_DISABLE_IT(&amp;timer_, compare_info.interrupt_mask);</span></span>
+<span id="L562"><span class="lineNum">     562</span>                 :<span class="tlaGNC">          14 :         PositionCallback callback = trigger_callback_;</span></span>
+<span id="L563"><span class="lineNum">     563</span>                 :<span class="tlaGNC">          14 :         void* context = trigger_context_;</span></span>
+<span id="L564"><span class="lineNum">     564</span>                 :<span class="tlaGNC">          14 :         trigger_armed_ = false;</span></span>
+<span id="L565"><span class="lineNum">     565</span>                 :<span class="tlaGNC">          14 :         trigger_callback_ = nullptr;</span></span>
+<span id="L566"><span class="lineNum">     566</span>                 :<span class="tlaGNC">          14 :         trigger_context_ = nullptr;</span></span>
+<span id="L567"><span class="lineNum">     567</span>   [<span class="tlaGBC" title="Branch 0 was taken 14 times"> + </span><span class="tlaUNC" title="Branch 1 was not taken"> - </span><span class="tlaGBC" title="Branch 2 was taken 14 times"> + </span><span class="tlaUNC" title="Branch 3 was not taken"> - </span>]:<span class="tlaGNC">          14 :         if(callback) callback(context);</span></span>
+<span id="L568"><span class="lineNum">     568</span>                 :             :     }</span>
+<span id="L569"><span class="lineNum">     569</span>                 :             : };</span>
+<span id="L570"><span class="lineNum">     570</span>                 :             : #endif  // HAL_TIM_MODULE_ENABLED</span>
         </pre>
               </td>
             </tr>
