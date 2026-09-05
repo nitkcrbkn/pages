@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-09-05 01:08:34</td>
+            <td class="headerValue">2026-09-05 06:36:03</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
@@ -108,8 +108,8 @@
 <span id="L30"><span class="lineNum">      30</span>                 :             : #define M3508_MAX_SPEED 16384   //!&lt; M3508の速度の最大値</span>
 <span id="L31"><span class="lineNum">      31</span>                 :             : #define M3508_MIN_SPEED -16384  //!&lt; M3508の速度の最小値</span>
 <span id="L32"><span class="lineNum">      32</span>                 :             : </span>
-<span id="L33"><span class="lineNum">      33</span>                 :             : #define M2006_DEFAULT_KP 6        //!&lt; M2006の無負荷状態のおすすめPゲイン</span>
-<span id="L34"><span class="lineNum">      34</span>                 :             : #define M2006_DEFAULT_KI 16       //!&lt; M2006の無負荷状態のおすすめIゲイン</span>
+<span id="L33"><span class="lineNum">      33</span>                 :             : #define M2006_DEFAULT_KP 6  //!&lt; M2006の無負荷状態のおすすめPゲイン</span>
+<span id="L34"><span class="lineNum">      34</span>                 :             : #define M2006_DEFAULT_KI 16  //!&lt; M2006の無負荷状態のおすすめIゲイン</span>
 <span id="L35"><span class="lineNum">      35</span>                 :             : #define M2006_DEFAULT_KD 0.01125  //!&lt; M2006の無負荷状態のおすすめDゲイン</span>
 <span id="L36"><span class="lineNum">      36</span>                 :             : </span>
 <span id="L37"><span class="lineNum">      37</span>                 :             : #define C610_MAX_ANGLE 8191</span>
@@ -198,7 +198,7 @@
 <span id="L120"><span class="lineNum">     120</span>                 :             :     int32_t roundCount[8];  //!&lt; 多回転トラッキング</span>
 <span id="L121"><span class="lineNum">     121</span>                 :             :     bool roundReady[8];     //!&lt; 最初の角度受信が完了したか</span>
 <span id="L122"><span class="lineNum">     122</span>                 :             :     int prevRawAngle[8];    //!&lt; wrap検出用</span>
-<span id="L123"><span class="lineNum">     123</span>                 :             :     int angleOffset[8];     //!&lt; resetZeroPosition()で保存するゼロ位置オフセット</span>
+<span id="L123"><span class="lineNum">     123</span>                 :             :     int angleOffset[8];  //!&lt; resetZeroPosition()で保存するゼロ位置オフセット</span>
 <span id="L124"><span class="lineNum">     124</span>                 :             : </span>
 <span id="L125"><span class="lineNum">     125</span>                 :             :     // ソフト電流制限</span>
 <span id="L126"><span class="lineNum">     126</span>                 :             :     int minCurrent_mA[8];  //!&lt; ソフト電流下限</span>

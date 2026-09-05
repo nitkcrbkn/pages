@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-09-05 01:08:34</td>
+            <td class="headerValue">2026-09-05 06:36:03</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
@@ -103,9 +103,9 @@
 <span id="L25"><span class="lineNum">      25</span>                 :             :  * @brief DualSense受信処理の累積統計です。</span>
 <span id="L26"><span class="lineNum">      26</span>                 :             :  */</span>
 <span id="L27"><span class="lineNum">      27</span>                 :             : struct DualSenseStatistics {</span>
-<span id="L28"><span class="lineNum">      28</span>                 :             :     uint32_t parsedPackets = 0;   ///&lt; Dualsense担当Nodeから受信したパケット数</span>
+<span id="L28"><span class="lineNum">      28</span>                 :             :     uint32_t parsedPackets = 0;  ///&lt; Dualsense担当Nodeから受信したパケット数</span>
 <span id="L29"><span class="lineNum">      29</span>                 :             :     uint32_t decodedPackets = 0;  ///&lt; DualSense形式へ復号できたパケット数</span>
-<span id="L30"><span class="lineNum">      30</span>                 :             :     uint32_t decodeErrors = 0;    ///&lt; ペイロード復号に失敗したパケット数</span>
+<span id="L30"><span class="lineNum">      30</span>                 :             :     uint32_t decodeErrors = 0;  ///&lt; ペイロード復号に失敗したパケット数</span>
 <span id="L31"><span class="lineNum">      31</span>                 :             :     uint32_t capacityErrors = 0;  ///&lt; 空きスロット不足で破棄したパケット数</span>
 <span id="L32"><span class="lineNum">      32</span>                 :             : };</span>
 <span id="L33"><span class="lineNum">      33</span>                 :             : </span>
@@ -299,8 +299,8 @@
 <span id="L220"><span class="lineNum">     220</span>                 :             : template &lt;typename Radio&gt;</span>
 <span id="L221"><span class="lineNum">     221</span>                 :             : DualSense(Radio &amp;, uint32_t) -&gt; DualSense&lt;8, Radio&gt;;</span>
 <span id="L222"><span class="lineNum">     222</span>                 :             : template &lt;typename Radio&gt;</span>
-<span id="L223"><span class="lineNum">     223</span>                 :             : DualSense(Radio &amp;, uint32_t, typename DualSense&lt;8, Radio&gt;::TimeSource)</span>
-<span id="L224"><span class="lineNum">     224</span>                 :             :     -&gt; DualSense&lt;8, Radio&gt;;</span>
+<span id="L223"><span class="lineNum">     223</span>                 :             : DualSense(Radio &amp;, uint32_t,</span>
+<span id="L224"><span class="lineNum">     224</span>                 :             :           typename DualSense&lt;8, Radio&gt;::TimeSource) -&gt; DualSense&lt;8, Radio&gt;;</span>
 <span id="L225"><span class="lineNum">     225</span>                 :             : template &lt;typename Radio&gt;</span>
 <span id="L226"><span class="lineNum">     226</span>                 :             : DualSense(Radio &amp;, uint32_t, typename DualSense&lt;8, Radio&gt;::TimeSource,</span>
 <span id="L227"><span class="lineNum">     227</span>                 :             :           typename DualSense&lt;8, Radio&gt;::NodeFilter) -&gt; DualSense&lt;8, Radio&gt;;</span>
