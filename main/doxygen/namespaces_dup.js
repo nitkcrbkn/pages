@@ -11,6 +11,9 @@ var namespaces_dup =
     [ "DJI", "da/db0/namespaceDJI.html", "da/db0/namespaceDJI" ],
     [ "IM920sL", "da/d22/namespaceIM920sL.html", "da/d22/namespaceIM920sL" ],
     [ "Motoron", "d5/d02/namespaceMotoron.html", "d5/d02/namespaceMotoron" ],
+    [ "pid_detail", "d6/dc7/namespacepid__detail.html", [
+      [ "clamp", "d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10", null ]
+    ] ],
     [ "proto", "d6/dca/namespaceproto.html", [
       [ "decode", "d6/dca/namespaceproto.html#a3055b54d32c6c0316b78d684e54a01c5", null ],
       [ "encode", "d6/dca/namespaceproto.html#ac5edcbe4db6ea0ee5ae274d7145a53a5", null ],

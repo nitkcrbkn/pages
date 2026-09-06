@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dca/classCanSystem_1_1ICanController.html">ICanController</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN通信の基本インターフェース canとfdcanに共通する基本的な送受信、初期化、設定リセットなどの機能を提供する。 高度な設定などにアクセスするには各特化したinterfaceが必要  <a href="../../d6/dca/classCanSystem_1_1ICanController.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df2/structCanSystem_1_1IdStats.html">IdStats</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/structCanSystem_1_1IdEntry.html">IdEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d76/classCanSystem_1_1MockCanProfile.html">MockCanProfile</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テスト用CAN通信プロファイル  <a href="../../d9/d76/classCanSystem_1_1MockCanProfile.html#details">[詳解]</a><br /></td></tr>
@@ -129,6 +129,9 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html">SoftwareErrorFlags</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da9/structCanSystem_1_1TimingConfig.html">TimingConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de5/structCanSystem_1_1ValidSizes.html">ValidSizes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">send()で有効なデータサイズ一覧を表す非所有ビュー  <a href="../../d2/de5/structCanSystem_1_1ValidSizes.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -138,6 +141,11 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 列挙型</h2></td></tr>
+<tr class="memitem:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c">CanMode</a> { <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cad35b51b639528d580362ca7042de6a0e">Classic</a>
+, <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cac74e6a6a3303bf31632114bbc7b1a1c2">Fd</a>
+ }</td></tr>
+<tr class="memdesc:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN(Classic)かFDCANかを表す区分。send()の有効サイズ以外にも 実装が特性を切り替えたい箇所全般で使えるよう汎用名にしてある。  <a href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c">[詳解]</a><br /></td></tr>
+<tr class="separator:a16ca96c09065f7d3878b2ceb5a10b52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a07e12c8a7b910aff764918199a90e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90e">CanType</a> { <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90ead35b51b639528d580362ca7042de6a0e">Classic</a>
 , <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90eaa76155cc4f90e73190b5616d1fcb4c4d">FdCan</a>
  }</td></tr>
@@ -191,6 +199,8 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
 変数</h2></td></tr>
 <tr class="memitem:a021af703669a4b190df9175b8fe97569"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#a021af703669a4b190df9175b8fe97569">BUFF_SIZE</a> = 64</td></tr>
 <tr class="separator:a021af703669a4b190df9175b8fe97569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18cb814a042b36f000646b118f91821"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc4/namespaceCanSystem.html#ad18cb814a042b36f000646b118f91821">kMaxTrackedIds</a> = 16</td></tr>
+<tr class="separator:ad18cb814a042b36f000646b118f91821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p >元のchecker config: </p>
@@ -244,6 +254,34 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
 <tr><td class="fieldname"><a id="a817e1a319c49b1dd0df9da487c44cb8ba5e9d039add1e7f63119eb7f36b83fb1f" name="a817e1a319c49b1dd0df9da487c44cb8ba5e9d039add1e7f63119eb7f36b83fb1f"></a>ErrorActive&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a817e1a319c49b1dd0df9da487c44cb8baf2dddaa52fc350a733bae4d166aed1fe" name="a817e1a319c49b1dd0df9da487c44cb8baf2dddaa52fc350a733bae4d166aed1fe"></a>ErrorPassive&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a817e1a319c49b1dd0df9da487c44cb8ba500e9a516ef13e69f9ee4052b0b63b0a" name="a817e1a319c49b1dd0df9da487c44cb8ba500e9a516ef13e69f9ee4052b0b63b0a"></a>BusOff&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a16ca96c09065f7d3878b2ceb5a10b52c" name="a16ca96c09065f7d3878b2ceb5a10b52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ca96c09065f7d3878b2ceb5a10b52c">&#9670;&#160;</a></span>CanMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c">CanSystem::CanMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CAN(Classic)かFDCANかを表す区分。send()の有効サイズ以外にも 実装が特性を切り替えたい箇所全般で使えるよう汎用名にしてある。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a16ca96c09065f7d3878b2ceb5a10b52cad35b51b639528d580362ca7042de6a0e" name="a16ca96c09065f7d3878b2ceb5a10b52cad35b51b639528d580362ca7042de6a0e"></a>Classic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16ca96c09065f7d3878b2ceb5a10b52cac74e6a6a3303bf31632114bbc7b1a1c2" name="a16ca96c09065f7d3878b2ceb5a10b52cac74e6a6a3303bf31632114bbc7b1a1c2"></a>Fd&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -479,6 +517,28 @@ $(document).ready(function(){initNavTree('d2/dc4/namespaceCanSystem.html','../..
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad18cb814a042b36f000646b118f91821" name="ad18cb814a042b36f000646b118f91821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18cb814a042b36f000646b118f91821">&#9670;&#160;</a></span>kMaxTrackedIds</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t CanSystem::kMaxTrackedIds = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

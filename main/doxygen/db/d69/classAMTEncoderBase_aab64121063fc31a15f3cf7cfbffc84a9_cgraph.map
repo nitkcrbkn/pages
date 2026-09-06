@@ -1,0 +1,6 @@
+<map id="AMTEncoderBase::updateRpm" name="AMTEncoderBase::updateRpm">
+<area shape="rect" id="node1" title="指定時間のRaw Count差分からRPMを更新する。" alt="" coords="5,42,204,67"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="252,5,444,45"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#af0be96e5e9240afed6b8d016a7b38b93" title="ハードウェアの現在値をキャッシュへ明示的に反映する。" alt="" coords="261,70,435,95"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9" title=" " alt="" coords="492,63,691,103"/>
+</map>

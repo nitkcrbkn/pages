@@ -10,5 +10,8 @@ var searchData=
   ['deviceschema_3c_20devicetype_3a_3amotor_20_3e_7',['DeviceSchema&lt; DeviceType::MOTOR &gt;',['../d5/d25/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1MOTOR_01_4.html',1,'proto_can']]],
   ['deviceschema_3c_20devicetype_3a_3asensor_20_3e_8',['DeviceSchema&lt; DeviceType::SENSOR &gt;',['../dd/d4e/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SENSOR_01_4.html',1,'proto_can']]],
   ['deviceschema_3c_20devicetype_3a_3asolenoid_20_3e_9',['DeviceSchema&lt; DeviceType::SOLENOID &gt;',['../d0/d8c/structproto__can_1_1DeviceSchema_3_01DeviceType_1_1SOLENOID_01_4.html',1,'proto_can']]],
-  ['dualsense_10',['DualSense',['../d7/db3/classPS5_1_1DualSense.html',1,'PS5']]]
+  ['dualsense_10',['DualSense',['../d7/db3/classPS5_1_1DualSense.html',1,'PS5']]],
+  ['dualsense_3c_208_20_3e_11',['DualSense&lt; 8 &gt;',['../d7/db3/classPS5_1_1DualSense.html',1,'PS5']]],
+  ['dualsensemonitor_12',['DualSenseMonitor',['../da/de0/classPS5_1_1DualSenseMonitor.html',1,'PS5']]],
+  ['dualsensestatistics_13',['DualSenseStatistics',['../dd/de0/structPS5_1_1DualSenseStatistics.html',1,'PS5']]]
 ];

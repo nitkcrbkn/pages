@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['statuslevel_0',['StatusLevel',['../d2/dc4/namespaceCanSystem.html#a59951521d59b8c6cf0ea429dcc6707df',1,'CanSystem']]]
+  ['messagetype_0',['MessageType',['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216',1,'proto_can']]],
+  ['motorstate_1',['MotorState',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5c',1,'DJI']]]
 ];

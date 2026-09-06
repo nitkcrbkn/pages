@@ -1,6 +1,6 @@
 <map id="CanSystem::CanManager::restart" name="CanSystem::CanManager::restart">
-<area shape="rect" id="node1" title="CAN を停止してから initCan() を再実行する" alt="" coords="5,127,173,167"/>
-<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a3a035f4e3c3ecd485e52bc7109ac9b77" title="CAN の初期化" alt="" coords="221,127,389,167"/>
+<area shape="rect" id="node1" title="canStopしてからinitする。" alt="" coords="5,127,173,167"/>
+<area shape="rect" id="node2" href="$d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="221,127,389,167"/>
 <area shape="rect" id="node3" href="$d9/d7c/classCanSystem_1_1CanErrorTracker.html#a83b21c062dd3d0b49312ccc4d3955853" title=" " alt="" coords="437,80,627,120"/>
 <area shape="rect" id="node7" href="$d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6" title=" " alt="" coords="437,159,627,199"/>
 <area shape="rect" id="node4" href="$de/da9/structCanSystem_1_1TimingConfig.html#abd30d5d1b68657efcdd9c0a33531ce8b" title=" " alt="" coords="685,5,855,45"/>

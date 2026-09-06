@@ -7,16 +7,21 @@ var namespaceCanSystem =
     [ "CANStatus", "d7/db6/structCanSystem_1_1CANStatus.html", "d7/db6/structCanSystem_1_1CANStatus" ],
     [ "ErrorCounters", "df/d6b/structCanSystem_1_1ErrorCounters.html", "df/d6b/structCanSystem_1_1ErrorCounters" ],
     [ "ICanController", "d6/dca/classCanSystem_1_1ICanController.html", "d6/dca/classCanSystem_1_1ICanController" ],
-    [ "IdStats", "de/df2/structCanSystem_1_1IdStats.html", "de/df2/structCanSystem_1_1IdStats" ],
+    [ "IdEntry", "d7/d4f/structCanSystem_1_1IdEntry.html", "d7/d4f/structCanSystem_1_1IdEntry" ],
     [ "MockCanProfile", "d9/d76/classCanSystem_1_1MockCanProfile.html", "d9/d76/classCanSystem_1_1MockCanProfile" ],
     [ "SoftwareErrorFlags", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags.html", "d0/d5e/structCanSystem_1_1SoftwareErrorFlags" ],
     [ "TimingConfig", "de/da9/structCanSystem_1_1TimingConfig.html", "de/da9/structCanSystem_1_1TimingConfig" ],
+    [ "ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", "d2/de5/structCanSystem_1_1ValidSizes" ],
     [ "FnCallBack", "d2/dc4/namespaceCanSystem.html#aa552fbb0626292312e4f0baa32f304f5", null ],
     [ "BusErrorState", "d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8b", [
       [ "Normal", "d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8ba960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "ErrorActive", "d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8ba5e9d039add1e7f63119eb7f36b83fb1f", null ],
       [ "ErrorPassive", "d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8baf2dddaa52fc350a733bae4d166aed1fe", null ],
       [ "BusOff", "d2/dc4/namespaceCanSystem.html#a817e1a319c49b1dd0df9da487c44cb8ba500e9a516ef13e69f9ee4052b0b63b0a", null ]
+    ] ],
+    [ "CanMode", "d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52c", [
+      [ "Classic", "d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cad35b51b639528d580362ca7042de6a0e", null ],
+      [ "Fd", "d2/dc4/namespaceCanSystem.html#a16ca96c09065f7d3878b2ceb5a10b52cac74e6a6a3303bf31632114bbc7b1a1c2", null ]
     ] ],
     [ "CanType", "d2/dc4/namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90e", [
       [ "Classic", "d2/dc4/namespaceCanSystem.html#a27a07e12c8a7b910aff764918199a90ead35b51b639528d580362ca7042de6a0e", null ],
@@ -47,5 +52,6 @@ var namespaceCanSystem =
     [ "to_string", "d2/dc4/namespaceCanSystem.html#a0e44e05508a924833ddd2d472e0af6a5", null ],
     [ "to_string", "d2/dc4/namespaceCanSystem.html#a717f07a6582dbbbdd0dfed404e4f054a", null ],
     [ "to_string", "d2/dc4/namespaceCanSystem.html#a674258573a753a099d7c03574774ba26", null ],
-    [ "BUFF_SIZE", "d2/dc4/namespaceCanSystem.html#a021af703669a4b190df9175b8fe97569", null ]
+    [ "BUFF_SIZE", "d2/dc4/namespaceCanSystem.html#a021af703669a4b190df9175b8fe97569", null ],
+    [ "kMaxTrackedIds", "d2/dc4/namespaceCanSystem.html#ad18cb814a042b36f000646b118f91821", null ]
 ];

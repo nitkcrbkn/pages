@@ -1,4 +1,4 @@
 var amt_8h =
 [
-    [ "AMT10", "d4/d48/classAMT10.html", "d4/d48/classAMT10" ]
+    [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", "df/d9b/classAMTEncoderExti" ]
 ];

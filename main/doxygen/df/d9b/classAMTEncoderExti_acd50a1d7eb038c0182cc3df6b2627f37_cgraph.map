@@ -1,0 +1,9 @@
+<map id="AMTEncoderExti::begin" name="AMTEncoderExti::begin">
+<area shape="rect" id="node1" title="初期A/B状態を同期する。" alt="" coords="5,104,160,129"/>
+<area shape="rect" id="node2" href="$d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="242,5,374,31"/>
+<area shape="rect" id="node3" href="$d6/d4e/classGPIO__Mgr.html#ac00fbd9a40812c254074ced4098b4c37" title=" " alt="" coords="239,55,377,80"/>
+<area shape="rect" id="node4" href="$d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="251,104,365,129"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#ad681949a55057cafeed3239f93d9f56a" title=" " alt="" coords="213,154,403,194"/>
+<area shape="rect" id="node7" href="$db/d69/classAMTEncoderBase.html#a7bbbcdcadc0df669474b08f7995798a7" title=" " alt="" coords="208,219,408,244"/>
+<area shape="rect" id="node6" href="$db/d69/classAMTEncoderBase.html#a96e3529476bf89e9ad6fb5565d1d7b80" title=" " alt="" coords="456,161,669,187"/>
+</map>

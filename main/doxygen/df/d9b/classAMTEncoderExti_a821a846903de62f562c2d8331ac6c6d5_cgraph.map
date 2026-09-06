@@ -1,0 +1,13 @@
+<map id="AMTEncoderExti::print_state" name="AMTEncoderExti::print_state">
+<area shape="rect" id="node1" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="5,167,155,207"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7" title="Position Count基準の角度を返す。" alt="" coords="207,73,371,98"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="675,24,867,64"/>
+<area shape="rect" id="node6" href="$db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="915,165,1125,190"/>
+<area shape="rect" id="node7" href="$db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d" title=" " alt="" coords="681,160,860,200"/>
+<area shape="rect" id="node8" href="$db/d69/classAMTEncoderBase.html#af0be96e5e9240afed6b8d016a7b38b93" title="ハードウェアの現在値をキャッシュへ明示的に反映する。" alt="" coords="203,276,376,301"/>
+<area shape="rect" id="node10" href="$db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a" title="Position Count基準の累積回転数を返す。" alt="" coords="427,74,623,100"/>
+<area shape="rect" id="node11" href="$db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190" title="最後に計算したRPMを返す。" alt="" coords="212,325,367,350"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0" title="Position Countを1回転内のphaseへ変換して返す。" alt="" coords="424,124,627,149"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776" title="補正後のPosition Countを原子的に返す。" alt="" coords="681,96,860,136"/>
+<area shape="rect" id="node9" href="$db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9" title=" " alt="" coords="426,275,625,315"/>
+</map>

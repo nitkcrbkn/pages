@@ -1,8 +1,27 @@
 var classIM920sL_1_1BaseIM920sL =
 [
-    [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a78625096c11075ae1f2325f51f346edb", null ],
+    [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8432e03024beca9f356aeef056313be8", null ],
+    [ "~BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8b9bbc662d3db4bde25b7b90885e4dae", null ],
+    [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a6d9220c46979488ef2bb49c179ece4a6", null ],
+    [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a06e33db44fba8829eba2eb89d2318a5d", null ],
+    [ "clearReceiveOverflow", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9ed01136d8205eeccd810c874e57191c", null ],
+    [ "enableFlashWrite", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a9b04df6923044ff937084a19f45e0b25", null ],
+    [ "operator=", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a874c3d7d981ff73d9a43e3c67190169f", null ],
+    [ "operator=", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a807149694d93c0ed232793ddc9c17fd5", null ],
+    [ "process", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#aafd4c5bfcf885af20fc2d9de48c0495f", null ],
+    [ "processPending", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#abec594a344e1a70e1f1e3717da599c1b", null ],
     [ "read", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a3e61147e50edde843658f4c2e509f9ff", null ],
+    [ "receiveOverflowed", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a21df4d246090ca077f2778be847b90da", null ],
+    [ "registerLatestPacketCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7c2d55a50a51f60be3952aa1f854ebc9", null ],
+    [ "registerPacketCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a27830247bbcad2bccd6ab96eecb9cb50", null ],
+    [ "registerPacketCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a7ed4a77c064c845914cc0d3ca72bc9bd", null ],
     [ "registerRxCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a8d951406bee99096df4b9aa8a3176b61", null ],
     [ "requestMsg", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#af1b92bb7209be0d52c95c9915222ec9f", null ],
-    [ "RxCpltCallbac", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a3fd94b72f8cf7f40a1aab7680ea5a1cd", null ]
+    [ "sendBroadcast", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a91749da8556411c4aa2a8c4eb4eff05d", null ],
+    [ "sendCommand", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a02a5f429201c575a12718eda469b5569", null ],
+    [ "setNetworkMode", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1ef5879468233c3d43019fec0ccce2a1", null ],
+    [ "setNodeNumber", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#aa9a45c809be6e872105cc722d628f9bd", null ],
+    [ "startGroupRegistration", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a1eb7a0a9113247ddb976e16b83764ec0", null ],
+    [ "unregisterPacketCallback", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a94d928c60da9a47274cfec563c879b7c", null ],
+    [ "PS5::DualSense", "d7/dd8/classIM920sL_1_1BaseIM920sL.html#a94bbaa8bcb73c0ee1a473d73088d8634", null ]
 ];

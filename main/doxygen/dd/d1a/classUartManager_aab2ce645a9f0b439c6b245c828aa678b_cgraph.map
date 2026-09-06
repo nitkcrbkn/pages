@@ -1,0 +1,4 @@
+<map id="UartManager::dispatch" name="UartManager::dispatch">
+<area shape="rect" id="node1" title="UART受信完了割り込みから呼び出すdispatcher。" alt="" coords="5,5,157,31"/>
+<area shape="rect" id="node2" href="$dd/d1a/classUartManager.html#a0dcb91ce28bd91cd50e89aa22c28fa13" title="受信完了時にcallbackを呼び出します。" alt="" coords="205,5,383,31"/>
+</map>

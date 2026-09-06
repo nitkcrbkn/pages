@@ -1,0 +1,4 @@
+<map id="AMTEncoderBase::revolutions" name="AMTEncoderBase::revolutions">
+<area shape="rect" id="node1" title="Position Count基準の累積回転数を返す。" alt="" coords="203,13,399,38"/>
+<area shape="rect" id="node2" href="$df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="5,5,155,45"/>
+</map>

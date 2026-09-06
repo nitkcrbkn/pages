@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: AMTEncoderExti クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('df/d9b/classAMTEncoderExti.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="../../d2/d13/classAMTEncoderExti-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">AMTEncoderExti クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>GPIO EXTIでquadratureを解読するbackend。  
+ <a href="../../df/d9b/classAMTEncoderExti.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;amt.h&gt;</code></p>
+<div class="dynheader">
+AMTEncoderExti の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d1e/classAMTEncoderExti__inherit__graph.png" border="0" usemap="#aAMTEncoderExti_inherit__map" alt="Inheritance graph"/></div>
+<map name="aAMTEncoderExti_inherit__map" id="aAMTEncoderExti_inherit__map">
+<area shape="rect" title="GPIO EXTIでquadratureを解読するbackend。" alt="" coords="9,79,128,104"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html" title="AMTの各backendで共通の位置・インデックス・速度モデル。" alt="" coords="5,5,132,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+AMTEncoderExti 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/dd1/classAMTEncoderExti__coll__graph.png" border="0" usemap="#aAMTEncoderExti_coll__map" alt="Collaboration graph"/></div>
+<map name="aAMTEncoderExti_coll__map" id="aAMTEncoderExti_coll__map">
+<area shape="rect" title="GPIO EXTIでquadratureを解読するbackend。" alt="" coords="9,79,128,104"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html" title="AMTの各backendで共通の位置・インデックス・速度モデル。" alt="" coords="5,5,132,31"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9c77ec83882c0d3a1c7e8f6a989af8ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a9c77ec83882c0d3a1c7e8f6a989af8ff">AMTEncoderExti</a> (<a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; 3 &gt; &amp;gpio, uint16_t <a class="el" href="../../db/d69/classAMTEncoderBase.html#a4b2727b32cad9b71878172fcf676e76a">ppr</a>)</td></tr>
+<tr class="memdesc:a9c77ec83882c0d3a1c7e8f6a989af8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">EXTI backendを構築する。ハードウェアはまだ読まない。  <a href="../../df/d9b/classAMTEncoderExti.html#a9c77ec83882c0d3a1c7e8f6a989af8ff">[詳解]</a><br /></td></tr>
+<tr class="separator:a9c77ec83882c0d3a1c7e8f6a989af8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de78e4aa71f7e4e8cc5a7e32708ce7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a0de78e4aa71f7e4e8cc5a7e32708ce7c">AMTEncoderExti</a> (const <a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;)=delete</td></tr>
+<tr class="separator:a0de78e4aa71f7e4e8cc5a7e32708ce7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8353ff87ffd238862badad606b04970a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a8353ff87ffd238862badad606b04970a">operator=</a> (const <a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;)=delete</td></tr>
+<tr class="separator:a8353ff87ffd238862badad606b04970a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee183937d503c8d7f6943da435e977f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#aee183937d503c8d7f6943da435e977f8">AMTEncoderExti</a> (<a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aee183937d503c8d7f6943da435e977f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5344c31d7b439a0d72d9b108fe2af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a2f5344c31d7b439a0d72d9b108fe2af2">operator=</a> (<a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a2f5344c31d7b439a0d72d9b108fe2af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd50a1d7eb038c0182cc3df6b2627f37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37">begin</a> ()</td></tr>
+<tr class="memdesc:acd50a1d7eb038c0182cc3df6b2627f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期A/B状態を同期する。  <a href="../../df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37">[詳解]</a><br /></td></tr>
+<tr class="separator:acd50a1d7eb038c0182cc3df6b2627f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31cd58800fdfe19e7743ecc84088fb0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a">handleExti</a> (uint16_t gpio_pin)</td></tr>
+<tr class="memdesc:a31cd58800fdfe19e7743ecc84088fb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">HAL GPIO EXTI callbackからeventを渡す。  <a href="../../df/d9b/classAMTEncoderExti.html#a31cd58800fdfe19e7743ecc84088fb0a">[詳解]</a><br /></td></tr>
+<tr class="separator:a31cd58800fdfe19e7743ecc84088fb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1c6685e4661057012b8b412bec6c64"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#abc1c6685e4661057012b8b412bec6c64">indexEdgeCount</a> () const</td></tr>
+<tr class="separator:abc1c6685e4661057012b8b412bec6c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc96cce6dabaead15cd04b4368a2ab2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#aabc96cce6dabaead15cd04b4368a2ab2">phaseAEdgeCount</a> () const</td></tr>
+<tr class="separator:aabc96cce6dabaead15cd04b4368a2ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a48a3b02e3633dc787d9816591f6fa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a32a48a3b02e3633dc787d9816591f6fa">phaseBEdgeCount</a> () const</td></tr>
+<tr class="separator:a32a48a3b02e3633dc787d9816591f6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821a846903de62f562c2d8331ac6c6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5">print_state</a> (bool use_log=false)</td></tr>
+<tr class="memdesc:a821a846903de62f562c2d8331ac6c6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在状態を1回だけ更新し、一貫したsnapshotを出力する。  <a href="../../df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5">[詳解]</a><br /></td></tr>
+<tr class="separator:a821a846903de62f562c2d8331ac6c6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classAMTEncoderBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAMTEncoderBase')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d69/classAMTEncoderBase.html">AMTEncoderBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aa4c05c637881b3f78c3cbe641682c44f inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#aa4c05c637881b3f78c3cbe641682c44f">~AMTEncoderBase</a> ()=default</td></tr>
+<tr class="separator:aa4c05c637881b3f78c3cbe641682c44f inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0be96e5e9240afed6b8d016a7b38b93 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#af0be96e5e9240afed6b8d016a7b38b93">refresh</a> ()</td></tr>
+<tr class="memdesc:af0be96e5e9240afed6b8d016a7b38b93 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハードウェアの現在値をキャッシュへ明示的に反映する。  <a href="../../db/d69/classAMTEncoderBase.html#af0be96e5e9240afed6b8d016a7b38b93">[詳解]</a><br /></td></tr>
+<tr class="separator:af0be96e5e9240afed6b8d016a7b38b93 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58952d034e4041777a328706d622f8b inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ae58952d034e4041777a328706d622f8b">rawCount</a> () const</td></tr>
+<tr class="memdesc:ae58952d034e4041777a328706d622f8b inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後にキャッシュされたRaw Countを返す。  <a href="../../db/d69/classAMTEncoderBase.html#ae58952d034e4041777a328706d622f8b">[詳解]</a><br /></td></tr>
+<tr class="separator:ae58952d034e4041777a328706d622f8b inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e8195146be5110c3d0eeeda1735776 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776">positionCount</a> () const</td></tr>
+<tr class="memdesc:ab5e8195146be5110c3d0eeeda1735776 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">補正後のPosition Countを原子的に返す。  <a href="../../db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776">[詳解]</a><br /></td></tr>
+<tr class="separator:ab5e8195146be5110c3d0eeeda1735776 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654571a2feca11fd0162001a7d1ba4d0 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0">phaseCount</a> () const</td></tr>
+<tr class="memdesc:a654571a2feca11fd0162001a7d1ba4d0 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position Countを1回転内のphaseへ変換して返す。  <a href="../../db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0">[詳解]</a><br /></td></tr>
+<tr class="separator:a654571a2feca11fd0162001a7d1ba4d0 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc765f8d461644c810cac685298d1d7 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7">angle</a> () const</td></tr>
+<tr class="memdesc:adfc765f8d461644c810cac685298d1d7 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position Count基準の角度を返す。  <a href="../../db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7">[詳解]</a><br /></td></tr>
+<tr class="separator:adfc765f8d461644c810cac685298d1d7 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af646d5366eb3ead60831d4ede5e06c9a inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a">revolutions</a> () const</td></tr>
+<tr class="memdesc:af646d5366eb3ead60831d4ede5e06c9a inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position Count基準の累積回転数を返す。  <a href="../../db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a">[詳解]</a><br /></td></tr>
+<tr class="separator:af646d5366eb3ead60831d4ede5e06c9a inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab64121063fc31a15f3cf7cfbffc84a9 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#aab64121063fc31a15f3cf7cfbffc84a9">updateRpm</a> (float dt_seconds)</td></tr>
+<tr class="memdesc:aab64121063fc31a15f3cf7cfbffc84a9 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定時間のRaw Count差分からRPMを更新する。  <a href="../../db/d69/classAMTEncoderBase.html#aab64121063fc31a15f3cf7cfbffc84a9">[詳解]</a><br /></td></tr>
+<tr class="separator:aab64121063fc31a15f3cf7cfbffc84a9 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4fcf49fa955ca187c55b1cbfc82758 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a7b4fcf49fa955ca187c55b1cbfc82758">updateRpmAtInterval</a> (uint32_t interval_ms=50)</td></tr>
+<tr class="memdesc:a7b4fcf49fa955ca187c55b1cbfc82758 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">HAL tickで指定間隔が経過したときだけRPMを更新する。  <a href="../../db/d69/classAMTEncoderBase.html#a7b4fcf49fa955ca187c55b1cbfc82758">[詳解]</a><br /></td></tr>
+<tr class="separator:a7b4fcf49fa955ca187c55b1cbfc82758 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c2719d744527ce230cd0ce5dfc7190 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190">rpm</a> () const</td></tr>
+<tr class="memdesc:a39c2719d744527ce230cd0ce5dfc7190 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後に計算したRPMを返す。  <a href="../../db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190">[詳解]</a><br /></td></tr>
+<tr class="separator:a39c2719d744527ce230cd0ce5dfc7190 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0976e5639b34434d80ba396dd34151b inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#af0976e5639b34434d80ba396dd34151b">isIndexed</a> () const</td></tr>
+<tr class="memdesc:af0976e5639b34434d80ba396dd34151b inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効なX相で位置を確定済みか返す。  <a href="../../db/d69/classAMTEncoderBase.html#af0976e5639b34434d80ba396dd34151b">[詳解]</a><br /></td></tr>
+<tr class="separator:af0976e5639b34434d80ba396dd34151b inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5053a6ca5170f2e5ece29fa0f5a50c5e inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a5053a6ca5170f2e5ece29fa0f5a50c5e">setIndexCorrectionMode</a> (<a class="el" href="../../d0/d0c/amt__base_8h.html#ae1696575ec7be2b21bd76d2fb0ae52e9">IndexCorrectionMode</a> mode)</td></tr>
+<tr class="memdesc:a5053a6ca5170f2e5ece29fa0f5a50c5e inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">X相での補正方法を設定する。  <a href="../../db/d69/classAMTEncoderBase.html#a5053a6ca5170f2e5ece29fa0f5a50c5e">[詳解]</a><br /></td></tr>
+<tr class="separator:a5053a6ca5170f2e5ece29fa0f5a50c5e inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef252d951bfeff07f907d807b76c2f59 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#aef252d951bfeff07f907d807b76c2f59">requestIndexCorrection</a> ()</td></tr>
+<tr class="memdesc:aef252d951bfeff07f907d807b76c2f59 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnRequestモードの次回X相補正を予約する。  <a href="../../db/d69/classAMTEncoderBase.html#aef252d951bfeff07f907d807b76c2f59">[詳解]</a><br /></td></tr>
+<tr class="separator:aef252d951bfeff07f907d807b76c2f59 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d28bd6d3c2b7d271b98a842d3cfa07 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ab4d28bd6d3c2b7d271b98a842d3cfa07">cancelIndexCorrection</a> ()</td></tr>
+<tr class="memdesc:ab4d28bd6d3c2b7d271b98a842d3cfa07 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">予約中のX相補正を取り消す。  <a href="../../db/d69/classAMTEncoderBase.html#ab4d28bd6d3c2b7d271b98a842d3cfa07">[詳解]</a><br /></td></tr>
+<tr class="separator:ab4d28bd6d3c2b7d271b98a842d3cfa07 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab979961943c1d6d0d295d600aeecbb70 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ab979961943c1d6d0d295d600aeecbb70">isIndexCorrectionPending</a> () const</td></tr>
+<tr class="memdesc:ab979961943c1d6d0d295d600aeecbb70 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">X相補正の予約状態を返す。  <a href="../../db/d69/classAMTEncoderBase.html#ab979961943c1d6d0d295d600aeecbb70">[詳解]</a><br /></td></tr>
+<tr class="separator:ab979961943c1d6d0d295d600aeecbb70 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138ea1d78c60a90d98eafb61cfcfe11d inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a138ea1d78c60a90d98eafb61cfcfe11d">lastIndexCorrection</a> () const</td></tr>
+<tr class="memdesc:a138ea1d78c60a90d98eafb61cfcfe11d inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">直近のX相補正量を返す。  <a href="../../db/d69/classAMTEncoderBase.html#a138ea1d78c60a90d98eafb61cfcfe11d">[詳解]</a><br /></td></tr>
+<tr class="separator:a138ea1d78c60a90d98eafb61cfcfe11d inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7275e4644b586318587c2a876e9c3e21 inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a7275e4644b586318587c2a876e9c3e21">direction</a> () const</td></tr>
+<tr class="memdesc:a7275e4644b586318587c2a876e9c3e21 inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後に更新された回転方向を返す。  <a href="../../db/d69/classAMTEncoderBase.html#a7275e4644b586318587c2a876e9c3e21">[詳解]</a><br /></td></tr>
+<tr class="separator:a7275e4644b586318587c2a876e9c3e21 inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2727b32cad9b71878172fcf676e76a inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a4b2727b32cad9b71878172fcf676e76a">ppr</a> () const</td></tr>
+<tr class="memdesc:a4b2727b32cad9b71878172fcf676e76a inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">構築時に指定したPPRを返す。  <a href="../../db/d69/classAMTEncoderBase.html#a4b2727b32cad9b71878172fcf676e76a">[詳解]</a><br /></td></tr>
+<tr class="separator:a4b2727b32cad9b71878172fcf676e76a inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14dfc3adf99244a727b055eb71a420b inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b">countsPerRevolution</a> () const</td></tr>
+<tr class="memdesc:ae14dfc3adf99244a727b055eb71a420b inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quadrature x4後の1回転当たりカウントを返す。  <a href="../../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b">[詳解]</a><br /></td></tr>
+<tr class="separator:ae14dfc3adf99244a727b055eb71a420b inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a14f5ab76e205b91cb81e1a435362fe inherit pub_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a2a14f5ab76e205b91cb81e1a435362fe">reset</a> ()</td></tr>
+<tr class="memdesc:a2a14f5ab76e205b91cb81e1a435362fe inherit pub_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">共通状態とbackend固有状態を初期化する。  <a href="../../db/d69/classAMTEncoderBase.html#a2a14f5ab76e205b91cb81e1a435362fe">[詳解]</a><br /></td></tr>
+<tr class="separator:a2a14f5ab76e205b91cb81e1a435362fe inherit pub_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:aa5dcfd7bb44cd416651c76cbbafba6e7"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#aa5dcfd7bb44cd416651c76cbbafba6e7">PIN_X</a> = 0</td></tr>
+<tr class="separator:aa5dcfd7bb44cd416651c76cbbafba6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b74c2d2a2bad338176b50350c78185"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#ab2b74c2d2a2bad338176b50350c78185">PIN_A</a> = 1</td></tr>
+<tr class="separator:ab2b74c2d2a2bad338176b50350c78185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca02f3f1cb3235d8936ca6de7bc348a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classAMTEncoderExti.html#a6ca02f3f1cb3235d8936ca6de7bc348a">PIN_B</a> = 2</td></tr>
+<tr class="separator:a6ca02f3f1cb3235d8936ca6de7bc348a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_types_classAMTEncoderBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classAMTEncoderBase')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d69/classAMTEncoderBase.html">AMTEncoderBase</a> に属する継承公開型</td></tr>
+<tr class="memitem:a55054d9d56f2fecadc158b043d0a31c9 inherit pub_types_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9">Direction</a> : uint8_t { <a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9a67d2f6740a8eaebf4d5c6f79be8da481">Forward</a>
+, <a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9a67f115c1fddc4ce1aeb1c754001585bc">Reverse</a>
+, <a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9a6adf97f83acf6453d4a6a4b1070f3754">None</a>
+ }</td></tr>
+<tr class="memdesc:a55054d9d56f2fecadc158b043d0a31c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後に観測した回転方向。  <a href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9">[詳解]</a><br /></td></tr>
+<tr class="separator:a55054d9d56f2fecadc158b043d0a31c9 inherit pub_types_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classAMTEncoderBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classAMTEncoderBase')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d69/classAMTEncoderBase.html">AMTEncoderBase</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a74aa1c4d4d5af730577415060d88e938 inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a74aa1c4d4d5af730577415060d88e938">AMTEncoderBase</a> (uint16_t <a class="el" href="../../db/d69/classAMTEncoderBase.html#a4b2727b32cad9b71878172fcf676e76a">ppr</a>)</td></tr>
+<tr class="memdesc:a74aa1c4d4d5af730577415060d88e938 inherit pro_methods_classAMTEncoderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">共通状態を構築する。  <a href="../../db/d69/classAMTEncoderBase.html#a74aa1c4d4d5af730577415060d88e938">[詳解]</a><br /></td></tr>
+<tr class="separator:a74aa1c4d4d5af730577415060d88e938 inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4637831d48dad7c92fc0da162cf5f6b9 inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9">refreshRawCount</a> ()=0</td></tr>
+<tr class="separator:a4637831d48dad7c92fc0da162cf5f6b9 inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4205ab6a6f06dad42e03c25bff3febd8 inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8">correctionIsBlocked</a> () const</td></tr>
+<tr class="separator:a4205ab6a6f06dad42e03c25bff3febd8 inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e3529476bf89e9ad6fb5565d1d7b80 inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a96e3529476bf89e9ad6fb5565d1d7b80">resetBackend</a> ()</td></tr>
+<tr class="separator:a96e3529476bf89e9ad6fb5565d1d7b80 inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad681949a55057cafeed3239f93d9f56a inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ad681949a55057cafeed3239f93d9f56a">resetCoreState</a> ()</td></tr>
+<tr class="separator:ad681949a55057cafeed3239f93d9f56a inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fc3eed2c5862cf14d963cf5ad3db4c inherit pro_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#af6fc3eed2c5862cf14d963cf5ad3db4c">handleIndex</a> ()</td></tr>
+<tr class="separator:af6fc3eed2c5862cf14d963cf5ad3db4c inherit pro_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classAMTEncoderBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classAMTEncoderBase')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d69/classAMTEncoderBase.html">AMTEncoderBase</a> に属する継承静的限定公開メンバ関数</td></tr>
+<tr class="memitem:a6a1523d65ca792eaaf9eb32ea02824c4 inherit pro_static_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4">checkedInt32</a> (int64_t value)</td></tr>
+<tr class="separator:a6a1523d65ca792eaaf9eb32ea02824c4 inherit pro_static_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a9880f3a6dc1e3a9db9dedcac8cde3 inherit pro_static_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ad7a9880f3a6dc1e3a9db9dedcac8cde3">addInt32</a> (int32_t lhs, int32_t rhs)</td></tr>
+<tr class="separator:ad7a9880f3a6dc1e3a9db9dedcac8cde3 inherit pro_static_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2fbb99f62ed34cd6676350ad25349d inherit pro_static_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">static int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d">positiveModulo</a> (int32_t value, int32_t modulus)</td></tr>
+<tr class="separator:a6c2fbb99f62ed34cd6676350ad25349d inherit pro_static_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbbcdcadc0df669474b08f7995798a7 inherit pro_static_methods_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a7bbbcdcadc0df669474b08f7995798a7">validExtiPin</a> (uint16_t pin)</td></tr>
+<tr class="separator:a7bbbcdcadc0df669474b08f7995798a7 inherit pro_static_methods_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classAMTEncoderBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAMTEncoderBase')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d69/classAMTEncoderBase.html">AMTEncoderBase</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a21aac89e3c3a9d4f898aff84107e0d8d inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a21aac89e3c3a9d4f898aff84107e0d8d">ppr_</a></td></tr>
+<tr class="separator:a21aac89e3c3a9d4f898aff84107e0d8d inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9900ab5fc205e6ac2ce30e8cd6c403f inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ac9900ab5fc205e6ac2ce30e8cd6c403f">raw_count_</a> = 0</td></tr>
+<tr class="separator:ac9900ab5fc205e6ac2ce30e8cd6c403f inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d29f79ed550500e7589d0ae499ce1cc inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a9d29f79ed550500e7589d0ae499ce1cc">correction_offset_</a> = 0</td></tr>
+<tr class="separator:a9d29f79ed550500e7589d0ae499ce1cc inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2468df95bf69f7cc72000298ce7e9d inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a1a2468df95bf69f7cc72000298ce7e9d">direction_</a> = <a class="el" href="../../db/d69/classAMTEncoderBase.html#a55054d9d56f2fecadc158b043d0a31c9a6adf97f83acf6453d4a6a4b1070f3754">Direction::None</a></td></tr>
+<tr class="separator:a1a2468df95bf69f7cc72000298ce7e9d inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace09d457d751a6f6d41bef92ea70ad7a inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#ace09d457d751a6f6d41bef92ea70ad7a">indexed_</a> = false</td></tr>
+<tr class="separator:ace09d457d751a6f6d41bef92ea70ad7a inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eafad22e19b92f260cc6a82000d41e2 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a9eafad22e19b92f260cc6a82000d41e2">correction_pending_</a> = false</td></tr>
+<tr class="separator:a9eafad22e19b92f260cc6a82000d41e2 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330f1554324bcd7186c11479a38d4071 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">volatile int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a330f1554324bcd7186c11479a38d4071">last_index_correction_</a> = 0</td></tr>
+<tr class="separator:a330f1554324bcd7186c11479a38d4071 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca13833d278a8da5c395761eec856fb3 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d0c/amt__base_8h.html#ae1696575ec7be2b21bd76d2fb0ae52e9">IndexCorrectionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#aca13833d278a8da5c395761eec856fb3">correction_mode_</a> = IndexCorrectionMode::EveryIndex</td></tr>
+<tr class="separator:aca13833d278a8da5c395761eec856fb3 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f014831b30a1556316856bae4eb0417 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a3f014831b30a1556316856bae4eb0417">last_tick_</a> = 0</td></tr>
+<tr class="separator:a3f014831b30a1556316856bae4eb0417 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd98bfc7683e5300a61ce9a5c85610a7 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#abd98bfc7683e5300a61ce9a5c85610a7">last_rpm_count_</a> = 0</td></tr>
+<tr class="separator:abd98bfc7683e5300a61ce9a5c85610a7 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84071db501df8b4941c7ae4c386e3d6c inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a84071db501df8b4941c7ae4c386e3d6c">last_interval_rpm_count_</a> = 0</td></tr>
+<tr class="separator:a84071db501df8b4941c7ae4c386e3d6c inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474670a5c8f7205f4183d2669e54c87 inherit pro_attribs_classAMTEncoderBase"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d69/classAMTEncoderBase.html#a9474670a5c8f7205f4183d2669e54c87">rpm_</a> = 0.0f</td></tr>
+<tr class="separator:a9474670a5c8f7205f4183d2669e54c87 inherit pro_attribs_classAMTEncoderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >GPIO EXTIでquadratureを解読するbackend。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>GPIO_Mgrの要素順はX, A, B。begin()はMX_GPIO_Init()後に呼ぶ。 </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a9c77ec83882c0d3a1c7e8f6a989af8ff" name="a9c77ec83882c0d3a1c7e8f6a989af8ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c77ec83882c0d3a1c7e8f6a989af8ff">&#9670;&#160;</a></span>AMTEncoderExti() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AMTEncoderExti::AMTEncoderExti </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gpio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>ppr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>EXTI backendを構築する。ハードウェアはまだ読まない。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gpio</td><td>X, A, Bの順で登録済みのGPIO manager。 </td></tr>
+    <tr><td class="paramname">ppr</td><td>1回転当たりのパルス数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0de78e4aa71f7e4e8cc5a7e32708ce7c" name="a0de78e4aa71f7e4e8cc5a7e32708ce7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de78e4aa71f7e4e8cc5a7e32708ce7c">&#9670;&#160;</a></span>AMTEncoderExti() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AMTEncoderExti::AMTEncoderExti </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee183937d503c8d7f6943da435e977f8" name="aee183937d503c8d7f6943da435e977f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee183937d503c8d7f6943da435e977f8">&#9670;&#160;</a></span>AMTEncoderExti() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AMTEncoderExti::AMTEncoderExti </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="acd50a1d7eb038c0182cc3df6b2627f37" name="acd50a1d7eb038c0182cc3df6b2627f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd50a1d7eb038c0182cc3df6b2627f37">&#9670;&#160;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AMTEncoderExti::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期A/B状態を同期する。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>初期化に成功した場合true。 </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d9b/classAMTEncoderExti_acd50a1d7eb038c0182cc3df6b2627f37_cgraph.png" border="0" usemap="#adf/d9b/classAMTEncoderExti_acd50a1d7eb038c0182cc3df6b2627f37_cgraph" alt=""/></div>
+<map name="adf/d9b/classAMTEncoderExti_acd50a1d7eb038c0182cc3df6b2627f37_cgraph" id="adf/d9b/classAMTEncoderExti_acd50a1d7eb038c0182cc3df6b2627f37_cgraph">
+<area shape="rect" title="初期A/B状態を同期する。" alt="" coords="5,104,160,129"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="242,5,374,31"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#ac00fbd9a40812c254074ced4098b4c37" title=" " alt="" coords="239,55,377,80"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="251,104,365,129"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#ad681949a55057cafeed3239f93d9f56a" title=" " alt="" coords="213,154,403,194"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a7bbbcdcadc0df669474b08f7995798a7" title=" " alt="" coords="208,219,408,244"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a96e3529476bf89e9ad6fb5565d1d7b80" title=" " alt="" coords="456,161,669,187"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a31cd58800fdfe19e7743ecc84088fb0a" name="a31cd58800fdfe19e7743ecc84088fb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cd58800fdfe19e7743ecc84088fb0a">&#9670;&#160;</a></span>handleExti()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AMTEncoderExti::handleExti </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>gpio_pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>HAL GPIO EXTI callbackからeventを渡す。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gpio_pin</td><td>変化したGPIO pin mask。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d9b/classAMTEncoderExti_a31cd58800fdfe19e7743ecc84088fb0a_cgraph.png" border="0" usemap="#adf/d9b/classAMTEncoderExti_a31cd58800fdfe19e7743ecc84088fb0a_cgraph" alt=""/></div>
+<map name="adf/d9b/classAMTEncoderExti_a31cd58800fdfe19e7743ecc84088fb0a_cgraph" id="adf/d9b/classAMTEncoderExti_a31cd58800fdfe19e7743ecc84088fb0a_cgraph">
+<area shape="rect" title="HAL GPIO EXTI callbackからeventを渡す。" alt="" coords="5,97,188,123"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#ad7a9880f3a6dc1e3a9db9dedcac8cde3" title=" " alt="" coords="246,12,429,37"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#aadd2723b1c3be80f2a1fe9c667e7e2a7" title="指定インデックスのGPIOピンの番号を返す" alt="" coords="271,72,403,97"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#af6fc3eed2c5862cf14d963cf5ad3db4c" title=" " alt="" coords="236,121,439,147"/>
+<area shape="rect" href="../../d6/d4e/classGPIO__Mgr.html#a5810a79006aa77eb942825e4068ccdb0" title="指定インデックスのGPIOピンの状態を読み取る" alt="" coords="280,171,395,196"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="487,5,697,31"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8" title=" " alt="" coords="497,55,687,95"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="496,119,688,159"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d" title=" " alt="" coords="503,183,681,223"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9" title=" " alt="" coords="493,247,691,287"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abc1c6685e4661057012b8b412bec6c64" name="abc1c6685e4661057012b8b412bec6c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1c6685e4661057012b8b412bec6c64">&#9670;&#160;</a></span>indexEdgeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AMTEncoderExti::indexEdgeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >begin/reset後のX相エッジ数を返す。 </p>
+
+</div>
+</div>
+<a id="a2f5344c31d7b439a0d72d9b108fe2af2" name="a2f5344c31d7b439a0d72d9b108fe2af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5344c31d7b439a0d72d9b108fe2af2">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp; AMTEncoderExti::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8353ff87ffd238862badad606b04970a" name="a8353ff87ffd238862badad606b04970a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8353ff87ffd238862badad606b04970a">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp; AMTEncoderExti::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabc96cce6dabaead15cd04b4368a2ab2" name="aabc96cce6dabaead15cd04b4368a2ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc96cce6dabaead15cd04b4368a2ab2">&#9670;&#160;</a></span>phaseAEdgeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AMTEncoderExti::phaseAEdgeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >begin/reset後のA相エッジ数を返す。 </p>
+
+</div>
+</div>
+<a id="a32a48a3b02e3633dc787d9816591f6fa" name="a32a48a3b02e3633dc787d9816591f6fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a48a3b02e3633dc787d9816591f6fa">&#9670;&#160;</a></span>phaseBEdgeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AMTEncoderExti::phaseBEdgeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >begin/reset後のB相エッジ数を返す。 </p>
+
+</div>
+</div>
+<a id="a821a846903de62f562c2d8331ac6c6d5" name="a821a846903de62f562c2d8331ac6c6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821a846903de62f562c2d8331ac6c6d5">&#9670;&#160;</a></span>print_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AMTEncoderExti::print_state </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_log</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在状態を1回だけ更新し、一貫したsnapshotを出力する。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">use_log</td><td>trueならLOGD、falseならCH_LOG streamへ出力する。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d9b/classAMTEncoderExti_a821a846903de62f562c2d8331ac6c6d5_cgraph.png" border="0" usemap="#adf/d9b/classAMTEncoderExti_a821a846903de62f562c2d8331ac6c6d5_cgraph" alt=""/></div>
+<map name="adf/d9b/classAMTEncoderExti_a821a846903de62f562c2d8331ac6c6d5_cgraph" id="adf/d9b/classAMTEncoderExti_a821a846903de62f562c2d8331ac6c6d5_cgraph">
+<area shape="rect" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="5,167,155,207"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#adfc765f8d461644c810cac685298d1d7" title="Position Count基準の角度を返す。" alt="" coords="207,73,371,98"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="675,24,867,64"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="915,165,1125,190"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d" title=" " alt="" coords="681,160,860,200"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#af0be96e5e9240afed6b8d016a7b38b93" title="ハードウェアの現在値をキャッシュへ明示的に反映する。" alt="" coords="203,276,376,301"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#af646d5366eb3ead60831d4ede5e06c9a" title="Position Count基準の累積回転数を返す。" alt="" coords="427,74,623,100"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a39c2719d744527ce230cd0ce5dfc7190" title="最後に計算したRPMを返す。" alt="" coords="212,325,367,350"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a654571a2feca11fd0162001a7d1ba4d0" title="Position Countを1回転内のphaseへ変換して返す。" alt="" coords="424,124,627,149"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776" title="補正後のPosition Countを原子的に返す。" alt="" coords="681,96,860,136"/>
+<area shape="rect" href="../../db/d69/classAMTEncoderBase.html#a4637831d48dad7c92fc0da162cf5f6b9" title=" " alt="" coords="426,275,625,315"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab2b74c2d2a2bad338176b50350c78185" name="ab2b74c2d2a2bad338176b50350c78185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2b74c2d2a2bad338176b50350c78185">&#9670;&#160;</a></span>PIN_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int AMTEncoderExti::PIN_A = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ca02f3f1cb3235d8936ca6de7bc348a" name="a6ca02f3f1cb3235d8936ca6de7bc348a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca02f3f1cb3235d8936ca6de7bc348a">&#9670;&#160;</a></span>PIN_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int AMTEncoderExti::PIN_B = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5dcfd7bb44cd416651c76cbbafba6e7" name="aa5dcfd7bb44cd416651c76cbbafba6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5dcfd7bb44cd416651c76cbbafba6e7">&#9670;&#160;</a></span>PIN_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int AMTEncoderExti::PIN_X = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/logic/<a class="el" href="../../d3/d85/amt_8h.html">amt.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../df/d9b/classAMTEncoderExti.html">AMTEncoderExti</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

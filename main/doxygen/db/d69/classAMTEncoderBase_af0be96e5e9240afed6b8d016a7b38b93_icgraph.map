@@ -1,0 +1,6 @@
+<map id="AMTEncoderBase::refresh" name="AMTEncoderBase::refresh">
+<area shape="rect" id="node1" title="ハードウェアの現在値をキャッシュへ明示的に反映する。" alt="" coords="252,70,425,95"/>
+<area shape="rect" id="node2" href="$df/d9b/classAMTEncoderExti.html#a821a846903de62f562c2d8331ac6c6d5" title="現在状態を1回だけ更新し、一貫したsnapshotを出力する。" alt="" coords="30,5,179,45"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#aab64121063fc31a15f3cf7cfbffc84a9" title="指定時間のRaw Count差分からRPMを更新する。" alt="" coords="5,70,204,95"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a7b4fcf49fa955ca187c55b1cbfc82758" title="HAL tickで指定間隔が経過したときだけRPMを更新する。" alt="" coords="5,120,204,160"/>
+</map>

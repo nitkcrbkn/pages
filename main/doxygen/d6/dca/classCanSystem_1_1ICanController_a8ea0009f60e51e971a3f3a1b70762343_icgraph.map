@@ -1,5 +1,5 @@
 <map id="CanSystem::ICanController::send" name="CanSystem::ICanController::send">
-<area shape="rect" id="node1" title=" " alt="" coords="855,159,1032,199"/>
+<area shape="rect" id="node1" title="送信する" alt="" coords="855,159,1032,199"/>
 <area shape="rect" id="node2" href="$d6/d2e/classproto__can_1_1FrameLayer.html#ae6b7acaba683fa57ad448b3cbe2c1b10" title=" " alt="" coords="636,101,791,141"/>
 <area shape="rect" id="node10" href="$d4/d2e/classDJI_1_1ESC.html#a7a09571eedd927b4c66f59873571e689" title=" " alt="" coords="638,166,789,191"/>
 <area shape="rect" id="node11" href="$da/d4c/classMotoron_1_1Master.html#a0dac2909446be1d148bd8780f6b1c16b" title="CANデータの送信を行う" alt="" coords="620,215,807,241"/>

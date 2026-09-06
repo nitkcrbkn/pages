@@ -1,0 +1,7 @@
+<map id="AMTEncoderBase::phaseCount" name="AMTEncoderBase::phaseCount">
+<area shape="rect" id="node1" title="Position Countを1回転内のphaseへ変換して返す。" alt="" coords="5,77,208,102"/>
+<area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="256,5,448,45"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#ab5e8195146be5110c3d0eeeda1735776" title="補正後のPosition Countを原子的に返す。" alt="" coords="263,69,441,109"/>
+<area shape="rect" id="node5" href="$db/d69/classAMTEncoderBase.html#a6c2fbb99f62ed34cd6676350ad25349d" title=" " alt="" coords="263,133,441,173"/>
+<area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="496,77,707,102"/>
+</map>

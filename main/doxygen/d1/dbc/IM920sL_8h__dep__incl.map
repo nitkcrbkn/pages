@@ -1,4 +1,5 @@
 <map id="modules/platform/IM920sL.h" name="modules/platform/IM920sL.h">
-<area shape="rect" id="node1" title="IM920sLを操作するためのクラス" alt="" coords="11,5,197,31"/>
-<area shape="rect" id="node2" href="$d9/dc2/Dualsense_8h.html" title=" " alt="" coords="5,79,203,104"/>
+<area shape="rect" id="node1" title="IM920sLを操作するためのクラス" alt="" coords="22,5,209,31"/>
+<area shape="rect" id="node2" href="$d9/dc2/Dualsense_8h.html" title="IM920sL経由でDualSense入力を受信するクラス" alt="" coords="17,79,214,104"/>
+<area shape="rect" id="node3" href="$d5/d0e/DualsenseMonitor_8h.html" title="DualSenseのSTREAMデバッグ表示" alt="" coords="5,152,225,177"/>
 </map>

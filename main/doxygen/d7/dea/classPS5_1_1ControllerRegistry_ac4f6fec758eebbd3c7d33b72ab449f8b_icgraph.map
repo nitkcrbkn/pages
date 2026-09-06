@@ -1,0 +1,4 @@
+<map id="PS5::ControllerRegistry::setTimeout" name="PS5::ControllerRegistry::setTimeout">
+<area shape="rect" id="node1" title="指定Nodeの通信タイムアウトを上書きします。" alt="" coords="240,5,395,45"/>
+<area shape="rect" id="node2" href="$d7/db3/classPS5_1_1DualSense.html#a4545ebcecdaa4a155300268744c34377" title="指定Nodeの通信タイムアウトを上書きします。" alt="" coords="5,13,192,38"/>
+</map>

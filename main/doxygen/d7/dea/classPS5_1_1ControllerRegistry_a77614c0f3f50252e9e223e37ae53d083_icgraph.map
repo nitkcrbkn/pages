@@ -1,0 +1,4 @@
+<map id="PS5::ControllerRegistry::isConnected" name="PS5::ControllerRegistry::isConnected">
+<area shape="rect" id="node1" title="指定時刻でタイムアウトを判定してから接続状態を返します。" alt="" coords="248,5,403,45"/>
+<area shape="rect" id="node2" href="$d7/db3/classPS5_1_1DualSense.html#a6988a435038c03e4073d985faf911519" title="timeoutを反映してから指定ノードの接続状態を返します。" alt="" coords="5,13,200,38"/>
+</map>

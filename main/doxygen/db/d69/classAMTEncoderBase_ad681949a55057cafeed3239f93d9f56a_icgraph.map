@@ -1,0 +1,5 @@
+<map id="AMTEncoderBase::resetCoreState" name="AMTEncoderBase::resetCoreState">
+<area shape="rect" id="node1" title=" " alt="" coords="216,23,405,63"/>
+<area shape="rect" id="node2" href="$df/d9b/classAMTEncoderExti.html#acd50a1d7eb038c0182cc3df6b2627f37" title="初期A/B状態を同期する。" alt="" coords="9,5,164,31"/>
+<area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#a2a14f5ab76e205b91cb81e1a435362fe" title="共通状態とbackend固有状態を初期化する。" alt="" coords="5,55,168,80"/>
+</map>
