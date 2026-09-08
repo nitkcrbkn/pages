@@ -642,9 +642,10 @@ false 初期化失敗 </dd></dl>
 </div><div class="memdoc">
 
 <p>canStopしてからinitする。  </p>
-<dl class="section return"><dt>戻り値</dt><dd>true 再起動成功 </dd>
+<dl class="section note"><dt>覚え書き</dt><dd>判定対象は再初期化処理そのものであり、バス側の異常が解消したかは含まない。 </dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>true 再初期化成功 </dd>
 <dd>
-false 再起動失敗 </dd></dl>
+false 再初期化失敗 </dd></dl>
 <p>保存済みの name/stream_pos/show_config を使って <a class="el" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。">initCan()</a> を再実行する。 </p>
 <div class="dynheader">
 呼び出し関係図:</div>

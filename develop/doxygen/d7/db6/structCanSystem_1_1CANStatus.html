@@ -116,6 +116,9 @@ CanSystem::CANStatus 連携図</div>
 <tr class="separator:aac1fd74b4e58796d385dc72ce593ab4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01b6952f6ddfb80f71d50dbf2cae40f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f">hardware_error</a> () const</td></tr>
 <tr class="separator:ac01b6952f6ddfb80f71d50dbf2cae40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3aee8df22d21b1d2b79c84c69d6760"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a4e3aee8df22d21b1d2b79c84c69d6760">internal_error</a> () const</td></tr>
+<tr class="memdesc:a4e3aee8df22d21b1d2b79c84c69d6760"><td class="mdescLeft">&#160;</td><td class="mdescRight">再初期化では解消しないペリフェラル内部側の異常か  <a href="../../d7/db6/structCanSystem_1_1CANStatus.html#a4e3aee8df22d21b1d2b79c84c69d6760">[詳解]</a><br /></td></tr>
+<tr class="separator:a4e3aee8df22d21b1d2b79c84c69d6760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6302c8a8d667fb3295b5f976543668c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4">is_error_state</a> () const</td></tr>
 <tr class="separator:a6302c8a8d667fb3295b5f976543668c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3157b0a105f90b637872b58a5c016531"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a3157b0a105f90b637872b58a5c016531">is_operational</a> () const</td></tr>
@@ -221,6 +224,43 @@ CanSystem::CANStatus 連携図</div>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a99e5f3c7da295b548e51bcaca5720e54" title="初期化する。fdcanもcan互換にしてある。そのままcanが始まる。" alt="" coords="437,163,605,203"/>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a84c063aa73a958e875060bc791865f98" title="状態表示を更新する" alt="" coords="437,227,605,267"/>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a61ab0b433ab8990b6eea06407cd77cc3" title="canStopしてからinitする。" alt="" coords="221,160,389,200"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e3aee8df22d21b1d2b79c84c69d6760" name="a4e3aee8df22d21b1d2b79c84c69d6760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3aee8df22d21b1d2b79c84c69d6760">&#9670;&#160;</a></span>internal_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CANStatus::internal_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>再初期化では解消しないペリフェラル内部側の異常か </p>
+<p >ACK/Form/Bit/Stuff等のバス由来エラーやTEC/RECはここに含めない。 それらはバス側の要因なので、再初期化を繰り返しても状況は変わらない。 </p><dl class="section return"><dt>戻り値</dt><dd>true 内部異常あり（より深いレベルからの再初期化が必要） </dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/db6/structCanSystem_1_1CANStatus_a4e3aee8df22d21b1d2b79c84c69d6760_icgraph.png" border="0" usemap="#ad7/db6/structCanSystem_1_1CANStatus_a4e3aee8df22d21b1d2b79c84c69d6760_icgraph" alt=""/></div>
+<map name="ad7/db6/structCanSystem_1_1CANStatus_a4e3aee8df22d21b1d2b79c84c69d6760_icgraph" id="ad7/db6/structCanSystem_1_1CANStatus_a4e3aee8df22d21b1d2b79c84c69d6760_icgraph">
+<area shape="rect" title="再初期化では解消しないペリフェラル内部側の異常か" alt="" coords="243,5,404,45"/>
+<area shape="rect" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#acc20ad9a9e3e41fed925d6504114a109" title="直近のupdateStatus()時点で内部異常が立っていたか" alt="" coords="5,5,195,45"/>
 </map>
 </div>
 

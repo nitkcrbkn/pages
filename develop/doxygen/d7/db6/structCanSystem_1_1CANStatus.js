@@ -2,6 +2,7 @@ var structCanSystem_1_1CANStatus =
 [
     [ "get_bus_error_state", "d7/db6/structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f", null ],
     [ "hardware_error", "d7/db6/structCanSystem_1_1CANStatus.html#ac01b6952f6ddfb80f71d50dbf2cae40f", null ],
+    [ "internal_error", "d7/db6/structCanSystem_1_1CANStatus.html#a4e3aee8df22d21b1d2b79c84c69d6760", null ],
     [ "is_error_state", "d7/db6/structCanSystem_1_1CANStatus.html#a6302c8a8d667fb3295b5f976543668c4", null ],
     [ "is_operational", "d7/db6/structCanSystem_1_1CANStatus.html#a3157b0a105f90b637872b58a5c016531", null ],
     [ "software_error", "d7/db6/structCanSystem_1_1CANStatus.html#aac1fd74b4e58796d385dc72ce593ab4b", null ],

@@ -17,6 +17,7 @@ var classCanSystem_1_1CanErrorTracker =
     [ "getStatus", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#a03ed447de3fa5d443def6da2717da09c", null ],
     [ "getTotalUpdates", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#a321deb52ded7bf434e147837ef1334e9", null ],
     [ "is_error_state", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27", null ],
+    [ "is_internal_error", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#acc20ad9a9e3e41fed925d6504114a109", null ],
     [ "streamTxRxStats", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#a6ba238e148d013c9b8b68badb2915c82", null ],
     [ "updateStatus", "d9/d7c/classCanSystem_1_1CanErrorTracker.html#af77f922989c606967f141348e4a0faf6", null ]
 ];
