@@ -1,6 +1,5 @@
 var namespaceDJI =
 [
-    [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
     [ "ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
     [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ],
     [ "CallBack", "da/db0/namespaceDJI.html#a243fc206fcf72f9e9452fd3a00679014", null ],

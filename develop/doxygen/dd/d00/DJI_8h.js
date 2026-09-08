@@ -1,6 +1,5 @@
 var DJI_8h =
 [
-    [ "DJI::CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
     [ "DJI::ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ],
     [ "DJI::ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
     [ "C610_MAX_ANGLE", "dd/d00/DJI_8h.html#a1f9891ce34c723ca9ba080768570d180", null ],

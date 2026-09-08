@@ -15,7 +15,6 @@ var annotated_dup =
       [ "ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", "d2/de5/structCanSystem_1_1ValidSizes" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
-      [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
       [ "ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],

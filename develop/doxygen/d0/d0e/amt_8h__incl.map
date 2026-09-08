@@ -1,11 +1,13 @@
 <map id="modules/logic/amt.h" name="modules/logic/amt.h">
-<area shape="rect" id="node1" title="AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。" alt="" coords="209,5,347,31"/>
-<area shape="rect" id="node2" href="$d0/d0c/amt__base_8h.html" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="150,79,270,104"/>
-<area shape="rect" id="node7" href="$df/d0d/platform_2gpio_8h.html" title=" " alt="" coords="311,79,418,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="265,152,325,177"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,152,71,177"/>
-<area shape="rect" id="node5" title=" " alt="" coords="95,152,155,177"/>
-<area shape="rect" id="node6" title=" " alt="" coords="179,152,241,177"/>
-<area shape="rect" id="node8" title=" " alt="" coords="350,152,414,177"/>
-<area shape="rect" id="node9" title=" " alt="" coords="439,152,507,177"/>
+<area shape="rect" id="node1" title="AMTエンコーダのGPIO EXTIおよびTimer Encoder backend。" alt="" coords="269,5,408,31"/>
+<area shape="rect" id="node2" href="$d0/d0c/amt__base_8h.html" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="192,79,312,104"/>
+<area shape="rect" id="node9" href="$df/d0d/platform_2gpio_8h.html" title=" " alt="" coords="444,79,551,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="186,225,246,251"/>
+<area shape="rect" id="node4" title=" " alt="" coords="254,152,319,177"/>
+<area shape="rect" id="node5" title=" " alt="" coords="343,152,403,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,225,67,251"/>
+<area shape="rect" id="node7" href="$d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="72,152,179,177"/>
+<area shape="rect" id="node8" title=" " alt="" coords="93,225,158,251"/>
+<area shape="rect" id="node10" title=" " alt="" coords="571,152,635,177"/>
+<area shape="rect" id="node11" title=" " alt="" coords="427,152,495,177"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="AMTEncoderBase::handleIndex" name="AMTEncoderBase::handleIndex">
-<area shape="rect" id="node1" title=" " alt="" coords="5,127,208,152"/>
+<area shape="rect" id="node1" title="X相割り込みを処理し、indexed状態・補正offsetを更新する。" alt="" coords="5,127,208,152"/>
 <area shape="rect" id="node2" href="$db/d69/classAMTEncoderBase.html#a6a1523d65ca792eaaf9eb32ea02824c4" title=" " alt="" coords="256,5,467,31"/>
 <area shape="rect" id="node3" href="$db/d69/classAMTEncoderBase.html#a4205ab6a6f06dad42e03c25bff3febd8" title=" " alt="" coords="266,55,457,95"/>
 <area shape="rect" id="node4" href="$db/d69/classAMTEncoderBase.html#ae14dfc3adf99244a727b055eb71a420b" title="Quadrature x4後の1回転当たりカウントを返す。" alt="" coords="265,119,457,159"/>
