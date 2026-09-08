@@ -1,0 +1,4 @@
+<map id="led::hsv" name="led::hsv">
+<area shape="rect" id="node1" title="HSVからRGBを生成する(整数演算のみ / 浮動小数点未使用)" alt="" coords="204,5,271,31"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="5,5,156,31"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="led::LEDTape::fill_range" name="led::LEDTape::fill_range">
+<area shape="rect" id="node1" title="連続した範囲を同じ色で塗る" alt="" coords="184,5,301,45"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,13,136,38"/>
+</map>

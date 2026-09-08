@@ -1,0 +1,1536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt; クラステンプレート</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('db/d2a/classled_1_1NeoPixelBase.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="../../d2/d13/classled_1_1NeoPixelBase-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Writerが満たすべきインターフェース(コンセプト)  
+ <a href="../../db/d2a/classled_1_1NeoPixelBase.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;led.h&gt;</code></p>
+<div class="dynheader">
+led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt; の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d38/classled_1_1NeoPixelBase__inherit__graph.png" border="0" usemap="#aled_1_1NeoPixelBase_3_01Derived_00_01Writer_00_01PIXEL__COUNT_00_01ORDER_00_01Codec_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="aled_1_1NeoPixelBase_3_01Derived_00_01Writer_00_01PIXEL__COUNT_00_01ORDER_00_01Codec_01_4_inherit__map" id="aled_1_1NeoPixelBase_3_01Derived_00_01Writer_00_01PIXEL__COUNT_00_01ORDER_00_01Codec_01_4_inherit__map">
+<area shape="rect" title="Writerが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,188,60"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html" title="NeoPixel LEDテープ" alt="" coords="10,108,183,163"/>
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a45e142d57a6800daab38ce1152b49490"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a45e142d57a6800daab38ce1152b49490">writer_type</a> = Writer</td></tr>
+<tr class="separator:a45e142d57a6800daab38ce1152b49490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47813b843455efbc41a8835e33c61a58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a47813b843455efbc41a8835e33c61a58">codec_type</a> = Codec</td></tr>
+<tr class="separator:a47813b843455efbc41a8835e33c61a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6b27bd4b25817ff25e93d46ace82252c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a6b27bd4b25817ff25e93d46ace82252c">NeoPixelBase</a> (Writer &amp;writer, uint8_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5">brightness</a>=255)</td></tr>
+<tr class="separator:a6b27bd4b25817ff25e93d46ace82252c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776ca0339b82c0f3d100700b1dc143e5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5">brightness</a> () const</td></tr>
+<tr class="memdesc:a776ca0339b82c0f3d100700b1dc143e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の全体輝度  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5">[詳解]</a><br /></td></tr>
+<tr class="separator:a776ca0339b82c0f3d100700b1dc143e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e835539f72f63aa2efb6569ebad7f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a48e835539f72f63aa2efb6569ebad7f4">dirty</a> () const</td></tr>
+<tr class="memdesc:a48e835539f72f63aa2efb6569ebad7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">未送出の変更があるか  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a48e835539f72f63aa2efb6569ebad7f4">[詳解]</a><br /></td></tr>
+<tr class="separator:a48e835539f72f63aa2efb6569ebad7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75603634b6ea2218f9cf90168caff63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63">busy</a> () const</td></tr>
+<tr class="memdesc:ae75603634b6ea2218f9cf90168caff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出中(次のshow()が失敗する状態)か  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63">[詳解]</a><br /></td></tr>
+<tr class="separator:ae75603634b6ea2218f9cf90168caff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379e777c22eb20e16c4683293a24f92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a379e777c22eb20e16c4683293a24f92c">set_brightness</a> (uint8_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5">brightness</a>)</td></tr>
+<tr class="memdesc:a379e777c22eb20e16c4683293a24f92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">全体輝度を設定する  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a379e777c22eb20e16c4683293a24f92c">[詳解]</a><br /></td></tr>
+<tr class="separator:a379e777c22eb20e16c4683293a24f92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3c1819e867543f5eb8d6f4c459ba19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19">set_pixel</a> (size_t index, const <a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:aea3c1819e867543f5eb8d6f4c459ba19"><td class="mdescLeft">&#160;</td><td class="mdescRight">1画素に色を書き込む  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19">[詳解]</a><br /></td></tr>
+<tr class="separator:aea3c1819e867543f5eb8d6f4c459ba19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389da745d131d00460f79eac0f361622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a389da745d131d00460f79eac0f361622">get_pixel</a> (size_t index) const</td></tr>
+<tr class="memdesc:a389da745d131d00460f79eac0f361622"><td class="mdescLeft">&#160;</td><td class="mdescRight">1画素の色を読み出す  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a389da745d131d00460f79eac0f361622">[詳解]</a><br /></td></tr>
+<tr class="separator:a389da745d131d00460f79eac0f361622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf888436e3f35a340a432cafcd0f97c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9">fill</a> (const <a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a> &amp;color)</td></tr>
+<tr class="memdesc:adf888436e3f35a340a432cafcd0f97c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">全画素を同じ色で塗る  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9">[詳解]</a><br /></td></tr>
+<tr class="separator:adf888436e3f35a340a432cafcd0f97c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389d1585f9a5e0b401008dfc3cdf4352"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352">clear</a> ()</td></tr>
+<tr class="memdesc:a389d1585f9a5e0b401008dfc3cdf4352"><td class="mdescLeft">&#160;</td><td class="mdescRight">全画素を消灯する  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352">[詳解]</a><br /></td></tr>
+<tr class="separator:a389d1585f9a5e0b401008dfc3cdf4352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33aadf6564e4cfac6804a586b8f8c3a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a33aadf6564e4cfac6804a586b8f8c3a6">copy_pixel</a> (size_t dst_index, size_t src_index)</td></tr>
+<tr class="memdesc:a33aadf6564e4cfac6804a586b8f8c3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">画素をコピーする(色の再エンコードを行わない)  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a33aadf6564e4cfac6804a586b8f8c3a6">[詳解]</a><br /></td></tr>
+<tr class="separator:a33aadf6564e4cfac6804a586b8f8c3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e89bc9c50e01c23d61eccf975aa89f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac6e89bc9c50e01c23d61eccf975aa89f">swap_pixel</a> (size_t a_index, size_t b_index)</td></tr>
+<tr class="memdesc:ac6e89bc9c50e01c23d61eccf975aa89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">2画素を入れ替える  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac6e89bc9c50e01c23d61eccf975aa89f">[詳解]</a><br /></td></tr>
+<tr class="separator:ac6e89bc9c50e01c23d61eccf975aa89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8d94a2ea7ac85bd5f257fd55f2956b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b">show</a> ()</td></tr>
+<tr class="memdesc:a4a8d94a2ea7ac85bd5f257fd55f2956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファをLEDへ送出する  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b">[詳解]</a><br /></td></tr>
+<tr class="separator:a4a8d94a2ea7ac85bd5f257fd55f2956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab781bee707721e19b806cbc32c11530e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ab781bee707721e19b806cbc32c11530e">show_if_dirty</a> ()</td></tr>
+<tr class="memdesc:ab781bee707721e19b806cbc32c11530e"><td class="mdescLeft">&#160;</td><td class="mdescRight">変更があるときだけ送出する  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ab781bee707721e19b806cbc32c11530e">[詳解]</a><br /></td></tr>
+<tr class="separator:ab781bee707721e19b806cbc32c11530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747b3effca27208469a76fd079686c14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a747b3effca27208469a76fd079686c14">show_periodic</a> (uint32_t interval_ms)</td></tr>
+<tr class="memdesc:a747b3effca27208469a76fd079686c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">一定周期でのみ送出する。メインループから毎周期呼ぶ用途。  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a747b3effca27208469a76fd079686c14">[詳解]</a><br /></td></tr>
+<tr class="separator:a747b3effca27208469a76fd079686c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffb9053e4c514baa28e97c410a06048"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a6ffb9053e4c514baa28e97c410a06048">buffer</a> () const</td></tr>
+<tr class="memdesc:a6ffb9053e4c514baa28e97c410a06048"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出バッファの先頭(デバッグ・テスト用)  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a6ffb9053e4c514baa28e97c410a06048">[詳解]</a><br /></td></tr>
+<tr class="separator:a6ffb9053e4c514baa28e97c410a06048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aab83449f4fde6cb692bdb6e834103a9a"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#aab83449f4fde6cb692bdb6e834103a9a">size</a> ()</td></tr>
+<tr class="memdesc:aab83449f4fde6cb692bdb6e834103a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED数  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#aab83449f4fde6cb692bdb6e834103a9a">[詳解]</a><br /></td></tr>
+<tr class="separator:aab83449f4fde6cb692bdb6e834103a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ec21fcc6e744e082bb52b0f8326a34"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae1ec21fcc6e744e082bb52b0f8326a34">buffer_size</a> ()</td></tr>
+<tr class="memdesc:ae1ec21fcc6e744e082bb52b0f8326a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出バッファのバイト数  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ae1ec21fcc6e744e082bb52b0f8326a34">[詳解]</a><br /></td></tr>
+<tr class="separator:ae1ec21fcc6e744e082bb52b0f8326a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a01c11d5fe80beeb64506aee231255ae7"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c11d5fe80beeb64506aee231255ae7">PIXELS</a> = PIXEL_COUNT</td></tr>
+<tr class="memdesc:a01c11d5fe80beeb64506aee231255ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED数  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c11d5fe80beeb64506aee231255ae7">[詳解]</a><br /></td></tr>
+<tr class="separator:a01c11d5fe80beeb64506aee231255ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f6bd81c664623bef2084afd8f1fda73"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a7f6bd81c664623bef2084afd8f1fda73">PIXEL_ORDER</a> = ORDER</td></tr>
+<tr class="separator:a7f6bd81c664623bef2084afd8f1fda73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95999f5d4f48b0977c6e8859850f0a7"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac95999f5d4f48b0977c6e8859850f0a7">RAW_STRIDE</a> = <a class="el" href="../../d9/d83/namespaceled.html#a4e3f9e3d624b42d9de1453a17c5be192">bytes_per_pixel</a>(ORDER)</td></tr>
+<tr class="memdesc:ac95999f5d4f48b0977c6e8859850f0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">1ピクセルの生バイト数 (3 or 4)  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac95999f5d4f48b0977c6e8859850f0a7">[詳解]</a><br /></td></tr>
+<tr class="separator:ac95999f5d4f48b0977c6e8859850f0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df8c16009872ca2cef5b42aed92dc2d"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a5df8c16009872ca2cef5b42aed92dc2d">ENC_STRIDE</a> = <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac95999f5d4f48b0977c6e8859850f0a7">RAW_STRIDE</a> * Codec::SPAN</td></tr>
+<tr class="memdesc:a5df8c16009872ca2cef5b42aed92dc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">1ピクセルがバッファ上で占めるバイト数  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a5df8c16009872ca2cef5b42aed92dc2d">[詳解]</a><br /></td></tr>
+<tr class="separator:a5df8c16009872ca2cef5b42aed92dc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886894891de8aee628753b9bcbb77b73"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a886894891de8aee628753b9bcbb77b73">LEAD_BYTES</a> = Codec::LEAD_BYTES</td></tr>
+<tr class="separator:a886894891de8aee628753b9bcbb77b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac651524285f410a79015471631b85978"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">BUFFER_SIZE</a> = <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a886894891de8aee628753b9bcbb77b73">LEAD_BYTES</a> + <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c11d5fe80beeb64506aee231255ae7">PIXELS</a> * <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a5df8c16009872ca2cef5b42aed92dc2d">ENC_STRIDE</a></td></tr>
+<tr class="memdesc:ac651524285f410a79015471631b85978"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出バッファ全体のバイト数  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">[詳解]</a><br /></td></tr>
+<tr class="separator:ac651524285f410a79015471631b85978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87efc409d9c0976c8eab1f718fa6181"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">SLOWEST_HZ</a></td></tr>
+<tr class="memdesc:ac87efc409d9c0976c8eab1f718fa6181"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームの送出にかかる時間 [ms] (切り上げ)  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">[詳解]</a><br /></td></tr>
+<tr class="separator:ac87efc409d9c0976c8eab1f718fa6181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f649f9fd341432e07a71755b659dd0"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae7f649f9fd341432e07a71755b659dd0">FRAME_MS</a></td></tr>
+<tr class="separator:ae7f649f9fd341432e07a71755b659dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91eb627e545dcdf9e5607ec29cf3530d"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a91eb627e545dcdf9e5607ec29cf3530d">MIN_SHOW_INTERVAL_MS</a></td></tr>
+<tr class="memdesc:a91eb627e545dcdf9e5607ec29cf3530d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する">show()</a>を続けて呼べる最短間隔 [ms]  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a91eb627e545dcdf9e5607ec29cf3530d">[詳解]</a><br /></td></tr>
+<tr class="separator:a91eb627e545dcdf9e5607ec29cf3530d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2bff9f543982b4a9d81b53c262296f5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a2bff9f543982b4a9d81b53c262296f5d">~NeoPixelBase</a> ()=default</td></tr>
+<tr class="separator:a2bff9f543982b4a9d81b53c262296f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98e4e7d8e79af9b4098ade3b1059fab"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab">slot_</a> (size_t physical)</td></tr>
+<tr class="memdesc:ad98e4e7d8e79af9b4098ade3b1059fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理インデックスのバッファ位置  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab">[詳解]</a><br /></td></tr>
+<tr class="separator:ad98e4e7d8e79af9b4098ade3b1059fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82d173d3d963abe23801b8b8dc36de5"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae82d173d3d963abe23801b8b8dc36de5">slot_</a> (size_t physical) const</td></tr>
+<tr class="separator:ae82d173d3d963abe23801b8b8dc36de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a115ddacd2c1006550df45e957586d264"><td class="memItemLeft" align="right" valign="top">Writer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a115ddacd2c1006550df45e957586d264">writer_</a></td></tr>
+<tr class="memdesc:a115ddacd2c1006550df45e957586d264"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出クラス  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a115ddacd2c1006550df45e957586d264">[詳解]</a><br /></td></tr>
+<tr class="separator:a115ddacd2c1006550df45e957586d264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a8b4663f1c6668eb310e6e0e93bce4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a23a8b4663f1c6668eb310e6e0e93bce4">buffer_</a> [<a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">BUFFER_SIZE</a>]</td></tr>
+<tr class="memdesc:a23a8b4663f1c6668eb310e6e0e93bce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">送出バッファ(ヒープ未使用)  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a23a8b4663f1c6668eb310e6e0e93bce4">[詳解]</a><br /></td></tr>
+<tr class="separator:a23a8b4663f1c6668eb310e6e0e93bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c284bd4477870e8f6b9a5f7f68e362"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c284bd4477870e8f6b9a5f7f68e362">brightness_</a></td></tr>
+<tr class="memdesc:a01c284bd4477870e8f6b9a5f7f68e362"><td class="mdescLeft">&#160;</td><td class="mdescRight">全体輝度  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c284bd4477870e8f6b9a5f7f68e362">[詳解]</a><br /></td></tr>
+<tr class="separator:a01c284bd4477870e8f6b9a5f7f68e362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f71301e0b099a43a73cbf1f8597e21"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a76f71301e0b099a43a73cbf1f8597e21">last_show_ms_</a></td></tr>
+<tr class="memdesc:a76f71301e0b099a43a73cbf1f8597e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">最後にshow()した時刻 [ms]  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a76f71301e0b099a43a73cbf1f8597e21">[詳解]</a><br /></td></tr>
+<tr class="separator:a76f71301e0b099a43a73cbf1f8597e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688d5720700c01bba454ddbf6064bff6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a688d5720700c01bba454ddbf6064bff6">dirty_</a></td></tr>
+<tr class="memdesc:a688d5720700c01bba454ddbf6064bff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">未送出の変更があるか  <a href="../../db/d2a/classled_1_1NeoPixelBase.html#a688d5720700c01bba454ddbf6064bff6">[詳解]</a><br /></td></tr>
+<tr class="separator:a688d5720700c01bba454ddbf6064bff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class Derived, class Writer, size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec = Spi3BitCodec&gt;<br />
+class led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;</div><p >Writerが満たすべきインターフェース(コンセプト) </p>
+<p >ビットストリームを実際にLEDへ送出する。HAL依存の実装は <code>&lt;<a class="el" href="../../d9/d90/led__driver_8h.html" title="NeoPixel(led.h)用のビットストリーム送出クラス群">platform/led_driver.h</a>&gt;</code> にある。</p>
+<div class="fragment"><div class="line"><span class="keyword">struct </span>XxxWriter {</div>
+<div class="line">    <span class="keywordtype">bool</span> write(<span class="keyword">const</span> uint8_t* data, <span class="keywordtype">size_t</span> len);  </div>
+<div class="line">    <span class="keywordtype">bool</span> busy() <span class="keyword">const</span>;                            </div>
+<div class="line">};</div>
+</div><!-- fragment --><dl class="section note"><dt>覚え書き</dt><dd>write()は非同期(DMA)でも同期(ブロッキング)でもよい。 非同期の場合、送出完了までdataは書き換えないこと。</dd></dl>
+<p>NeoPixel系デバイスの共通基底クラス</p>
+<p >ピクセルバッファの保持・色の書き込み・送出を担当する。 CRTP(Curiously Recurring Template Pattern)により、派生クラスの <code>map_index()</code> を仮想関数なしで呼び出す。</p>
+<p >派生クラスは以下を提供すること:</p><ul>
+<li><code>static constexpr size_t map_index(size_t logical)</code> 論理インデックスを物理(信号線上の並び順)インデックスへ写像する</li>
+</ul>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Derived</td><td>派生クラス自身(CRTP) </td></tr>
+    <tr><td class="paramname">Writer</td><td>ビットストリーム送出クラス </td></tr>
+    <tr><td class="paramname">PIXEL_COUNT</td><td>LED数 </td></tr>
+    <tr><td class="paramname">ORDER</td><td>チップのch送出順 </td></tr>
+    <tr><td class="paramname">Codec</td><td>バイト列のエンコード方式</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>本クラスはvirtual関数もvirtualデストラクタも持たない。 基底クラスのポインタ経由でdeleteしないこと(そもそも動的確保しない)。 </dd>
+<dd>
+バッファに入るのは画素データだけで、フレーム区切りのリセット期間は 含めていない(<a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する">show()</a>が時間で担保する)。詳細はshow()を参照。 </dd>
+<dd>
+描画バッファと送出バッファは同一で、DMA送出はこのバッファを直接読む。 そのため送出中(<a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63" title="送出中(次のshow()が失敗する状態)か">busy()</a>がtrue)の描画APIは何も書き込まずfalseを返す。 DMAが読んでいる途中のバッファを書き換えると、混在したフレームが LEDへ送られてしまうため。描画が落ちては困る場合はbusy()を見て 送出完了を待つか、show()の直後に描き始めること。 </dd></dl>
+</div><h2 class="groupheader">型定義メンバ詳解</h2>
+<a id="a47813b843455efbc41a8835e33c61a58" name="a47813b843455efbc41a8835e33c61a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47813b843455efbc41a8835e33c61a58">&#9670;&#160;</a></span>codec_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::codec_type =  Codec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45e142d57a6800daab38ce1152b49490" name="a45e142d57a6800daab38ce1152b49490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e142d57a6800daab38ce1152b49490">&#9670;&#160;</a></span>writer_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::writer_type =  Writer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a6b27bd4b25817ff25e93d46ace82252c" name="a6b27bd4b25817ff25e93d46ace82252c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b27bd4b25817ff25e93d46ace82252c">&#9670;&#160;</a></span>NeoPixelBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::NeoPixelBase </td>
+          <td>(</td>
+          <td class="paramtype">Writer &amp;&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>brightness</em> = <code>255</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td>ビットストリーム送出クラスへの参照 </td></tr>
+    <tr><td class="paramname">brightness</td><td>初期の全体輝度 0-255 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a6b27bd4b25817ff25e93d46ace82252c_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a6b27bd4b25817ff25e93d46ace82252c_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a6b27bd4b25817ff25e93d46ace82252c_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a6b27bd4b25817ff25e93d46ace82252c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="187,5,320,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2bff9f543982b4a9d81b53c262296f5d" name="a2bff9f543982b4a9d81b53c262296f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bff9f543982b4a9d81b53c262296f5d">&#9670;&#160;</a></span>~NeoPixelBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::~<a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">NeoPixelBase</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>覚え書き</dt><dd>基底クラス単体では破棄しない。派生クラス経由でのみ使う。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a776ca0339b82c0f3d100700b1dc143e5" name="a776ca0339b82c0f3d100700b1dc143e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776ca0339b82c0f3d100700b1dc143e5">&#9670;&#160;</a></span>brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::brightness </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の全体輝度 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a776ca0339b82c0f3d100700b1dc143e5_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a776ca0339b82c0f3d100700b1dc143e5_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a776ca0339b82c0f3d100700b1dc143e5_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_a776ca0339b82c0f3d100700b1dc143e5_icgraph">
+<area shape="rect" title="現在の全体輝度" alt="" coords="187,5,320,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a379e777c22eb20e16c4683293a24f92c" title="全体輝度を設定する" alt="" coords="5,5,139,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6ffb9053e4c514baa28e97c410a06048" name="a6ffb9053e4c514baa28e97c410a06048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffb9053e4c514baa28e97c410a06048">&#9670;&#160;</a></span>buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出バッファの先頭(デバッグ・テスト用) </p>
+
+</div>
+</div>
+<a id="ae1ec21fcc6e744e082bb52b0f8326a34" name="ae1ec21fcc6e744e082bb52b0f8326a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ec21fcc6e744e082bb52b0f8326a34">&#9670;&#160;</a></span>buffer_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::buffer_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出バッファのバイト数 </p>
+
+</div>
+</div>
+<a id="ae75603634b6ea2218f9cf90168caff63" name="ae75603634b6ea2218f9cf90168caff63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75603634b6ea2218f9cf90168caff63">&#9670;&#160;</a></span>busy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::busy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出中(次のshow()が失敗する状態)か </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_ae75603634b6ea2218f9cf90168caff63_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_ae75603634b6ea2218f9cf90168caff63_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_ae75603634b6ea2218f9cf90168caff63_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_ae75603634b6ea2218f9cf90168caff63_icgraph">
+<area shape="rect" title="送出中(次のshow()が失敗する状態)か" alt="" coords="383,146,543,171"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,5,318,45"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,42,136,67"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,121,335,146"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,170,335,195"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#aea7cc4278d16db607466dfd558141cfe" title="画素の並びを反転する" alt="" coords="185,219,333,245"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a36833132f783cc30b233428c9711cdd1" title="画素を巡回させる(端から出たものが反対側に入る)" alt="" coords="190,269,329,294"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a389d1585f9a5e0b401008dfc3cdf4352" name="a389d1585f9a5e0b401008dfc3cdf4352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389d1585f9a5e0b401008dfc3cdf4352">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全画素を消灯する </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a389d1585f9a5e0b401008dfc3cdf4352_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a389d1585f9a5e0b401008dfc3cdf4352_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a389d1585f9a5e0b401008dfc3cdf4352_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a389d1585f9a5e0b401008dfc3cdf4352_cgraph">
+<area shape="rect" title="全画素を消灯する" alt="" coords="5,27,139,67"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9" title="全画素を同じ色で塗る" alt="" coords="187,35,332,60"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af9294f9000069a5c9d6e2f398e96b478" title="全chを一律にスケールする" alt="" coords="409,5,485,31"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="380,55,513,95"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af01155433f53838669352dcc9475b568" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="561,5,644,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33aadf6564e4cfac6804a586b8f8c3a6" name="a33aadf6564e4cfac6804a586b8f8c3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33aadf6564e4cfac6804a586b8f8c3a6">&#9670;&#160;</a></span>copy_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::copy_pixel </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dst_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>src_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>画素をコピーする(色の再エンコードを行わない) </p>
+<dl class="section return"><dt>戻り値</dt><dd>いずれかが範囲外ならfalse </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_cgraph">
+<area shape="rect" title="画素をコピーする(色の再エンコードを行わない)" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="187,5,320,45"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_a33aadf6564e4cfac6804a586b8f8c3a6_icgraph">
+<area shape="rect" title="画素をコピーする(色の再エンコードを行わない)" alt="" coords="184,5,317,45"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,13,136,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a48e835539f72f63aa2efb6569ebad7f4" name="a48e835539f72f63aa2efb6569ebad7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48e835539f72f63aa2efb6569ebad7f4">&#9670;&#160;</a></span>dirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::dirty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>未送出の変更があるか </p>
+
+</div>
+</div>
+<a id="adf888436e3f35a340a432cafcd0f97c9" name="adf888436e3f35a340a432cafcd0f97c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf888436e3f35a340a432cafcd0f97c9">&#9670;&#160;</a></span>fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::fill </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全画素を同じ色で塗る </p>
+<dl class="section return"><dt>戻り値</dt><dd>送出中なら何も書き込まずfalse </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_cgraph">
+<area shape="rect" title="全画素を同じ色で塗る" alt="" coords="5,35,151,60"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af9294f9000069a5c9d6e2f398e96b478" title="全chを一律にスケールする" alt="" coords="227,5,303,31"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="199,55,332,95"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af01155433f53838669352dcc9475b568" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="380,5,463,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_adf888436e3f35a340a432cafcd0f97c9_icgraph">
+<area shape="rect" title="全画素を同じ色で塗る" alt="" coords="187,42,332,67"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352" title="全画素を消灯する" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="7,70,137,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a389da745d131d00460f79eac0f361622" name="a389da745d131d00460f79eac0f361622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389da745d131d00460f79eac0f361622">&#9670;&#160;</a></span>get_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a> <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::get_pixel </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1画素の色を読み出す </p>
+<p >バッファから復号するため、輝度適用後の値が返る。 </p><dl class="section return"><dt>戻り値</dt><dd>範囲外なら黒 </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a389da745d131d00460f79eac0f361622_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a389da745d131d00460f79eac0f361622_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a389da745d131d00460f79eac0f361622_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a389da745d131d00460f79eac0f361622_cgraph">
+<area shape="rect" title="1画素の色を読み出す" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="187,5,320,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a379e777c22eb20e16c4683293a24f92c" name="a379e777c22eb20e16c4683293a24f92c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379e777c22eb20e16c4683293a24f92c">&#9670;&#160;</a></span>set_brightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::set_brightness </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>brightness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全体輝度を設定する </p>
+<p >輝度は <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19" title="1画素に色を書き込む">set_pixel()</a> 等で色を書き込む「その時」に乗算される。 すでにバッファにある色には遡って適用されないため、変更後は 改めて描画し直すこと。 (生の色を別に保持しないことでRAMを約1/4に抑えている) </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a379e777c22eb20e16c4683293a24f92c_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a379e777c22eb20e16c4683293a24f92c_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a379e777c22eb20e16c4683293a24f92c_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a379e777c22eb20e16c4683293a24f92c_cgraph">
+<area shape="rect" title="全体輝度を設定する" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5" title="現在の全体輝度" alt="" coords="187,5,320,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aea3c1819e867543f5eb8d6f4c459ba19" name="aea3c1819e867543f5eb8d6f4c459ba19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3c1819e867543f5eb8d6f4c459ba19">&#9670;&#160;</a></span>set_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::set_pixel </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d8a/structled_1_1Color.html">Color</a> &amp;&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1画素に色を書き込む </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>論理インデックス (0 〜 PIXELS-1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>範囲外ならfalse </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_cgraph">
+<area shape="rect" title="1画素に色を書き込む" alt="" coords="5,27,139,67"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af9294f9000069a5c9d6e2f398e96b478" title="全chを一律にスケールする" alt="" coords="215,5,291,31"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="187,55,320,95"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af01155433f53838669352dcc9475b568" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="368,5,451,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_aea3c1819e867543f5eb8d6f4c459ba19_icgraph">
+<area shape="rect" title="1画素に色を書き込む" alt="" coords="383,63,516,103"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,5,318,45"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,70,335,95"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,119,335,145"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,13,136,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a8d94a2ea7ac85bd5f257fd55f2956b" name="a4a8d94a2ea7ac85bd5f257fd55f2956b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8d94a2ea7ac85bd5f257fd55f2956b">&#9670;&#160;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バッファをLEDへ送出する </p>
+<dl class="section return"><dt>戻り値</dt><dd>以下のいずれかでfalse<ul>
+<li>前回の送出が未完了 (busy)</li>
+<li>前回の送出から MIN_SHOW_INTERVAL_MS 経っていない</li>
+<li>Writerが送出開始に失敗した</li>
+</ul>
+</dd></dl>
+<p>NeoPixelは「一定時間Lowが続く」ことをフレームの区切りとして扱う。 この待ち時間はバッファに0を詰めても実現できるが、それは常時RAMを 占有するので、ここでは時間で判定している。 最後に送出するbitのシンボルは必ず0で終わる(0b100 / 0b110)ため、 送出後のMOSIはLowに留まる。あとは次のshow()を遅らせればよい。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_cgraph">
+<area shape="rect" title="バッファをLEDへ送出する" alt="" coords="5,5,169,31"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="217,5,269,31"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_a4a8d94a2ea7ac85bd5f257fd55f2956b_icgraph">
+<area shape="rect" title="バッファをLEDへ送出する" alt="" coords="187,45,351,70"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ab781bee707721e19b806cbc32c11530e" title="変更があるときだけ送出する" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a747b3effca27208469a76fd079686c14" title="一定周期でのみ送出する。メインループから毎周期呼ぶ用途。" alt="" coords="5,69,139,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab781bee707721e19b806cbc32c11530e" name="ab781bee707721e19b806cbc32c11530e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab781bee707721e19b806cbc32c11530e">&#9670;&#160;</a></span>show_if_dirty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::show_if_dirty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>変更があるときだけ送出する </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_ab781bee707721e19b806cbc32c11530e_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_ab781bee707721e19b806cbc32c11530e_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_ab781bee707721e19b806cbc32c11530e_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_ab781bee707721e19b806cbc32c11530e_cgraph">
+<area shape="rect" title="変更があるときだけ送出する" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する" alt="" coords="187,13,351,38"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="399,13,451,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a747b3effca27208469a76fd079686c14" name="a747b3effca27208469a76fd079686c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747b3effca27208469a76fd079686c14">&#9670;&#160;</a></span>show_periodic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::show_periodic </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interval_ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>一定周期でのみ送出する。メインループから毎周期呼ぶ用途。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval_ms</td><td>最短送出間隔 [ms] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>実際に送出したらtrue </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_a747b3effca27208469a76fd079686c14_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_a747b3effca27208469a76fd079686c14_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_a747b3effca27208469a76fd079686c14_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_a747b3effca27208469a76fd079686c14_cgraph">
+<area shape="rect" title="一定周期でのみ送出する。メインループから毎周期呼ぶ用途。" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1" title=" " alt="" coords="399,13,451,38"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する" alt="" coords="187,38,351,63"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aab83449f4fde6cb692bdb6e834103a9a" name="aab83449f4fde6cb692bdb6e834103a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab83449f4fde6cb692bdb6e834103a9a">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LED数 </p>
+
+</div>
+</div>
+<a id="ad98e4e7d8e79af9b4098ade3b1059fab" name="ad98e4e7d8e79af9b4098ade3b1059fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98e4e7d8e79af9b4098ade3b1059fab">&#9670;&#160;</a></span>slot_() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t * <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::slot_ </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>physical</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>物理インデックスのバッファ位置 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_ad98e4e7d8e79af9b4098ade3b1059fab_icgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_ad98e4e7d8e79af9b4098ade3b1059fab_icgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_ad98e4e7d8e79af9b4098ade3b1059fab_icgraph" id="adb/d2a/classled_1_1NeoPixelBase_ad98e4e7d8e79af9b4098ade3b1059fab_icgraph">
+<area shape="rect" title="物理インデックスのバッファ位置" alt="" coords="576,151,709,191"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a33aadf6564e4cfac6804a586b8f8c3a6" title="画素をコピーする(色の再エンコードを行わない)" alt="" coords="193,5,326,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9" title="全画素を同じ色で塗る" alt="" coords="383,69,528,94"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a389da745d131d00460f79eac0f361622" title="1画素の色を読み出す" alt="" coords="389,119,522,159"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a6b27bd4b25817ff25e93d46ace82252c" title=" " alt="" coords="389,183,522,223"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19" title="1画素に色を書き込む" alt="" coords="389,247,522,287"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac6e89bc9c50e01c23d61eccf975aa89f" title="2画素を入れ替える" alt="" coords="389,311,522,351"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,70,136,95"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352" title="全画素を消灯する" alt="" coords="193,120,326,160"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,185,318,225"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,253,335,278"/>
+<area shape="rect" href="../../d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,302,335,327"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae82d173d3d963abe23801b8b8dc36de5" name="ae82d173d3d963abe23801b8b8dc36de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae82d173d3d963abe23801b8b8dc36de5">&#9670;&#160;</a></span>slot_() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::slot_ </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>physical</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6e89bc9c50e01c23d61eccf975aa89f" name="ac6e89bc9c50e01c23d61eccf975aa89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e89bc9c50e01c23d61eccf975aa89f">&#9670;&#160;</a></span>swap_pixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::swap_pixel </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>a_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>b_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2画素を入れ替える </p>
+<dl class="section return"><dt>戻り値</dt><dd>いずれかが範囲外ならfalse </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d2a/classled_1_1NeoPixelBase_ac6e89bc9c50e01c23d61eccf975aa89f_cgraph.png" border="0" usemap="#adb/d2a/classled_1_1NeoPixelBase_ac6e89bc9c50e01c23d61eccf975aa89f_cgraph" alt=""/></div>
+<map name="adb/d2a/classled_1_1NeoPixelBase_ac6e89bc9c50e01c23d61eccf975aa89f_cgraph" id="adb/d2a/classled_1_1NeoPixelBase_ac6e89bc9c50e01c23d61eccf975aa89f_cgraph">
+<area shape="rect" title="2画素を入れ替える" alt="" coords="5,5,139,45"/>
+<area shape="rect" href="../../db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="187,5,320,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a01c284bd4477870e8f6b9a5f7f68e362" name="a01c284bd4477870e8f6b9a5f7f68e362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c284bd4477870e8f6b9a5f7f68e362">&#9670;&#160;</a></span>brightness_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::brightness_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全体輝度 </p>
+
+</div>
+</div>
+<a id="a23a8b4663f1c6668eb310e6e0e93bce4" name="a23a8b4663f1c6668eb310e6e0e93bce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a8b4663f1c6668eb310e6e0e93bce4">&#9670;&#160;</a></span>buffer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::buffer_[<a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">BUFFER_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出バッファ(ヒープ未使用) </p>
+
+</div>
+</div>
+<a id="ac651524285f410a79015471631b85978" name="ac651524285f410a79015471631b85978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac651524285f410a79015471631b85978">&#9670;&#160;</a></span>BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::BUFFER_SIZE = <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a886894891de8aee628753b9bcbb77b73">LEAD_BYTES</a> + <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a01c11d5fe80beeb64506aee231255ae7">PIXELS</a> * <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a5df8c16009872ca2cef5b42aed92dc2d">ENC_STRIDE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出バッファ全体のバイト数 </p>
+
+</div>
+</div>
+<a id="a688d5720700c01bba454ddbf6064bff6" name="a688d5720700c01bba454ddbf6064bff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688d5720700c01bba454ddbf6064bff6">&#9670;&#160;</a></span>dirty_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::dirty_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>未送出の変更があるか </p>
+
+</div>
+</div>
+<a id="a5df8c16009872ca2cef5b42aed92dc2d" name="a5df8c16009872ca2cef5b42aed92dc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df8c16009872ca2cef5b42aed92dc2d">&#9670;&#160;</a></span>ENC_STRIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::ENC_STRIDE = <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac95999f5d4f48b0977c6e8859850f0a7">RAW_STRIDE</a> * Codec::SPAN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1ピクセルがバッファ上で占めるバイト数 </p>
+
+</div>
+</div>
+<a id="ae7f649f9fd341432e07a71755b659dd0" name="ae7f649f9fd341432e07a71755b659dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f649f9fd341432e07a71755b659dd0">&#9670;&#160;</a></span>FRAME_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::FRAME_MS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        (<a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">SLOWEST_HZ</a> == 0)</div>
+<div class="line">            ? 0u</div>
+<div class="line">            : (<a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">BUFFER_SIZE</a> * 8000u + <a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">SLOWEST_HZ</a> - 1u) / <a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">SLOWEST_HZ</a></div>
+<div class="ttc" id="aclassled_1_1NeoPixelBase_html_ac651524285f410a79015471631b85978"><div class="ttname"><a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac651524285f410a79015471631b85978">led::NeoPixelBase::BUFFER_SIZE</a></div><div class="ttdeci">static constexpr size_t BUFFER_SIZE</div><div class="ttdoc">送出バッファ全体のバイト数</div><div class="ttdef"><b>Definition:</b> led.h:407</div></div>
+<div class="ttc" id="aclassled_1_1NeoPixelBase_html_ac87efc409d9c0976c8eab1f718fa6181"><div class="ttname"><a href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">led::NeoPixelBase::SLOWEST_HZ</a></div><div class="ttdeci">static constexpr uint32_t SLOWEST_HZ</div><div class="ttdoc">1フレームの送出にかかる時間 [ms] (切り上げ)</div><div class="ttdef"><b>Definition:</b> led.h:417</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a76f71301e0b099a43a73cbf1f8597e21" name="a76f71301e0b099a43a73cbf1f8597e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f71301e0b099a43a73cbf1f8597e21">&#9670;&#160;</a></span>last_show_ms_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::last_show_ms_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最後にshow()した時刻 [ms] </p>
+
+</div>
+</div>
+<a id="a886894891de8aee628753b9bcbb77b73" name="a886894891de8aee628753b9bcbb77b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886894891de8aee628753b9bcbb77b73">&#9670;&#160;</a></span>LEAD_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::LEAD_BYTES = Codec::LEAD_BYTES</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91eb627e545dcdf9e5607ec29cf3530d" name="a91eb627e545dcdf9e5607ec29cf3530d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91eb627e545dcdf9e5607ec29cf3530d">&#9670;&#160;</a></span>MIN_SHOW_INTERVAL_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::MIN_SHOW_INTERVAL_MS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        (<a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ac87efc409d9c0976c8eab1f718fa6181">SLOWEST_HZ</a> == 0) ? 0u</div>
+<div class="line">                          : <a class="code hl_variable" href="../../db/d2a/classled_1_1NeoPixelBase.html#ae7f649f9fd341432e07a71755b659dd0">FRAME_MS</a> + (Codec::LATCH_US + 999u) / 1000u + 1u</div>
+<div class="ttc" id="aclassled_1_1NeoPixelBase_html_ae7f649f9fd341432e07a71755b659dd0"><div class="ttname"><a href="../../db/d2a/classled_1_1NeoPixelBase.html#ae7f649f9fd341432e07a71755b659dd0">led::NeoPixelBase::FRAME_MS</a></div><div class="ttdeci">static constexpr uint32_t FRAME_MS</div><div class="ttdef"><b>Definition:</b> led.h:419</div></div>
+</div><!-- fragment -->
+<p><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する">show()</a>を続けて呼べる最短間隔 [ms] </p>
+<p >データ送出時間 + リセット期間 + <a class="el" href="../../d5/d60/utils_8h.html#adb94fbd930038e1510574dd4bcf07fe1">millis()</a>の分解能(1ms)の切り上げ誤差。 <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html#a4a8d94a2ea7ac85bd5f257fd55f2956b" title="バッファをLEDへ送出する">show()</a>はこの間隔を満たさない呼び出しをfalseで弾く。 </p>
+
+</div>
+</div>
+<a id="a7f6bd81c664623bef2084afd8f1fda73" name="a7f6bd81c664623bef2084afd8f1fda73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6bd81c664623bef2084afd8f1fda73">&#9670;&#160;</a></span>PIXEL_ORDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::PIXEL_ORDER = ORDER</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01c11d5fe80beeb64506aee231255ae7" name="a01c11d5fe80beeb64506aee231255ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c11d5fe80beeb64506aee231255ae7">&#9670;&#160;</a></span>PIXELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::PIXELS = PIXEL_COUNT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>LED数 </p>
+
+</div>
+</div>
+<a id="ac95999f5d4f48b0977c6e8859850f0a7" name="ac95999f5d4f48b0977c6e8859850f0a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95999f5d4f48b0977c6e8859850f0a7">&#9670;&#160;</a></span>RAW_STRIDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::RAW_STRIDE = <a class="el" href="../../d9/d83/namespaceled.html#a4e3f9e3d624b42d9de1453a17c5be192">bytes_per_pixel</a>(ORDER)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1ピクセルの生バイト数 (3 or 4) </p>
+
+</div>
+</div>
+<a id="ac87efc409d9c0976c8eab1f718fa6181" name="ac87efc409d9c0976c8eab1f718fa6181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87efc409d9c0976c8eab1f718fa6181">&#9670;&#160;</a></span>SLOWEST_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::SLOWEST_HZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        (Codec::MIN_HZ != 0) ? Codec::MIN_HZ : Codec::IDEAL_HZ</div>
+</div><!-- fragment -->
+<p>1フレームの送出にかかる時間 [ms] (切り上げ) </p>
+<p >IDEAL_HZではなくCodecが許容する最低クロックで見積もる。 実際のビットレートはcheck_config()が [MIN_HZ, MAX_HZ] に収まることしか 保証しないため、理想値で計算するとMIN_HZ寄りに設定されたときに 実送信時間がこの値を超え、末尾のラッチ時間を確保できなくなる。 </p>
+
+</div>
+</div>
+<a id="a115ddacd2c1006550df45e957586d264" name="a115ddacd2c1006550df45e957586d264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115ddacd2c1006550df45e957586d264">&#9670;&#160;</a></span>writer_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived , class Writer , size_t PIXEL_COUNT, <a class="el" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4">PixelOrder</a> ORDER = PixelOrder::GRB, class Codec  = Spi3BitCodec&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Writer&amp; <a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">led::NeoPixelBase</a>&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;::writer_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>送出クラス </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/logic/<a class="el" href="../../db/da0/led_8h.html">led.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d83/namespaceled.html">led</a></li><li class="navelem"><a class="el" href="../../db/d2a/classled_1_1NeoPixelBase.html">NeoPixelBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

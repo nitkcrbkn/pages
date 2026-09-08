@@ -1,0 +1,4 @@
+<map id="led::SpiLedWriter::busy" name="led::SpiLedWriter::busy">
+<area shape="rect" id="node1" title="前回の送出が未完了か" alt="" coords="180,13,333,38"/>
+<area shape="rect" id="node2" href="$dd/d62/classled_1_1SpiLedWriter.html#ac856b2e4beffae9385e699673729485f" title="ビットストリームを送出する" alt="" coords="5,5,132,45"/>
+</map>

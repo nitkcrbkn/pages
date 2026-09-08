@@ -1,0 +1,4 @@
+<map id="led::LEDTape::reverse" name="led::LEDTape::reverse">
+<area shape="rect" id="node1" title="画素の並びを反転する" alt="" coords="5,5,153,31"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63" title="送出中(次のshow()が失敗する状態)か" alt="" coords="201,5,361,31"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="led::NeoPixelBase::busy" name="led::NeoPixelBase::busy">
+<area shape="rect" id="node1" title="送出中(次のshow()が失敗する状態)か" alt="" coords="383,146,543,171"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,5,318,45"/>
+<area shape="rect" id="node3" href="$d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,42,136,67"/>
+<area shape="rect" id="node4" href="$d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,121,335,146"/>
+<area shape="rect" id="node5" href="$d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,170,335,195"/>
+<area shape="rect" id="node6" href="$d4/d91/classled_1_1LEDTape.html#aea7cc4278d16db607466dfd558141cfe" title="画素の並びを反転する" alt="" coords="185,219,333,245"/>
+<area shape="rect" id="node7" href="$d4/d91/classled_1_1LEDTape.html#a36833132f783cc30b233428c9711cdd1" title="画素を巡回させる(端から出たものが反対側に入る)" alt="" coords="190,269,329,294"/>
+</map>

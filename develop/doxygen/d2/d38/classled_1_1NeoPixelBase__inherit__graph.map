@@ -1,0 +1,4 @@
+<map id="led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;" name="led::NeoPixelBase&lt; Derived, Writer, PIXEL_COUNT, ORDER, Codec &gt;">
+<area shape="rect" id="node1" title="Writerが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,188,60"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html" title="NeoPixel LEDテープ" alt="" coords="10,108,183,163"/>
+</map>

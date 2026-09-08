@@ -1,0 +1,4 @@
+<map id="led::SpiLedWriter::check_config" name="led::SpiLedWriter::check_config">
+<area shape="rect" id="node1" title="SPIハンドルがNeoPixelの送出条件を満たしているか検査する" alt="" coords="5,5,132,45"/>
+<area shape="rect" id="node2" href="$d9/d83/namespaceled.html#af231c2fc60903e8102cb8edadb1de644" title="SPI_BAUDRATEPRESCALER_x から分周比(2〜256)を復元する" alt="" coords="180,13,344,38"/>
+</map>

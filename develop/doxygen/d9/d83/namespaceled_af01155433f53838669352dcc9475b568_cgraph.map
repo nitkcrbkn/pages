@@ -1,0 +1,4 @@
+<map id="led::scale8" name="led::scale8">
+<area shape="rect" id="node1" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="5,5,88,31"/>
+<area shape="rect" id="node2" href="$d9/d83/namespaceled.html#af9294f9000069a5c9d6e2f398e96b478" title="全chを一律にスケールする" alt="" coords="136,5,212,31"/>
+</map>

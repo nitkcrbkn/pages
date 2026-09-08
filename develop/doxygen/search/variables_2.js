@@ -11,5 +11,6 @@ var searchData=
   ['correction_5fpending_5f_8',['correction_pending_',['../db/d69/classAMTEncoderBase.html#a9eafad22e19b92f260cc6a82000d41e2',1,'AMTEncoderBase']]],
   ['count_9',['count',['../d2/de5/structCanSystem_1_1ValidSizes.html#ae64597bac7588316a0e2d89e300a201e',1,'CanSystem::ValidSizes::count()'],['../d7/d4f/structCanSystem_1_1IdEntry.html#afd88cdf8cab40bc0acb4f2b5a7102073',1,'CanSystem::IdEntry::count()']]],
   ['create_10',['CREATE',['../d6/de5/structPS5_1_1Button.html#a009852c5df9ca9d7e99a09244849212d',1,'PS5::Button']]],
-  ['cross_11',['CROSS',['../d6/de5/structPS5_1_1Button.html#aacf90eac35bdf432bba93310713b6347',1,'PS5::Button']]]
+  ['cross_11',['CROSS',['../d6/de5/structPS5_1_1Button.html#aacf90eac35bdf432bba93310713b6347',1,'PS5::Button']]],
+  ['cyan_12',['CYAN',['../de/dd4/namespaceled_1_1colors.html#a2baeef8b840a03512ed59f22e28f8960',1,'led::colors']]]
 ];

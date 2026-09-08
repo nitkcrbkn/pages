@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['master_0',['MASTER',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a89a1533c37ec9254f22b5e0f29c9c0ff',1,'proto_can']]],
-  ['message_5ftype_1',['MESSAGE_TYPE',['../dc/d65/namespaceproto__can.html#a7a060b08baada58064ca4fd4814e55f0ad7f64d07895ff7c87fbb1946c23d21c0',1,'proto_can']]],
-  ['mock_5fmotor_2',['MOCK_MOTOR',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983acd026760762e9afa91efb4737b898015',1,'proto_can']]],
-  ['motor_3',['MOTOR',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983a5e4c01f166d4563e75575db113664c8a',1,'proto_can']]]
+  ['info_0',['Info',['../d2/dc4/namespaceCanSystem.html#a59951521d59b8c6cf0ea429dcc6707dfa4059b0251f66a18cb56f544728796875',1,'CanSystem']]],
+  ['init_1',['Init',['../da/db0/namespaceDJI.html#a69284ac5817deab119f96c3fb6152c5ca95b19f7739b0b7ea7d6b07586be54f36',1,'DJI']]],
+  ['invalid_2',['INVALID',['../dc/d65/namespaceproto__can.html#ad0abaf53719eff1c05379fec43e5c983accc0377a8afbf50e7094f5c23a8af223',1,'proto_can::INVALID()'],['../dc/d65/namespaceproto__can.html#a62d3eee3d834baf5859f69ccf78fc216accc0377a8afbf50e7094f5c23a8af223',1,'proto_can::INVALID()']]]
 ];

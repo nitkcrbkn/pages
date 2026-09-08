@@ -1,0 +1,4 @@
+<map id="led::lerp" name="led::lerp">
+<area shape="rect" id="node1" title="2色を ratio(0&#45;255) で線形補間する。0で from, 255で to" alt="" coords="204,5,271,31"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="5,5,156,31"/>
+</map>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../d2/d4a/structCanSystem_1_1CANMessage.html#a20a88d2908387a6bb0eb3cb142ad5651',1,'CanSystem::CANMessage::id()'],['../d7/d4f/structCanSystem_1_1IdEntry.html#afe792f11bbd319cc8d7433528a6d3d1d',1,'CanSystem::IdEntry::id()']]],
-  ['igain_1',['iGain',['../d4/d2c/structPIDGain.html#a3cbb597cc1a3c40004d099d41870996c',1,'PIDGain']]],
-  ['indexed_5f_2',['indexed_',['../db/d69/classAMTEncoderBase.html#ace09d457d751a6f6d41bef92ea70ad7a',1,'AMTEncoderBase']]]
+  ['hal_5ferror_5fcode_0',['hal_error_code',['../d7/db6/structCanSystem_1_1CANStatus.html#a9ee650ce37275f7791836a11a74051f5',1,'CanSystem::CANStatus']]],
+  ['hcan_1',['hCAN',['../d1/d4a/classCanSystem_1_1CanManager.html#a2ad911ae880c339884b3d642aef50109',1,'CanSystem::CanManager']]],
+  ['header_5fsize_2',['HEADER_SIZE',['../df/db1/classproto__can_1_1ProtocolHeader.html#ab70bdd4f0c032b1249104825666319e0',1,'proto_can::ProtocolHeader']]]
 ];

@@ -1,6 +1,24 @@
 var searchData=
 [
-  ['name_0',['name',['../d1/d4a/classCanSystem_1_1CanManager.html#a4c93c744df6b83398bbc8f1b54fa1eb0',1,'CanSystem::CanManager']]],
-  ['no_5ftimeout_1',['NO_TIMEOUT',['../d2/d9f/namespacePS5.html#a2876b0c4ae9605b5e5ab21df8ec9c270',1,'PS5']]],
-  ['nominal_5ftiming_2',['nominal_timing',['../d7/d93/structCanSystem_1_1CANConfig.html#afd54df7db91e1cc849d12f0aee232cf0',1,'CanSystem::CANConfig']]]
+  ['magenta_0',['MAGENTA',['../de/dd4/namespaceled_1_1colors.html#a75d9f021521693ceb609630c1f36a761',1,'led::colors']]],
+  ['max_5fcontrollers_1',['MAX_CONTROLLERS',['../d7/dea/classPS5_1_1ControllerRegistry.html#ae6c17a603a8eed168087fb0250af67df',1,'PS5::ControllerRegistry']]],
+  ['max_5fhz_2',['MAX_HZ',['../d9/d4f/structled_1_1Spi3BitCodec.html#a4f1f3330680daf2b4ddb77dffe91c901',1,'led::Spi3BitCodec::MAX_HZ()'],['../d7/d20/structled_1_1RawCodec.html#a457ce56553e00cd7a2a9e23e177e5f4f',1,'led::RawCodec::MAX_HZ()'],['../d7/da7/structled_1_1Spi4BitCodec.html#a508fd27e290ddef775c52c1de05c17ee',1,'led::Spi4BitCodec::MAX_HZ()']]],
+  ['maxdeadband_3',['maxDeadband',['../dc/df1/structPIDConfig.html#a5df4d751a3252729705fba88b4c61e7e',1,'PIDConfig']]],
+  ['maxerror_4',['maxError',['../dc/df1/structPIDConfig.html#a1cb06d8bc1ada96625a9d484b5ae26b2',1,'PIDConfig']]],
+  ['maxintegral_5',['maxIntegral',['../dc/df1/structPIDConfig.html#a71f225e9c6a5c4ebb6aa12fa8d4c2b5f',1,'PIDConfig']]],
+  ['maxout_6',['maxOut',['../dc/df1/structPIDConfig.html#a8b227e00cdd15daf79439491c77ea08a',1,'PIDConfig']]],
+  ['maxtarget_7',['maxTarget',['../dc/df1/structPIDConfig.html#ae16e94ae51ab0681075dcb9b4f04a521',1,'PIDConfig']]],
+  ['message_8',['message',['../d0/d87/structCanSystem_1_1MockCanProfile_1_1TxRecord.html#ac03ce10099d2ad2ea0effa9e59cdca0a',1,'CanSystem::MockCanProfile::TxRecord']]],
+  ['message_5fcbs_9',['message_cbs',['../d1/d4a/classCanSystem_1_1CanManager.html#a51026752f21487250954ff9bfdc864cf',1,'CanSystem::CanManager']]],
+  ['microphone_10',['MICROPHONE',['../d6/de5/structPS5_1_1Button.html#abf0df6d88d4980e69d041c5cded90d50',1,'PS5::Button']]],
+  ['min_5fhz_11',['MIN_HZ',['../d9/d4f/structled_1_1Spi3BitCodec.html#aa2f6924e76f34ae86c2bee00656b99cb',1,'led::Spi3BitCodec::MIN_HZ()'],['../d7/da7/structled_1_1Spi4BitCodec.html#aa8268fdeeaaf898aa1fb5d2d6a4068ec',1,'led::Spi4BitCodec::MIN_HZ()'],['../d7/d20/structled_1_1RawCodec.html#a01c870d7edd28d335b46fd88e6d87b6c',1,'led::RawCodec::MIN_HZ()']]],
+  ['min_5fshow_5finterval_5fms_12',['MIN_SHOW_INTERVAL_MS',['../db/d2a/classled_1_1NeoPixelBase.html#a91eb627e545dcdf9e5607ec29cf3530d',1,'led::NeoPixelBase']]],
+  ['mindeadband_13',['minDeadband',['../dc/df1/structPIDConfig.html#ac60039de289c76270688010eb89dcfe7',1,'PIDConfig']]],
+  ['minerror_14',['minError',['../dc/df1/structPIDConfig.html#a65606d68642d26b42071773811dc5973',1,'PIDConfig']]],
+  ['minintegral_15',['minIntegral',['../dc/df1/structPIDConfig.html#a13cfdbcb3d2c5489e84f6e5fcf71cc2f',1,'PIDConfig']]],
+  ['minout_16',['minOut',['../dc/df1/structPIDConfig.html#a5d8c3df7ee15b6f78964cc4c705e0aa5',1,'PIDConfig']]],
+  ['mintarget_17',['minTarget',['../dc/df1/structPIDConfig.html#a228c54be31fdb4a9434b3de58b84ac18',1,'PIDConfig']]],
+  ['mode_18',['mode',['../d7/d93/structCanSystem_1_1CANConfig.html#a36ce1539b1d0fc0f6303f413a4df269c',1,'CanSystem::CANConfig']]],
+  ['msgpending_19',['msgPending',['../dd/d34/structCanSystem_1_1CanManager_1_1CANFifoConfig.html#a43bc330f1afb0338df5e012cdb60ea99',1,'CanSystem::CanManager::CANFifoConfig']]],
+  ['mtype_20',['mType',['../d9/d34/classproto__can_1_1MessageID.html#a249c600b2c65e36636f7fecc2ae27d43',1,'proto_can::MessageID']]]
 ];

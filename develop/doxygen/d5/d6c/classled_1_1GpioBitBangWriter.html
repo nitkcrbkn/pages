@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: led::GpioBitBangWriter&lt; PIN_COUNT &gt; クラステンプレート</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d5/d6c/classled_1_1GpioBitBangWriter.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../d6/d3d/classled_1_1GpioBitBangWriter-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">led::GpioBitBangWriter&lt; PIN_COUNT &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>GPIOを直接叩いてNeoPixelのビットストリームを生成するWriter  
+ <a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;led_driver.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2ed7ea9addd9a2c174ade38803a5900f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#a2ed7ea9addd9a2c174ade38803a5900f">GpioBitBangWriter</a> (<a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt; &amp;gpio, int pin_index=0, bool disable_irq=true)</td></tr>
+<tr class="separator:a2ed7ea9addd9a2c174ade38803a5900f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb785a93775f275033e5a650076faa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#adcb785a93775f275033e5a650076faa5">init</a> ()</td></tr>
+<tr class="memdesc:adcb785a93775f275033e5a650076faa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">DWTサイクルカウンタを起動する。使用前に1度だけ呼ぶこと。  <a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#adcb785a93775f275033e5a650076faa5">[詳解]</a><br /></td></tr>
+<tr class="separator:adcb785a93775f275033e5a650076faa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148297dfa02d8cd71869279af6175ab8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#a148297dfa02d8cd71869279af6175ab8">busy</a> () const</td></tr>
+<tr class="memdesc:a148297dfa02d8cd71869279af6175ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">同期送出のため常にfalse  <a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#a148297dfa02d8cd71869279af6175ab8">[詳解]</a><br /></td></tr>
+<tr class="separator:a148297dfa02d8cd71869279af6175ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc3ed6514bde658266798c6fd480f2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#a7bc3ed6514bde658266798c6fd480f2b">write</a> (const uint8_t *data, size_t len)</td></tr>
+<tr class="memdesc:a7bc3ed6514bde658266798c6fd480f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">生の色バイト列をビットバングで送出する  <a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#a7bc3ed6514bde658266798c6fd480f2b">[詳解]</a><br /></td></tr>
+<tr class="separator:a7bc3ed6514bde658266798c6fd480f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;size_t PIN_COUNT = 1&gt;<br />
+class led::GpioBitBangWriter&lt; PIN_COUNT &gt;</div><p >GPIOを直接叩いてNeoPixelのビットストリームを生成するWriter </p>
+<p >SPIが確保できない場合のフォールバック。<code><a class="el" href="../../d7/d20/structled_1_1RawCodec.html" title="変換を行わない素通しCodec">RawCodec</a></code> と組み合わせて使う。</p>
+<dl class="section warning"><dt>警告</dt><dd>リアルタイム制御と同居するファームウェアでは使用しないこと。 「SPIが空いていない」という理由だけで選ぶと制御周期に影響する。 その場合はSPIを1本空けてSpiLedWriterを使うこと。</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code hl_struct" href="../../d4/dff/structGPIOConfig.html">GPIOConfig</a> pins[] = {{LED_GPIO_Port, LED_Pin}};</div>
+<div class="line"><span class="keyword">static</span> <a class="code hl_class" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr&lt;1&gt;</a> led_gpio(pins);</div>
+<div class="line"><span class="keyword">static</span> <a class="code hl_class" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter&lt;1&gt;</a> writer(led_gpio);</div>
+<div class="line"><span class="keyword">static</span> <a class="code hl_class" href="../../d4/d91/classled_1_1LEDTape.html">led::LEDTape</a>&lt;<span class="keyword">decltype</span>(writer), 30, <a class="code hl_enumvalue" href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4a50725d49d336ca5507cfcd2a6d2c2f8d">led::PixelOrder::GRB</a>,</div>
+<div class="line">                    <a class="code hl_struct" href="../../d7/d20/structled_1_1RawCodec.html">led::RawCodec</a>&gt; tape(writer);</div>
+<div class="line">writer.init();</div>
+<div class="ttc" id="aclassGPIO__Mgr_html"><div class="ttname"><a href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a></div><div class="ttdoc">読み取り・書き込み用GPIOマネージャークラス @detail GPIOピンのマッピング情報を保持し、ピンの状態読み取り・書き込みや ビット列での状態操作、状態の2進表記ログ出力などを行います。</div><div class="ttdef"><b>Definition:</b> gpio.h:21</div></div>
+<div class="ttc" id="aclassled_1_1GpioBitBangWriter_html"><div class="ttname"><a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter</a></div><div class="ttdoc">GPIOを直接叩いてNeoPixelのビットストリームを生成するWriter</div><div class="ttdef"><b>Definition:</b> led_driver.h:344</div></div>
+<div class="ttc" id="aclassled_1_1LEDTape_html"><div class="ttname"><a href="../../d4/d91/classled_1_1LEDTape.html">led::LEDTape</a></div><div class="ttdoc">NeoPixel LEDテープ</div><div class="ttdef"><b>Definition:</b> led.h:662</div></div>
+<div class="ttc" id="anamespaceled_html_aa7cda71b84eb8e87f7a83880d3c5dfd4a50725d49d336ca5507cfcd2a6d2c2f8d"><div class="ttname"><a href="../../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4a50725d49d336ca5507cfcd2a6d2c2f8d">led::PixelOrder::GRB</a></div><div class="ttdeci">@ GRB</div><div class="ttdoc">WS2812 / WS2812B / WS2813 (既定)</div></div>
+<div class="ttc" id="astructGPIOConfig_html"><div class="ttname"><a href="../../d4/dff/structGPIOConfig.html">GPIOConfig</a></div><div class="ttdoc">GPIOピンの情報を保持する構造体</div><div class="ttdef"><b>Definition:</b> gpio.h:9</div></div>
+<div class="ttc" id="astructled_1_1RawCodec_html"><div class="ttname"><a href="../../d7/d20/structled_1_1RawCodec.html">led::RawCodec</a></div><div class="ttdoc">変換を行わない素通しCodec</div><div class="ttdef"><b>Definition:</b> led.h:326</div></div>
+</div><!-- fragment --><dl class="section warning"><dt>警告</dt><dd>送出中は割り込みを禁止する(既定)。禁止時間は1球あたり30us、 30球で約0.9ms、60球で約1.8ms、159球では約4.8msに達する。 この間はCAN受信も制御TIMも一切走らない。 </dd>
+<dd>
+DWTサイクルカウンタを使用するためCortex-M3以上が必要。 コアクロックが低いとGPIO操作のオーバーヘッドで タイミングを満たせない(100MHz以上を推奨)。 </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a2ed7ea9addd9a2c174ade38803a5900f" name="a2ed7ea9addd9a2c174ade38803a5900f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed7ea9addd9a2c174ade38803a5900f">&#9670;&#160;</a></span>GpioBitBangWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter</a>&lt; PIN_COUNT &gt;::GpioBitBangWriter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d4e/classGPIO__Mgr.html">GPIO_Mgr</a>&lt; PIN_COUNT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>gpio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pin_index</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disable_irq</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gpio</td><td>出力ピンを含むGPIOマネージャ </td></tr>
+    <tr><td class="paramname">pin_index</td><td>gpio内のどのピンを使うか </td></tr>
+    <tr><td class="paramname">disable_irq</td><td>送出中に割り込みを禁止するか </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a148297dfa02d8cd71869279af6175ab8" name="a148297dfa02d8cd71869279af6175ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148297dfa02d8cd71869279af6175ab8">&#9670;&#160;</a></span>busy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter</a>&lt; PIN_COUNT &gt;::busy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>同期送出のため常にfalse </p>
+
+</div>
+</div>
+<a id="adcb785a93775f275033e5a650076faa5" name="adcb785a93775f275033e5a650076faa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb785a93775f275033e5a650076faa5">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter</a>&lt; PIN_COUNT &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DWTサイクルカウンタを起動する。使用前に1度だけ呼ぶこと。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>カウンタが動作しなかった場合はfalse </dd></dl>
+
+</div>
+</div>
+<a id="a7bc3ed6514bde658266798c6fd480f2b" name="a7bc3ed6514bde658266798c6fd480f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc3ed6514bde658266798c6fd480f2b">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t PIN_COUNT = 1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter</a>&lt; PIN_COUNT &gt;::write </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生の色バイト列をビットバングで送出する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>RawCodecでエンコードされたバッファ(= 生の色バイト列) </td></tr>
+    <tr><td class="paramname">len</td><td>バイト数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/platform/<a class="el" href="../../d9/d90/led__driver_8h.html">led_driver.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d83/namespaceled.html">led</a></li><li class="navelem"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">GpioBitBangWriter</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

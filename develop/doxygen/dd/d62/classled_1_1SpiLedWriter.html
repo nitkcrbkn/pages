@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: led::SpiLedWriter&lt; USE_DMA &gt; クラステンプレート</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dd/d62/classled_1_1SpiLedWriter.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../d3/d8a/classled_1_1SpiLedWriter-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">led::SpiLedWriter&lt; USE_DMA &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SPIのMOSIからNeoPixelのビットストリームを送出するWriter  
+ <a href="../../dd/d62/classled_1_1SpiLedWriter.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;led_driver.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6186688105d2b0a21108a6f3bc536c2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#a6186688105d2b0a21108a6f3bc536c2f">SpiLedWriter</a> (SPI_HandleTypeDef &amp;hspi, uint32_t timeout_ms=100)</td></tr>
+<tr class="separator:a6186688105d2b0a21108a6f3bc536c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0209bbb2bcfc3c3a03d45a6996f6d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3">busy</a> () const</td></tr>
+<tr class="memdesc:abf0209bbb2bcfc3c3a03d45a6996f6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">前回の送出が未完了か  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3">[詳解]</a><br /></td></tr>
+<tr class="separator:abf0209bbb2bcfc3c3a03d45a6996f6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac856b2e4beffae9385e699673729485f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#ac856b2e4beffae9385e699673729485f">write</a> (const uint8_t *data, size_t len)</td></tr>
+<tr class="memdesc:ac856b2e4beffae9385e699673729485f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ビットストリームを送出する  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#ac856b2e4beffae9385e699673729485f">[詳解]</a><br /></td></tr>
+<tr class="separator:ac856b2e4beffae9385e699673729485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad972ab8d82c4f670a4f0d3f64ae8060d"><td class="memTemplParams" colspan="2">template&lt;class Codec &gt; </td></tr>
+<tr class="memitem:ad972ab8d82c4f670a4f0d3f64ae8060d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d9/d83/namespaceled.html#a3b27174c14fadfd53049a01ee7cbac43">SpiConfigError</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#ad972ab8d82c4f670a4f0d3f64ae8060d">check_config</a> (uint32_t pclk_hz) const</td></tr>
+<tr class="memdesc:ad972ab8d82c4f670a4f0d3f64ae8060d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPIハンドルがNeoPixelの送出条件を満たしているか検査する  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#ad972ab8d82c4f670a4f0d3f64ae8060d">[詳解]</a><br /></td></tr>
+<tr class="separator:ad972ab8d82c4f670a4f0d3f64ae8060d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9d8b5640436e5c19e7321688b370c5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#abc9d8b5640436e5c19e7321688b370c5">configured_hz</a> (uint32_t pclk_hz) const</td></tr>
+<tr class="memdesc:abc9d8b5640436e5c19e7321688b370c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドルに設定されている実効ビットレート [Hz]  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#abc9d8b5640436e5c19e7321688b370c5">[詳解]</a><br /></td></tr>
+<tr class="separator:abc9d8b5640436e5c19e7321688b370c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44ffd47664e006e49b88f836bb7f8e5"><td class="memItemLeft" align="right" valign="top">SPI_HandleTypeDef &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#ae44ffd47664e006e49b88f836bb7f8e5">handle</a> () const</td></tr>
+<tr class="memdesc:ae44ffd47664e006e49b88f836bb7f8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPIハンドルへの参照  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#ae44ffd47664e006e49b88f836bb7f8e5">[詳解]</a><br /></td></tr>
+<tr class="separator:ae44ffd47664e006e49b88f836bb7f8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;bool USE_DMA = true&gt;<br />
+class led::SpiLedWriter&lt; USE_DMA &gt;</div><p >SPIのMOSIからNeoPixelのビットストリームを送出するWriter </p>
+<p >CubeMXでの設定:</p><ul>
+<li>Mode: <code>Transmit Only Master</code> (MISO/NSSは不要)</li>
+<li>Frame Format: Motorola / Data Size: 8 Bits / First Bit: MSB First</li>
+<li>Clock Polarity (CPOL): <code>Low</code> / Clock Phase (CPHA): <code>1 Edge</code></li>
+<li>Prescaler: <code>spi_hal_prescaler(spi_best_divider&lt;Codec&gt;(pclk))</code> の値 (STM32G4 @ PCLK1=170MHz + <a class="el" href="../../d9/d4f/structled_1_1Spi3BitCodec.html" title="Codecが満たすべきインターフェース(コンセプト)">Spi3BitCodec</a> なら 64 分周 = 2.66MHz)</li>
+<li>DMAを使う場合は SPI_TX に DMA を追加すること (Normal / Memory To Peripheral / Increment は Memory のみ / Byte・Byte)</li>
+<li>NVIC Settings: SPIx TX の DMA割り込みと SPIx global interrupt を有効にする</li>
+</ul>
+<p >NVICの優先度: LED更新は制御周期より優先度を低く(=priority値を大きく)すること。 制御TIM / エンコーダ / FDCAN RX より低い優先度に置けば、LEDの送出が それらの応答を悪化させることはない。</p>
+<dl class="section warning"><dt>警告</dt><dd>DMA転送完了割り込みが有効でないとSPIのstateがREADYへ戻らず、 <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3" title="前回の送出が未完了か">busy()</a>がtrueのままになって2フレーム目以降が送出されない。 HAL_SPI_Transmit_DMA()はSPIのエラー割り込みも有効にするため、 SPIx global interrupt も併せて有効にすること。</dd></dl>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">USE_DMA</td><td>true でDMA(非同期)、false でブロッキング送信</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>MOSIラインはアイドル時にLowである必要がある。 送出したbitは必ず0で終わるため転送後はLowに留まるが、初回転送前の レベルは保証されないので外付けプルダウンを推奨する (Codecが先頭に0バイトを1つ入れるが数usぶんにしかならない)。 </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>NeoPixelは5Vロジックのため、3.3V出力ではレベル変換が必要な場合がある。 </dd></dl>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a6186688105d2b0a21108a6f3bc536c2f" name="a6186688105d2b0a21108a6f3bc536c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6186688105d2b0a21108a6f3bc536c2f">&#9670;&#160;</a></span>SpiLedWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::SpiLedWriter </td>
+          <td>(</td>
+          <td class="paramtype">SPI_HandleTypeDef &amp;&#160;</td>
+          <td class="paramname"><em>hspi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>100</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hspi</td><td>送出に使うSPIハンドル </td></tr>
+    <tr><td class="paramname">timeout_ms</td><td>ブロッキング送信時のタイムアウト [ms] (USE_DMA=false時のみ) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="abf0209bbb2bcfc3c3a03d45a6996f6d3" name="abf0209bbb2bcfc3c3a03d45a6996f6d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0209bbb2bcfc3c3a03d45a6996f6d3">&#9670;&#160;</a></span>busy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::busy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前回の送出が未完了か </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d62/classled_1_1SpiLedWriter_abf0209bbb2bcfc3c3a03d45a6996f6d3_icgraph.png" border="0" usemap="#add/d62/classled_1_1SpiLedWriter_abf0209bbb2bcfc3c3a03d45a6996f6d3_icgraph" alt=""/></div>
+<map name="add/d62/classled_1_1SpiLedWriter_abf0209bbb2bcfc3c3a03d45a6996f6d3_icgraph" id="add/d62/classled_1_1SpiLedWriter_abf0209bbb2bcfc3c3a03d45a6996f6d3_icgraph">
+<area shape="rect" title="前回の送出が未完了か" alt="" coords="180,13,333,38"/>
+<area shape="rect" href="../../dd/d62/classled_1_1SpiLedWriter.html#ac856b2e4beffae9385e699673729485f" title="ビットストリームを送出する" alt="" coords="5,5,132,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad972ab8d82c4f670a4f0d3f64ae8060d" name="ad972ab8d82c4f670a4f0d3f64ae8060d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad972ab8d82c4f670a4f0d3f64ae8060d">&#9670;&#160;</a></span>check_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<div class="memtemplate">
+template&lt;class Codec &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d83/namespaceled.html#a3b27174c14fadfd53049a01ee7cbac43">SpiConfigError</a> <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::check_config </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pclk_hz</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SPIハンドルがNeoPixelの送出条件を満たしているか検査する </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Codec</td><td>LEDTapeに渡したものと同じCodec </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pclk_hz</td><td>SPIペリフェラルへ供給されるクロック [Hz] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>最初に見つかった問題。問題なしなら <a class="el" href="../../d9/d83/namespaceled.html#a3b27174c14fadfd53049a01ee7cbac43ab50339a10e1de285ac99d4c3990b8693" title="問題なし">SpiConfigError::NONE</a></dd></dl>
+<p>CubeMXの設定はコンパイル時には見えないため、起動時に一度呼んで ログへ出すこと。spi_clock_ok()は「適切な分周比が存在するか」しか 見ておらず、実際にそう設定されたかは検査できない。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d62/classled_1_1SpiLedWriter_ad972ab8d82c4f670a4f0d3f64ae8060d_cgraph.png" border="0" usemap="#add/d62/classled_1_1SpiLedWriter_ad972ab8d82c4f670a4f0d3f64ae8060d_cgraph" alt=""/></div>
+<map name="add/d62/classled_1_1SpiLedWriter_ad972ab8d82c4f670a4f0d3f64ae8060d_cgraph" id="add/d62/classled_1_1SpiLedWriter_ad972ab8d82c4f670a4f0d3f64ae8060d_cgraph">
+<area shape="rect" title="SPIハンドルがNeoPixelの送出条件を満たしているか検査する" alt="" coords="5,5,132,45"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af231c2fc60903e8102cb8edadb1de644" title="SPI_BAUDRATEPRESCALER_x から分周比(2〜256)を復元する" alt="" coords="180,13,344,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abc9d8b5640436e5c19e7321688b370c5" name="abc9d8b5640436e5c19e7321688b370c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc9d8b5640436e5c19e7321688b370c5">&#9670;&#160;</a></span>configured_hz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::configured_hz </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pclk_hz</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ハンドルに設定されている実効ビットレート [Hz] </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d62/classled_1_1SpiLedWriter_abc9d8b5640436e5c19e7321688b370c5_cgraph.png" border="0" usemap="#add/d62/classled_1_1SpiLedWriter_abc9d8b5640436e5c19e7321688b370c5_cgraph" alt=""/></div>
+<map name="add/d62/classled_1_1SpiLedWriter_abc9d8b5640436e5c19e7321688b370c5_cgraph" id="add/d62/classled_1_1SpiLedWriter_abc9d8b5640436e5c19e7321688b370c5_cgraph">
+<area shape="rect" title="ハンドルに設定されている実効ビットレート [Hz]" alt="" coords="5,5,132,45"/>
+<area shape="rect" href="../../d9/d83/namespaceled.html#af231c2fc60903e8102cb8edadb1de644" title="SPI_BAUDRATEPRESCALER_x から分周比(2〜256)を復元する" alt="" coords="180,13,344,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae44ffd47664e006e49b88f836bb7f8e5" name="ae44ffd47664e006e49b88f836bb7f8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44ffd47664e006e49b88f836bb7f8e5">&#9670;&#160;</a></span>handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPI_HandleTypeDef &amp; <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::handle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SPIハンドルへの参照 </p>
+
+</div>
+</div>
+<a id="ac856b2e4beffae9385e699673729485f" name="ac856b2e4beffae9385e699673729485f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac856b2e4beffae9385e699673729485f">&#9670;&#160;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool USE_DMA = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter</a>&lt; USE_DMA &gt;::write </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ビットストリームを送出する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>送出バッファ(DMA使用時は完了までスコープを保つこと) </td></tr>
+    <tr><td class="paramname">len</td><td>バイト数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>送出開始に失敗したらfalse </dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d62/classled_1_1SpiLedWriter_ac856b2e4beffae9385e699673729485f_cgraph.png" border="0" usemap="#add/d62/classled_1_1SpiLedWriter_ac856b2e4beffae9385e699673729485f_cgraph" alt=""/></div>
+<map name="add/d62/classled_1_1SpiLedWriter_ac856b2e4beffae9385e699673729485f_cgraph" id="add/d62/classled_1_1SpiLedWriter_ac856b2e4beffae9385e699673729485f_cgraph">
+<area shape="rect" title="ビットストリームを送出する" alt="" coords="5,5,132,45"/>
+<area shape="rect" href="../../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3" title="前回の送出が未完了か" alt="" coords="180,13,333,38"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/platform/<a class="el" href="../../d9/d90/led__driver_8h.html">led_driver.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d83/namespaceled.html">led</a></li><li class="navelem"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">SpiLedWriter</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

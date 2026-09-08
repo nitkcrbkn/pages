@@ -7,5 +7,6 @@ var searchData=
   ['_7edualsense_4',['~DualSense',['../d7/db3/classPS5_1_1DualSense.html#ad8ff9f525425b09f04d733988cb249c5',1,'PS5::DualSense']]],
   ['_7eicancontroller_5',['~ICanController',['../d6/dca/classCanSystem_1_1ICanController.html#a3d848e160eb3f1d2a94b05338674b3d4',1,'CanSystem::ICanController']]],
   ['_7emockcanprofile_6',['~MockCanProfile',['../d9/d76/classCanSystem_1_1MockCanProfile.html#a270cb7be30e2bbb4d2c00710c6597e21',1,'CanSystem::MockCanProfile']]],
-  ['_7euartmanager_7',['~UartManager',['../dd/d1a/classUartManager.html#ada3be903d853fb64dae51a2e1ff714bb',1,'UartManager']]]
+  ['_7eneopixelbase_7',['~NeoPixelBase',['../db/d2a/classled_1_1NeoPixelBase.html#a2bff9f543982b4a9d81b53c262296f5d',1,'led::NeoPixelBase']]],
+  ['_7euartmanager_8',['~UartManager',['../dd/d1a/classUartManager.html#ada3be903d853fb64dae51a2e1ff714bb',1,'UartManager']]]
 ];
