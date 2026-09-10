@@ -1,7 +1,7 @@
 var led__driver_8h =
 [
     [ "led::SpiLedWriter< USE_DMA >", "dd/d62/classled_1_1SpiLedWriter.html", "dd/d62/classled_1_1SpiLedWriter" ],
-    [ "led::GpioBitBangWriter< PIN_COUNT >", "d5/d6c/classled_1_1GpioBitBangWriter.html", "d5/d6c/classled_1_1GpioBitBangWriter" ],
+    [ "LED_HAS_BITBANG_WRITER", "d9/d90/led__driver_8h.html#a1617498ca87473bdcad8435919927ec7", null ],
     [ "SpiConfigError", "d9/d90/led__driver_8h.html#a3b27174c14fadfd53049a01ee7cbac43", [
       [ "NONE", "d9/d90/led__driver_8h.html#a3b27174c14fadfd53049a01ee7cbac43ab50339a10e1de285ac99d4c3990b8693", null ],
       [ "DATA_SIZE", "d9/d90/led__driver_8h.html#a3b27174c14fadfd53049a01ee7cbac43ad8bf9d6434cd7b7878883d5ddcfa74c9", null ],

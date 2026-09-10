@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d7/d20/structled_1_1RawCodec.html" title="変換を行わない素通しCodec" alt="" coords="5,5,113,31"/>
+<area shape="rect" id="node1" href="$d7/da7/structled_1_1Spi4BitCodec.html" title="SPIの4bitで NeoPixel の1bitを表現するCodec" alt="" coords="5,5,129,31"/>
 </map>

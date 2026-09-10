@@ -42,6 +42,5 @@ var searchData=
   ['getvalidsizes_39',['getValidSizes',['../d6/dca/classCanSystem_1_1ICanController.html#a7cce95936f3abb54916401062daa9103',1,'CanSystem::ICanController::getValidSizes()'],['../d1/d4a/classCanSystem_1_1CanManager.html#afe49b4c5ffadcabcbd958b2df04a91ff',1,'CanSystem::CanManager::getValidSizes()'],['../d9/d76/classCanSystem_1_1MockCanProfile.html#a47c97485b9c49c6785514f7778887971',1,'CanSystem::MockCanProfile::getValidSizes()']]],
   ['getversion_40',['getVersion',['../d9/d34/classproto__can_1_1MessageID.html#aafd320439a68ebff3a1762c3805c62b2',1,'proto_can::MessageID']]],
   ['gpio_5fmgr_41',['GPIO_Mgr',['../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76',1,'GPIO_Mgr::GPIO_Mgr(const GPIOmap&lt; PIN_COUNT &gt; &amp;gpiomap)'],['../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a',1,'GPIO_Mgr::GPIO_Mgr(const GPIOConfig(&amp;configs)[PIN_COUNT])']]],
-  ['gpiobitbangwriter_42',['GpioBitBangWriter',['../d5/d6c/classled_1_1GpioBitBangWriter.html#a2ed7ea9addd9a2c174ade38803a5900f',1,'led::GpioBitBangWriter']]],
-  ['gradient_43',['gradient',['../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2',1,'led::LEDTape']]]
+  ['gradient_42',['gradient',['../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2',1,'led::LEDTape']]]
 ];

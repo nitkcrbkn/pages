@@ -45,11 +45,9 @@ var hierarchy =
     [ "FormatStr", "de/d83/structFormatStr.html", null ],
     [ "proto_can::FrameLayer", "d6/d2e/classproto__can_1_1FrameLayer.html", null ],
     [ "GPIO_Mgr< PIN_COUNT >", "d6/d4e/classGPIO__Mgr.html", null ],
-    [ "GPIO_Mgr< 1 >", "d6/d4e/classGPIO__Mgr.html", null ],
     [ "GPIO_Mgr< 3 >", "d6/d4e/classGPIO__Mgr.html", null ],
     [ "GPIO_Mgr< 4 >", "d6/d4e/classGPIO__Mgr.html", null ],
     [ "GPIO_Mgr< 6 >", "d6/d4e/classGPIO__Mgr.html", null ],
-    [ "led::GpioBitBangWriter< PIN_COUNT >", "d5/d6c/classled_1_1GpioBitBangWriter.html", null ],
     [ "GPIOConfig", "d4/dff/structGPIOConfig.html", null ],
     [ "CanSystem::ICanController", "d6/dca/classCanSystem_1_1ICanController.html", [
       [ "CanSystem::MockCanProfile", "d9/d76/classCanSystem_1_1MockCanProfile.html", null ]

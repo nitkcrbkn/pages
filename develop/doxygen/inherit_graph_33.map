@@ -1,4 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$db/d2a/classled_1_1NeoPixelBase.html" title="Writerが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,188,60"/>
-<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html" title="NeoPixel LEDテープ" alt="" coords="236,5,409,60"/>
+<area shape="rect" id="node1" href="$d7/d20/structled_1_1RawCodec.html" title="変換を行わない素通しCodec" alt="" coords="5,5,113,31"/>
 </map>

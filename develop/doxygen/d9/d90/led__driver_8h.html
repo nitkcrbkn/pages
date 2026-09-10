@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('d9/d90/led__driver_8h.html','../../');
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
 <a href="#enum-members">列挙型</a> &#124;
 <a href="#func-members">関数</a>  </div>
   <div class="headertitle"><div class="title">led_driver.h ファイル</div></div>
@@ -131,14 +132,17 @@ led_driver.h の依存先関係図:</div>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classled_1_1SpiLedWriter.html">led::SpiLedWriter&lt; USE_DMA &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPIのMOSIからNeoPixelのビットストリームを送出するWriter  <a href="../../dd/d62/classled_1_1SpiLedWriter.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/classled_1_1GpioBitBangWriter.html">led::GpioBitBangWriter&lt; PIN_COUNT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIOを直接叩いてNeoPixelのビットストリームを生成するWriter  <a href="../../d5/d6c/classled_1_1GpioBitBangWriter.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
 <tr class="memitem:d9/d83/namespaceled"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d83/namespaceled.html">led</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a1617498ca87473bdcad8435919927ec7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d90/led__driver_8h.html#a1617498ca87473bdcad8435919927ec7">LED_HAS_BITBANG_WRITER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a1617498ca87473bdcad8435919927ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">GpioBitBangWriterが定義されているか (1/0)  <a href="../../d9/d90/led__driver_8h.html#a1617498ca87473bdcad8435919927ec7">[詳解]</a><br /></td></tr>
+<tr class="separator:a1617498ca87473bdcad8435919927ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 列挙型</h2></td></tr>
@@ -204,7 +208,25 @@ led_driver.h の依存先関係図:</div>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">GpioBitBangWriter   </td><td class="markdownTableBodyNone">GPIO + DWT   </td><td class="markdownTableBodyNone">同期   </td><td class="markdownTableBodyNone">制御と同居する場合は不可   </td></tr>
 </table>
-</div></div><!-- contents -->
+<p >GpioBitBangWriterはDWTサイクルカウンタを持つCortex-M3以上でのみ定義される。 定義されたかは <code>LED_HAS_BITBANG_WRITER</code> で判定できる。 </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a1617498ca87473bdcad8435919927ec7" name="a1617498ca87473bdcad8435919927ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1617498ca87473bdcad8435919927ec7">&#9670;&#160;</a></span>LED_HAS_BITBANG_WRITER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_HAS_BITBANG_WRITER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GpioBitBangWriterが定義されているか (1/0) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

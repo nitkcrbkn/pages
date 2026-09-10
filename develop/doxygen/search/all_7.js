@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['g',['../df/d8a/structled_1_1Color.html#a0c3086fd9ddaff52be650850e364ae3b',1,'led::Color']]],
-  ['get_1',['get',['../d7/db3/classPS5_1_1DualSense.html#a1b664ee669f7ebf7446b1a2f90d59899',1,'PS5::DualSense::get()'],['../d4/d2e/classDJI_1_1ESC.html#aecb1d5d4bceedba336b09eb4ca136002',1,'DJI::ESC::get()'],['../d7/dea/classPS5_1_1ControllerRegistry.html#a95d77ef8ddf937e38607a1d8daffa12f',1,'PS5::ControllerRegistry::get()']]],
+  ['get_1',['get',['../d4/d2e/classDJI_1_1ESC.html#aecb1d5d4bceedba336b09eb4ca136002',1,'DJI::ESC::get()'],['../d7/dea/classPS5_1_1ControllerRegistry.html#a95d77ef8ddf937e38607a1d8daffa12f',1,'PS5::ControllerRegistry::get()'],['../d7/db3/classPS5_1_1DualSense.html#a1b664ee669f7ebf7446b1a2f90d59899',1,'PS5::DualSense::get()']]],
   ['get_5fbitrate_2',['get_bitrate',['../de/da9/structCanSystem_1_1TimingConfig.html#abd30d5d1b68657efcdd9c0a33531ce8b',1,'CanSystem::TimingConfig']]],
   ['get_5fbus_5ferror_5fstate_3',['get_bus_error_state',['../d7/db6/structCanSystem_1_1CANStatus.html#a8540657749c09357e60faa34f5e5c52f',1,'CanSystem::CANStatus']]],
   ['get_5fbus_5fstate_4',['get_bus_state',['../df/d6b/structCanSystem_1_1ErrorCounters.html#a72b1b35ebb67efebaf9582756d441d08',1,'CanSystem::ErrorCounters']]],
@@ -44,15 +44,13 @@ var searchData=
   ['getversion_41',['getVersion',['../d9/d34/classproto__can_1_1MessageID.html#aafd320439a68ebff3a1762c3805c62b2',1,'proto_can::MessageID']]],
   ['gpio_2eh_42',['gpio.h',['../df/d0d/platform_2gpio_8h.html',1,'(大域名前空間)'],['../dc/de9/lite_2gpio_8h.html',1,'(大域名前空間)']]],
   ['gpio_5fmgr_43',['GPIO_Mgr',['../d6/d4e/classGPIO__Mgr.html#a4dd7b6beab0a8384caefa2cb30df2f76',1,'GPIO_Mgr::GPIO_Mgr(const GPIOmap&lt; PIN_COUNT &gt; &amp;gpiomap)'],['../d6/d4e/classGPIO__Mgr.html#ad073cb1a452c56d44dcf9afe2d23a13a',1,'GPIO_Mgr::GPIO_Mgr(const GPIOConfig(&amp;configs)[PIN_COUNT])'],['../d6/d4e/classGPIO__Mgr.html',1,'GPIO_Mgr&lt; PIN_COUNT &gt;']]],
-  ['gpio_5fmgr_3c_201_20_3e_44',['GPIO_Mgr&lt; 1 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
-  ['gpio_5fmgr_3c_203_20_3e_45',['GPIO_Mgr&lt; 3 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
-  ['gpio_5fmgr_3c_204_20_3e_46',['GPIO_Mgr&lt; 4 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
-  ['gpio_5fmgr_3c_206_20_3e_47',['GPIO_Mgr&lt; 6 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
-  ['gpiobitbangwriter_48',['GpioBitBangWriter',['../d5/d6c/classled_1_1GpioBitBangWriter.html#a2ed7ea9addd9a2c174ade38803a5900f',1,'led::GpioBitBangWriter::GpioBitBangWriter()'],['../d5/d6c/classled_1_1GpioBitBangWriter.html',1,'led::GpioBitBangWriter&lt; PIN_COUNT &gt;']]],
-  ['gpioconfig_49',['GPIOConfig',['../d4/dff/structGPIOConfig.html',1,'']]],
-  ['gpiomap_50',['GPIOmap',['../dc/de9/lite_2gpio_8h.html#aa730e34bcb2cf42a59b8ca41650d05d8',1,'gpio.h']]],
-  ['gradient_51',['gradient',['../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2',1,'led::LEDTape']]],
-  ['grb_52',['GRB',['../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4a50725d49d336ca5507cfcd2a6d2c2f8d',1,'led']]],
-  ['grbw_53',['GRBW',['../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4aad0989576661243491540080b5213add',1,'led']]],
-  ['green_54',['GREEN',['../de/dd4/namespaceled_1_1colors.html#a9b32293aa735739877e68a2758ef6ba9',1,'led::colors']]]
+  ['gpio_5fmgr_3c_203_20_3e_44',['GPIO_Mgr&lt; 3 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
+  ['gpio_5fmgr_3c_204_20_3e_45',['GPIO_Mgr&lt; 4 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
+  ['gpio_5fmgr_3c_206_20_3e_46',['GPIO_Mgr&lt; 6 &gt;',['../d6/d4e/classGPIO__Mgr.html',1,'']]],
+  ['gpioconfig_47',['GPIOConfig',['../d4/dff/structGPIOConfig.html',1,'']]],
+  ['gpiomap_48',['GPIOmap',['../dc/de9/lite_2gpio_8h.html#aa730e34bcb2cf42a59b8ca41650d05d8',1,'gpio.h']]],
+  ['gradient_49',['gradient',['../d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2',1,'led::LEDTape']]],
+  ['grb_50',['GRB',['../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4a50725d49d336ca5507cfcd2a6d2c2f8d',1,'led']]],
+  ['grbw_51',['GRBW',['../d9/d83/namespaceled.html#aa7cda71b84eb8e87f7a83880d3c5dfd4aad0989576661243491540080b5213add',1,'led']]],
+  ['green_52',['GREEN',['../de/dd4/namespaceled_1_1colors.html#a9b32293aa735739877e68a2758ef6ba9',1,'led::colors']]]
 ];

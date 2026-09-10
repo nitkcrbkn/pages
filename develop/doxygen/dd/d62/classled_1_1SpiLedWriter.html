@@ -397,6 +397,7 @@ template&lt;bool USE_DMA = true&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>戻り値</dt><dd>送出開始に失敗したらfalse </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>hdmatxの有無は実行時にしか決まらない(MspInitの__HAL_LINKDMA)ため 静的検査できない。HAL_SPI_Transmit_DMA()はassert_paramが無効だと nullptrへ書き込んでHardFaultするので、呼ぶ前に弾く。 </dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">

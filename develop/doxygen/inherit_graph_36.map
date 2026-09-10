@@ -1,3 +1,3 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$d9/d4f/structled_1_1Spi3BitCodec.html" title="Codecが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,129,31"/>
+<area shape="rect" id="node1" href="$dd/d62/classled_1_1SpiLedWriter.html" title="SPIのMOSIからNeoPixelのビットストリームを送出するWriter" alt="" coords="5,5,133,45"/>
 </map>

@@ -24,7 +24,6 @@ var annotated_dup =
     ] ],
     [ "led", "d9/d83/namespaceled.html", [
       [ "Color", "df/d8a/structled_1_1Color.html", "df/d8a/structled_1_1Color" ],
-      [ "GpioBitBangWriter", "d5/d6c/classled_1_1GpioBitBangWriter.html", "d5/d6c/classled_1_1GpioBitBangWriter" ],
       [ "LEDTape", "d4/d91/classled_1_1LEDTape.html", "d4/d91/classled_1_1LEDTape" ],
       [ "NeoPixelBase", "db/d2a/classled_1_1NeoPixelBase.html", "db/d2a/classled_1_1NeoPixelBase" ],
       [ "RawCodec", "d7/d20/structled_1_1RawCodec.html", null ],
