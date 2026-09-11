@@ -1,0 +1,4 @@
+<map id="CanSystem::CanErrorTracker::is_internal_error" name="CanSystem::CanErrorTracker::is_internal_error">
+<area shape="rect" id="node1" title="直近のupdateStatus()時点で内部異常が立っていたか" alt="" coords="5,5,195,45"/>
+<area shape="rect" id="node2" href="$d7/db6/structCanSystem_1_1CANStatus.html#a4e3aee8df22d21b1d2b79c84c69d6760" title="再初期化では解消しないペリフェラル内部側の異常か" alt="" coords="243,5,404,45"/>
+</map>

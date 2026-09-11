@@ -1,0 +1,14 @@
+<map id="led::NeoPixelBase::slot_" name="led::NeoPixelBase::slot_">
+<area shape="rect" id="node1" title="物理インデックスのバッファ位置" alt="" coords="576,151,709,191"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html#a33aadf6564e4cfac6804a586b8f8c3a6" title="画素をコピーする(色の再エンコードを行わない)" alt="" coords="193,5,326,45"/>
+<area shape="rect" id="node4" href="$db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9" title="全画素を同じ色で塗る" alt="" coords="383,69,528,94"/>
+<area shape="rect" id="node6" href="$db/d2a/classled_1_1NeoPixelBase.html#a389da745d131d00460f79eac0f361622" title="1画素の色を読み出す" alt="" coords="389,119,522,159"/>
+<area shape="rect" id="node7" href="$db/d2a/classled_1_1NeoPixelBase.html#a6b27bd4b25817ff25e93d46ace82252c" title=" " alt="" coords="389,183,522,223"/>
+<area shape="rect" id="node8" href="$db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19" title="1画素に色を書き込む" alt="" coords="389,247,522,287"/>
+<area shape="rect" id="node12" href="$db/d2a/classled_1_1NeoPixelBase.html#ac6e89bc9c50e01c23d61eccf975aa89f" title="2画素を入れ替える" alt="" coords="389,311,522,351"/>
+<area shape="rect" id="node3" href="$d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,70,136,95"/>
+<area shape="rect" id="node5" href="$db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352" title="全画素を消灯する" alt="" coords="193,120,326,160"/>
+<area shape="rect" id="node9" href="$d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,185,318,225"/>
+<area shape="rect" id="node10" href="$d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,253,335,278"/>
+<area shape="rect" id="node11" href="$d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,302,335,327"/>
+</map>

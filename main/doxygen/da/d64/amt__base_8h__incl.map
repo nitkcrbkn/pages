@@ -1,7 +1,9 @@
 <map id="modules/logic/amt_base.h" name="modules/logic/amt_base.h">
-<area shape="rect" id="node1" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="78,5,251,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,79,65,104"/>
-<area shape="rect" id="node3" title=" " alt="" coords="89,79,155,104"/>
-<area shape="rect" id="node4" title=" " alt="" coords="179,79,239,104"/>
-<area shape="rect" id="node5" title=" " alt="" coords="263,79,325,104"/>
+<area shape="rect" id="node1" title="AMTエンコーダの共通位置・インデックス・速度モデル。" alt="" coords="56,5,229,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="44,152,104,177"/>
+<area shape="rect" id="node3" title=" " alt="" coords="23,79,88,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="112,79,172,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="309,152,370,177"/>
+<area shape="rect" id="node6" href="$d5/d60/utils_8h.html" title="Arduino互換関数 + HALラッパー / g++対応" alt="" coords="197,79,304,104"/>
+<area shape="rect" id="node7" title=" " alt="" coords="218,152,283,177"/>
 </map>

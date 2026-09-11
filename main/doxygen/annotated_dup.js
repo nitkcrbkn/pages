@@ -15,13 +15,21 @@ var annotated_dup =
       [ "ValidSizes", "d2/de5/structCanSystem_1_1ValidSizes.html", "d2/de5/structCanSystem_1_1ValidSizes" ]
     ] ],
     [ "DJI", "da/db0/namespaceDJI.html", [
-      [ "CriticalSection", "db/d04/classDJI_1_1CriticalSection.html", "db/d04/classDJI_1_1CriticalSection" ],
       [ "ESC", "d4/d2e/classDJI_1_1ESC.html", "d4/d2e/classDJI_1_1ESC" ],
       [ "ESCData", "d2/df4/structDJI_1_1ESCData.html", "d2/df4/structDJI_1_1ESCData" ]
     ] ],
     [ "IM920sL", "da/d22/namespaceIM920sL.html", [
       [ "BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", "d7/dd8/classIM920sL_1_1BaseIM920sL" ],
       [ "Packet", "db/d29/structIM920sL_1_1Packet.html", "db/d29/structIM920sL_1_1Packet" ]
+    ] ],
+    [ "led", "d9/d83/namespaceled.html", [
+      [ "Color", "df/d8a/structled_1_1Color.html", "df/d8a/structled_1_1Color" ],
+      [ "LEDTape", "d4/d91/classled_1_1LEDTape.html", "d4/d91/classled_1_1LEDTape" ],
+      [ "NeoPixelBase", "db/d2a/classled_1_1NeoPixelBase.html", "db/d2a/classled_1_1NeoPixelBase" ],
+      [ "RawCodec", "d7/d20/structled_1_1RawCodec.html", null ],
+      [ "Spi3BitCodec", "d9/d4f/structled_1_1Spi3BitCodec.html", null ],
+      [ "Spi4BitCodec", "d7/da7/structled_1_1Spi4BitCodec.html", null ],
+      [ "SpiLedWriter", "dd/d62/classled_1_1SpiLedWriter.html", "dd/d62/classled_1_1SpiLedWriter" ]
     ] ],
     [ "Motoron", "d5/d02/namespaceMotoron.html", [
       [ "Master", "da/d4c/classMotoron_1_1Master.html", "da/d4c/classMotoron_1_1Master" ]

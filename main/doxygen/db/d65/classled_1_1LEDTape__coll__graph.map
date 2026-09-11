@@ -1,0 +1,4 @@
+<map id="led::LEDTape&lt; Writer, PIXEL_COUNT, ORDER, Codec, REVERSED &gt;" name="led::LEDTape&lt; Writer, PIXEL_COUNT, ORDER, Codec, REVERSED &gt;">
+<area shape="rect" id="node1" title="NeoPixel LEDテープ" alt="" coords="10,108,183,163"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html" title="Writerが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,188,60"/>
+</map>

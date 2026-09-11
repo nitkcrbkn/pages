@@ -1,0 +1,5 @@
+<map id="led::spi_divider_from_hal" name="led::spi_divider_from_hal">
+<area shape="rect" id="node1" title="SPI_BAUDRATEPRESCALER_x から分周比(2〜256)を復元する" alt="" coords="180,45,344,70"/>
+<area shape="rect" id="node2" href="$dd/d62/classled_1_1SpiLedWriter.html#ad972ab8d82c4f670a4f0d3f64ae8060d" title="SPIハンドルがNeoPixelの送出条件を満たしているか検査する" alt="" coords="5,5,132,45"/>
+<area shape="rect" id="node3" href="$dd/d62/classled_1_1SpiLedWriter.html#abc9d8b5640436e5c19e7321688b370c5" title="ハンドルに設定されている実効ビットレート [Hz]" alt="" coords="5,69,132,109"/>
+</map>

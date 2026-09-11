@@ -10,6 +10,7 @@ var namespaces_dup =
     [ "CanSystem", "d2/dc4/namespaceCanSystem.html", "d2/dc4/namespaceCanSystem" ],
     [ "DJI", "da/db0/namespaceDJI.html", "da/db0/namespaceDJI" ],
     [ "IM920sL", "da/d22/namespaceIM920sL.html", "da/d22/namespaceIM920sL" ],
+    [ "led", "d9/d83/namespaceled.html", "d9/d83/namespaceled" ],
     [ "Motoron", "d5/d02/namespaceMotoron.html", "d5/d02/namespaceMotoron" ],
     [ "pid_detail", "d6/dc7/namespacepid__detail.html", [
       [ "clamp", "d6/dc7/namespacepid__detail.html#a7a736862e14bda8fc92798fddbb07d10", null ]

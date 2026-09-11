@@ -1,0 +1,4 @@
+<map id="led::LEDTape::rotate" name="led::LEDTape::rotate">
+<area shape="rect" id="node1" title="画素を巡回させる(端から出たものが反対側に入る)" alt="" coords="5,5,144,31"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63" title="送出中(次のshow()が失敗する状態)か" alt="" coords="192,5,352,31"/>
+</map>

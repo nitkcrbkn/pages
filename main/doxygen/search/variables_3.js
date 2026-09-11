@@ -7,7 +7,8 @@ var searchData=
   ['decodeerrors_4',['decodeErrors',['../dd/de0/structPS5_1_1DualSenseStatistics.html#a6ca415540a78f4742e1fb4e6c30d0241',1,'PS5::DualSenseStatistics']]],
   ['dgain_5',['dGain',['../d4/d2c/structPIDGain.html#a8e0eeb19b768bd635b2d353725c06af4',1,'PIDGain']]],
   ['direction_5f_6',['direction_',['../db/d69/classAMTEncoderBase.html#a1a2468df95bf69f7cc72000298ce7e9d',1,'AMTEncoderBase']]],
-  ['dnumber_7',['dNumber',['../d9/d34/classproto__can_1_1MessageID.html#a346d8f9cf4f469e1285f51cfc721122d',1,'proto_can::MessageID']]],
-  ['down_8',['DOWN',['../d6/de5/structPS5_1_1Button.html#a544b6234db8f648e66766611dd14a361',1,'PS5::Button']]],
-  ['dtype_9',['dType',['../d9/d34/classproto__can_1_1MessageID.html#a65e6f143fa3658c51cd7b5ffd3598e72',1,'proto_can::MessageID']]]
+  ['dirty_5f_7',['dirty_',['../db/d2a/classled_1_1NeoPixelBase.html#a688d5720700c01bba454ddbf6064bff6',1,'led::NeoPixelBase']]],
+  ['dnumber_8',['dNumber',['../d9/d34/classproto__can_1_1MessageID.html#a346d8f9cf4f469e1285f51cfc721122d',1,'proto_can::MessageID']]],
+  ['down_9',['DOWN',['../d6/de5/structPS5_1_1Button.html#a544b6234db8f648e66766611dd14a361',1,'PS5::Button']]],
+  ['dtype_10',['dType',['../d9/d34/classproto__can_1_1MessageID.html#a65e6f143fa3658c51cd7b5ffd3598e72',1,'proto_can::MessageID']]]
 ];

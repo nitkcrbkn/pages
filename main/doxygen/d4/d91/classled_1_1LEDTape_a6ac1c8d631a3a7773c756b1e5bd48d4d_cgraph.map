@@ -1,0 +1,9 @@
+<map id="led::LEDTape::rainbow" name="led::LEDTape::rainbow">
+<area shape="rect" id="node1" title="全体を虹色で塗る" alt="" coords="5,55,156,80"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63" title="送出中(次のshow()が失敗する状態)か" alt="" coords="204,5,364,31"/>
+<area shape="rect" id="node3" href="$d9/d83/namespaceled.html#a0fc9533e2faa0bd43845d94000f03220" title="HSVからRGBを生成する(整数演算のみ / 浮動小数点未使用)" alt="" coords="251,55,317,80"/>
+<area shape="rect" id="node4" href="$db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19" title="1画素に色を書き込む" alt="" coords="217,105,351,145"/>
+<area shape="rect" id="node5" href="$d9/d83/namespaceled.html#af9294f9000069a5c9d6e2f398e96b478" title="全chを一律にスケールする" alt="" coords="441,83,517,108"/>
+<area shape="rect" id="node7" href="$db/d2a/classled_1_1NeoPixelBase.html#ad98e4e7d8e79af9b4098ade3b1059fab" title="物理インデックスのバッファ位置" alt="" coords="412,133,545,173"/>
+<area shape="rect" id="node6" href="$d9/d83/namespaceled.html#af01155433f53838669352dcc9475b568" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="593,83,676,108"/>
+</map>

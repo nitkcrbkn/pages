@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('d9/d7c/classCanSystem_1_1CanErrorTrack
 <tr class="separator:af77f922989c606967f141348e4a0faf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf7ba88282f83efe46f631b366ef4a27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#abf7ba88282f83efe46f631b366ef4a27">is_error_state</a> ()</td></tr>
 <tr class="separator:abf7ba88282f83efe46f631b366ef4a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc20ad9a9e3e41fed925d6504114a109"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#acc20ad9a9e3e41fed925d6504114a109">is_internal_error</a> () const</td></tr>
+<tr class="memdesc:acc20ad9a9e3e41fed925d6504114a109"><td class="mdescLeft">&#160;</td><td class="mdescRight">直近のupdateStatus()時点で内部異常が立っていたか  <a href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#acc20ad9a9e3e41fed925d6504114a109">[詳解]</a><br /></td></tr>
+<tr class="separator:acc20ad9a9e3e41fed925d6504114a109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a936315fb72908b5f0455cb0fcdfb62dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#a936315fb72908b5f0455cb0fcdfb62dc">addIdReceived</a> (int id)</td></tr>
 <tr class="separator:a936315fb72908b5f0455cb0fcdfb62dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae43499956d51725021b59f53a54b2054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d7c/classCanSystem_1_1CanErrorTracker.html#ae43499956d51725021b59f53a54b2054">addIdSend</a> (int id)</td></tr>
@@ -647,6 +650,43 @@ $(document).ready(function(){initNavTree('d9/d7c/classCanSystem_1_1CanErrorTrack
 <area shape="rect" title=" " alt="" coords="437,5,627,45"/>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#a0cc7c2d4cb7e1830fcbb7bf97a08d0fe" title="error発生時にrestartするかを決める。" alt="" coords="221,5,389,45"/>
 <area shape="rect" href="../../d1/d4a/classCanSystem_1_1CanManager.html#ae5b1649331355f4410c1540b33e50e03" title="エラー時の自動復旧トリガー" alt="" coords="5,5,173,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc20ad9a9e3e41fed925d6504114a109" name="acc20ad9a9e3e41fed925d6504114a109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc20ad9a9e3e41fed925d6504114a109">&#9670;&#160;</a></span>is_internal_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CanSystem::CanErrorTracker::is_internal_error </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直近のupdateStatus()時点で内部異常が立っていたか </p>
+<p >バス由来のエラーは含まない。判定内容はCANStatus::internal_error()を参照。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d7c/classCanSystem_1_1CanErrorTracker_acc20ad9a9e3e41fed925d6504114a109_cgraph.png" border="0" usemap="#ad9/d7c/classCanSystem_1_1CanErrorTracker_acc20ad9a9e3e41fed925d6504114a109_cgraph" alt=""/></div>
+<map name="ad9/d7c/classCanSystem_1_1CanErrorTracker_acc20ad9a9e3e41fed925d6504114a109_cgraph" id="ad9/d7c/classCanSystem_1_1CanErrorTracker_acc20ad9a9e3e41fed925d6504114a109_cgraph">
+<area shape="rect" title="直近のupdateStatus()時点で内部異常が立っていたか" alt="" coords="5,5,195,45"/>
+<area shape="rect" href="../../d7/db6/structCanSystem_1_1CANStatus.html#a4e3aee8df22d21b1d2b79c84c69d6760" title="再初期化では解消しないペリフェラル内部側の異常か" alt="" coords="243,5,404,45"/>
 </map>
 </div>
 

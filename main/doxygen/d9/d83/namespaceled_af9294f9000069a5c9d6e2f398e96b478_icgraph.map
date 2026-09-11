@@ -1,0 +1,11 @@
+<map id="led::scale" name="led::scale">
+<area shape="rect" id="node1" title="全chを一律にスケールする" alt="" coords="576,121,652,146"/>
+<area shape="rect" id="node2" href="$db/d2a/classled_1_1NeoPixelBase.html#adf888436e3f35a340a432cafcd0f97c9" title="全画素を同じ色で塗る" alt="" coords="383,70,528,95"/>
+<area shape="rect" id="node5" href="$d9/d83/namespaceled.html#af01155433f53838669352dcc9475b568" title="8bit値を 0&#45;255 の係数でスケールする (255で等倍)" alt="" coords="414,121,497,146"/>
+<area shape="rect" id="node6" href="$db/d2a/classled_1_1NeoPixelBase.html#aea3c1819e867543f5eb8d6f4c459ba19" title="1画素に色を書き込む" alt="" coords="389,175,522,215"/>
+<area shape="rect" id="node3" href="$db/d2a/classled_1_1NeoPixelBase.html#a389d1585f9a5e0b401008dfc3cdf4352" title="全画素を消灯する" alt="" coords="193,5,326,45"/>
+<area shape="rect" id="node4" href="$d4/d91/classled_1_1LEDTape.html#a5710e1599753d6aea5188a9fa479b5db" title="画素をずらす。空いた側は fill_color で埋める。" alt="" coords="5,99,136,125"/>
+<area shape="rect" id="node7" href="$d4/d91/classled_1_1LEDTape.html#a33fecc9b2516e07b94b61916e3a2d554" title="連続した範囲を同じ色で塗る" alt="" coords="201,120,318,160"/>
+<area shape="rect" id="node8" href="$d4/d91/classled_1_1LEDTape.html#a972081bd3f43689c92726238ceccc7b2" title="連続した範囲をグラデーションで塗る" alt="" coords="184,185,335,210"/>
+<area shape="rect" id="node9" href="$d4/d91/classled_1_1LEDTape.html#a6ac1c8d631a3a7773c756b1e5bd48d4d" title="全体を虹色で塗る" alt="" coords="184,234,335,259"/>
+</map>

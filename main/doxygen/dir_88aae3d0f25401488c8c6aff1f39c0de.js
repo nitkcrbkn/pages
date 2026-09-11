@@ -3,6 +3,7 @@ var dir_88aae3d0f25401488c8c6aff1f39c0de =
     [ "Dualsense.h", "d9/dc2/Dualsense_8h.html", "d9/dc2/Dualsense_8h" ],
     [ "gpio.h", "df/d0d/platform_2gpio_8h.html", "df/d0d/platform_2gpio_8h" ],
     [ "IM920sL.h", "d6/d81/IM920sL_8h.html", "d6/d81/IM920sL_8h" ],
+    [ "led_driver.h", "d9/d90/led__driver_8h.html", "d9/d90/led__driver_8h" ],
     [ "protoc_selializetion.hpp", "d4/dd6/protoc__selializetion_8hpp.html", "d4/dd6/protoc__selializetion_8hpp" ],
     [ "solenoid.h", "dc/d07/solenoid_8h.html", "dc/d07/solenoid_8h" ],
     [ "telem_controller.hpp", "da/d5f/telem__controller_8hpp.html", "da/d5f/telem__controller_8hpp" ],
