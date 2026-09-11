@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-09-06 00:45:28</td>
+            <td class="headerValue">2026-09-11 11:26:28</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryMed">80.0&nbsp;%</td>
@@ -189,90 +189,102 @@
 <span id="L111"><span class="lineNum">     111</span>                 :             :     virtual bool send(uint32_t id, uint8_t *data, uint32_t size = 8) = 0;</span>
 <span id="L112"><span class="lineNum">     112</span>                 :             :     /**</span>
 <span id="L113"><span class="lineNum">     113</span>                 :             :      * @brief canStopしてからinitする。</span>
-<span id="L114"><span class="lineNum">     114</span>                 :             :      * @return true  再起動成功</span>
-<span id="L115"><span class="lineNum">     115</span>                 :             :      * @return false 再起動失敗</span>
-<span id="L116"><span class="lineNum">     116</span>                 :             :      */</span>
-<span id="L117"><span class="lineNum">     117</span>                 :             :     virtual bool restart(void) = 0;</span>
-<span id="L118"><span class="lineNum">     118</span>                 :             : };</span>
-<span id="L119"><span class="lineNum">     119</span>                 :             : </span>
-<span id="L120"><span class="lineNum">     120</span>                 :             : #ifdef USE_FDCAN</span>
-<span id="L121"><span class="lineNum">     121</span>                 :             : /**</span>
-<span id="L122"><span class="lineNum">     122</span>                 :             :  * @brief  FDCAN（CAN with Flexible Data-Rate）管理インターフェース</span>
-<span id="L123"><span class="lineNum">     123</span>                 :             :  */</span>
-<span id="L124"><span class="lineNum">     124</span>                 :             : class IFdCanManager : public ICanController {</span>
-<span id="L125"><span class="lineNum">     125</span>                 :             : public:</span>
-<span id="L126"><span class="lineNum">     126</span>                 :             :     virtual ~IFdCanManager() = default;</span>
-<span id="L127"><span class="lineNum">     127</span>                 :             : </span>
-<span id="L128"><span class="lineNum">     128</span>                 :             :     /**</span>
-<span id="L129"><span class="lineNum">     129</span>                 :             :      * @brief フィルタ設定を動的に変更する</span>
-<span id="L130"><span class="lineNum">     130</span>                 :             :      * @param filter 新しいフィルタ設定</span>
-<span id="L131"><span class="lineNum">     131</span>                 :             :      * @return true  成功</span>
-<span id="L132"><span class="lineNum">     132</span>                 :             :      * @return false 失敗</span>
-<span id="L133"><span class="lineNum">     133</span>                 :             :      */</span>
-<span id="L134"><span class="lineNum">     134</span>                 :             :     virtual bool setConfigFilter(FDCAN_FilterTypeDef filter) = 0;</span>
-<span id="L135"><span class="lineNum">     135</span>                 :             : </span>
-<span id="L136"><span class="lineNum">     136</span>                 :             :     /**</span>
-<span id="L137"><span class="lineNum">     137</span>                 :             :      * @brief 現在のFDCAN HAL状態を取得する</span>
-<span id="L138"><span class="lineNum">     138</span>                 :             :      * @return HAL_FDCAN_StateTypeDef 現在の状態</span>
-<span id="L139"><span class="lineNum">     139</span>                 :             :      */</span>
-<span id="L140"><span class="lineNum">     140</span>                 :             :     virtual HAL_FDCAN_StateTypeDef getState(void) = 0;</span>
-<span id="L141"><span class="lineNum">     141</span>                 :             : </span>
-<span id="L142"><span class="lineNum">     142</span>                 :             :     /**</span>
-<span id="L143"><span class="lineNum">     143</span>                 :             :      * @brief error発生時にrestartするかを決める。</span>
-<span id="L144"><span class="lineNum">     144</span>                 :             :      * @return true  エラー状態</span>
-<span id="L145"><span class="lineNum">     145</span>                 :             :      * @return false 正常状態</span>
-<span id="L146"><span class="lineNum">     146</span>                 :             :      */</span>
-<span id="L147"><span class="lineNum">     147</span>                 :             :     virtual bool check_is_error() = 0;</span>
-<span id="L148"><span class="lineNum">     148</span>                 :             : </span>
-<span id="L149"><span class="lineNum">     149</span>                 :             :     /**</span>
-<span id="L150"><span class="lineNum">     150</span>                 :             :      * @brief レジスタ完全リセットを伴う強い再起動を行う</span>
-<span id="L151"><span class="lineNum">     151</span>                 :             :      * @return true  復旧成功</span>
-<span id="L152"><span class="lineNum">     152</span>                 :             :      * @return false 復旧失敗</span>
-<span id="L153"><span class="lineNum">     153</span>                 :             :      */</span>
-<span id="L154"><span class="lineNum">     154</span>                 :             :     virtual bool forceRestart(void) = 0;</span>
-<span id="L155"><span class="lineNum">     155</span>                 :             : };</span>
-<span id="L156"><span class="lineNum">     156</span>                 :             : #endif</span>
-<span id="L157"><span class="lineNum">     157</span>                 :             : </span>
-<span id="L158"><span class="lineNum">     158</span>                 :             : #ifdef USE_CAN</span>
-<span id="L159"><span class="lineNum">     159</span>                 :             : /**</span>
-<span id="L160"><span class="lineNum">     160</span>                 :             :  * @brief CAN（Classic CAN）管理インターフェース</span>
-<span id="L161"><span class="lineNum">     161</span>                 :             :  */</span>
-<span id="L162"><span class="lineNum">     162</span>                 :             : class ICanManager : public ICanController {</span>
-<span id="L163"><span class="lineNum">     163</span>                 :             : public:</span>
-<span id="L164"><span class="lineNum">     164</span>                 :             :     virtual ~ICanManager() = default;</span>
-<span id="L165"><span class="lineNum">     165</span>                 :             : </span>
-<span id="L166"><span class="lineNum">     166</span>                 :             :     /**</span>
-<span id="L167"><span class="lineNum">     167</span>                 :             :      * @brief フィルタ設定を動的に変更する</span>
-<span id="L168"><span class="lineNum">     168</span>                 :             :      * @param filter 新しいフィルタ設定</span>
-<span id="L169"><span class="lineNum">     169</span>                 :             :      * @return true  成功</span>
-<span id="L170"><span class="lineNum">     170</span>                 :             :      * @return false 失敗</span>
-<span id="L171"><span class="lineNum">     171</span>                 :             :      */</span>
-<span id="L172"><span class="lineNum">     172</span>                 :             :     virtual bool setConfigFilter(CAN_FilterTypeDef filter) = 0;</span>
-<span id="L173"><span class="lineNum">     173</span>                 :             : </span>
-<span id="L174"><span class="lineNum">     174</span>                 :             :     /**</span>
-<span id="L175"><span class="lineNum">     175</span>                 :             :      * @brief 現在使用中の FIFO 番号を返す</span>
-<span id="L176"><span class="lineNum">     176</span>                 :             :      * @return FIFO 番号（0 or 1）</span>
-<span id="L177"><span class="lineNum">     177</span>                 :             :      */</span>
-<span id="L178"><span class="lineNum">     178</span>                 :             :     virtual uint8_t getFifo(void) = 0;</span>
-<span id="L179"><span class="lineNum">     179</span>                 :             :     /**</span>
-<span id="L180"><span class="lineNum">     180</span>                 :             :      * @brief 使用する FIFO 番号を設定する</span>
-<span id="L181"><span class="lineNum">     181</span>                 :             :      * @param fifo FIFO 番号（0 or 1、不正値は拒否）</span>
-<span id="L182"><span class="lineNum">     182</span>                 :             :      * @return true  設定成功</span>
-<span id="L183"><span class="lineNum">     183</span>                 :             :      * @return false 不正値のため拒否</span>
-<span id="L184"><span class="lineNum">     184</span>                 :             :      */</span>
-<span id="L185"><span class="lineNum">     185</span>                 :             :     virtual bool setFifo(uint8_t fifo) = 0;</span>
-<span id="L186"><span class="lineNum">     186</span>                 :             : </span>
-<span id="L187"><span class="lineNum">     187</span>                 :             :     /**</span>
-<span id="L188"><span class="lineNum">     188</span>                 :             :      * @brief CAN 受信割り込みハンドラ</span>
-<span id="L189"><span class="lineNum">     189</span>                 :             :      * @param hCAN HAL CAN ハンドルポインタ</span>
-<span id="L190"><span class="lineNum">     190</span>                 :             :      * @return true  正常に処理完了</span>
-<span id="L191"><span class="lineNum">     191</span>                 :             :      * @return false 処理失敗</span>
-<span id="L192"><span class="lineNum">     192</span>                 :             :      */</span>
-<span id="L193"><span class="lineNum">     193</span>                 :             :     virtual bool onMsgReceived(CAN_HandleTypeDef *hCAN) = 0;</span>
-<span id="L194"><span class="lineNum">     194</span>                 :             : };</span>
-<span id="L195"><span class="lineNum">     195</span>                 :             : #endif</span>
-<span id="L196"><span class="lineNum">     196</span>                 :             : </span>
-<span id="L197"><span class="lineNum">     197</span>                 :             : }  // namespace CanSystem</span>
+<span id="L114"><span class="lineNum">     114</span>                 :             :      * @note 判定対象は再初期化処理そのものであり、バス側の異常が解消したかは含まない。</span>
+<span id="L115"><span class="lineNum">     115</span>                 :             :      * @return true  再初期化成功</span>
+<span id="L116"><span class="lineNum">     116</span>                 :             :      * @return false 再初期化失敗</span>
+<span id="L117"><span class="lineNum">     117</span>                 :             :      */</span>
+<span id="L118"><span class="lineNum">     118</span>                 :             :     virtual bool restart(void) = 0;</span>
+<span id="L119"><span class="lineNum">     119</span>                 :             : };</span>
+<span id="L120"><span class="lineNum">     120</span>                 :             : </span>
+<span id="L121"><span class="lineNum">     121</span>                 :             : #ifdef USE_FDCAN</span>
+<span id="L122"><span class="lineNum">     122</span>                 :             : /**</span>
+<span id="L123"><span class="lineNum">     123</span>                 :             :  * @brief  FDCAN（CAN with Flexible Data-Rate）管理インターフェース</span>
+<span id="L124"><span class="lineNum">     124</span>                 :             :  */</span>
+<span id="L125"><span class="lineNum">     125</span>                 :             : class IFdCanManager : public ICanController {</span>
+<span id="L126"><span class="lineNum">     126</span>                 :             : public:</span>
+<span id="L127"><span class="lineNum">     127</span>                 :             :     virtual ~IFdCanManager() = default;</span>
+<span id="L128"><span class="lineNum">     128</span>                 :             : </span>
+<span id="L129"><span class="lineNum">     129</span>                 :             :     /**</span>
+<span id="L130"><span class="lineNum">     130</span>                 :             :      * @brief フィルタ設定を動的に変更する</span>
+<span id="L131"><span class="lineNum">     131</span>                 :             :      * @param filter 新しいフィルタ設定</span>
+<span id="L132"><span class="lineNum">     132</span>                 :             :      * @return true  成功</span>
+<span id="L133"><span class="lineNum">     133</span>                 :             :      * @return false 失敗</span>
+<span id="L134"><span class="lineNum">     134</span>                 :             :      */</span>
+<span id="L135"><span class="lineNum">     135</span>                 :             :     virtual bool setConfigFilter(FDCAN_FilterTypeDef filter) = 0;</span>
+<span id="L136"><span class="lineNum">     136</span>                 :             : </span>
+<span id="L137"><span class="lineNum">     137</span>                 :             :     /**</span>
+<span id="L138"><span class="lineNum">     138</span>                 :             :      * @brief 現在のFDCAN HAL状態を取得する</span>
+<span id="L139"><span class="lineNum">     139</span>                 :             :      * @return HAL_FDCAN_StateTypeDef 現在の状態</span>
+<span id="L140"><span class="lineNum">     140</span>                 :             :      */</span>
+<span id="L141"><span class="lineNum">     141</span>                 :             :     virtual HAL_FDCAN_StateTypeDef getState(void) = 0;</span>
+<span id="L142"><span class="lineNum">     142</span>                 :             : </span>
+<span id="L143"><span class="lineNum">     143</span>                 :             :     /**</span>
+<span id="L144"><span class="lineNum">     144</span>                 :             :      * @brief error発生時にrestartするかを決める。</span>
+<span id="L145"><span class="lineNum">     145</span>                 :             :      * @return true  エラー状態</span>
+<span id="L146"><span class="lineNum">     146</span>                 :             :      * @return false 正常状態</span>
+<span id="L147"><span class="lineNum">     147</span>                 :             :      */</span>
+<span id="L148"><span class="lineNum">     148</span>                 :             :     virtual bool check_is_error() = 0;</span>
+<span id="L149"><span class="lineNum">     149</span>                 :             : </span>
+<span id="L150"><span class="lineNum">     150</span>                 :             :     /**</span>
+<span id="L151"><span class="lineNum">     151</span>                 :             :      * @brief restart()では解消しない内部異常が出ているかを確認する</span>
+<span id="L152"><span class="lineNum">     152</span>                 :             :      * @details HAL stateのERROR・メッセージRAMアクセス失敗・RAMウォッチドッグ・</span>
+<span id="L153"><span class="lineNum">     153</span>                 :             :      *          予約アドレスアクセスのみを対象とし、ACK/Form/Bit等のバス由来</span>
+<span id="L154"><span class="lineNum">     154</span>                 :             :      *          エラーは含めない。forceRestart()へ上げるかの判断に使う。</span>
+<span id="L155"><span class="lineNum">     155</span>                 :             :      * @return true  内部異常あり</span>
+<span id="L156"><span class="lineNum">     156</span>                 :             :      * @return false 内部異常なし（正常、またはバス由来エラーのみ）</span>
+<span id="L157"><span class="lineNum">     157</span>                 :             :      */</span>
+<span id="L158"><span class="lineNum">     158</span>                 :             :     virtual bool check_is_internal_error() = 0;</span>
+<span id="L159"><span class="lineNum">     159</span>                 :             : </span>
+<span id="L160"><span class="lineNum">     160</span>                 :             :     /**</span>
+<span id="L161"><span class="lineNum">     161</span>                 :             :      * @brief restart()で復旧できない場合により深いレベルから再初期化する</span>
+<span id="L162"><span class="lineNum">     162</span>                 :             :      * @note 判定対象は再初期化処理そのものであり、バス側の異常が解消したかは含まない。</span>
+<span id="L163"><span class="lineNum">     163</span>                 :             :      * @return true  再初期化成功</span>
+<span id="L164"><span class="lineNum">     164</span>                 :             :      * @return false 再初期化失敗</span>
+<span id="L165"><span class="lineNum">     165</span>                 :             :      */</span>
+<span id="L166"><span class="lineNum">     166</span>                 :             :     virtual bool forceRestart(void) = 0;</span>
+<span id="L167"><span class="lineNum">     167</span>                 :             : };</span>
+<span id="L168"><span class="lineNum">     168</span>                 :             : #endif</span>
+<span id="L169"><span class="lineNum">     169</span>                 :             : </span>
+<span id="L170"><span class="lineNum">     170</span>                 :             : #ifdef USE_CAN</span>
+<span id="L171"><span class="lineNum">     171</span>                 :             : /**</span>
+<span id="L172"><span class="lineNum">     172</span>                 :             :  * @brief CAN（Classic CAN）管理インターフェース</span>
+<span id="L173"><span class="lineNum">     173</span>                 :             :  */</span>
+<span id="L174"><span class="lineNum">     174</span>                 :             : class ICanManager : public ICanController {</span>
+<span id="L175"><span class="lineNum">     175</span>                 :             : public:</span>
+<span id="L176"><span class="lineNum">     176</span>                 :             :     virtual ~ICanManager() = default;</span>
+<span id="L177"><span class="lineNum">     177</span>                 :             : </span>
+<span id="L178"><span class="lineNum">     178</span>                 :             :     /**</span>
+<span id="L179"><span class="lineNum">     179</span>                 :             :      * @brief フィルタ設定を動的に変更する</span>
+<span id="L180"><span class="lineNum">     180</span>                 :             :      * @param filter 新しいフィルタ設定</span>
+<span id="L181"><span class="lineNum">     181</span>                 :             :      * @return true  成功</span>
+<span id="L182"><span class="lineNum">     182</span>                 :             :      * @return false 失敗</span>
+<span id="L183"><span class="lineNum">     183</span>                 :             :      */</span>
+<span id="L184"><span class="lineNum">     184</span>                 :             :     virtual bool setConfigFilter(CAN_FilterTypeDef filter) = 0;</span>
+<span id="L185"><span class="lineNum">     185</span>                 :             : </span>
+<span id="L186"><span class="lineNum">     186</span>                 :             :     /**</span>
+<span id="L187"><span class="lineNum">     187</span>                 :             :      * @brief 現在使用中の FIFO 番号を返す</span>
+<span id="L188"><span class="lineNum">     188</span>                 :             :      * @return FIFO 番号（0 or 1）</span>
+<span id="L189"><span class="lineNum">     189</span>                 :             :      */</span>
+<span id="L190"><span class="lineNum">     190</span>                 :             :     virtual uint8_t getFifo(void) = 0;</span>
+<span id="L191"><span class="lineNum">     191</span>                 :             :     /**</span>
+<span id="L192"><span class="lineNum">     192</span>                 :             :      * @brief 使用する FIFO 番号を設定する</span>
+<span id="L193"><span class="lineNum">     193</span>                 :             :      * @param fifo FIFO 番号（0 or 1、不正値は拒否）</span>
+<span id="L194"><span class="lineNum">     194</span>                 :             :      * @return true  設定成功</span>
+<span id="L195"><span class="lineNum">     195</span>                 :             :      * @return false 不正値のため拒否</span>
+<span id="L196"><span class="lineNum">     196</span>                 :             :      */</span>
+<span id="L197"><span class="lineNum">     197</span>                 :             :     virtual bool setFifo(uint8_t fifo) = 0;</span>
+<span id="L198"><span class="lineNum">     198</span>                 :             : </span>
+<span id="L199"><span class="lineNum">     199</span>                 :             :     /**</span>
+<span id="L200"><span class="lineNum">     200</span>                 :             :      * @brief CAN 受信割り込みハンドラ</span>
+<span id="L201"><span class="lineNum">     201</span>                 :             :      * @param hCAN HAL CAN ハンドルポインタ</span>
+<span id="L202"><span class="lineNum">     202</span>                 :             :      * @return true  正常に処理完了</span>
+<span id="L203"><span class="lineNum">     203</span>                 :             :      * @return false 処理失敗</span>
+<span id="L204"><span class="lineNum">     204</span>                 :             :      */</span>
+<span id="L205"><span class="lineNum">     205</span>                 :             :     virtual bool onMsgReceived(CAN_HandleTypeDef *hCAN) = 0;</span>
+<span id="L206"><span class="lineNum">     206</span>                 :             : };</span>
+<span id="L207"><span class="lineNum">     207</span>                 :             : #endif</span>
+<span id="L208"><span class="lineNum">     208</span>                 :             : </span>
+<span id="L209"><span class="lineNum">     209</span>                 :             : }  // namespace CanSystem</span>
         </pre>
               </td>
             </tr>

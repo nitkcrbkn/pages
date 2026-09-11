@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2026-09-06 00:45:28</td>
+            <td class="headerValue">2026-09-11 11:26:28</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
@@ -148,8 +148,8 @@
 <span id="L70"><span class="lineNum">      70</span>                 :             :  */</span>
 <span id="L71"><span class="lineNum">      71</span>                 :             : class CriticalSection {</span>
 <span id="L72"><span class="lineNum">      72</span>                 :             : public:</span>
-<span id="L73"><span class="lineNum">      73</span>                 :             :     CriticalSection() : primask_(__get_PRIMASK()) { __disable_irq(); }</span>
-<span id="L74"><span class="lineNum">      74</span>                 :             :     ~CriticalSection() { __set_PRIMASK(primask_); }</span>
+<span id="L73"><span class="lineNum">      73</span>                 :             :     CriticalSection() noexcept : primask_(__get_PRIMASK()) { __disable_irq(); }</span>
+<span id="L74"><span class="lineNum">      74</span>                 :             :     ~CriticalSection() noexcept { __set_PRIMASK(primask_); }</span>
 <span id="L75"><span class="lineNum">      75</span>                 :             :     CriticalSection(const CriticalSection&amp;) = delete;</span>
 <span id="L76"><span class="lineNum">      76</span>                 :             :     CriticalSection&amp; operator=(const CriticalSection&amp;) = delete;</span>
 <span id="L77"><span class="lineNum">      77</span>                 :             : </span>
@@ -233,8 +233,8 @@
 <span id="L155"><span class="lineNum">     155</span>                 :             :  */</span>
 <span id="L156"><span class="lineNum">     156</span>                 :             : class CriticalSection {</span>
 <span id="L157"><span class="lineNum">     157</span>                 :             : public:</span>
-<span id="L158"><span class="lineNum">     158</span>                 :             :     CriticalSection() = default;</span>
-<span id="L159"><span class="lineNum">     159</span>                 :             :     ~CriticalSection() = default;</span>
+<span id="L158"><span class="lineNum">     158</span>                 :             :     CriticalSection() noexcept = default;</span>
+<span id="L159"><span class="lineNum">     159</span>                 :             :     ~CriticalSection() noexcept = default;</span>
 <span id="L160"><span class="lineNum">     160</span>                 :             :     CriticalSection(const CriticalSection&amp;) = delete;</span>
 <span id="L161"><span class="lineNum">     161</span>                 :             :     CriticalSection&amp; operator=(const CriticalSection&amp;) = delete;</span>
 <span id="L162"><span class="lineNum">     162</span>                 :             : };</span>
