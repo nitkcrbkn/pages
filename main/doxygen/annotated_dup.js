@@ -68,7 +68,6 @@ var annotated_dup =
     [ "AbstractController", "d0/d5c/classAbstractController.html", "d0/d5c/classAbstractController" ],
     [ "AMTEncoderBase", "db/d69/classAMTEncoderBase.html", "db/d69/classAMTEncoderBase" ],
     [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", "df/d9b/classAMTEncoderExti" ],
-    [ "As5600", "da/d4d/classAs5600.html", "da/d4d/classAs5600" ],
     [ "BitRange", "d6/d01/structBitRange.html", "d6/d01/structBitRange" ],
     [ "CommandReceiver", "d0/d45/classCommandReceiver.html", "d0/d45/classCommandReceiver" ],
     [ "CriticalSection", "d2/dd9/classCriticalSection.html", "d2/dd9/classCriticalSection" ],

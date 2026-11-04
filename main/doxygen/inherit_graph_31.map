@@ -1,3 +1,4 @@
 <map id="クラス階層図" name="クラス階層図">
-<area shape="rect" id="node1" href="$df/d8a/structled_1_1Color.html" title="8bit/chのLED色。白chはRGBW型デバイスでのみ使用される。" alt="" coords="5,5,80,31"/>
+<area shape="rect" id="node1" href="$db/d2a/classled_1_1NeoPixelBase.html" title="Writerが満たすべきインターフェース(コンセプト)" alt="" coords="5,5,188,60"/>
+<area shape="rect" id="node2" href="$d4/d91/classled_1_1LEDTape.html" title="NeoPixel LEDテープ" alt="" coords="236,5,409,60"/>
 </map>

@@ -5,8 +5,6 @@ var searchData=
   ['brightness_2',['brightness',['../db/d2a/classled_1_1NeoPixelBase.html#a776ca0339b82c0f3d100700b1dc143e5',1,'led::NeoPixelBase']]],
   ['buffer_3',['buffer',['../db/d2a/classled_1_1NeoPixelBase.html#a6ffb9053e4c514baa28e97c410a06048',1,'led::NeoPixelBase']]],
   ['buffer_5fsize_4',['buffer_size',['../db/d2a/classled_1_1NeoPixelBase.html#ae1ec21fcc6e744e082bb52b0f8326a34',1,'led::NeoPixelBase']]],
-  ['burnangle_5',['burnAngle',['../da/d4d/classAs5600.html#aa5c0c9a1b4324f3458b0e2512c43bdb5',1,'As5600']]],
-  ['burnsettings_6',['burnSettings',['../da/d4d/classAs5600.html#ac2c9cb9d4933dc9efc83ee7a28f549b1',1,'As5600']]],
-  ['busy_7',['busy',['../db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63',1,'led::NeoPixelBase::busy()'],['../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3',1,'led::SpiLedWriter::busy()']]],
-  ['bytes_5fper_5fpixel_8',['bytes_per_pixel',['../d9/d83/namespaceled.html#a4e3f9e3d624b42d9de1453a17c5be192',1,'led']]]
+  ['busy_5',['busy',['../db/d2a/classled_1_1NeoPixelBase.html#ae75603634b6ea2218f9cf90168caff63',1,'led::NeoPixelBase::busy()'],['../dd/d62/classled_1_1SpiLedWriter.html#abf0209bbb2bcfc3c3a03d45a6996f6d3',1,'led::SpiLedWriter::busy()']]],
+  ['bytes_5fper_5fpixel_6',['bytes_per_pixel',['../d9/d83/namespaceled.html#a4e3f9e3d624b42d9de1453a17c5be192',1,'led']]]
 ];
