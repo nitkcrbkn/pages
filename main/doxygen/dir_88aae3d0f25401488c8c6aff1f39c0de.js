@@ -1,5 +1,6 @@
 var dir_88aae3d0f25401488c8c6aff1f39c0de =
 [
+    [ "as5600.h", "d5/db0/as5600_8h.html", "d5/db0/as5600_8h" ],
     [ "Dualsense.h", "d9/dc2/Dualsense_8h.html", "d9/dc2/Dualsense_8h" ],
     [ "gpio.h", "df/d0d/platform_2gpio_8h.html", "df/d0d/platform_2gpio_8h" ],
     [ "IM920sL.h", "d6/d81/IM920sL_8h.html", "d6/d81/IM920sL_8h" ],

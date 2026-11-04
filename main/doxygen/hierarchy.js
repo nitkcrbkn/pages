@@ -10,6 +10,7 @@ var hierarchy =
     [ "AMTEncoderBase", "db/d69/classAMTEncoderBase.html", [
       [ "AMTEncoderExti", "df/d9b/classAMTEncoderExti.html", null ]
     ] ],
+    [ "As5600", "da/d4d/classAs5600.html", null ],
     [ "IM920sL::BaseIM920sL", "d7/dd8/classIM920sL_1_1BaseIM920sL.html", null ],
     [ "BitRange", "d6/d01/structBitRange.html", null ],
     [ "PS5::Button", "d6/de5/structPS5_1_1Button.html", null ],

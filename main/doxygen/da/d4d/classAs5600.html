@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>STM32System: As5600 クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">STM32System
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('da/d4d/classAs5600.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="../../dc/d16/classAs5600-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">As5600 クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>AS5600 の I2C ドライバ。  
+ <a href="../../da/d4d/classAs5600.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;as5600.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:aace264f12b7df6add941f82179c9c48c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48c">Register</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca3a558e2bf4185d8233339e507aca89b0">Zmco</a> = 0x00U
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48cab835196b441c0cf93c5b7d56b2c4a352">ZposHigh</a> = 0x01U
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca7dbb8bf52e2e5eeff69bf2f455590ee3">MposHigh</a> = 0x03U
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca9a9612a6c14ce114cd1832bb4970d781">MangHigh</a> = 0x05U
+, <br />
+&#160;&#160;<a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48caf4804cb37232e115c03d0d9eff2562fa">ConfHigh</a> = 0x07U
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48caec53a8c4f07baed5d8825072c89799be">Status</a> = 0x0BU
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca8704f14cb772931d3e9aac44238406db">RawAngleHigh</a> = 0x0CU
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca4fa67dcce012aeb2200a3b209ed773de">AngleHigh</a> = 0x0EU
+, <br />
+&#160;&#160;<a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48cade3f552361141d244a2c4a83cb85a181">Agc</a> = 0x1AU
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48cabefb3185ef9cbd70d292ea6aaa83094f">MagnitudeHigh</a> = 0x1BU
+, <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48ca11635778f116ce6922f6068638a39028">Burn</a> = 0xFFU
+<br />
+ }</td></tr>
+<tr class="separator:aace264f12b7df6add941f82179c9c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a87acd8469e3076223e8779d4280eeb27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a87acd8469e3076223e8779d4280eeb27">As5600</a> (I2C_HandleTypeDef &amp;i2c, uint32_t timeout_ms=100U)</td></tr>
+<tr class="separator:a87acd8469e3076223e8779d4280eeb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c91e711b8773a34ed1269ce726885fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a0c91e711b8773a34ed1269ce726885fc">isConnected</a> (uint32_t trials=3U)</td></tr>
+<tr class="memdesc:a0c91e711b8773a34ed1269ce726885fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AS5600 が I2C バス上で応答するか確認します。  <a href="../../da/d4d/classAs5600.html#a0c91e711b8773a34ed1269ce726885fc">[詳解]</a><br /></td></tr>
+<tr class="separator:a0c91e711b8773a34ed1269ce726885fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff2e54c729bcaebbb6e1ebf1d50d13a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#afff2e54c729bcaebbb6e1ebf1d50d13a">readAngle</a> (uint16_t &amp;angle)</td></tr>
+<tr class="memdesc:afff2e54c729bcaebbb6e1ebf1d50d13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケーリング・フィルタ済みの ANGLE (0x0E/0x0F) を読みます。  <a href="../../da/d4d/classAs5600.html#afff2e54c729bcaebbb6e1ebf1d50d13a">[詳解]</a><br /></td></tr>
+<tr class="separator:afff2e54c729bcaebbb6e1ebf1d50d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4635c04514ef4ff849edd2e2e5cccd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#abf4635c04514ef4ff849edd2e2e5cccd">readRawAngle</a> (uint16_t &amp;raw_angle)</td></tr>
+<tr class="memdesc:abf4635c04514ef4ff849edd2e2e5cccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">未加工の RAW ANGLE (0x0C/0x0D) を読みます。  <a href="../../da/d4d/classAs5600.html#abf4635c04514ef4ff849edd2e2e5cccd">[詳解]</a><br /></td></tr>
+<tr class="separator:abf4635c04514ef4ff849edd2e2e5cccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6b1bf9b644a86e0364063e1fcc0194"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#afe6b1bf9b644a86e0364063e1fcc0194">readStatus</a> (uint8_t &amp;status)</td></tr>
+<tr class="memdesc:afe6b1bf9b644a86e0364063e1fcc0194"><td class="mdescLeft">&#160;</td><td class="mdescRight">STATUS (0x0B) を読みます。  <a href="../../da/d4d/classAs5600.html#afe6b1bf9b644a86e0364063e1fcc0194">[詳解]</a><br /></td></tr>
+<tr class="separator:afe6b1bf9b644a86e0364063e1fcc0194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a2739be5f575588bdc76ccbc22bdcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#af5a2739be5f575588bdc76ccbc22bdcf">readAgc</a> (uint8_t &amp;agc)</td></tr>
+<tr class="memdesc:af5a2739be5f575588bdc76ccbc22bdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">AGC (0x1A) を読みます。  <a href="../../da/d4d/classAs5600.html#af5a2739be5f575588bdc76ccbc22bdcf">[詳解]</a><br /></td></tr>
+<tr class="separator:af5a2739be5f575588bdc76ccbc22bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf3c24c8d10041ce0d767f87b31a72d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a8cf3c24c8d10041ce0d767f87b31a72d">readMagnitude</a> (uint16_t &amp;magnitude)</td></tr>
+<tr class="memdesc:a8cf3c24c8d10041ce0d767f87b31a72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">12 bit の MAGNITUDE (0x1B/0x1C) を読みます。  <a href="../../da/d4d/classAs5600.html#a8cf3c24c8d10041ce0d767f87b31a72d">[詳解]</a><br /></td></tr>
+<tr class="separator:a8cf3c24c8d10041ce0d767f87b31a72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48d46b62dc377f3a20750f8012cbdb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#ad48d46b62dc377f3a20750f8012cbdb2">readZmco</a> (uint8_t &amp;zmco)</td></tr>
+<tr class="memdesc:ad48d46b62dc377f3a20750f8012cbdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZMCO (0x00) の下位2 bitを読みます。  <a href="../../da/d4d/classAs5600.html#ad48d46b62dc377f3a20750f8012cbdb2">[詳解]</a><br /></td></tr>
+<tr class="separator:ad48d46b62dc377f3a20750f8012cbdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40a7ea62e73c72845ea5be45e934a00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#aa40a7ea62e73c72845ea5be45e934a00">readZeroPosition</a> (uint16_t &amp;position)</td></tr>
+<tr class="memdesc:aa40a7ea62e73c72845ea5be45e934a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZPOS (0x01/0x02) を読みます。  <a href="../../da/d4d/classAs5600.html#aa40a7ea62e73c72845ea5be45e934a00">[詳解]</a><br /></td></tr>
+<tr class="separator:aa40a7ea62e73c72845ea5be45e934a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a797ff3533f263242a4d18dbb1a523"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a38a797ff3533f263242a4d18dbb1a523">readMaximumPosition</a> (uint16_t &amp;position)</td></tr>
+<tr class="memdesc:a38a797ff3533f263242a4d18dbb1a523"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPOS (0x03/0x04) を読みます。  <a href="../../da/d4d/classAs5600.html#a38a797ff3533f263242a4d18dbb1a523">[詳解]</a><br /></td></tr>
+<tr class="separator:a38a797ff3533f263242a4d18dbb1a523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af055aeebceaecc00e269b1de3a235abb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#af055aeebceaecc00e269b1de3a235abb">readMaximumAngle</a> (uint16_t &amp;angle)</td></tr>
+<tr class="memdesc:af055aeebceaecc00e269b1de3a235abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MANG (0x05/0x06) を読みます。  <a href="../../da/d4d/classAs5600.html#af055aeebceaecc00e269b1de3a235abb">[詳解]</a><br /></td></tr>
+<tr class="separator:af055aeebceaecc00e269b1de3a235abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab218706f0284aadbfd3ea48c47909784"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#ab218706f0284aadbfd3ea48c47909784">readConfiguration</a> (uint16_t &amp;configuration)</td></tr>
+<tr class="memdesc:ab218706f0284aadbfd3ea48c47909784"><td class="mdescLeft">&#160;</td><td class="mdescRight">CONF (0x07/0x08) の有効な14 bitを読みます。  <a href="../../da/d4d/classAs5600.html#ab218706f0284aadbfd3ea48c47909784">[詳解]</a><br /></td></tr>
+<tr class="separator:ab218706f0284aadbfd3ea48c47909784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ed27312369abc1dbebb896bfeffad1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a75ed27312369abc1dbebb896bfeffad1">writeZeroPosition</a> (uint16_t position)</td></tr>
+<tr class="memdesc:a75ed27312369abc1dbebb896bfeffad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZPOS (0x01/0x02) を揮発レジスタへ書き込みます。  <a href="../../da/d4d/classAs5600.html#a75ed27312369abc1dbebb896bfeffad1">[詳解]</a><br /></td></tr>
+<tr class="separator:a75ed27312369abc1dbebb896bfeffad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6683c5d5325cd9545d46fb4bae2d7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a7d6683c5d5325cd9545d46fb4bae2d7b">writeMaximumPosition</a> (uint16_t position)</td></tr>
+<tr class="memdesc:a7d6683c5d5325cd9545d46fb4bae2d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPOS (0x03/0x04) を揮発レジスタへ書き込みます。  <a href="../../da/d4d/classAs5600.html#a7d6683c5d5325cd9545d46fb4bae2d7b">[詳解]</a><br /></td></tr>
+<tr class="separator:a7d6683c5d5325cd9545d46fb4bae2d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b177751e6021200692b7cd137045ffc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a7b177751e6021200692b7cd137045ffc">writeMaximumAngle</a> (uint16_t angle)</td></tr>
+<tr class="memdesc:a7b177751e6021200692b7cd137045ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MANG (0x05/0x06) を揮発レジスタへ書き込みます。  <a href="../../da/d4d/classAs5600.html#a7b177751e6021200692b7cd137045ffc">[詳解]</a><br /></td></tr>
+<tr class="separator:a7b177751e6021200692b7cd137045ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d674f22e5a53af449e0d6065a8ab67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#ac9d674f22e5a53af449e0d6065a8ab67">writeConfiguration</a> (uint16_t configuration)</td></tr>
+<tr class="memdesc:ac9d674f22e5a53af449e0d6065a8ab67"><td class="mdescLeft">&#160;</td><td class="mdescRight">CONF (0x07/0x08) を揮発レジスタへ書き込みます。  <a href="../../da/d4d/classAs5600.html#ac9d674f22e5a53af449e0d6065a8ab67">[詳解]</a><br /></td></tr>
+<tr class="separator:ac9d674f22e5a53af449e0d6065a8ab67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c0c9a1b4324f3458b0e2512c43bdb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#aa5c0c9a1b4324f3458b0e2512c43bdb5">burnAngle</a> ()</td></tr>
+<tr class="memdesc:aa5c0c9a1b4324f3458b0e2512c43bdb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の ZPOS/MPOS をOTPへ永久書き込みします。  <a href="../../da/d4d/classAs5600.html#aa5c0c9a1b4324f3458b0e2512c43bdb5">[詳解]</a><br /></td></tr>
+<tr class="separator:aa5c0c9a1b4324f3458b0e2512c43bdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c9cb9d4933dc9efc83ee7a28f549b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#ac2c9cb9d4933dc9efc83ee7a28f549b1">burnSettings</a> ()</td></tr>
+<tr class="memdesc:ac2c9cb9d4933dc9efc83ee7a28f549b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の MANG/CONF をOTPへ永久書き込みします。  <a href="../../da/d4d/classAs5600.html#ac2c9cb9d4933dc9efc83ee7a28f549b1">[詳解]</a><br /></td></tr>
+<tr class="separator:ac2c9cb9d4933dc9efc83ee7a28f549b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a487334114f13931b0889a8e558a7bde1"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a487334114f13931b0889a8e558a7bde1">kI2cAddress</a> = 0x36U</td></tr>
+<tr class="separator:a487334114f13931b0889a8e558a7bde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964a735e68c2d3f0b1f5276c65174116"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#a964a735e68c2d3f0b1f5276c65174116">kMaxPosition</a> = 0x0FFFU</td></tr>
+<tr class="separator:a964a735e68c2d3f0b1f5276c65174116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1faf33f0db0c651981aa7fd8d8a7f4"><td class="memItemLeft" align="right" valign="top">static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/classAs5600.html#afa1faf33f0db0c651981aa7fd8d8a7f4">kMaxConfig</a> = 0x3FFFU</td></tr>
+<tr class="separator:afa1faf33f0db0c651981aa7fd8d8a7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p >AS5600 の I2C ドライバ。 </p>
+<p >AS5600 の I2C アドレスは 7-bit 表記で 0x36 です。STM32 HAL の HAL_I2C_* 関数へ渡すときだけ左へ 1 bit シフトします。 </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="aace264f12b7df6add941f82179c9c48c" name="aace264f12b7df6add941f82179c9c48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace264f12b7df6add941f82179c9c48c">&#9670;&#160;</a></span>Register</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../da/d4d/classAs5600.html#aace264f12b7df6add941f82179c9c48c">As5600::Register</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca3a558e2bf4185d8233339e507aca89b0" name="aace264f12b7df6add941f82179c9c48ca3a558e2bf4185d8233339e507aca89b0"></a>Zmco&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48cab835196b441c0cf93c5b7d56b2c4a352" name="aace264f12b7df6add941f82179c9c48cab835196b441c0cf93c5b7d56b2c4a352"></a>ZposHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca7dbb8bf52e2e5eeff69bf2f455590ee3" name="aace264f12b7df6add941f82179c9c48ca7dbb8bf52e2e5eeff69bf2f455590ee3"></a>MposHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca9a9612a6c14ce114cd1832bb4970d781" name="aace264f12b7df6add941f82179c9c48ca9a9612a6c14ce114cd1832bb4970d781"></a>MangHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48caf4804cb37232e115c03d0d9eff2562fa" name="aace264f12b7df6add941f82179c9c48caf4804cb37232e115c03d0d9eff2562fa"></a>ConfHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48caec53a8c4f07baed5d8825072c89799be" name="aace264f12b7df6add941f82179c9c48caec53a8c4f07baed5d8825072c89799be"></a>Status&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca8704f14cb772931d3e9aac44238406db" name="aace264f12b7df6add941f82179c9c48ca8704f14cb772931d3e9aac44238406db"></a>RawAngleHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca4fa67dcce012aeb2200a3b209ed773de" name="aace264f12b7df6add941f82179c9c48ca4fa67dcce012aeb2200a3b209ed773de"></a>AngleHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48cade3f552361141d244a2c4a83cb85a181" name="aace264f12b7df6add941f82179c9c48cade3f552361141d244a2c4a83cb85a181"></a>Agc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48cabefb3185ef9cbd70d292ea6aaa83094f" name="aace264f12b7df6add941f82179c9c48cabefb3185ef9cbd70d292ea6aaa83094f"></a>MagnitudeHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aace264f12b7df6add941f82179c9c48ca11635778f116ce6922f6068638a39028" name="aace264f12b7df6add941f82179c9c48ca11635778f116ce6922f6068638a39028"></a>Burn&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a87acd8469e3076223e8779d4280eeb27" name="a87acd8469e3076223e8779d4280eeb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87acd8469e3076223e8779d4280eeb27">&#9670;&#160;</a></span>As5600()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">As5600::As5600 </td>
+          <td>(</td>
+          <td class="paramtype">I2C_HandleTypeDef &amp;&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>100U</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa5c0c9a1b4324f3458b0e2512c43bdb5" name="aa5c0c9a1b4324f3458b0e2512c43bdb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c0c9a1b4324f3458b0e2512c43bdb5">&#9670;&#160;</a></span>burnAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::burnAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の ZPOS/MPOS をOTPへ永久書き込みします。 </p>
+<dl class="section warning"><dt>警告</dt><dd>不可逆操作です。磁石検出済みで、実行回数が3回未満であることを 呼び出し側で確認してください。データシート指定の電源条件も必要です。 </dd></dl>
+
+</div>
+</div>
+<a id="ac2c9cb9d4933dc9efc83ee7a28f549b1" name="ac2c9cb9d4933dc9efc83ee7a28f549b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c9cb9d4933dc9efc83ee7a28f549b1">&#9670;&#160;</a></span>burnSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::burnSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の MANG/CONF をOTPへ永久書き込みします。 </p>
+<dl class="section warning"><dt>警告</dt><dd>不可逆かつ1回だけの操作です。ZMCOが0であること、および データシート指定の電源条件を呼び出し側で確認してください。 </dd></dl>
+
+</div>
+</div>
+<a id="a0c91e711b8773a34ed1269ce726885fc" name="a0c91e711b8773a34ed1269ce726885fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c91e711b8773a34ed1269ce726885fc">&#9670;&#160;</a></span>isConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::isConnected </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>trials</em> = <code>3U</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AS5600 が I2C バス上で応答するか確認します。 </p>
+
+</div>
+</div>
+<a id="af5a2739be5f575588bdc76ccbc22bdcf" name="af5a2739be5f575588bdc76ccbc22bdcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a2739be5f575588bdc76ccbc22bdcf">&#9670;&#160;</a></span>readAgc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readAgc </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>agc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>AGC (0x1A) を読みます。 </p>
+
+</div>
+</div>
+<a id="afff2e54c729bcaebbb6e1ebf1d50d13a" name="afff2e54c729bcaebbb6e1ebf1d50d13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff2e54c729bcaebbb6e1ebf1d50d13a">&#9670;&#160;</a></span>readAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readAngle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スケーリング・フィルタ済みの ANGLE (0x0E/0x0F) を読みます。 </p>
+
+</div>
+</div>
+<a id="ab218706f0284aadbfd3ea48c47909784" name="ab218706f0284aadbfd3ea48c47909784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab218706f0284aadbfd3ea48c47909784">&#9670;&#160;</a></span>readConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CONF (0x07/0x08) の有効な14 bitを読みます。 </p>
+
+</div>
+</div>
+<a id="a8cf3c24c8d10041ce0d767f87b31a72d" name="a8cf3c24c8d10041ce0d767f87b31a72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf3c24c8d10041ce0d767f87b31a72d">&#9670;&#160;</a></span>readMagnitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readMagnitude </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>magnitude</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>12 bit の MAGNITUDE (0x1B/0x1C) を読みます。 </p>
+
+</div>
+</div>
+<a id="af055aeebceaecc00e269b1de3a235abb" name="af055aeebceaecc00e269b1de3a235abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af055aeebceaecc00e269b1de3a235abb">&#9670;&#160;</a></span>readMaximumAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readMaximumAngle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MANG (0x05/0x06) を読みます。 </p>
+
+</div>
+</div>
+<a id="a38a797ff3533f263242a4d18dbb1a523" name="a38a797ff3533f263242a4d18dbb1a523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a797ff3533f263242a4d18dbb1a523">&#9670;&#160;</a></span>readMaximumPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readMaximumPosition </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MPOS (0x03/0x04) を読みます。 </p>
+
+</div>
+</div>
+<a id="abf4635c04514ef4ff849edd2e2e5cccd" name="abf4635c04514ef4ff849edd2e2e5cccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4635c04514ef4ff849edd2e2e5cccd">&#9670;&#160;</a></span>readRawAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readRawAngle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>raw_angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>未加工の RAW ANGLE (0x0C/0x0D) を読みます。 </p>
+
+</div>
+</div>
+<a id="afe6b1bf9b644a86e0364063e1fcc0194" name="afe6b1bf9b644a86e0364063e1fcc0194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6b1bf9b644a86e0364063e1fcc0194">&#9670;&#160;</a></span>readStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readStatus </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>STATUS (0x0B) を読みます。 </p>
+
+</div>
+</div>
+<a id="aa40a7ea62e73c72845ea5be45e934a00" name="aa40a7ea62e73c72845ea5be45e934a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40a7ea62e73c72845ea5be45e934a00">&#9670;&#160;</a></span>readZeroPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readZeroPosition </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t &amp;&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ZPOS (0x01/0x02) を読みます。 </p>
+
+</div>
+</div>
+<a id="ad48d46b62dc377f3a20750f8012cbdb2" name="ad48d46b62dc377f3a20750f8012cbdb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48d46b62dc377f3a20750f8012cbdb2">&#9670;&#160;</a></span>readZmco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::readZmco </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>zmco</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ZMCO (0x00) の下位2 bitを読みます。 </p>
+
+</div>
+</div>
+<a id="ac9d674f22e5a53af449e0d6065a8ab67" name="ac9d674f22e5a53af449e0d6065a8ab67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d674f22e5a53af449e0d6065a8ab67">&#9670;&#160;</a></span>writeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::writeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CONF (0x07/0x08) を揮発レジスタへ書き込みます。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>I2C書き込み成功時はtrue。14 bitを超える値ではfalse。 </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>予約bitを保つ必要がある場合は先に現在値を読み、必要なbitだけ変更してください。 </dd></dl>
+
+</div>
+</div>
+<a id="a7b177751e6021200692b7cd137045ffc" name="a7b177751e6021200692b7cd137045ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b177751e6021200692b7cd137045ffc">&#9670;&#160;</a></span>writeMaximumAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::writeMaximumAngle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MANG (0x05/0x06) を揮発レジスタへ書き込みます。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>I2C書き込み成功時はtrue。12 bitを超える値ではfalse。 </dd></dl>
+
+</div>
+</div>
+<a id="a7d6683c5d5325cd9545d46fb4bae2d7b" name="a7d6683c5d5325cd9545d46fb4bae2d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d6683c5d5325cd9545d46fb4bae2d7b">&#9670;&#160;</a></span>writeMaximumPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::writeMaximumPosition </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MPOS (0x03/0x04) を揮発レジスタへ書き込みます。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>I2C書き込み成功時はtrue。12 bitを超える値ではfalse。 </dd></dl>
+
+</div>
+</div>
+<a id="a75ed27312369abc1dbebb896bfeffad1" name="a75ed27312369abc1dbebb896bfeffad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ed27312369abc1dbebb896bfeffad1">&#9670;&#160;</a></span>writeZeroPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool As5600::writeZeroPosition </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ZPOS (0x01/0x02) を揮発レジスタへ書き込みます。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>I2C書き込み成功時はtrue。12 bitを超える値ではfalse。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a487334114f13931b0889a8e558a7bde1" name="a487334114f13931b0889a8e558a7bde1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a487334114f13931b0889a8e558a7bde1">&#9670;&#160;</a></span>kI2cAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t As5600::kI2cAddress = 0x36U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa1faf33f0db0c651981aa7fd8d8a7f4" name="afa1faf33f0db0c651981aa7fd8d8a7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1faf33f0db0c651981aa7fd8d8a7f4">&#9670;&#160;</a></span>kMaxConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t As5600::kMaxConfig = 0x3FFFU</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a964a735e68c2d3f0b1f5276c65174116" name="a964a735e68c2d3f0b1f5276c65174116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964a735e68c2d3f0b1f5276c65174116">&#9670;&#160;</a></span>kMaxPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint16_t As5600::kMaxPosition = 0x0FFFU</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>modules/platform/<a class="el" href="../../d5/db0/as5600_8h.html">as5600.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d4d/classAs5600.html">As5600</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updateresult_0',['UpdateResult',['../d7/dea/classPS5_1_1ControllerRegistry.html#af344c4fd7699888156cd416789d60b53',1,'PS5::ControllerRegistry']]]
+  ['triggerdirection_0',['TriggerDirection',['../d0/d0c/amt__base_8h.html#a91519aa051e040f781d489302a630d39',1,'amt_base.h']]]
 ];
